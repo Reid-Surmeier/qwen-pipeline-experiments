@@ -1,0 +1,19 @@
+{
+  "acknowledged_cost_usd": "0.0454",
+  "billing_status": "possibly_spent",
+  "canonical_slug": "bytedance/seedance-2.0-mini-20260811",
+  "estimated_cost_usd": "0.0454",
+  "model": "bytedance/seedance-2.0-mini",
+  "paid_submission_performed": true,
+  "provider_request_sha256": "32e5892225c78fb8d6851295533b5d0df2a48ad38b0d754a717cfec89c56445e",
+  "question": "Does the same HTTPS reference succeed when served as video/mp4 instead of application/octet-stream?",
+  "reference_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+  "requested_count": 1,
+  "safe_to_retry": false,
+  "single_changed_variable": "HTTPS reference host and response MIME: raw GitHub octet-stream to GitHub Pages video/mp4",
+  "source_runs": [
+    "seedance-video-study-001-20260830T195347Z",
+    "seedance-video-study-002-20260830T201500Z"
+  ],
+  "submission_status": "submitting"
+}

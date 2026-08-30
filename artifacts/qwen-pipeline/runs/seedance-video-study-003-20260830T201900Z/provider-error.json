@@ -1,0 +1,21 @@
+{
+  "billing_status": "possibly_spent",
+  "endpoint": "/videos",
+  "error_class": "OpenRouterHTTPError",
+  "method": "POST",
+  "operation": "submit",
+  "provider_error": {
+    "error": {
+      "code": 400,
+      "message": "HTTP 400: {\"error\":{\"code\":\"InvalidParameter\",\"message\":\"The parameter `content[1]` specified in the request is not valid: the parameter video pixel count specified in the request must be greater than or equal to 407696 for model dreamina-seedance-2-0-mini in r2v. Request id: 021788121192977641a02d40a43d449f07de84c480b390d44055f\",\"param\":\"content[1]\",\"type\":\"BadRequest\"}}"
+    }
+  },
+  "recorded_at": "2026-08-30T20:19:53Z",
+  "response_body": "{\"error\":{\"message\":\"HTTP 400: {\\\"error\\\":{\\\"code\\\":\\\"InvalidParameter\\\",\\\"message\\\":\\\"The parameter `content[1]` specified in the request is not valid: the parameter video pixel count specified in the request must be greater than or equal to 407696 for model dreamina-seedance-2-0-mini in r2v. Request id: 021788121192977641a02d40a43d449f07de84c480b390d44055f\\\",\\\"param\\\":\\\"content[1]\\\",\\\"type\\\":\\\"BadRequest\\\"}}\",\"code\":400}}",
+  "response_body_truncated": false,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "safe_to_retry": false,
+  "status_code": 400
+}
