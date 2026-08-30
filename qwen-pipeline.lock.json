@@ -1,0 +1,8 @@
+{
+  "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline",
+  "tool_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+  "tool_version_kind": "exact-commit",
+  "openrouter_image_model": "qwen/qwen-image-3-pro",
+  "openrouter_video_model": "bytedance/seedance-2.0-mini",
+  "locked_at": "2026-08-30T00:00:00Z"
+}

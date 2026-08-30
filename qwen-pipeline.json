@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1-prototype",
+  "application": "qwen-pipeline-experiments",
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "provider_policy": {
+    "paid_provider": "openrouter",
+    "provider_auto_allowed": false,
+    "aggregate_new_spend_limit_usd": "5.00",
+    "ambiguous_paid_retry_allowed": false
+  },
+  "run_root": "artifacts/qwen-pipeline/runs",
+  "required_run_files": [
+    "request.json",
+    "events.jsonl",
+    "provider-response.json",
+    "checks.json",
+    "provenance.json",
+    "outcome.json"
+  ],
+  "human_gates": [
+    "subjective final visual approval",
+    "choice between visually acceptable donors"
+  ],
+  "procedures": {
+    "qwen-image-study": {
+      "model": "qwen/qwen-image-3-pro",
+      "requested_count": 1,
+      "assembly": "required because the reference contains authoritative pixels"
+    },
+    "seedance-video-study": {
+      "model": "bytedance/seedance-2.0-mini",
+      "requested_count": 1,
+      "video_reference": "required and must appear unchanged in input_references"
+    }
+  }
+}

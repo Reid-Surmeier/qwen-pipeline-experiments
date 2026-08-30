@@ -1,0 +1,16 @@
+{
+  "authority": "Neutral synthetic fixtures created for Issue #1; no external application or copyrighted source material.",
+  "qwen_source": {
+    "path": "references/qwen-authoritative-screen.png",
+    "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92"
+  },
+  "seedance_anchor": {
+    "path": "references/seedance-authoritative-icon.png",
+    "sha256": "2f55c4846a0d225dee047f832490dd3f008a9c1744fa0cbc69dd6b08786642d1"
+  },
+  "seedance_motion_reference": {
+    "path": "references/seedance-motion-reference.mp4",
+    "sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+    "motion_kind": "one smooth clockwise turn of the authoritative icon on a fixed green matte"
+  }
+}

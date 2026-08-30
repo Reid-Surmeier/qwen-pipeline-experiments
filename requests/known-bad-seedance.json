@@ -1,0 +1,15 @@
+{
+  "run_id": "known-bad-seedance-missing-video",
+  "mode": "seedance-video-study",
+  "provider": "openrouter",
+  "model": "bytedance/seedance-2.0-mini",
+  "requested_count": 1,
+  "duration": 4,
+  "resolution": "480p",
+  "aspect_ratio": "1:1",
+  "reference_inputs": [],
+  "provider_payload": {
+    "input_references": []
+  },
+  "estimated_cost_usd": "0.05380"
+}
