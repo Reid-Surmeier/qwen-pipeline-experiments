@@ -23,9 +23,9 @@ test("Qwen refuses a declared reference that is absent from the provider payload
   }
 });
 
-test("Seedance refuses a reference video below the provider r2v pixel minimum", async () => {
+test("Seedance inspects and refuses an undersized video despite falsified dimensions", async () => {
   const request = JSON.parse(await readFile("requests/seedance-video-study.json", "utf8"));
-  request.reference_inputs[0].media = { width: 480, height: 480 };
+  request.reference_inputs[0].media = { width: 720, height: 720 };
   const directory = await mkdtemp(join(tmpdir(), "seedance-preflight-"));
   const requestPath = join(directory, "request.json");
   await writeFile(requestPath, JSON.stringify(request));
@@ -35,6 +35,7 @@ test("Seedance refuses a reference video below the provider r2v pixel minimum", 
       encoding: "utf8",
     });
     assert.equal(result.status, 1);
+    assert.match(result.stderr, /declared dimensions do not match inspected video/);
     assert.match(result.stderr, /reference video needs at least 407696 pixels/);
   } finally {
     await rm(directory, { recursive: true });

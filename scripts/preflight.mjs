@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
@@ -12,6 +13,32 @@ if (!requestPath) {
 
 const request = JSON.parse(await readFile(resolve(requestPath), "utf8"));
 const failures = [];
+
+function inspectVideo(path) {
+  const result = spawnSync(
+    "ffprobe",
+    [
+      "-v",
+      "error",
+      "-select_streams",
+      "v:0",
+      "-show_entries",
+      "stream=width,height",
+      "-of",
+      "json",
+      resolve(path),
+    ],
+    { encoding: "utf8" },
+  );
+  if (result.error || result.status !== 0) return null;
+  try {
+    const stream = JSON.parse(result.stdout).streams?.[0];
+    if (!Number.isInteger(stream?.width) || !Number.isInteger(stream?.height)) return null;
+    return { width: stream.width, height: stream.height };
+  } catch {
+    return null;
+  }
+}
 
 if (request.provider !== "openrouter") failures.push("paid provider must be openrouter");
 if (request.requested_count !== 1) failures.push("qualification requests exactly one output");
@@ -35,13 +62,27 @@ if (request.mode === "seedance-video-study") {
   const videos = (request.reference_inputs ?? []).filter((item) => item.kind === "video");
   if (videos.length !== 1) failures.push("seedance requires exactly one hash-locked video reference");
   if (videos.length === 1) {
-    const width = videos[0].media?.width;
-    const height = videos[0].media?.height;
-    if (!Number.isInteger(width) || !Number.isInteger(height)) {
+    const declaredWidth = videos[0].media?.width;
+    const declaredHeight = videos[0].media?.height;
+    const inspected = inspectVideo(videos[0].path);
+    if (!Number.isInteger(declaredWidth) || !Number.isInteger(declaredHeight)) {
       failures.push("seedance reference video needs inspected integer width and height");
-    } else if (request.model === "bytedance/seedance-2.0-mini" && width * height < 407_696) {
+    }
+    if (!inspected) {
+      failures.push("seedance reference video could not be inspected with ffprobe");
+    } else if (declaredWidth !== inspected.width || declaredHeight !== inspected.height) {
       failures.push(
-        `seedance reference video needs at least 407696 pixels for Mini r2v; got ${width * height}`,
+        `declared dimensions do not match inspected video: declared ${declaredWidth}x${declaredHeight}, ` +
+          `inspected ${inspected.width}x${inspected.height}`,
+      );
+    }
+    if (
+      inspected &&
+      request.model === "bytedance/seedance-2.0-mini" &&
+      inspected.width * inspected.height < 407_696
+    ) {
+      failures.push(
+        `seedance reference video needs at least 407696 pixels for Mini r2v; got ${inspected.width * inspected.height}`,
       );
     }
   }
