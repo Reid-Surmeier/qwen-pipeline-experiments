@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-08-30T19:37:07Z",
+  "status": "incomplete-provider-rejected",
+  "provider_status": "http-402-insufficient-credits",
+  "attempts_submitted": 1,
+  "retries_submitted": 0,
+  "requested_count": 1,
+  "completed_count": 0,
+  "donor_created": false,
+  "assembly_created": false,
+  "fidelity_check_performed": false,
+  "estimated_cost_usd": "0.04300",
+  "actual_cost_usd": null,
+  "actual_cost_exposed": false,
+  "billing_state": "possibly_spent",
+  "safe_to_retry": false,
+  "same_run_safe_to_retry": false,
+  "future_run_requires_new_authorization": true,
+  "future_run_requires_restored_credit": true,
+  "visual_approval": "not-requested",
+  "next_action": "Do not resubmit this Run. A separate newly authorized Run would require restored OpenRouter credit and a new additive directory."
+}

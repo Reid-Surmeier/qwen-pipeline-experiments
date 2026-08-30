@@ -1,0 +1,18 @@
+{
+  "received_at": "2026-08-30T19:36:45Z",
+  "provider": "openrouter",
+  "endpoint": "https://openrouter.ai/api/v1/images",
+  "http_status": 402,
+  "request_id": null,
+  "completed_count": 0,
+  "data": [],
+  "error": {
+    "category": "insufficient-credits",
+    "message": "OpenRouter Image API returned HTTP 402: Insufficient credits. Add more using https://openrouter.ai/settings/credits"
+  },
+  "usage": {},
+  "actual_cost_usd": null,
+  "actual_cost_exposed": false,
+  "billing_state": "possibly_spent",
+  "safe_to_retry": false
+}

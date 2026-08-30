@@ -1,0 +1,69 @@
+{
+  "checked_at": "2026-08-30T19:37:07Z",
+  "checks": [
+    {
+      "name": "known-bad-seedance-preflight",
+      "command": "node scripts/preflight.mjs requests/known-bad-seedance.json",
+      "result": "passed-by-refusal",
+      "exit_code": 1,
+      "safe_to_spend": false,
+      "failures": [
+        "seedance requires exactly one hash-locked video reference",
+        "provider payload requires exactly one video_url"
+      ]
+    },
+    {
+      "name": "qwen-live-request-preflight",
+      "command": "node scripts/preflight.mjs requests/qwen-image-study.json",
+      "result": "passed",
+      "exit_code": 0,
+      "safe_to_spend": true,
+      "request_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee"
+    },
+    {
+      "name": "focused-node-tests",
+      "command": "node --test tests/preflight.test.mjs",
+      "result": "passed",
+      "exit_code": 0,
+      "tests_passed": 1,
+      "tests_failed": 0
+    },
+    {
+      "name": "tool-lock",
+      "result": "passed",
+      "expected_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+      "resolved_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b"
+    },
+    {
+      "name": "reference-source-lock",
+      "result": "passed",
+      "expected_sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "actual_sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "dimensions": [1024, 1024]
+    },
+    {
+      "name": "frozen-provider-request",
+      "result": "passed",
+      "matches_pinned_tool_builder": true,
+      "canonical_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83"
+    },
+    {
+      "name": "paid-action-reservation",
+      "result": "passed",
+      "persisted_before_submission": true,
+      "billing_state": "possibly_spent",
+      "safe_to_retry": false
+    },
+    {
+      "name": "provider-attempt-count",
+      "result": "passed",
+      "submitted_attempts": 1,
+      "retries": 0
+    },
+    {
+      "name": "assembly-fidelity",
+      "result": "not-run",
+      "reason": "Provider returned no donor image; Assembly cannot be performed."
+    }
+  ]
+}

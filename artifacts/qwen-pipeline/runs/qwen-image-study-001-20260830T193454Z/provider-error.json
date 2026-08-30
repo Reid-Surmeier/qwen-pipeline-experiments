@@ -1,0 +1,7 @@
+{
+  "billing_state": "possibly_spent",
+  "error_type": "RuntimeError",
+  "message": "OpenRouter Image API returned HTTP 402: Insufficient credits. Add more using https://openrouter.ai/settings/credits",
+  "safe_to_retry": false,
+  "timestamp": "2026-08-30T19:36:45Z"
+}

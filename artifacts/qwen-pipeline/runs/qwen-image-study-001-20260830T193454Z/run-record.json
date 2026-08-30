@@ -1,0 +1,41 @@
+{
+  "run_record_version": "qwen-procedure-qualification-v1",
+  "run_directory_id": "qwen-image-study-001-20260830T193454Z",
+  "source_run_id": "qwen-image-study-001",
+  "created_at": "2026-08-30T19:35:27Z",
+  "submission_started_at": "2026-08-30T19:36:45Z",
+  "submission_completed_at": "2026-08-30T19:36:45Z",
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "provider": "openrouter",
+  "model": "qwen/qwen-image-3-pro",
+  "requested_count": 1,
+  "completed_count": 0,
+  "request_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee",
+  "provider_request_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+  "provider_request_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/request.json",
+  "events_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/events.jsonl",
+  "provider_response_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/provider-response.json",
+  "checks_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/checks.json",
+  "provenance_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/provenance.json",
+  "outcome_path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/outcome.json",
+  "estimate_usd": "0.04300",
+  "actual_cost_usd": null,
+  "actual_cost_exposed": false,
+  "billing_state": "possibly_spent",
+  "safe_to_retry": false,
+  "same_run_safe_to_retry": false,
+  "future_run_requires_new_authorization": true,
+  "future_run_requires_restored_credit": true,
+  "outcome": "incomplete-provider-rejected",
+  "donor": null,
+  "assembly": null,
+  "fidelity": {
+    "status": "not-run",
+    "outside_region_changed_pixels": null,
+    "reason": "No donor image was returned."
+  },
+  "human_visual_approval": {
+    "decision": "pending",
+    "approved_sha256": null
+  }
+}

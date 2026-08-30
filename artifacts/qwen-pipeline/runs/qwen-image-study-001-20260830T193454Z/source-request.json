@@ -1,0 +1,43 @@
+{
+  "run_id": "qwen-image-study-001",
+  "mode": "qwen-image-study",
+  "provider": "openrouter",
+  "model": "qwen/qwen-image-3-pro",
+  "requested_count": 1,
+  "reference_inputs": [
+    {
+      "kind": "image",
+      "role": "authoritative-screen",
+      "path": "references/qwen-authoritative-screen.png",
+      "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/qwen-authoritative-screen.png"
+    }
+  ],
+  "assembly": {
+    "required": true,
+    "baseline": "references/qwen-authoritative-screen.png",
+    "region": {
+      "x": 256,
+      "y": 256,
+      "width": 512,
+      "height": 512
+    }
+  },
+  "provider_payload": {
+    "source": "briefs/qwen-image-study.json plus the exact reference path",
+    "model": "qwen/qwen-image-3-pro",
+    "resolution": "1K",
+    "aspect_ratio": "1:1",
+    "n": 1,
+    "seed": 1301,
+    "input_references": [
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/qwen-authoritative-screen.png"
+        }
+      }
+    ]
+  },
+  "estimated_cost_usd": "0.04300"
+}

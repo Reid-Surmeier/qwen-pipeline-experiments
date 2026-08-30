@@ -1,0 +1,52 @@
+{
+  "recorded_at": "2026-08-30T19:37:07Z",
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "application_repository": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments",
+  "application_commit": "3a73f2f48df15698fc7443d0fe1270ce924bc52b",
+  "application_branch": "prototype/fresh-agent-proof",
+  "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline",
+  "tool_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+  "provider": "openrouter",
+  "model": "qwen/qwen-image-3-pro",
+  "requested_count": 1,
+  "completed_count": 0,
+  "seed": 1301,
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "estimate_usd": "0.04300",
+  "actual_cost_usd": null,
+  "actual_cost_exposed": false,
+  "billing_state": "possibly_spent",
+  "safe_to_retry": false,
+  "reference": {
+    "path": "references/qwen-authoritative-screen.png",
+    "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+    "width": 1024,
+    "height": 1024,
+    "role": "authoritative-screen"
+  },
+  "brief": {
+    "path": "briefs/qwen-image-study.json",
+    "sha256": "65407de0a66e2f20d1b24645f88d5d39761548a89c5f1176a59d987f397861d7"
+  },
+  "source_request": {
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/source-request.json",
+    "canonical_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee",
+    "file_sha256": "bb18860e8a68c637c9d903026dbace9d32bc4656562181f85325ed7254c2c061"
+  },
+  "provider_request": {
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/request.json",
+    "canonical_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+    "file_sha256": "59bf88a50e9527e3fee0ef8ab27cbc4a08ad74d26e5f4f9f068ba0e7f49d979f"
+  },
+  "provider_error": {
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-001-20260830T193454Z/provider-error.json",
+    "sha256": "dfd4abde0fff889e1b4825d6dabc575956172ca955581d514d79ba4296ed5e4f"
+  },
+  "donor": null,
+  "assembly": null,
+  "visual_approval": {
+    "decision": "pending",
+    "reason": "No candidate exists; the owner did not review or approve a visual result."
+  }
+}
