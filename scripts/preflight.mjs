@@ -34,6 +34,17 @@ for (const reference of request.reference_inputs ?? []) {
 if (request.mode === "seedance-video-study") {
   const videos = (request.reference_inputs ?? []).filter((item) => item.kind === "video");
   if (videos.length !== 1) failures.push("seedance requires exactly one hash-locked video reference");
+  if (videos.length === 1) {
+    const width = videos[0].media?.width;
+    const height = videos[0].media?.height;
+    if (!Number.isInteger(width) || !Number.isInteger(height)) {
+      failures.push("seedance reference video needs inspected integer width and height");
+    } else if (request.model === "bytedance/seedance-2.0-mini" && width * height < 407_696) {
+      failures.push(
+        `seedance reference video needs at least 407696 pixels for Mini r2v; got ${width * height}`,
+      );
+    }
+  }
   const payloadVideos = request.provider_payload?.input_references?.filter(
     (item) => item.type === "video_url" && item.video_url?.url,
   ) ?? [];

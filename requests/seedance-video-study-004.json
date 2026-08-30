@@ -1,0 +1,37 @@
+{
+  "run_id": "seedance-video-study-004",
+  "mode": "seedance-video-study",
+  "provider": "openrouter",
+  "model": "bytedance/seedance-2.0-mini",
+  "requested_count": 1,
+  "duration": 4,
+  "size": "480x480",
+  "reference_inputs": [
+    {
+      "kind": "video",
+      "role": "motion-authority-derived-resolution",
+      "path": "references/seedance-motion-reference-720.mp4",
+      "sha256": "8a0931d2876579dbb17e2ab3680d379516a59d9ec116a99f6a476964770f97a7",
+      "derived_from_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+      "url": "https://reid-surmeier.github.io/qwen-pipeline-experiments/references/seedance-motion-reference-720.mp4",
+      "media": {"width": 720, "height": 720, "duration_seconds": 4, "fps": 24}
+    }
+  ],
+  "provider_payload": {
+    "model": "bytedance/seedance-2.0-mini",
+    "prompt": "Create one clean 4-second square motion study using the supplied video as the authoritative motion reference. Preserve the same centered dark rounded tile and cyan diamond identity on a fixed uniform green matte. Follow the reference's single clockwise turn, steady pace, locked camera, centered position, and return to the original pose. Keep the icon fully inside frame. Do not invent text, objects, particles, shadows, scenery, camera motion, or extra cycles.",
+    "duration": 4,
+    "size": "480x480",
+    "generate_audio": false,
+    "seed": 1301,
+    "input_references": [
+      {
+        "type": "video_url",
+        "video_url": {
+          "url": "https://reid-surmeier.github.io/qwen-pipeline-experiments/references/seedance-motion-reference-720.mp4"
+        }
+      }
+    ]
+  },
+  "estimated_cost_usd": "0.0454"
+}

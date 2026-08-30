@@ -12,5 +12,15 @@
     "path": "references/seedance-motion-reference.mp4",
     "sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
     "motion_kind": "one smooth clockwise turn of the authoritative icon on a fixed green matte"
+  },
+  "seedance_motion_reference_720": {
+    "path": "references/seedance-motion-reference-720.mp4",
+    "sha256": "8a0931d2876579dbb17e2ab3680d379516a59d9ec116a99f6a476964770f97a7",
+    "derived_from": "references/seedance-motion-reference.mp4",
+    "derived_from_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+    "procedure": "ffmpeg scale=720:720:flags=lanczos, libx264 crf 12 slow, yuv420p, no audio, faststart",
+    "reason": "OpenRouter provider evidence requires at least 407696 input-video pixels for Seedance 2.0 Mini reference-to-video; 720x720 supplies 518400 without changing duration, rate, or motion.",
+    "media": {"width": 720, "height": 720, "duration_seconds": 4, "fps": 24},
+    "motion_kind": "the same single smooth clockwise turn as the source reference"
   }
 }

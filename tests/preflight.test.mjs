@@ -22,3 +22,21 @@ test("Qwen refuses a declared reference that is absent from the provider payload
     await rm(directory, { recursive: true });
   }
 });
+
+test("Seedance refuses a reference video below the provider r2v pixel minimum", async () => {
+  const request = JSON.parse(await readFile("requests/seedance-video-study.json", "utf8"));
+  request.reference_inputs[0].media = { width: 480, height: 480 };
+  const directory = await mkdtemp(join(tmpdir(), "seedance-preflight-"));
+  const requestPath = join(directory, "request.json");
+  await writeFile(requestPath, JSON.stringify(request));
+
+  try {
+    const result = spawnSync("node", ["scripts/preflight.mjs", requestPath], {
+      encoding: "utf8",
+    });
+    assert.equal(result.status, 1);
+    assert.match(result.stderr, /reference video needs at least 407696 pixels/);
+  } finally {
+    await rm(directory, { recursive: true });
+  }
+});
