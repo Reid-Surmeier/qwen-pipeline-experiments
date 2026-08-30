@@ -21,7 +21,21 @@ REFERENCE_URL = (
     "https://reid-surmeier.github.io/qwen-pipeline-experiments/"
     "references/seedance-motion-reference.mp4"
 )
+REFERENCE_PATH = base.REFERENCE
+EXPECTED_REFERENCE_SHA256 = base.EXPECTED_REFERENCE_SHA256
 EXPECTED_APPLICATION_COMMIT = "162c0ab830e32a071faba9374ccda32047491dd5"
+QUESTION = (
+    "Does the same HTTPS reference succeed when served as video/mp4 instead of "
+    "application/octet-stream?"
+)
+SINGLE_CHANGED_VARIABLE = (
+    "HTTPS reference host and response MIME: raw GitHub octet-stream to "
+    "GitHub Pages video/mp4"
+)
+SOURCE_RUNS = [
+    "seedance-video-study-001-20260830T195347Z",
+    "seedance-video-study-002-20260830T201500Z",
+]
 
 
 def fail(
@@ -48,9 +62,9 @@ def main() -> int:
     if base.git_head(base.TOOL) != base.EXPECTED_TOOL_COMMIT:
         raise RuntimeError("structured-error client is not at the reviewed commit")
 
-    reference_bytes = base.REFERENCE.read_bytes()
+    reference_bytes = REFERENCE_PATH.read_bytes()
     reference_sha256 = base.sha256_bytes(reference_bytes)
-    if reference_sha256 != base.EXPECTED_REFERENCE_SHA256:
+    if reference_sha256 != EXPECTED_REFERENCE_SHA256:
         raise RuntimeError("local video reference changed")
     remote = httpx.get(REFERENCE_URL, follow_redirects=True, timeout=60)
     remote.raise_for_status()
@@ -93,7 +107,7 @@ def main() -> int:
         RUN / "reference-proof.json",
         {
             "checked_at": base.now(),
-            "local_path": str(base.REFERENCE),
+            "local_path": str(REFERENCE_PATH),
             "declared_url": REFERENCE_URL,
             "provider_payload_url": REFERENCE_URL,
             "http_status": remote.status_code,
@@ -107,18 +121,9 @@ def main() -> int:
     base.write_json(
         RUN / "plan.json",
         {
-            "question": (
-                "Does the same HTTPS reference succeed when served as video/mp4 instead of "
-                "application/octet-stream?"
-            ),
-            "single_changed_variable": (
-                "HTTPS reference host and response MIME: raw GitHub octet-stream to "
-                "GitHub Pages video/mp4"
-            ),
-            "source_runs": [
-                "seedance-video-study-001-20260830T195347Z",
-                "seedance-video-study-002-20260830T201500Z",
-            ],
+            "question": QUESTION,
+            "single_changed_variable": SINGLE_CHANGED_VARIABLE,
+            "source_runs": SOURCE_RUNS,
             "model": base.MODEL,
             "canonical_slug": profile["canonical_slug"],
             "provider_request_sha256": request_sha256,
@@ -138,7 +143,7 @@ def main() -> int:
             "application_commit": EXPECTED_APPLICATION_COMMIT,
             "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline",
             "tool_commit": base.EXPECTED_TOOL_COMMIT,
-            "reference_path": str(base.REFERENCE),
+            "reference_path": str(REFERENCE_PATH),
             "reference_url": REFERENCE_URL,
             "reference_sha256": reference_sha256,
             "reference_mime": remote_content_type,
