@@ -1,0 +1,16 @@
+{
+  "status": "generated-check-failed",
+  "classification": "output-contract-violation",
+  "reason": "OpenRouter completed the job, but returned 640x640 after the request specified 480x480.",
+  "supersedes_run_record_status": "generated-machine-checked",
+  "requested_count": 1,
+  "completed_count": 1,
+  "estimated_cost_usd": "0.0454",
+  "actual_cost_usd": 0.064848,
+  "safe_to_retry": false,
+  "visual_approval": "not-requested-because-machine-check-failed",
+  "contact_sheet": {
+    "path": "artifacts/qwen-pipeline/runs/seedance-video-study-004-20260830T202300Z/contact-sheet.png",
+    "sha256": "7b60bb5a78bf18769d54855f1408aa78b574a7ebbd1dea203e4f637ad2680d0e"
+  }
+}

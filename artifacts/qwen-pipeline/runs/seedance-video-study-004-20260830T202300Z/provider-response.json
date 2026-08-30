@@ -1,0 +1,22 @@
+{
+  "received_at": "2026-08-30T20:25:25Z",
+  "submission_response": {
+    "id": "FOyiJ1KMir2CxbnqY6mB",
+    "polling_url": "https://openrouter.ai/api/v1/videos/FOyiJ1KMir2CxbnqY6mB",
+    "status": "pending"
+  },
+  "submitted_at": "2026-08-30T20:23:06Z",
+  "terminal_response": {
+    "generation_id": "gen-vid-1788121386-Vu9iJUiylJGRBllGYdTJ",
+    "id": "FOyiJ1KMir2CxbnqY6mB",
+    "polling_url": "https://openrouter.ai/api/v1/videos/FOyiJ1KMir2CxbnqY6mB",
+    "status": "completed",
+    "unsigned_urls": [
+      "https://openrouter.ai/api/v1/videos/FOyiJ1KMir2CxbnqY6mB/content?index=0"
+    ],
+    "usage": {
+      "cost": 0.064848,
+      "is_byok": false
+    }
+  }
+}

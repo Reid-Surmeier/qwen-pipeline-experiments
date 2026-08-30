@@ -1,0 +1,20 @@
+{
+  "ffprobe": {
+    "format": {
+      "duration": "4.041667",
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "size": "1370064"
+    },
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "height": 640,
+        "r_frame_rate": "24/1",
+        "width": 640
+      }
+    ]
+  },
+  "output_sha256": "815ed87ad79dc66a3dc5992b5b456739bfca8816d8b631c0e0e9967a78b1703f"
+}

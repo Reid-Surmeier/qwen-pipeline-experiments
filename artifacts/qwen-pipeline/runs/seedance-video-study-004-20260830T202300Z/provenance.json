@@ -1,0 +1,12 @@
+{
+  "application_commit": "60471d089a3e4d94b876a367d6ec0b4f5a662e84",
+  "application_repository": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments",
+  "issue": "https://github.com/Reid-Surmeier/qwen-image-pipeline/issues/15",
+  "provider_request_sha256": "b9df9bff8fd682b9bbf873ec4165bd9a197599750d4124243374d2750a5076ad",
+  "reference_mime": "video/mp4",
+  "reference_path": "references/seedance-motion-reference-720.mp4",
+  "reference_sha256": "8a0931d2876579dbb17e2ab3680d379516a59d9ec116a99f6a476964770f97a7",
+  "reference_url": "https://reid-surmeier.github.io/qwen-pipeline-experiments/references/seedance-motion-reference-720.mp4",
+  "tool_commit": "3fcf67c2599953f5685b8c4b221f8e6fefdfc766",
+  "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline"
+}

@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "duration": {
+      "expected_seconds": 4,
+      "actual_seconds": 4.041667,
+      "pass": true
+    },
+    "dimensions": {
+      "expected": [480, 480],
+      "actual": [640, 640],
+      "pass": false
+    },
+    "audio": {
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    "machine_checks_pass": false,
+    "requires_human_style_review": true
+  },
+  "verifier": "seedance_icons.verify.verify_video",
+  "tool_commit": "3fcf67c2599953f5685b8c4b221f8e6fefdfc766"
+}

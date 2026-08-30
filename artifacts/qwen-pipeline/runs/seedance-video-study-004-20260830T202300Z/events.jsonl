@@ -1,0 +1,6 @@
+{"timestamp": "2026-08-30T20:23:06Z", "event": "paid_action_reserved", "provider": "openrouter", "model": "bytedance/seedance-2.0-mini", "requested_count": 1, "estimated_cost_usd": "0.0454", "provider_request_sha256": "b9df9bff8fd682b9bbf873ec4165bd9a197599750d4124243374d2750a5076ad", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:23:06Z", "event": "submission_started", "provider_request_sha256": "b9df9bff8fd682b9bbf873ec4165bd9a197599750d4124243374d2750a5076ad", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:23:10Z", "event": "submission_accepted", "job_id": "FOyiJ1KMir2CxbnqY6mB", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:23:10Z", "event": "job_status", "job_id": "FOyiJ1KMir2CxbnqY6mB", "provider_status": "pending", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:25:25Z", "event": "job_status", "job_id": "FOyiJ1KMir2CxbnqY6mB", "provider_status": "completed", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:25:28Z", "event": "run_completed", "job_id": "FOyiJ1KMir2CxbnqY6mB", "completed_count": 1, "output_sha256": "815ed87ad79dc66a3dc5992b5b456739bfca8816d8b631c0e0e9967a78b1703f", "actual_cost_usd": 0.064848, "safe_to_retry": false}

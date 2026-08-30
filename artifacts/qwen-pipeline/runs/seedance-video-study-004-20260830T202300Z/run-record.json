@@ -1,0 +1,17 @@
+{
+  "actual_cost_usd": 0.064848,
+  "completed_at": "2026-08-30T20:25:28Z",
+  "completed_count": 1,
+  "estimated_cost_usd": "0.0454",
+  "job_id": "FOyiJ1KMir2CxbnqY6mB",
+  "model": "bytedance/seedance-2.0-mini",
+  "output_path": "artifacts/qwen-pipeline/runs/seedance-video-study-004-20260830T202300Z/outputs/output.mp4",
+  "output_sha256": "815ed87ad79dc66a3dc5992b5b456739bfca8816d8b631c0e0e9967a78b1703f",
+  "provider": "openrouter",
+  "provider_request_sha256": "b9df9bff8fd682b9bbf873ec4165bd9a197599750d4124243374d2750a5076ad",
+  "reference_sha256": "8a0931d2876579dbb17e2ab3680d379516a59d9ec116a99f6a476964770f97a7",
+  "requested_count": 1,
+  "run_id": "seedance-video-study-004-20260830T202300Z",
+  "safe_to_retry": false,
+  "status": "generated-machine-checked"
+}

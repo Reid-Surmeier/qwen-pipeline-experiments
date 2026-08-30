@@ -1,0 +1,19 @@
+{
+  "acknowledged_cost_usd": "0.0454",
+  "actual_cost_usd": 0.064848,
+  "billing_status": "possibly_spent",
+  "canonical_slug": "bytedance/seedance-2.0-mini-20260811",
+  "estimated_cost_usd": "0.0454",
+  "model": "bytedance/seedance-2.0-mini",
+  "paid_submission_performed": true,
+  "provider_request_sha256": "b9df9bff8fd682b9bbf873ec4165bd9a197599750d4124243374d2750a5076ad",
+  "question": "Does Mini reference-to-video accept the same motion authority after deterministic upscaling from 480x480 to 720x720, above the provider's 407696-pixel minimum?",
+  "reference_sha256": "8a0931d2876579dbb17e2ab3680d379516a59d9ec116a99f6a476964770f97a7",
+  "requested_count": 1,
+  "safe_to_retry": false,
+  "single_changed_variable": "reference video dimensions: 480x480 (230400 pixels) to 720x720 (518400 pixels)",
+  "source_runs": [
+    "seedance-video-study-003-20260830T201900Z"
+  ],
+  "submission_status": "accepted"
+}

@@ -165,6 +165,7 @@ def main() -> int:
         raise RuntimeError("OPENROUTER_API_KEY was not injected")
     sys.path.insert(0, str(base.TOOL / "seedance" / "src"))
     from seedance_icons.openrouter import OpenRouterHTTPError, OpenRouterVideoClient
+    from seedance_icons.verify import verify_video
 
     plan = json.loads((RUN / "plan.json").read_text())
     plan.update(
@@ -250,6 +251,8 @@ def main() -> int:
 
         output = RUN / "outputs" / "output.mp4"
         output_sha256 = client.download(identifier, output)
+        verification = verify_video(output, 4, (480, 480), False)
+        base.write_json(RUN / "verification" / "report.json", verification)
         media = json.loads(
             subprocess.check_output(
                 [
@@ -265,12 +268,23 @@ def main() -> int:
                 text=True,
             )
         )
-        base.write_json(RUN / "checks.json", {"ffprobe": media, "output_sha256": output_sha256})
+        machine_checks_pass = verification["checks"]["machine_checks_pass"]
+        final_status = (
+            "generated-machine-checked" if machine_checks_pass else "generated-check-failed"
+        )
+        base.write_json(
+            RUN / "checks.json",
+            {
+                "ffprobe": media,
+                "output_sha256": output_sha256,
+                "machine_checks_pass": machine_checks_pass,
+            },
+        )
         base.write_json(
             RUN / "run-record.json",
             {
                 "run_id": RUN_ID,
-                "status": "generated-machine-checked",
+                "status": final_status,
                 "provider": "openrouter",
                 "model": base.MODEL,
                 "job_id": identifier,
@@ -286,18 +300,31 @@ def main() -> int:
                 "completed_at": base.now(),
             },
         )
-        plan.update(submission_status="accepted", actual_cost_usd=cost)
+        plan.update(
+            submission_status="accepted",
+            result_status=final_status,
+            actual_cost_usd=cost,
+        )
         base.write_json(RUN / "plan.json", plan)
         base.event(
-            "run_completed",
+            "run_completed" if machine_checks_pass else "run_check_failed",
             job_id=identifier,
             completed_count=1,
             output_sha256=output_sha256,
             actual_cost_usd=cost,
             safe_to_retry=False,
         )
-        print(json.dumps({"run": str(RUN), "job_id": identifier, "actual_cost_usd": cost}))
-        return 0
+        print(
+            json.dumps(
+                {
+                    "run": str(RUN),
+                    "job_id": identifier,
+                    "status": final_status,
+                    "actual_cost_usd": cost,
+                }
+            )
+        )
+        return 0 if machine_checks_pass else 1
     finally:
         client.close()
 
