@@ -46,6 +46,17 @@ if (request.mode === "seedance-video-study") {
 if (request.mode === "qwen-image-study") {
   if (!request.assembly?.required) failures.push("authoritative pixels require deterministic Assembly");
   if (!request.assembly?.region) failures.push("Assembly requires an explicit edit region");
+  const images = (request.reference_inputs ?? []).filter((item) => item.kind === "image");
+  const payloadImages = request.provider_payload?.input_references?.filter(
+    (item) => item.type === "image_url" && item.image_url?.url,
+  ) ?? [];
+  if (
+    images.length !== 1 ||
+    payloadImages.length !== 1 ||
+    images[0].url !== payloadImages[0].image_url.url
+  ) {
+    failures.push("provider payload requires the exact declared image reference");
+  }
 }
 
 if (failures.length) {

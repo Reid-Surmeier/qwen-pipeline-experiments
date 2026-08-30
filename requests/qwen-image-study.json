@@ -9,7 +9,8 @@
       "kind": "image",
       "role": "authoritative-screen",
       "path": "references/qwen-authoritative-screen.png",
-      "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92"
+      "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/qwen-authoritative-screen.png"
     }
   ],
   "assembly": {
@@ -23,7 +24,15 @@
     "resolution": "1K",
     "aspect_ratio": "1:1",
     "n": 1,
-    "seed": 1301
+    "seed": 1301,
+    "input_references": [
+      {
+        "type": "image_url",
+        "image_url": {
+          "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/qwen-authoritative-screen.png"
+        }
+      }
+    ]
   },
   "estimated_cost_usd": "0.04300"
 }
