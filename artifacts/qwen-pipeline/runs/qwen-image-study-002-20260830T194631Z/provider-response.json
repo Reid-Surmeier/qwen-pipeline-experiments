@@ -1,0 +1,29 @@
+{
+  "created": 1788119390,
+  "data": [
+    {
+      "bytes": 571351,
+      "media_type": "image/png",
+      "sha256": "40ad277d60542aaa95d0ec434629fb95dfd9be46a539c4a1ab6e93eccdd441f9"
+    }
+  ],
+  "usage": {
+    "completion_tokens": 4175,
+    "completion_tokens_details": {
+      "image_tokens": 4175,
+      "reasoning_tokens": 0
+    },
+    "cost": 0.043,
+    "cost_details": {
+      "upstream_inference_completions_cost": 0.04,
+      "upstream_inference_cost": 0.043,
+      "upstream_inference_prompt_cost": 0.003
+    },
+    "is_byok": false,
+    "prompt_tokens": 484,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "total_tokens": 4659
+  }
+}

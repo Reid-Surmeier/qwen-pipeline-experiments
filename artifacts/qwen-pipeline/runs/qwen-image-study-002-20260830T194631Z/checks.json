@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-08-30T19:49:51Z",
+  "checks": [
+    {
+      "command": "node scripts/preflight.mjs requests/known-bad-seedance.json",
+      "exit_code": 1,
+      "failures": [
+        "seedance requires exactly one hash-locked video reference",
+        "provider payload requires exactly one video_url"
+      ],
+      "name": "known-bad-seedance-preflight",
+      "result": "passed-by-refusal",
+      "safe_to_spend": false
+    },
+    {
+      "command": "node scripts/preflight.mjs requests/qwen-image-study.json",
+      "exit_code": 0,
+      "name": "qwen-live-request-preflight",
+      "request_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee",
+      "result": "passed",
+      "safe_to_spend": true
+    },
+    {
+      "command": "node --test tests/preflight.test.mjs",
+      "exit_code": 0,
+      "name": "focused-node-tests",
+      "result": "passed",
+      "tests_failed": 0,
+      "tests_passed": 1
+    },
+    {
+      "expected_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+      "name": "tool-lock",
+      "resolved_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+      "result": "passed"
+    },
+    {
+      "actual_sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "expected_sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+      "name": "reference-source-lock",
+      "result": "passed"
+    },
+    {
+      "canonical_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+      "matches_pinned_tool_builder": true,
+      "name": "frozen-provider-request",
+      "result": "passed"
+    },
+    {
+      "billing_state": "possibly_spent",
+      "name": "paid-action-reservation",
+      "persisted_before_submission": true,
+      "result": "passed",
+      "safe_to_retry": false
+    },
+    {
+      "name": "provider-attempt-count",
+      "result": "passed",
+      "retries": 0,
+      "submitted_attempts": 1
+    },
+    {
+      "baseline_dimensions": [
+        1024,
+        1024
+      ],
+      "changed_pixels_inside_region": 262131,
+      "changed_pixels_outside_region": 0,
+      "changed_pixels_total": 262131,
+      "donor_dimensions": [
+        1024,
+        1024
+      ],
+      "name": "assembly-fidelity",
+      "outside_region_max_channel_error": 0,
+      "region": {
+        "height": 512,
+        "width": 512,
+        "x": 256,
+        "y": 256
+      },
+      "result": "passed"
+    }
+  ]
+}

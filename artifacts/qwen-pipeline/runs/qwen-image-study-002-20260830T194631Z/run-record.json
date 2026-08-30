@@ -1,0 +1,55 @@
+{
+  "actual_cost_exposed": true,
+  "actual_cost_usd": 0.043,
+  "additive_attempt_id": "qwen-image-study-002",
+  "assembly": {
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/assembly-candidate.png",
+    "sha256": "798ce9c9c0c89f67bd8f6b9edf040d6b51765de12a19f6aa3bdc9c8bce2997bd"
+  },
+  "billing_state": "spent",
+  "checks_completed_at": "2026-08-30T19:49:51Z",
+  "checks_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/checks.json",
+  "completed_count": 1,
+  "created_at": "2026-08-30T19:48:42Z",
+  "donor": {
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/donor-raw.png",
+    "sha256": "40ad277d60542aaa95d0ec434629fb95dfd9be46a539c4a1ab6e93eccdd441f9"
+  },
+  "estimate_usd": "0.04300",
+  "events_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/events.jsonl",
+  "fidelity": {
+    "outside_region_changed_pixels": 0,
+    "outside_region_max_channel_error": 0,
+    "region": {
+      "height": 512,
+      "width": 512,
+      "x": 256,
+      "y": 256
+    },
+    "status": "passed"
+  },
+  "human_visual_approval": {
+    "approved_sha256": null,
+    "decision": "pending"
+  },
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "model": "qwen/qwen-image-3-pro",
+  "outcome": "machine-verified-candidate-pending-visual-approval",
+  "outcome_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/outcome.json",
+  "provenance_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/provenance.json",
+  "provider": "openrouter",
+  "provider_request_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/request.json",
+  "provider_request_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+  "provider_response_path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/provider-response.json",
+  "request_id": null,
+  "request_id_exposed": false,
+  "request_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee",
+  "requested_count": 1,
+  "run_directory_id": "qwen-image-study-002-20260830T194631Z",
+  "run_record_version": "qwen-procedure-qualification-v1",
+  "safe_to_retry": false,
+  "same_run_safe_to_retry": false,
+  "source_run_id": "qwen-image-study-001",
+  "submission_completed_at": "2026-08-30T19:49:50Z",
+  "submission_started_at": "2026-08-30T19:48:42Z"
+}

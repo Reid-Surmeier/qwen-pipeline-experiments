@@ -1,0 +1,16 @@
+{
+  "aspect_ratio": "1:1",
+  "input_references": [
+    {
+      "image_url": {
+        "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/qwen-authoritative-screen.png"
+      },
+      "type": "image_url"
+    }
+  ],
+  "model": "qwen/qwen-image-3-pro",
+  "n": 1,
+  "prompt": "[TASK]\nEdit only the center panel: replace the blue triangle and yellow circle with one simple red compass rose on the same slate background. Change nothing outside the center panel.\n\n[REFERENCE ROLE]\nThe supplied 1024 by 1024 procedure-proof screen is authoritative. It is evidence for deterministic Assembly, so the raw generation is only a donor for the center edit region.\n\n[PRESERVATION INVARIANTS]\n- Keep the full square canvas, outer rounded frame, header, green status dot, footer, all text, colors, spacing, and crop unchanged.\n- Do not redraw, restyle, sharpen, translate, or replace any pixel outside x=256..767 and y=256..767.\n- Keep the center panel's slate background and rounded panel composition compatible with the reference.\n\n[CANVAS AND LAYOUT]\n- Keep a 1:1 1024 by 1024 canvas.\n- The only requested change is inside the 512 by 512 center region beginning at x=256, y=256.\n\n[REGION EDITS]\n- REGION: center edit panel\n  CHANGE: Replace the existing triangle and circle motif with one crisp, symmetrical red compass rose with four main points and four smaller points, centered on the same slate field.\n  PRESERVE: panel footprint; slate background; simple flat UI illustration style\n\n[STYLE SYSTEM]\n- Crisp flat interface illustration with solid colors and clean geometric edges.\n- The compass rose uses red, pale rose, and a small warm center dot; no texture or photorealism.\n\n[ASSET RULES]\n- Exactly one compass rose\n- No words, labels, map, globe, or extra icons inside the edit region\n\n[NEGATIVE CONSTRAINTS]\n- No global redraw, modernization, new text, shadows, glow, gradients, 3D depth, or decorative background.\n- Do not alter the header, footer, status dot, outer frame, or crop.\n\n[QUALITY GATE]\n- The raw output contains one readable centered compass donor.\n- The assembled candidate is byte-for-byte identical to the authoritative reference outside the declared edit region.",
+  "resolution": "1K",
+  "seed": 1301
+}

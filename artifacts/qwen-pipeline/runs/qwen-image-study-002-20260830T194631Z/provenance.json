@@ -1,0 +1,73 @@
+{
+  "actual_cost_exposed": true,
+  "actual_cost_usd": 0.043,
+  "application_branch": "prototype/fresh-agent-proof",
+  "application_commit": "c55957dfebcde8974d63eabf182e912db29090ec",
+  "application_repository": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments",
+  "aspect_ratio": "1:1",
+  "assembly": {
+    "authoritative_outside_region": true,
+    "classification": "deterministic-assembly-candidate",
+    "height": 1024,
+    "outside_region_changed_pixels": 0,
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/assembly-candidate.png",
+    "region": {
+      "height": 512,
+      "width": 512,
+      "x": 256,
+      "y": 256
+    },
+    "sha256": "798ce9c9c0c89f67bd8f6b9edf040d6b51765de12a19f6aa3bdc9c8bce2997bd",
+    "width": 1024
+  },
+  "billing_state": "spent",
+  "brief": {
+    "path": "briefs/qwen-image-study.json",
+    "sha256": "65407de0a66e2f20d1b24645f88d5d39761548a89c5f1176a59d987f397861d7"
+  },
+  "completed_count": 1,
+  "donor": {
+    "authoritative": false,
+    "classification": "generative-donor",
+    "height": 1024,
+    "media_type": "image/png",
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/donor-raw.png",
+    "sha256": "40ad277d60542aaa95d0ec434629fb95dfd9be46a539c4a1ab6e93eccdd441f9",
+    "width": 1024
+  },
+  "estimate_usd": "0.04300",
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "model": "qwen/qwen-image-3-pro",
+  "provider": "openrouter",
+  "provider_request": {
+    "canonical_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+    "file_sha256": "1be56ffab15f36d1567657f26cf9d7d043556abd12f2e503d0e3d35a0743ce77",
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/request.json"
+  },
+  "recorded_at": "2026-08-30T19:49:51Z",
+  "reference": {
+    "classification": "source-reference",
+    "height": 1024,
+    "path": "references/qwen-authoritative-screen.png",
+    "role": "authoritative-screen",
+    "sha256": "e3371c8382e440ede4250ddefafb2e6a4305d693808d046f043b9c4823c95d92",
+    "width": 1024
+  },
+  "request_id": null,
+  "request_id_exposed": false,
+  "requested_count": 1,
+  "resolution": "1K",
+  "safe_to_retry": false,
+  "seed": 1301,
+  "source_request": {
+    "canonical_sha256": "1115739048230bb6f1f8679af204fee87591595de7f5efb9a92f29f1849afaee",
+    "file_sha256": "d64bc1b0b41d084ac3db4a88494686dc5a2947a164000e1c3fdc524aa342817a",
+    "path": "artifacts/qwen-pipeline/runs/qwen-image-study-002-20260830T194631Z/source-request.json"
+  },
+  "tool_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+  "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline",
+  "visual_approval": {
+    "decision": "pending",
+    "reason": "Machine fidelity checks passed; no subjective visual approval was performed."
+  }
+}

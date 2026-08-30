@@ -1,0 +1,11 @@
+{
+  "attempt_id": "qwen-image-study-002-20260830T194631Z",
+  "billing_state": "possibly_spent",
+  "created_at": "2026-08-30T19:48:42Z",
+  "model": "qwen/qwen-image-3-pro",
+  "provider": "openrouter",
+  "provider_request_sha256": "58af7d8dc096e0bb2b37ada4e49b35ffbbd98788a7292720b2c89f130de88f83",
+  "retry_path": null,
+  "safe_to_retry": false,
+  "status": "submitting-once"
+}

@@ -1,0 +1,23 @@
+{
+  "actual_cost_exposed": true,
+  "actual_cost_usd": 0.043,
+  "assembly_created": true,
+  "attempts_submitted": 1,
+  "billing_state": "spent",
+  "completed_count": 1,
+  "donor_created": true,
+  "estimated_cost_usd": "0.04300",
+  "fidelity_check_performed": true,
+  "next_action": "Owner may visually review the assembly candidate; machine verification is not visual approval.",
+  "outside_region_changed_pixels": 0,
+  "provider_status": "succeeded",
+  "recorded_at": "2026-08-30T19:49:51Z",
+  "request_id": null,
+  "request_id_exposed": false,
+  "requested_count": 1,
+  "retries_submitted": 0,
+  "safe_to_retry": false,
+  "same_run_safe_to_retry": false,
+  "status": "machine-verified-candidate-pending-visual-approval",
+  "visual_approval": "pending-not-performed"
+}
