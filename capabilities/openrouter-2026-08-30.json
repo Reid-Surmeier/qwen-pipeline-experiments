@@ -1,0 +1,28 @@
+{
+  "fetched_at": "2026-08-30T19:27:59Z",
+  "sources": [
+    "https://openrouter.ai/api/v1/images/models",
+    "https://openrouter.ai/api/v1/videos/models"
+  ],
+  "qwen_image": {
+    "id": "qwen/qwen-image-3-pro",
+    "input_modalities": ["text", "image"],
+    "output_modalities": ["image"],
+    "resolutions": ["1K", "2K"],
+    "aspect_ratios": ["1:1", "1:2", "1:4", "2:1", "2:3", "3:2", "3:4", "4:1", "4:3", "4:5", "5:4", "9:16", "16:9"],
+    "output_count": {"min": 1, "max": 6},
+    "input_references": {"min": 0, "max": 4},
+    "estimated_1k_output_usd": "0.04000",
+    "estimated_image_input_usd": "0.00300"
+  },
+  "seedance_video": {
+    "id": "bytedance/seedance-2.0-mini",
+    "canonical_slug": "bytedance/seedance-2.0-mini-20260811",
+    "resolutions": ["480p", "720p"],
+    "sizes": ["480x480", "480x640", "480x854", "640x480", "854x480", "1120x480", "720x720", "720x960", "720x1280", "720x1680", "960x720", "1280x720", "1680x720"],
+    "durations_seconds": [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    "supports_video_input": true,
+    "video_token_price_with_video_input_usd": "0.0000021",
+    "estimated_480_square_4s_with_video_input_usd": "0.0454"
+  }
+}

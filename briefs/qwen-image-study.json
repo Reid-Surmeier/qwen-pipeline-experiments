@@ -1,0 +1,37 @@
+{
+  "provider": "openrouter",
+  "model": "qwen/qwen-image-3-pro",
+  "objective": "Edit only the center panel: replace the blue triangle and yellow circle with one simple red compass rose on the same slate background. Change nothing outside the center panel.",
+  "reference_role": "The supplied 1024 by 1024 procedure-proof screen is authoritative. It is evidence for deterministic Assembly, so the raw generation is only a donor for the center edit region.",
+  "preservation_invariants": [
+    "Keep the full square canvas, outer rounded frame, header, green status dot, footer, all text, colors, spacing, and crop unchanged.",
+    "Do not redraw, restyle, sharpen, translate, or replace any pixel outside x=256..767 and y=256..767.",
+    "Keep the center panel's slate background and rounded panel composition compatible with the reference."
+  ],
+  "canvas": [
+    "Keep a 1:1 1024 by 1024 canvas.",
+    "The only requested change is inside the 512 by 512 center region beginning at x=256, y=256."
+  ],
+  "regions": [
+    {
+      "name": "center edit panel",
+      "change": "Replace the existing triangle and circle motif with one crisp, symmetrical red compass rose with four main points and four smaller points, centered on the same slate field.",
+      "preserve": ["panel footprint", "slate background", "simple flat UI illustration style"]
+    }
+  ],
+  "exact_copy": [],
+  "style": [
+    "Crisp flat interface illustration with solid colors and clean geometric edges.",
+    "The compass rose uses red, pale rose, and a small warm center dot; no texture or photorealism."
+  ],
+  "asset_rules": ["Exactly one compass rose", "No words, labels, map, globe, or extra icons inside the edit region"],
+  "negative_constraints": [
+    "No global redraw, modernization, new text, shadows, glow, gradients, 3D depth, or decorative background.",
+    "Do not alter the header, footer, status dot, outer frame, or crop."
+  ],
+  "quality_checks": [
+    "The raw output contains one readable centered compass donor.",
+    "The assembled candidate is byte-for-byte identical to the authoritative reference outside the declared edit region."
+  ],
+  "output": {"resolution": "1K", "aspect_ratio": "1:1", "count": 1, "seed": 1301}
+}
