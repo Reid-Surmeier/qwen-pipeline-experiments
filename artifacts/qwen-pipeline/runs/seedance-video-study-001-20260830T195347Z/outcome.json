@@ -1,0 +1,17 @@
+{
+  "actual_cost_exposed": false,
+  "actual_cost_usd": null,
+  "attempts_submitted": 1,
+  "billing_state": "possibly_spent",
+  "completed_count": 0,
+  "estimate_usd": "0.0454",
+  "job_id": null,
+  "machine_verification_complete": false,
+  "provider_status": "ambiguous-submission-failure",
+  "recorded_at": "2026-08-30T19:56:22Z",
+  "requested_count": 1,
+  "retries": 0,
+  "safe_to_retry": false,
+  "status": "incomplete-ambiguous-submission",
+  "visual_approval": "pending-owner-review"
+}

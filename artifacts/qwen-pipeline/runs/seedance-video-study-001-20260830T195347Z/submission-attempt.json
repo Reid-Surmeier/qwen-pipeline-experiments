@@ -1,0 +1,11 @@
+{
+  "attempt_id": "seedance-video-study-001-20260830T195347Z",
+  "billing_state": "possibly_spent",
+  "created_at": "2026-08-30T19:56:19Z",
+  "endpoint": "https://openrouter.ai/api/v1/videos",
+  "model": "bytedance/seedance-2.0-mini",
+  "provider": "openrouter",
+  "provider_request_sha256": "7c9373e8f671c9c3b83770fc6fe16b31079878c93618345f77663f248a3fd69e",
+  "safe_to_retry": false,
+  "status": "submitting"
+}

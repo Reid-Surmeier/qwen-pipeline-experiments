@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-08-30T19:56:19Z",
+  "declared_path": "references/seedance-motion-reference.mp4",
+  "declared_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+  "declared_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+  "exact_url_match": true,
+  "local_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+  "path_hash_match": true,
+  "provider_payload_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+  "provider_reference_type": "video_url",
+  "remote_http_status": 200,
+  "remote_matches_local": true,
+  "remote_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2"
+}

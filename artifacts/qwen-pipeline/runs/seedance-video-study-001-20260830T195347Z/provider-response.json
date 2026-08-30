@@ -1,0 +1,14 @@
+{
+  "error": {
+    "billing_state": "possibly_spent",
+    "classification": "ambiguous-submission-failure",
+    "error_type": "HTTPStatusError",
+    "message": "Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/videos'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+    "safe_to_retry": false,
+    "timestamp": "2026-08-30T19:56:22Z"
+  },
+  "received_at": "2026-08-30T19:56:22Z",
+  "submission_response": null,
+  "submitted_at": "2026-08-30T19:56:19Z",
+  "terminal_response": null
+}

@@ -1,0 +1,63 @@
+{
+  "actual_cost_exposed": false,
+  "actual_cost_usd": null,
+  "application_branch": "prototype/fresh-agent-proof",
+  "application_commit": "34175a20aa72252d87265fa9435c76ce323b821b",
+  "application_repository": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments",
+  "billing_state": "possibly_spent",
+  "completed_count": 0,
+  "duration_seconds": 4,
+  "endpoint": "https://openrouter.ai/api/v1/videos",
+  "estimate_usd": "0.0454",
+  "failure": {
+    "billing_state": "possibly_spent",
+    "classification": "ambiguous-submission-failure",
+    "error_type": "HTTPStatusError",
+    "message": "Client error '400 Bad Request' for url 'https://openrouter.ai/api/v1/videos'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400",
+    "safe_to_retry": false,
+    "timestamp": "2026-08-30T19:56:22Z"
+  },
+  "generate_audio": false,
+  "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/1",
+  "job_id": null,
+  "model": "bytedance/seedance-2.0-mini",
+  "output": null,
+  "provider": "openrouter",
+  "provider_request": {
+    "canonical_sha256": "7c9373e8f671c9c3b83770fc6fe16b31079878c93618345f77663f248a3fd69e",
+    "file_sha256": "592c6cec18bba86321b84f5583368d02721a73c4a3ffb0b5617362bc4aa7a27f",
+    "path": "artifacts/qwen-pipeline/runs/seedance-video-study-001-20260830T195347Z/request.json"
+  },
+  "recorded_at": "2026-08-30T19:56:22Z",
+  "reference_proof": {
+    "checked_at": "2026-08-30T19:56:19Z",
+    "declared_path": "references/seedance-motion-reference.mp4",
+    "declared_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+    "declared_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+    "exact_url_match": true,
+    "local_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+    "path_hash_match": true,
+    "provider_payload_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+    "provider_reference_type": "video_url",
+    "remote_http_status": 200,
+    "remote_matches_local": true,
+    "remote_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2"
+  },
+  "requested_count": 1,
+  "safe_to_retry": false,
+  "seed": 1301,
+  "size": "480x480",
+  "source_request": {
+    "canonical_sha256": "48fc30a62ceb881c767355e7b965812aab810e002c6abb8c6d7a0140721f2547",
+    "file_sha256": "9d9d55869feadfdb42fc109d58c359ae1e601d6fc776d348d3591c8465d7738a",
+    "path": "artifacts/qwen-pipeline/runs/seedance-video-study-001-20260830T195347Z/source-request.json"
+  },
+  "tool_client": "seedance/src/seedance_icons/openrouter.py:OpenRouterVideoClient",
+  "tool_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+  "tool_repository": "https://github.com/Reid-Surmeier/qwen-image-pipeline",
+  "visual_approval": {
+    "decision": "pending",
+    "performed": false,
+    "reason": "Machine evidence and a preview were produced; subjective approval is owner-only."
+  }
+}

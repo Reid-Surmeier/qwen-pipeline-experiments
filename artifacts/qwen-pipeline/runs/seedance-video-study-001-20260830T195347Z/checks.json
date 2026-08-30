@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-08-30T19:56:22Z",
+  "checks": [
+    {
+      "command": "node scripts/preflight.mjs requests/known-bad-seedance.json",
+      "exit_code": 1,
+      "failures": [
+        "seedance requires exactly one hash-locked video reference",
+        "provider payload requires exactly one video_url"
+      ],
+      "name": "known-bad-seedance-preflight",
+      "result": "passed-by-refusal",
+      "safe_to_spend": false
+    },
+    {
+      "command": "node scripts/preflight.mjs requests/seedance-video-study.json",
+      "exit_code": 0,
+      "name": "seedance-live-request-preflight",
+      "request_sha256": "48fc30a62ceb881c767355e7b965812aab810e002c6abb8c6d7a0140721f2547",
+      "result": "passed",
+      "safe_to_spend": true
+    },
+    {
+      "command": "node --test tests/preflight.test.mjs",
+      "name": "focused-node-tests",
+      "result": "passed",
+      "tests_failed": 0,
+      "tests_passed": 1
+    },
+    {
+      "command": "PYTHONPATH=/home/reidsurmeier/qwen-image-pipeline/seedance/src python3.12 -m pytest /home/reidsurmeier/qwen-image-pipeline/seedance/tests/test_openrouter.py -q",
+      "name": "pinned-openrouter-client-tests",
+      "result": "passed",
+      "tests_failed": 0,
+      "tests_passed": 3
+    },
+    {
+      "expected_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+      "name": "tool-lock",
+      "resolved_commit": "b2e4f594f6fb23e0dcc4e2a3395d492585a35c9b",
+      "result": "passed"
+    },
+    {
+      "checked_at": "2026-08-30T19:56:19Z",
+      "declared_path": "references/seedance-motion-reference.mp4",
+      "declared_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+      "declared_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+      "exact_url_match": true,
+      "local_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+      "name": "reference-and-payload-proof",
+      "path_hash_match": true,
+      "provider_payload_url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4",
+      "provider_reference_type": "video_url",
+      "remote_http_status": 200,
+      "remote_matches_local": true,
+      "remote_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+      "result": "passed"
+    },
+    {
+      "canonical_sha256": "7c9373e8f671c9c3b83770fc6fe16b31079878c93618345f77663f248a3fd69e",
+      "name": "frozen-provider-request",
+      "result": "passed"
+    },
+    {
+      "billing_state": "possibly_spent",
+      "name": "paid-action-reservation",
+      "persisted_before_submission": true,
+      "result": "passed",
+      "safe_to_retry": false
+    },
+    {
+      "name": "provider-attempt-count",
+      "result": "passed",
+      "retries": 0,
+      "submitted_attempts": 1
+    },
+    {
+      "name": "output-media",
+      "reason": "No completed output was available for ffprobe.",
+      "result": "not-run"
+    }
+  ]
+}

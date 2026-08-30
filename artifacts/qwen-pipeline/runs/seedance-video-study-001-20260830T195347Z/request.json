@@ -1,0 +1,16 @@
+{
+  "duration": 4,
+  "generate_audio": false,
+  "input_references": [
+    {
+      "type": "video_url",
+      "video_url": {
+        "url": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/1b1b246dadd374b5a4dba4c887c7acfb51191146/references/seedance-motion-reference.mp4"
+      }
+    }
+  ],
+  "model": "bytedance/seedance-2.0-mini",
+  "prompt": "Create one clean 4-second square motion study using the supplied video as the authoritative motion reference. Preserve the same centered dark rounded tile and cyan diamond identity on a fixed uniform green matte. Follow the reference's single clockwise turn, steady pace, locked camera, centered position, and return to the original pose. Keep the icon fully inside frame. Do not invent text, objects, particles, shadows, scenery, camera motion, or extra cycles.",
+  "seed": 1301,
+  "size": "480x480"
+}
