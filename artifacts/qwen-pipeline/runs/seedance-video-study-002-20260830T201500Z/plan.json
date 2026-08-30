@@ -1,0 +1,16 @@
+{
+  "acknowledged_cost_usd": "0.0454",
+  "billing_status": "possibly_spent",
+  "canonical_slug": "bytedance/seedance-2.0-mini-20260811",
+  "estimated_cost_usd": "0.0454",
+  "model": "bytedance/seedance-2.0-mini",
+  "paid_submission_performed": true,
+  "provider_request_sha256": "a1964d685d73534b682ead68e2b657493966127a8eed02b45640424c3be3e10a",
+  "question": "Did study-001 fail because its public reference declared application/octet-stream rather than video/mp4?",
+  "reference_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+  "requested_count": 1,
+  "safe_to_retry": false,
+  "single_changed_variable": "reference transport: HTTPS URL to data:video/mp4",
+  "source_run": "seedance-video-study-001-20260830T195347Z",
+  "submission_status": "submitting"
+}

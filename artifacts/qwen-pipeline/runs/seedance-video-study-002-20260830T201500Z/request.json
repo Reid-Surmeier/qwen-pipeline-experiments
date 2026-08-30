@@ -1,0 +1,16 @@
+{
+  "duration": 4,
+  "generate_audio": false,
+  "input_references": [
+    {
+      "type": "video_url",
+      "video_url": {
+        "url": "<data:video/mp4 sha256=7daac6dae6cb86b274f2ff1a375f6d59c19ba75533e840784540a8f76df85ae2 source_sha256=0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2 bytes=161964>"
+      }
+    }
+  ],
+  "model": "bytedance/seedance-2.0-mini",
+  "prompt": "Create one clean 4-second square motion study using the supplied video as the authoritative motion reference. Preserve the same centered dark rounded tile and cyan diamond identity on a fixed uniform green matte. Follow the reference's single clockwise turn, steady pace, locked camera, centered position, and return to the original pose. Keep the icon fully inside frame. Do not invent text, objects, particles, shadows, scenery, camera motion, or extra cycles.",
+  "seed": 1301,
+  "size": "480x480"
+}

@@ -1,0 +1,3 @@
+{"timestamp": "2026-08-30T20:16:38Z", "event": "paid_action_reserved", "provider": "openrouter", "model": "bytedance/seedance-2.0-mini", "requested_count": 1, "estimated_cost_usd": "0.0454", "provider_request_sha256": "a1964d685d73534b682ead68e2b657493966127a8eed02b45640424c3be3e10a", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:16:38Z", "event": "submission_started", "provider_request_sha256": "a1964d685d73534b682ead68e2b657493966127a8eed02b45640424c3be3e10a", "safe_to_retry": false}
+{"timestamp": "2026-08-30T20:16:38Z", "event": "submission_failed", "error_class": "OpenRouterHTTPError", "safe_to_retry": false}

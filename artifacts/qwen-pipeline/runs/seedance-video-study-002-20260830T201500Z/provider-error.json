@@ -1,0 +1,21 @@
+{
+  "billing_status": "possibly_spent",
+  "endpoint": "/videos",
+  "error_class": "OpenRouterHTTPError",
+  "method": "POST",
+  "operation": "submit",
+  "provider_error": {
+    "error": {
+      "code": 400,
+      "message": "Invalid reference URL: input_references[0].video_url.url: Only HTTPS URLs are allowed"
+    }
+  },
+  "recorded_at": "2026-08-30T20:16:38Z",
+  "response_body": "{\"error\":{\"message\":\"Invalid reference URL: input_references[0].video_url.url: Only HTTPS URLs are allowed\",\"code\":400}}",
+  "response_body_truncated": false,
+  "response_headers": {
+    "content-type": "application/json"
+  },
+  "safe_to_retry": false,
+  "status_code": 400
+}

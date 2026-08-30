@@ -1,0 +1,16 @@
+{
+  "actual_cost_usd": null,
+  "billing_status": "possibly_spent",
+  "completed_at": "2026-08-30T20:16:38Z",
+  "completed_count": 0,
+  "estimated_cost_usd": "0.0454",
+  "model": "bytedance/seedance-2.0-mini",
+  "provider": "openrouter",
+  "provider_request_sha256": "a1964d685d73534b682ead68e2b657493966127a8eed02b45640424c3be3e10a",
+  "reference_sha256": "0f4ecfc3771d5e3e43709d7aaec7be7fac08b29f13c95e91eebe9b77b57f9ba2",
+  "requested_count": 1,
+  "run_id": "seedance-video-study-002-20260830T201500Z",
+  "safe_to_retry": false,
+  "status": "failed-submission",
+  "submission_started_at": "2026-08-30T20:16:38Z"
+}
