@@ -16,6 +16,7 @@ import json
 import math
 from pathlib import Path
 
+import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
@@ -70,11 +71,11 @@ CAPITALS = [
     ("Asuncion", -25.26, -57.58, 4),     ("Santiago", -33.45, -70.67, 1, "L"),
     ("Buenos Aires", -34.60, -58.38, 1), ("Montevideo", -34.90, -56.16, 4, "D"),
     ("Reykjavik", 64.15, -21.94, 3),     ("Dublin", 53.35, -6.26, 4, "L"),
-    ("London", 51.51, -0.13, 1),         ("Paris", 48.86, 2.35, 1),
+    ("London", 51.51, -0.13, 1, "L"),         ("Paris", 48.86, 2.35, 1, "D"),
     ("Madrid", 40.42, -3.70, 1),         ("Lisbon", 38.72, -9.14, 3),
     ("Rome", 41.90, 12.50, 1),           ("Berlin", 52.52, 13.40, 1),
     ("Oslo", 59.91, 10.75, 3),           ("Stockholm", 59.33, 18.07, 3, "U"),
-    ("Helsinki", 60.17, 24.94, 3),       ("Warsaw", 52.23, 21.01, 2, "D"),
+    ("Helsinki", 60.17, 24.94, 3),       ("Warsaw", 52.23, 21.01, 2, "R"),
     ("Kyiv", 50.45, 30.52, 2),           ("Moscow", 55.76, 37.62, 1),
     ("Ankara", 39.93, 32.86, 2),         ("Athens", 37.98, 23.73, 4),
     ("Cairo", 30.04, 31.24, 1),          ("Algiers", 36.75, 3.06, 2),
@@ -105,10 +106,17 @@ def main() -> int:
     ap.add_argument("--base", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--grid-alpha", type=int, default=38, help="0-255, lower = lighter")
-    ap.add_argument("--font-size", type=int, default=15)
-    ap.add_argument("--pad", type=int, default=4, help="label clearance in px")
+    ap.add_argument("--scale", type=int, default=2,
+                    help="final NEAREST upscale; the source map is a 2x upscale of its own "
+                         "native grid, so 2 reproduces its chunky aliased pixels")
+    ap.add_argument("--font-size", type=int, default=14)
+    ap.add_argument("--pad", type=int, default=6, help="label clearance in px")
     ap.add_argument("--fix-alaska", action="store_true")
     ap.add_argument("--max-priority", type=int, default=4)
+    ap.add_argument("--max-clutter", type=float, default=0.30,
+                    help="last-resort veto: only reject a label when even its best "
+                         "slot is this buried in linework. Clutter is primarily a "
+                         "preference between slots, not a filter.")
     ap.add_argument("--no-labels", action="store_true")
     args = ap.parse_args()
 
@@ -141,15 +149,37 @@ def main() -> int:
     placed = []
     if not args.no_labels:
         draw = ImageDraw.Draw(base)
+        # The map's linework is hard-edged and aliased. Anti-aliased type reads
+        # as a different medium pasted on top, which is exactly what the first
+        # attempt looked like, so turn PIL's font smoothing off entirely.
+        draw.fontmode = "1"
         font = ImageFont.truetype(FONT, args.font_size)
-        dot = 3            # half-width of the black square marker
+        dot = 3            # radius of the capital marker
         taken: list[tuple[float, float, float, float]] = []
+
+        # Legibility, not just non-overlap. A name laid across a coastline or a
+        # cluster of small borders is unreadable even though nothing collides
+        # with it, which is what made the first attempt hard to read. Score each
+        # candidate slot by the dark linework underneath and take the clearest.
+        # Near-black across ALL channels, not luminance: the palette's saturated
+        # red (#FF0024) has a luminance of 80, so a luminance test reads Germany
+        # and Saudi Arabia as solid linework and vetoes Berlin and Riyadh.
+        clutter = (np.asarray(base).max(axis=2) < 90).astype(np.float32)
 
         def free(box):
             x0, y0, x1, y1 = box
             if x0 < 2 or y0 < 2 or x1 > W - 2 or y1 > H - 2:
                 return False
             return not any(x0 < b[2] and b[0] < x1 and y0 < b[3] and b[1] < y1 for b in taken)
+
+        def busy(box):
+            x0, y0, x1, y1 = (int(v) for v in box)
+            patch = clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)]
+            return float(patch.mean()) if patch.size else 1.0
+
+        def mark_busy(box):
+            x0, y0, x1, y1 = (int(v) for v in box)
+            clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)] = 1.0
 
         for entry in sorted(CAPITALS, key=lambda c: c[3]):
             name, lat, lon, prio = entry[:4]
@@ -174,24 +204,51 @@ def main() -> int:
                 order.insert(0, hint)
             candidates = [slots[k] for k in order] + [
                 (g, g), (-tw - g, g), (g, -th - g), (-tw - g, -th - g)]
-            for dx, dy in candidates:
-                pad = args.pad
-                box = (x + dx - pad, y + dy - pad, x + dx + tw + pad, y + dy + th + pad)
-                if free(box):
+            pad = args.pad
+
+            def boxfor(dx, dy):
+                return (x + dx - pad, y + dy - pad, x + dx + tw + pad, y + dy + th + pad)
+
+            chosen = None
+            # A hint is a decision already made, usually to keep a neighbour's
+            # space clear, so it wins outright whenever it is available. Left to
+            # scoring alone, London took the slot directly on top of Paris.
+            if hint:
+                hb = boxfor(*slots[hint])
+                if free(hb) and busy(hb) <= args.max_clutter:
+                    chosen = (busy(hb), *slots[hint], hb)
+            if chosen is None:
+                scored = [(busy(boxfor(dx, dy)) + rank * 0.02, dx, dy, boxfor(dx, dy))
+                          for rank, (dx, dy) in enumerate(candidates)
+                          if free(boxfor(dx, dy))]
+                # the rank penalty preserves the original's right-of-dot habit
+                chosen = min(scored) if scored else None
+            if chosen:
+                score, dx, dy, box = chosen
+                if score <= args.max_clutter:
                     taken.append(box)
                     taken.append((x - dot - 2, y - dot - 2, x + dot + 2, y + dot + 2))
-                    # original style: plain black text, no halo, small black square
-                    draw.rectangle([x - dot, y - dot, x + dot, y + dot], fill=(0, 0, 0))
+                    mark_busy(box)
+                    # The source marks a capital with a small filled dark-red
+                    # disc (#CC3333) and sets the name in plain black beside it,
+                    # with no halo and no outline.
+                    draw.ellipse([x - dot, y - dot, x + dot, y + dot],
+                                 fill=(204, 51, 51), outline=(90, 20, 20))
                     draw.text((x + dx, y + dy), name, font=font, fill=(0, 0, 0))
                     placed.append({"name": name, "lat": lat, "lon": lon,
-                                   "x": round(x, 1), "y": round(y, 1)})
-                    break
+                                   "x": round(x, 1), "y": round(y, 1),
+                                   "clutter": round(score, 4)})
+
+    if args.scale > 1:
+        # NEAREST only: any smoothing here would undo the aliased rendering.
+        base = base.resize((W * args.scale, H * args.scale), Image.NEAREST)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     base.save(args.out)
     skipped = [c[0] for c in CAPITALS
                if c[3] <= args.max_priority and c[0] not in {p["name"] for p in placed}]
-    report = {"output": str(args.out), "size": f"{W}x{H}",
+    report = {"output": str(args.out), "size": f"{base.width}x{base.height}",
+              "scale": args.scale, "font_size": args.font_size,
               "placed": len(placed), "skipped_no_room": skipped, "labels": placed}
     args.out.with_suffix(".labels.json").write_text(json.dumps(report, indent=2) + "\n")
     print(f"{args.out}  placed {len(placed)}  skipped {len(skipped)}: {', '.join(skipped) or 'none'}")

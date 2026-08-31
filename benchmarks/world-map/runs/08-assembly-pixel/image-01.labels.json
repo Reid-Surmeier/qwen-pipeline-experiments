@@ -1,0 +1,406 @@
+{
+  "output": "benchmarks/world-map/runs/08-assembly-pixel/image-01.png",
+  "size": "4480x2240",
+  "scale": 2,
+  "font_size": 15,
+  "placed": 49,
+  "skipped_no_room": [
+    "Stockholm",
+    "Warsaw",
+    "Kabul"
+  ],
+  "labels": [
+    {
+      "name": "Washington DC",
+      "lat": 38.9,
+      "lon": -77.04,
+      "x": 696.4,
+      "y": 485.8,
+      "clutter": 0.0229
+    },
+    {
+      "name": "Ottawa",
+      "lat": 45.42,
+      "lon": -75.7,
+      "x": 704.9,
+      "y": 436.7,
+      "clutter": 0.0716
+    },
+    {
+      "name": "Mexico City",
+      "lat": 19.43,
+      "lon": -99.13,
+      "x": 556.7,
+      "y": 619.3,
+      "clutter": 0.0488
+    },
+    {
+      "name": "Lima",
+      "lat": -12.05,
+      "lon": -77.04,
+      "x": 696.4,
+      "y": 818.4,
+      "clutter": 0.0197
+    },
+    {
+      "name": "Brasilia",
+      "lat": -15.79,
+      "lon": -47.88,
+      "x": 880.9,
+      "y": 842.3,
+      "clutter": 0.0245
+    },
+    {
+      "name": "Santiago",
+      "lat": -33.45,
+      "lon": -70.67,
+      "x": 736.7,
+      "y": 960.2,
+      "clutter": 0.0228
+    },
+    {
+      "name": "Buenos Aires",
+      "lat": -34.6,
+      "lon": -58.38,
+      "x": 814.5,
+      "y": 968.4,
+      "clutter": 0.0307
+    },
+    {
+      "name": "London",
+      "lat": 51.51,
+      "lon": -0.13,
+      "x": 1183.0,
+      "y": 387.7,
+      "clutter": 0.1007
+    },
+    {
+      "name": "Paris",
+      "lat": 48.86,
+      "lon": 2.35,
+      "x": 1198.7,
+      "y": 409.4,
+      "clutter": 0.0245
+    },
+    {
+      "name": "Madrid",
+      "lat": 40.42,
+      "lon": -3.7,
+      "x": 1160.4,
+      "y": 474.6,
+      "clutter": 0.0463
+    },
+    {
+      "name": "Rome",
+      "lat": 41.9,
+      "lon": 12.5,
+      "x": 1262.9,
+      "y": 463.6,
+      "clutter": 0.1417
+    },
+    {
+      "name": "Berlin",
+      "lat": 52.52,
+      "lon": 13.4,
+      "x": 1268.6,
+      "y": 379.2,
+      "clutter": 0.0346
+    },
+    {
+      "name": "Moscow",
+      "lat": 55.76,
+      "lon": 37.62,
+      "x": 1421.8,
+      "y": 351.3,
+      "clutter": 0.0
+    },
+    {
+      "name": "Cairo",
+      "lat": 30.04,
+      "lon": 31.24,
+      "x": 1381.4,
+      "y": 548.5,
+      "clutter": 0.0889
+    },
+    {
+      "name": "Pretoria",
+      "lat": -25.75,
+      "lon": 28.19,
+      "x": 1362.2,
+      "y": 907.5,
+      "clutter": 0.0518
+    },
+    {
+      "name": "Riyadh",
+      "lat": 24.71,
+      "lon": 46.68,
+      "x": 1479.1,
+      "y": 584.5,
+      "clutter": 0.0338
+    },
+    {
+      "name": "Tehran",
+      "lat": 35.69,
+      "lon": 51.39,
+      "x": 1508.9,
+      "y": 509.0,
+      "clutter": 0.0479
+    },
+    {
+      "name": "New Delhi",
+      "lat": 28.61,
+      "lon": 77.21,
+      "x": 1672.3,
+      "y": 558.3,
+      "clutter": 0.0428
+    },
+    {
+      "name": "Beijing",
+      "lat": 39.9,
+      "lon": 116.41,
+      "x": 1920.3,
+      "y": 478.5,
+      "clutter": 0.02
+    },
+    {
+      "name": "Tokyo",
+      "lat": 35.68,
+      "lon": 139.77,
+      "x": 2068.0,
+      "y": 509.1,
+      "clutter": 0.0358
+    },
+    {
+      "name": "Bangkok",
+      "lat": 13.76,
+      "lon": 100.5,
+      "x": 1819.6,
+      "y": 655.8,
+      "clutter": 0.0732
+    },
+    {
+      "name": "Jakarta",
+      "lat": -6.21,
+      "lon": 106.85,
+      "x": 1859.8,
+      "y": 781.5,
+      "clutter": 0.0582
+    },
+    {
+      "name": "Canberra",
+      "lat": -35.28,
+      "lon": 149.13,
+      "x": 2127.3,
+      "y": 973.2,
+      "clutter": 0.0203
+    },
+    {
+      "name": "Wellington",
+      "lat": -41.29,
+      "lon": 174.78,
+      "x": 12.1,
+      "y": 1017.0,
+      "clutter": 0.038
+    },
+    {
+      "name": "Bogota",
+      "lat": 4.71,
+      "lon": -74.07,
+      "x": 715.2,
+      "y": 713.0,
+      "clutter": 0.0442
+    },
+    {
+      "name": "Kyiv",
+      "lat": 50.45,
+      "lon": 30.52,
+      "x": 1376.9,
+      "y": 396.5,
+      "clutter": 0.0401
+    },
+    {
+      "name": "Ankara",
+      "lat": 39.93,
+      "lon": 32.86,
+      "x": 1391.7,
+      "y": 478.3,
+      "clutter": 0.0418
+    },
+    {
+      "name": "Algiers",
+      "lat": 36.75,
+      "lon": 3.06,
+      "x": 1203.2,
+      "y": 501.4,
+      "clutter": 0.0707
+    },
+    {
+      "name": "Addis Ababa",
+      "lat": 9.03,
+      "lon": 38.74,
+      "x": 1428.9,
+      "y": 685.8,
+      "clutter": 0.0553
+    },
+    {
+      "name": "Nairobi",
+      "lat": -1.29,
+      "lon": 36.82,
+      "x": 1416.8,
+      "y": 750.6,
+      "clutter": 0.0368
+    },
+    {
+      "name": "Abuja",
+      "lat": 9.06,
+      "lon": 7.49,
+      "x": 1231.2,
+      "y": 685.6,
+      "clutter": 0.0729
+    },
+    {
+      "name": "Islamabad",
+      "lat": 33.68,
+      "lon": 73.05,
+      "x": 1646.0,
+      "y": 523.3,
+      "clutter": 0.0469
+    },
+    {
+      "name": "Astana",
+      "lat": 51.17,
+      "lon": 71.43,
+      "x": 1635.7,
+      "y": 390.5,
+      "clutter": 0.0189
+    },
+    {
+      "name": "Seoul",
+      "lat": 37.57,
+      "lon": 126.98,
+      "x": 1987.1,
+      "y": 495.5,
+      "clutter": 0.0747
+    },
+    {
+      "name": "Manila",
+      "lat": 14.6,
+      "lon": 120.98,
+      "x": 1949.2,
+      "y": 650.4,
+      "clutter": 0.0385
+    },
+    {
+      "name": "Havana",
+      "lat": 23.11,
+      "lon": -82.37,
+      "x": 662.7,
+      "y": 595.2,
+      "clutter": 0.0629
+    },
+    {
+      "name": "Caracas",
+      "lat": 10.48,
+      "lon": -66.9,
+      "x": 760.6,
+      "y": 676.6,
+      "clutter": 0.0663
+    },
+    {
+      "name": "Quito",
+      "lat": -0.18,
+      "lon": -78.47,
+      "x": 687.4,
+      "y": 743.7,
+      "clutter": 0.1157
+    },
+    {
+      "name": "La Paz",
+      "lat": -16.5,
+      "lon": -68.15,
+      "x": 752.7,
+      "y": 846.9,
+      "clutter": 0.0482
+    },
+    {
+      "name": "Reykjavik",
+      "lat": 64.15,
+      "lon": -21.94,
+      "x": 1045.0,
+      "y": 272.6,
+      "clutter": 0.0431
+    },
+    {
+      "name": "Lisbon",
+      "lat": 38.72,
+      "lon": -9.14,
+      "x": 1126.0,
+      "y": 487.1,
+      "clutter": 0.0447
+    },
+    {
+      "name": "Oslo",
+      "lat": 59.91,
+      "lon": 10.75,
+      "x": 1251.8,
+      "y": 313.7,
+      "clutter": 0.0796
+    },
+    {
+      "name": "Helsinki",
+      "lat": 60.17,
+      "lon": 24.94,
+      "x": 1341.6,
+      "y": 311.2,
+      "clutter": 0.0528
+    },
+    {
+      "name": "Khartoum",
+      "lat": 15.5,
+      "lon": 32.56,
+      "x": 1389.8,
+      "y": 644.7,
+      "clutter": 0.0371
+    },
+    {
+      "name": "Kinshasa",
+      "lat": -4.44,
+      "lon": 15.27,
+      "x": 1280.4,
+      "y": 770.4,
+      "clutter": 0.0132
+    },
+    {
+      "name": "Dakar",
+      "lat": 14.72,
+      "lon": -17.47,
+      "x": 1073.3,
+      "y": 649.7,
+      "clutter": 0.0684
+    },
+    {
+      "name": "Baghdad",
+      "lat": 33.32,
+      "lon": 44.36,
+      "x": 1464.5,
+      "y": 525.8,
+      "clutter": 0.0722
+    },
+    {
+      "name": "Ulaanbaatar",
+      "lat": 47.89,
+      "lon": 106.91,
+      "x": 1860.2,
+      "y": 417.2,
+      "clutter": 0.02
+    },
+    {
+      "name": "Hanoi",
+      "lat": 21.03,
+      "lon": 105.85,
+      "x": 1853.5,
+      "y": 608.8,
+      "clutter": 0.105
+    }
+  ]
+}
