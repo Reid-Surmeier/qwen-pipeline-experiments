@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PROTOTYPE - Map viewer</title>
+<style>
+:root{--ink:#14171c;--muted:#6b7280;--line:#e3e6ea;--bg:#f6f7f9;--panel:#fff;--accent:#3b5bdb}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);overflow:hidden;
+  font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+button{font:inherit;cursor:pointer}
+.app{display:flex;flex-direction:column;height:100%}
+.top{display:flex;align-items:baseline;gap:14px;padding:10px 16px;background:var(--panel);
+  border-bottom:1px solid var(--line);flex:none}
+.top h1{font-size:15px;margin:0;letter-spacing:-.01em}
+.tag{background:#ffe8a3;color:#6b4c00;font-size:10px;font-weight:700;letter-spacing:.08em;
+  padding:2px 7px;border-radius:4px}
+.top .hint{color:var(--muted);font-size:12.5px;margin-left:auto}
+.stage{flex:1;position:relative;overflow:hidden}
+
+/* pan/zoom canvas shared by all variants */
+.canvas{position:absolute;inset:0;overflow:hidden;cursor:grab;background:#fff}
+.canvas.drag{cursor:grabbing}
+/* the pan/zoom image styles itself, not its host: scoping this to .canvas left
+   variant C's images in normal flow at natural size, which stretched the panes
+   to 2246px and pushed both maps off screen */
+.pz-img{position:absolute;top:0;left:0;transform-origin:0 0;
+  image-rendering:pixelated;user-select:none;-webkit-user-drag:none}
+.pane, .canvas{cursor:grab}
+.pane.drag, .canvas.drag{cursor:grabbing}
+.hot{position:absolute;border:1.5px solid transparent;border-radius:3px;
+  transform-origin:0 0;transition:background .12s,border-color .12s}
+.hot:hover{background:rgba(59,91,219,.16);border-color:var(--accent)}
+.hot span{position:absolute;left:0;top:-20px;background:var(--accent);color:#fff;
+  font-size:11px;padding:1px 6px;border-radius:3px;white-space:nowrap;opacity:0;
+  transition:opacity .12s;pointer-events:none}
+.hot:hover span{opacity:1}
+
+.zoomctl{position:absolute;right:12px;bottom:12px;display:flex;gap:6px;z-index:5}
+.zoomctl button{width:32px;height:32px;border:1px solid #cdd2da;background:#fff;border-radius:7px}
+.zoomctl button:hover{border-color:var(--accent);color:var(--accent)}
+
+/* A: atlas */
+.crumb{position:absolute;left:12px;top:12px;z-index:5;display:flex;gap:6px;align-items:center}
+.crumb button{border:1px solid #cdd2da;background:#fff;border-radius:7px;padding:5px 11px}
+.crumb button:hover{border-color:var(--accent);color:var(--accent)}
+.crumb .where{background:#fff;border:1px solid var(--line);border-radius:7px;padding:5px 11px;
+  font-weight:600}
+
+/* B: rail */
+.rail{position:absolute;left:0;top:0;bottom:0;width:186px;background:var(--panel);
+  border-right:1px solid var(--line);overflow-y:auto;padding:8px;z-index:4}
+.rail button{display:block;width:100%;border:1px solid transparent;background:none;
+  border-radius:8px;padding:6px;margin-bottom:4px;text-align:left}
+.rail button:hover{background:#eef1f8}
+.rail button.on{border-color:var(--accent);background:#eef1f8}
+.rail img{width:100%;display:block;border-radius:4px;border:1px solid var(--line);background:#fff}
+.rail .lbl{font-size:11.5px;margin-top:4px;color:var(--muted)}
+.rail button.on .lbl{color:var(--accent);font-weight:600}
+
+/* C: compare */
+.cmp{position:absolute;inset:0;display:flex;flex-direction:column}
+.cmpbar{display:flex;gap:8px;align-items:center;padding:8px 12px;background:var(--panel);
+  border-bottom:1px solid var(--line);flex:none;overflow-x:auto}
+.cmpbar button{border:1px solid #cdd2da;background:#fff;border-radius:20px;padding:4px 12px;
+  white-space:nowrap;font-size:12.5px}
+.cmpbar button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.panes{flex:1;min-height:0;display:flex;position:relative}
+.pane{flex:1;position:relative;overflow:hidden;border-right:1px solid var(--line);background:#fff}
+.pane:last-child{border-right:none}
+.pane .cap{position:absolute;left:8px;top:8px;z-index:3;background:rgba(255,255,255,.92);
+  border:1px solid var(--line);border-radius:5px;padding:2px 8px;font-size:11.5px;font-weight:600}
+
+/* switcher */
+.switch{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:50;
+  display:flex;align-items:center;gap:2px;background:#14171c;color:#fff;border-radius:999px;
+  padding:4px;box-shadow:0 6px 24px rgba(0,0,0,.28)}
+.switch button{background:none;border:none;color:#fff;width:30px;height:30px;border-radius:999px;
+  font-size:15px;line-height:1}
+.switch button:hover{background:rgba(255,255,255,.16)}
+.switch .name{padding:0 12px;font-size:12.5px;white-space:nowrap}
+.switch .name b{font-weight:700}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="top">
+    <h1>Map viewer</h1><span class="tag">PROTOTYPE</span>
+    <span class="hint" id="hint"></span>
+  </div>
+  <div class="stage" id="stage"></div>
+</div>
+<div class="switch" id="switch"></div>
+
+<script>
+/* ============================================================================
+   PROTOTYPE - three structurally different answers to one question:
+   how should eleven finished maps be browsed, zoomed, and drilled into?
+
+   Switch with the bar at the bottom, the arrow keys, or ?variant=A|B|C.
+
+     A  Atlas      the world map IS the navigation. Hover a region to see its
+                   footprint, click to open that sheet.
+     B  Light table  every sheet visible at once in a rail; the selected one
+                   fills a deep-zoom canvas.
+     C  Compare    source beside finished, zoom locked together, because the
+                   whole exercise has been about fidelity to the source.
+
+   Images are pinned to a commit, so this file works anywhere.
+   ========================================================================= */
+
+const DATA = {
+ "world": {
+  "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/world-map/runs/12-light-grid/image-01.png",
+  "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/world-map/reference/worldtimezone-2048w.png"
+ },
+ "sheets": [
+  {
+   "id": "usa",
+   "name": "United States",
+   "box": {
+    "x": 16.7,
+    "y": 35.73,
+    "w": 17.79,
+    "h": 16.89
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/usa.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/usa.png"
+  },
+  {
+   "id": "canada",
+   "name": "Canada",
+   "box": {
+    "x": 12.74,
+    "y": 13.52,
+    "w": 25.42,
+    "h": 28.47
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/canada.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/canada.png"
+  },
+  {
+   "id": "caribbean",
+   "name": "Caribbean & Central America",
+   "box": {
+    "x": 26.02,
+    "y": 50.22,
+    "w": 10.45,
+    "h": 13.28
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/caribbean.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/caribbean.png"
+  },
+  {
+   "id": "south-america",
+   "name": "South America",
+   "box": {
+    "x": 29.69,
+    "y": 58.99,
+    "w": 13.56,
+    "h": 42.44
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/south-america.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/south-america.png"
+  },
+  {
+   "id": "europe",
+   "name": "Europe",
+   "box": {
+    "x": 45.79,
+    "y": 16.77,
+    "w": 19.77,
+    "h": 29.75
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/europe.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/europe.png"
+  },
+  {
+   "id": "africa",
+   "name": "Africa",
+   "box": {
+    "x": 47.2,
+    "y": 43.96,
+    "w": 20.33,
+    "h": 43.39
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/africa.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/africa.png"
+  },
+  {
+   "id": "middle-east",
+   "name": "Middle East",
+   "box": {
+    "x": 59.91,
+    "y": 39.28,
+    "w": 15.53,
+    "h": 20.27
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/middle-east.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/middle-east.png"
+  },
+  {
+   "id": "russia",
+   "name": "Russia",
+   "box": {
+    "x": 60.76,
+    "y": 10.04,
+    "w": 39.1,
+    "h": 31.95
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/russia.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/russia.png"
+  },
+  {
+   "id": "asia",
+   "name": "Asia",
+   "box": {
+    "x": 69.79,
+    "y": 31.96,
+    "w": 25.42,
+    "h": 41.09
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/asia.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/asia.png"
+  },
+  {
+   "id": "australia",
+   "name": "Australia",
+   "box": {
+    "x": 83.92,
+    "y": 70.79,
+    "w": 15.94,
+    "h": 23.93
+   },
+   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/final/australia.png",
+   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/regional/reference/australia.png"
+  }
+ ]
+};
+
+// ---- shared pan/zoom -------------------------------------------------------
+function panZoom(host, src, opts = {}) {
+  const img = document.createElement('img');
+  img.className = 'pz-img';
+  img.src = src; img.draggable = false;
+  host.appendChild(img);
+  const layer = opts.overlay || null;
+  if (layer) host.appendChild(layer);
+
+  const view = { s: 1, x: 0, y: 0, fit: 1 };
+  let natural = null;
+
+  function apply() {
+    const t = `translate(${view.x}px,${view.y}px) scale(${view.s})`;
+    img.style.transform = t;
+    if (layer) layer.style.transform = t;
+    if (layer) { layer.style.width = natural.w + 'px'; layer.style.height = natural.h + 'px'; }
+    opts.onChange && opts.onChange(view);
+  }
+  function fit() {
+    if (!natural) return;
+    const r = host.getBoundingClientRect();
+    const pad = opts.pad ?? 24;
+    view.fit = Math.min((r.width - pad) / natural.w, (r.height - pad) / natural.h);
+    view.s = view.fit;
+    view.x = (r.width - natural.w * view.s) / 2;
+    view.y = (r.height - natural.h * view.s) / 2;
+    apply();
+  }
+  img.onload = () => { natural = { w: img.naturalWidth, h: img.naturalHeight }; fit(); };
+
+  function zoomAt(cx, cy, factor) {
+    const r = host.getBoundingClientRect();
+    const px = cx - r.left, py = cy - r.top;
+    const ns = Math.max(view.fit * 0.5, Math.min(view.s * factor, view.fit * 40));
+    view.x = px - (px - view.x) * (ns / view.s);
+    view.y = py - (py - view.y) * (ns / view.s);
+    view.s = ns; apply();
+  }
+  host.addEventListener('wheel', e => {
+    e.preventDefault(); zoomAt(e.clientX, e.clientY, e.deltaY < 0 ? 1.16 : 1 / 1.16);
+  }, { passive: false });
+
+  let dragging = false, lx = 0, ly = 0;
+  host.addEventListener('pointerdown', e => {
+    if (e.target.closest('.hot')) return;
+    dragging = true; lx = e.clientX; ly = e.clientY;
+    host.classList.add('drag'); host.setPointerCapture(e.pointerId);
+  });
+  host.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    view.x += e.clientX - lx; view.y += e.clientY - ly;
+    lx = e.clientX; ly = e.clientY; apply();
+  });
+  host.addEventListener('pointerup', e => {
+    dragging = false; host.classList.remove('drag');
+  });
+  window.addEventListener('resize', fit);
+
+  return {
+    fit,
+    zoom: f => { const r = host.getBoundingClientRect();
+      zoomAt(r.left + r.width / 2, r.top + r.height / 2, f); },
+    // frame a box given in percentages of the image
+    frame(box, margin = 1.25) {
+      if (!natural) return;
+      const r = host.getBoundingClientRect();
+      const bw = natural.w * box.w / 100, bh = natural.h * box.h / 100;
+      view.s = Math.min(r.width / (bw * margin), r.height / (bh * margin));
+      view.x = r.width / 2 - (natural.w * (box.x + box.w / 2) / 100) * view.s;
+      view.y = r.height / 2 - (natural.h * (box.y + box.h / 2) / 100) * view.s;
+      apply();
+    },
+    get view() { return view; },
+    get natural() { return natural; },
+    // Where the viewport centre sits in the image, 0..1, and how far the user
+    // has zoomed past fit. Both panes are the same map at different pixel
+    // sizes, so copying raw transforms puts them out of step -- the source is
+    // 2048 wide and the finished sheet 4480. Share these instead.
+    centre() {
+      if (!natural) return null;
+      const r = host.getBoundingClientRect();
+      return { fx: (r.width / 2 - view.x) / (view.s * natural.w),
+               fy: (r.height / 2 - view.y) / (view.s * natural.h),
+               rel: view.s / view.fit };
+    },
+    lookAt(c) {
+      if (!natural || !c) return;
+      const r = host.getBoundingClientRect();
+      view.s = view.fit * c.rel;
+      view.x = r.width / 2 - c.fx * natural.w * view.s;
+      view.y = r.height / 2 - c.fy * natural.h * view.s;
+      apply();
+    },
+    set(v) { Object.assign(view, v); apply(); }
+  };
+}
+
+function zoomButtons(host, pz) {
+  const box = document.createElement('div');
+  box.className = 'zoomctl';
+  box.innerHTML = `<button title="Zoom out">&minus;</button>
+                   <button title="Fit">&#9633;</button>
+                   <button title="Zoom in">+</button>`;
+  const [out, fit, inn] = box.querySelectorAll('button');
+  out.onclick = () => pz.zoom(1 / 1.5); inn.onclick = () => pz.zoom(1.5); fit.onclick = () => pz.fit();
+  host.appendChild(box);
+}
+
+// ---- A: atlas --------------------------------------------------------------
+function variantA(stage) {
+  setHint('Hover a region on the world map, click to open its sheet. Scroll to zoom, drag to pan.');
+  let open = null;
+
+  function world() {
+    stage.innerHTML = '';
+    const canvas = el('div', 'canvas');
+    stage.appendChild(canvas);
+    const overlay = el('div');
+    overlay.style.cssText = 'position:absolute;top:0;left:0;transform-origin:0 0;';
+    const pz = panZoom(canvas, DATA.world.final, { overlay });
+    for (const s of DATA.sheets) {
+      const hot = el('div', 'hot');
+      hot.style.cssText += `left:${s.box.x}%;top:${s.box.y}%;width:${s.box.w}%;height:${s.box.h}%;`;
+      hot.innerHTML = `<span>${s.name}</span>`;
+      hot.onclick = () => sheet(s);
+      overlay.appendChild(hot);
+    }
+    zoomButtons(canvas, pz);
+    const crumb = el('div', 'crumb');
+    crumb.innerHTML = `<div class="where">World</div>`;
+    stage.appendChild(crumb);
+  }
+
+  function sheet(s) {
+    stage.innerHTML = '';
+    const canvas = el('div', 'canvas');
+    stage.appendChild(canvas);
+    const pz = panZoom(canvas, s.final);
+    zoomButtons(canvas, pz);
+    const crumb = el('div', 'crumb');
+    const back = el('button'); back.textContent = '← World';
+    back.onclick = world;
+    const where = el('div', 'where'); where.textContent = s.name;
+    crumb.appendChild(back); crumb.appendChild(where);
+    stage.appendChild(crumb);
+  }
+  world();
+}
+
+// ---- B: light table --------------------------------------------------------
+function variantB(stage) {
+  setHint('Every sheet at once. Pick one to fill the canvas; scroll to zoom right into the pixels.');
+  stage.innerHTML = '';
+  const rail = el('div', 'rail');
+  const canvasWrap = el('div');
+  canvasWrap.style.cssText = 'position:absolute;left:186px;right:0;top:0;bottom:0;';
+  const canvas = el('div', 'canvas');
+  canvasWrap.appendChild(canvas);
+  stage.appendChild(rail); stage.appendChild(canvasWrap);
+
+  const items = [{ id: 'world', name: 'World', final: DATA.world.final }, ...DATA.sheets];
+  let pz = null, current = null;
+
+  function show(item, btn) {
+    canvas.innerHTML = '';
+    pz = panZoom(canvas, item.final);
+    zoomButtons(canvas, pz);
+    rail.querySelectorAll('button').forEach(b => b.classList.remove('on'));
+    btn.classList.add('on');
+    current = item;
+  }
+  items.forEach((item, i) => {
+    const b = el('button');
+    b.innerHTML = `<img src="${item.final}" alt=""><div class="lbl">${item.name}</div>`;
+    b.onclick = () => show(item, b);
+    rail.appendChild(b);
+    if (i === 0) setTimeout(() => show(item, b), 0);
+  });
+}
+
+// ---- C: compare ------------------------------------------------------------
+function variantC(stage) {
+  setHint('Source beside finished, zoom and pan locked together. Everything here was judged this way.');
+  stage.innerHTML = '';
+  const wrap = el('div', 'cmp');
+  const bar = el('div', 'cmpbar');
+  const panes = el('div', 'panes');
+  wrap.appendChild(bar); wrap.appendChild(panes);
+  stage.appendChild(wrap);
+
+  const items = [{ id: 'world', name: 'World', ...DATA.world }, ...DATA.sheets];
+  let a = null, b = null, syncing = false;
+
+  function show(item, btn) {
+    panes.innerHTML = '';
+    const left = el('div', 'pane'), right = el('div', 'pane');
+    left.innerHTML = '<div class="cap">Publisher source</div>';
+    right.innerHTML = '<div class="cap">Recoloured</div>';
+    panes.appendChild(left); panes.appendChild(right);
+    // The first apply() fires while the second pane is still being constructed,
+    // so the partner can legitimately be null here. Guarding is what makes the
+    // panes render at all -- without it the throw left both blank.
+    // The first apply() fires while the second pane is still being built, so
+    // the partner can legitimately be null here.
+    const mirror = which => () => {
+      const self = which === 'a' ? a : b, other = which === 'a' ? b : a;
+      if (syncing || !other || !self) return;
+      syncing = true; other.lookAt(self.centre()); syncing = false;
+    };
+    a = panZoom(left, item.source, { onChange: mirror('a') });
+    b = panZoom(right, item.final, { onChange: mirror('b') });
+    zoomButtons(right, b);
+    bar.querySelectorAll('button').forEach(x => x.classList.remove('on'));
+    btn.classList.add('on');
+  }
+  items.forEach((item, i) => {
+    const btn = el('button'); btn.textContent = item.name;
+    btn.onclick = () => show(item, btn);
+    bar.appendChild(btn);
+    if (i === 0) setTimeout(() => show(item, btn), 0);
+  });
+}
+
+// ---- shell -----------------------------------------------------------------
+function el(tag, cls) { const n = document.createElement(tag); if (cls) n.className = cls; return n; }
+function setHint(t) { document.getElementById('hint').textContent = t; }
+
+const VARIANTS = [
+  ['A', 'Atlas - the world map is the menu', variantA],
+  ['B', 'Light table - rail plus deep zoom', variantB],
+  ['C', 'Compare - source beside finished', variantC],
+];
+
+function current() {
+  const k = (new URLSearchParams(location.search).get('variant') || 'A').toUpperCase();
+  return VARIANTS.findIndex(v => v[0] === k) < 0 ? 0 : VARIANTS.findIndex(v => v[0] === k);
+}
+function go(i) {
+  const v = VARIANTS[(i + VARIANTS.length) % VARIANTS.length];
+  const u = new URL(location); u.searchParams.set('variant', v[0]);
+  history.replaceState({}, '', u);
+  render();
+}
+function render() {
+  const i = current(), [key, name, fn] = VARIANTS[i];
+  fn(document.getElementById('stage'));
+  document.getElementById('switch').innerHTML =
+    `<button id="prev">&#8249;</button><div class="name"><b>${key}</b> &nbsp;${name}</div><button id="next">&#8250;</button>`;
+  document.getElementById('prev').onclick = () => go(i - 1);
+  document.getElementById('next').onclick = () => go(i + 1);
+}
+addEventListener('keydown', e => {
+  if (/^(INPUT|TEXTAREA)$/.test(e.target.tagName) || e.target.isContentEditable) return;
+  if (e.key === 'ArrowLeft') go(current() - 1);
+  if (e.key === 'ArrowRight') go(current() + 1);
+});
+render();
+</script>
+</body>
+</html>
