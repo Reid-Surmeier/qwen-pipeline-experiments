@@ -1,0 +1,52 @@
+{
+  "label": "muse-image size2048x1024",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T17:18:42.045442+00:00",
+  "seconds": 42.1,
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2048x1024"
+  },
+  "prompt_file": "benchmarks/world-map/prompts/recolour-v1.txt",
+  "prompt_sha256": "694c0ecd6b3363ff6add45bd37626a6b4b4b176ac0b46003050576d7d0aa1c37",
+  "references": [
+    {
+      "file": "benchmarks/world-map/reference/worldtimezone-2048w.png",
+      "bytes": 1378397,
+      "sha256": "fa434033e9d0730e495466954ae3397183c2b25512557c8a6316a5f3efd865e8",
+      "dimensions": "2048x1043"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 475,
+    "completion_tokens": 5219,
+    "total_tokens": 5694,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 5219
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "2240x1120",
+      "aspect": 2.0,
+      "bytes": 336256,
+      "sha256": "6bb0124ab8a87f4fe7703b509c54773558e6df3f3fa342eaec393958fd3b4d4f"
+    }
+  ],
+  "failure": null
+}

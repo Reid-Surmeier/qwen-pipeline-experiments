@@ -1,0 +1,125 @@
+[
+  {
+    "case": "bare",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background"
+    },
+    "seconds": 6.4,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1600x1600"
+    ],
+    "sha16": [
+      "b69d96d60279c949"
+    ]
+  },
+  {
+    "case": "ar_16_9_1K",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "resolution": "1K",
+      "aspect_ratio": "16:9"
+    },
+    "seconds": 5.8,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1920x1280"
+    ],
+    "sha16": [
+      "e8de7323d1cb87be"
+    ]
+  },
+  {
+    "case": "ar_1_1_1K",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "resolution": "1K",
+      "aspect_ratio": "1:1"
+    },
+    "seconds": 6.5,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1600x1600"
+    ],
+    "sha16": [
+      "bec1aaf86c5d3320"
+    ]
+  },
+  {
+    "case": "ar_2_1_2K",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "resolution": "2K",
+      "aspect_ratio": "2:1"
+    },
+    "seconds": 5.9,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1920x1280"
+    ],
+    "sha16": [
+      "73d21a5a4f685623"
+    ]
+  },
+  {
+    "case": "n_2",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "n": 2
+    },
+    "seconds": 6.7,
+    "error": null,
+    "cost": 0.02,
+    "n_returned": 2,
+    "dims": [
+      "1600x1600",
+      "1600x1600"
+    ],
+    "sha16": [
+      "e7a03c2689d7a56c",
+      "e953b3efd4cc8130"
+    ]
+  },
+  {
+    "case": "seed_A",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "seed": 12345
+    },
+    "seconds": 7.3,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1600x1600"
+    ],
+    "sha16": [
+      "2360223f7aad1096"
+    ]
+  },
+  {
+    "case": "seed_A_again",
+    "sent": {
+      "prompt": "a single flat red square centered on a plain white background",
+      "seed": 12345
+    },
+    "seconds": 8.6,
+    "error": null,
+    "cost": 0.01,
+    "n_returned": 1,
+    "dims": [
+      "1600x1600"
+    ],
+    "sha16": [
+      "a9eea3a257dadebf"
+    ]
+  }
+]

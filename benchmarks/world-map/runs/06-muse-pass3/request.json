@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Add capital city labels to the attached world map. Change NOTHING else \u2014 do not alter any border, coastline, or country fill colour, and do not change the framing.\n\nFor each country where there is clear room, place a small solid black dot at the true geographic location of its capital city, and write the capital's name beside the dot in small crisp black sans-serif text with a thin white outline so it stays readable over the coloured fill.\n\nRules:\n- Accuracy over coverage. If a label would overlap another label, cross an international border, or fall in the wrong country, leave that capital off entirely.\n- Every dot must sit inside its own country's territory.\n- Prefer the large and well-known capitals: Washington DC, Ottawa, Mexico City, Brasilia, Buenos Aires, Lima, Bogota, Santiago, London, Paris, Madrid, Rome, Berlin, Warsaw, Kyiv, Moscow, Ankara, Cairo, Riyadh, Tehran, Nairobi, Addis Ababa, Abuja, Pretoria, Algiers, New Delhi, Islamabad, Beijing, Tokyo, Seoul, Bangkok, Hanoi, Jakarta, Manila, Canberra, Wellington, Astana, Ottawa.\n- Keep the text small enough that the map stays readable. Do not add a legend, a title, or any other text.\n\nKeep the flat pixel-art rendering: solid fills, crisp 1-pixel black borders, white oceans, no gradients, no texture.",
+  "n": 1,
+  "size": "2048x1024",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

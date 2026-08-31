@@ -1,0 +1,54 @@
+{
+  "label": "muse pass3 capitals",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T17:30:27.529766+00:00",
+  "seconds": 40.8,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2048x1024"
+  },
+  "prompt_file": "benchmarks/world-map/prompts/pass3-capitals.txt",
+  "prompt_sha256": "c6fab74605b01f83eb0fbe58cdf111e613947487bff708f951b0da59957960f5",
+  "references": [
+    {
+      "file": "benchmarks/world-map/runs/05-muse-pass2/image-01.png",
+      "bytes": 1061910,
+      "sha256": "350b191f577537ad525d8faf885dba7641f336f68bc64910a7b5cd915388be1a",
+      "dimensions": "2240x1120"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 4340,
+    "total_tokens": 4662,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4340
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "2240x1120",
+      "aspect": 2.0,
+      "bytes": 349022,
+      "sha256": "adcd353b3cfe0c66c1e327e49c9c584ed219c9562c451a0f0f94b7f3e542164d"
+    }
+  ],
+  "failure": null
+}

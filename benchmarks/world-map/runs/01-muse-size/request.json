@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Edit the attached world map image. This is a precise cartographic edit, not a reinterpretation.\n\nKEEP EXACTLY AS-IS\n- The same equirectangular projection, the same framing, the same crop.\n- Every coastline and every international border in its exact current position and shape.\n- The flat, hard-edged pixel-art rendering: solid fills, crisp 1-pixel black borders, no gradients, no shading, no paper texture, no noise, no drop shadows, no 3D.\n- The white ocean background.\n\nREMOVE COMPLETELY\n- Every time-of-day label and its black rectangular box (for example \"08:50AM\", \"12:50AM\", \"07:35PM\").\n- Every orange \"DST\" badge.\n- The vertical time-zone grid lines and the pale blue graticule.\n- The text \"International Date Line\", \"Greenwich Time\", \"+1 day\", \"-1 day\".\n- The date box \"2026-03-05\" and the \"YYYY-MM-DD\" headers.\n- The \"Map outline WorldTimeZone.com\" box and the grey chrome, scrollbar and arrow button at the edges.\n- All existing place-name labels.\n\nRECOLOUR\nFill every country with one flat solid colour so that no two countries sharing a border have the same colour. Use only these nine colours:\n#FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.\nEach country is one uniform colour edge to edge. Do not colour by time zone. Do not split a country into vertical bands.\n\nCAPITAL CITIES\nPlace a small black dot at the true geographic position of each country's capital city, with the capital's name in small crisp black sans-serif text beside the dot. Label only capitals where there is room for the text without overlapping another label or crossing a border; skip a capital rather than crowd it or place it wrongly. Every label must sit inside or immediately beside its own country.\n\nGeographic accuracy is the priority. Do not invent, move, merge or delete any country.",
+  "n": 1,
+  "size": "2048x1024",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

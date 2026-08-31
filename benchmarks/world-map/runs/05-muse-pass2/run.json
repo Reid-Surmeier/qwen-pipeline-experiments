@@ -1,0 +1,54 @@
+{
+  "label": "muse pass2 per-country recolour",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T17:29:31.187601+00:00",
+  "seconds": 18.1,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2048x1024"
+  },
+  "prompt_file": "benchmarks/world-map/prompts/pass2-per-country.txt",
+  "prompt_sha256": "18c74e712e304236597dcb20e9ea2e85f317c35bbb9b626b8bc470d4a1f90707",
+  "references": [
+    {
+      "file": "benchmarks/world-map/runs/01-muse-size/image-01.png",
+      "bytes": 1193444,
+      "sha256": "7d92b1058257b3c62b9cedc61cade630db4e5279eb604bba722ff3663e4c12c9",
+      "dimensions": "2240x1120"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 1816,
+    "total_tokens": 2146,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 1816
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "2240x1120",
+      "aspect": 2.0,
+      "bytes": 307324,
+      "sha256": "8963d762e5d18790d843fae3dcdb3faba7902582385722f55760f3a95bb76649"
+    }
+  ],
+  "failure": null
+}

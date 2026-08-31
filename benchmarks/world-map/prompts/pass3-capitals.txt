@@ -1,0 +1,11 @@
+Add capital city labels to the attached world map. Change NOTHING else — do not alter any border, coastline, or country fill colour, and do not change the framing.
+
+For each country where there is clear room, place a small solid black dot at the true geographic location of its capital city, and write the capital's name beside the dot in small crisp black sans-serif text with a thin white outline so it stays readable over the coloured fill.
+
+Rules:
+- Accuracy over coverage. If a label would overlap another label, cross an international border, or fall in the wrong country, leave that capital off entirely.
+- Every dot must sit inside its own country's territory.
+- Prefer the large and well-known capitals: Washington DC, Ottawa, Mexico City, Brasilia, Buenos Aires, Lima, Bogota, Santiago, London, Paris, Madrid, Rome, Berlin, Warsaw, Kyiv, Moscow, Ankara, Cairo, Riyadh, Tehran, Nairobi, Addis Ababa, Abuja, Pretoria, Algiers, New Delhi, Islamabad, Beijing, Tokyo, Seoul, Bangkok, Hanoi, Jakarta, Manila, Canberra, Wellington, Astana, Ottawa.
+- Keep the text small enough that the map stays readable. Do not add a legend, a title, or any other text.
+
+Keep the flat pixel-art rendering: solid fills, crisp 1-pixel black borders, white oceans, no gradients, no texture.

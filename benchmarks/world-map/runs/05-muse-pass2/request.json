@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Recolour the attached world map. Change ONLY the fill colours. Do not move, redraw, add or delete any coastline, border, island or landmass. Do not add any text.\n\nThe map is currently coloured by time zone, so several countries are split into vertical stripes of different colours. That is wrong. Fix it.\n\nGive every country exactly ONE flat solid colour covering its whole territory edge to edge. Canada must be one colour, not five stripes. Russia must be one colour. Brazil, Australia, the United States, China, Kazakhstan and Indonesia must each be one single colour. No country may contain a vertical band or a colour boundary that is not an international border.\n\nChoose colours so no two countries that share a land border have the same colour. Spread the work evenly across all nine of these colours rather than using mostly red, green and blue:\n#FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.\n\nKeep the flat pixel-art rendering exactly: solid fills, crisp 1-pixel black borders, white oceans, no gradients, no shading, no texture, no noise.\n\nAlso delete the small grey rounded button with the upward chevron near the bottom right, and the thin grey frame around the image. Replace them with plain white.",
+  "n": 1,
+  "size": "2048x1024",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

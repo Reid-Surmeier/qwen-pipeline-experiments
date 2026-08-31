@@ -1,0 +1,30 @@
+{
+  "label": "qwen-image-3-pro 2K 2:1",
+  "model": "qwen/qwen-image-3-pro",
+  "submitted_utc": "2026-08-31T17:19:24.430818+00:00",
+  "seconds": 253.3,
+  "requested": {
+    "model": "qwen/qwen-image-3-pro",
+    "n": 1,
+    "aspect_ratio": "2:1",
+    "resolution": "2K"
+  },
+  "prompt_file": "benchmarks/world-map/prompts/recolour-v1.txt",
+  "prompt_sha256": "694c0ecd6b3363ff6add45bd37626a6b4b4b176ac0b46003050576d7d0aa1c37",
+  "references": [
+    {
+      "file": "benchmarks/world-map/reference/worldtimezone-2048w.png",
+      "bytes": 1378397,
+      "sha256": "fa434033e9d0730e495466954ae3397183c2b25512557c8a6316a5f3efd865e8",
+      "dimensions": "2048x1043"
+    }
+  ],
+  "cost_usd": null,
+  "usage": {},
+  "outputs": [],
+  "failure": {
+    "kind": "http",
+    "status": 400,
+    "body": "{\"error\":{\"message\":\"Alibaba blocked this request through content moderation.\",\"code\":400,\"metadata\":{\"provider_name\":\"Alibaba\"}}}"
+  }
+}
