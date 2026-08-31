@@ -1,15 +1,15 @@
 {
-  "created": 1788211058,
+  "created": 1788212788,
   "data": [
     {
-      "b64_json": "<382720 base64 chars>",
+      "b64_json": "<443016 base64 chars>",
       "media_type": "image/webp"
     }
   ],
   "usage": {
-    "prompt_tokens": 214,
-    "completion_tokens": 3699,
-    "total_tokens": 3913,
+    "prompt_tokens": 270,
+    "completion_tokens": 2836,
+    "total_tokens": 3106,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -22,7 +22,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 3699
+      "image_tokens": 2836
     }
   }
 }

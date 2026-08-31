@@ -5,294 +5,293 @@
       "y": 0,
       "width": 266,
       "height": 250,
-      "donor": "donor-2",
-      "agreement": 1.0
+      "donor": "donor-5",
+      "agreement": 0.997
     },
     {
       "x": 266,
       "y": 0,
       "width": 267,
       "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.849
+      "donor": "donor-5",
+      "agreement": 0.949
     },
     {
       "x": 533,
       "y": 0,
       "width": 267,
       "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.844
+      "donor": "donor-5",
+      "agreement": 0.905
     },
     {
       "x": 800,
       "y": 0,
       "width": 266,
       "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.818
-    },
-    {
-      "x": 1066,
-      "y": 0,
-      "width": 267,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.928
-    },
-    {
-      "x": 1333,
-      "y": 0,
-      "width": 267,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.901
-    },
-    {
-      "x": 0,
-      "y": 250,
-      "width": 266,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 1.0
-    },
-    {
-      "x": 266,
-      "y": 250,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.879
-    },
-    {
-      "x": 533,
-      "y": 250,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.797
-    },
-    {
-      "x": 800,
-      "y": 250,
-      "width": 266,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.827
-    },
-    {
-      "x": 1066,
-      "y": 250,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.898
-    },
-    {
-      "x": 1333,
-      "y": 250,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.956
-    },
-    {
-      "x": 0,
-      "y": 501,
-      "width": 266,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.925
-    },
-    {
-      "x": 266,
-      "y": 501,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.984
-    },
-    {
-      "x": 533,
-      "y": 501,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.844
-    },
-    {
-      "x": 800,
-      "y": 501,
-      "width": 266,
-      "height": 251,
-      "donor": "donor-1",
+      "donor": "donor-5",
       "agreement": 0.89
     },
     {
       "x": 1066,
-      "y": 501,
+      "y": 0,
       "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.724
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.975
     },
     {
       "x": 1333,
-      "y": 501,
+      "y": 0,
       "width": 267,
-      "height": 251,
-      "donor": "B4-percountry",
-      "agreement": 0.917
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.96
     },
     {
       "x": 0,
-      "y": 752,
+      "y": 250,
       "width": 266,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.973
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 1.0
     },
     {
       "x": 266,
-      "y": 752,
+      "y": 250,
       "width": 267,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.918
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.857
     },
     {
       "x": 533,
-      "y": 752,
+      "y": 250,
       "width": 267,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.77
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.816
     },
     {
       "x": 800,
-      "y": 752,
+      "y": 250,
       "width": 266,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.871
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.821
     },
     {
       "x": 1066,
-      "y": 752,
+      "y": 250,
       "width": 267,
-      "height": 250,
-      "donor": "donor-1",
-      "agreement": 0.941
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.891
     },
     {
       "x": 1333,
-      "y": 752,
+      "y": 250,
       "width": 267,
-      "height": 250,
-      "donor": "donor-1",
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.932
+    },
+    {
+      "x": 0,
+      "y": 501,
+      "width": 266,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.88
+    },
+    {
+      "x": 266,
+      "y": 501,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
       "agreement": 0.895
     },
     {
+      "x": 533,
+      "y": 501,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.812
+    },
+    {
+      "x": 800,
+      "y": 501,
+      "width": 266,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.84
+    },
+    {
+      "x": 1066,
+      "y": 501,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.733
+    },
+    {
+      "x": 1333,
+      "y": 501,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 0.893
+    },
+    {
+      "x": 0,
+      "y": 752,
+      "width": 266,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.894
+    },
+    {
+      "x": 266,
+      "y": 752,
+      "width": 267,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.856
+    },
+    {
+      "x": 533,
+      "y": 752,
+      "width": 267,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.766
+    },
+    {
+      "x": 800,
+      "y": 752,
+      "width": 266,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.832
+    },
+    {
+      "x": 1066,
+      "y": 752,
+      "width": 267,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.911
+    },
+    {
+      "x": 1333,
+      "y": 752,
+      "width": 267,
+      "height": 250,
+      "donor": "donor-5",
+      "agreement": 0.891
+    },
+    {
       "x": 0,
       "y": 1002,
       "width": 266,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.978
+      "donor": "donor-5",
+      "agreement": 0.976
     },
     {
       "x": 266,
       "y": 1002,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.888
+      "donor": "donor-5",
+      "agreement": 0.889
     },
     {
       "x": 533,
       "y": 1002,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.741
+      "donor": "donor-2",
+      "agreement": 0.759
     },
     {
       "x": 800,
       "y": 1002,
       "width": 266,
       "height": 251,
-      "donor": "donor-1",
+      "donor": "donor-5",
+      "agreement": 0.988
+    },
+    {
+      "x": 1066,
+      "y": 1002,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
+      "agreement": 1.0
+    },
+    {
+      "x": 1333,
+      "y": 1002,
+      "width": 267,
+      "height": 251,
+      "donor": "donor-5",
       "agreement": 0.982
     },
     {
-      "x": 1066,
-      "y": 1002,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.971
-    },
-    {
-      "x": 1333,
-      "y": 1002,
-      "width": 267,
-      "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.951
-    },
-    {
       "x": 0,
       "y": 1253,
       "width": 266,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.977
+      "donor": "donor-5",
+      "agreement": 0.965
     },
     {
       "x": 266,
       "y": 1253,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.813
+      "donor": "donor-5",
+      "agreement": 0.834
     },
     {
       "x": 533,
       "y": 1253,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 0.929
+      "donor": "donor-5",
+      "agreement": 0.915
     },
     {
       "x": 800,
       "y": 1253,
       "width": 266,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 1.0
+      "donor": "donor-5",
+      "agreement": 0.993
     },
     {
       "x": 1066,
       "y": 1253,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 1.0
+      "donor": "donor-5",
+      "agreement": 0.989
     },
     {
       "x": 1333,
       "y": 1253,
       "width": 267,
       "height": 251,
-      "donor": "donor-1",
-      "agreement": 1.0
+      "donor": "donor-5",
+      "agreement": 0.995
     }
   ],
   "donors_used": {
-    "donor-2": 1,
-    "donor-1": 34,
-    "B4-percountry": 1
+    "donor-5": 35,
+    "donor-2": 1
   },
   "contract": {
     "canvas": {
@@ -554,6 +553,6 @@
       }
     ]
   },
-  "base_donor": "donor-1",
+  "base_donor": "donor-5",
   "pixels_changed_outside_declared_regions": 0
 }

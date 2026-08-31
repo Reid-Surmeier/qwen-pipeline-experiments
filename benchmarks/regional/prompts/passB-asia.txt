@@ -1,9 +1,9 @@
-Recolour the attached map. Change ONLY fill colours.
+Recolour the attached map. Change ONLY fill colours. Do not move, redraw, add or delete any coastline, border or island, and do not touch any text.
 
-Several countries are still coloured by time zone and appear as two or more colours. That is wrong. Every country must be ONE flat solid colour across its whole territory, including all of its islands.
+The map is coloured by time zone, so several countries appear as two or more colours. Every country must be ONE flat solid colour across the whole of its territory, including all its islands.
 
-In particular: INDONESIA is one colour across Sumatra, Java, Kalimantan, Sulawesi and Papua. MALAYSIA is one colour on both the peninsula and Borneo. RUSSIA is one colour. CHINA is one colour. INDIA is one colour. KAZAKHSTAN, MONGOLIA, THAILAND, VIETNAM, MYANMAR, THE PHILIPPINES and JAPAN are each one colour.
+INDONESIA is one single colour across Sumatra, Java, Kalimantan, Sulawesi and Papua — not one colour per island. MALAYSIA is one colour on both the peninsula and Borneo. RUSSIA is one colour. CHINA is one colour. INDIA, KAZAKHSTAN, MONGOLIA, THAILAND, VIETNAM, MYANMAR, THE PHILIPPINES and JAPAN are each one colour.
 
-No two countries sharing a border may have the same colour. Use these nine evenly: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.
+No two countries that share a border may have the same colour. Spread the work across all nine of these: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.
 
-Every country name and city name must survive exactly where it is, in the same spelling and size. Keep every border line, coastline and city dot unchanged, and keep the flat pixel rendering with solid fills.
+Keep the white lines between countries exactly as they are — do not draw black outlines. Keep every country name and city name where it is, in the same spelling and size, and keep the flat pixel rendering with solid fills and a white background.

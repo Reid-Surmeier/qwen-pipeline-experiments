@@ -5,294 +5,292 @@
       "y": 0,
       "width": 277,
       "height": 245,
-      "donor": "donor-3",
-      "agreement": 0.932
+      "donor": "donor-6",
+      "agreement": 0.962
     },
     {
       "x": 277,
       "y": 0,
       "width": 277,
       "height": 245,
-      "donor": "donor-3",
-      "agreement": 0.886
+      "donor": "donor-6",
+      "agreement": 0.774
     },
     {
       "x": 554,
       "y": 0,
       "width": 278,
       "height": 245,
-      "donor": "donor-3",
-      "agreement": 0.976
+      "donor": "donor-6",
+      "agreement": 0.881
     },
     {
       "x": 832,
       "y": 0,
       "width": 277,
       "height": 245,
-      "donor": "donor-3",
-      "agreement": 0.9
+      "donor": "donor-6",
+      "agreement": 0.888
     },
     {
       "x": 1109,
       "y": 0,
       "width": 277,
       "height": 245,
-      "donor": "donor-3",
-      "agreement": 0.887
+      "donor": "donor-6",
+      "agreement": 0.845
     },
     {
       "x": 1386,
       "y": 0,
       "width": 278,
       "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.934
-    },
-    {
-      "x": 0,
-      "y": 245,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.916
-    },
-    {
-      "x": 277,
-      "y": 245,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.629
-    },
-    {
-      "x": 554,
-      "y": 245,
-      "width": 278,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.922
-    },
-    {
-      "x": 832,
-      "y": 245,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.747
-    },
-    {
-      "x": 1109,
-      "y": 245,
-      "width": 277,
-      "height": 245,
-      "donor": "B4-percountry",
-      "agreement": 0.915
-    },
-    {
-      "x": 1386,
-      "y": 245,
-      "width": 278,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.944
-    },
-    {
-      "x": 0,
-      "y": 490,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.892
-    },
-    {
-      "x": 277,
-      "y": 490,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.929
-    },
-    {
-      "x": 554,
-      "y": 490,
-      "width": 278,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.923
-    },
-    {
-      "x": 832,
-      "y": 490,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.994
-    },
-    {
-      "x": 1109,
-      "y": 490,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.989
-    },
-    {
-      "x": 1386,
-      "y": 490,
-      "width": 278,
-      "height": 246,
-      "donor": "B2-recoloured",
+      "donor": "donor-6",
       "agreement": 0.975
     },
     {
       "x": 0,
-      "y": 736,
+      "y": 245,
       "width": 277,
       "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.866
+      "donor": "donor-6",
+      "agreement": 0.953
     },
     {
       "x": 277,
-      "y": 736,
+      "y": 245,
       "width": 277,
       "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.932
+      "donor": "donor-6",
+      "agreement": 0.974
     },
     {
       "x": 554,
-      "y": 736,
+      "y": 245,
       "width": 278,
       "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.897
+      "donor": "donor-6",
+      "agreement": 0.989
     },
     {
       "x": 832,
-      "y": 736,
+      "y": 245,
       "width": 277,
       "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.962
-    },
-    {
-      "x": 1109,
-      "y": 736,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.997
-    },
-    {
-      "x": 1386,
-      "y": 736,
-      "width": 278,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.994
-    },
-    {
-      "x": 0,
-      "y": 981,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.927
-    },
-    {
-      "x": 277,
-      "y": 981,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 1.0
-    },
-    {
-      "x": 554,
-      "y": 981,
-      "width": 278,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.949
-    },
-    {
-      "x": 832,
-      "y": 981,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.949
-    },
-    {
-      "x": 1109,
-      "y": 981,
-      "width": 277,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 0.963
-    },
-    {
-      "x": 1386,
-      "y": 981,
-      "width": 278,
-      "height": 245,
-      "donor": "B2-recoloured",
-      "agreement": 1.0
-    },
-    {
-      "x": 0,
-      "y": 1226,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.981
-    },
-    {
-      "x": 277,
-      "y": 1226,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.983
-    },
-    {
-      "x": 554,
-      "y": 1226,
-      "width": 278,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.98
-    },
-    {
-      "x": 832,
-      "y": 1226,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.98
-    },
-    {
-      "x": 1109,
-      "y": 1226,
-      "width": 277,
-      "height": 246,
-      "donor": "B2-recoloured",
+      "donor": "donor-6",
       "agreement": 0.986
     },
     {
+      "x": 1109,
+      "y": 245,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.955
+    },
+    {
+      "x": 1386,
+      "y": 245,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.961
+    },
+    {
+      "x": 0,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.935
+    },
+    {
+      "x": 277,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.934
+    },
+    {
+      "x": 554,
+      "y": 490,
+      "width": 278,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.958
+    },
+    {
+      "x": 832,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.99
+    },
+    {
+      "x": 1109,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.987
+    },
+    {
+      "x": 1386,
+      "y": 490,
+      "width": 278,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.997
+    },
+    {
+      "x": 0,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.932
+    },
+    {
+      "x": 277,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.919
+    },
+    {
+      "x": 554,
+      "y": 736,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.837
+    },
+    {
+      "x": 832,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.986
+    },
+    {
+      "x": 1109,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.993
+    },
+    {
+      "x": 1386,
+      "y": 736,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.998
+    },
+    {
+      "x": 0,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.947
+    },
+    {
+      "x": 277,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.988
+    },
+    {
+      "x": 554,
+      "y": 981,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.932
+    },
+    {
+      "x": 832,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.91
+    },
+    {
+      "x": 1109,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.981
+    },
+    {
+      "x": 1386,
+      "y": 981,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-6",
+      "agreement": 0.996
+    },
+    {
+      "x": 0,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.986
+    },
+    {
+      "x": 277,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.991
+    },
+    {
+      "x": 554,
+      "y": 1226,
+      "width": 278,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.914
+    },
+    {
+      "x": 832,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.936
+    },
+    {
+      "x": 1109,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "donor-6",
+      "agreement": 0.983
+    },
+    {
       "x": 1386,
       "y": 1226,
       "width": 278,
       "height": 246,
-      "donor": "B2-recoloured",
-      "agreement": 0.943
+      "donor": "donor-6",
+      "agreement": 0.955
     }
   ],
   "donors_used": {
-    "donor-3": 5,
-    "B2-recoloured": 30,
-    "B4-percountry": 1
+    "donor-6": 36
   },
   "contract": {
     "canvas": {
@@ -554,6 +552,6 @@
       }
     ]
   },
-  "base_donor": "B2-recoloured",
+  "base_donor": "donor-6",
   "pixels_changed_outside_declared_regions": 0
 }

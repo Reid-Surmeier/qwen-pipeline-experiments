@@ -9,11 +9,14 @@ OUT=benchmarks/regional/final
 rm -rf "$OUT"; mkdir -p "$OUT"
 
 # sheets whose sources draw country borders in white, so the recolour leaves none
-NEEDS_BORDERS="asia middle-east"
+# Asia and the Middle East keep the publisher's own WHITE country borders.
+# An earlier round painted black outlines onto them; the owner wants the
+# source rendering left alone.
+NEEDS_BORDERS=""
 
 for r in africa south-america asia usa canada russia australia caribbean europe middle-east; do
   img=""
-  for st in assembled B4-percountry B3-subjects C-final B2-recoloured; do
+  for st in C-final assembled B4-percountry B3-subjects B2-recoloured; do
     p="benchmarks/regional/runs/$r/$st/image-01.png"
     [ -f "$p" ] && { img="$p"; stage="$st"; break; }
   done

@@ -27,6 +27,21 @@ def body_ink(path: Path, inset: float = 0.14) -> float:
     return float((a[y0:y1, x0:x1].max(axis=2) < 110).mean())
 
 
+def body_fill(path: Path, inset: float = 0.14) -> float:
+    """Share of the map body carrying a saturated country fill.
+
+    Ink alone is the wrong score for a furniture pass: an attempt that keeps
+    every label and wipes every country to white scores highest on ink, which is
+    exactly the Asia sheet that came back blank. Fills have to be measured too.
+    """
+    a = np.asarray(Image.open(path).convert("RGB")).astype(int)
+    h, w, _ = a.shape
+    y0, y1 = int(h * inset), int(h * (1 - inset))
+    x0, x1 = int(w * inset), int(w * (1 - inset))
+    c = a[y0:y1, x0:x1]
+    return float(((c.max(axis=2) - c.min(axis=2)) > 45).mean())
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--before", required=True, type=Path)

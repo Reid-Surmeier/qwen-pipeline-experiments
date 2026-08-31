@@ -1,8 +1,8 @@
 {
-  "label": "B-recoloured",
+  "label": "asia-d6",
   "model": "meta/muse-image",
-  "submitted_utc": "2026-08-31T19:09:12.007681+00:00",
-  "seconds": 20.1,
+  "submitted_utc": "2026-08-31T21:57:19.735066+00:00",
+  "seconds": 19.4,
   "timeout_seconds": 600.0,
   "timeout_reason": "explicit --timeout",
   "requested": {
@@ -10,21 +10,21 @@
     "n": 1,
     "size": "1664x1472"
   },
-  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
-  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
+  "prompt_file": "benchmarks/regional/prompts/passB-asia.txt",
+  "prompt_sha256": "eab0d7bf9aefca8b3276b6e02719f443bb71694c1bca5cdd63d7c1c6cf558033",
   "references": [
     {
       "file": "benchmarks/regional/runs/asia/A-stripped/image-01.png",
-      "bytes": 1165491,
-      "sha256": "ce82b4e9844349e8c695876ced10c53204bc43b58f9109e7faa49dbd31b653fa",
+      "bytes": 1417036,
+      "sha256": "7ade22b90edcc7c99f1e810deaeae96bb551eb30bee6dc78a5f8b7f8f7d627ca",
       "dimensions": "1664x1472"
     }
   ],
   "cost_usd": 0.01,
   "usage": {
-    "prompt_tokens": 213,
-    "completion_tokens": 2035,
-    "total_tokens": 2248,
+    "prompt_tokens": 292,
+    "completion_tokens": 2369,
+    "total_tokens": 2661,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -37,7 +37,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 2035
+      "image_tokens": 2369
     }
   },
   "outputs": [
@@ -46,8 +46,8 @@
       "source_media_type": "image/webp",
       "dimensions": "1664x1472",
       "aspect": 1.1304,
-      "bytes": 302250,
-      "sha256": "05a85777ca7d66c86d3c7d0bb82a3f3bf322a3538803a4337bc18a8ebb0048b3"
+      "bytes": 376780,
+      "sha256": "6499216187c3cf03afa49205a44fcef26f374843476aa1a5cd84782ee5262126"
     }
   ],
   "failure": null

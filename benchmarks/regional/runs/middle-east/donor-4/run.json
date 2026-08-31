@@ -1,8 +1,8 @@
 {
-  "label": "middle-east-donor4",
+  "label": "middle-east-d4",
   "model": "meta/muse-image",
-  "submitted_utc": "2026-08-31T21:18:25.590721+00:00",
-  "seconds": 26.5,
+  "submitted_utc": "2026-08-31T21:47:27.876634+00:00",
+  "seconds": 27.4,
   "timeout_seconds": 600.0,
   "timeout_reason": "explicit --timeout",
   "requested": {
@@ -11,20 +11,20 @@
     "size": "1600x1504"
   },
   "prompt_file": "benchmarks/regional/prompts/passB-middle-east.txt",
-  "prompt_sha256": "a17f7a6276f2592cba435e415b2e6b8ebdccd95db0dfb45236173640f1f21e62",
+  "prompt_sha256": "9a1ff4bf87b15e8eeed312a7604306626164180e58cc17f44258e79ae5db45af",
   "references": [
     {
       "file": "benchmarks/regional/runs/middle-east/A-stripped/image-01.png",
-      "bytes": 1013052,
-      "sha256": "05427b2ec0637ac7b3c2a629f6a3901c1cc6f973c7e0e856398f362a79853571",
+      "bytes": 1212515,
+      "sha256": "7e8770fcddc4853a718e7b66688618d57d89f887599f04bc32ff33341dcc6151",
       "dimensions": "1600x1504"
     }
   ],
   "cost_usd": 0.01,
   "usage": {
-    "prompt_tokens": 214,
-    "completion_tokens": 2833,
-    "total_tokens": 3047,
+    "prompt_tokens": 270,
+    "completion_tokens": 3155,
+    "total_tokens": 3425,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -37,7 +37,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 2833
+      "image_tokens": 3155
     }
   },
   "outputs": [
@@ -46,8 +46,8 @@
       "source_media_type": "image/webp",
       "dimensions": "1600x1504",
       "aspect": 1.0638,
-      "bytes": 278558,
-      "sha256": "54bb8f26508945baad552f8279f3da8628cd0c2f819031ecaf4f76440e4b6f83"
+      "bytes": 354368,
+      "sha256": "8f9284f9d805d292eee297a4ec4256d036a0bd9bceecb447a58225684055c8dd"
     }
   ],
   "failure": null
