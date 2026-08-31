@@ -127,6 +127,27 @@ metrics scale by that. Three corrections followed:
 `SIDE-BY-SIDE.png` puts the same geographic window from both maps at the same
 apparent scale.
 
+## Graticule density, the date line, and country names
+
+Three further things read off the native GIF:
+
+- **The graticule is every 7.5 deg of longitude (20 px), not 15.** Detecting only
+  the strongest columns had missed every other line, leaving our lattice half
+  as dense as the publisher's and reading as coarse.
+- **The date line is `#FC6604`** and it zigzags around the Aleutians, Kiribati
+  and Samoa. Authoring those jogs by hand would be guesswork, so the line is
+  lifted straight out of the native GIF: keep the orange connected components
+  taller than 40 px (the caption's letters are small blobs and drop out),
+  convert each pixel back to lon/lat through the inverse Miller, and reproject.
+  Consecutive native pixels land 2.37 px apart here, so the stamped mask is
+  dilated and closed rather than plotted as points, which would dot the line.
+- **Country names are the same face in capitals**, centred on the territory with
+  no marker. The publisher names CHINA, INDIA, ALASKA, GREENLAND and KAMCHATKA
+  but never France or Spain, because at this scale a small country's name lands
+  on its own capital. Capitals are therefore placed first and country names take
+  the ground that is left; a name may drift within its territory rather than be
+  dropped when a centroid clips a capital's label.
+
 ## Reproducing
 
 ```bash

@@ -37,8 +37,67 @@ FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 # native and native metrics scale by that.
 GRID_RGB = (204, 206, 252)
 LABEL_RGB = (4, 2, 52)
+DATELINE_RGB = (252, 102, 4)
 NATIVE_SCALE = 2.373
 NATIVE_TEXT_H = 7.0
+
+# The graticule is every 7.5 deg of longitude (20 px native), not 15. Reading
+# only the strongest columns had missed every other line and left the lattice
+# half as dense as the publisher's.
+GRID_LON_STEP = 7.5
+GRID_LAT_STEP = 10
+
+# native-file calibration, for reprojecting artwork out of it
+NAT_X0, NAT_PX_PER_DEG = 500.0, 40.0 / 15.0
+NAT_Y_EQUATOR, NAT_PX_PER_RAD = 313.0, 152.8
+
+
+def miller_inverse(y_m: float) -> float:
+    """Miller northing in sphere-radians -> latitude in degrees."""
+    return (math.degrees(math.atan(math.exp(y_m / 1.25))) - 45.0) / 0.4
+
+
+def dateline_points(native: "Image.Image") -> list[tuple[float, float]]:
+    """Lift the publisher's own date line out of its native GIF as lon/lat.
+
+    The line zigzags around the Aleutians, Kiribati and Samoa, and authoring
+    those jogs by hand would be guesswork. Reprojecting the publisher's own
+    orange pixels is exact. Its label letters are separate small blobs, so a
+    size filter keeps the line and drops the type.
+    """
+    from scipy import ndimage
+
+    a = np.asarray(native.convert("RGB")).astype(int)
+    orange = (a[:, :, 0] > 200) & (a[:, :, 1] > 60) & (a[:, :, 1] < 160) & (a[:, :, 2] < 80)
+    labels, count = ndimage.label(orange, structure=np.ones((3, 3)))
+    points = []
+    for index in range(1, count + 1):
+        ys, xs = np.where(labels == index)
+        if (ys.max() - ys.min() + 1) <= 40 or len(ys) <= 60:
+            continue                       # a letter, not the line
+        for py, px in zip(ys, xs):
+            lon = (px - NAT_X0) / NAT_PX_PER_DEG
+            lat = miller_inverse((NAT_Y_EQUATOR - py) / NAT_PX_PER_RAD)
+            points.append((lon, lat))
+    return points
+
+
+# Country names, as the publisher sets them: the same face in capitals, placed
+# over the territory. Only large territories -- the publisher's own world map
+# names CHINA, INDIA, ALASKA, GREENLAND and KAMCHATKA but never France or Spain,
+# because at this scale a small country's name would sit on top of its capital.
+# These are placed after the capitals, into whatever ground is left.
+COUNTRIES = [
+    ("GREENLAND", 72.0, -42.0), ("ALASKA", 64.5, -152.0), ("CANADA", 58.0, -100.0),
+    ("MEXICO", 23.5, -102.0), ("BRAZIL", -10.0, -52.0), ("ARGENTINA", -35.0, -65.0),
+    ("PERU", -9.0, -74.0), ("CHILE", -44.0, -72.0),
+    ("RUSSIA", 62.0, 95.0), ("CHINA", 33.0, 103.0), ("INDIA", 22.0, 79.0),
+    ("KAZAKHSTAN", 48.0, 64.0), ("MONGOLIA", 46.5, 100.0), ("IRAN", 31.0, 56.0),
+    ("SAUDI ARABIA", 21.0, 45.0), ("LIBYA", 26.0, 17.0), ("ALGERIA", 27.0, 2.0),
+    ("SUDAN", 14.0, 28.0), ("SOUTH AFRICA", -30.5, 23.0),
+    ("AUSTRALIA", -24.0, 133.0), ("NEW ZEALAND", -44.0, 171.0),
+    ("INDONESIA", -3.0, 119.0),
+]
 
 # --- source-image geo calibration (Miller cylindrical) ----------------------
 SRC_X0 = 2294.25       # pixel x of the Greenwich meridian
@@ -137,6 +196,11 @@ def main() -> int:
                          "our labels read as pasted on rather than drawn in.")
     ap.add_argument("--no-labels", action="store_true")
     ap.add_argument("--no-grid", action="store_true")
+    ap.add_argument("--dateline", type=Path,
+                    default=Path("benchmarks/world-map/reference/"
+                                 "worldtimezone-native-1001x485.gif"),
+                    help="native GIF to lift the date line out of")
+    ap.add_argument("--no-countries", action="store_true")
     ap.add_argument("--scale", type=int, default=2,
                     help="final NEAREST upscale, matching how the publisher's "
                          "own map is presented above native size")
@@ -171,15 +235,35 @@ def main() -> int:
     if not args.no_grid:
         grid = np.zeros((H, W), bool)
         gw = max(1, round(NATIVE_SCALE / 2))         # native is 1 px
-        for lon in range(-180, 181, 15):
+        steps = int(360 / GRID_LON_STEP)
+        for i in range(steps + 1):
+            lon = -180 + i * GRID_LON_STEP
             x, _ = project(lon, 0.0)
             if 0 <= x < W:
                 grid[:, int(x):int(x) + gw] = True
-        for lat in range(-50, 81, 10):
+        for lat in range(-50, 81, GRID_LAT_STEP):
             _, y = project(0.0, lat)
             if 0 <= y < H:
                 grid[int(y):int(y) + gw, :] = True
         arr[grid & background] = GRID_RGB
+        base = Image.fromarray(arr.astype("uint8"))
+
+    if args.dateline and args.dateline.exists():
+        from scipy import ndimage
+
+        # Consecutive native pixels land 2.37 apart here, so plotting them as
+        # points draws a dotted line. Stamp them into a mask and close the gaps
+        # with one dilation instead.
+        arr = np.asarray(base).astype(int)
+        stamp = np.zeros((H, W), bool)
+        for lon, lat in dateline_points(Image.open(args.dateline)):
+            x, y = project(lon, lat, W)
+            xi, yi = int(round(x)), int(round(y))
+            if 0 <= xi < W and 0 <= yi < H:
+                stamp[yi, xi] = True
+        stamp = ndimage.binary_closing(
+            ndimage.binary_dilation(stamp, np.ones((3, 3))), np.ones((3, 3)))
+        arr[stamp] = DATELINE_RGB
         base = Image.fromarray(arr.astype("uint8"))
 
     placed, skipped_tight = [], []
@@ -214,10 +298,15 @@ def main() -> int:
             x0, y0, x1, y1 = (int(v) * ss for v in box)
             clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)] = 1.0
 
-        for entry in sorted(CAPITALS, key=lambda c: c[3]):
+        countries = ([] if args.no_countries
+                     else [(n.upper(), la, lo, 0, None) for n, la, lo in COUNTRIES])
+        # Capitals claim their ground first; country names take what is left,
+        # otherwise FRANCE evicts Paris and JAPAN evicts Tokyo.
+        for entry in sorted(CAPITALS, key=lambda c: c[3]) + countries:
             name, lat, lon, prio = entry[:4]
             hint = entry[4] if len(entry) > 4 else None
-            if prio > args.max_priority:
+            is_country = prio == 0
+            if prio and prio > args.max_priority:
                 continue
             fx, fy = project(lon, lat, W)
             if not (0 <= fx < W and 0 <= fy < H):
@@ -227,6 +316,34 @@ def main() -> int:
             th = size
             g = dot + 3
             pad = args.pad
+            if is_country:
+                # Centred on the territory, no marker, like the publisher's
+                # CHINA / ALASKA / GREENLAND. A centroid can land a few pixels
+                # inside a capital's label -- CHINA clipped New Delhi's -- so
+                # allow the name to drift within its own country rather than
+                # dropping it outright.
+                drift = th * 1.6
+                best = None
+                for ox, oy in ((0, 0), (0, -drift), (0, drift),
+                               (-drift, 0), (drift, 0),
+                               (0, -2 * drift), (0, 2 * drift),
+                               (-2 * drift, 0), (2 * drift, 0)):
+                    cbox = (x + ox - tw / 2 - pad, y + oy - th / 2 - pad,
+                            x + ox + tw / 2 + pad, y + oy + th / 2 + pad)
+                    if free(cbox) and busy(cbox) <= args.max_clutter:
+                        best = (ox, oy, cbox)
+                        break
+                if best is None:
+                    skipped_tight.append(name)
+                    continue
+                ox, oy, cbox = best
+                taken.append(cbox)
+                mark_busy(cbox)
+                ld.text((x + ox - tw / 2, y + oy - th / 2), name, font=font,
+                        fill=(*LABEL_RGB, 255))
+                placed.append({"name": name, "kind": "country",
+                               "lat": lat, "lon": lon})
+                continue
             slots = {"R": (g, -th / 2), "L": (-tw - g, -th / 2),
                      "D": (-tw / 2, g), "U": (-tw / 2, -th - g)}
             order = ["R", "L", "D", "U"]
@@ -258,9 +375,24 @@ def main() -> int:
             mark_busy(box)
             ld.ellipse([x - dot, y - dot, x + dot, y + dot], fill=(204, 51, 51, 255))
             ld.text((x + dx, y + dy), name, font=font, fill=(*LABEL_RGB, 255))
-            placed.append({"name": name, "lat": lat, "lon": lon,
+            placed.append({"name": name, "kind": "capital",
+                           "lat": lat, "lon": lon,
                            "x": round(fx, 1), "y": round(fy, 1),
                            "clutter": round(score, 4)})
+
+        if args.dateline and args.dateline.exists():
+            # Set sideways in the publisher's orange, in the strip of ocean west
+            # of the line itself. The box is cut to the glyphs: any slack in it
+            # pushes the caption across the line, and there are only ~22 px of
+            # margin between the map edge and the 180th meridian.
+            text = "International Date Line"
+            tb = font.getbbox(text)
+            caption = Image.new("RGBA", (tb[2] + 2, tb[3] + 2), (0, 0, 0, 0))
+            cd = ImageDraw.Draw(caption)
+            cd.fontmode = "1"
+            cd.text((0, 0), text, font=font, fill=(*DATELINE_RGB, 255))
+            caption = caption.rotate(90, expand=True)
+            layer.alpha_composite(caption, (3, int(H / ss * 0.36)))
 
         base = Image.alpha_composite(
             base.convert("RGBA"),
