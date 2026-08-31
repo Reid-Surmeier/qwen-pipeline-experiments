@@ -112,6 +112,7 @@ button{font:inherit;cursor:pointer}
    ========================================================================= */
 
 const DATA = {
+ "composite": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/d9e1a34cdb9c5bbe802bc35a255f411654867a86/benchmarks/composite/world-composite.png",
  "world": {
   "final": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/world-map/runs/12-light-grid/image-01.png",
   "source": "https://raw.githubusercontent.com/Reid-Surmeier/qwen-pipeline-experiments/30cc7d7dd5648397fe08a7c8288128cae750fe0e/benchmarks/world-map/reference/worldtimezone-2048w.png"
@@ -360,7 +361,10 @@ function variantA(stage) {
     stage.appendChild(canvas);
     const overlay = el('div');
     overlay.style.cssText = 'position:absolute;top:0;left:0;transform-origin:0 0;';
-    const pz = panZoom(canvas, DATA.world.final, { overlay });
+    // The continuous atlas, not the bare world map: zooming the plain world map
+    // runs out of pixels, and this keeps every neighbour on screen instead of
+    // dropping to blank white when a region is opened.
+    const pz = panZoom(canvas, DATA.composite, { overlay });
     for (const s of DATA.sheets) {
       const hot = el('div', 'hot');
       hot.style.cssText += `left:${s.box.x}%;top:${s.box.y}%;width:${s.box.w}%;height:${s.box.h}%;`;
@@ -401,7 +405,8 @@ function variantB(stage) {
   canvasWrap.appendChild(canvas);
   stage.appendChild(rail); stage.appendChild(canvasWrap);
 
-  const items = [{ id: 'world', name: 'World', final: DATA.world.final }, ...DATA.sheets];
+  const items = [{ id: 'atlas', name: 'Continuous atlas', final: DATA.composite },
+                 { id: 'world', name: 'World', final: DATA.world.final }, ...DATA.sheets];
   let pz = null, current = null;
 
   function show(item, btn) {
