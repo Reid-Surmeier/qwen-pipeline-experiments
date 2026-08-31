@@ -57,6 +57,11 @@ def main() -> int:
     ap.add_argument("--grid", type=int, default=6, help="regions across and down")
     ap.add_argument("--min-agreement", type=float, default=0.55,
                     help="below this no donor is trusted and the reference stands")
+    ap.add_argument("--single-donor", action="store_true",
+                    help="use the best whole-sheet donor untouched. Mixing helps "
+                         "when donors agree; on the South America sheet they "
+                         "coloured Brazil differently and the mix produced a "
+                         "checkerboard worse than any single donor.")
     ap.add_argument("--switch-margin", type=float, default=0.06,
                     help="how much better a rival must be before a region leaves "
                          "the base donor; picking per region independently gave "
@@ -95,13 +100,19 @@ def main() -> int:
                       for name, d, de in donors]
             base_score = next(s_ for s_, n_, _ in scored if n_ == base_name)
             score, name, chosen = max(scored, key=lambda z: z[0])
-            if score < base_score + args.switch_margin:
+            if args.single_donor or score < base_score + args.switch_margin:
                 score, name, chosen = base_score, base_name, base
             if score < args.min_agreement:
-                out[y0:y1, x0:x1] = ref[y0:y1, x0:x1]
+                # Fall back to the base donor, not the reference. Reverting a
+                # region to the reference restores its time-zone colouring, and
+                # on the South America sheet eleven such regions turned Brazil
+                # into a checkerboard of green and red rectangles. A slightly
+                # worse border beats a visible tile seam.
+                out[y0:y1, x0:x1] = base[y0:y1, x0:x1]
                 kept_ref += 1
                 regions.append({"x": x0, "y": y0, "width": x1 - x0, "height": y1 - y0,
-                                "donor": None, "agreement": round(score, 3)})
+                                "donor": base_name, "agreement": round(score, 3),
+                                "fallback": True})
                 continue
             out[y0:y1, x0:x1] = chosen[y0:y1, x0:x1]
             regions.append({"x": x0, "y": y0, "width": x1 - x0, "height": y1 - y0,

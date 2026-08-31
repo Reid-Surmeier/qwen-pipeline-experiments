@@ -1,0 +1,5 @@
+Brazil on this map is currently two colours: amber in the west and pale green in the east. Make the whole of Brazil one single amber colour.
+
+Brazil only. Bolivia must stay pale green, Colombia must stay amber-orange, Peru must stay mint, and every other country keeps the exact colour it has now. Do not let Brazil's colour spread past its own borders.
+
+Keep every name, city dot, border and coastline exactly as it is.

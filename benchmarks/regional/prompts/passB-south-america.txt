@@ -1,0 +1,9 @@
+Recolour the attached map. Change ONLY fill colours. Do not move, redraw, add or delete any coastline, border or island, and do not touch any text.
+
+The map is coloured by time zone, so several countries appear as two or more colours. That is wrong. Every country must be ONE flat solid colour across the whole of its territory.
+
+BRAZIL is one single colour from the Amazon to the south coast — not one colour per time zone. ARGENTINA, CHILE, PERU, BOLIVIA, COLOMBIA, VENEZUELA, ECUADOR, PARAGUAY, URUGUAY, GUYANA, SURINAME and FRENCH GUIANA are each one colour.
+
+No two countries that share a border may have the same colour. CHILE and ARGENTINA border each other along their whole length and must differ. Spread the work across all nine of these: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.
+
+Keep every country name and city name exactly where it is, in the same spelling and size. Keep the borders as they are drawn now, keep the white ocean, and keep the flat pixel rendering with solid fills.

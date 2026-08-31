@@ -1,8 +1,8 @@
 {
-  "label": "A-stripped",
+  "label": "south-america-d6",
   "model": "meta/muse-image",
-  "submitted_utc": "2026-08-31T19:06:43.184428+00:00",
-  "seconds": 31.5,
+  "submitted_utc": "2026-08-31T22:33:25.770787+00:00",
+  "seconds": 26.1,
   "timeout_seconds": 600.0,
   "timeout_reason": "explicit --timeout",
   "requested": {
@@ -10,21 +10,21 @@
     "n": 1,
     "size": "1440x1696"
   },
-  "prompt_file": "benchmarks/regional/prompts/passA-strip-times.txt",
-  "prompt_sha256": "b4f3a688d30b9f5ff46894589a00843f0a03e53b40b42264391a90c5a4fb4c29",
+  "prompt_file": "benchmarks/regional/prompts/passB-south-america.txt",
+  "prompt_sha256": "96f990158d5e4d816ca603ed7fa08306449ff14b2be5f566deb0cafc9d41a00d",
   "references": [
     {
-      "file": "benchmarks/regional/reference/south-america.png",
-      "bytes": 304205,
-      "sha256": "f0fbc0dcaf21bc1ce39e573b0a02e1c28a6f401a92367267ab35cec30597d1dd",
-      "dimensions": "1965x2328"
+      "file": "benchmarks/regional/runs/south-america/A-stripped/image-01.png",
+      "bytes": 975805,
+      "sha256": "327111928175e07c75cd0daa38d87c02301fc37a5dc34a41526bf6dab69c5238",
+      "dimensions": "1440x1696"
     }
   ],
   "cost_usd": 0.01,
   "usage": {
-    "prompt_tokens": 131,
-    "completion_tokens": 3576,
-    "total_tokens": 3707,
+    "prompt_tokens": 277,
+    "completion_tokens": 3139,
+    "total_tokens": 3416,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -37,7 +37,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 3576
+      "image_tokens": 3139
     }
   },
   "outputs": [
@@ -46,8 +46,8 @@
       "source_media_type": "image/webp",
       "dimensions": "1440x1696",
       "aspect": 0.8491,
-      "bytes": 277798,
-      "sha256": "5c6316fde2b240f28fede34e62a2f3f5dd0009f7b9b5ca3bacb02c4b38518b88"
+      "bytes": 248716,
+      "sha256": "01997d93c00a8c3f9cc238ecd9b21d1ad059c89feb7080f5922909fd19cfdeec"
     }
   ],
   "failure": null
