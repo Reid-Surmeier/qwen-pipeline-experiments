@@ -1,0 +1,31 @@
+{
+  "label": "middle-east-C",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:26:11.054033+00:00",
+  "seconds": 7.1,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1600x1504"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passC-clear-furniture.txt",
+  "prompt_sha256": "0bbf7dc19ed3f827682ed0daeaf95004dad8cf4c07c2528affbec2da076d6107",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/middle-east/B2-recoloured/image-01.png",
+      "bytes": 1079317,
+      "sha256": "94f5c0b38324dc168dedc3a20395bddd3d617a4ab3c1f3427e2f8c02fc3259a0",
+      "dimensions": "1600x1504"
+    }
+  ],
+  "cost_usd": null,
+  "usage": {},
+  "outputs": [],
+  "failure": {
+    "kind": "http",
+    "status": 400,
+    "body": "{\"error\":{\"message\":\"The response was filtered due to the prompt triggering our content management policy.\",\"code\":400,\"metadata\":{\"provider_name\":\"Meta\"}}}"
+  }
+}

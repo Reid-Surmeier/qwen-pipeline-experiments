@@ -43,6 +43,27 @@ This falsifies the claim that Muse is simply usable where Qwen is blocked. Both
 refuse political maps; the difference is that Muse refuses **cheaply** (4-8 s,
 unbilled) and Qwen refuses **expensively** (253 s).
 
+## Where each map ended
+
+| Map | Best stage | State |
+|---|---|---|
+| Australia, USA, Canada, Caribbean, Europe | C | clean: per-country colour, names intact, furniture gone |
+| Africa | C | clean; the brown graticule is kept deliberately |
+| Asia | B2 | names intact, colour good; pass C filtered 3/3, furniture remains |
+| Middle East | B2 | pass C filtered 3/3; the source's inset panel is misaligned |
+| South America | B2 or C | **C cleared the furniture but dropped the country names again**; B2 keeps the names and keeps the furniture. Neither is finished. |
+| Russia | C | **weak.** Provincial borders, dozens of small labels and grey non-Russian territory all get flattened. |
+
+Every additional pass is another chance to lose text: pass C removed the country
+names from the South America map that pass B had preserved. The passes are cheap
+but they are not free of risk, so the fewest that will do the job is the right
+number.
+
+Russia is the one map this procedure does not suit. It probably needs the world
+map's treatment instead -- generation for the fills, deterministic assembly for
+the labels -- because its label density is closer to the world map's than to
+Australia's.
+
 ## Reproducing
 
 ```bash
