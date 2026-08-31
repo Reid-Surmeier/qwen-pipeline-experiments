@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Edit the attached time-zone map. This is a precise cartographic edit, not a reinterpretation.\n\nKEEP EXACTLY AS-IS\n- The same projection, framing and crop.\n- Every coastline and every border in its exact current position and shape.\n- The flat, hard-edged pixel rendering: solid fills, crisp black borders, no gradients, no shading, no texture, no noise, no drop shadows, no 3D.\n- The white ocean background.\n- EVERY place name and country name exactly as it is written now: same spelling, same position, same size, same capitalisation, same colour. Do not move, restyle, re-letter or re-space any name. Do not add names.\n- Every small dot or circle marking a city.\n\nREMOVE COMPLETELY\n- Every clock-time label and the coloured box behind it (for example \"18:45\", \"09:47\", \"23:46\").\n- Every yellow \"DST\" badge.\n- Every time-zone abbreviation block (for example \"CEST\", \"EAT\", \"MSK\", \"AEST\", \"PDT\", \"UTC+3\", \"MSK+2\", \"GMT\", \"WAT\", \"CAT\", \"TRT\").\n- The date boxes and the \"UTC\" box.\n- The \"Map outline WorldTimeZone.com / (C)WorldTimeZone All Rights reserved\" box.\n- Any grey rounded frame, border chrome or drop shadow around the edge of the image.\n- Replace everything removed with the map colour that belongs underneath it.\n\nChange nothing else. Do not recolour anything in this pass.",
+  "n": 1,
+  "size": "1568x1568",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "label": "A-stripped",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:02:22.014922+00:00",
+  "seconds": 8.1,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1568x1568"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passA-strip-times.txt",
+  "prompt_sha256": "8a628e6fc2b35d79bece595a6e00207523d2641c925c9a1a8928dedd7855f70f",
+  "references": [
+    {
+      "file": "benchmarks/regional/reference/africa.png",
+      "bytes": 323785,
+      "sha256": "c2b39d45a636bc0c6fa221a51e99cbe59e044adca33db27790d1bc760372e1e7",
+      "dimensions": "1816x1816"
+    }
+  ],
+  "cost_usd": null,
+  "usage": {},
+  "outputs": [],
+  "failure": {
+    "kind": "http",
+    "status": 400,
+    "body": "{\"error\":{\"message\":\"The response was filtered due to the prompt triggering our content management policy.\",\"code\":400,\"metadata\":{\"provider_name\":\"Meta\"}}}"
+  }
+}
