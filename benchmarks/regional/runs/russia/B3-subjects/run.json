@@ -1,0 +1,54 @@
+{
+  "label": "russia-B3",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:56:03.133860+00:00",
+  "seconds": 26.8,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2048x1184"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-russia.txt",
+  "prompt_sha256": "3aaf25030129b6f008a8738d566db7acc2158d40c1303cd24adfcc7fb6bf8d72",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/russia/A-stripped/image-01.png",
+      "bytes": 1395461,
+      "sha256": "ab8f268b450653b3853a855391bc696169365c5b24d6a494d0534a2ac533c008",
+      "dimensions": "2048x1184"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 191,
+    "completion_tokens": 2594,
+    "total_tokens": 2785,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2594
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "2048x1184",
+      "aspect": 1.7297,
+      "bytes": 423722,
+      "sha256": "a68a690816934b80f9fd168b18549632c9c89f520c114d6da6bb9f9f0727dc34"
+    }
+  ],
+  "failure": null
+}

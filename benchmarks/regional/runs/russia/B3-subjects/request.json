@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Recolour the attached map of Russia. Change ONLY fill colours.\n\nGive every federal subject (oblast, krai, republic, okrug) exactly ONE flat solid colour covering its whole area, and make sure no two that share a border have the same colour. Use these nine colours evenly: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.\n\nLeave every neighbouring country outside Russia flat grey, exactly as it is now. Do not colour them.\n\nEvery place name and every small city dot must survive unchanged, in the same position, spelling and size. Keep every border line and coastline exactly as it is, and keep the flat pixel rendering with crisp black outlines and solid fills.",
+  "n": 1,
+  "size": "2048x1184",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "label": "south-america-C",
   "model": "meta/muse-image",
-  "submitted_utc": "2026-08-31T19:22:53.990539+00:00",
-  "seconds": 12.4,
+  "submitted_utc": "2026-08-31T20:03:40.972689+00:00",
+  "seconds": 29.1,
   "timeout_seconds": 600.0,
   "timeout_reason": "explicit --timeout",
   "requested": {
@@ -15,16 +15,16 @@
   "references": [
     {
       "file": "benchmarks/regional/runs/south-america/B2-recoloured/image-01.png",
-      "bytes": 784236,
-      "sha256": "25c51c6605c7f7e967fff64fe750388730c8830b878c74c0a7517fe8eb9bcfa2",
+      "bytes": 1074719,
+      "sha256": "fee20d4a972dddc61210235dd0859557462056296a381c4a9a6c9f58b2ef7ac9",
       "dimensions": "1440x1696"
     }
   ],
   "cost_usd": 0.01,
   "usage": {
     "prompt_tokens": 98,
-    "completion_tokens": 913,
-    "total_tokens": 1011,
+    "completion_tokens": 2378,
+    "total_tokens": 2476,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -37,7 +37,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 913
+      "image_tokens": 2378
     }
   },
   "outputs": [
@@ -46,8 +46,8 @@
       "source_media_type": "image/webp",
       "dimensions": "1440x1696",
       "aspect": 0.8491,
-      "bytes": 181640,
-      "sha256": "5c5ef9ffeb3ff0d8281d4dede97cb624a7b566743d54a816b23f6fed872d9b15"
+      "bytes": 257382,
+      "sha256": "2e346cac688af0d4480a26e4e951503f1ba80d3f0fed787da5e6adb39f1ef197"
     }
   ],
   "failure": null
