@@ -97,6 +97,36 @@ client gives up, the provider finishes and bills anyway ($3.36 lost on
 **600 s is the right ceiling** — well clear of the worst observed case, without
 the 30-minute hang that motivated TCP keepalive.
 
+## The native source settles the style questions
+
+Every reference we started from was an upscale. The publisher serves the real
+file at **1001x485 as a 256-colour GIF**, from
+`worldtimezone.com/time/wtzmap.php?sessionid=c5&forma=12map`, saved here as
+`reference/worldtimezone-native-1001x485.gif`. Measuring it answered three
+things guessing had got wrong:
+
+| | Measured on the native GIF |
+|---|---|
+| Graticule | 1 px of `#CCCEFC`, 15 deg longitude (40 px) by 10 deg latitude. Of its 16936 grid pixels, **exactly 0 sit on a saturated country fill** — the lattice is behind the land, it never crosses it. |
+| Place names | `#040234`, a very dark navy, not black. "Seattle" is **7 px tall, 33 px wide** against a 960 px-wide world. |
+| Capital marker | small filled `#CC3333` disc; plain cities get a hollow ring. |
+| Projection | Miller confirmed independently: equator at row 313, 152.8 px per radian, 40 px per 15 deg. |
+
+Our map is 2.373x native (15 deg is 94.9 px against their 40 px), so native
+metrics scale by that. Three corrections followed:
+
+1. **Grid over land was the main defect.** Drawing a grey lattice across every
+   country reads as an overlay dropped on top. Confined to the background, in
+   the publisher's own pale blue, it reads as part of the map.
+2. **Type was ~1.7x too small.** 7 px native scales to ~17 px here, not the
+   10 px we had. Undersized type looks like a different document.
+3. **Linework was too light for the type.** The publisher's coastlines are
+   heavier relative to its labels than the generated ones are, so the labels
+   floated. Dilating the black linework by 1 px matches the weight.
+
+`SIDE-BY-SIDE.png` puts the same geographic window from both maps at the same
+apparent scale.
+
 ## Reproducing
 
 ```bash

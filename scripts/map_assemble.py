@@ -21,6 +21,25 @@ from PIL import Image, ImageDraw, ImageFont
 
 FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 
+# --- style measured from the publisher's own native GIF ---------------------
+# worldtimezone.com serves its map at 1001x485 with a 256-colour palette; every
+# reference we were handed is an upscale of that. Read off the native file:
+#
+#   * the graticule is 1 px of #CCCEFC, drawn ONLY over the white background.
+#     Of its 16936 grid pixels, exactly 0 fall on a saturated country fill --
+#     the lattice sits behind the land, it does not cross it. Drawing it over
+#     everything is what made our version read as an overlay pasted on top.
+#   * place names are #040234, a very dark navy, not black.
+#   * "Seattle" measures 7 px tall and 33 px wide against a 960 px-wide world,
+#     so type is far chunkier relative to the map than ours was.
+#
+# 15 deg of longitude is 40 px there and 94.9 px here, so this map is 2.373x
+# native and native metrics scale by that.
+GRID_RGB = (204, 206, 252)
+LABEL_RGB = (4, 2, 52)
+NATIVE_SCALE = 2.373
+NATIVE_TEXT_H = 7.0
+
 # --- source-image geo calibration (Miller cylindrical) ----------------------
 SRC_X0 = 2294.25       # pixel x of the Greenwich meridian
 SRC_PX_PER_DEG = 12.02 # longitude
@@ -105,19 +124,22 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
-    ap.add_argument("--grid-alpha", type=int, default=38, help="0-255, lower = lighter")
-    ap.add_argument("--scale", type=int, default=2,
-                    help="final NEAREST upscale; the source map is a 2x upscale of its own "
-                         "native grid, so 2 reproduces its chunky aliased pixels")
-    ap.add_argument("--font-size", type=int, default=14)
+    ap.add_argument("--font-size", type=int, default=0,
+                    help="0 derives it from the native map's own type size")
     ap.add_argument("--pad", type=int, default=6, help="label clearance in px")
+    ap.add_argument("--max-priority", type=int, default=3)
+    ap.add_argument("--max-clutter", type=float, default=0.30)
     ap.add_argument("--fix-alaska", action="store_true")
-    ap.add_argument("--max-priority", type=int, default=4)
-    ap.add_argument("--max-clutter", type=float, default=0.30,
-                    help="last-resort veto: only reject a label when even its best "
-                         "slot is this buried in linework. Clutter is primarily a "
-                         "preference between slots, not a filter.")
+    ap.add_argument("--thicken", type=int, default=1,
+                    help="dilate the black linework by this many px. The "
+                         "publisher's coastlines are heavier relative to its "
+                         "type than the generated ones are, which is what makes "
+                         "our labels read as pasted on rather than drawn in.")
     ap.add_argument("--no-labels", action="store_true")
+    ap.add_argument("--no-grid", action="store_true")
+    ap.add_argument("--scale", type=int, default=2,
+                    help="final NEAREST upscale, matching how the publisher's "
+                         "own map is presented above native size")
     args = ap.parse_args()
 
     base = Image.open(args.base).convert("RGB")
@@ -132,53 +154,64 @@ def main() -> int:
             ImageDraw.floodfill(base, (int(ax), int(ay)), usa, thresh=30)
             print(f"  Alaska {before} -> {usa}")
 
-    # --- light grey graticule, drawn over everything at low opacity ---------
-    grid = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(grid)
-    grey = (128, 130, 134, args.grid_alpha)
-    for lon in range(-180, 181, 15):
-        x, _ = project(lon, 0.0)
-        if 0 <= x < W:
-            gd.line([(x, 0), (x, H)], fill=grey, width=1)
-    for lat in range(-60, 81, 10):
-        _, y = project(0.0, lat)
-        if 0 <= y < H:
-            gd.line([(0, y), (W, y)], fill=grey, width=1)
-    base = Image.alpha_composite(base.convert("RGBA"), grid).convert("RGB")
+    arr = np.asarray(base).astype(int)
+    saturated = (arr.max(2) - arr.min(2)) > 55      # a country fill
+    inked = arr.max(2) < 90                          # black linework
 
-    placed = []
+    if args.thicken:
+        from scipy import ndimage
+        grown = ndimage.binary_dilation(inked, iterations=args.thicken)
+        arr[grown] = (0, 0, 0)
+        inked = grown
+        saturated = (arr.max(2) - arr.min(2)) > 55
+        base = Image.fromarray(arr.astype("uint8"))
+    background = ~(saturated | inked)                # ocean and interior white
+
+    # --- graticule: behind the land, never across it ------------------------
+    if not args.no_grid:
+        grid = np.zeros((H, W), bool)
+        gw = max(1, round(NATIVE_SCALE / 2))         # native is 1 px
+        for lon in range(-180, 181, 15):
+            x, _ = project(lon, 0.0)
+            if 0 <= x < W:
+                grid[:, int(x):int(x) + gw] = True
+        for lat in range(-50, 81, 10):
+            _, y = project(0.0, lat)
+            if 0 <= y < H:
+                grid[int(y):int(y) + gw, :] = True
+        arr[grid & background] = GRID_RGB
+        base = Image.fromarray(arr.astype("uint8"))
+
+    placed, skipped_tight = [], []
     if not args.no_labels:
-        draw = ImageDraw.Draw(base)
-        # The map's linework is hard-edged and aliased. Anti-aliased type reads
-        # as a different medium pasted on top, which is exactly what the first
-        # attempt looked like, so turn PIL's font smoothing off entirely.
-        draw.fontmode = "1"
-        font = ImageFont.truetype(FONT, args.font_size)
-        dot = 3            # radius of the capital marker
-        taken: list[tuple[float, float, float, float]] = []
+        # Type is rendered at half resolution with smoothing off and then
+        # doubled with NEAREST, so every letter is built from square 2x2 blocks
+        # on the same grid as the linework instead of floating above it as
+        # smooth vector shapes.
+        ss = 2
+        size = args.font_size or max(6, round(NATIVE_TEXT_H * NATIVE_SCALE / ss / 0.72))
+        font = ImageFont.truetype(FONT, size)
+        layer = Image.new("RGBA", (W // ss, H // ss), (0, 0, 0, 0))
+        ld = ImageDraw.Draw(layer)
+        ld.fontmode = "1"
+        dot = 2
 
-        # Legibility, not just non-overlap. A name laid across a coastline or a
-        # cluster of small borders is unreadable even though nothing collides
-        # with it, which is what made the first attempt hard to read. Score each
-        # candidate slot by the dark linework underneath and take the clearest.
-        # Near-black across ALL channels, not luminance: the palette's saturated
-        # red (#FF0024) has a luminance of 80, so a luminance test reads Germany
-        # and Saudi Arabia as solid linework and vetoes Berlin and Riyadh.
-        clutter = (np.asarray(base).max(axis=2) < 90).astype(np.float32)
+        clutter = inked.astype(np.float32)
+        taken: list[tuple[float, float, float, float]] = []
 
         def free(box):
             x0, y0, x1, y1 = box
-            if x0 < 2 or y0 < 2 or x1 > W - 2 or y1 > H - 2:
+            if x0 < 1 or y0 < 1 or x1 > W // ss - 1 or y1 > H // ss - 1:
                 return False
             return not any(x0 < b[2] and b[0] < x1 and y0 < b[3] and b[1] < y1 for b in taken)
 
         def busy(box):
-            x0, y0, x1, y1 = (int(v) for v in box)
+            x0, y0, x1, y1 = (int(v) * ss for v in box)
             patch = clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)]
             return float(patch.mean()) if patch.size else 1.0
 
         def mark_busy(box):
-            x0, y0, x1, y1 = (int(v) for v in box)
+            x0, y0, x1, y1 = (int(v) * ss for v in box)
             clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)] = 1.0
 
         for entry in sorted(CAPITALS, key=lambda c: c[3]):
@@ -186,16 +219,14 @@ def main() -> int:
             hint = entry[4] if len(entry) > 4 else None
             if prio > args.max_priority:
                 continue
-            x, y = project(lon, lat, W)
-            if not (0 <= x < W and 0 <= y < H):
+            fx, fy = project(lon, lat, W)
+            if not (0 <= fx < W and 0 <= fy < H):
                 continue
-            tw = draw.textlength(name, font=font)
-            th = args.font_size
-            # The original favours a label to the right of its dot. Fall back
-            # through left, below and above, then the diagonals, so a major
-            # capital is never dropped just because a neighbour claimed the
-            # obvious slot first.
-            g = dot + 4
+            x, y = fx / ss, fy / ss
+            tw = ld.textlength(name, font=font)
+            th = size
+            g = dot + 3
+            pad = args.pad
             slots = {"R": (g, -th / 2), "L": (-tw - g, -th / 2),
                      "D": (-tw / 2, g), "U": (-tw / 2, -th - g)}
             order = ["R", "L", "D", "U"]
@@ -204,16 +235,12 @@ def main() -> int:
                 order.insert(0, hint)
             candidates = [slots[k] for k in order] + [
                 (g, g), (-tw - g, g), (g, -th - g), (-tw - g, -th - g)]
-            pad = args.pad
 
             def boxfor(dx, dy):
                 return (x + dx - pad, y + dy - pad, x + dx + tw + pad, y + dy + th + pad)
 
             chosen = None
-            # A hint is a decision already made, usually to keep a neighbour's
-            # space clear, so it wins outright whenever it is available. Left to
-            # scoring alone, London took the slot directly on top of Paris.
-            if hint:
+            if hint:                      # a hint is a decision, not a tiebreak
                 hb = boxfor(*slots[hint])
                 if free(hb) and busy(hb) <= args.max_clutter:
                     chosen = (busy(hb), *slots[hint], hb)
@@ -221,37 +248,35 @@ def main() -> int:
                 scored = [(busy(boxfor(dx, dy)) + rank * 0.02, dx, dy, boxfor(dx, dy))
                           for rank, (dx, dy) in enumerate(candidates)
                           if free(boxfor(dx, dy))]
-                # the rank penalty preserves the original's right-of-dot habit
                 chosen = min(scored) if scored else None
-            if chosen:
-                score, dx, dy, box = chosen
-                if score <= args.max_clutter:
-                    taken.append(box)
-                    taken.append((x - dot - 2, y - dot - 2, x + dot + 2, y + dot + 2))
-                    mark_busy(box)
-                    # The source marks a capital with a small filled dark-red
-                    # disc (#CC3333) and sets the name in plain black beside it,
-                    # with no halo and no outline.
-                    draw.ellipse([x - dot, y - dot, x + dot, y + dot],
-                                 fill=(204, 51, 51), outline=(90, 20, 20))
-                    draw.text((x + dx, y + dy), name, font=font, fill=(0, 0, 0))
-                    placed.append({"name": name, "lat": lat, "lon": lon,
-                                   "x": round(x, 1), "y": round(y, 1),
-                                   "clutter": round(score, 4)})
+            if not chosen or chosen[0] > args.max_clutter:
+                skipped_tight.append(name)
+                continue
+            score, dx, dy, box = chosen
+            taken.append(box)
+            taken.append((x - dot - 1, y - dot - 1, x + dot + 1, y + dot + 1))
+            mark_busy(box)
+            ld.ellipse([x - dot, y - dot, x + dot, y + dot], fill=(204, 51, 51, 255))
+            ld.text((x + dx, y + dy), name, font=font, fill=(*LABEL_RGB, 255))
+            placed.append({"name": name, "lat": lat, "lon": lon,
+                           "x": round(fx, 1), "y": round(fy, 1),
+                           "clutter": round(score, 4)})
+
+        base = Image.alpha_composite(
+            base.convert("RGBA"),
+            layer.resize((W, H), Image.NEAREST)).convert("RGB")
 
     if args.scale > 1:
-        # NEAREST only: any smoothing here would undo the aliased rendering.
         base = base.resize((W * args.scale, H * args.scale), Image.NEAREST)
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     base.save(args.out)
-    skipped = [c[0] for c in CAPITALS
-               if c[3] <= args.max_priority and c[0] not in {p["name"] for p in placed}]
     report = {"output": str(args.out), "size": f"{base.width}x{base.height}",
-              "scale": args.scale, "font_size": args.font_size,
-              "placed": len(placed), "skipped_no_room": skipped, "labels": placed}
+              "scale": args.scale, "font_size": args.font_size or "derived",
+              "placed": len(placed), "skipped_no_room": skipped_tight, "labels": placed}
     args.out.with_suffix(".labels.json").write_text(json.dumps(report, indent=2) + "\n")
-    print(f"{args.out}  placed {len(placed)}  skipped {len(skipped)}: {', '.join(skipped) or 'none'}")
+    print(f"{args.out}  {base.width}x{base.height}  placed {len(placed)}  "
+          f"skipped {len(skipped_tight)}: {', '.join(skipped_tight) or 'none'}")
     return 0
 
 
