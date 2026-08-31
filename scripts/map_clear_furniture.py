@@ -60,6 +60,38 @@ def frame_boxes(arr: np.ndarray, min_side: int = 20, min_width: int = 44,
     return found
 
 
+def filled_rectangles(arr: np.ndarray, min_w: int = 40, max_w: int = 300,
+                      min_h: int = 16, max_h: int = 70,
+                      fill_ratio: float = 0.88) -> list[tuple[int, int, int, int]]:
+    """Solid rectangles of one flat colour -- a clock readout's own fill.
+
+    Matching the readout's colour alone is unsafe: its mint (115,253,202) is
+    within a hair of the palette's #75FFC8, so a colour filter would erase mint
+    countries. Shape separates them. A readout fills its bounding box almost
+    completely because it IS a rectangle; no country does, however small.
+    """
+    ink = arr.max(axis=2) < 110
+    q = arr // 20
+    keyed = q[:, :, 0] * 4096 + q[:, :, 1] * 64 + q[:, :, 2]
+    found = []
+    for value in np.unique(keyed[~ink]):
+        comp, n = ndimage.label((keyed == value) & ~ink)
+        if not n:
+            continue
+        for index, (sl_y, sl_x) in enumerate(ndimage.find_objects(comp), start=1):
+            bh, bw = sl_y.stop - sl_y.start, sl_x.stop - sl_x.start
+            if not (min_w <= bw <= max_w and min_h <= bh <= max_h):
+                continue
+            if bw < bh * 1.4:
+                continue
+            # The digits printed on the readout are ink, which punches holes in
+            # its fill; count them as part of the box or no readout ever passes.
+            solid = (comp[sl_y, sl_x] == index) | ink[sl_y, sl_x]
+            if float(solid.mean()) >= fill_ratio:
+                found.append((sl_x.start, sl_y.start, sl_x.stop, sl_y.stop))
+    return found
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--image", required=True, type=Path)
@@ -71,7 +103,7 @@ def main() -> int:
     img = Image.open(args.image).convert("RGB")
     arr = np.asarray(img).astype(int)
     h, w, _ = arr.shape
-    boxes = frame_boxes(arr)
+    boxes = frame_boxes(arr) + filled_rectangles(arr)
     for x0, y0, x1, y1 in boxes:
         if args.dry_run:
             continue

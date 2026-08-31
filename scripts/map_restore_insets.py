@@ -21,6 +21,12 @@ from PIL import Image
 from scipy import ndimage
 
 # panel rectangles in source pixels, read off the grey frame lines
+# Landmasses the recolour drew loose on the map that a restored panel now
+# carries properly, as a fraction of the map area. Left in place they appear
+# twice: the US sheet showed Alaska both in its panel and adrift beside it.
+# region of the map area (x0, y0, x1, y1 as fractions) to blank
+SUPERSEDED = {"usa": [("alaska", 0.03, 0.0, 0.215, 0.25)]}
+
 PANELS = {
     "usa": [
         ("alaska", 3, 26, 549, 333),
@@ -35,7 +41,15 @@ PANELS = {
 # Land is more saturated -- Alaska (28,234,165), Guam (53,184,250), Hawaii
 # (248,87,87) -- so matching the pastel exactly never touches a landmass.
 CLOCK_FILLS = [(255, 153, 153), (255, 255, 0), (102, 255, 204), (102, 204, 255),
-               (153, 255, 204), (255, 204, 204)]
+               (153, 255, 204), (255, 204, 204), (255, 255, 102), (255, 240, 0)]
+
+
+def flood_region(arr: np.ndarray, seed: tuple[int, int]) -> np.ndarray:
+    """The contiguous non-background blob containing `seed`."""
+    body = (arr.max(axis=2) - arr.min(axis=2) > 40) | (arr.max(axis=2) < 110)
+    labels, _ = ndimage.label(body, structure=np.ones((3, 3)))
+    target = labels[seed[1], seed[0]]
+    return labels == target if target else np.zeros(body.shape, bool)
 
 
 def clear_clock_boxes(panel: Image.Image, pad: int = 5) -> Image.Image:
@@ -83,13 +97,37 @@ def main() -> int:
         return 0
     sx, sy = img.width / src.width, img.height / src.height
 
+    # The recolour fills more of the frame than the source did, so a panel
+    # pasted at the source's scaled position lands on the map -- Alaska's box
+    # covered Washington. Give the panels their own column beside the map
+    # instead: covering a state to save the frame size is the wrong trade.
+    prepared = [(name, clear_clock_boxes(src.crop((x0, y0, x1, y1))),
+                 max(1, round((x1 - x0) * sx)), max(1, round((y1 - y0) * sy)))
+                for name, x0, y0, x1, y1 in panels]
+    gap = max(6, round(img.height * 0.012))
+    col_w = max(pw for _, _, pw, _ in prepared)
+    stack_h = sum(ph for *_, ph in prepared) + gap * (len(prepared) + 1)
+
+    canvas = Image.new("RGB",
+                       (img.width + col_w + gap * 2, max(img.height, stack_h)),
+                       (255, 255, 255))
+    canvas.paste(img, (col_w + gap * 2, 0))
+    img = canvas
+
+    for _name, fx0, fy0, fx1, fy1 in SUPERSEDED.get(args.region, []):
+        mx0 = col_w + gap * 2
+        mw, mh = img.width - mx0, img.height
+        arr = np.asarray(img.convert("RGB")).astype(int)
+        arr[int(mh * fy0):int(mh * fy1),
+            mx0 + int(mw * fx0):mx0 + int(mw * fx1)] = (255, 255, 255)
+        img = Image.fromarray(arr.astype("uint8"))
+
     pasted = []
-    for name, x0, y0, x1, y1 in panels:
-        crop = clear_clock_boxes(src.crop((x0, y0, x1, y1)))
-        target = (max(1, round((x1 - x0) * sx)), max(1, round((y1 - y0) * sy)))
-        img.paste(crop.resize(target, Image.LANCZOS), (round(x0 * sx), round(y0 * sy)))
-        pasted.append({"panel": name, "at": [round(x0 * sx), round(y0 * sy)],
-                       "size": list(target)})
+    cursor = gap
+    for name, crop, pw, ph in prepared:
+        img.paste(crop.resize((pw, ph), Image.LANCZOS), (gap, cursor))
+        pasted.append({"panel": name, "at": [gap, cursor], "size": [pw, ph]})
+        cursor += ph + gap
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     img.save(args.out)
