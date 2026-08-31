@@ -64,6 +64,37 @@ map's treatment instead -- generation for the fills, deterministic assembly for
 the labels -- because its label density is closer to the world map's than to
 Australia's.
 
+## Deterministic repairs
+
+Two defects survive generation and are repaired in code rather than by another
+pass, because in both cases the correct answer already exists and there is
+nothing for a model to add.
+
+**Missing borders** (`scripts/map_restore_borders.py`). The Asia and Middle East
+sheets came back with no black country outlines, so Mongolia's fill ran into
+China's. Their sources draw borders in *white*, not black, so copying ink finds
+nothing; borders are read as **colour boundaries** instead and stamped in black.
+The reference is the pass-A output rather than the raw source, because A has the
+same geography but has already lost the clock boxes, whose rectangular edges
+would otherwise come back as spurious lines. Type is masked out of both images:
+the recolour shifts letters a pixel or two, so masking only the reference leaves
+a halo that shreds the target's own text.
+
+Applied to those two sheets only. Run everywhere it stamps the brown graticule
+as heavy black lines and damages type on maps whose borders were already fine.
+
+**Dropped inset panels** (`scripts/map_restore_insets.py`). The US sheet carries
+Alaska, Guam, American Samoa and Hawaii in framed panels down its left margin.
+The recolour kept Alaska's landmass but dropped its frame and lost the other
+three outright -- silently removing two states and two territories. The panels
+are exact rectangles at known coordinates, so they are copied from the source
+and their clock readouts painted out by matching the publisher's pastel box
+fills, which no landmass colour comes near.
+
+**Checking** (`scripts/map_check.py`) screens every sheet for both defects. It
+over-flags: legitimate furniture removal lowers the ink ratio the same way a
+lost border does, so a flag is a prompt to look, not a verdict.
+
 ## Reproducing
 
 ```bash

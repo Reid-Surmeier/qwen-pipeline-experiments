@@ -1,0 +1,92 @@
+[
+  {
+    "generated": "benchmarks/regional/final/africa.png",
+    "size": "1600x1600",
+    "source_linework_pct": 10.34,
+    "generated_linework_pct": 8.72,
+    "border_retention_pct": 83.6,
+    "fill_regions": 268,
+    "verdict": "ok"
+  },
+  {
+    "generated": "benchmarks/regional/final/south-america.png",
+    "size": "1440x1696",
+    "source_linework_pct": 4.98,
+    "generated_linework_pct": 2.83,
+    "border_retention_pct": 57.0,
+    "fill_regions": 46,
+    "verdict": "BORDERS LOST"
+  },
+  {
+    "generated": "benchmarks/regional/final/asia.png",
+    "size": "1664x1472",
+    "source_linework_pct": 3.07,
+    "generated_linework_pct": 11.72,
+    "border_retention_pct": 100.0,
+    "fill_regions": 3230,
+    "verdict": "ok"
+  },
+  {
+    "generated": "benchmarks/regional/final/usa.png",
+    "size": "2112x1152",
+    "source_linework_pct": 4.41,
+    "generated_linework_pct": 3.43,
+    "border_retention_pct": 53.0,
+    "fill_regions": 91,
+    "verdict": "BORDERS LOST"
+  },
+  {
+    "generated": "benchmarks/regional/final/canada.png",
+    "size": "1824x1344",
+    "source_linework_pct": 5.48,
+    "generated_linework_pct": 5.22,
+    "border_retention_pct": 87.9,
+    "fill_regions": 132,
+    "verdict": "ok"
+  },
+  {
+    "generated": "benchmarks/regional/final/russia.png",
+    "size": "2048x1184",
+    "source_linework_pct": 4.71,
+    "generated_linework_pct": 4.53,
+    "border_retention_pct": 90.9,
+    "fill_regions": 237,
+    "verdict": "ok"
+  },
+  {
+    "generated": "benchmarks/regional/final/australia.png",
+    "size": "1792x1376",
+    "source_linework_pct": 4.81,
+    "generated_linework_pct": 2.93,
+    "border_retention_pct": 60.7,
+    "fill_regions": 34,
+    "verdict": "BORDERS LOST"
+  },
+  {
+    "generated": "benchmarks/regional/final/caribbean.png",
+    "size": "1920x1248",
+    "source_linework_pct": 4.25,
+    "generated_linework_pct": 4.0,
+    "border_retention_pct": 98.4,
+    "fill_regions": 108,
+    "verdict": "ok"
+  },
+  {
+    "generated": "benchmarks/regional/final/europe.png",
+    "size": "1824x1344",
+    "source_linework_pct": 4.21,
+    "generated_linework_pct": 3.59,
+    "border_retention_pct": 49.5,
+    "fill_regions": 124,
+    "verdict": "BORDERS LOST"
+  },
+  {
+    "generated": "benchmarks/regional/final/middle-east.png",
+    "size": "1600x1504",
+    "source_linework_pct": 5.06,
+    "generated_linework_pct": 10.09,
+    "border_retention_pct": 100.0,
+    "fill_regions": 3065,
+    "verdict": "ok"
+  }
+]
