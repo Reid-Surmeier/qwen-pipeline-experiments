@@ -1,19 +1,5 @@
-Recolour the attached map and clear the last of its furniture.
+Recolour the attached map. Change ONLY fill colours.
 
-RECOLOUR
-Change only the fill colours. Do not move, redraw, add or delete any coastline, border, island or landmass, and do not alter any place name.
+The map is coloured by time zone, so one country can be split into bands of different colours while distant countries share a colour. Give every country exactly ONE flat solid colour covering its whole territory, and make sure no two countries sharing a border have the same colour. Use these nine colours evenly rather than mostly red, green and blue: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.
 
-The map is currently coloured by time zone, so one country can be split into bands of different colours while distant countries share a colour. Give every country exactly ONE flat solid colour covering its whole territory edge to edge. No country may contain a band or a colour boundary that is not an international border.
-
-Choose colours so that no two countries sharing a land border have the same colour, and spread the work evenly across all nine of these rather than using mostly red, green and blue:
-#FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.
-
-ALSO REMOVE
-- The "UTC" box and any remaining date or time text.
-- Any vertical "Greenwich Time" or "Greenwich Meridian" label box.
-- The "Map outline WorldTimeZone.com / (C)WorldTimeZone All Rights reserved" box.
-- Any grey rounded frame or border chrome around the edge of the image.
-Fill the space they leave with the background colour underneath.
-
-KEEP
-Every country name and city name exactly where and how it is now, and the flat pixel rendering: solid fills, crisp black borders, white background, no gradients, no shading, no texture.
+Every single word of text on this map must survive unchanged: the COUNTRY NAMES IN CAPITALS and the city names alike, in the same place, spelling and size. Keep every border line, coastline and city dot exactly as it is, and keep the flat pixel rendering with crisp black outlines and solid fills.

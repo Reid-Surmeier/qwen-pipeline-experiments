@@ -1,30 +1,30 @@
 {
-  "label": "A-stripped",
+  "label": "africa-B2",
   "model": "meta/muse-image",
-  "submitted_utc": "2026-08-31T19:05:17.844303+00:00",
-  "seconds": 39.5,
+  "submitted_utc": "2026-08-31T19:17:17.749663+00:00",
+  "seconds": 16.8,
   "timeout_seconds": 600.0,
   "timeout_reason": "explicit --timeout",
   "requested": {
     "model": "meta/muse-image",
     "n": 1,
-    "size": "1568x1568"
+    "size": "1600x1600"
   },
-  "prompt_file": "benchmarks/regional/prompts/passA-strip-times.txt",
-  "prompt_sha256": "b4f3a688d30b9f5ff46894589a00843f0a03e53b40b42264391a90c5a4fb4c29",
+  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
+  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
   "references": [
     {
-      "file": "benchmarks/regional/reference/africa.png",
-      "bytes": 323785,
-      "sha256": "c2b39d45a636bc0c6fa221a51e99cbe59e044adca33db27790d1bc760372e1e7",
-      "dimensions": "1816x1816"
+      "file": "benchmarks/regional/runs/africa/A-stripped/image-01.png",
+      "bytes": 1455518,
+      "sha256": "1063ab63fad62805fcba90e6d0d5543dc71b51c9216b38195425060817d90ad3",
+      "dimensions": "1600x1600"
     }
   ],
   "cost_usd": 0.01,
   "usage": {
-    "prompt_tokens": 131,
-    "completion_tokens": 3789,
-    "total_tokens": 3920,
+    "prompt_tokens": 213,
+    "completion_tokens": 1461,
+    "total_tokens": 1674,
     "cost": 0.01,
     "is_byok": false,
     "prompt_tokens_details": {
@@ -37,7 +37,7 @@
     },
     "completion_tokens_details": {
       "reasoning_tokens": 0,
-      "image_tokens": 3789
+      "image_tokens": 1461
     }
   },
   "outputs": [
@@ -46,8 +46,8 @@
       "source_media_type": "image/webp",
       "dimensions": "1600x1600",
       "aspect": 1.0,
-      "bytes": 424336,
-      "sha256": "8d78e7c5524702eea9b0b7766ab67816c6e51b97ee17706b124667753ed7a168"
+      "bytes": 432326,
+      "sha256": "6711a736031881bd84ad80dbed31b94cfa363974e4ad333e3515d70eb1f06202"
     }
   ],
   "failure": null

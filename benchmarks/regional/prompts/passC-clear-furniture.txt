@@ -1,0 +1,3 @@
+Remove the leftover furniture from this map: the "UTC" box, any remaining date or time text, any vertical "Greenwich Time" or "Greenwich Meridian" label box, the "Map outline WorldTimeZone.com" attribution box, and any grey frame around the edge. Fill the space they leave with the background underneath.
+
+Keep everything else exactly as it is, including every country name and city name.

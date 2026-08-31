@@ -1,0 +1,54 @@
+{
+  "label": "caribbean-B2",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:19:41.431110+00:00",
+  "seconds": 35.6,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1920x1248"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
+  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/caribbean/A-stripped/image-01.png",
+      "bytes": 899011,
+      "sha256": "734ed313938ed6f4374efc0d16f63156d03fe7e23e2f42eb929564be989ae891",
+      "dimensions": "1920x1248"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 4528,
+    "total_tokens": 4741,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 4528
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1920x1248",
+      "aspect": 1.5385,
+      "bytes": 271936,
+      "sha256": "96a6cf01cb58bbfd482575c15e4b61bc7bbca5012f85f6403b60e4847f6ca116"
+    }
+  ],
+  "failure": null
+}

@@ -1,0 +1,54 @@
+{
+  "label": "B-recoloured",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:10:10.149419+00:00",
+  "seconds": 16.5,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2112x1152"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
+  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/usa/A-stripped/image-01.png",
+      "bytes": 1156181,
+      "sha256": "c288488fedea3c95b52733e4af1bc08d7ce77436002526ec18560a3574867873",
+      "dimensions": "2112x1152"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 1371,
+    "total_tokens": 1584,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 1371
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "2112x1152",
+      "aspect": 1.8333,
+      "bytes": 310144,
+      "sha256": "4e056e2f275e20b8a890dc747d3fc37000d7b72564dab2fd2860f1cce1c79d39"
+    }
+  ],
+  "failure": null
+}

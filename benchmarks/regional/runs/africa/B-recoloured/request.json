@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Recolour the attached map and clear the last of its furniture.\n\nRECOLOUR\nChange only the fill colours. Do not move, redraw, add or delete any coastline, border, island or landmass, and do not alter any place name.\n\nThe map is currently coloured by time zone, so one country can be split into bands of different colours while distant countries share a colour. Give every country exactly ONE flat solid colour covering its whole territory edge to edge. No country may contain a band or a colour boundary that is not an international border.\n\nChoose colours so that no two countries sharing a land border have the same colour, and spread the work evenly across all nine of these rather than using mostly red, green and blue:\n#FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.\n\nALSO REMOVE\n- The \"UTC\" box and any remaining date or time text.\n- Any vertical \"Greenwich Time\" or \"Greenwich Meridian\" label box.\n- The \"Map outline WorldTimeZone.com / (C)WorldTimeZone All Rights reserved\" box.\n- Any grey rounded frame or border chrome around the edge of the image.\nFill the space they leave with the background colour underneath.\n\nKEEP\nEvery country name and city name exactly where and how it is now, and the flat pixel rendering: solid fills, crisp black borders, white background, no gradients, no shading, no texture.",
+  "n": 1,
+  "size": "1568x1568",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

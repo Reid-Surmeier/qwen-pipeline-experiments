@@ -1,0 +1,54 @@
+{
+  "label": "south-america-B2",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:17:34.935132+00:00",
+  "seconds": 24.7,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1440x1696"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
+  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/south-america/A-stripped/image-01.png",
+      "bytes": 949692,
+      "sha256": "c3a5b18f229421b2b73dae3f78395f7171221be6de4703680c80c30cee02eceb",
+      "dimensions": "1440x1696"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 2618,
+    "total_tokens": 2831,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2618
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1440x1696",
+      "aspect": 0.8491,
+      "bytes": 230184,
+      "sha256": "ef088676c042ebd2f0315bddaa830059b06568e2113ac5b44bf715b515a3a2d1"
+    }
+  ],
+  "failure": null
+}

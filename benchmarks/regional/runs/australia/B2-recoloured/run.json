@@ -1,0 +1,54 @@
+{
+  "label": "australia-B2",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T19:19:25.277606+00:00",
+  "seconds": 15.9,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1792x1376"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-per-country.txt",
+  "prompt_sha256": "55b55cac44381cbf38c0698ec4a7fa0da512db494c7616ce54e5d8efa79392f9",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/australia/A-stripped/image-01.png",
+      "bytes": 605660,
+      "sha256": "ccac7a5a61325212307e7ded49eb5f221f67d864c5fcf1a680c4a76f7da34091",
+      "dimensions": "1792x1376"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 1515,
+    "total_tokens": 1728,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 1515
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1792x1376",
+      "aspect": 1.3023,
+      "bytes": 172234,
+      "sha256": "c4ffc2e718a31cc2248cfe923f642a53983e3bde30b65aa88ef22db02ce61cfa"
+    }
+  ],
+  "failure": null
+}
