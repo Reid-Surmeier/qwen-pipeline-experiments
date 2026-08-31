@@ -47,6 +47,11 @@ NATIVE_TEXT_H = 7.0
 GRID_LON_STEP = 7.5
 GRID_LAT_STEP = 10
 
+# Graticule and date line are both 1 px in the native file, so they must stay
+# the same weight here. Stamping the reprojected date line and dilating it had
+# made it 6 px against the grid's 2.
+LINE_W = max(1, round(NATIVE_SCALE))
+
 # native-file calibration, for reprojecting artwork out of it
 NAT_X0, NAT_PX_PER_DEG = 500.0, 40.0 / 15.0
 NAT_Y_EQUATOR, NAT_PX_PER_RAD = 313.0, 152.8
@@ -57,29 +62,43 @@ def miller_inverse(y_m: float) -> float:
     return (math.degrees(math.atan(math.exp(y_m / 1.25))) - 45.0) / 0.4
 
 
-def dateline_points(native: "Image.Image") -> list[tuple[float, float]]:
-    """Lift the publisher's own date line out of its native GIF as lon/lat.
+def dateline_segments(native: "Image.Image", width: int) -> list[tuple[tuple, tuple]]:
+    """The publisher's own date line, as projected segments ready to stroke.
 
     The line zigzags around the Aleutians, Kiribati and Samoa, and authoring
-    those jogs by hand would be guesswork. Reprojecting the publisher's own
-    orange pixels is exact. Its label letters are separate small blobs, so a
-    size filter keeps the line and drops the type.
+    those jogs by hand would be guesswork, so its orange pixels are lifted from
+    the native GIF and reprojected. Its label letters are separate small blobs,
+    so a size filter keeps the line and drops the type.
+
+    Neighbouring native pixels become segments rather than dots: at 2.37x a
+    stamped point set is dotted, and dilating it to close the gaps is what made
+    the line three times the graticule's weight.
     """
     from scipy import ndimage
 
     a = np.asarray(native.convert("RGB")).astype(int)
     orange = (a[:, :, 0] > 200) & (a[:, :, 1] > 60) & (a[:, :, 1] < 160) & (a[:, :, 2] < 80)
     labels, count = ndimage.label(orange, structure=np.ones((3, 3)))
-    points = []
+    line = np.zeros_like(orange)
     for index in range(1, count + 1):
         ys, xs = np.where(labels == index)
-        if (ys.max() - ys.min() + 1) <= 40 or len(ys) <= 60:
-            continue                       # a letter, not the line
-        for py, px in zip(ys, xs):
-            lon = (px - NAT_X0) / NAT_PX_PER_DEG
-            lat = miller_inverse((NAT_Y_EQUATOR - py) / NAT_PX_PER_RAD)
-            points.append((lon, lat))
-    return points
+        if (ys.max() - ys.min() + 1) > 40 and len(ys) > 60:
+            line[ys, xs] = True                # a line branch, not a letter
+
+    def to_map(px, py):
+        lon = (px - NAT_X0) / NAT_PX_PER_DEG
+        lat = miller_inverse((NAT_Y_EQUATOR - py) / NAT_PX_PER_RAD)
+        return project(lon, lat, width)
+
+    segments = []
+    ys, xs = np.where(line)
+    points = set(zip(ys.tolist(), xs.tolist()))
+    for py, px in points:
+        here = to_map(px, py)
+        for dy, dx in ((0, 1), (1, 0), (1, 1), (1, -1)):   # each pair once
+            if (py + dy, px + dx) in points:
+                segments.append((here, to_map(px + dx, py + dy)))
+    return segments
 
 
 # Country names, as the publisher sets them: the same face in capitals, placed
@@ -90,13 +109,13 @@ def dateline_points(native: "Image.Image") -> list[tuple[float, float]]:
 COUNTRIES = [
     ("GREENLAND", 72.0, -42.0), ("ALASKA", 64.5, -152.0), ("CANADA", 58.0, -100.0),
     ("MEXICO", 23.5, -102.0), ("BRAZIL", -10.0, -52.0), ("ARGENTINA", -35.0, -65.0),
-    ("PERU", -9.0, -74.0), ("CHILE", -44.0, -72.0),
+    ("PERU", -9.0, -74.0),
     ("RUSSIA", 62.0, 95.0), ("CHINA", 33.0, 103.0), ("INDIA", 22.0, 79.0),
     ("KAZAKHSTAN", 48.0, 64.0), ("MONGOLIA", 46.5, 100.0), ("IRAN", 31.0, 56.0),
     ("SAUDI ARABIA", 21.0, 45.0), ("LIBYA", 26.0, 17.0), ("ALGERIA", 27.0, 2.0),
     ("SUDAN", 14.0, 28.0), ("SOUTH AFRICA", -30.5, 23.0),
     ("AUSTRALIA", -24.0, 133.0), ("NEW ZEALAND", -44.0, 171.0),
-    ("INDONESIA", -3.0, 119.0),
+    ("INDONESIA", -1.5, 114.0),
 ]
 
 # --- source-image geo calibration (Miller cylindrical) ----------------------
@@ -234,7 +253,7 @@ def main() -> int:
     # --- graticule: behind the land, never across it ------------------------
     if not args.no_grid:
         grid = np.zeros((H, W), bool)
-        gw = max(1, round(NATIVE_SCALE / 2))         # native is 1 px
+        gw = LINE_W                                   # native is 1 px, as is the date line
         steps = int(360 / GRID_LON_STEP)
         for i in range(steps + 1):
             lon = -180 + i * GRID_LON_STEP
@@ -249,22 +268,14 @@ def main() -> int:
         base = Image.fromarray(arr.astype("uint8"))
 
     if args.dateline and args.dateline.exists():
-        from scipy import ndimage
-
         # Consecutive native pixels land 2.37 apart here, so plotting them as
-        # points draws a dotted line. Stamp them into a mask and close the gaps
-        # with one dilation instead.
-        arr = np.asarray(base).astype(int)
-        stamp = np.zeros((H, W), bool)
-        for lon, lat in dateline_points(Image.open(args.dateline)):
-            x, y = project(lon, lat, W)
-            xi, yi = int(round(x)), int(round(y))
-            if 0 <= xi < W and 0 <= yi < H:
-                stamp[yi, xi] = True
-        stamp = ndimage.binary_closing(
-            ndimage.binary_dilation(stamp, np.ones((3, 3))), np.ones((3, 3)))
-        arr[stamp] = DATELINE_RGB
-        base = Image.fromarray(arr.astype("uint8"))
+        # points draws a dotted line. Dilating to close the gaps was the first
+        # fix and it made the line 6 px against the graticule's 2. Instead join
+        # each native pixel to its neighbours and stroke those segments at the
+        # graticule's own width, which is what the native file does.
+        dl = ImageDraw.Draw(base)
+        for (x0, y0), (x1, y1) in dateline_segments(Image.open(args.dateline), W):
+            dl.line([(x0, y0), (x1, y1)], fill=DATELINE_RGB, width=LINE_W)
 
     placed, skipped_tight = [], []
     if not args.no_labels:
@@ -283,6 +294,34 @@ def main() -> int:
         clutter = inked.astype(np.float32)
         taken: list[tuple[float, float, float, float]] = []
 
+        from scipy import ndimage
+
+        # Split the map into contiguous areas of one fill colour, so a label can
+        # be tested against the country it belongs to. Quantising to a coarse
+        # palette first keeps a country whole despite stray generated pixels;
+        # the black linework separates neighbours.
+        quant = np.asarray(base).astype(int) // 24
+        keyed = quant[:, :, 0] * 4096 + quant[:, :, 1] * 64 + quant[:, :, 2]
+        regions = np.zeros((H, W), np.int32)
+        next_id = 1
+        for value in np.unique(keyed[~inked]):
+            comp, count = ndimage.label((keyed == value) & ~inked)
+            comp[comp > 0] += next_id - 1
+            regions = np.where(comp > 0, comp, regions)
+            next_id += count
+        _region_cache: dict[int, np.ndarray] = {}
+
+        def country_region(fx, fy):
+            xi, yi = int(round(fx)), int(round(fy))
+            if not (0 <= xi < W and 0 <= yi < H):
+                return None
+            rid = int(regions[yi, xi])
+            if rid <= 0:
+                return None
+            if rid not in _region_cache:
+                _region_cache[rid] = regions == rid
+            return _region_cache[rid]
+
         def free(box):
             x0, y0, x1, y1 = box
             if x0 < 1 or y0 < 1 or x1 > W // ss - 1 or y1 > H // ss - 1:
@@ -297,6 +336,37 @@ def main() -> int:
         def mark_busy(box):
             x0, y0, x1, y1 = (int(v) * ss for v in box)
             clutter[max(y0, 0):max(y1, 1), max(x0, 0):max(x1, 1)] = 1.0
+
+        def interior_spots(region, need_w, need_h, ss_, limit=14):
+            """Places inside the region where the whole word fits, best first.
+
+            Returning only the single deepest point was not enough: Brazil's
+            pole of inaccessibility happens to sit against Brasilia's label, so
+            the name was dropped even though the Amazon had room a little to the
+            west. Candidates are spread out so the caller can fall back.
+            """
+            dist = ndimage.distance_transform_edt(region)
+            ys, xs = np.where(dist >= max(need_h / 2.0, 3.0))
+            if not len(ys):
+                return []
+            order = np.argsort(-dist[ys, xs])
+            out, chosen = [], []
+            for i in order[:6000]:
+                cy, cx = float(ys[i]), float(xs[i])
+                if any(abs(cx - px) < need_w * 0.6 and abs(cy - py) < need_h * 1.5
+                       for px, py in chosen):
+                    continue
+                x0, x1 = int(cx - need_w / 2), int(cx + need_w / 2)
+                y0, y1 = int(cy - need_h / 2), int(cy + need_h / 2)
+                if x0 < 0 or y0 < 0 or x1 >= W or y1 >= H:
+                    continue
+                patch = region[y0:y1, x0:x1]
+                if patch.size and patch.mean() >= 0.85:
+                    chosen.append((cx, cy))
+                    out.append((cx / ss_, cy / ss_))
+                    if len(out) >= limit:
+                        break
+            return out
 
         countries = ([] if args.no_countries
                      else [(n.upper(), la, lo, 0, None) for n, la, lo in COUNTRIES])
@@ -317,29 +387,40 @@ def main() -> int:
             g = dot + 3
             pad = args.pad
             if is_country:
-                # Centred on the territory, no marker, like the publisher's
-                # CHINA / ALASKA / GREENLAND. A centroid can land a few pixels
-                # inside a capital's label -- CHINA clipped New Delhi's -- so
-                # allow the name to drift within its own country rather than
-                # dropping it outright.
-                drift = th * 1.6
-                best = None
-                for ox, oy in ((0, 0), (0, -drift), (0, drift),
-                               (-drift, 0), (drift, 0),
-                               (0, -2 * drift), (0, 2 * drift),
-                               (-2 * drift, 0), (2 * drift, 0)):
-                    cbox = (x + ox - tw / 2 - pad, y + oy - th / 2 - pad,
-                            x + ox + tw / 2 + pad, y + oy + th / 2 + pad)
-                    if free(cbox) and busy(cbox) <= args.max_clutter:
-                        best = (ox, oy, cbox)
-                        break
-                if best is None:
+                # A centroid is not a good anchor: Greenland's lands near the
+                # coast and the name hangs off the island. Instead find the
+                # point furthest from that country's own edges -- its pole of
+                # inaccessibility -- and require the whole word to sit on that
+                # one fill, so a name can never spill into a neighbour or the
+                # sea.
+                region = country_region(fx, fy)
+                if region is None:
                     skipped_tight.append(name)
                     continue
-                ox, oy, cbox = best
+                # Containment is measured on the glyphs alone. The padding is
+                # clearance from other labels, and counting it here demanded a
+                # country be 46 px thick at its narrowest, which dropped Peru,
+                # Iran and Mongolia despite each having ample room for the word.
+                need_w, need_h = tw * ss, th * ss
+                spots = interior_spots(region, need_w, need_h, ss)
+                chosen = None
+                for cx, cy in spots:
+                    cbox = (cx - tw / 2 - pad, cy - th / 2 - pad,
+                            cx + tw / 2 + pad, cy + th / 2 + pad)
+                    # A country name has already been proved to sit on its own
+                    # fill, so linework beneath it matters less than it does for
+                    # a city label; what must hold is that it clears every label
+                    # already placed.
+                    if free(cbox) and busy(cbox) <= args.max_clutter * 1.6:
+                        chosen = (cx, cy, cbox)
+                        break
+                if chosen is None:
+                    skipped_tight.append(name)
+                    continue
+                cx, cy, cbox = chosen
                 taken.append(cbox)
                 mark_busy(cbox)
-                ld.text((x + ox - tw / 2, y + oy - th / 2), name, font=font,
+                ld.text((cx - tw / 2, cy - th / 2), name, font=font,
                         fill=(*LABEL_RGB, 255))
                 placed.append({"name": name, "kind": "country",
                                "lat": lat, "lon": lon})
