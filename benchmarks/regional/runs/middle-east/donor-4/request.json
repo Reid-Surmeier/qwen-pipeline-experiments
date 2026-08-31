@@ -1,0 +1,12 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Recolour the attached map. Change ONLY fill colours.\n\nSeveral countries are still coloured by time zone and appear as two or more colours. That is wrong. Every country must be ONE flat solid colour across its whole territory, including all of its islands.\n\nIn particular: IRAN, SAUDI ARABIA, TURKEY, IRAQ, EGYPT, PAKISTAN, AFGHANISTAN, KAZAKHSTAN and UZBEKISTAN are each one colour across their whole territory.\n\nNo two countries sharing a border may have the same colour. Use these nine evenly: #FF0024 red, #009DFF blue, #00D200 green, #FFCC00 amber, #BEFF8F pale green, #75FFC8 mint, #51B8FF sky blue, #D9DAFF lavender, #FF8548 orange.\n\nEvery country name and city name must survive exactly where it is, in the same spelling and size. Keep every border line, coastline and city dot unchanged, and keep the flat pixel rendering with solid fills.",
+  "n": 1,
+  "size": "1600x1504",
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

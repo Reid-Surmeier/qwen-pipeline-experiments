@@ -1,0 +1,28 @@
+{
+  "created": 1788211105,
+  "data": [
+    {
+      "b64_json": "<372248 base64 chars>",
+      "media_type": "image/webp"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 3284,
+    "total_tokens": 3498,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 3284
+    }
+  }
+}

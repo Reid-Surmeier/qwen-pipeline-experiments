@@ -1,0 +1,559 @@
+{
+  "regions": [
+    {
+      "x": 0,
+      "y": 0,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-3",
+      "agreement": 0.932
+    },
+    {
+      "x": 277,
+      "y": 0,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-3",
+      "agreement": 0.886
+    },
+    {
+      "x": 554,
+      "y": 0,
+      "width": 278,
+      "height": 245,
+      "donor": "donor-3",
+      "agreement": 0.976
+    },
+    {
+      "x": 832,
+      "y": 0,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-3",
+      "agreement": 0.9
+    },
+    {
+      "x": 1109,
+      "y": 0,
+      "width": 277,
+      "height": 245,
+      "donor": "donor-3",
+      "agreement": 0.887
+    },
+    {
+      "x": 1386,
+      "y": 0,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.934
+    },
+    {
+      "x": 0,
+      "y": 245,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.916
+    },
+    {
+      "x": 277,
+      "y": 245,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.629
+    },
+    {
+      "x": 554,
+      "y": 245,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.922
+    },
+    {
+      "x": 832,
+      "y": 245,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.747
+    },
+    {
+      "x": 1109,
+      "y": 245,
+      "width": 277,
+      "height": 245,
+      "donor": "B4-percountry",
+      "agreement": 0.915
+    },
+    {
+      "x": 1386,
+      "y": 245,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.944
+    },
+    {
+      "x": 0,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.892
+    },
+    {
+      "x": 277,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.929
+    },
+    {
+      "x": 554,
+      "y": 490,
+      "width": 278,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.923
+    },
+    {
+      "x": 832,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.994
+    },
+    {
+      "x": 1109,
+      "y": 490,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.989
+    },
+    {
+      "x": 1386,
+      "y": 490,
+      "width": 278,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.975
+    },
+    {
+      "x": 0,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.866
+    },
+    {
+      "x": 277,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.932
+    },
+    {
+      "x": 554,
+      "y": 736,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.897
+    },
+    {
+      "x": 832,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.962
+    },
+    {
+      "x": 1109,
+      "y": 736,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.997
+    },
+    {
+      "x": 1386,
+      "y": 736,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.994
+    },
+    {
+      "x": 0,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.927
+    },
+    {
+      "x": 277,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 1.0
+    },
+    {
+      "x": 554,
+      "y": 981,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.949
+    },
+    {
+      "x": 832,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.949
+    },
+    {
+      "x": 1109,
+      "y": 981,
+      "width": 277,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 0.963
+    },
+    {
+      "x": 1386,
+      "y": 981,
+      "width": 278,
+      "height": 245,
+      "donor": "B2-recoloured",
+      "agreement": 1.0
+    },
+    {
+      "x": 0,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.981
+    },
+    {
+      "x": 277,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.983
+    },
+    {
+      "x": 554,
+      "y": 1226,
+      "width": 278,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.98
+    },
+    {
+      "x": 832,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.98
+    },
+    {
+      "x": 1109,
+      "y": 1226,
+      "width": 277,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.986
+    },
+    {
+      "x": 1386,
+      "y": 1226,
+      "width": 278,
+      "height": 246,
+      "donor": "B2-recoloured",
+      "agreement": 0.943
+    }
+  ],
+  "donors_used": {
+    "donor-3": 5,
+    "B2-recoloured": 30,
+    "B4-percountry": 1
+  },
+  "contract": {
+    "canvas": {
+      "width": 1664,
+      "height": 1472
+    },
+    "regions": [
+      {
+        "name": "r0",
+        "x": 0,
+        "y": 0,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r1",
+        "x": 277,
+        "y": 0,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r2",
+        "x": 554,
+        "y": 0,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r3",
+        "x": 832,
+        "y": 0,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r4",
+        "x": 1109,
+        "y": 0,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r5",
+        "x": 1386,
+        "y": 0,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r6",
+        "x": 0,
+        "y": 245,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r7",
+        "x": 277,
+        "y": 245,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r8",
+        "x": 554,
+        "y": 245,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r9",
+        "x": 832,
+        "y": 245,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r10",
+        "x": 1109,
+        "y": 245,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r11",
+        "x": 1386,
+        "y": 245,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r12",
+        "x": 0,
+        "y": 490,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r13",
+        "x": 277,
+        "y": 490,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r14",
+        "x": 554,
+        "y": 490,
+        "width": 278,
+        "height": 246
+      },
+      {
+        "name": "r15",
+        "x": 832,
+        "y": 490,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r16",
+        "x": 1109,
+        "y": 490,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r17",
+        "x": 1386,
+        "y": 490,
+        "width": 278,
+        "height": 246
+      },
+      {
+        "name": "r18",
+        "x": 0,
+        "y": 736,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r19",
+        "x": 277,
+        "y": 736,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r20",
+        "x": 554,
+        "y": 736,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r21",
+        "x": 832,
+        "y": 736,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r22",
+        "x": 1109,
+        "y": 736,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r23",
+        "x": 1386,
+        "y": 736,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r24",
+        "x": 0,
+        "y": 981,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r25",
+        "x": 277,
+        "y": 981,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r26",
+        "x": 554,
+        "y": 981,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r27",
+        "x": 832,
+        "y": 981,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r28",
+        "x": 1109,
+        "y": 981,
+        "width": 277,
+        "height": 245
+      },
+      {
+        "name": "r29",
+        "x": 1386,
+        "y": 981,
+        "width": 278,
+        "height": 245
+      },
+      {
+        "name": "r30",
+        "x": 0,
+        "y": 1226,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r31",
+        "x": 277,
+        "y": 1226,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r32",
+        "x": 554,
+        "y": 1226,
+        "width": 278,
+        "height": 246
+      },
+      {
+        "name": "r33",
+        "x": 832,
+        "y": 1226,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r34",
+        "x": 1109,
+        "y": 1226,
+        "width": 277,
+        "height": 246
+      },
+      {
+        "name": "r35",
+        "x": 1386,
+        "y": 1226,
+        "width": 278,
+        "height": 246
+      }
+    ]
+  },
+  "base_donor": "B2-recoloured",
+  "pixels_changed_outside_declared_regions": 0
+}

@@ -95,6 +95,33 @@ fills, which no landmass colour comes near.
 over-flags: legitimate furniture removal lowers the ink ratio the same way a
 lost border does, so a flag is a prompt to look, not a verdict.
 
+## Assembly, for the sheets a single pass cannot hold
+
+Asking one pass to recolour a whole dense sheet lets it redraw the map. On Asia,
+Kazakhstan's fill swallowed part of western China and reached Urumqi; on the
+Middle East an island appeared in the Caspian. Five attempts across two prompts
+all passed the type gate and all moved borders, because a whole-sheet pass is
+free to move any pixel.
+
+`scripts/map_assembly.py` uses the repo's Assembly instead. Several whole-sheet
+donors are generated, and each declared region takes the donor that kept that
+region's geometry -- the repo's own note that similarity metrics are for
+*ranking generative donor images*. The reference stays authoritative, and the
+run records how many pixels changed outside the declared regions. It is zero on
+both sheets, which is the repo's definition of strict preservation.
+
+Two details the first attempt got wrong:
+
+- **Score geometry, not colour.** A donor is supposed to change every fill, so
+  colour distance ranks the most faithful donor worst. Agreement is measured on
+  border positions, minus a penalty for borders the donor invents.
+- **One base donor, overridden only on a clear margin.** Choosing freely per
+  region split India into two colours across a tile seam. A region now leaves
+  the base donor only when a rival beats it by 0.06.
+
+Whole-sheet donors keep colouring consistent because each donor saw the whole
+map; per-tile crops would not.
+
 ## Reproducing
 
 ```bash

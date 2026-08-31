@@ -1,0 +1,54 @@
+{
+  "label": "middle-east-donor2",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-08-31T21:17:39.082851+00:00",
+  "seconds": 19.0,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "explicit --timeout",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1600x1504"
+  },
+  "prompt_file": "benchmarks/regional/prompts/passB-middle-east.txt",
+  "prompt_sha256": "a17f7a6276f2592cba435e415b2e6b8ebdccd95db0dfb45236173640f1f21e62",
+  "references": [
+    {
+      "file": "benchmarks/regional/runs/middle-east/A-stripped/image-01.png",
+      "bytes": 1013052,
+      "sha256": "05427b2ec0637ac7b3c2a629f6a3901c1cc6f973c7e0e856398f362a79853571",
+      "dimensions": "1600x1504"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 2055,
+    "total_tokens": 2269,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 2055
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1600x1504",
+      "aspect": 1.0638,
+      "bytes": 283786,
+      "sha256": "555f07a6d8a60332619abf3cb91b3184ed6ddec64390f72028c64d1f5c5f1a2f"
+    }
+  ],
+  "failure": null
+}

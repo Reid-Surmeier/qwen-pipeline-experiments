@@ -13,7 +13,7 @@ NEEDS_BORDERS="asia middle-east"
 
 for r in africa south-america asia usa canada russia australia caribbean europe middle-east; do
   img=""
-  for st in B4-percountry B3-subjects C-final B2-recoloured; do
+  for st in assembled B4-percountry B3-subjects C-final B2-recoloured; do
     p="benchmarks/regional/runs/$r/$st/image-01.png"
     [ -f "$p" ] && { img="$p"; stage="$st"; break; }
   done
