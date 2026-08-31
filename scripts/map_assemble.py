@@ -35,7 +35,12 @@ FONT = "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
 #
 # 15 deg of longitude is 40 px there and 94.9 px here, so this map is 2.373x
 # native and native metrics scale by that.
-GRID_RGB = (204, 206, 252)
+# The publisher's own graticule is #CCCEFC, a pale blue. The owner wants a
+# lighter, greyer, more open lattice than that: a neutral grey blended into the
+# background rather than painted over it, so it reads as ruling under the map
+# instead of a second layer on top.
+GRID_RGB = (128, 132, 138)
+GRID_OPACITY = 0.28
 LABEL_RGB = (4, 2, 52)
 DATELINE_RGB = (252, 102, 4)
 NATIVE_SCALE = 2.373
@@ -44,8 +49,8 @@ NATIVE_TEXT_H = 7.0
 # The graticule is every 7.5 deg of longitude (20 px native), not 15. Reading
 # only the strongest columns had missed every other line and left the lattice
 # half as dense as the publisher's.
-GRID_LON_STEP = 7.5
-GRID_LAT_STEP = 10
+GRID_LON_STEP = 15.0
+GRID_LAT_STEP = 20
 
 # Graticule and date line are both 1 px in the native file, so they must stay
 # the same weight here. Stamping the reprojected date line and dilating it had
@@ -215,6 +220,9 @@ def main() -> int:
                          "our labels read as pasted on rather than drawn in.")
     ap.add_argument("--no-labels", action="store_true")
     ap.add_argument("--no-grid", action="store_true")
+    ap.add_argument("--grid-opacity", type=float, default=GRID_OPACITY)
+    ap.add_argument("--grid-lon-step", type=float, default=GRID_LON_STEP)
+    ap.add_argument("--grid-lat-step", type=int, default=GRID_LAT_STEP)
     ap.add_argument("--dateline", type=Path,
                     default=Path("benchmarks/world-map/reference/"
                                  "worldtimezone-native-1001x485.gif"),
@@ -254,17 +262,22 @@ def main() -> int:
     if not args.no_grid:
         grid = np.zeros((H, W), bool)
         gw = LINE_W                                   # native is 1 px, as is the date line
-        steps = int(360 / GRID_LON_STEP)
+        steps = int(round(360 / args.grid_lon_step))
         for i in range(steps + 1):
-            lon = -180 + i * GRID_LON_STEP
+            lon = -180 + i * args.grid_lon_step
             x, _ = project(lon, 0.0)
             if 0 <= x < W:
                 grid[:, int(x):int(x) + gw] = True
-        for lat in range(-50, 81, GRID_LAT_STEP):
+        for lat in range(-80, 81, args.grid_lat_step):
             _, y = project(0.0, lat)
             if 0 <= y < H:
                 grid[int(y):int(y) + gw, :] = True
-        arr[grid & background] = GRID_RGB
+        # Blended, not painted: at full strength even a light grey reads as a
+        # layer sitting on the map rather than ruling beneath it.
+        mask = grid & background
+        alpha = max(0.0, min(1.0, args.grid_opacity))
+        arr[mask] = np.round(
+            arr[mask] * (1.0 - alpha) + np.array(GRID_RGB) * alpha).astype(int)
         base = Image.fromarray(arr.astype("uint8"))
 
     if args.dateline and args.dateline.exists():
