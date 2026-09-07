@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 56,
+  "fps": 59,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -48,10 +48,10 @@
     "visible": false
   },
   "position": [
-    2291.76684570312,
-    2462.98681640625
+    2366.01831054688,
+    775.7080078125
   ],
-  "region": "south-america",
+  "region": "europe",
   "regions": [
     {
       "id": "europe",
@@ -94,8 +94,35 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
-  "south_edge": 2475.48681640625,
+  "shown_cities": [
+    {
+      "at": [
+        2366,
+        775.5
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        719.702697753906,
+        446.622863769531
+      ]
+    },
+    {
+      "at": [
+        2343.5,
+        759
+      ],
+      "id": "geonames2655603.0",
+      "labels": 1,
+      "name": "Birmingham",
+      "screen": [
+        354.401947021484,
+        178.735626220703
+      ]
+    }
+  ],
+  "south_edge": 803.424894018941,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
@@ -105,10 +132,10 @@
     1440,
     900
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_close_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 4,
+  "visible_cities": 2,
+  "visible_close_cities": 1,
+  "visible_labels": 2,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -116,8 +143,8 @@
     4480,
     3144
   ],
-  "zoom": 36,
+  "zoom": 16.2355899810791,
   "zoom_max": 36,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 108
+  "zoom_ratio": 48.7067699432373
 }

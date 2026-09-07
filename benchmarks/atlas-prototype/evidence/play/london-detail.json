@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 53,
+  "fps": 54,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -133,97 +133,6 @@
         580.476928710938,
         608.40625
       ]
-    },
-    {
-      "at": [
-        2608.5,
-        840.75
-      ],
-      "id": "europe3054643.0",
-      "labels": 1,
-      "name": "Budapest",
-      "screen": [
-        1235.78381347656,
-        675.875732421875
-      ]
-    },
-    {
-      "at": [
-        2633.5,
-        763.25
-      ],
-      "id": "europe756135.0",
-      "labels": 1,
-      "name": "Warsaw",
-      "screen": [
-        1313.3349609375,
-        435.467315673828
-      ]
-    },
-    {
-      "at": [
-        2626.5,
-        883
-      ],
-      "id": "europe792680.0",
-      "labels": 1,
-      "name": "Belgrade",
-      "screen": [
-        1291.62060546875,
-        806.937133789062
-      ]
-    },
-    {
-      "at": [
-        2550,
-        798.75
-      ],
-      "id": "europe3067696.0",
-      "labels": 1,
-      "name": "Prague",
-      "screen": [
-        1054.31420898438,
-        545.589904785156
-      ]
-    },
-    {
-      "at": [
-        2526.5,
-        704
-      ],
-      "id": "europe2618425.0",
-      "labels": 1,
-      "name": "Copenhagen",
-      "screen": [
-        981.416137695312,
-        251.671188354492
-      ]
-    },
-    {
-      "at": [
-        2288.5,
-        744.75
-      ],
-      "id": "europe2964574.0",
-      "labels": 1,
-      "name": "Dublin",
-      "screen": [
-        243.129608154297,
-        378.079498291016
-      ]
-    },
-    {
-      "at": [
-        2422.75,
-        786.25
-      ],
-      "id": "europe2800866.0",
-      "labels": 1,
-      "name": "Brussels",
-      "screen": [
-        659.579040527344,
-        506.814331054688
-      ]
     }
   ],
   "south_edge": 913.000499994225,
@@ -236,10 +145,10 @@
     1440,
     900
   ],
-  "visible_annotations": 23,
-  "visible_cities": 10,
+  "visible_annotations": 9,
+  "visible_cities": 3,
   "visible_close_cities": 0,
-  "visible_labels": 10,
+  "visible_labels": 3,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

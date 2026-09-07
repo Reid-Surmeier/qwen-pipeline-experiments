@@ -63,3 +63,9 @@ The original 396 names were already all eligible by native zoom 5.5, so increasi
 No new terrain is generated: extra markers must find existing retained land within two native-map pixels. New names remain hidden below close zoom 7; population tiers at 7, 14 and 24 admit progressively smaller places. Original bitmap labels keep priority. Dot/name pairs share one clipping/collision rectangle and draw together. A 64-world-pixel grid limits candidate work to the visible neighborhood rather than creating tens of thousands of nodes.
 
 The existing regular PixelMplus font is reused under the [upstream M+ permission](https://github.com/itouhiro/PixelMplus/blob/master/misc/mplus_bitmap_fonts/LICENSE_E). Godot's [CanvasItem drawing API](https://docs.godotengine.org/en/stable/classes/class_canvasitem.html) supplies drawing at fixed screen size. A shared maximum constant raises wheel, button, keyboard and pinch zoom to 36; the coastline shader retains a one-texel stroke minimum at that scale.
+
+## Slower reveal pacing
+
+The owner wanted less density earlier in zoom. The previous three thresholds admitted large population bands simultaneously. Original secondary-city thresholds move from 2/3.5/5.5 to 3.5/6.5/11, while original world and major regional labels remain unchanged. Additional cities now reveal across population-based thresholds spanning 12.17–34: large cities spread over approximately 12–18, medium places over 18–26, and smaller towns over 26–34. All 40,806 additional identities remain and each has a later threshold than before.
+
+Verification compares old and new reveal eligibility for every added city and captures five real wheel-zoom checkpoints around London. This changes pacing only: city positions, glyphs, palette, map textures, badge artwork and camera limits are preserved.

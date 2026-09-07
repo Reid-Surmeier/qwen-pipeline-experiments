@@ -95,10 +95,16 @@ for(const [name,index,point] of [['london',0,[2366,775.5]],['new-york',8,[1431,9
  const dx=(point[0]-initial.position[0])*initial.zoom,dy=(point[1]-initial.position[1])*initial.zoom;
  await page.mouse.move(720,450);await page.mouse.down();await page.mouse.move(720-dx,450-dy,{steps:12});await page.mouse.up();
  await page.mouse.move(720,450);
- for(let i=0;i<20;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(85);}
+ for(let i=0;i<20;i++){
+  await page.mouse.wheel(0,-100);await page.waitForTimeout(85);
+  if(name==='london' && [9,11,13,15,17].includes(i)){
+   await page.waitForTimeout(300);await shot('london-paced-'+(i+1));
+   if(i<=11)assert.equal((await state()).visible_close_cities,0);
+  }
+ }
  await page.waitForTimeout(600);const close=await state();assert(close.zoom>12);assert(close.visible_close_cities>=3);assert.equal(close.orphan_dots,0);await shot(name+'-deep-cities');
 }
 // Empty sea remains the cyan map surface; no white paper panels or missing textures.
 await page.keyboard.press('Home');await page.waitForTimeout(600);
-await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 36 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
+await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 36 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum','slower staged city reveal through five London zoom checkpoints'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
 await browser.close();

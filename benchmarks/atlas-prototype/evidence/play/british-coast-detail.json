@@ -185,32 +185,6 @@
         749.792114257812,
         661.212646484375
       ]
-    },
-    {
-      "at": [
-        2429.5,
-        761
-      ],
-      "id": "europe2759794.0",
-      "labels": 1,
-      "name": "Amsterdam",
-      "screen": [
-        778.947265625,
-        552.150695800781
-      ]
-    },
-    {
-      "at": [
-        2327.25,
-        699.25
-      ],
-      "id": "europe2650225.0",
-      "labels": 1,
-      "name": "Edinburgh",
-      "screen": [
-        337.300262451172,
-        285.434753417969
-      ]
     }
   ],
   "south_edge": 841.533975247825,
@@ -223,10 +197,10 @@
     1440,
     900
   ],
-  "visible_annotations": 19,
-  "visible_cities": 9,
+  "visible_annotations": 15,
+  "visible_cities": 7,
   "visible_close_cities": 0,
-  "visible_labels": 9,
+  "visible_labels": 7,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

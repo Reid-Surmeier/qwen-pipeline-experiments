@@ -31,7 +31,8 @@
     "4x sourced coast detail with bounded visible tiles",
     "southern viewport clamp under drag and resize",
     "opaque readable overview badges at desktop and 4K minimum zoom",
-    "new close cities in London New York and Tokyo beyond previous maximum"
+    "new close cities in London New York and Tokyo beyond previous maximum",
+    "slower staged city reveal through five London zoom checkpoints"
   ],
   "errors": []
 }

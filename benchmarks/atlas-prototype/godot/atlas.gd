@@ -399,7 +399,7 @@ func _layout_close_cities(view: Rect2, occupied: Array[Rect2]) -> void:
 	visible_close_cities = 0
 	close_layer.visible = mode == "atlas"
 	close_layer.queue_redraw()
-	if mode != "atlas" or camera.zoom.x < 7: return
+	if mode != "atlas" or camera.zoom.x < 12: return
 	var half := _viewport_size() / (2 * camera.zoom.x)
 	var candidates: Array = []
 	# Bucket the catalog so each movement only considers nearby places.

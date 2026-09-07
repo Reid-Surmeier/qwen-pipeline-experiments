@@ -62,8 +62,12 @@ The original 29 world badge crops now render at 22 screen pixels high, with spac
 
 ## Deeper zoom and additional cities
 
-Maximum zoom is now 36× native scale, three times the previous maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal in three close-view tiers: native zoom 7 for cities of at least 250,000 people, 14 for at least 50,000, and 24 for at least 10,000. Smaller places do not crowd the overview.
+Maximum zoom is now 36× native scale, three times the previous maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal gradually by population across native zoom 12–34. Large additions arrive first, medium cities generally require zoom 18–26, and smaller towns wait until zoom 26–34. Smaller places do not crowd the overview.
 
 The additional catalog excludes the existing named identities, subdivisions, duplicate nearby names and points without retained land within two native-map pixels. Each additional dot and name is accepted and drawn together using the same collision space as the original labels. A geographic grid restricts layout work to nearby places. Their names use the existing regular PixelMplus font; all original label textures remain untouched. The retained coastlines, lakes, islands and badges are unchanged. At maximum zoom the white outline has a one-detail-pixel minimum so it cannot vanish.
 
 Reproduce the added catalog with `python3 benchmarks/atlas-prototype/prepare_close_cities.py /path/to/cities5000.zip`. The selected source records, download SHA-256 and GeoNames CC BY attribution are in `reference/close-cities.json.gz`; the runnable catalog is `godot/close-cities.json`. Font permission is included in `godot/fonts/LICENSE.txt`. No paid generation.
+
+## Slower city pacing
+
+World names and the sparse major regional names keep their early visibility. Original secondary cities now wait for native zoom 3.5 or 6.5, and original small towns wait until 11. Additional places use 1,963 distinct population-based reveal thresholds instead of three large batches. Every additional city requires more zoom than before; the catalog and 36× maximum are preserved. Five London zoom checkpoints record the pacing in `evidence/play/london-paced-*.json`.

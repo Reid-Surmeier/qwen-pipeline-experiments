@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 56,
+  "fps": 55,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -48,10 +48,10 @@
     "visible": false
   },
   "position": [
-    2291.76684570312,
-    2462.98681640625
+    2366.01831054688,
+    775.7080078125
   ],
-  "region": "south-america",
+  "region": "europe",
   "regions": [
     {
       "id": "europe",
@@ -94,8 +94,74 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
-  "south_edge": 2475.48681640625,
+  "shown_cities": [
+    {
+      "at": [
+        2366,
+        775.5
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        719.8466796875,
+        448.258117675781
+      ]
+    },
+    {
+      "at": [
+        2397.25,
+        819
+      ],
+      "id": "europe2988507.0",
+      "labels": 1,
+      "name": "Paris",
+      "screen": [
+        981.538452148438,
+        812.533081054688
+      ]
+    },
+    {
+      "at": [
+        2288.5,
+        744.75
+      ],
+      "id": "europe2964574.0",
+      "labels": 1,
+      "name": "Dublin",
+      "screen": [
+        70.85107421875,
+        190.75341796875
+      ]
+    },
+    {
+      "at": [
+        2422.75,
+        786.25
+      ],
+      "id": "europe2800866.0",
+      "labels": 1,
+      "name": "Brussels",
+      "screen": [
+        1195.07897949219,
+        538.280090332031
+      ]
+    },
+    {
+      "at": [
+        2429.5,
+        761
+      ],
+      "id": "europe2759794.0",
+      "labels": 1,
+      "name": "Amsterdam",
+      "screen": [
+        1251.60437011719,
+        326.833129882812
+      ]
+    }
+  ],
+  "south_edge": 829.444888883832,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
@@ -105,10 +171,10 @@
     1440,
     900
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
+  "visible_annotations": 10,
+  "visible_cities": 5,
   "visible_close_cities": 0,
-  "visible_labels": 0,
+  "visible_labels": 5,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -116,8 +182,8 @@
     4480,
     3144
   ],
-  "zoom": 36,
+  "zoom": 8.37413692474365,
   "zoom_max": 36,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 108
+  "zoom_ratio": 25.122410774231
 }

@@ -253,7 +253,7 @@ for name,pts in controls.items():
  regional_names={'Paris','Berlin','Madrid','Rome','Stockholm','Nairobi','Lagos','Kinshasa','Johannesburg','Mumbai','Jakarta','Seoul','Bangkok','Melbourne','Perth','Vancouver','Toronto','Montreal','Montréal','Havana','San Juan','Santiago','Lima','Novosibirsk','Yekaterinburg','Vladivostok','Tehran','Baghdad','Riyadh'}
  for c in cities:
   population=c.get('population',0)
-  c['min_zoom']=0.0 if c['name'] in world_names else (0.8 if c['name'] in regional_names else (2.0 if population>=1000000 else (3.5 if population>=100000 else 5.5)))
+  c['min_zoom']=0.0 if c['name'] in world_names else (0.8 if c['name'] in regional_names else (3.5 if population>=1000000 else (6.5 if population>=100000 else 11.0)))
   c['rank']=-population
  for c in cities:
   source_city=usa_cities[c['city_id']] if name=='usa' else next(v for v in city_catalog['cities'] if v['region']==name and v['geonameid']==c['city_id'])

@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 45,
+  "fps": 58,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -965,58 +965,6 @@
         429.66015625,
         570.134338378906
       ]
-    },
-    {
-      "at": [
-        4145,
-        1017.5
-      ],
-      "id": "geonames2110850.0",
-      "labels": 1,
-      "name": "Tako",
-      "screen": [
-        1016.97778320312,
-        405.685424804688
-      ]
-    },
-    {
-      "at": [
-        4126.75,
-        1031
-      ],
-      "id": "geonames1861605.0",
-      "labels": 1,
-      "name": "Inatori",
-      "screen": [
-        445.321960449219,
-        828.554077148438
-      ]
-    },
-    {
-      "at": [
-        4137.75,
-        1018
-      ],
-      "id": "geonames10918042.0",
-      "labels": 1,
-      "name": "Mizue",
-      "screen": [
-        789.881591796875,
-        421.347229003906
-      ]
-    },
-    {
-      "at": [
-        4119.25,
-        1021.75
-      ],
-      "id": "geonames1861840.0",
-      "labels": 1,
-      "name": "Iitomi",
-      "screen": [
-        210.394927978516,
-        538.810729980469
-      ]
     }
   ],
   "south_edge": 1033.28089659309,
@@ -1029,10 +977,10 @@
     1440,
     900
   ],
-  "visible_annotations": 142,
-  "visible_cities": 71,
-  "visible_close_cities": 70,
-  "visible_labels": 71,
+  "visible_annotations": 134,
+  "visible_cities": 67,
+  "visible_close_cities": 66,
+  "visible_labels": 67,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

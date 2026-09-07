@@ -1,0 +1,45 @@
+{
+  "before_commit": "6069091484de46523e3852c5a615aded3439202e",
+  "city_count": 40806,
+  "city_identities_names_positions_unchanged": true,
+  "all_additional_city_thresholds_delayed": true,
+  "map_and_original_label_assets_unchanged": true,
+  "eligible_comparison": {
+    "7": {
+      "before": 2072,
+      "after": 0
+    },
+    "12": {
+      "before": 2072,
+      "after": 0
+    },
+    "14": {
+      "before": 11077,
+      "after": 32
+    },
+    "18": {
+      "before": 11077,
+      "after": 2073
+    },
+    "24": {
+      "before": 40806,
+      "after": 7398
+    },
+    "26": {
+      "before": 40806,
+      "after": 11087
+    },
+    "30": {
+      "before": 40806,
+      "after": 22765
+    },
+    "34": {
+      "before": 40806,
+      "after": 40806
+    },
+    "36": {
+      "before": 40806,
+      "after": 40806
+    }
+  }
+}

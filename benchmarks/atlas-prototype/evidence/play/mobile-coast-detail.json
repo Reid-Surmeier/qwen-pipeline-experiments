@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 59,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -94,21 +94,7 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [
-    {
-      "at": [
-        2475.75,
-        842.75
-      ],
-      "id": "europe2657896.0",
-      "labels": 1,
-      "name": "Zürich",
-      "screen": [
-        108.804969787598,
-        747.26708984375
-      ]
-    }
-  ],
+  "shown_cities": [],
   "south_edge": 867.210857606953,
   "south_limit": 2700,
   "terrain_detail": 1,
@@ -119,10 +105,10 @@
     390,
     844
   ],
-  "visible_annotations": 3,
-  "visible_cities": 1,
+  "visible_annotations": 1,
+  "visible_cities": 0,
   "visible_close_cities": 0,
-  "visible_labels": 1,
+  "visible_labels": 0,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

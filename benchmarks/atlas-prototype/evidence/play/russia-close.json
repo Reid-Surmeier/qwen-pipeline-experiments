@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 59,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -94,34 +94,7 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [
-    {
-      "at": [
-        3635.75,
-        542.75
-      ],
-      "id": "russia2014833.0",
-      "labels": 1,
-      "name": "Tura",
-      "screen": [
-        655.74072265625,
-        155.923400878906
-      ]
-    },
-    {
-      "at": [
-        3661.75,
-        619.25
-      ],
-      "id": "russia2013727.0",
-      "labels": 1,
-      "name": "Vanavara",
-      "screen": [
-        826.270385742188,
-        657.674072265625
-      ]
-    }
-  ],
+  "shown_cities": [],
   "south_edge": 656.196506056291,
   "south_limit": 2700,
   "terrain_detail": 1,
@@ -132,10 +105,10 @@
     1440,
     900
   ],
-  "visible_annotations": 4,
-  "visible_cities": 2,
+  "visible_annotations": 0,
+  "visible_cities": 0,
   "visible_close_cities": 0,
-  "visible_labels": 2,
+  "visible_labels": 0,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
