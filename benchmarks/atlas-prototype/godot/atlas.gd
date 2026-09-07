@@ -4,6 +4,14 @@ extends Node2D
 const WIDTH := 4480.0
 const HEIGHT := 3144.0
 const SOUTH_LIMIT := 2700.0
+const MAX_ZOOM := 36.0
+const CLOSE_FONT_SIZE := 20
+var close_font: FontFile
+var close_layer := Node2D.new()
+var close_grid: Dictionary = {}
+var close_draw: Array = []
+var close_city_count := 0
+var visible_close_cities := 0
 var geography := Node2D.new()
 var geography_tiles: Dictionary = {}
 var terrain_detail := 0.0
@@ -50,6 +58,16 @@ func _ready() -> void:
 	geography.material = terrain_material
 	add_child(overview_badges)
 	add_child(detail_root)
+	add_child(close_layer)
+	close_layer.draw.connect(_draw_close_cities)
+	close_font = load("res://fonts/PixelMplus12-Regular.ttf")
+	close_font.antialiasing = TextServer.FONT_ANTIALIASING_NONE
+	for city in JSON.parse_string(FileAccess.get_file_as_string("res://close-cities.json")):
+		city.at = Vector2(city.at[0], city.at[1])
+		var key := Vector2i(floori(city.at.x / 64), floori(city.at.y / 64))
+		if not close_grid.has(key): close_grid[key] = []
+		close_grid[key].append(city)
+		close_city_count += 1
 	add_child(sheet)
 	sheet.visible = false
 	for copy in [-2, -1, 0, 1, 2]:
@@ -235,7 +253,7 @@ func _resize() -> void:
 
 func _zoom_at(factor: float, anchor: Vector2) -> void:
 	var before := camera.position + (anchor - _viewport_size() / 2) / camera.zoom.x
-	var next := clampf(camera.zoom.x * factor, _fit_zoom(), 12.0)
+	var next := clampf(camera.zoom.x * factor, _fit_zoom(), MAX_ZOOM)
 	camera.zoom = Vector2.ONE * next
 	camera.position = before - (anchor - _viewport_size() / 2) / next
 	_constrain()
@@ -244,7 +262,7 @@ func _zoom_at(factor: float, anchor: Vector2) -> void:
 func _constrain() -> void:
 	if mode == "atlas":
 		camera.position.x = fposmod(camera.position.x, WIDTH)
-		camera.zoom = Vector2.ONE * clampf(camera.zoom.x, _fit_zoom(), 12.0)
+		camera.zoom = Vector2.ONE * clampf(camera.zoom.x, _fit_zoom(), MAX_ZOOM)
 		# Stop within the Antarctic ice, before the projection stretches toward the pole.
 		var half_height := _viewport_size().y / (2.0 * camera.zoom.x)
 		var south_limit := SOUTH_LIMIT - half_height
@@ -350,6 +368,7 @@ func _layout_annotations() -> void:
 			visible_labels += 1
 		visible_cities += 1
 		shown_cities.append({"id": dot.city_id, "name": dot.name, "at": [point.x, point.y], "screen": [screen.x, screen.y], "labels": group.labels.size()})
+	_layout_close_cities(view, occupied)
 	# Regional badges remain intact, outside accepted dot/name pairs.
 	if camera.zoom.x >= 0.65 and overview_badges.modulate.a <= 0:
 		for badge in badges:
@@ -374,6 +393,47 @@ func _layout_annotations() -> void:
 		for label in group.labels:
 			if label.sprite.visible != group.dot.sprite.visible: paired = false
 		if not paired: orphan_dots += 1
+
+func _layout_close_cities(view: Rect2, occupied: Array[Rect2]) -> void:
+	close_draw.clear()
+	visible_close_cities = 0
+	close_layer.visible = mode == "atlas"
+	close_layer.queue_redraw()
+	if mode != "atlas" or camera.zoom.x < 7: return
+	var half := _viewport_size() / (2 * camera.zoom.x)
+	var candidates: Array = []
+	# Bucket the catalog so each movement only considers nearby places.
+	for row in range(floori((camera.position.y - half.y) / 64), ceili((camera.position.y + half.y) / 64)):
+		for col in range(floori((camera.position.x - half.x) / 64), ceili((camera.position.x + half.x) / 64)):
+			for city in close_grid.get(Vector2i(posmod(col, 70), row), []):
+				if camera.zoom.x >= city.min_zoom: candidates.append(city)
+	candidates.sort_custom(func(a: Dictionary, b: Dictionary) -> bool: return a.population > b.population)
+	for city in candidates:
+		var point: Vector2 = city.at
+		point.x = camera.position.x + fposmod(point.x - camera.position.x + WIDTH / 2, WIDTH) - WIDTH / 2
+		var screen: Vector2 = (point - camera.position) * camera.zoom.x + _viewport_size() / 2
+		if not view.has_point(screen): continue
+		var size := close_font.get_string_size(city.name, HORIZONTAL_ALIGNMENT_LEFT, -1, CLOSE_FONT_SIZE)
+		var box := Rect2(screen - Vector2(5, 5), Vector2(10, 10)).merge(Rect2(screen + Vector2(9, 5 - close_font.get_ascent(CLOSE_FONT_SIZE)), size))
+		if not view.encloses(box): continue
+		var padded := box.grow(8)
+		var collides := false
+		for previous in occupied:
+			if padded.intersects(previous): collides = true; break
+		if collides: continue
+		occupied.append(padded)
+		close_draw.append({"at": point, "name": city.name})
+		shown_cities.append({"id": "geonames" + str(city.id), "name": city.name, "at": [point.x, point.y], "screen": [screen.x, screen.y], "labels": 1})
+		visible_close_cities += 1
+		visible_cities += 1
+		visible_labels += 1
+
+func _draw_close_cities() -> void:
+	# Dot and complete name are drawn from the same accepted record.
+	for city in close_draw:
+		close_layer.draw_set_transform(city.at, 0, Vector2.ONE / camera.zoom.x)
+		close_layer.draw_circle(Vector2.ZERO, 5, Color("cc3333"))
+		close_layer.draw_string(close_font, Vector2(9, 5), city.name, HORIZONTAL_ALIGNMENT_LEFT, -1, CLOSE_FONT_SIZE, Color.BLACK)
 
 func _layout_geography() -> void:
 	geography.visible = mode == "atlas"
@@ -430,6 +490,6 @@ func _publish_state() -> void:
 		controls[name] = [rect.position.x, rect.position.y, rect.size.x, rect.size.y]
 	var pick := picker.get_global_rect()
 	controls["regions"] = [pick.position.x, pick.position.y, pick.size.x, pick.size.y]
-	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_world_badges": visible_world_badges, "world_badge_alpha": overview_badges.modulate.a, "world_badge_screen_height": 22, "visible_cities": visible_cities, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "terrain_detail": terrain_detail, "terrain_tiles": geography_tiles.size(), "south_limit": SOUTH_LIMIT, "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= SOUTH_LIMIT - 0.01, "zoom_min": _fit_zoom(), "zoom_max": 12.0, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
+	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_world_badges": visible_world_badges, "world_badge_alpha": overview_badges.modulate.a, "world_badge_screen_height": 22, "visible_cities": visible_cities, "visible_close_cities": visible_close_cities, "close_city_count": close_city_count, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "terrain_detail": terrain_detail, "terrain_tiles": geography_tiles.size(), "south_limit": SOUTH_LIMIT, "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= SOUTH_LIMIT - 0.01, "zoom_min": _fit_zoom(), "zoom_max": MAX_ZOOM, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
 	if OS.has_feature("web"):
 		JavaScriptBridge.eval("window.atlasState=" + JSON.stringify(state), true)

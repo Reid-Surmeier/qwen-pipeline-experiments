@@ -2,31 +2,31 @@
   "close_city_count": 40806,
   "controls": {
     "+": [
-      488,
+      301,
       23,
       44,
       36
     ],
     "Full sheet": [
-      349,
+      193,
       23,
-      83,
+      52,
       36
     ],
     "World": [
-      127,
+      26,
       23,
       55,
       36
     ],
     "regions": [
-      188,
+      87,
       23,
-      155,
+      100,
       36
     ],
     "−": [
-      438,
+      251,
       23,
       44,
       36
@@ -38,7 +38,7 @@
   "orphan_dots": 0,
   "popup": {
     "position": [
-      188,
+      87,
       59
     ],
     "size": [
@@ -48,10 +48,10 @@
     "visible": false
   },
   "position": [
-    1127.67370605469,
-    984.781799316406
+    2497.54614257812,
+    760.499694824219
   ],
-  "region": "usa",
+  "region": "europe",
   "regions": [
     {
       "id": "europe",
@@ -97,84 +97,162 @@
   "shown_cities": [
     {
       "at": [
-        1407,
-        932
+        2499.5,
+        764.5
       ],
-      "id": "usa29.0",
+      "id": "geonames2842150.0",
       "labels": 1,
-      "name": "New York City",
+      "name": "Salzgitter",
       "screen": [
-        1166.92211914062,
-        365.549133300781
+        265.3388671875,
+        566.010986328125
       ]
     },
     {
       "at": [
-        882,
-        1030
+        2493.5,
+        764.75
       ],
-      "id": "usa92.0",
+      "id": "geonames2904789.0",
       "labels": 1,
-      "name": "Los Angeles",
+      "name": "Hildesheim",
       "screen": [
-        326.922058105469,
-        522.34912109375
+        49.3388671875,
+        575.010986328125
       ]
     },
     {
       "at": [
-        1325,
-        1189
+        2495.25,
+        756.75
       ],
-      "id": "caribbean3553478.0",
+      "id": "geonames2940213.0",
       "labels": 1,
-      "name": "Havana",
+      "name": "Celle",
       "screen": [
-        1035.72204589844,
-        776.749145507812
+        112.3388671875,
+        287.010986328125
       ]
     },
     {
       "at": [
-        810,
-        820
+        2497.25,
+        761.75
       ],
-      "id": "canada6173331.0",
+      "id": "geonames2855047.0",
       "labels": 1,
-      "name": "Vancouver",
+      "name": "Peine",
       "screen": [
-        211.722076416016,
-        186.34912109375
+        184.3388671875,
+        467.010986328125
       ]
     },
     {
       "at": [
-        1521,
-        1239
+        2494,
+        761
       ],
-      "id": "caribbean4568127.0",
+      "id": "geonames2879367.0",
       "labels": 1,
-      "name": "San Juan",
+      "name": "Lehrte",
       "screen": [
-        1349.32202148438,
-        856.749145507812
+        67.3388671875,
+        440.010986328125
+      ]
+    },
+    {
+      "at": [
+        2499.5,
+        768.75
+      ],
+      "id": "geonames2918840.0",
+      "labels": 1,
+      "name": "Goslar",
+      "screen": [
+        265.3388671875,
+        719.010986328125
+      ]
+    },
+    {
+      "at": [
+        2494.25,
+        759.75
+      ],
+      "id": "geonames2941405.0",
+      "labels": 1,
+      "name": "Burgdorf",
+      "screen": [
+        76.3388671875,
+        395.010986328125
+      ]
+    },
+    {
+      "at": [
+        2492.5,
+        770.25
+      ],
+      "id": "geonames2931804.0",
+      "labels": 1,
+      "name": "Einbeck",
+      "screen": [
+        13.3388671875,
+        773.010986328125
+      ]
+    },
+    {
+      "at": [
+        2496.5,
+        769
+      ],
+      "id": "geonames2833592.0",
+      "labels": 1,
+      "name": "Seesen",
+      "screen": [
+        157.3388671875,
+        728.010986328125
+      ]
+    },
+    {
+      "at": [
+        2494.25,
+        766.25
+      ],
+      "id": "geonames2953362.0",
+      "labels": 1,
+      "name": "Bad Salzdetfurth",
+      "screen": [
+        76.3388671875,
+        629.010986328125
+      ]
+    },
+    {
+      "at": [
+        2493.75,
+        753.5
+      ],
+      "id": "geonames2950622.0",
+      "labels": 1,
+      "name": "Bergen",
+      "screen": [
+        58.3388671875,
+        170.010986328125
       ]
     }
   ],
-  "south_edge": 1266.03179512545,
+  "south_edge": 772.221917046441,
   "south_limit": 2700,
-  "terrain_detail": 0,
-  "terrain_tiles": 0,
+  "terrain_detail": 1,
+  "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    1440,
-    900
+    390,
+    844
   ],
-  "visible_annotations": 19,
-  "visible_cities": 5,
-  "visible_close_cities": 0,
-  "visible_labels": 5,
+  "visible_annotations": 22,
+  "visible_cities": 11,
+  "visible_close_cities": 11,
+  "visible_labels": 11,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -182,8 +260,8 @@
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 36,
   "zoom_max": 36,
-  "zoom_min": 0.333333333333333,
-  "zoom_ratio": 4.80000007152557
+  "zoom_min": 0.312592592592593,
+  "zoom_ratio": 115.165876777251
 }

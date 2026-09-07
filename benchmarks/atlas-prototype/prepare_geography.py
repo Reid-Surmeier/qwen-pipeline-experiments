@@ -72,7 +72,7 @@ def city_anchor(point):
 def build():
  land=polygons('land');lakes=polygons('lakes');out=R/'godot/assets/geography';out.mkdir(exist_ok=True)
  records=[]
- # ponytail: one 4× detail level; add another only when closer-than-12× zoom is needed.
+ # ponytail: one 4× detail level; add another only if finer coast geometry is requested.
  for row in range(6):
   for col in range(8):
    x,y=col*TW,row*TH;pad=10;box=(x-pad,y-pad,TW+2*pad,TH+2*pad)

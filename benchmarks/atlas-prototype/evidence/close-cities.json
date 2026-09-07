@@ -1,0 +1,15 @@
+{
+  "city_count": 40806,
+  "tiers": {
+    "7": 2072,
+    "14": 9005,
+    "24": 29729
+  },
+  "skipped": {
+    "no_nearby_retained_land": 430,
+    "coast_adjustment_over_2_pixels": 67
+  },
+  "maximum_land_adjustment": 2,
+  "font": "PixelMplus12-Regular, reused from existing Godot project; M+ FONT LICENSE",
+  "font_sha256": "02f19467ea7cc235cc06c570b7f6c3b0a12a6f682bc8d74c43f2d323d97bcd12"
+}

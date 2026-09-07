@@ -22,7 +22,7 @@
     "Pacific wrap",
     "sparse named overview",
     "Antarctica close view",
-    "zoom limits 1.0 world fit and 12 native",
+    "zoom limits 1.0 world fit and 36 native",
     "paired city/name reveal with no orphan dots",
     "US northeast and Florida close views",
     "London on Great Britain",
@@ -30,7 +30,8 @@
     "Great Lakes and Canadian lakes close views",
     "4x sourced coast detail with bounded visible tiles",
     "southern viewport clamp under drag and resize",
-    "opaque readable overview badges at desktop and 4K minimum zoom"
+    "opaque readable overview badges at desktop and 4K minimum zoom",
+    "new close cities in London New York and Tokyo beyond previous maximum"
   ],
   "errors": []
 }

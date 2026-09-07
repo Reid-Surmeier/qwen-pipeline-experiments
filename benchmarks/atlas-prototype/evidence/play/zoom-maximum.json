@@ -1,4 +1,5 @@
 {
+  "close_city_count": 40806,
   "controls": {
     "+": [
       488,
@@ -32,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 56,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -94,10 +95,10 @@
     }
   ],
   "shown_cities": [],
-  "south_edge": 2500.48681640625,
+  "south_edge": 2475.48681640625,
   "south_limit": 2700,
   "terrain_detail": 1,
-  "terrain_tiles": 2,
+  "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -106,6 +107,7 @@
   ],
   "visible_annotations": 0,
   "visible_cities": 0,
+  "visible_close_cities": 0,
   "visible_labels": 0,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
@@ -114,8 +116,8 @@
     4480,
     3144
   ],
-  "zoom": 12,
-  "zoom_max": 12,
+  "zoom": 36,
+  "zoom_max": 36,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 36
+  "zoom_ratio": 108
 }

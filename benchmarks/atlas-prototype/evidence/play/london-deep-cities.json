@@ -1,0 +1,943 @@
+{
+  "close_city_count": 40806,
+  "controls": {
+    "+": [
+      488,
+      23,
+      44,
+      36
+    ],
+    "Full sheet": [
+      349,
+      23,
+      83,
+      36
+    ],
+    "World": [
+      127,
+      23,
+      55,
+      36
+    ],
+    "regions": [
+      188,
+      23,
+      155,
+      36
+    ],
+    "−": [
+      438,
+      23,
+      44,
+      36
+    ]
+  },
+  "detail_alpha": 1,
+  "fps": 43,
+  "mode": "atlas",
+  "orphan_dots": 0,
+  "popup": {
+    "position": [
+      188,
+      59
+    ],
+    "size": [
+      155,
+      305
+    ],
+    "visible": false
+  },
+  "position": [
+    2366.01831054688,
+    775.7080078125
+  ],
+  "region": "europe",
+  "regions": [
+    {
+      "id": "europe",
+      "source_sha256": "9705d50cfde60604b53d354e7d6471b92d201e8b25201ce7e891ce9cb1067aef"
+    },
+    {
+      "id": "africa",
+      "source_sha256": "acb399d272aaf0c8a9d1b1d2f95d2867a26e7837d99ec57f0dcdd3802294e67e"
+    },
+    {
+      "id": "asia",
+      "source_sha256": "b23f5eaa84829db0107babd0614fe7f603edb36d8e50a225064c5693de942e7b"
+    },
+    {
+      "id": "australia",
+      "source_sha256": "dc1a9d8710bb67f9bc0ad7f653bbdc4a9e2505b3a5bfcde78f70770abd018df5"
+    },
+    {
+      "id": "canada",
+      "source_sha256": "fd654ac03882997b7b61cc5b92271313a8d58d2871e1c6106420857ce043726c"
+    },
+    {
+      "id": "caribbean",
+      "source_sha256": "88f26e039542c9a9f91cfe6f94290b171e351bc124a6765b085ca4a3c7dd0f23"
+    },
+    {
+      "id": "russia",
+      "source_sha256": "307361e4b526c36cc4a5255d7190a1b6bdcd1f8bd3932c220128cd2486e50843"
+    },
+    {
+      "id": "south-america",
+      "source_sha256": "1620ffc1243489e8d45d670c413355d0344d997608cda47307915494f24449a3"
+    },
+    {
+      "id": "usa",
+      "source_sha256": "4ec2967f1a0f46609c56fb49fa7c125ead3a21c4c028b74144488732a26d4727"
+    },
+    {
+      "id": "middle-east",
+      "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
+    }
+  ],
+  "shown_cities": [
+    {
+      "at": [
+        2366,
+        775.5
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        719.3408203125,
+        442.51171875
+      ]
+    },
+    {
+      "at": [
+        2355.25,
+        776.25
+      ],
+      "id": "geonames2639577.0",
+      "labels": 1,
+      "name": "Reading",
+      "screen": [
+        332.3408203125,
+        469.51171875
+      ]
+    },
+    {
+      "at": [
+        2376.75,
+        774.75
+      ],
+      "id": "geonames2637433.0",
+      "labels": 1,
+      "name": "Southend-on-Sea",
+      "screen": [
+        1106.3408203125,
+        415.51171875
+      ]
+    },
+    {
+      "at": [
+        2365.75,
+        786.5
+      ],
+      "id": "geonames2654710.0",
+      "labels": 1,
+      "name": "Brighton",
+      "screen": [
+        710.3408203125,
+        838.51171875
+      ]
+    },
+    {
+      "at": [
+        2349.75,
+        785.25
+      ],
+      "id": "geonames2637487.0",
+      "labels": 1,
+      "name": "Southampton",
+      "screen": [
+        134.3408203125,
+        793.51171875
+      ]
+    },
+    {
+      "at": [
+        2358,
+        766.5
+      ],
+      "id": "geonames2642465.0",
+      "labels": 1,
+      "name": "Milton Keynes",
+      "screen": [
+        431.3408203125,
+        118.51171875
+      ]
+    },
+    {
+      "at": [
+        2362.25,
+        769.25
+      ],
+      "id": "geonames2643339.0",
+      "labels": 1,
+      "name": "Luton",
+      "screen": [
+        584.3408203125,
+        217.51171875
+      ]
+    },
+    {
+      "at": [
+        2368.75,
+        775
+      ],
+      "id": "geonames2656333.0",
+      "labels": 1,
+      "name": "Barking",
+      "screen": [
+        818.3408203125,
+        424.51171875
+      ]
+    },
+    {
+      "at": [
+        2365,
+        778
+      ],
+      "id": "geonames2636503.0",
+      "labels": 1,
+      "name": "Sutton",
+      "screen": [
+        683.3408203125,
+        532.51171875
+      ]
+    },
+    {
+      "at": [
+        2360,
+        775.25
+      ],
+      "id": "geonames2637627.0",
+      "labels": 1,
+      "name": "Slough",
+      "screen": [
+        503.3408203125,
+        433.51171875
+      ]
+    },
+    {
+      "at": [
+        2351.75,
+        771.25
+      ],
+      "id": "geonames2640729.0",
+      "labels": 1,
+      "name": "Oxford",
+      "screen": [
+        206.3408203125,
+        289.51171875
+      ]
+    },
+    {
+      "at": [
+        2366.5,
+        773
+      ],
+      "id": "geonames2649997.0",
+      "labels": 1,
+      "name": "Enfield Town",
+      "screen": [
+        737.3408203125,
+        352.51171875
+      ]
+    },
+    {
+      "at": [
+        2373.5,
+        774.5
+      ],
+      "id": "geonames2656194.0",
+      "labels": 1,
+      "name": "Basildon",
+      "screen": [
+        989.3408203125,
+        406.51171875
+      ]
+    },
+    {
+      "at": [
+        2358.25,
+        773.5
+      ],
+      "id": "geonames2646914.0",
+      "labels": 1,
+      "name": "High Wycombe",
+      "screen": [
+        440.3408203125,
+        370.51171875
+      ]
+    },
+    {
+      "at": [
+        2379,
+        769
+      ],
+      "id": "geonames2652618.0",
+      "labels": 1,
+      "name": "Colchester",
+      "screen": [
+        1187.3408203125,
+        208.51171875
+      ]
+    },
+    {
+      "at": [
+        2362.5,
+        773
+      ],
+      "id": "geonames2634677.0",
+      "labels": 1,
+      "name": "Watford",
+      "screen": [
+        593.3408203125,
+        352.51171875
+      ]
+    },
+    {
+      "at": [
+        2365.25,
+        782
+      ],
+      "id": "geonames2652053.0",
+      "labels": 1,
+      "name": "Crawley",
+      "screen": [
+        692.3408203125,
+        676.51171875
+      ]
+    },
+    {
+      "at": [
+        2373.5,
+        771.5
+      ],
+      "id": "geonames2653266.0",
+      "labels": 1,
+      "name": "Chelmsford",
+      "screen": [
+        989.3408203125,
+        298.51171875
+      ]
+    },
+    {
+      "at": [
+        2354,
+        779.5
+      ],
+      "id": "geonames2656192.0",
+      "labels": 1,
+      "name": "Basingstoke",
+      "screen": [
+        287.3408203125,
+        586.51171875
+      ]
+    },
+    {
+      "at": [
+        2374.25,
+        779.5
+      ],
+      "id": "geonames2643179.0",
+      "labels": 1,
+      "name": "Maidstone",
+      "screen": [
+        1016.3408203125,
+        586.51171875
+      ]
+    },
+    {
+      "at": [
+        2360.5,
+        778.5
+      ],
+      "id": "geonames2633709.0",
+      "labels": 1,
+      "name": "Woking",
+      "screen": [
+        521.3408203125,
+        550.51171875
+      ]
+    },
+    {
+      "at": [
+        2374.5,
+        777.25
+      ],
+      "id": "geonames2648657.0",
+      "labels": 1,
+      "name": "Gillingham",
+      "screen": [
+        1025.3408203125,
+        505.51171875
+      ]
+    },
+    {
+      "at": [
+        2362,
+        771.25
+      ],
+      "id": "geonames2647138.0",
+      "labels": 1,
+      "name": "Hemel Hempstead",
+      "screen": [
+        575.3408203125,
+        289.51171875
+      ]
+    },
+    {
+      "at": [
+        2369,
+        771
+      ],
+      "id": "geonames2647461.0",
+      "labels": 1,
+      "name": "Harlow",
+      "screen": [
+        827.3408203125,
+        280.51171875
+      ]
+    },
+    {
+      "at": [
+        2375,
+        786
+      ],
+      "id": "geonames2647356.0",
+      "labels": 1,
+      "name": "Hastings",
+      "screen": [
+        1043.3408203125,
+        820.51171875
+      ]
+    },
+    {
+      "at": [
+        2365,
+        768.75
+      ],
+      "id": "geonames2636940.0",
+      "labels": 1,
+      "name": "Stevenage",
+      "screen": [
+        683.3408203125,
+        199.51171875
+      ]
+    },
+    {
+      "at": [
+        2371.75,
+        776
+      ],
+      "id": "geonames2648182.0",
+      "labels": 1,
+      "name": "Grays",
+      "screen": [
+        926.3408203125,
+        460.51171875
+      ]
+    },
+    {
+      "at": [
+        2358.25,
+        777
+      ],
+      "id": "geonames2655009.0",
+      "labels": 1,
+      "name": "Bracknell",
+      "screen": [
+        440.3408203125,
+        496.51171875
+      ]
+    },
+    {
+      "at": [
+        2357.25,
+        770.25
+      ],
+      "id": "geonames2656719.0",
+      "labels": 1,
+      "name": "Aylesbury",
+      "screen": [
+        404.3408203125,
+        253.51171875
+      ]
+    },
+    {
+      "at": [
+        2360.25,
+        780
+      ],
+      "id": "geonames2647793.0",
+      "labels": 1,
+      "name": "Guildford",
+      "screen": [
+        512.3408203125,
+        604.51171875
+      ]
+    },
+    {
+      "at": [
+        2371,
+        781.75
+      ],
+      "id": "geonames2639022.0",
+      "labels": 1,
+      "name": "Royal Tunbridge Wells",
+      "screen": [
+        899.3408203125,
+        667.51171875
+      ]
+    },
+    {
+      "at": [
+        2382.5,
+        782.25
+      ],
+      "id": "geonames2649258.0",
+      "labels": 1,
+      "name": "Folkestone",
+      "screen": [
+        1313.3408203125,
+        685.51171875
+      ]
+    },
+    {
+      "at": [
+        2354.5,
+        785.75
+      ],
+      "id": "geonames2634686.0",
+      "labels": 1,
+      "name": "Waterlooville",
+      "screen": [
+        305.3408203125,
+        811.51171875
+      ]
+    },
+    {
+      "at": [
+        2378.75,
+        781.5
+      ],
+      "id": "geonames2656955.0",
+      "labels": 1,
+      "name": "Ashford",
+      "screen": [
+        1178.3408203125,
+        658.51171875
+      ]
+    },
+    {
+      "at": [
+        2366,
+        776.75
+      ],
+      "id": "geonames2636675.0",
+      "labels": 1,
+      "name": "Streatham",
+      "screen": [
+        719.3408203125,
+        487.51171875
+      ]
+    },
+    {
+      "at": [
+        2381.25,
+        779.25
+      ],
+      "id": "geonames2653877.0",
+      "labels": 1,
+      "name": "Canterbury",
+      "screen": [
+        1268.3408203125,
+        577.51171875
+      ]
+    },
+    {
+      "at": [
+        2374.75,
+        769.25
+      ],
+      "id": "geonames2654938.0",
+      "labels": 1,
+      "name": "Braintree",
+      "screen": [
+        1034.3408203125,
+        217.51171875
+      ]
+    },
+    {
+      "at": [
+        2365.5,
+        779.75
+      ],
+      "id": "geonames2639545.0",
+      "labels": 1,
+      "name": "Redhill",
+      "screen": [
+        701.3408203125,
+        595.51171875
+      ]
+    },
+    {
+      "at": [
+        2351,
+        782.75
+      ],
+      "id": "geonames2633858.0",
+      "labels": 1,
+      "name": "Winchester",
+      "screen": [
+        179.3408203125,
+        703.51171875
+      ]
+    },
+    {
+      "at": [
+        2348.75,
+        780.25
+      ],
+      "id": "geonames2657324.0",
+      "labels": 1,
+      "name": "Andover",
+      "screen": [
+        98.3408203125,
+        613.51171875
+      ]
+    },
+    {
+      "at": [
+        2351.5,
+        772.75
+      ],
+      "id": "geonames2657780.0",
+      "labels": 1,
+      "name": "Abingdon",
+      "screen": [
+        197.3408203125,
+        343.51171875
+      ]
+    },
+    {
+      "at": [
+        2364.75,
+        767.5
+      ],
+      "id": "geonames8224216.0",
+      "labels": 1,
+      "name": "Letchworth Garden City",
+      "screen": [
+        674.3408203125,
+        154.51171875
+      ]
+    },
+    {
+      "at": [
+        2353,
+        768.75
+      ],
+      "id": "geonames2655729.0",
+      "labels": 1,
+      "name": "Bicester",
+      "screen": [
+        251.3408203125,
+        199.51171875
+      ]
+    },
+    {
+      "at": [
+        2366.25,
+        783.75
+      ],
+      "id": "geonames2647248.0",
+      "labels": 1,
+      "name": "Haywards Heath",
+      "screen": [
+        728.3408203125,
+        739.51171875
+      ]
+    },
+    {
+      "at": [
+        2350.75,
+        777.25
+      ],
+      "id": "geonames2641689.0",
+      "labels": 1,
+      "name": "Newbury",
+      "screen": [
+        170.3408203125,
+        505.51171875
+      ]
+    },
+    {
+      "at": [
+        2380.75,
+        777.75
+      ],
+      "id": "geonames2634021.0",
+      "labels": 1,
+      "name": "Whitstable",
+      "screen": [
+        1250.3408203125,
+        523.51171875
+      ]
+    },
+    {
+      "at": [
+        2370,
+        779.25
+      ],
+      "id": "geonames2638187.0",
+      "labels": 1,
+      "name": "Sevenoaks",
+      "screen": [
+        863.3408203125,
+        577.51171875
+      ]
+    },
+    {
+      "at": [
+        2348.75,
+        770.75
+      ],
+      "id": "geonames2633729.0",
+      "labels": 1,
+      "name": "Witney",
+      "screen": [
+        98.3408203125,
+        271.51171875
+      ]
+    },
+    {
+      "at": [
+        2361.75,
+        776.75
+      ],
+      "id": "geonames2656954.0",
+      "labels": 1,
+      "name": "Ashford",
+      "screen": [
+        566.3408203125,
+        487.51171875
+      ]
+    },
+    {
+      "at": [
+        2377,
+        766.5
+      ],
+      "id": "geonames2636564.0",
+      "labels": 1,
+      "name": "Sudbury",
+      "screen": [
+        1115.3408203125,
+        118.51171875
+      ]
+    },
+    {
+      "at": [
+        2371,
+        786
+      ],
+      "id": "geonames2647655.0",
+      "labels": 1,
+      "name": "Hailsham",
+      "screen": [
+        899.3408203125,
+        820.51171875
+      ]
+    },
+    {
+      "at": [
+        2369.75,
+        777.25
+      ],
+      "id": "geonames2636439.0",
+      "labels": 1,
+      "name": "Swanley",
+      "screen": [
+        854.3408203125,
+        505.51171875
+      ]
+    },
+    {
+      "at": [
+        2356.75,
+        782
+      ],
+      "id": "geonames6693242.0",
+      "labels": 1,
+      "name": "Bordon",
+      "screen": [
+        386.3408203125,
+        676.51171875
+      ]
+    },
+    {
+      "at": [
+        2357.25,
+        778.25
+      ],
+      "id": "geonames6620293.0",
+      "labels": 1,
+      "name": "Yateley",
+      "screen": [
+        404.3408203125,
+        541.51171875
+      ]
+    },
+    {
+      "at": [
+        2348.75,
+        784
+      ],
+      "id": "geonames2639189.0",
+      "labels": 1,
+      "name": "Romsey",
+      "screen": [
+        98.3408203125,
+        748.51171875
+      ]
+    },
+    {
+      "at": [
+        2355.75,
+        783.75
+      ],
+      "id": "geonames2640348.0",
+      "labels": 1,
+      "name": "Petersfield",
+      "screen": [
+        350.3408203125,
+        739.51171875
+      ]
+    },
+    {
+      "at": [
+        2349.5,
+        774
+      ],
+      "id": "geonames2634801.0",
+      "labels": 1,
+      "name": "Wantage",
+      "screen": [
+        125.3408203125,
+        388.51171875
+      ]
+    },
+    {
+      "at": [
+        2353,
+        766.5
+      ],
+      "id": "geonames2655012.0",
+      "labels": 1,
+      "name": "Brackley",
+      "screen": [
+        251.3408203125,
+        118.51171875
+      ]
+    },
+    {
+      "at": [
+        2365.25,
+        785
+      ],
+      "id": "geonames2646355.0",
+      "labels": 1,
+      "name": "Hurstpierpoint",
+      "screen": [
+        692.3408203125,
+        784.51171875
+      ]
+    },
+    {
+      "at": [
+        2375.75,
+        768
+      ],
+      "id": "geonames2647604.0",
+      "labels": 1,
+      "name": "Halstead",
+      "screen": [
+        1070.3408203125,
+        172.51171875
+      ]
+    },
+    {
+      "at": [
+        2359.5,
+        786.5
+      ],
+      "id": "geonames2656293.0",
+      "labels": 1,
+      "name": "Barnham",
+      "screen": [
+        485.3408203125,
+        838.51171875
+      ]
+    },
+    {
+      "at": [
+        2355.25,
+        771.5
+      ],
+      "id": "geonames2636066.0",
+      "labels": 1,
+      "name": "Thame",
+      "screen": [
+        332.3408203125,
+        298.51171875
+      ]
+    },
+    {
+      "at": [
+        2361.5,
+        781.5
+      ],
+      "id": "geonames2652082.0",
+      "labels": 1,
+      "name": "Cranleigh",
+      "screen": [
+        557.3408203125,
+        658.51171875
+      ]
+    }
+  ],
+  "south_edge": 788.2080078125,
+  "south_limit": 2700,
+  "terrain_detail": 1,
+  "terrain_tiles": 1,
+  "touches": 0,
+  "vertical_pan_locked": false,
+  "viewport": [
+    1440,
+    900
+  ],
+  "visible_annotations": 126,
+  "visible_cities": 63,
+  "visible_close_cities": 62,
+  "visible_labels": 63,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
+  "world_size": [
+    4480,
+    3144
+  ],
+  "zoom": 36,
+  "zoom_max": 36,
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 108
+}

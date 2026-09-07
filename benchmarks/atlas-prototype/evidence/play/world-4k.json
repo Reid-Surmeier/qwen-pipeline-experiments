@@ -1,4 +1,5 @@
 {
+  "close_city_count": 40806,
   "controls": {
     "+": [
       488,
@@ -32,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 14,
+  "fps": 12,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -458,6 +459,7 @@
   ],
   "visible_annotations": 54,
   "visible_cities": 27,
+  "visible_close_cities": 0,
   "visible_labels": 27,
   "visible_world_badges": 29,
   "world_badge_alpha": 1,
@@ -467,7 +469,7 @@
     3144
   ],
   "zoom": 0.851785719394684,
-  "zoom_max": 12,
+  "zoom_max": 36,
   "zoom_min": 0.851785714285714,
   "zoom_ratio": 1.00000000599795
 }

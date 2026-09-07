@@ -10,7 +10,8 @@
     "two-finger pinch zoom",
     "one-finger pan",
     "touch release",
-    "world reset"
+    "world reset",
+    "36 native zoom stop with newly revealed paired cities"
   ],
   "errors": []
 }

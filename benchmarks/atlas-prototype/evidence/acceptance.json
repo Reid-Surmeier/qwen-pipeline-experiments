@@ -29,13 +29,15 @@
   "removed_small_lake_polygons": 1336,
   "retained_lake_polygons": 30,
   "overview_badges_visible_at_minimum": true,
+  "additional_close_cities": 40806,
+  "new_maximum_native_zoom": 36,
   "new_zealand_land_size": [
     154,
     193
   ],
   "zoom_range": [
     "1.0 viewport fit",
-    "12 native"
+    "36 native"
   ],
   "unchanged_badges": 120,
   "other_full_sheets_byte_identical": 9,

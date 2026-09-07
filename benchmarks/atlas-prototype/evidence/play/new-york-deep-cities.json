@@ -1,0 +1,761 @@
+{
+  "close_city_count": 40806,
+  "controls": {
+    "+": [
+      488,
+      23,
+      44,
+      36
+    ],
+    "Full sheet": [
+      349,
+      23,
+      83,
+      36
+    ],
+    "World": [
+      127,
+      23,
+      55,
+      36
+    ],
+    "regions": [
+      188,
+      23,
+      155,
+      36
+    ],
+    "−": [
+      438,
+      23,
+      44,
+      36
+    ]
+  },
+  "detail_alpha": 1,
+  "fps": 55,
+  "mode": "atlas",
+  "orphan_dots": 0,
+  "popup": {
+    "position": [
+      188,
+      59
+    ],
+    "size": [
+      155,
+      305
+    ],
+    "visible": false
+  },
+  "position": [
+    1431.42370605469,
+    945.406799316406
+  ],
+  "region": "usa",
+  "regions": [
+    {
+      "id": "europe",
+      "source_sha256": "9705d50cfde60604b53d354e7d6471b92d201e8b25201ce7e891ce9cb1067aef"
+    },
+    {
+      "id": "africa",
+      "source_sha256": "acb399d272aaf0c8a9d1b1d2f95d2867a26e7837d99ec57f0dcdd3802294e67e"
+    },
+    {
+      "id": "asia",
+      "source_sha256": "b23f5eaa84829db0107babd0614fe7f603edb36d8e50a225064c5693de942e7b"
+    },
+    {
+      "id": "australia",
+      "source_sha256": "dc1a9d8710bb67f9bc0ad7f653bbdc4a9e2505b3a5bfcde78f70770abd018df5"
+    },
+    {
+      "id": "canada",
+      "source_sha256": "fd654ac03882997b7b61cc5b92271313a8d58d2871e1c6106420857ce043726c"
+    },
+    {
+      "id": "caribbean",
+      "source_sha256": "88f26e039542c9a9f91cfe6f94290b171e351bc124a6765b085ca4a3c7dd0f23"
+    },
+    {
+      "id": "russia",
+      "source_sha256": "307361e4b526c36cc4a5255d7190a1b6bdcd1f8bd3932c220128cd2486e50843"
+    },
+    {
+      "id": "south-america",
+      "source_sha256": "1620ffc1243489e8d45d670c413355d0344d997608cda47307915494f24449a3"
+    },
+    {
+      "id": "usa",
+      "source_sha256": "4ec2967f1a0f46609c56fb49fa7c125ead3a21c4c028b74144488732a26d4727"
+    },
+    {
+      "id": "middle-east",
+      "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
+    }
+  ],
+  "shown_cities": [
+    {
+      "at": [
+        1431.25,
+        945
+      ],
+      "id": "usa29.0",
+      "labels": 1,
+      "name": "New York City",
+      "screen": [
+        713.74658203125,
+        435.355224609375
+      ]
+    },
+    {
+      "at": [
+        1416.5,
+        956.25
+      ],
+      "id": "usa35.0",
+      "labels": 1,
+      "name": "Philadelphia",
+      "screen": [
+        182.74658203125,
+        840.355224609375
+      ]
+    },
+    {
+      "at": [
+        1433,
+        942.75
+      ],
+      "id": "geonames5110266.0",
+      "labels": 1,
+      "name": "The Bronx",
+      "screen": [
+        776.74658203125,
+        354.355224609375
+      ]
+    },
+    {
+      "at": [
+        1429.5,
+        947.25
+      ],
+      "id": "geonames5139568.0",
+      "labels": 1,
+      "name": "Staten Island",
+      "screen": [
+        650.74658203125,
+        516.355224609375
+      ]
+    },
+    {
+      "at": [
+        1429.25,
+        941.75
+      ],
+      "id": "geonames5102466.0",
+      "labels": 1,
+      "name": "Paterson",
+      "screen": [
+        641.74658203125,
+        318.355224609375
+      ]
+    },
+    {
+      "at": [
+        1441.5,
+        938
+      ],
+      "id": "geonames5282804.0",
+      "labels": 1,
+      "name": "Bridgeport",
+      "screen": [
+        1082.74658203125,
+        183.355224609375
+      ]
+    },
+    {
+      "at": [
+        1437.25,
+        939.75
+      ],
+      "id": "geonames4843564.0",
+      "labels": 1,
+      "name": "Stamford",
+      "screen": [
+        929.74658203125,
+        246.355224609375
+      ]
+    },
+    {
+      "at": [
+        1412.5,
+        946.5
+      ],
+      "id": "geonames5178127.0",
+      "labels": 1,
+      "name": "Allentown",
+      "screen": [
+        38.74658203125,
+        489.355224609375
+      ]
+    },
+    {
+      "at": [
+        1426,
+        947.75
+      ],
+      "id": "geonames5097529.0",
+      "labels": 1,
+      "name": "Edison",
+      "screen": [
+        524.74658203125,
+        534.355224609375
+      ]
+    },
+    {
+      "at": [
+        1422,
+        952.25
+      ],
+      "id": "geonames5105496.0",
+      "labels": 1,
+      "name": "Trenton",
+      "screen": [
+        380.74658203125,
+        696.355224609375
+      ]
+    },
+    {
+      "at": [
+        1428.75,
+        956.25
+      ],
+      "id": "geonames4504476.0",
+      "labels": 1,
+      "name": "Toms River",
+      "screen": [
+        623.74658203125,
+        840.355224609375
+      ]
+    },
+    {
+      "at": [
+        1433.25,
+        940.25
+      ],
+      "id": "geonames5119347.0",
+      "labels": 1,
+      "name": "Greenburgh",
+      "screen": [
+        785.74658203125,
+        264.355224609375
+      ]
+    },
+    {
+      "at": [
+        1429.5,
+        954.5
+      ],
+      "id": "geonames5095947.0",
+      "labels": 1,
+      "name": "Brick",
+      "screen": [
+        650.74658203125,
+        777.355224609375
+      ]
+    },
+    {
+      "at": [
+        1429.75,
+        949.75
+      ],
+      "id": "geonames5101170.0",
+      "labels": 1,
+      "name": "Middletown",
+      "screen": [
+        659.74658203125,
+        606.355224609375
+      ]
+    },
+    {
+      "at": [
+        1440.75,
+        944
+      ],
+      "id": "geonames5110077.0",
+      "labels": 1,
+      "name": "Brentwood",
+      "screen": [
+        1055.74658203125,
+        399.355224609375
+      ]
+    },
+    {
+      "at": [
+        1419.25,
+        954
+      ],
+      "id": "geonames5179995.0",
+      "labels": 1,
+      "name": "Bensalem",
+      "screen": [
+        281.74658203125,
+        759.355224609375
+      ]
+    },
+    {
+      "at": [
+        1436.25,
+        945
+      ],
+      "id": "geonames5120478.0",
+      "labels": 1,
+      "name": "Hempstead",
+      "screen": [
+        893.74658203125,
+        435.355224609375
+      ]
+    },
+    {
+      "at": [
+        1444.75,
+        936.25
+      ],
+      "id": "geonames4845419.0",
+      "labels": 1,
+      "name": "West Haven",
+      "screen": [
+        1199.74658203125,
+        120.355224609375
+      ]
+    },
+    {
+      "at": [
+        1423.25,
+        946.5
+      ],
+      "id": "geonames8299576.0",
+      "labels": 1,
+      "name": "Bridgewater",
+      "screen": [
+        425.74658203125,
+        489.355224609375
+      ]
+    },
+    {
+      "at": [
+        1420,
+        956.5
+      ],
+      "id": "geonames4503136.0",
+      "labels": 1,
+      "name": "Mount Laurel",
+      "screen": [
+        308.74658203125,
+        849.355224609375
+      ]
+    },
+    {
+      "at": [
+        1428.75,
+        943.25
+      ],
+      "id": "geonames5101334.0",
+      "labels": 1,
+      "name": "Montclair",
+      "screen": [
+        623.74658203125,
+        372.355224609375
+      ]
+    },
+    {
+      "at": [
+        1444,
+        942.5
+      ],
+      "id": "geonames5113694.0",
+      "labels": 1,
+      "name": "Coram",
+      "screen": [
+        1172.74658203125,
+        345.355224609375
+      ]
+    },
+    {
+      "at": [
+        1414.5,
+        953.75
+      ],
+      "id": "geonames5203506.0",
+      "labels": 1,
+      "name": "Norristown",
+      "screen": [
+        110.74658203125,
+        750.355224609375
+      ]
+    },
+    {
+      "at": [
+        1431.5,
+        938.5
+      ],
+      "id": "geonames5128481.0",
+      "labels": 1,
+      "name": "New City",
+      "screen": [
+        722.74658203125,
+        201.355224609375
+      ]
+    },
+    {
+      "at": [
+        1435.75,
+        946.75
+      ],
+      "id": "geonames5125086.0",
+      "labels": 1,
+      "name": "Long Beach",
+      "screen": [
+        875.74658203125,
+        498.355224609375
+      ]
+    },
+    {
+      "at": [
+        1431.5,
+        951
+      ],
+      "id": "geonames5100619.0",
+      "labels": 1,
+      "name": "Long Branch",
+      "screen": [
+        722.74658203125,
+        651.355224609375
+      ]
+    },
+    {
+      "at": [
+        1423,
+        950.25
+      ],
+      "id": "geonames5102922.0",
+      "labels": 1,
+      "name": "Princeton",
+      "screen": [
+        416.74658203125,
+        624.355224609375
+      ]
+    },
+    {
+      "at": [
+        1426.75,
+        938.75
+      ],
+      "id": "geonames5106279.0",
+      "labels": 1,
+      "name": "West Milford",
+      "screen": [
+        551.74658203125,
+        210.355224609375
+      ]
+    },
+    {
+      "at": [
+        1416,
+        945.25
+      ],
+      "id": "geonames5188140.0",
+      "labels": 1,
+      "name": "Easton",
+      "screen": [
+        164.74658203125,
+        444.355224609375
+      ]
+    },
+    {
+      "at": [
+        1424,
+        943
+      ],
+      "id": "geonames8469295.0",
+      "labels": 1,
+      "name": "Randolph",
+      "screen": [
+        452.74658203125,
+        363.355224609375
+      ]
+    },
+    {
+      "at": [
+        1432.25,
+        936.25
+      ],
+      "id": "geonames5130831.0",
+      "labels": 1,
+      "name": "Peekskill",
+      "screen": [
+        749.74658203125,
+        120.355224609375
+      ]
+    },
+    {
+      "at": [
+        1426.75,
+        944.75
+      ],
+      "id": "geonames5105127.0",
+      "labels": 1,
+      "name": "Summit",
+      "screen": [
+        551.74658203125,
+        426.355224609375
+      ]
+    },
+    {
+      "at": [
+        1437.75,
+        938.5
+      ],
+      "id": "geonames4839319.0",
+      "labels": 1,
+      "name": "New Canaan",
+      "screen": [
+        947.74658203125,
+        201.355224609375
+      ]
+    },
+    {
+      "at": [
+        1423.25,
+        940.25
+      ],
+      "id": "geonames5104882.0",
+      "labels": 1,
+      "name": "Sparta",
+      "screen": [
+        425.74658203125,
+        264.355224609375
+      ]
+    },
+    {
+      "at": [
+        1449,
+        936.25
+      ],
+      "id": "geonames4838116.0",
+      "labels": 1,
+      "name": "Madison",
+      "screen": [
+        1352.74658203125,
+        120.355224609375
+      ]
+    },
+    {
+      "at": [
+        1437.75,
+        943.25
+      ],
+      "id": "geonames5140402.0",
+      "labels": 1,
+      "name": "Syosset",
+      "screen": [
+        947.74658203125,
+        372.355224609375
+      ]
+    },
+    {
+      "at": [
+        1412,
+        952
+      ],
+      "id": "geonames5198034.0",
+      "labels": 1,
+      "name": "Limerick",
+      "screen": [
+        20.74658203125,
+        687.355224609375
+      ]
+    },
+    {
+      "at": [
+        1429.25,
+        940.5
+      ],
+      "id": "geonames5106615.0",
+      "labels": 1,
+      "name": "Wyckoff",
+      "screen": [
+        641.74658203125,
+        273.355224609375
+      ]
+    },
+    {
+      "at": [
+        1422.75,
+        941.5
+      ],
+      "id": "geonames5099292.0",
+      "labels": 1,
+      "name": "Hopatcong Hills",
+      "screen": [
+        407.74658203125,
+        309.355224609375
+      ]
+    },
+    {
+      "at": [
+        1431.25,
+        952.25
+      ],
+      "id": "geonames5095281.0",
+      "labels": 1,
+      "name": "Asbury Park",
+      "screen": [
+        713.74658203125,
+        696.355224609375
+      ]
+    },
+    {
+      "at": [
+        1445.75,
+        944
+      ],
+      "id": "geonames5126209.0",
+      "labels": 1,
+      "name": "Mastic Beach",
+      "screen": [
+        1235.74658203125,
+        399.355224609375
+      ]
+    },
+    {
+      "at": [
+        1446.5,
+        942.5
+      ],
+      "id": "geonames5125817.0",
+      "labels": 1,
+      "name": "Manorville",
+      "screen": [
+        1262.74658203125,
+        345.355224609375
+      ]
+    },
+    {
+      "at": [
+        1434,
+        941.5
+      ],
+      "id": "geonames5145142.0",
+      "labels": 1,
+      "name": "Wykagyl",
+      "screen": [
+        812.74658203125,
+        309.355224609375
+      ]
+    },
+    {
+      "at": [
+        1445,
+        941.25
+      ],
+      "id": "geonames5134235.0",
+      "labels": 1,
+      "name": "Rocky Point",
+      "screen": [
+        1208.74658203125,
+        300.355224609375
+      ]
+    },
+    {
+      "at": [
+        1424.5,
+        949
+      ],
+      "id": "geonames5098247.0",
+      "labels": 1,
+      "name": "Franklin Park",
+      "screen": [
+        470.74658203125,
+        579.355224609375
+      ]
+    },
+    {
+      "at": [
+        1415.5,
+        951.75
+      ],
+      "id": "geonames5201776.0",
+      "labels": 1,
+      "name": "Montgomeryville",
+      "screen": [
+        146.74658203125,
+        678.355224609375
+      ]
+    },
+    {
+      "at": [
+        1439.75,
+        945.25
+      ],
+      "id": "geonames5107612.0",
+      "labels": 1,
+      "name": "Babylon",
+      "screen": [
+        1019.74658203125,
+        444.355224609375
+      ]
+    },
+    {
+      "at": [
+        1427.75,
+        951.75
+      ],
+      "id": "geonames5098278.0",
+      "labels": 1,
+      "name": "Freehold",
+      "screen": [
+        587.74658203125,
+        678.355224609375
+      ]
+    },
+    {
+      "at": [
+        1416.5,
+        940.75
+      ],
+      "id": "geonames5188075.0",
+      "labels": 1,
+      "name": "East Stroudsburg",
+      "screen": [
+        182.74658203125,
+        282.355224609375
+      ]
+    }
+  ],
+  "south_edge": 957.906799316406,
+  "south_limit": 2700,
+  "terrain_detail": 1,
+  "terrain_tiles": 1,
+  "touches": 0,
+  "vertical_pan_locked": false,
+  "viewport": [
+    1440,
+    900
+  ],
+  "visible_annotations": 98,
+  "visible_cities": 49,
+  "visible_close_cities": 47,
+  "visible_labels": 49,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
+  "world_size": [
+    4480,
+    3144
+  ],
+  "zoom": 36,
+  "zoom_max": 36,
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 108
+}

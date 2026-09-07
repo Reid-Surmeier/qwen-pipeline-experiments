@@ -12,7 +12,7 @@ benchmarks/atlas-prototype/run.sh
 
 This imports and exports the Godot project and publishes its Web build through the existing Tailscale share tool. Open `godot/project.godot` in Godot 4.7.2 for the native project. No persistent state or production integration.
 
-Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from 1.0× viewport fit to 12× native scale. The minimum fills the viewport vertically, so narrow phones show a horizontal slice of the world that can be panned. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
+Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from 1.0× viewport fit to 36× native scale. The minimum fills the viewport vertically, so narrow phones show a horizontal slice of the world that can be panned. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
 
 ## What the prototype established
 
@@ -50,7 +50,7 @@ Current acceptance includes sparse named overview on desktop and phone, zero orp
 
 The overview retains its original terrain artwork with the Great Lakes and major lakes in Canada and elsewhere added from Natural Earth 5.1.2. At native zoom 1.65–1.8 it transitions to 1:10m geographic coastlines and a curated set of major lakes, rasterized at four times the original pixel resolution. This adds actual bays, islands and shore geometry rather than enlarging the original pixels. The original palette, thin city-label textures, red dots, badge art and full sheets remain intact.
 
-Only visible detail tiles are loaded. A small signed-distance shader keeps the white close-up outline eight screen pixels wide as zoom increases, avoiding oversized white rings around small lakes. Detail city anchors use the same projection and land checks as the geographic layer. The source artwork and geographic coastlines differ slightly; the brief level transition moves city anchors with the terrain. This is one finite detail level, not unlimited street-level cartography.
+Only visible detail tiles are loaded. A small signed-distance shader keeps the white close-up outline approximately eight screen pixels wide as zoom increases, avoiding oversized white rings around small lakes. Detail city anchors use the same projection and land checks as the geographic layer. The source artwork and geographic coastlines differ slightly; the brief level transition moves city anchors with the terrain. This is one finite detail level, not unlimited street-level cartography.
 
 `prepare_geography.py` builds the 48 detail tiles and geographic fields from the pinned, public-domain source extracts in `reference/`; run it before `prepare_atlas.py` to reproduce terrain assembly. Source URLs, versions and hashes are in `reference/detail-sources.json`. No additional paid generation was used.
 
@@ -59,3 +59,11 @@ Only visible detail tiles are loaded. A small signed-distance shader keeps the w
 Small uninhabited island polygons and minor lakes are omitted from the geographic layer; small holes inside retained land and lake shapes are removed too. Major coastlines retain their finer shape, and islands needed by identified city labels remain. The overview uses the same major-lake selection. Counts and area thresholds are recorded in `evidence/geography-detail.json`.
 
 The original 29 world badge crops now render at 22 screen pixels high, with space reserved before city labels are placed. Their fade uses the viewport minimum zoom as well as the native scale, so the colored numbers remain opaque at 1.0× even on a 4K viewport. Regional badges take over after the world badges fade. No original badge pixels, regional full sheets or label textures were edited.
+
+## Deeper zoom and additional cities
+
+Maximum zoom is now 36× native scale, three times the previous maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal in three close-view tiers: native zoom 7 for cities of at least 250,000 people, 14 for at least 50,000, and 24 for at least 10,000. Smaller places do not crowd the overview.
+
+The additional catalog excludes the existing named identities, subdivisions, duplicate nearby names and points without retained land within two native-map pixels. Each additional dot and name is accepted and drawn together using the same collision space as the original labels. A geographic grid restricts layout work to nearby places. Their names use the existing regular PixelMplus font; all original label textures remain untouched. The retained coastlines, lakes, islands and badges are unchanged. At maximum zoom the white outline has a one-detail-pixel minimum so it cannot vanish.
+
+Reproduce the added catalog with `python3 benchmarks/atlas-prototype/prepare_close_cities.py /path/to/cities5000.zip`. The selected source records, download SHA-256 and GeoNames CC BY attribution are in `reference/close-cities.json.gz`; the runnable catalog is `godot/close-cities.json`. Font permission is included in `godot/fonts/LICENSE.txt`. No paid generation.

@@ -1,4 +1,5 @@
 {
+  "close_city_count": 40806,
   "controls": {
     "+": [
       301,
@@ -159,6 +160,7 @@
   ],
   "visible_annotations": 12,
   "visible_cities": 4,
+  "visible_close_cities": 0,
   "visible_labels": 4,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
@@ -168,7 +170,7 @@
     3144
   ],
   "zoom": 0.899999976158142,
-  "zoom_max": 12,
+  "zoom_max": 36,
   "zoom_min": 0.312592592592593,
   "zoom_ratio": 2.87914684315993
 }
