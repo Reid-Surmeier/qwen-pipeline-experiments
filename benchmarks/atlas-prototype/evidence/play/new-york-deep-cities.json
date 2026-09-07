@@ -1,4 +1,5 @@
 {
+  "city_symbol_scale": 2,
   "close_city_count": 40806,
   "controls": {
     "+": [
@@ -33,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 56,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -123,15 +124,15 @@
     },
     {
       "at": [
-        1431.75,
-        943.75
+        1433,
+        942.75
       ],
-      "id": "geonames5125771.0",
+      "id": "geonames5110266.0",
       "labels": 1,
-      "name": "Manhattan",
+      "name": "The Bronx",
       "screen": [
-        759.1552734375,
-        251.18408203125
+        909.1552734375,
+        131.18408203125
       ]
     },
     {
@@ -145,32 +146,6 @@
       "screen": [
         489.1552734375,
         671.18408203125
-      ]
-    },
-    {
-      "at": [
-        1429.25,
-        944.5
-      ],
-      "id": "geonames5101798.0",
-      "labels": 1,
-      "name": "Newark",
-      "screen": [
-        459.1552734375,
-        341.18408203125
-      ]
-    },
-    {
-      "at": [
-        1428.75,
-        945.75
-      ],
-      "id": "geonames5097598.0",
-      "labels": 1,
-      "name": "Elizabeth",
-      "screen": [
-        399.1552734375,
-        491.18408203125
       ]
     },
     {
@@ -201,28 +176,15 @@
     },
     {
       "at": [
-        1436.25,
-        945
+        1428,
+        945.25
       ],
-      "id": "geonames5120478.0",
+      "id": "geonames5105608.0",
       "labels": 1,
-      "name": "Hempstead",
+      "name": "Union",
       "screen": [
-        1299.1552734375,
-        401.18408203125
-      ]
-    },
-    {
-      "at": [
-        1426.25,
-        946
-      ],
-      "id": "geonames5102720.0",
-      "labels": 1,
-      "name": "Plainfield",
-      "screen": [
-        99.1552734375,
-        521.18408203125
+        309.1552734375,
+        431.18408203125
       ]
     },
     {
@@ -240,41 +202,15 @@
     },
     {
       "at": [
-        1435.75,
-        946.75
-      ],
-      "id": "geonames5125086.0",
-      "labels": 1,
-      "name": "Long Beach",
-      "screen": [
-        1239.1552734375,
-        611.18408203125
-      ]
-    },
-    {
-      "at": [
         1436,
-        942.75
+        944.25
       ],
-      "id": "geonames5118626.0",
+      "id": "geonames5127134.0",
       "labels": 1,
-      "name": "Glen Cove",
+      "name": "Mineola",
       "screen": [
         1269.1552734375,
-        131.18408203125
-      ]
-    },
-    {
-      "at": [
-        1426.75,
-        944.75
-      ],
-      "id": "geonames5105127.0",
-      "labels": 1,
-      "name": "Summit",
-      "screen": [
-        159.1552734375,
-        371.18408203125
+        311.18408203125
       ]
     }
   ],
@@ -288,10 +224,10 @@
     1440,
     900
   ],
-  "visible_annotations": 28,
-  "visible_cities": 14,
-  "visible_close_cities": 13,
-  "visible_labels": 14,
+  "visible_annotations": 18,
+  "visible_cities": 9,
+  "visible_close_cities": 8,
+  "visible_labels": 9,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

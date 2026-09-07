@@ -1,5 +1,4 @@
 {
-  "city_symbol_scale": 2,
   "close_city_count": 40806,
   "controls": {
     "+": [
@@ -34,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 58,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,10 +48,10 @@
     "visible": false
   },
   "position": [
-    2366.01831054688,
-    775.7080078125
+    4135.51904296875,
+    1018.91473388672
   ],
-  "region": "europe",
+  "region": "asia",
   "regions": [
     {
       "id": "europe",
@@ -98,149 +97,227 @@
   "shown_cities": [
     {
       "at": [
-        2366,
-        775.5
+        4135,
+        1018
       ],
-      "id": "europe2643743.0",
+      "id": "asia1850147.0",
       "labels": 1,
-      "name": "London",
+      "name": "Tokyo",
       "screen": [
-        717.802734375,
-        425.0390625
+        657.71484375,
+        340.23193359375
       ]
     },
     {
       "at": [
-        2368.75,
-        775
+        4134.5,
+        1021.75
       ],
-      "id": "geonames2656333.0",
+      "id": "geonames1848354.0",
       "labels": 1,
-      "name": "Barking",
+      "name": "Yokohama",
       "screen": [
-        1047.802734375,
-        365.0390625
+        597.71484375,
+        790.23193359375
       ]
     },
     {
       "at": [
-        2365,
-        778
+        4135.5,
+        1020.5
       ],
-      "id": "geonames2636503.0",
+      "id": "geonames1859642.0",
       "labels": 1,
-      "name": "Sutton",
+      "name": "Kawasaki",
       "screen": [
-        597.802734375,
-        725.0390625
+        717.71484375,
+        640.23193359375
       ]
     },
     {
       "at": [
-        2360.5,
-        778.5
+        4140.5,
+        1019.25
       ],
-      "id": "geonames2633709.0",
+      "id": "geonames2113015.0",
       "labels": 1,
-      "name": "Woking",
+      "name": "Chiba",
       "screen": [
-        57.802734375,
-        785.0390625
+        1317.71484375,
+        490.23193359375
       ]
     },
     {
       "at": [
-        2362.25,
-        775.25
+        4130.25,
+        1019.25
       ],
-      "id": "geonames2647261.0",
+      "id": "geonames1865689.0",
       "labels": 1,
-      "name": "Hayes",
+      "name": "Aihara",
       "screen": [
-        267.802734375,
-        395.0390625
+        87.71484375,
+        490.23193359375
       ]
     },
     {
       "at": [
-        2367,
-        773.5
+        4135.25,
+        1016.5
       ],
-      "id": "geonames2650209.0",
+      "id": "geonames1859730.0",
       "labels": 1,
-      "name": "Edmonton",
+      "name": "Kawaguchi",
       "screen": [
-        837.802734375,
-        185.0390625
+        687.71484375,
+        160.23193359375
       ]
     },
     {
       "at": [
-        2367.25,
-        777
+        4137.75,
+        1016.75
       ],
-      "id": "geonames2656065.0",
+      "id": "geonames1857553.0",
       "labels": 1,
-      "name": "Beckenham",
+      "name": "Matsudo",
       "screen": [
-        867.802734375,
-        605.0390625
+        987.71484375,
+        190.23193359375
       ]
     },
     {
       "at": [
-        2370.25,
-        776.5
+        4132,
+        1020.25
       ],
-      "id": "geonames2651500.0",
+      "id": "geonames1857871.0",
       "labels": 1,
-      "name": "Dartford",
+      "name": "Machida",
       "screen": [
-        1227.802734375,
-        545.0390625
+        297.71484375,
+        610.23193359375
       ]
     },
     {
       "at": [
-        2361.25,
-        776.75
+        4132.25,
+        1016.5
       ],
-      "id": "geonames2637126.0",
+      "id": "geonames1850181.0",
       "labels": 1,
-      "name": "Staines",
+      "name": "Tokorozawa",
       "screen": [
-        147.802734375,
-        575.0390625
+        327.71484375,
+        160.23193359375
       ]
     },
     {
       "at": [
-        2363,
-        773.25
+        4140,
+        1020.5
       ],
-      "id": "geonames2654179.0",
+      "id": "geonames2112664.0",
       "labels": 1,
-      "name": "Bushey",
+      "name": "Ichihara",
       "screen": [
-        357.802734375,
-        155.0390625
+        1257.71484375,
+        640.23193359375
       ]
     },
     {
       "at": [
-        2368,
-        778.75
+        4132.5,
+        1018.25
       ],
-      "id": "geonames2655690.0",
+      "id": "geonames11611632.0",
       "labels": 1,
-      "name": "Biggin Hill",
+      "name": "Fuchu",
       "screen": [
-        957.802734375,
-        815.0390625
+        357.71484375,
+        370.23193359375
+      ]
+    },
+    {
+      "at": [
+        4131,
+        1021.5
+      ],
+      "id": "geonames1847963.0",
+      "labels": 1,
+      "name": "Atsugi",
+      "screen": [
+        177.71484375,
+        760.23193359375
+      ]
+    },
+    {
+      "at": [
+        4140.5,
+        1017.5
+      ],
+      "id": "geonames6822182.0",
+      "labels": 1,
+      "name": "Yachiyo",
+      "screen": [
+        1317.71484375,
+        280.23193359375
+      ]
+    },
+    {
+      "at": [
+        4137.75,
+        1018.5
+      ],
+      "id": "geonames1849186.0",
+      "labels": 1,
+      "name": "Urayasu",
+      "screen": [
+        987.71484375,
+        400.23193359375
+      ]
+    },
+    {
+      "at": [
+        4136.25,
+        1018.25
+      ],
+      "id": "geonames13353695.0",
+      "labels": 1,
+      "name": "Chuo",
+      "screen": [
+        807.71484375,
+        370.23193359375
+      ]
+    },
+    {
+      "at": [
+        4139.25,
+        1022
+      ],
+      "id": "geonames11612456.0",
+      "labels": 1,
+      "name": "Sodegaura",
+      "screen": [
+        1167.71484375,
+        820.23193359375
+      ]
+    },
+    {
+      "at": [
+        4130.5,
+        1017.5
+      ],
+      "id": "geonames1907148.0",
+      "labels": 1,
+      "name": "Fussa",
+      "screen": [
+        117.71484375,
+        280.23193359375
       ]
     }
   ],
-  "south_edge": 779.4580078125,
+  "south_edge": 1022.66473388672,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
@@ -250,10 +327,10 @@
     1440,
     900
   ],
-  "visible_annotations": 22,
-  "visible_cities": 11,
-  "visible_close_cities": 10,
-  "visible_labels": 11,
+  "visible_annotations": 34,
+  "visible_cities": 17,
+  "visible_close_cities": 16,
+  "visible_labels": 17,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

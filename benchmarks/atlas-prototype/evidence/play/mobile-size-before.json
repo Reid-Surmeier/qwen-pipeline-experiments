@@ -1,45 +1,44 @@
 {
-  "city_symbol_scale": 1.00009050048848,
   "close_city_count": 40806,
   "controls": {
     "+": [
-      488,
+      301,
       23,
       44,
       36
     ],
     "Full sheet": [
-      349,
+      193,
       23,
-      83,
+      52,
       36
     ],
     "World": [
-      127,
+      26,
       23,
       55,
       36
     ],
     "regions": [
-      188,
+      87,
       23,
-      155,
+      100,
       36
     ],
     "−": [
-      438,
+      251,
       23,
       44,
       36
     ]
   },
   "detail_alpha": 1,
-  "fps": 51,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
     "position": [
-      188,
+      87,
       59
     ],
     "size": [
@@ -49,10 +48,10 @@
     "visible": false
   },
   "position": [
-    2291.76684570312,
-    2462.98681640625
+    2497.54614257812,
+    760.499694824219
   ],
-  "region": "south-america",
+  "region": "europe",
   "regions": [
     {
       "id": "europe",
@@ -95,21 +94,35 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
-  "south_edge": 2648.23315665025,
+  "shown_cities": [
+    {
+      "at": [
+        2497.25,
+        761.75
+      ],
+      "id": "geonames2855047.0",
+      "labels": 1,
+      "name": "Peine",
+      "screen": [
+        159.462890625,
+        572.03662109375
+      ]
+    }
+  ],
+  "south_edge": 764.016361490885,
   "south_limit": 2700,
   "terrain_detail": 1,
-  "terrain_tiles": 4,
+  "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    1440,
-    900
+    390,
+    844
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_close_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 2,
+  "visible_cities": 1,
+  "visible_close_cities": 1,
+  "visible_labels": 1,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -117,8 +130,8 @@
     4480,
     3144
   ],
-  "zoom": 2.42919778823853,
+  "zoom": 120,
   "zoom_max": 120,
-  "zoom_min": 0.333333333333333,
-  "zoom_ratio": 7.28759336471558
+  "zoom_min": 0.312592592592593,
+  "zoom_ratio": 383.886255924171
 }

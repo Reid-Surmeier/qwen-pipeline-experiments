@@ -1,4 +1,5 @@
 {
+  "city_symbol_scale": 2,
   "close_city_count": 40806,
   "controls": {
     "+": [
@@ -124,27 +125,14 @@
     {
       "at": [
         4135.5,
-        1020.5
+        1020
       ],
-      "id": "geonames1859642.0",
+      "id": "geonames8469289.0",
       "labels": 1,
-      "name": "Kawasaki",
+      "name": "Ota",
       "screen": [
         717.71484375,
-        640.23193359375
-      ]
-    },
-    {
-      "at": [
-        4140.5,
-        1019.25
-      ],
-      "id": "geonames2113015.0",
-      "labels": 1,
-      "name": "Chiba",
-      "screen": [
-        1317.71484375,
-        490.23193359375
+        580.23193359375
       ]
     },
     {
@@ -175,32 +163,6 @@
     },
     {
       "at": [
-        4137.75,
-        1016.75
-      ],
-      "id": "geonames1857553.0",
-      "labels": 1,
-      "name": "Matsudo",
-      "screen": [
-        987.71484375,
-        190.23193359375
-      ]
-    },
-    {
-      "at": [
-        4132,
-        1020.25
-      ],
-      "id": "geonames1857871.0",
-      "labels": 1,
-      "name": "Machida",
-      "screen": [
-        297.71484375,
-        610.23193359375
-      ]
-    },
-    {
-      "at": [
         4132.25,
         1016.5
       ],
@@ -210,19 +172,6 @@
       "screen": [
         327.71484375,
         160.23193359375
-      ]
-    },
-    {
-      "at": [
-        4140,
-        1020.5
-      ],
-      "id": "geonames2112664.0",
-      "labels": 1,
-      "name": "Ichihara",
-      "screen": [
-        1257.71484375,
-        640.23193359375
       ]
     },
     {
@@ -240,53 +189,27 @@
     },
     {
       "at": [
-        4131,
-        1021.5
+        4132,
+        1021.25
       ],
-      "id": "geonames1847963.0",
+      "id": "geonames11611478.0",
       "labels": 1,
-      "name": "Atsugi",
+      "name": "Yamato",
       "screen": [
-        177.71484375,
-        760.23193359375
+        297.71484375,
+        730.23193359375
       ]
     },
     {
       "at": [
-        4140.5,
-        1017.5
-      ],
-      "id": "geonames6822182.0",
-      "labels": 1,
-      "name": "Yachiyo",
-      "screen": [
-        1317.71484375,
-        280.23193359375
-      ]
-    },
-    {
-      "at": [
-        4137.75,
-        1018.5
-      ],
-      "id": "geonames1849186.0",
-      "labels": 1,
-      "name": "Urayasu",
-      "screen": [
-        987.71484375,
-        400.23193359375
-      ]
-    },
-    {
-      "at": [
-        4136.25,
+        4139.5,
         1018.25
       ],
-      "id": "geonames13353695.0",
+      "id": "geonames11612347.0",
       "labels": 1,
-      "name": "Chuo",
+      "name": "Narashino",
       "screen": [
-        807.71484375,
+        1197.71484375,
         370.23193359375
       ]
     },
@@ -305,15 +228,28 @@
     },
     {
       "at": [
-        4130.5,
-        1017.5
+        4139.75,
+        1016.5
       ],
-      "id": "geonames1907148.0",
+      "id": "geonames2111018.0",
       "labels": 1,
-      "name": "Fussa",
+      "name": "Shiroi",
       "screen": [
-        117.71484375,
-        280.23193359375
+        1227.71484375,
+        160.23193359375
+      ]
+    },
+    {
+      "at": [
+        4136.75,
+        1018.25
+      ],
+      "id": "geonames1864055.0",
+      "labels": 1,
+      "name": "Toyo",
+      "screen": [
+        867.71484375,
+        370.23193359375
       ]
     }
   ],
@@ -327,10 +263,10 @@
     1440,
     900
   ],
-  "visible_annotations": 34,
-  "visible_cities": 17,
-  "visible_close_cities": 16,
-  "visible_labels": 17,
+  "visible_annotations": 24,
+  "visible_cities": 12,
+  "visible_close_cities": 11,
+  "visible_labels": 12,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

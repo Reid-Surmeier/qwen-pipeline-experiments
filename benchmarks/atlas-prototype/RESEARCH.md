@@ -73,3 +73,7 @@ Verification compares old and new reveal eligibility for every added city and ca
 ## Further zoom and simultaneous label density
 
 The Tokyo screenshot demonstrated that later eligibility alone still fills the screen once many places qualify. Increase the shared maximum to 120, stretch additional thresholds to 24.67–112, and increase existing pair-rectangle padding from 8 to 60 screen pixels. Reusing the population-sorted collision pass preserves larger places and leaves room around each accepted name; closer zoom separates competing towns spatially. Original labels retain priority and their exact typography. No new terrain or generated artwork. Real-input checks compare the same Tokyo scale to the previous build, check close-pair spacing, and reach 120 on desktop and phone.
+
+## City names and dots grow at close zoom
+
+Both city rendering paths previously divided by camera zoom to hold a fixed screen size. A shared scale now grows from one to two between native zoom 2 and 80; original world lettering keeps its prior 0.65 scale. Apply this factor to the original texture sprites, the additional text/dot drawing transform, and every corresponding layout rectangle/offset. Pixel filtering and original glyph assets remain intact. Verification compares rendered red pixels against saved before screenshots for original and additional cities at the same camera, checks intermediate growth, and playtests the enlarged labels on desktop and phone.

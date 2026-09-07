@@ -14,7 +14,7 @@ await page.waitForTimeout(1500);
 const state=()=>page.evaluate(()=>window.atlasState);
 const shot=async name=>{const check=await state();assert.equal(check.orphan_dots,0);assert(check.shown_cities.every(c=>c.labels>0));if(check.mode==='atlas')assert(check.vertical_pan_locked ? Math.abs(check.position[1]-1350)<.01 : check.south_edge<=2700.01);await page.screenshot({path:path.join(out,name+'.png')});await fs.writeFile(path.join(out,name+'.json'),JSON.stringify({...await state(),regions:(await state()).regions.map(r=>({id:r.id,source_sha256:r.source_sha256}))},null,2));};
 const control=async name=>{const s=await state();const [x,y,w,h]=s.controls[name];await page.mouse.click(x+w/2,y+h/2);await page.waitForTimeout(500);};
-await shot('01-world');assert((await state()).visible_world_badges>=20);assert.equal((await state()).world_badge_alpha,1);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);assert.equal((await state()).world_size[1],3144);
+await shot('01-world');assert.equal((await state()).city_symbol_scale,.65);assert((await state()).visible_world_badges>=20);assert.equal((await state()).world_badge_alpha,1);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);assert.equal((await state()).world_size[1],3144);
 const regions=(await state()).regions;
 for(let i=0;i<regions.length;i++){
  await control('World');await control('regions');
@@ -108,7 +108,7 @@ for(const [name,index,point] of [['london',0,[2366,775.5]],['new-york',8,[1431,9
    if(i<=11)assert.equal((await state()).visible_close_cities,0);
   }
  }
- await page.waitForTimeout(600);const close=await state();assert.equal(close.zoom,120);assert(close.visible_close_cities>0);assert.equal(close.orphan_dots,0);await shot(name+'-deep-cities');
+ await page.waitForTimeout(600);const close=await state();assert.equal(close.zoom,120);assert.equal(close.city_symbol_scale,2);assert(close.visible_close_cities>0);assert.equal(close.orphan_dots,0);await shot(name+'-deep-cities');
  const added=close.shown_cities.filter(c=>c.id.startsWith('geonames'));
  for(let a=0;a<added.length;a++)for(let b=0;b<a;b++)assert(Math.hypot(...added[a].screen.map((v,i)=>v-added[b].screen[i]))>=120);
  assert(close.visible_close_cities<30);

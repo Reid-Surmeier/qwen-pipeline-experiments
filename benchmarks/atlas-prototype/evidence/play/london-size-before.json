@@ -1,5 +1,4 @@
 {
-  "city_symbol_scale": 2,
   "close_city_count": 40806,
   "controls": {
     "+": [
@@ -34,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 58,
+  "fps": 52,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -137,6 +136,45 @@
     },
     {
       "at": [
+        2366.5,
+        773
+      ],
+      "id": "geonames2649997.0",
+      "labels": 1,
+      "name": "Enfield Town",
+      "screen": [
+        777.802734375,
+        125.0390625
+      ]
+    },
+    {
+      "at": [
+        2363.5,
+        774.25
+      ],
+      "id": "geonames2647425.0",
+      "labels": 1,
+      "name": "Harrow",
+      "screen": [
+        417.802734375,
+        275.0390625
+      ]
+    },
+    {
+      "at": [
+        2362.5,
+        773
+      ],
+      "id": "geonames2634677.0",
+      "labels": 1,
+      "name": "Watford",
+      "screen": [
+        297.802734375,
+        125.0390625
+      ]
+    },
+    {
+      "at": [
         2360.5,
         778.5
       ],
@@ -150,28 +188,15 @@
     },
     {
       "at": [
-        2362.25,
-        775.25
+        2363,
+        775.5
       ],
-      "id": "geonames2647261.0",
+      "id": "geonames2637490.0",
       "labels": 1,
-      "name": "Hayes",
+      "name": "Southall",
       "screen": [
-        267.802734375,
-        395.0390625
-      ]
-    },
-    {
-      "at": [
-        2367,
-        773.5
-      ],
-      "id": "geonames2650209.0",
-      "labels": 1,
-      "name": "Edmonton",
-      "screen": [
-        837.802734375,
-        185.0390625
+        357.802734375,
+        425.0390625
       ]
     },
     {
@@ -185,6 +210,19 @@
       "screen": [
         867.802734375,
         605.0390625
+      ]
+    },
+    {
+      "at": [
+        2363,
+        777.75
+      ],
+      "id": "geonames2649911.0",
+      "labels": 1,
+      "name": "Esher",
+      "screen": [
+        357.802734375,
+        695.0390625
       ]
     },
     {
@@ -215,28 +253,67 @@
     },
     {
       "at": [
-        2363,
-        773.25
+        2366.25,
+        774.25
       ],
-      "id": "geonames2654179.0",
+      "id": "geonames8581595.0",
       "labels": 1,
-      "name": "Bushey",
+      "name": "Harringay",
       "screen": [
-        357.802734375,
-        155.0390625
+        747.802734375,
+        275.0390625
       ]
     },
     {
       "at": [
-        2368,
-        778.75
+        2365.25,
+        776.5
       ],
-      "id": "geonames2655690.0",
+      "id": "geonames8063096.0",
       "labels": 1,
-      "name": "Biggin Hill",
+      "name": "Earlsfield",
       "screen": [
-        957.802734375,
-        815.0390625
+        627.802734375,
+        545.0390625
+      ]
+    },
+    {
+      "at": [
+        2369.25,
+        778
+      ],
+      "id": "geonames2653264.0",
+      "labels": 1,
+      "name": "Chelsfield",
+      "screen": [
+        1107.802734375,
+        725.0390625
+      ]
+    },
+    {
+      "at": [
+        2366.75,
+        778.25
+      ],
+      "id": "geonames2638595.0",
+      "labels": 1,
+      "name": "Sanderstead",
+      "screen": [
+        807.802734375,
+        755.0390625
+      ]
+    },
+    {
+      "at": [
+        2370.75,
+        774.5
+      ],
+      "id": "geonames2635150.0",
+      "labels": 1,
+      "name": "Upminster",
+      "screen": [
+        1287.802734375,
+        305.0390625
       ]
     }
   ],
@@ -250,10 +327,10 @@
     1440,
     900
   ],
-  "visible_annotations": 22,
-  "visible_cities": 11,
-  "visible_close_cities": 10,
-  "visible_labels": 11,
+  "visible_annotations": 34,
+  "visible_cities": 17,
+  "visible_close_cities": 16,
+  "visible_labels": 17,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,

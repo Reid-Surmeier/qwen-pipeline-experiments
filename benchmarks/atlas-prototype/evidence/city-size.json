@@ -1,0 +1,147 @@
+{
+  "status": "pass",
+  "maximum_scale": 2,
+  "rendered_dot_checks": [
+    {
+      "view": "tokyo",
+      "city": "Tokyo",
+      "original_bitmap": true,
+      "red_pixels_before_after": [
+        54,
+        237
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Yokohama",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Aihara",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Kawaguchi",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Tokorozawa",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        313
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Fuchu",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    },
+    {
+      "view": "tokyo",
+      "city": "Sodegaura",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    },
+    {
+      "view": "london",
+      "city": "London",
+      "original_bitmap": true,
+      "red_pixels_before_after": [
+        64,
+        273
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Barking",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Sutton",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Woking",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Beckenham",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Dartford",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "london",
+      "city": "Staines",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        80,
+        315
+      ]
+    },
+    {
+      "view": "mobile",
+      "city": "Peine",
+      "original_bitmap": false,
+      "red_pixels_before_after": [
+        78,
+        314
+      ]
+    }
+  ],
+  "before_commit": "f7837a53444acf57256b72d281fd62a4add9354f",
+  "visual_inspection": [
+    "Tokyo close view",
+    "London close view",
+    "phone close view"
+  ]
+}

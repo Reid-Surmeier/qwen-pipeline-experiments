@@ -114,6 +114,28 @@ paces=[json.loads((R/'evidence/play'/f'london-paced-{step}.json').read_text()) f
 assert all(p['visible_close_cities']==0 for p in paces[:2])
 assert paces[-1]['visible_close_cities']>paces[2]['visible_close_cities']
 assert all(p['orphan_dots']==0 for p in paces)
+# Compare actual rendered red pixels at the same camera, for both drawing paths.
+size_checks=[]
+for name in ['tokyo','london','mobile']:
+ old=json.loads((R/'evidence/play'/f'{name}-size-before.json').read_text())
+ new=json.loads((R/'evidence/play'/f'{name}-deep-cities.json').read_text())
+ assert old['zoom']==new['zoom']==120 and new['city_symbol_scale']==2
+ old_image=np.array(Image.open(R/'evidence/play'/f'{name}-size-before.png').convert('RGB'))
+ new_image=np.array(Image.open(R/'evidence/play'/f'{name}-deep-cities.png').convert('RGB'))
+ common=[c for c in new['shown_cities'] if any(c['id']==b['id'] for b in old['shown_cities'])]
+ assert common
+ for city in common:
+  previous=next(c for c in old['shown_cities'] if c['id']==city['id'])
+  counts=[]
+  for record,pixels in [(previous,old_image),(city,new_image)]:
+   x,y=map(round,record['screen']);crop=pixels[y-14:y+15,x-14:x+15]
+   counts.append(int(np.all(crop==[204,51,51],axis=2).sum()))
+  assert counts[0]>0 and counts[1]>=counts[0]*3,(name,city['name'],counts)
+  size_checks.append({'view':name,'city':city['name'],'original_bitmap':not city['id'].startswith('geonames'),'red_pixels_before_after':counts})
+assert any(c['original_bitmap'] for c in size_checks) and any(not c['original_bitmap'] for c in size_checks)
+assert all(a['city_symbol_scale']<b['city_symbol_scale'] for a,b in zip(paces[:5],paces[1:6]))
+assert paces[-1]['city_symbol_scale']==2
+(R/'evidence/city-size.json').write_text(json.dumps({'status':'pass','maximum_scale':2,'rendered_dot_checks':size_checks},indent=2)+'\n')
 url='https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/'
 served=[]
 for file in ['index.html','index.js','index.pck','index.wasm']:
@@ -122,5 +144,5 @@ for file in ['index.html','index.js','index.pck','index.wasm']:
  served.append(file)
 for file in ['desktop-check.json','mobile-check.json']:
  assert json.loads((R/'evidence/play'/file).read_text())['status']=='pass'
-result={'status':'pass','regions':10,'europe_city_count':47,'us_cities_on_land':89,'overview_city_count':json.loads((R/'evidence/play/01-world.json').read_text())['visible_cities'],'original_thin_labels_restored':10,'named_regional_placements':len(registered),'london_on_great_britain':True,'orphan_dots':0,'southern_pan_stop':True,'antarctica_present':True,'unbounded_polar_fill_removed':True,'detail_city_anchors_on_land':anchors,'sourced_lakes_checked':list(lake_points),'terrain_detail_resolution':4,'geography_tiles':48,'removed_small_land_polygons':geo['removed_land_polygons'],'removed_small_lake_polygons':geo['removed_lake_polygons'],'retained_lake_polygons':geo['retained_lake_polygons'],'overview_badges_visible_at_minimum':True,'additional_close_cities':len(close),'new_maximum_native_zoom':120,'slower_population_based_reveal':True,'distinct_close_reveal_thresholds':len({c['min_zoom'] for c in close}),'new_zealand_land_size':[154,193],'zoom_range':['1.0 viewport fit','120 native'],'unchanged_badges':badges,'other_full_sheets_byte_identical':9,'europe_pixels_changed_outside_mask':0,'complete_terrain_pixels':int(terrain.shape[0]*terrain.shape[1]),'served_files_hash_verified':served,'additional_generations':sum(r['completed_n'] for r in ledger['requests']),'actual_cost_usd':sum(r['actual_cost_usd'] for r in ledger['requests']),'url':url}
+result={'status':'pass','regions':10,'europe_city_count':47,'us_cities_on_land':89,'overview_city_count':json.loads((R/'evidence/play/01-world.json').read_text())['visible_cities'],'original_thin_labels_restored':10,'named_regional_placements':len(registered),'london_on_great_britain':True,'orphan_dots':0,'southern_pan_stop':True,'antarctica_present':True,'unbounded_polar_fill_removed':True,'detail_city_anchors_on_land':anchors,'sourced_lakes_checked':list(lake_points),'terrain_detail_resolution':4,'geography_tiles':48,'removed_small_land_polygons':geo['removed_land_polygons'],'removed_small_lake_polygons':geo['removed_lake_polygons'],'retained_lake_polygons':geo['retained_lake_polygons'],'overview_badges_visible_at_minimum':True,'additional_close_cities':len(close),'new_maximum_native_zoom':120,'close_city_name_and_dot_scale':2,'rendered_dot_growth_checks':len(size_checks),'slower_population_based_reveal':True,'distinct_close_reveal_thresholds':len({c['min_zoom'] for c in close}),'new_zealand_land_size':[154,193],'zoom_range':['1.0 viewport fit','120 native'],'unchanged_badges':badges,'other_full_sheets_byte_identical':9,'europe_pixels_changed_outside_mask':0,'complete_terrain_pixels':int(terrain.shape[0]*terrain.shape[1]),'served_files_hash_verified':served,'additional_generations':sum(r['completed_n'] for r in ledger['requests']),'actual_cost_usd':sum(r['actual_cost_usd'] for r in ledger['requests']),'url':url}
 (R/'evidence/acceptance.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

@@ -1,4 +1,5 @@
 {
+  "city_symbol_scale": 1,
   "close_city_count": 40806,
   "controls": {
     "+": [
@@ -33,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 54,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
