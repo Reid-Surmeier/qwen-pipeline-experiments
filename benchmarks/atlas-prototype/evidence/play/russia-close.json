@@ -47,10 +47,10 @@
     "visible": false
   },
   "position": [
-    4075.73681640625,
-    1805.02075195312
+    3645.54736328125,
+    587.586730957031
   ],
-  "region": "australia",
+  "region": "russia",
   "regions": [
     {
       "id": "europe",
@@ -96,60 +96,47 @@
   "shown_cities": [
     {
       "at": [
-        4281,
-        1925
+        3636,
+        543
       ],
-      "id": "australia2147714.0",
+      "id": "russia2014833.0",
       "labels": 1,
-      "name": "Sydney",
+      "name": "Tura",
       "screen": [
-        1048.42114257812,
-        641.966796875
+        657.380432128906,
+        157.563110351562
       ]
     },
     {
       "at": [
-        4199,
-        1977
+        3662,
+        619
       ],
-      "id": "australia2158177.0",
+      "id": "russia2013727.0",
       "labels": 1,
-      "name": "Melbourne",
+      "name": "Vanavara",
       "screen": [
-        917.221069335938,
-        725.166809082031
-      ]
-    },
-    {
-      "at": [
-        3834,
-        1900
-      ],
-      "id": "australia2063523.0",
-      "labels": 1,
-      "name": "Perth",
-      "screen": [
-        333.221099853516,
-        601.966796875
+        827.910095214844,
+        656.034362792969
       ]
     }
   ],
-  "south_edge": 2086.27074776217,
+  "south_edge": 656.196506056291,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 16,
-  "visible_cities": 3,
-  "visible_labels": 3,
+  "visible_annotations": 4,
+  "visible_cities": 2,
+  "visible_labels": 2,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 6.5588321685791,
   "zoom_max": 12,
   "zoom_min": 0.124045801526718,
-  "zoom_ratio": 6.4492308653318
+  "zoom_ratio": 26.4371388948881
 }

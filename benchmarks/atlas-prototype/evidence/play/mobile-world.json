@@ -32,8 +32,9 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 25,
+  "fps": 21,
   "mode": "atlas",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       0,
@@ -47,9 +48,9 @@
   },
   "position": [
     2240,
-    1143.58471679688
+    1572
   ],
-  "region": "europe",
+  "region": "africa",
   "regions": [
     {
       "id": "europe",
@@ -92,15 +93,57 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
+  "shown_cities": [
+    {
+      "at": [
+        3840,
+        957
+      ],
+      "id": "asia1816670.0",
+      "labels": 1,
+      "name": "Beijing",
+      "screen": [
+        325.714294433594,
+        371.756683349609
+      ]
+    },
+    {
+      "at": [
+        2333,
+        751
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        202.597763061523,
+        354.92724609375
+      ]
+    },
+    {
+      "at": [
+        1821,
+        1761
+      ],
+      "id": "south-america3451190.0",
+      "labels": 1,
+      "name": "Rio de Janeiro",
+      "screen": [
+        160.769195556641,
+        437.440612792969
+      ]
+    }
+  ],
+  "south_edge": 6737.4644943338,
   "touches": 0,
+  "vertical_pan_locked": true,
   "viewport": [
     390,
     844
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 6,
+  "visible_cities": 3,
+  "visible_labels": 3,
   "world_size": [
     4480,
     3144

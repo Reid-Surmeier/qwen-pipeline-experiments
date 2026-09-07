@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 61,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -47,10 +47,10 @@
     "visible": false
   },
   "position": [
-    4075.73681640625,
-    1805.02075195312
+    3645.54736328125,
+    587.586730957031
   ],
-  "region": "australia",
+  "region": "russia",
   "regions": [
     {
       "id": "europe",
@@ -96,60 +96,112 @@
   "shown_cities": [
     {
       "at": [
-        4281,
-        1925
+        3840,
+        957
       ],
-      "id": "australia2147714.0",
+      "id": "asia1816670.0",
       "labels": 1,
-      "name": "Sydney",
+      "name": "Beijing",
       "screen": [
-        1048.42114257812,
-        641.966796875
+        895.007385253906,
+        782.471923828125
       ]
     },
     {
       "at": [
-        4199,
-        1977
+        4135,
+        1017
       ],
-      "id": "australia2158177.0",
+      "id": "asia1850147.0",
       "labels": 1,
-      "name": "Melbourne",
+      "name": "Tokyo",
       "screen": [
-        917.221069335938,
-        725.166809082031
+        1160.50732421875,
+        836.471923828125
       ]
     },
     {
       "at": [
-        3834,
-        1900
+        3974,
+        991
       ],
-      "id": "australia2063523.0",
+      "id": "asia1835848.0",
       "labels": 1,
-      "name": "Perth",
+      "name": "Seoul",
       "screen": [
-        333.221099853516,
-        601.966796875
+        1015.60736083984,
+        813.071899414062
+      ]
+    },
+    {
+      "at": [
+        3018,
+        1018
+      ],
+      "id": "middle-east112931.0",
+      "labels": 1,
+      "name": "Tehran",
+      "screen": [
+        155.207397460938,
+        837.371948242188
+      ]
+    },
+    {
+      "at": [
+        3417,
+        716
+      ],
+      "id": "russia1496747.0",
+      "labels": 1,
+      "name": "Novosibirsk",
+      "screen": [
+        514.307373046875,
+        565.571960449219
+      ]
+    },
+    {
+      "at": [
+        3135,
+        683
+      ],
+      "id": "russia1486209.0",
+      "labels": 1,
+      "name": "Yekaterinburg",
+      "screen": [
+        260.507385253906,
+        535.871948242188
+      ]
+    },
+    {
+      "at": [
+        4036,
+        897
+      ],
+      "id": "asia2013348.0",
+      "labels": 1,
+      "name": "Vladivostok",
+      "screen": [
+        1071.40734863281,
+        728.471923828125
       ]
     }
   ],
-  "south_edge": 2086.27074776217,
+  "south_edge": 1087.58674420251,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 16,
-  "visible_cities": 3,
-  "visible_labels": 3,
+  "visible_annotations": 23,
+  "visible_cities": 7,
+  "visible_labels": 7,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 0.899999976158142,
   "zoom_max": 12,
   "zoom_min": 0.124045801526718,
-  "zoom_ratio": 6.4492308653318
+  "zoom_ratio": 3.62769221159128
 }

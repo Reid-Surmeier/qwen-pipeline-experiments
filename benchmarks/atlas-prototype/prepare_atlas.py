@@ -92,6 +92,9 @@ _,land_idx=nd.distance_transform_edt(~safe,return_indices=True)
 usa_reference=json.loads((R/'reference/usa-cities.json').read_text())
 usa_cities={c['marker']:c for c in usa_reference['cities']}
 usa_report=[]
+city_catalog=json.loads((R/'reference/city-catalog.json').read_text())
+registration_report=[]
+land_pixels=np.all(b==PINK,2)
 for x in range(488,1100):a[1390:2190,(3980+x)%4480]=p[:,x]
 Image.fromarray(a).save(A/'world.png')
 # Native pixel control points read from each existing sheet, with known city lon/lat.
@@ -211,19 +214,52 @@ for name,pts in controls.items():
    assert len(score) and np.isfinite(score.min()),c['name']
    at=candidates[score.argmin()];used.append(at);city['at']=at.tolist();city['name']=c['name']
    usa_report.append({'name':c['name'],'marker':c['marker'],'geographic_at':raw.tolist(),'at':at.tolist(),'adjustment_pixels':float(np.linalg.norm(at-raw))})
- # Spatial reveal order gives every area a sparse first layer, then fills the gaps.
- remaining=cities.copy();chosen=[]
- while remaining:
-  city=max(remaining,key=lambda g:min((np.linalg.norm(np.array(g['at'])-c['at']) for c in chosen),default=1))
-  city['rank']=len(chosen);chosen.append(city);remaining.remove(city)
+ # Use identified city labels, not proximity to a generated red dot, as the
+ # location identity. Several source names sit closer to another city's marker.
+ if name!='usa':
+  original_cities=cities
+  annotations=[g for g in annotations if g['kind']=='badge']
+  seen=set()
+  anchors={'London':[2333,751],'Edinburgh':[2300,666],'Dublin':[2244,727],'Reykjavík':[2055,513]}
+  for c in city_catalog['cities']:
+   if c['region']!=name or c['geonameid'] in seen:continue
+   seen.add(c['geonameid']);raw=world(c['lon'],c['lat']);raw[0]%=4480
+   preferred=np.array(anchors.get(c['name'],raw));x,y=np.rint(preferred).astype(int)
+   yy,xx=np.where(land_pixels[max(0,y-48):min(height,y+49),max(0,x-48):min(4480,x+49)])
+   xx+=max(0,x-48);yy+=max(0,y-48)
+   candidates=np.column_stack([xx,yy])
+   if not len(candidates):continue
+   at=candidates[np.argmin(((candidates-preferred)**2).sum(1))]
+   x,y,w,h=c['rect'];style=min(original_cities,key=lambda g:np.linalg.norm(np.array(g['rect'][:2])-[x,y]))
+   city={'rect':style['rect'],'kind':'city','at':at.tolist(),'city_id':c['geonameid'],'name':c['name'],'population':c['population']}
+   annotations.append(city)
+   annotations.append({'rect':c['rect'],'kind':'label','at':at.tolist(),'city_id':c['geonameid'],'offset':[0,-h/2-10]})
+   registration_report.append({'region':name,'name':c['name'],'geonameid':c['geonameid'],'country':c['country'],'geographic_at':raw.tolist(),'at':at.tolist(),'adjustment_pixels':float(np.linalg.norm(at-raw))})
+  cities=[g for g in annotations if g['kind']=='city']
+ else:
+  # Reviewed US source labels that touch another name or sit nearer the wrong dot.
+  fixes={(2372,430,179,47):[(29,[2425,430,126,23]),(35,[2372,451,166,26])],(2228,475,135,21):[(98,[2228,475,135,21])],(2470,319,109,20):[(17,[2470,319,109,20])],(2063,876,154,21):[(79,[2063,876,154,21])],(2004,415,224,26):[(28,[2004,415,95,26]),(30,[2100,415,128,26])],(1455,334,194,37):[(22,[1455,334,120,27]),(23,[1575,350,74,25])]}
+  revised=[]
+  for g in annotations:
+   if g['kind']=='label' and tuple(g['rect']) in fixes:
+    for city_id,rect in fixes[tuple(g['rect'])]:revised.append({**g,'city_id':city_id,'rect':rect,'offset':[0,-rect[3]/2-10]})
+   else:revised.append(g)
+  annotations=revised
+  for c in cities:c['population']=usa_cities[c['city_id']]['population']
+ # A few recognizable cities remain at world scale; towns wait for close zoom.
+ world_names={'London','Moscow','New York City','Los Angeles','Cairo','Cape Town','Tokyo','Beijing','New Delhi','Delhi','Sydney','Rio de Janeiro','Buenos Aires','Singapore'}
+ regional_names={'Paris','Berlin','Madrid','Rome','Stockholm','Nairobi','Lagos','Kinshasa','Johannesburg','Mumbai','Jakarta','Seoul','Bangkok','Melbourne','Perth','Vancouver','Toronto','Montreal','Montréal','Havana','San Juan','Santiago','Lima','Novosibirsk','Yekaterinburg','Vladivostok','Tehran','Baghdad','Riyadh'}
+ for c in cities:
+  population=c.get('population',0)
+  c['min_zoom']=0.0 if c['name'] in world_names else (0.8 if c['name'] in regional_names else (2.0 if population>=1000000 else (3.5 if population>=100000 else 5.5)))
+  c['rank']=-population
  by_id={c['city_id']:c for c in cities}
  for g in annotations:
   if g['kind']=='label':g['at']=by_id[g['city_id']]['at']
- # Close broken one-pixel strokes and embolden the original glyphs by one pixel.
- bold=nd.binary_dilation(glyph,structure=np.array([[0,1,0],[1,1,1],[0,1,0]]))&~badge_mask
  annotation_image=np.dstack([s,annotation_alpha])
  Image.fromarray(annotation_image).save(A/f'{name}-annotations.png')
- Image.fromarray(np.dstack([np.zeros_like(s),bold.astype('uint8')*255])).save(A/f'{name}-labels.png')
+ # Restore the original thin source glyphs, including their original ink values.
+ Image.fromarray(np.dstack([s,glyph.astype('uint8')*255])).save(A/f'{name}-labels.png')
  text_heights=[v['rect'][3] for v in annotations if v['kind']=='label']
  text_scale=16/max(18,float(np.median(text_heights)))
  # Keep a flat registered preview for provenance; the engine lays these groups out live.
@@ -243,3 +279,5 @@ for row in regions:row['focus']=world(*focuses[row['id']]).tolist()
 print('Atlas assets ready',flush=True)
 
 (R/'evidence/usa-registration.json').write_text(json.dumps(usa_report,indent=2)+'\n')
+
+(R/'evidence/city-registration.json').write_text(json.dumps(registration_report,indent=2)+'\n')

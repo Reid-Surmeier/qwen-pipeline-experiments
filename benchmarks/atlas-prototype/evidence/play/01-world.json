@@ -32,8 +32,9 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 44,
+  "fps": 60,
   "mode": "atlas",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       0,
@@ -47,7 +48,7 @@
   },
   "position": [
     2240,
-    1430.92309570312
+    1572
   ],
   "region": "africa",
   "regions": [
@@ -92,15 +93,148 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
+  "shown_cities": [
+    {
+      "at": [
+        3840,
+        957
+      ],
+      "id": "asia1816670.0",
+      "labels": 1,
+      "name": "Beijing",
+      "screen": [
+        1116.94653320312,
+        297.423645019531
+      ]
+    },
+    {
+      "at": [
+        2844,
+        703
+      ],
+      "id": "europe524901.0",
+      "labels": 1,
+      "name": "Moscow",
+      "screen": [
+        869.847351074219,
+        234.408386230469
+      ]
+    },
+    {
+      "at": [
+        2763,
+        1097
+      ],
+      "id": "africa360630.0",
+      "labels": 1,
+      "name": "Cairo",
+      "screen": [
+        849.751892089844,
+        332.156494140625
+      ]
+    },
+    {
+      "at": [
+        2333,
+        751
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        743.072509765625,
+        246.316787719727
+      ]
+    },
+    {
+      "at": [
+        1407,
+        932
+      ],
+      "id": "usa29.0",
+      "labels": 1,
+      "name": "New York City",
+      "screen": [
+        513.339721679688,
+        291.221374511719
+      ]
+    },
+    {
+      "at": [
+        1821,
+        1761
+      ],
+      "id": "south-america3451190.0",
+      "labels": 1,
+      "name": "Rio de Janeiro",
+      "screen": [
+        616.049621582031,
+        496.889312744141
+      ]
+    },
+    {
+      "at": [
+        4281,
+        1925
+      ],
+      "id": "australia2147714.0",
+      "labels": 1,
+      "name": "Sydney",
+      "screen": [
+        1226.35498046875,
+        537.576354980469
+      ]
+    },
+    {
+      "at": [
+        3659,
+        1476
+      ],
+      "id": "asia1880252.0",
+      "labels": 1,
+      "name": "Singapore",
+      "screen": [
+        1072.0419921875,
+        426.183197021484
+      ]
+    },
+    {
+      "at": [
+        2601,
+        1923
+      ],
+      "id": "africa3369157.0",
+      "labels": 1,
+      "name": "Cape Town",
+      "screen": [
+        809.561096191406,
+        537.080139160156
+      ]
+    },
+    {
+      "at": [
+        3345,
+        1116
+      ],
+      "id": "asia1261481.0",
+      "labels": 1,
+      "name": "New Delhi",
+      "screen": [
+        994.141235351562,
+        336.870239257812
+      ]
+    }
+  ],
+  "south_edge": 3385.84611559055,
   "touches": 0,
+  "vertical_pan_locked": true,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 20,
+  "visible_cities": 10,
+  "visible_labels": 10,
   "world_size": [
     4480,
     3144

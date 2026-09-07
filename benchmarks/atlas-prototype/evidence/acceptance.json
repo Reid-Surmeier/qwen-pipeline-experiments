@@ -3,7 +3,12 @@
   "regions": 10,
   "europe_city_count": 47,
   "us_cities_on_land": 89,
-  "overview_city_count": 0,
+  "overview_city_count": 10,
+  "original_thin_labels_restored": 10,
+  "named_regional_placements": 307,
+  "london_on_great_britain": true,
+  "orphan_dots": 0,
+  "southern_pan_stop": true,
   "antarctica_present": true,
   "new_zealand_land_size": [
     154,
@@ -13,7 +18,6 @@
     "0.5 world fit",
     "12 native"
   ],
-  "labels_solid_black": true,
   "unchanged_badges": 120,
   "other_full_sheets_byte_identical": 9,
   "europe_pixels_changed_outside_mask": 0,

@@ -1,0 +1,4607 @@
+[
+  {
+    "region": "europe",
+    "name": "Murmansk",
+    "geonameid": 524305,
+    "country": "RU",
+    "geographic_at": [
+      2786.4238151578948,
+      444.24948481977026
+    ],
+    "at": [
+      2786,
+      444
+    ],
+    "adjustment_pixels": 0.49179463534808054
+  },
+  {
+    "region": "europe",
+    "name": "Reykjav\u00edk",
+    "geonameid": 3413829,
+    "country": "IS",
+    "geographic_at": [
+      2090.5970229473687,
+      545.5429301172871
+    ],
+    "at": [
+      2056,
+      520
+    ],
+    "adjustment_pixels": 43.00459598458485
+  },
+  {
+    "region": "europe",
+    "name": "Helsinki",
+    "geonameid": 658225,
+    "country": "FI",
+    "geographic_at": [
+      2683.1306410526313,
+      622.467755602232
+    ],
+    "at": [
+      2683,
+      624
+    ],
+    "adjustment_pixels": 1.5378036217683622
+  },
+  {
+    "region": "europe",
+    "name": "Oslo",
+    "geonameid": 3143244,
+    "country": "NO",
+    "geographic_at": [
+      2503.5978966315793,
+      627.2807969748668
+    ],
+    "at": [
+      2504,
+      627
+    ],
+    "adjustment_pixels": 0.49044271835725417
+  },
+  {
+    "region": "europe",
+    "name": "Saint Petersburg",
+    "geonameid": 498817,
+    "country": "RU",
+    "geographic_at": [
+      2751.1850974736844,
+      626.7962193759904
+    ],
+    "at": [
+      2751,
+      627
+    ],
+    "adjustment_pixels": 0.2752955093823744
+  },
+  {
+    "region": "europe",
+    "name": "Stockholm",
+    "geonameid": 2673730,
+    "country": "SE",
+    "geographic_at": [
+      2596.2483096842107,
+      638.1440107786015
+    ],
+    "at": [
+      2583,
+      656
+    ],
+    "adjustment_pixels": 22.234074313167408
+  },
+  {
+    "region": "europe",
+    "name": "Tallinn",
+    "geonameid": 588409,
+    "country": "EE",
+    "geographic_at": [
+      2680.8288743157896,
+      636.147935771728
+    ],
+    "at": [
+      2681,
+      636
+    ],
+    "adjustment_pixels": 0.22620564173614735
+  },
+  {
+    "region": "europe",
+    "name": "Moscow",
+    "geonameid": 524901,
+    "country": "RU",
+    "geographic_at": [
+      2843.595869684211,
+      702.7483119263558
+    ],
+    "at": [
+      2844,
+      703
+    ],
+    "adjustment_pixels": 0.4760968373709426
+  },
+  {
+    "region": "europe",
+    "name": "Riga",
+    "geonameid": 456172,
+    "country": "LV",
+    "geographic_at": [
+      2672.634524,
+      681.5551552082159
+    ],
+    "at": [
+      2673,
+      682
+    ],
+    "adjustment_pixels": 0.575725277674543
+  },
+  {
+    "region": "europe",
+    "name": "Copenhagen",
+    "geonameid": 2618425,
+    "country": "DK",
+    "geographic_at": [
+      2526.6186006315793,
+      704.0872116889259
+    ],
+    "at": [
+      2523,
+      689
+    ],
+    "adjustment_pixels": 15.515096747275797
+  },
+  {
+    "region": "europe",
+    "name": "Edinburgh",
+    "geonameid": 2650225,
+    "country": "GB",
+    "geographic_at": [
+      2327.187695157895,
+      699.2224644369195
+    ],
+    "at": [
+      2300,
+      666
+    ],
+    "adjustment_pixels": 42.92904507744165
+  },
+  {
+    "region": "europe",
+    "name": "Vilnius",
+    "geonameid": 593116,
+    "country": "LT",
+    "geographic_at": [
+      2687.4875747368424,
+      721.3234433809579
+    ],
+    "at": [
+      2687,
+      721
+    ],
+    "adjustment_pixels": 0.5851023369397568
+  },
+  {
+    "region": "europe",
+    "name": "Minsk",
+    "geonameid": 625144,
+    "country": "BY",
+    "geographic_at": [
+      2716.4207269473686,
+      734.9415636111817
+    ],
+    "at": [
+      2716,
+      735
+    ],
+    "adjustment_pixels": 0.4247657893242418
+  },
+  {
+    "region": "europe",
+    "name": "Dublin",
+    "geonameid": 2964574,
+    "country": "IE",
+    "geographic_at": [
+      2288.566676,
+      744.643980203005
+    ],
+    "at": [
+      2244,
+      727
+    ],
+    "adjustment_pixels": 47.93222973212283
+  },
+  {
+    "region": "europe",
+    "name": "Warsaw",
+    "geonameid": 756135,
+    "country": "PL",
+    "geographic_at": [
+      2633.4858901052635,
+      763.3182936245522
+    ],
+    "at": [
+      2633,
+      763
+    ],
+    "adjustment_pixels": 0.5808614514869609
+  },
+  {
+    "region": "europe",
+    "name": "Amsterdam",
+    "geonameid": 2759794,
+    "country": "NL",
+    "geographic_at": [
+      2429.499025052632,
+      760.8913007578122
+    ],
+    "at": [
+      2429,
+      761
+    ],
+    "adjustment_pixels": 0.5107264712217686
+  },
+  {
+    "region": "europe",
+    "name": "Berlin",
+    "geonameid": 2950159,
+    "country": "DE",
+    "geographic_at": [
+      2537.3100743157897,
+      758.3573476055382
+    ],
+    "at": [
+      2537,
+      758
+    ],
+    "adjustment_pixels": 0.47312090684763924
+  },
+  {
+    "region": "europe",
+    "name": "London",
+    "geonameid": 2643743,
+    "country": "GB",
+    "geographic_at": [
+      2366.040637052632,
+      775.38729787944
+    ],
+    "at": [
+      2333,
+      751
+    ],
+    "adjustment_pixels": 41.06609300510947
+  },
+  {
+    "region": "europe",
+    "name": "Prague",
+    "geonameid": 3067696,
+    "country": "CZ",
+    "geographic_at": [
+      2550.0921423157893,
+      798.8503431861311
+    ],
+    "at": [
+      2550,
+      799
+    ],
+    "adjustment_pixels": 0.1757480250142076
+  },
+  {
+    "region": "europe",
+    "name": "Brussels",
+    "geonameid": 2800866,
+    "country": "BE",
+    "geographic_at": [
+      2422.6550901052633,
+      786.3068745598619
+    ],
+    "at": [
+      2423,
+      786
+    ],
+    "adjustment_pixels": 0.46166528023849607
+  },
+  {
+    "region": "europe",
+    "name": "Kyiv",
+    "geonameid": 703448,
+    "country": "UA",
+    "geographic_at": [
+      2753.837974736842,
+      792.8327364649728
+    ],
+    "at": [
+      2754,
+      793
+    ],
+    "adjustment_pixels": 0.23287180175189656
+  },
+  {
+    "region": "europe",
+    "name": "Luxembourg",
+    "geonameid": 2960316,
+    "country": "LU",
+    "geographic_at": [
+      2445.2261195789474,
+      806.6609202728725
+    ],
+    "at": [
+      2445,
+      807
+    ],
+    "adjustment_pixels": 0.4075599653206719
+  },
+  {
+    "region": "europe",
+    "name": "Bratislava",
+    "geonameid": 3060972,
+    "country": "SK",
+    "geographic_at": [
+      2584.0768576842106,
+      830.2695228966219
+    ],
+    "at": [
+      2584,
+      830
+    ],
+    "adjustment_pixels": 0.28026718578111465
+  },
+  {
+    "region": "europe",
+    "name": "Paris",
+    "geonameid": 2988507,
+    "country": "FR",
+    "geographic_at": [
+      2397.35008,
+      818.9272637597869
+    ],
+    "at": [
+      2397,
+      819
+    ],
+    "adjustment_pixels": 0.357556383022943
+  },
+  {
+    "region": "europe",
+    "name": "Z\u00fcrich",
+    "geonameid": 2657896,
+    "country": "CH",
+    "geographic_at": [
+      2475.8115789473686,
+      842.7345900362837
+    ],
+    "at": [
+      2476,
+      843
+    ],
+    "adjustment_pixels": 0.32549184615682875
+  },
+  {
+    "region": "europe",
+    "name": "Vienna",
+    "geonameid": 2761369,
+    "country": "AT",
+    "geographic_at": [
+      2574.7814753684215,
+      829.3027580642048
+    ],
+    "at": [
+      2575,
+      829
+    ],
+    "adjustment_pixels": 0.373383797248278
+  },
+  {
+    "region": "europe",
+    "name": "Chisinau",
+    "geonameid": 618426,
+    "country": "MD",
+    "geographic_at": [
+      2732.778681684211,
+      848.4038879925745
+    ],
+    "at": [
+      2733,
+      847
+    ],
+    "adjustment_pixels": 1.4212259822415882
+  },
+  {
+    "region": "europe",
+    "name": "Budapest",
+    "geonameid": 3054643,
+    "country": "HU",
+    "geographic_at": [
+      2608.5433778947368,
+      840.6417172555698
+    ],
+    "at": [
+      2609,
+      841
+    ],
+    "adjustment_pixels": 0.5804052652857978
+  },
+  {
+    "region": "europe",
+    "name": "Bern",
+    "geonameid": 2661552,
+    "country": "CH",
+    "geographic_at": [
+      2461.8612934736843,
+      849.3675429663532
+    ],
+    "at": [
+      2462,
+      849
+    ],
+    "adjustment_pixels": 0.3928451763204799
+  },
+  {
+    "region": "europe",
+    "name": "Ljubljana",
+    "geonameid": 3196359,
+    "country": "SI",
+    "geographic_at": [
+      2551.1596448421055,
+      863.4823142184654
+    ],
+    "at": [
+      2551,
+      863
+    ],
+    "adjustment_pixels": 0.5080486993830099
+  },
+  {
+    "region": "europe",
+    "name": "Zagreb",
+    "geonameid": 3186886,
+    "country": "HR",
+    "geographic_at": [
+      2569.795073263158,
+      867.1837605476727
+    ],
+    "at": [
+      2570,
+      867
+    ],
+    "adjustment_pixels": 0.2752506246199878
+  },
+  {
+    "region": "europe",
+    "name": "Belgrade",
+    "geonameid": 792680,
+    "country": "RS",
+    "geographic_at": [
+      2626.569329052632,
+      882.8873545271119
+    ],
+    "at": [
+      2627,
+      883
+    ],
+    "adjustment_pixels": 0.44515892383404715
+  },
+  {
+    "region": "europe",
+    "name": "Bucharest",
+    "geonameid": 683506,
+    "country": "RO",
+    "geographic_at": [
+      2697.944468631579,
+      888.6246533506179
+    ],
+    "at": [
+      2698,
+      889
+    ],
+    "adjustment_pixels": 0.37943226020075554
+  },
+  {
+    "region": "europe",
+    "name": "Sarajevo",
+    "geonameid": 3191281,
+    "country": "BA",
+    "geographic_at": [
+      2599.888851368421,
+      897.5886674687024
+    ],
+    "at": [
+      2600,
+      898
+    ],
+    "adjustment_pixels": 0.42608504973253597
+  },
+  {
+    "region": "europe",
+    "name": "Pristina",
+    "geonameid": 786714,
+    "country": "XK",
+    "geographic_at": [
+      2635.448313263158,
+      915.4961545969392
+    ],
+    "at": [
+      2635,
+      915
+    ],
+    "adjustment_pixels": 0.6686958695754752
+  },
+  {
+    "region": "europe",
+    "name": "Sofia",
+    "geonameid": 727011,
+    "country": "BG",
+    "geographic_at": [
+      2662.743455789474,
+      915.1207184955599
+    ],
+    "at": [
+      2663,
+      915
+    ],
+    "adjustment_pixels": 0.2835275773618507
+  },
+  {
+    "region": "europe",
+    "name": "Rome",
+    "geonameid": 3169070,
+    "country": "IT",
+    "geographic_at": [
+      2525.932828,
+      927.2763136825702
+    ],
+    "at": [
+      2526,
+      925
+    ],
+    "adjustment_pixels": 2.277304560009516
+  },
+  {
+    "region": "europe",
+    "name": "Istanbul",
+    "geonameid": 745044,
+    "country": "TR",
+    "geographic_at": [
+      2733.920961263158,
+      940.4233709409442
+    ],
+    "at": [
+      2734,
+      940
+    ],
+    "adjustment_pixels": 0.43068558782197913
+  },
+  {
+    "region": "europe",
+    "name": "Skopje",
+    "geonameid": 785842,
+    "country": "MK",
+    "geographic_at": [
+      2638.7953138947373,
+      925.7041893162066
+    ],
+    "at": [
+      2639,
+      926
+    ],
+    "adjustment_pixels": 0.35972261860208926
+  },
+  {
+    "region": "europe",
+    "name": "Tirana",
+    "geonameid": 3183875,
+    "country": "AL",
+    "geographic_at": [
+      2618.3897823157895,
+      935.7401180825126
+    ],
+    "at": [
+      2618,
+      936
+    ],
+    "adjustment_pixels": 0.4684750417462466
+  },
+  {
+    "region": "europe",
+    "name": "Barcelona",
+    "geonameid": 3128760,
+    "country": "ES",
+    "geographic_at": [
+      2394.9484840000005,
+      934.8223687092427
+    ],
+    "at": [
+      2375,
+      917
+    ],
+    "adjustment_pixels": 26.750305424545495
+  },
+  {
+    "region": "europe",
+    "name": "Madrid",
+    "geonameid": 3117735,
+    "country": "ES",
+    "geographic_at": [
+      2320.7844513684213,
+      949.3075635884961
+    ],
+    "at": [
+      2321,
+      949
+    ],
+    "adjustment_pixels": 0.37557499057321186
+  },
+  {
+    "region": "europe",
+    "name": "Ankara",
+    "geonameid": 323786,
+    "country": "TR",
+    "geographic_at": [
+      2783.3245530526315,
+      956.6582419528831
+    ],
+    "at": [
+      2783,
+      957
+    ],
+    "adjustment_pixels": 0.47131013859404053
+  },
+  {
+    "region": "europe",
+    "name": "Lisbon",
+    "geonameid": 2267057,
+    "country": "PT",
+    "geographic_at": [
+      2251.862530526316,
+      974.2136292435357
+    ],
+    "at": [
+      2252,
+      974
+    ],
+    "adjustment_pixels": 0.25403800874798815
+  },
+  {
+    "region": "europe",
+    "name": "Athens",
+    "geonameid": 264371,
+    "country": "GR",
+    "geographic_at": [
+      2667.851196631579,
+      985.0177998625386
+    ],
+    "at": [
+      2649,
+      969
+    ],
+    "adjustment_pixels": 24.737371058356246
+  },
+  {
+    "region": "europe",
+    "name": "Valletta",
+    "geonameid": 2562305,
+    "country": "MT",
+    "geographic_at": [
+      2551.281995789474,
+      1015.0471816102313
+    ],
+    "at": [
+      2531,
+      987
+    ],
+    "adjustment_pixels": 34.61219076397124
+  },
+  {
+    "region": "europe",
+    "name": "Nicosia",
+    "geonameid": 146268,
+    "country": "CY",
+    "geographic_at": [
+      2789.6470730526316,
+      1025.4063760628544
+    ],
+    "at": [
+      2796,
+      1028
+    ],
+    "adjustment_pixels": 6.86196516501896
+  },
+  {
+    "region": "africa",
+    "name": "Tunis",
+    "geonameid": 2464470,
+    "country": "TN",
+    "geographic_at": [
+      2496.255574526316,
+      1001.8621647428655
+    ],
+    "at": [
+      2477,
+      1010
+    ],
+    "adjustment_pixels": 20.90458114889601
+  },
+  {
+    "region": "africa",
+    "name": "Algiers",
+    "geonameid": 2507480,
+    "country": "DZ",
+    "geographic_at": [
+      2406.6960728421054,
+      1003.1099979981768
+    ],
+    "at": [
+      2407,
+      1003
+    ],
+    "adjustment_pixels": 0.3232201678558806
+  },
+  {
+    "region": "africa",
+    "name": "Tripoli",
+    "geonameid": 2210247,
+    "country": "LY",
+    "geographic_at": [
+      2534.4860069473684,
+      1057.6211880049848
+    ],
+    "at": [
+      2533,
+      1058
+    ],
+    "adjustment_pixels": 1.5335302981012882
+  },
+  {
+    "region": "africa",
+    "name": "Rabat",
+    "geonameid": 2538475,
+    "country": "MA",
+    "geographic_at": [
+      2281.1818410526316,
+      1041.8178731254209
+    ],
+    "at": [
+      2281,
+      1042
+    ],
+    "adjustment_pixels": 0.2573642688217194
+  },
+  {
+    "region": "africa",
+    "name": "Alexandria",
+    "geonameid": 361058,
+    "country": "EG",
+    "geographic_at": [
+      2746.145427789474,
+      1081.0562131808406
+    ],
+    "at": [
+      2746,
+      1081
+    ],
+    "adjustment_pixels": 0.1559139623367031
+  },
+  {
+    "region": "africa",
+    "name": "Cairo",
+    "geonameid": 360630,
+    "country": "EG",
+    "geographic_at": [
+      2763.0221404210524,
+      1096.7472340556164
+    ],
+    "at": [
+      2763,
+      1097
+    ],
+    "adjustment_pixels": 0.25373375984383506
+  },
+  {
+    "region": "africa",
+    "name": "Las Palmas de Gran Canaria",
+    "geonameid": 2515270,
+    "country": "ES",
+    "geographic_at": [
+      2172.582026736842,
+      1123.5001995966873
+    ],
+    "at": [
+      2174,
+      1128
+    ],
+    "adjustment_pixels": 4.717928766385096
+  },
+  {
+    "region": "africa",
+    "name": "Laayoune",
+    "geonameid": 2462881,
+    "country": "EH",
+    "geographic_at": [
+      2200.7690532631577,
+      1136.486164164362
+    ],
+    "at": [
+      2201,
+      1136
+    ],
+    "adjustment_pixels": 0.5382304246025819
+  },
+  {
+    "region": "africa",
+    "name": "Nouakchott",
+    "geonameid": 2377450,
+    "country": "MR",
+    "geographic_at": [
+      2165.461505263158,
+      1255.9895759139529
+    ],
+    "at": [
+      2165,
+      1256
+    ],
+    "adjustment_pixels": 0.4616229733152542
+  },
+  {
+    "region": "africa",
+    "name": "Khartoum",
+    "geonameid": 379252,
+    "country": "SD",
+    "geographic_at": [
+      2779.2521770526314,
+      1288.6483562638
+    ],
+    "at": [
+      2779,
+      1289
+    ],
+    "adjustment_pixels": 0.432719982300974
+  },
+  {
+    "region": "africa",
+    "name": "Asmara",
+    "geonameid": 343300,
+    "country": "ER",
+    "geographic_at": [
+      2860.221807157895,
+      1291.3905467574539
+    ],
+    "at": [
+      2860,
+      1291
+    ],
+    "adjustment_pixels": 0.44913826941287727
+  },
+  {
+    "region": "africa",
+    "name": "Dakar",
+    "geonameid": 2253354,
+    "country": "SN",
+    "geographic_at": [
+      2146.918314526316,
+      1299.6473885250202
+    ],
+    "at": [
+      2147,
+      1300
+    ],
+    "adjustment_pixels": 0.3619494010195265
+  },
+  {
+    "region": "africa",
+    "name": "Banjul",
+    "geonameid": 2413876,
+    "country": "GM",
+    "geographic_at": [
+      2157.875873052632,
+      1315.5064358646655
+    ],
+    "at": [
+      2158,
+      1316
+    ],
+    "adjustment_pixels": 0.508933251764325
+  },
+  {
+    "region": "africa",
+    "name": "Niamey",
+    "geonameid": 2440485,
+    "country": "NE",
+    "geographic_at": [
+      2394.326101052632,
+      1314.7291577613885
+    ],
+    "at": [
+      2394,
+      1315
+    ],
+    "adjustment_pixels": 0.4239073185778604
+  },
+  {
+    "region": "africa",
+    "name": "Bamako",
+    "geonameid": 2460596,
+    "country": "ML",
+    "geographic_at": [
+      2266.7240585263157,
+      1326.2571450694975
+    ],
+    "at": [
+      2267,
+      1326
+    ],
+    "adjustment_pixels": 0.37718335549956594
+  },
+  {
+    "region": "africa",
+    "name": "N'Djamena",
+    "geonameid": 2427123,
+    "country": "TD",
+    "geographic_at": [
+      2557.9828294736844,
+      1332.6493175142941
+    ],
+    "at": [
+      2558,
+      1333
+    ],
+    "adjustment_pixels": 0.35110259576768227
+  },
+  {
+    "region": "africa",
+    "name": "Djibouti",
+    "geonameid": 223817,
+    "country": "DJ",
+    "geographic_at": [
+      2913.529748,
+      1339.2278921895413
+    ],
+    "at": [
+      2914,
+      1342
+    ],
+    "adjustment_pixels": 2.811710983780188
+  },
+  {
+    "region": "africa",
+    "name": "Ouagadougou",
+    "geonameid": 2357048,
+    "country": "BF",
+    "geographic_at": [
+      2348.2239604210527,
+      1329.3559260791703
+    ],
+    "at": [
+      2348,
+      1329
+    ],
+    "adjustment_pixels": 0.42052543803157255
+  },
+  {
+    "region": "africa",
+    "name": "Bissau",
+    "geonameid": 2374775,
+    "country": "GW",
+    "geographic_at": [
+      2170.2800069473683,
+      1335.7400296099515
+    ],
+    "at": [
+      2170,
+      1336
+    ],
+    "adjustment_pixels": 0.3820844072668512
+  },
+  {
+    "region": "africa",
+    "name": "Conakry",
+    "geonameid": 2422465,
+    "country": "GN",
+    "geographic_at": [
+      2194.5778675789475,
+      1365.2180830192453
+    ],
+    "at": [
+      2195,
+      1365
+    ],
+    "adjustment_pixels": 0.47513785808630454
+  },
+  {
+    "region": "africa",
+    "name": "Yamoussoukro",
+    "geonameid": 2279755,
+    "country": "CI",
+    "geographic_at": [
+      2300.8669317894737,
+      1399.5022094366102
+    ],
+    "at": [
+      2301,
+      1400
+    ],
+    "adjustment_pixels": 0.5152694379182627
+  },
+  {
+    "region": "africa",
+    "name": "Abuja",
+    "geonameid": 2352778,
+    "country": "NG",
+    "geographic_at": [
+      2462.4640648421055,
+      1371.2865240850977
+    ],
+    "at": [
+      2462,
+      1371
+    ],
+    "adjustment_pixels": 0.5453918123875935
+  },
+  {
+    "region": "africa",
+    "name": "Freetown",
+    "geonameid": 2409306,
+    "country": "SL",
+    "geographic_at": [
+      2200.166408421053,
+      1378.4935681898949
+    ],
+    "at": [
+      2200,
+      1378
+    ],
+    "adjustment_pixels": 0.520865933492875
+  },
+  {
+    "region": "africa",
+    "name": "Lom\u00e9",
+    "geonameid": 2365267,
+    "country": "TG",
+    "geographic_at": [
+      2383.087274526316,
+      1408.2086393996628
+    ],
+    "at": [
+      2398,
+      1395
+    ],
+    "adjustment_pixels": 19.921283488866663
+  },
+  {
+    "region": "africa",
+    "name": "Bangui",
+    "geonameid": 2389853,
+    "country": "CF",
+    "geographic_at": [
+      2602.4006517894736,
+      1430.422066770173
+    ],
+    "at": [
+      2602,
+      1430
+    ],
+    "adjustment_pixels": 0.581946917590101
+  },
+  {
+    "region": "africa",
+    "name": "Monrovia",
+    "geonameid": 2274895,
+    "country": "LR",
+    "geographic_at": [
+      2231.0223810526318,
+      1406.0472411958579
+    ],
+    "at": [
+      2232,
+      1405
+    ],
+    "adjustment_pixels": 1.4326384500477232
+  },
+  {
+    "region": "africa",
+    "name": "Yaound\u00e9",
+    "geonameid": 2220957,
+    "country": "CM",
+    "geographic_at": [
+      2513.3477614736844,
+      1436.6307914977463
+    ],
+    "at": [
+      2513,
+      1437
+    ],
+    "adjustment_pixels": 0.5072011048051718
+  },
+  {
+    "region": "africa",
+    "name": "Juba",
+    "geonameid": 373303,
+    "country": "SS",
+    "geographic_at": [
+      2767.2329362105265,
+      1424.2624846182634
+    ],
+    "at": [
+      2767,
+      1424
+    ],
+    "adjustment_pixels": 0.3509379617530227
+  },
+  {
+    "region": "africa",
+    "name": "Accra",
+    "geonameid": 2306104,
+    "country": "GH",
+    "geographic_at": [
+      2365.1402757894734,
+      1415.410829545966
+    ],
+    "at": [
+      2357,
+      1391
+    ],
+    "adjustment_pixels": 25.73232770370554
+  },
+  {
+    "region": "africa",
+    "name": "Malabo",
+    "geonameid": 2309527,
+    "country": "GQ",
+    "geographic_at": [
+      2478.7426875789474,
+      1438.0226083475877
+    ],
+    "at": [
+      2479,
+      1438
+    ],
+    "adjustment_pixels": 0.2583037347941077
+  },
+  {
+    "region": "africa",
+    "name": "Kampala",
+    "geonameid": 232422,
+    "country": "UG",
+    "geographic_at": [
+      2779.8820250526314,
+      1481.1533661528674
+    ],
+    "at": [
+      2780,
+      1481
+    ],
+    "adjustment_pixels": 0.19349228680226202
+  },
+  {
+    "region": "africa",
+    "name": "Mogadishu",
+    "geonameid": 53654,
+    "country": "SO",
+    "geographic_at": [
+      2941.3493421052635,
+      1459.5818091436574
+    ],
+    "at": [
+      2931,
+      1433
+    ],
+    "adjustment_pixels": 28.525452833594258
+  },
+  {
+    "region": "africa",
+    "name": "S\u00e3o Tom\u00e9",
+    "geonameid": 2410763,
+    "country": "ST",
+    "geographic_at": [
+      2452.7825242105264,
+      1480.8866492111515
+    ],
+    "at": [
+      2458,
+      1486
+    ],
+    "adjustment_pixels": 7.305368567263446
+  },
+  {
+    "region": "africa",
+    "name": "Nairobi",
+    "geonameid": 184745,
+    "country": "KE",
+    "geographic_at": [
+      2833.459340421053,
+      1501.2030481556621
+    ],
+    "at": [
+      2833,
+      1501
+    ],
+    "adjustment_pixels": 0.5022172596905801
+  },
+  {
+    "region": "africa",
+    "name": "Libreville",
+    "geonameid": 2399697,
+    "country": "GA",
+    "geographic_at": [
+      2487.243990736842,
+      1480.199174487687
+    ],
+    "at": [
+      2487,
+      1480
+    ],
+    "adjustment_pixels": 0.3149634204318708
+  },
+  {
+    "region": "africa",
+    "name": "Kigali",
+    "geonameid": 202061,
+    "country": "RW",
+    "geographic_at": [
+      2747.9551336842105,
+      1509.5603292897829
+    ],
+    "at": [
+      2748,
+      1510
+    ],
+    "adjustment_pixels": 0.4419539791826105
+  },
+  {
+    "region": "africa",
+    "name": "Brazzaville",
+    "geonameid": 2260535,
+    "country": "CG",
+    "geographic_at": [
+      2561.004024842105,
+      1538.618938803468
+    ],
+    "at": [
+      2561,
+      1539
+    ],
+    "adjustment_pixels": 0.38108245151991205
+  },
+  {
+    "region": "africa",
+    "name": "Bujumbura",
+    "geonameid": 425378,
+    "country": "BI",
+    "geographic_at": [
+      2739.1308088421056,
+      1527.5208782485897
+    ],
+    "at": [
+      2739,
+      1528
+    ],
+    "adjustment_pixels": 0.4966574330939308
+  },
+  {
+    "region": "africa",
+    "name": "Mombasa",
+    "geonameid": 186301,
+    "country": "KE",
+    "geographic_at": [
+      2869.4803703157895,
+      1535.963987599432
+    ],
+    "at": [
+      2847,
+      1527
+    ],
+    "adjustment_pixels": 24.201655381766745
+  },
+  {
+    "region": "africa",
+    "name": "Kinshasa",
+    "geonameid": 2314302,
+    "country": "CD",
+    "geographic_at": [
+      2561.38853831579,
+      1539.3905143115871
+    ],
+    "at": [
+      2561,
+      1539
+    ],
+    "adjustment_pixels": 0.5508751677024757
+  },
+  {
+    "region": "africa",
+    "name": "Luanda",
+    "geonameid": 2240449,
+    "country": "AO",
+    "geographic_at": [
+      2535.080554105263,
+      1596.1564093028655
+    ],
+    "at": [
+      2535,
+      1596
+    ],
+    "adjustment_pixels": 0.17593417489971078
+  },
+  {
+    "region": "africa",
+    "name": "Moroni",
+    "geonameid": 921772,
+    "country": "KM",
+    "geographic_at": [
+      2914.9219170526317,
+      1632.4442240994847
+    ],
+    "at": [
+      2946,
+      1662
+    ],
+    "adjustment_pixels": 42.888123399899264
+  },
+  {
+    "region": "africa",
+    "name": "Lilongwe",
+    "geonameid": 927967,
+    "country": "MW",
+    "geographic_at": [
+      2795.129205263158,
+      1661.292977453551
+    ],
+    "at": [
+      2795,
+      1661
+    ],
+    "adjustment_pixels": 0.32020273002728006
+  },
+  {
+    "region": "africa",
+    "name": "Lusaka",
+    "geonameid": 909137,
+    "country": "ZM",
+    "geographic_at": [
+      2725.538213263158,
+      1679.7249484735469
+    ],
+    "at": [
+      2726,
+      1680
+    ],
+    "adjustment_pixels": 0.5374944953461057
+  },
+  {
+    "region": "africa",
+    "name": "Antananarivo",
+    "geonameid": 1070940,
+    "country": "MG",
+    "geographic_at": [
+      2969.088718526316,
+      1724.9776861462428
+    ],
+    "at": [
+      2959,
+      1715
+    ],
+    "adjustment_pixels": 14.189308028799577
+  },
+  {
+    "region": "africa",
+    "name": "Windhoek",
+    "geonameid": 3352136,
+    "country": "NA",
+    "geographic_at": [
+      2583.7793943157894,
+      1772.6622859754962
+    ],
+    "at": [
+      2584,
+      1773
+    ],
+    "adjustment_pixels": 0.40338273420238563
+  },
+  {
+    "region": "africa",
+    "name": "Gaborone",
+    "geonameid": 933773,
+    "country": "BW",
+    "geographic_at": [
+      2695.4434229473686,
+      1800.4166040271573
+    ],
+    "at": [
+      2695,
+      1800
+    ],
+    "adjustment_pixels": 0.608426516266956
+  },
+  {
+    "region": "africa",
+    "name": "Pretoria",
+    "geonameid": 964137,
+    "country": "ZA",
+    "geographic_at": [
+      2724.2818069473688,
+      1814.974631090466
+    ],
+    "at": [
+      2724,
+      1815
+    ],
+    "adjustment_pixels": 0.28294652702629747
+  },
+  {
+    "region": "africa",
+    "name": "Maputo",
+    "geonameid": 1040652,
+    "country": "MZ",
+    "geographic_at": [
+      2779.895057263158,
+      1817.9309739484502
+    ],
+    "at": [
+      2761,
+      1802
+    ],
+    "adjustment_pixels": 24.71475510548739
+  },
+  {
+    "region": "africa",
+    "name": "Mbabane",
+    "geonameid": 934985,
+    "country": "SZ",
+    "geographic_at": [
+      2761.550133263158,
+      1822.6423814613677
+    ],
+    "at": [
+      2753,
+      1823
+    ],
+    "adjustment_pixels": 8.557608885485081
+  },
+  {
+    "region": "africa",
+    "name": "Maseru",
+    "geonameid": 932505,
+    "country": "LS",
+    "geographic_at": [
+      2715.3680280000003,
+      1863.27296049502
+    ],
+    "at": [
+      2715,
+      1863
+    ],
+    "adjustment_pixels": 0.4582052385403391
+  },
+  {
+    "region": "africa",
+    "name": "Cape Town",
+    "geonameid": 3369157,
+    "country": "ZA",
+    "geographic_at": [
+      2600.7337941052633,
+      1927.1856103683199
+    ],
+    "at": [
+      2601,
+      1923
+    ],
+    "adjustment_pixels": 4.1940672066359985
+  },
+  {
+    "region": "africa",
+    "name": "Porto-Novo",
+    "geonameid": 2392087,
+    "country": "BJ",
+    "geographic_at": [
+      2400.573844,
+      1403.5818328603118
+    ],
+    "at": [
+      2406,
+      1399
+    ],
+    "adjustment_pixels": 7.101856186671832
+  },
+  {
+    "region": "africa",
+    "name": "Dar es Salaam",
+    "geonameid": 160263,
+    "country": "TZ",
+    "geographic_at": [
+      2864.4942212631577,
+      1570.7697939777481
+    ],
+    "at": [
+      2837,
+      1571
+    ],
+    "adjustment_pixels": 27.49518499083344
+  },
+  {
+    "region": "asia",
+    "name": "Astana",
+    "geonameid": 1526273,
+    "country": "KZ",
+    "geographic_at": [
+      3271.6112416842107,
+      780.8478453873606
+    ],
+    "at": [
+      3272,
+      781
+    ],
+    "adjustment_pixels": 0.4174734174085917
+  },
+  {
+    "region": "asia",
+    "name": "Khabarovsk",
+    "geonameid": 2022890,
+    "country": "RU",
+    "geographic_at": [
+      4076.965412631579,
+      825.2325981172002
+    ],
+    "at": [
+      4077,
+      825
+    ],
+    "adjustment_pixels": 0.23515562969944612
+  },
+  {
+    "region": "asia",
+    "name": "Khovd",
+    "geonameid": 1516048,
+    "country": "MN",
+    "geographic_at": [
+      3527.1432829473683,
+      832.5520593931253
+    ],
+    "at": [
+      3527,
+      833
+    ],
+    "adjustment_pixels": 0.4702986182138052
+  },
+  {
+    "region": "asia",
+    "name": "Manzhouli",
+    "geonameid": 2035836,
+    "country": "CN",
+    "geographic_at": [
+      3853.472238526316,
+      806.8208513637951
+    ],
+    "at": [
+      3853,
+      807
+    ],
+    "adjustment_pixels": 0.5050776767893953
+  },
+  {
+    "region": "asia",
+    "name": "Ulan Bator",
+    "geonameid": 2028462,
+    "country": "MN",
+    "geographic_at": [
+      3719.9858366315793,
+      834.1162182112945
+    ],
+    "at": [
+      3720,
+      834
+    ],
+    "adjustment_pixels": 0.11707806644077874
+  },
+  {
+    "region": "asia",
+    "name": "Yuzhno-Sakhalinsk",
+    "geonameid": 2119441,
+    "country": "RU",
+    "geographic_at": [
+      4173.612412421053,
+      849.2693558909989
+    ],
+    "at": [
+      4174,
+      864
+    ],
+    "adjustment_pixels": 14.73574226150156
+  },
+  {
+    "region": "asia",
+    "name": "Harbin",
+    "geonameid": 2037013,
+    "country": "CN",
+    "geographic_at": [
+      3970.087368421053,
+      868.1901321361548
+    ],
+    "at": [
+      3970,
+      868
+    ],
+    "adjustment_pixels": 0.20924500040875715
+  },
+  {
+    "region": "asia",
+    "name": "Almaty",
+    "geonameid": 1526384,
+    "country": "KZ",
+    "geographic_at": [
+      3340.7644526315794,
+      906.692487392167
+    ],
+    "at": [
+      3341,
+      907
+    ],
+    "adjustment_pixels": 0.38735844736644026
+  },
+  {
+    "region": "asia",
+    "name": "\u00dcr\u00fcmqi",
+    "geonameid": 1529102,
+    "country": "CN",
+    "geographic_at": [
+      3476.0079254736843,
+      898.3187368739927
+    ],
+    "at": [
+      3476,
+      898
+    ],
+    "adjustment_pixels": 0.31883539322946736
+  },
+  {
+    "region": "asia",
+    "name": "Sapporo",
+    "geonameid": 2128295,
+    "country": "JP",
+    "geographic_at": [
+      4156.081052631579,
+      909.5194340959712
+    ],
+    "at": [
+      4151,
+      910
+    ],
+    "adjustment_pixels": 5.103727993632825
+  },
+  {
+    "region": "asia",
+    "name": "Vladivostok",
+    "geonameid": 2013348,
+    "country": "RU",
+    "geographic_at": [
+      4036.178769052631,
+      908.9272914060289
+    ],
+    "at": [
+      4036,
+      897
+    ],
+    "adjustment_pixels": 11.928631047128118
+  },
+  {
+    "region": "asia",
+    "name": "Beijing",
+    "geonameid": 1816670,
+    "country": "CN",
+    "geographic_at": [
+      3840.362846947369,
+      956.8409244959165
+    ],
+    "at": [
+      3840,
+      957
+    ],
+    "adjustment_pixels": 0.39618546567770313
+  },
+  {
+    "region": "asia",
+    "name": "Pyongyang",
+    "geonameid": 1871859,
+    "country": "KP",
+    "geographic_at": [
+      3958.754659368421,
+      969.6939962654151
+    ],
+    "at": [
+      3959,
+      970
+    ],
+    "adjustment_pixels": 0.3922120741174249
+  },
+  {
+    "region": "asia",
+    "name": "Seoul",
+    "geonameid": 1835848,
+    "country": "KR",
+    "geographic_at": [
+      3974.242492631579,
+      991.0773213939779
+    ],
+    "at": [
+      3974,
+      991
+    ],
+    "adjustment_pixels": 0.2545216578932679
+  },
+  {
+    "region": "asia",
+    "name": "Tokyo",
+    "geonameid": 1850147,
+    "country": "JP",
+    "geographic_at": [
+      4135.0993202105265,
+      1018.0486068117924
+    ],
+    "at": [
+      4135,
+      1017
+    ],
+    "adjustment_pixels": 1.053299933521532
+  },
+  {
+    "region": "asia",
+    "name": "Islamabad",
+    "geonameid": 1176615,
+    "country": "PK",
+    "geographic_at": [
+      3291.8214166315793,
+      1045.925566527331
+    ],
+    "at": [
+      3292,
+      1046
+    ],
+    "adjustment_pixels": 0.19347444619394352
+  },
+  {
+    "region": "asia",
+    "name": "Xi\u2019an",
+    "geonameid": 1790630,
+    "country": "CN",
+    "geographic_at": [
+      3745.865149684211,
+      1038.3608546920393
+    ],
+    "at": [
+      3746,
+      1038
+    ],
+    "adjustment_pixels": 0.3852281355706449
+  },
+  {
+    "region": "asia",
+    "name": "Osaka",
+    "geonameid": 1853909,
+    "country": "JP",
+    "geographic_at": [
+      4082.0766962105263,
+      1032.2032132912377
+    ],
+    "at": [
+      4088,
+      1029
+    ],
+    "adjustment_pixels": 6.73395152726508
+  },
+  {
+    "region": "asia",
+    "name": "Nanjing",
+    "geonameid": 1799962,
+    "country": "CN",
+    "geographic_at": [
+      3870.483069052632,
+      1069.1343978349155
+    ],
+    "at": [
+      3870,
+      1069
+    ],
+    "adjustment_pixels": 0.5014164812215921
+  },
+  {
+    "region": "asia",
+    "name": "Nagasaki",
+    "geonameid": 1856177,
+    "country": "JP",
+    "geographic_at": [
+      4010.997501684211,
+      1059.5418186806016
+    ],
+    "at": [
+      4020,
+      1060
+    ],
+    "adjustment_pixels": 9.014150323088232
+  },
+  {
+    "region": "asia",
+    "name": "Shanghai",
+    "geonameid": 1796236,
+    "country": "CN",
+    "geographic_at": [
+      3904.3956644210525,
+      1080.7733366164139
+    ],
+    "at": [
+      3901,
+      1086
+    ],
+    "adjustment_pixels": 6.232860257195079
+  },
+  {
+    "region": "asia",
+    "name": "Lhasa",
+    "geonameid": 1280737,
+    "country": "CN",
+    "geographic_at": [
+      3520.286315789474,
+      1102.4033597168943
+    ],
+    "at": [
+      3520,
+      1102
+    ],
+    "adjustment_pixels": 0.4946471393985598
+  },
+  {
+    "region": "asia",
+    "name": "Kathmandu",
+    "geonameid": 1283240,
+    "country": "NP",
+    "geographic_at": [
+      3447.161696842105,
+      1128.920947912991
+    ],
+    "at": [
+      3447,
+      1129
+    ],
+    "adjustment_pixels": 0.179986391727711
+  },
+  {
+    "region": "asia",
+    "name": "Thimphu",
+    "geonameid": 1252416,
+    "country": "BT",
+    "geographic_at": [
+      3501.8376402105264,
+      1132.1072724918502
+    ],
+    "at": [
+      3502,
+      1132
+    ],
+    "adjustment_pixels": 0.19459724752847077
+  },
+  {
+    "region": "asia",
+    "name": "New Delhi",
+    "geonameid": 1261481,
+    "country": "IN",
+    "geographic_at": [
+      3344.6019957894737,
+      1116.44160610159
+    ],
+    "at": [
+      3345,
+      1116
+    ],
+    "adjustment_pixels": 0.5944941551926073
+  },
+  {
+    "region": "asia",
+    "name": "Taipei",
+    "geonameid": 1668341,
+    "country": "TW",
+    "geographic_at": [
+      3905.2602187368425,
+      1164.506475786921
+    ],
+    "at": [
+      3897,
+      1161
+    ],
+    "adjustment_pixels": 8.973660681391273
+  },
+  {
+    "region": "asia",
+    "name": "Guangzhou",
+    "geonameid": 1809858,
+    "country": "CN",
+    "geographic_at": [
+      3800.5421052631577,
+      1190.2174292825998
+    ],
+    "at": [
+      3801,
+      1187
+    ],
+    "adjustment_pixels": 3.2498490393491606
+  },
+  {
+    "region": "asia",
+    "name": "Dhaka",
+    "geonameid": 1185241,
+    "country": "BD",
+    "geographic_at": [
+      3511.523609263158,
+      1182.359687772135
+    ],
+    "at": [
+      3512,
+      1182
+    ],
+    "adjustment_pixels": 0.5969283269976704
+  },
+  {
+    "region": "asia",
+    "name": "Hong Kong",
+    "geonameid": 1819729,
+    "country": "HK",
+    "geographic_at": [
+      3812.241867157895,
+      1201.2757060639983
+    ],
+    "at": [
+      3801,
+      1187
+    ],
+    "adjustment_pixels": 18.170728131294922
+  },
+  {
+    "region": "asia",
+    "name": "Macau",
+    "geonameid": 1821274,
+    "country": "MO",
+    "geographic_at": [
+      3804.288676,
+      1202.2992681819003
+    ],
+    "at": [
+      3801,
+      1187
+    ],
+    "adjustment_pixels": 15.648737863951947
+  },
+  {
+    "region": "asia",
+    "name": "Kolkata",
+    "geonameid": 1275004,
+    "country": "IN",
+    "geographic_at": [
+      3485.656569263158,
+      1197.5302542239303
+    ],
+    "at": [
+      3486,
+      1191
+    ],
+    "adjustment_pixels": 6.539278622307505
+  },
+  {
+    "region": "asia",
+    "name": "Hanoi",
+    "geonameid": 1581130,
+    "country": "VN",
+    "geographic_at": [
+      3706.8009088421054,
+      1217.7372893759334
+    ],
+    "at": [
+      3705,
+      1217
+    ],
+    "adjustment_pixels": 1.9459877392824698
+  },
+  {
+    "region": "asia",
+    "name": "Mumbai",
+    "geonameid": 1275339,
+    "country": "IN",
+    "geographic_at": [
+      3289.788391789474,
+      1243.190325191884
+    ],
+    "at": [
+      3290,
+      1243
+    ],
+    "adjustment_pixels": 0.2846079995847787
+  },
+  {
+    "region": "asia",
+    "name": "Vientiane",
+    "geonameid": 1651944,
+    "country": "LA",
+    "geographic_at": [
+      3665.7915789473686,
+      1257.5314044388363
+    ],
+    "at": [
+      3666,
+      1258
+    ],
+    "adjustment_pixels": 0.5128558619362025
+  },
+  {
+    "region": "asia",
+    "name": "Yangon",
+    "geonameid": 1298824,
+    "country": "MM",
+    "geographic_at": [
+      3584.2594128421056,
+      1272.527629480714
+    ],
+    "at": [
+      3588,
+      1273
+    ],
+    "adjustment_pixels": 3.770295239539627
+  },
+  {
+    "region": "asia",
+    "name": "Manila",
+    "geonameid": 1701668,
+    "country": "PH",
+    "geographic_at": [
+      3898.374783157895,
+      1300.793023063949
+    ],
+    "at": [
+      3897,
+      1301
+    ],
+    "adjustment_pixels": 1.3902762974633482
+  },
+  {
+    "region": "asia",
+    "name": "Chennai",
+    "geonameid": 1264527,
+    "country": "IN",
+    "geographic_at": [
+      3383.3654835789475,
+      1320.1595843236148
+    ],
+    "at": [
+      3359,
+      1311
+    ],
+    "adjustment_pixels": 26.030266518369956
+  },
+  {
+    "region": "asia",
+    "name": "Ho Chi Minh City",
+    "geonameid": 1566083,
+    "country": "VN",
+    "geographic_at": [
+      3716.7772557894737,
+      1348.9472515167995
+    ],
+    "at": [
+      3713,
+      1337
+    ],
+    "adjustment_pixels": 12.530142860509617
+  },
+  {
+    "region": "asia",
+    "name": "Colombo",
+    "geonameid": 1248991,
+    "country": "LK",
+    "geographic_at": [
+      3377.9275090526316,
+      1398.0550589659554
+    ],
+    "at": [
+      3375,
+      1391
+    ],
+    "adjustment_pixels": 7.638335307273927
+  },
+  {
+    "region": "asia",
+    "name": "Davao",
+    "geonameid": 1715348,
+    "country": "PH",
+    "geographic_at": [
+      3956.9638058947367,
+      1396.32241216325
+    ],
+    "at": [
+      3960,
+      1387
+    ],
+    "adjustment_pixels": 9.804378776156437
+  },
+  {
+    "region": "asia",
+    "name": "Manado",
+    "geonameid": 1636544,
+    "country": "ID",
+    "geographic_at": [
+      3947.2989667368424,
+      1466.5391749507394
+    ],
+    "at": [
+      3935,
+      1463
+    ],
+    "adjustment_pixels": 12.798060092291239
+  },
+  {
+    "region": "asia",
+    "name": "Ternate",
+    "geonameid": 1624041,
+    "country": "ID",
+    "geographic_at": [
+      3979.3774366315793,
+      1475.2076327723003
+    ],
+    "at": [
+      3982,
+      1467
+    ],
+    "adjustment_pixels": 8.616442093249368
+  },
+  {
+    "region": "asia",
+    "name": "Singapore",
+    "geonameid": 1880252,
+    "country": "SG",
+    "geographic_at": [
+      3681.6082541052633,
+      1468.952463195791
+    ],
+    "at": [
+      3659,
+      1476
+    ],
+    "adjustment_pixels": 23.681235793235846
+  },
+  {
+    "region": "asia",
+    "name": "Samarinda",
+    "geonameid": 1629001,
+    "country": "ID",
+    "geographic_at": [
+      3849.8346069473682,
+      1491.2799174436593
+    ],
+    "at": [
+      3835,
+      1485
+    ],
+    "adjustment_pixels": 16.10909452396634
+  },
+  {
+    "region": "asia",
+    "name": "Manokwari",
+    "geonameid": 1636308,
+    "country": "ID",
+    "geographic_at": [
+      4063.894232,
+      1495.9330896253011
+    ],
+    "at": [
+      4061,
+      1495
+    ],
+    "adjustment_pixels": 3.0409266874867606
+  },
+  {
+    "region": "asia",
+    "name": "Jayapura",
+    "geonameid": 2082600,
+    "country": "ID",
+    "geographic_at": [
+      4148.08623431579,
+      1516.8805266065933
+    ],
+    "at": [
+      4148,
+      1517
+    ],
+    "adjustment_pixels": 0.14734398172918978
+  },
+  {
+    "region": "asia",
+    "name": "Ambon",
+    "geonameid": 1651531,
+    "country": "ID",
+    "geographic_at": [
+      3989.488028,
+      1531.4599737539922
+    ],
+    "at": [
+      4012,
+      1515
+    ],
+    "adjustment_pixels": 27.887624841690766
+  },
+  {
+    "region": "asia",
+    "name": "Jakarta",
+    "geonameid": 1642911,
+    "country": "ID",
+    "geographic_at": [
+      3719.5036448421056,
+      1563.1067386513841
+    ],
+    "at": [
+      3722,
+      1562
+    ],
+    "adjustment_pixels": 2.7306884693816036
+  },
+  {
+    "region": "asia",
+    "name": "Dili",
+    "geonameid": 1645457,
+    "country": "TL",
+    "geographic_at": [
+      3956.4682023157893,
+      1592.6435727020475
+    ],
+    "at": [
+      3955,
+      1585
+    ],
+    "adjustment_pixels": 7.7833040343786895
+  },
+  {
+    "region": "asia",
+    "name": "Denpasar",
+    "geonameid": 1645528,
+    "country": "ID",
+    "geographic_at": [
+      3825.425656210526,
+      1593.7973311266342
+    ],
+    "at": [
+      3842,
+      1583
+    ],
+    "adjustment_pixels": 19.781082667787814
+  },
+  {
+    "region": "asia",
+    "name": "Port Moresby",
+    "geonameid": 2088122,
+    "country": "PG",
+    "geographic_at": [
+      4229.477576631579,
+      1604.2491107097997
+    ],
+    "at": [
+      4242,
+      1595
+    ],
+    "adjustment_pixels": 15.567823738085925
+  },
+  {
+    "region": "asia",
+    "name": "Phnom Penh",
+    "geonameid": 1821306,
+    "country": "KH",
+    "geographic_at": [
+      3695.095200210526,
+      1339.5651795335475
+    ],
+    "at": [
+      3695,
+      1340
+    ],
+    "adjustment_pixels": 0.4451201165192916
+  },
+  {
+    "region": "australia",
+    "name": "Darwin",
+    "geonameid": 2073124,
+    "country": "AU",
+    "geographic_at": [
+      4023.125302105263,
+      1642.093840990162
+    ],
+    "at": [
+      4023,
+      1642
+    ],
+    "adjustment_pixels": 0.15654631588750018
+  },
+  {
+    "region": "australia",
+    "name": "Cairns",
+    "geonameid": 2172797,
+    "country": "AU",
+    "geographic_at": [
+      4211.956718526316,
+      1699.2331869505322
+    ],
+    "at": [
+      4212,
+      1699
+    ],
+    "adjustment_pixels": 0.23716964363671225
+  },
+  {
+    "region": "australia",
+    "name": "Townsville",
+    "geonameid": 2146142,
+    "country": "AU",
+    "geographic_at": [
+      4225.109888210527,
+      1729.5602307101194
+    ],
+    "at": [
+      4225,
+      1730
+    ],
+    "adjustment_pixels": 0.45329068723603344
+  },
+  {
+    "region": "australia",
+    "name": "Brisbane",
+    "geonameid": 2174003,
+    "country": "AU",
+    "geographic_at": [
+      4303.839622947369,
+      1838.1527178817275
+    ],
+    "at": [
+      4304,
+      1838
+    ],
+    "adjustment_pixels": 0.22145778471276842
+  },
+  {
+    "region": "australia",
+    "name": "Broken Hill",
+    "geonameid": 2173911,
+    "country": "AU",
+    "geographic_at": [
+      4157.361498947369,
+      1899.759739941868
+    ],
+    "at": [
+      4157,
+      1900
+    ],
+    "adjustment_pixels": 0.434058042757507
+  },
+  {
+    "region": "australia",
+    "name": "Perth",
+    "geonameid": 2063523,
+    "country": "AU",
+    "geographic_at": [
+      3833.583187368421,
+      1899.5796731127261
+    ],
+    "at": [
+      3834,
+      1900
+    ],
+    "adjustment_pixels": 0.5919522463924974
+  },
+  {
+    "region": "australia",
+    "name": "Sydney",
+    "geonameid": 2147714,
+    "country": "AU",
+    "geographic_at": [
+      4280.802090947368,
+      1926.3690250737684
+    ],
+    "at": [
+      4281,
+      1925
+    ],
+    "adjustment_pixels": 1.3832561750161312
+  },
+  {
+    "region": "australia",
+    "name": "Canberra",
+    "geonameid": 2172517,
+    "country": "AU",
+    "geographic_at": [
+      4254.494106736842,
+      1946.4015491775554
+    ],
+    "at": [
+      4254,
+      1946
+    ],
+    "adjustment_pixels": 0.6366971096116413
+  },
+  {
+    "region": "australia",
+    "name": "Adelaide",
+    "geonameid": 2078025,
+    "country": "AU",
+    "geographic_at": [
+      4121.26898168421,
+      1941.3611328789361
+    ],
+    "at": [
+      4121,
+      1937
+    ],
+    "adjustment_pixels": 4.369419999745776
+  },
+  {
+    "region": "australia",
+    "name": "Melbourne",
+    "geonameid": 2158177,
+    "country": "AU",
+    "geographic_at": [
+      4201.799059368422,
+      1982.752369209315
+    ],
+    "at": [
+      4199,
+      1977
+    ],
+    "adjustment_pixels": 6.39722477862274
+  },
+  {
+    "region": "australia",
+    "name": "Hobart",
+    "geonameid": 2163355,
+    "country": "AU",
+    "geographic_at": [
+      4231.736324421053,
+      2057.8710264600822
+    ],
+    "at": [
+      4232,
+      2057
+    ],
+    "adjustment_pixels": 0.9100614842396895
+  },
+  {
+    "region": "canada",
+    "name": "Naujaat",
+    "geonameid": 6119528,
+    "country": "CA",
+    "geographic_at": [
+      1276.4216903157896,
+      496.5117424743033
+    ],
+    "at": [
+      1276,
+      500
+    ],
+    "adjustment_pixels": 3.5136538372484285
+  },
+  {
+    "region": "canada",
+    "name": "Dawson City",
+    "geonameid": 6943713,
+    "country": "CA",
+    "geographic_at": [
+      603.433657263158,
+      547.0526745408237
+    ],
+    "at": [
+      603,
+      547
+    ],
+    "adjustment_pixels": 0.4368446281467587
+  },
+  {
+    "region": "canada",
+    "name": "Iqaluit",
+    "geonameid": 5983720,
+    "country": "CA",
+    "geographic_at": [
+      1500.7078048421056,
+      553.3061679302917
+    ],
+    "at": [
+      1501,
+      556
+    ],
+    "adjustment_pixels": 2.7096326743833106
+  },
+  {
+    "region": "canada",
+    "name": "Yellowknife",
+    "geonameid": 6185377,
+    "country": "CA",
+    "geographic_at": [
+      920.5187267368423,
+      578.7720538236473
+    ],
+    "at": [
+      921,
+      579
+    ],
+    "adjustment_pixels": 0.5325255046890325
+  },
+  {
+    "region": "canada",
+    "name": "Whitehorse",
+    "geonameid": 6180550,
+    "country": "CA",
+    "geographic_at": [
+      658.8462368421053,
+      612.1584412260783
+    ],
+    "at": [
+      659,
+      612
+    ],
+    "adjustment_pixels": 0.22078661836017635
+  },
+  {
+    "region": "canada",
+    "name": "Churchill",
+    "geonameid": 5922111,
+    "country": "CA",
+    "geographic_at": [
+      1176.174510736842,
+      648.5053876099212
+    ],
+    "at": [
+      1176,
+      649
+    ],
+    "adjustment_pixels": 0.5244953895818502
+  },
+  {
+    "region": "canada",
+    "name": "Edmonton",
+    "geonameid": 5946768,
+    "country": "CA",
+    "geographic_at": [
+      931.9537955789474,
+      740.9386163647087
+    ],
+    "at": [
+      932,
+      741
+    ],
+    "adjustment_pixels": 0.07682967659952782
+  },
+  {
+    "region": "canada",
+    "name": "Calgary",
+    "geonameid": 5913490,
+    "country": "CA",
+    "geographic_at": [
+      924.1524360000002,
+      783.0030820524967
+    ],
+    "at": [
+      924,
+      783
+    ],
+    "adjustment_pixels": 0.1524671543108586
+  },
+  {
+    "region": "canada",
+    "name": "Regina",
+    "geonameid": 6119109,
+    "country": "CA",
+    "geographic_at": [
+      1043.9410989473686,
+      792.9080724609668
+    ],
+    "at": [
+      1044,
+      793
+    ],
+    "adjustment_pixels": 0.10917878197615703
+  },
+  {
+    "region": "canada",
+    "name": "Vancouver",
+    "geonameid": 6173331,
+    "country": "CA",
+    "geographic_at": [
+      809.8479296842106,
+      812.5147326422392
+    ],
+    "at": [
+      810,
+      820
+    ],
+    "adjustment_pixels": 7.486811924851825
+  },
+  {
+    "region": "canada",
+    "name": "Winnipeg",
+    "geonameid": 6183235,
+    "country": "CA",
+    "geographic_at": [
+      1138.4658728421055,
+      802.1816438016766
+    ],
+    "at": [
+      1138,
+      802
+    ],
+    "adjustment_pixels": 0.5000319746765672
+  },
+  {
+    "region": "canada",
+    "name": "Thunder Bay",
+    "geonameid": 6166142,
+    "country": "CA",
+    "geographic_at": [
+      1238.3819330526317,
+      826.5183805846714
+    ],
+    "at": [
+      1238,
+      827
+    ],
+    "adjustment_pixels": 0.614678873814635
+  },
+  {
+    "region": "canada",
+    "name": "Qu\u00e9bec",
+    "geonameid": 6325494,
+    "country": "CA",
+    "geographic_at": [
+      1466.580241263158,
+      851.5132173523955
+    ],
+    "at": [
+      1467,
+      852
+    ],
+    "adjustment_pixels": 0.642771143692667
+  },
+  {
+    "region": "canada",
+    "name": "Halifax",
+    "geonameid": 6324729,
+    "country": "CA",
+    "geographic_at": [
+      1563.216739368421,
+      885.3796028895108
+    ],
+    "at": [
+      1559,
+      869
+    ],
+    "adjustment_pixels": 16.913671444108832
+  },
+  {
+    "region": "caribbean",
+    "name": "Havana",
+    "geonameid": 3553478,
+    "country": "CU",
+    "geographic_at": [
+      1325.2693254736844,
+      1190.0013389625174
+    ],
+    "at": [
+      1325,
+      1189
+    ],
+    "adjustment_pixels": 1.0369261924701623
+  },
+  {
+    "region": "caribbean",
+    "name": "Canc\u00fan",
+    "geonameid": 3531673,
+    "country": "MX",
+    "geographic_at": [
+      1268.7940513684212,
+      1215.7753621593945
+    ],
+    "at": [
+      1255,
+      1211
+    ],
+    "adjustment_pixels": 14.59725785577614
+  },
+  {
+    "region": "caribbean",
+    "name": "Cockburn Town",
+    "geonameid": 3576994,
+    "country": "TC",
+    "geographic_at": [
+      1467.4995814736844,
+      1212.0136958662447
+    ],
+    "at": [
+      1467,
+      1222
+    ],
+    "adjustment_pixels": 9.998792522135217
+  },
+  {
+    "region": "caribbean",
+    "name": "Road Town",
+    "geonameid": 3577430,
+    "country": "VG",
+    "geographic_at": [
+      1550.0085307368424,
+      1251.5713562014166
+    ],
+    "at": [
+      1521,
+      1239
+    ],
+    "adjustment_pixels": 31.615405299524916
+  },
+  {
+    "region": "caribbean",
+    "name": "Port-au-Prince",
+    "geonameid": 3718426,
+    "country": "HT",
+    "geographic_at": [
+      1452.3552671578948,
+      1250.0603953484388
+    ],
+    "at": [
+      1454,
+      1239
+    ],
+    "adjustment_pixels": 11.18201642753512
+  },
+  {
+    "region": "caribbean",
+    "name": "San Juan",
+    "geonameid": 4568127,
+    "country": "PR",
+    "geographic_at": [
+      1531.2202585263158,
+      1251.0606887766546
+    ],
+    "at": [
+      1521,
+      1239
+    ],
+    "adjustment_pixels": 15.808665285597417
+  },
+  {
+    "region": "caribbean",
+    "name": "George Town",
+    "geonameid": 3580661,
+    "country": "KY",
+    "geographic_at": [
+      1338.031781894737,
+      1240.4119927329866
+    ],
+    "at": [
+      1374,
+      1239
+    ],
+    "adjustment_pixels": 35.99592250721992
+  },
+  {
+    "region": "caribbean",
+    "name": "Kingston",
+    "geonameid": 3489854,
+    "country": "JM",
+    "geographic_at": [
+      1395.9907035789474,
+      1257.1386980325276
+    ],
+    "at": [
+      1375,
+      1239
+    ],
+    "adjustment_pixels": 27.74206198274485
+  },
+  {
+    "region": "caribbean",
+    "name": "Belmopan",
+    "geonameid": 3582672,
+    "country": "BZ",
+    "geographic_at": [
+      1244.5332629473685,
+      1266.7438352719512
+    ],
+    "at": [
+      1248,
+      1270
+    ],
+    "adjustment_pixels": 4.756140717880146
+  },
+  {
+    "region": "caribbean",
+    "name": "Roseau",
+    "geonameid": 3575635,
+    "country": "DM",
+    "geographic_at": [
+      1590.9108193684212,
+      1291.856254183367
+    ],
+    "at": [
+      1581,
+      1340
+    ],
+    "adjustment_pixels": 49.153276613162326
+  },
+  {
+    "region": "caribbean",
+    "name": "Fort-de-France",
+    "geonameid": 3570675,
+    "country": "MQ",
+    "geographic_at": [
+      1594.8824804210528,
+      1300.8000623590983
+    ],
+    "at": [
+      1581,
+      1340
+    ],
+    "adjustment_pixels": 41.58555486814497
+  },
+  {
+    "region": "caribbean",
+    "name": "Castries",
+    "geonameid": 3576812,
+    "country": "LC",
+    "geographic_at": [
+      1595.7433654736844,
+      1308.5743094607112
+    ],
+    "at": [
+      1581,
+      1340
+    ],
+    "adjustment_pixels": 34.712257940989296
+  },
+  {
+    "region": "caribbean",
+    "name": "San Salvador",
+    "geonameid": 3583361,
+    "country": "SV",
+    "geographic_at": [
+      1239.1790488421054,
+      1312.4868202949417
+    ],
+    "at": [
+      1244,
+      1303
+    ],
+    "adjustment_pixels": 10.641490937614092
+  },
+  {
+    "region": "caribbean",
+    "name": "Kingstown",
+    "geonameid": 3577887,
+    "country": "VC",
+    "geographic_at": [
+      1592.9435911578948,
+      1319.3000610596791
+    ],
+    "at": [
+      1581,
+      1340
+    ],
+    "adjustment_pixels": 23.89846944638832
+  },
+  {
+    "region": "caribbean",
+    "name": "Bridgetown",
+    "geonameid": 3374036,
+    "country": "BB",
+    "geographic_at": [
+      1613.2790271578947,
+      1319.9112901661317
+    ],
+    "at": [
+      1595,
+      1348
+    ],
+    "adjustment_pixels": 33.512661099505365
+  },
+  {
+    "region": "caribbean",
+    "name": "Managua",
+    "geonameid": 3617763,
+    "country": "NI",
+    "geographic_at": [
+      1276.3370442105263,
+      1332.3174511343336
+    ],
+    "at": [
+      1276,
+      1329
+    ],
+    "adjustment_pixels": 3.334528576656788
+  },
+  {
+    "region": "caribbean",
+    "name": "Saint George's",
+    "geonameid": 3579925,
+    "country": "GD",
+    "geographic_at": [
+      1586.3029840000002,
+      1333.3338380290545
+    ],
+    "at": [
+      1581,
+      1340
+    ],
+    "adjustment_pixels": 8.51817789947695
+  },
+  {
+    "region": "caribbean",
+    "name": "Willemstad",
+    "geonameid": 3513090,
+    "country": "CW",
+    "geographic_at": [
+      1496.0372124210528,
+      1332.4491829447554
+    ],
+    "at": [
+      1491,
+      1334
+    ],
+    "adjustment_pixels": 5.270535315662545
+  },
+  {
+    "region": "caribbean",
+    "name": "Port of Spain",
+    "geonameid": 3573890,
+    "country": "TT",
+    "geographic_at": [
+      1589.2557286315791,
+      1350.929009560757
+    ],
+    "at": [
+      1589,
+      1351
+    ],
+    "adjustment_pixels": 0.26539927557029214
+  },
+  {
+    "region": "caribbean",
+    "name": "Barranquilla",
+    "geonameid": 3689147,
+    "country": "CO",
+    "geographic_at": [
+      1421.4510880000003,
+      1347.1020554083143
+    ],
+    "at": [
+      1421,
+      1347
+    ],
+    "adjustment_pixels": 0.46248858376226754
+  },
+  {
+    "region": "caribbean",
+    "name": "San Jos\u00e9",
+    "geonameid": 3621849,
+    "country": "CR",
+    "geographic_at": [
+      1303.736444421053,
+      1360.2094569333651
+    ],
+    "at": [
+      1304,
+      1359
+    ],
+    "adjustment_pixels": 1.2378398995262117
+  },
+  {
+    "region": "caribbean",
+    "name": "Charlotte Amalie",
+    "geonameid": 4795467,
+    "country": "VI",
+    "geographic_at": [
+      1546.0873536842107,
+      1252.6731870653957
+    ],
+    "at": [
+      1521,
+      1239
+    ],
+    "adjustment_pixels": 28.57151307512407
+  },
+  {
+    "region": "caribbean",
+    "name": "Santo Domingo",
+    "geonameid": 3492908,
+    "country": "DO",
+    "geographic_at": [
+      1483.3098037894738,
+      1250.9890079565891
+    ],
+    "at": [
+      1484,
+      1235
+    ],
+    "adjustment_pixels": 16.003897845365543
+  },
+  {
+    "region": "russia",
+    "name": "Uelen",
+    "geonameid": 4031533,
+    "country": "RU",
+    "geographic_at": [
+      219.0908675789476,
+      504.2199507496085
+    ],
+    "at": [
+      219,
+      499
+    ],
+    "adjustment_pixels": 5.220741589586852
+  },
+  {
+    "region": "russia",
+    "name": "Provideniya",
+    "geonameid": 4031574,
+    "country": "RU",
+    "geographic_at": [
+      175.86163347368424,
+      539.7659810633637
+    ],
+    "at": [
+      184,
+      521
+    ],
+    "adjustment_pixels": 20.454707404096062
+  },
+  {
+    "region": "russia",
+    "name": "Anadyr",
+    "geonameid": 2127202,
+    "country": "RU",
+    "geographic_at": [
+      133.60400631578977,
+      533.4748087763686
+    ],
+    "at": [
+      109,
+      509
+    ],
+    "adjustment_pixels": 34.704083209720906
+  },
+  {
+    "region": "russia",
+    "name": "Pevek",
+    "geonameid": 2122090,
+    "country": "RU",
+    "geographic_at": [
+      42.46431747368479,
+      427.99776103957896
+    ],
+    "at": [
+      42,
+      428
+    ],
+    "adjustment_pixels": 0.4643228718389712
+  },
+  {
+    "region": "russia",
+    "name": "Cherskiy",
+    "geonameid": 2126199,
+    "country": "RU",
+    "geographic_at": [
+      4408.893157684211,
+      448.948331345809
+    ],
+    "at": [
+      4409,
+      449
+    ],
+    "adjustment_pixels": 0.11867994889264415
+  },
+  {
+    "region": "russia",
+    "name": "Murmansk",
+    "geonameid": 524305,
+    "country": "RU",
+    "geographic_at": [
+      2786.4238151578948,
+      444.24948481977026
+    ],
+    "at": [
+      2786,
+      444
+    ],
+    "adjustment_pixels": 0.49179463534808054
+  },
+  {
+    "region": "russia",
+    "name": "Evensk",
+    "geonameid": 2125693,
+    "country": "RU",
+    "geographic_at": [
+      4382.348316210527,
+      589.1845313675824
+    ],
+    "at": [
+      4386,
+      577
+    ],
+    "adjustment_pixels": 12.7199685198471
+  },
+  {
+    "region": "russia",
+    "name": "Tiksi",
+    "geonameid": 2015306,
+    "country": "RU",
+    "geographic_at": [
+      3998.1159840000005,
+      382.7779518344026
+    ],
+    "at": [
+      3998,
+      383
+    ],
+    "adjustment_pixels": 0.2505148221189479
+  },
+  {
+    "region": "russia",
+    "name": "Palana",
+    "geonameid": 2122262,
+    "country": "RU",
+    "geographic_at": [
+      4391.498825894737,
+      642.6813546696935
+    ],
+    "at": [
+      4398,
+      650
+    ],
+    "adjustment_pixels": 9.789169230213572
+  },
+  {
+    "region": "russia",
+    "name": "Saint Petersburg",
+    "geonameid": 498817,
+    "country": "RU",
+    "geographic_at": [
+      2751.1850974736844,
+      626.7962193759904
+    ],
+    "at": [
+      2751,
+      627
+    ],
+    "adjustment_pixels": 0.2752955093823744
+  },
+  {
+    "region": "russia",
+    "name": "Petrozavodsk",
+    "geonameid": 509820,
+    "country": "RU",
+    "geographic_at": [
+      2802.210377052632,
+      591.7388879849259
+    ],
+    "at": [
+      2802,
+      592
+    ],
+    "adjustment_pixels": 0.33531774288000005
+  },
+  {
+    "region": "russia",
+    "name": "Nar'yan-Mar",
+    "geonameid": 523392,
+    "country": "RU",
+    "geographic_at": [
+      3038.267993894737,
+      473.0383813519393
+    ],
+    "at": [
+      3038,
+      473
+    ],
+    "adjustment_pixels": 0.27072838010280004
+  },
+  {
+    "region": "russia",
+    "name": "Arkhangel\u2019sk",
+    "geonameid": 581049,
+    "country": "RU",
+    "geographic_at": [
+      2880.718943789474,
+      537.2805192292286
+    ],
+    "at": [
+      2881,
+      537
+    ],
+    "adjustment_pixels": 0.39709398313529526
+  },
+  {
+    "region": "russia",
+    "name": "Khatanga",
+    "geonameid": 2022572,
+    "country": "RU",
+    "geographic_at": [
+      3664.1607812631582,
+      376.0359909397454
+    ],
+    "at": [
+      3664,
+      376
+    ],
+    "adjustment_pixels": 0.16476031781504624
+  },
+  {
+    "region": "russia",
+    "name": "Verkhoyansk",
+    "geonameid": 2013465,
+    "country": "RU",
+    "geographic_at": [
+      4055.363068631579,
+      474.8503841779975
+    ],
+    "at": [
+      4055,
+      475
+    ],
+    "adjustment_pixels": 0.3926878218511995
+  },
+  {
+    "region": "russia",
+    "name": "Magadan",
+    "geonameid": 2123628,
+    "country": "RU",
+    "geographic_at": [
+      4275.675118105263,
+      633.8100109629075
+    ],
+    "at": [
+      4271,
+      619
+    ],
+    "adjustment_pixels": 15.530394522342354
+  },
+  {
+    "region": "russia",
+    "name": "Vorkuta",
+    "geonameid": 1486910,
+    "country": "RU",
+    "geographic_at": [
+      3178.2439305263156,
+      475.8147800520681
+    ],
+    "at": [
+      3178,
+      476
+    ],
+    "adjustment_pixels": 0.3062817832984703
+  },
+  {
+    "region": "russia",
+    "name": "Dudinka",
+    "geonameid": 1507116,
+    "country": "RU",
+    "geographic_at": [
+      3458.0072795789474,
+      434.5930272836741
+    ],
+    "at": [
+      3458,
+      435
+    ],
+    "adjustment_pixels": 0.4070378165519183
+  },
+  {
+    "region": "russia",
+    "name": "Vologda",
+    "geonameid": 472459,
+    "country": "RU",
+    "geographic_at": [
+      2872.268883789474,
+      640.097951354163
+    ],
+    "at": [
+      2872,
+      640
+    ],
+    "adjustment_pixels": 0.2861694603276126
+  },
+  {
+    "region": "russia",
+    "name": "Ukhta",
+    "geonameid": 479411,
+    "country": "RU",
+    "geographic_at": [
+      3046.969208631579,
+      556.8442206273766
+    ],
+    "at": [
+      3047,
+      557
+    ],
+    "adjustment_pixels": 0.15879332890329384
+  },
+  {
+    "region": "russia",
+    "name": "Tver",
+    "geonameid": 480060,
+    "country": "RU",
+    "geographic_at": [
+      2821.868264631579,
+      683.1229271481566
+    ],
+    "at": [
+      2822,
+      683
+    ],
+    "adjustment_pixels": 0.1801812727418338
+  },
+  {
+    "region": "russia",
+    "name": "Yaroslavl",
+    "geonameid": 468902,
+    "country": "RU",
+    "geographic_at": [
+      2872.138561684211,
+      669.253765233771
+    ],
+    "at": [
+      2872,
+      669
+    ],
+    "adjustment_pixels": 0.2891299607480678
+  },
+  {
+    "region": "russia",
+    "name": "Norilsk",
+    "geonameid": 1497337,
+    "country": "RU",
+    "geographic_at": [
+      3483.6278463157896,
+      435.7511067829556
+    ],
+    "at": [
+      3484,
+      436
+    ],
+    "adjustment_pixels": 0.44771218228016557
+  },
+  {
+    "region": "russia",
+    "name": "Udachny",
+    "geonameid": 2014624,
+    "country": "RU",
+    "geographic_at": [
+      3789.8139389473686,
+      498.5873794456157
+    ],
+    "at": [
+      3790,
+      499
+    ],
+    "adjustment_pixels": 0.45263057475908336
+  },
+  {
+    "region": "russia",
+    "name": "Salekhard",
+    "geonameid": 1493197,
+    "country": "RU",
+    "geographic_at": [
+      3210.4176747368424,
+      496.4154387163663
+    ],
+    "at": [
+      3210,
+      496
+    ],
+    "adjustment_pixels": 0.5891022940478439
+  },
+  {
+    "region": "russia",
+    "name": "Kostroma",
+    "geonameid": 543878,
+    "country": "RU",
+    "geographic_at": [
+      2885.482026947369,
+      666.7836603142972
+    ],
+    "at": [
+      2885,
+      667
+    ],
+    "adjustment_pixels": 0.5283491625807545
+  },
+  {
+    "region": "russia",
+    "name": "Okhotsk",
+    "geonameid": 2122605,
+    "country": "RU",
+    "geographic_at": [
+      4179.67416168421,
+      637.539114107198
+    ],
+    "at": [
+      4175,
+      631
+    ],
+    "adjustment_pixels": 8.037897782199826
+  },
+  {
+    "region": "russia",
+    "name": "Syktyvkar",
+    "geonameid": 485239,
+    "country": "RU",
+    "geographic_at": [
+      3010.5915010526314,
+      594.0679281434466
+    ],
+    "at": [
+      3011,
+      594
+    ],
+    "adjustment_pixels": 0.41410822579771284
+  },
+  {
+    "region": "russia",
+    "name": "Yakutsk",
+    "geonameid": 2013159,
+    "country": "RU",
+    "geographic_at": [
+      4008.9673869473686,
+      586.9843711725298
+    ],
+    "at": [
+      4009,
+      587
+    ],
+    "adjustment_pixels": 0.03616450538901826
+  },
+  {
+    "region": "russia",
+    "name": "Kuril\u2019sk",
+    "geonameid": 2123979,
+    "country": "RU",
+    "geographic_at": [
+      4238.673256210526,
+      876.3353761170155
+    ],
+    "at": [
+      4250,
+      867
+    ],
+    "adjustment_pixels": 14.678023440454284
+  },
+  {
+    "region": "russia",
+    "name": "Turukhansk",
+    "geonameid": 1488903,
+    "country": "RU",
+    "geographic_at": [
+      3480.653971789474,
+      511.7391960648471
+    ],
+    "at": [
+      3481,
+      512
+    ],
+    "adjustment_pixels": 0.43330614474198725
+  },
+  {
+    "region": "russia",
+    "name": "Mirny",
+    "geonameid": 2019951,
+    "country": "RU",
+    "geographic_at": [
+      3809.5395181052636,
+      577.1894789841461
+    ],
+    "at": [
+      3810,
+      577
+    ],
+    "adjustment_pixels": 0.49794162390091967
+  },
+  {
+    "region": "russia",
+    "name": "Yoshkar-Ola",
+    "geonameid": 466806,
+    "country": "RU",
+    "geographic_at": [
+      2973.5759743157896,
+      687.0425738109068
+    ],
+    "at": [
+      2974,
+      687
+    ],
+    "adjustment_pixels": 0.4261576119761535
+  },
+  {
+    "region": "russia",
+    "name": "Okha",
+    "geonameid": 2122614,
+    "country": "RU",
+    "geographic_at": [
+      4176.360690526316,
+      740.1741639878763
+    ],
+    "at": [
+      4176,
+      740
+    ],
+    "adjustment_pixels": 0.40053807615137665
+  },
+  {
+    "region": "russia",
+    "name": "Tura",
+    "geonameid": 2014833,
+    "country": "RU",
+    "geographic_at": [
+      3635.6592103157896,
+      542.6881377881217
+    ],
+    "at": [
+      3636,
+      543
+    ],
+    "adjustment_pixels": 0.46194766809875615
+  },
+  {
+    "region": "russia",
+    "name": "Cheboksary",
+    "geonameid": 569696,
+    "country": "RU",
+    "geographic_at": [
+      2965.417810526316,
+      696.0390379959775
+    ],
+    "at": [
+      2965,
+      696
+    ],
+    "adjustment_pixels": 0.41963031471794227
+  },
+  {
+    "region": "russia",
+    "name": "Serov",
+    "geonameid": 1492663,
+    "country": "RU",
+    "geographic_at": [
+      3134.204928,
+      633.1655383168586
+    ],
+    "at": [
+      3134,
+      633
+    ],
+    "adjustment_pixels": 0.263435797742872
+  },
+  {
+    "region": "russia",
+    "name": "Nikolayevsk-on-Amure",
+    "geonameid": 2122850,
+    "country": "RU",
+    "geographic_at": [
+      4148.146207789474,
+      747.8189415981193
+    ],
+    "at": [
+      4148,
+      748
+    ],
+    "adjustment_pixels": 0.2327205676222985
+  },
+  {
+    "region": "russia",
+    "name": "Perm",
+    "geonameid": 511196,
+    "country": "RU",
+    "geographic_at": [
+      3079.344256210526,
+      662.3548369990683
+    ],
+    "at": [
+      3079,
+      662
+    ],
+    "adjustment_pixels": 0.4943901641351335
+  },
+  {
+    "region": "russia",
+    "name": "Vanavara",
+    "geonameid": 2013727,
+    "country": "RU",
+    "geographic_at": [
+      3661.7976492631583,
+      619.1339206969077
+    ],
+    "at": [
+      3662,
+      619
+    ],
+    "adjustment_pixels": 0.24265319647724579
+  },
+  {
+    "region": "russia",
+    "name": "Yekaterinburg",
+    "geonameid": 1486209,
+    "country": "RU",
+    "geographic_at": [
+      3134.5745113684216,
+      683.1413409745794
+    ],
+    "at": [
+      3135,
+      683
+    ],
+    "adjustment_pixels": 0.4483501385051143
+  },
+  {
+    "region": "russia",
+    "name": "Yuzhno-Kurilsk",
+    "geonameid": 2119447,
+    "country": "RU",
+    "geographic_at": [
+      4213.162893894737,
+      894.8493955496195
+    ],
+    "at": [
+      4211,
+      893
+    ],
+    "adjustment_pixels": 2.8457642029590158
+  },
+  {
+    "region": "russia",
+    "name": "Samara",
+    "geonameid": 499099,
+    "country": "RU",
+    "geographic_at": [
+      3001.9779690526316,
+      746.779560935707
+    ],
+    "at": [
+      3002,
+      747
+    ],
+    "adjustment_pixels": 0.22153722871864598
+  },
+  {
+    "region": "russia",
+    "name": "Tynda",
+    "geonameid": 2014718,
+    "country": "RU",
+    "geographic_at": [
+      3945.8798475789476,
+      713.3128594737075
+    ],
+    "at": [
+      3946,
+      713
+    ],
+    "adjustment_pixels": 0.33513826187599205
+  },
+  {
+    "region": "russia",
+    "name": "Tyumen",
+    "geonameid": 1488754,
+    "country": "RU",
+    "geographic_at": [
+      3196.723352,
+      677.8583983278488
+    ],
+    "at": [
+      3197,
+      678
+    ],
+    "adjustment_pixels": 0.3107815140255668
+  },
+  {
+    "region": "russia",
+    "name": "Bodaybo",
+    "geonameid": 2026583,
+    "country": "RU",
+    "geographic_at": [
+      3812.6136014736844,
+      665.205590093051
+    ],
+    "at": [
+      3813,
+      665
+    ],
+    "adjustment_pixels": 0.4376883680195047
+  },
+  {
+    "region": "russia",
+    "name": "Kurgan",
+    "geonameid": 1501321,
+    "country": "RU",
+    "geographic_at": [
+      3194.3980513684214,
+      708.0708155509114
+    ],
+    "at": [
+      3194,
+      708
+    ],
+    "adjustment_pixels": 0.4043015386478971
+  },
+  {
+    "region": "russia",
+    "name": "Tomsk",
+    "geonameid": 1489425,
+    "country": "RU",
+    "geographic_at": [
+      3442.8795402105266,
+      689.5046183490365
+    ],
+    "at": [
+      3443,
+      690
+    ],
+    "adjustment_pixels": 0.5098171642768788
+  },
+  {
+    "region": "russia",
+    "name": "Bratsk",
+    "geonameid": 2051523,
+    "country": "RU",
+    "geographic_at": [
+      3653.3182351578944,
+      696.0333752494538
+    ],
+    "at": [
+      3653,
+      696
+    ],
+    "adjustment_pixels": 0.319980504087613
+  },
+  {
+    "region": "russia",
+    "name": "Omsk",
+    "geonameid": 1496153,
+    "country": "RU",
+    "geographic_at": [
+      3295.9373176842105,
+      716.0504784829052
+    ],
+    "at": [
+      3296,
+      716
+    ],
+    "adjustment_pixels": 0.0804807427223824
+  },
+  {
+    "region": "russia",
+    "name": "Krasnoyarsk",
+    "geonameid": 1502026,
+    "country": "RU",
+    "geographic_at": [
+      3543.457839157895,
+      697.7148108423673
+    ],
+    "at": [
+      3543,
+      698
+    ],
+    "adjustment_pixels": 0.5393973953710203
+  },
+  {
+    "region": "russia",
+    "name": "Novosibirsk",
+    "geonameid": 1496747,
+    "country": "RU",
+    "geographic_at": [
+      3416.936457894737,
+      715.5251007044064
+    ],
+    "at": [
+      3417,
+      716
+    ],
+    "adjustment_pixels": 0.4791314434437681
+  },
+  {
+    "region": "russia",
+    "name": "Kemerovo",
+    "geonameid": 1503901,
+    "country": "RU",
+    "geographic_at": [
+      3457.0781968421056,
+      709.7330035285557
+    ],
+    "at": [
+      3457,
+      710
+    ],
+    "adjustment_pixels": 0.27821190103763893
+  },
+  {
+    "region": "russia",
+    "name": "Ust\u2019-Ordynskiy",
+    "geonameid": 2013894,
+    "country": "RU",
+    "geographic_at": [
+      3692.957411578948,
+      753.5505234869173
+    ],
+    "at": [
+      3693,
+      754
+    ],
+    "adjustment_pixels": 0.451489655939855
+  },
+  {
+    "region": "russia",
+    "name": "Abakan",
+    "geonameid": 1512236,
+    "country": "RU",
+    "geographic_at": [
+      3524.410188,
+      738.1107870675154
+    ],
+    "at": [
+      3524,
+      738
+    ],
+    "adjustment_pixels": 0.42488583133887114
+  },
+  {
+    "region": "russia",
+    "name": "Barnaul",
+    "geonameid": 1510853,
+    "country": "RU",
+    "geographic_at": [
+      3427.009344421053,
+      744.1507696707051
+    ],
+    "at": [
+      3427,
+      744
+    ],
+    "adjustment_pixels": 0.1510589679871656
+  },
+  {
+    "region": "russia",
+    "name": "Irkutsk",
+    "geonameid": 2023469,
+    "country": "RU",
+    "geographic_at": [
+      3687.18414231579,
+      762.2103203520049
+    ],
+    "at": [
+      3687,
+      762
+    ],
+    "adjustment_pixels": 0.2795407715019726
+  },
+  {
+    "region": "russia",
+    "name": "Ulan-Ude",
+    "geonameid": 2014407,
+    "country": "RU",
+    "geographic_at": [
+      3729.0520797894737,
+      770.0800654718481
+    ],
+    "at": [
+      3729,
+      770
+    ],
+    "adjustment_pixels": 0.09551326742338025
+  },
+  {
+    "region": "russia",
+    "name": "Kyzyl",
+    "geonameid": 1500973,
+    "country": "RU",
+    "geographic_at": [
+      3562.517763368421,
+      772.0087235141209
+    ],
+    "at": [
+      3563,
+      772
+    ],
+    "adjustment_pixels": 0.48231552798469346
+  },
+  {
+    "region": "russia",
+    "name": "Petropavlovsk-Kamchatsky",
+    "geonameid": 2122104,
+    "country": "RU",
+    "geographic_at": [
+      4374.687021263158,
+      749.2234496407874
+    ],
+    "at": [
+      4375,
+      749
+    ],
+    "adjustment_pixels": 0.38455874932576184
+  },
+  {
+    "region": "russia",
+    "name": "Komsomolsk-on-Amur",
+    "geonameid": 2021851,
+    "country": "RU",
+    "geographic_at": [
+      4101.167998947369,
+      791.2579675023017
+    ],
+    "at": [
+      4101,
+      791
+    ],
+    "adjustment_pixels": 0.3078487917155767
+  },
+  {
+    "region": "russia",
+    "name": "Gorno-Altaysk",
+    "geonameid": 1506271,
+    "country": "RU",
+    "geographic_at": [
+      3454.732019368421,
+      767.8357605694312
+    ],
+    "at": [
+      3455,
+      768
+    ],
+    "adjustment_pixels": 0.31430591699031357
+  },
+  {
+    "region": "russia",
+    "name": "Khanty-Mansiysk",
+    "geonameid": 1503772,
+    "country": "RU",
+    "geographic_at": [
+      3241.008321684211,
+      606.7331705758187
+    ],
+    "at": [
+      3241,
+      607
+    ],
+    "adjustment_pixels": 0.2669591579943166
+  },
+  {
+    "region": "south-america",
+    "name": "Georgetown",
+    "geonameid": 3378644,
+    "country": "GY",
+    "geographic_at": [
+      1631.814373263158,
+      1399.704538390258
+    ],
+    "at": [
+      1632,
+      1400
+    ],
+    "adjustment_pixels": 0.34893387376691015
+  },
+  {
+    "region": "south-america",
+    "name": "Paramaribo",
+    "geonameid": 3383330,
+    "country": "SR",
+    "geographic_at": [
+      1669.6261301052634,
+      1411.5085098353427
+    ],
+    "at": [
+      1670,
+      1412
+    ],
+    "adjustment_pixels": 0.6175283638386193
+  },
+  {
+    "region": "south-america",
+    "name": "Cayenne",
+    "geonameid": 3382160,
+    "country": "GF",
+    "geographic_at": [
+      1705.4617989473686,
+      1423.1764227110893
+    ],
+    "at": [
+      1703,
+      1423
+    ],
+    "adjustment_pixels": 2.4681124427896903
+  },
+  {
+    "region": "south-america",
+    "name": "Bogot\u00e1",
+    "geonameid": 3688689,
+    "country": "CO",
+    "geographic_at": [
+      1430.3024894736843,
+      1427.3014827520685
+    ],
+    "at": [
+      1430,
+      1427
+    ],
+    "adjustment_pixels": 0.4270734497538172
+  },
+  {
+    "region": "south-america",
+    "name": "Quito",
+    "geonameid": 3652462,
+    "country": "EC",
+    "geographic_at": [
+      1374.0843168421052,
+      1487.9983372407073
+    ],
+    "at": [
+      1374,
+      1488
+    ],
+    "adjustment_pixels": 0.08433323562543718
+  },
+  {
+    "region": "south-america",
+    "name": "Fortaleza",
+    "geonameid": 3399415,
+    "country": "BR",
+    "geographic_at": [
+      1879.9604408421053,
+      1531.728426034064
+    ],
+    "at": [
+      1879,
+      1534
+    ],
+    "adjustment_pixels": 2.4662714558423326
+  },
+  {
+    "region": "south-america",
+    "name": "Manaus",
+    "geonameid": 3663517,
+    "country": "BR",
+    "geographic_at": [
+      1608.1573684210525,
+      1524.0080061368226
+    ],
+    "at": [
+      1608,
+      1524
+    ],
+    "adjustment_pixels": 0.1575719460163724
+  },
+  {
+    "region": "south-america",
+    "name": "Recife",
+    "geonameid": 3390760,
+    "country": "BR",
+    "geographic_at": [
+      1926.2937450526317,
+      1586.2748367563781
+    ],
+    "at": [
+      1909,
+      1577
+    ],
+    "adjustment_pixels": 19.6238684973908
+  },
+  {
+    "region": "south-america",
+    "name": "Rio Branco",
+    "geonameid": 3662574,
+    "country": "BR",
+    "geographic_at": [
+      1509.6566315789476,
+      1610.5423848197263
+    ],
+    "at": [
+      1510,
+      1611
+    ],
+    "adjustment_pixels": 0.5721132106436507
+  },
+  {
+    "region": "south-america",
+    "name": "Lima",
+    "geonameid": 3936456,
+    "country": "PE",
+    "geographic_at": [
+      1393.0216370526318,
+      1636.777832646195
+    ],
+    "at": [
+      1393,
+      1637
+    ],
+    "adjustment_pixels": 0.2232184919384583
+  },
+  {
+    "region": "south-america",
+    "name": "Salvador",
+    "geonameid": 3450554,
+    "country": "BR",
+    "geographic_at": [
+      1880.6196429473687,
+      1648.6454043829287
+    ],
+    "at": [
+      1865,
+      1631
+    ],
+    "adjustment_pixels": 23.56551594258791
+  },
+  {
+    "region": "south-america",
+    "name": "Cuiab\u00e1",
+    "geonameid": 3465038,
+    "country": "BR",
+    "geographic_at": [
+      1657.861080631579,
+      1682.1557719929444
+    ],
+    "at": [
+      1658,
+      1682
+    ],
+    "adjustment_pixels": 0.20871872150908546
+  },
+  {
+    "region": "south-america",
+    "name": "Bras\u00edlia",
+    "geonameid": 3469058,
+    "country": "BR",
+    "geographic_at": [
+      1761.1944901052632,
+      1684.5133938857862
+    ],
+    "at": [
+      1761,
+      1685
+    ],
+    "adjustment_pixels": 0.5240342655166411
+  },
+  {
+    "region": "south-america",
+    "name": "La Paz",
+    "geonameid": 3911925,
+    "country": "BO",
+    "geographic_at": [
+      1505.3547368421052,
+      1693.7752973019376
+    ],
+    "at": [
+      1505,
+      1694
+    ],
+    "adjustment_pixels": 0.419916098361709
+  },
+  {
+    "region": "south-america",
+    "name": "Rio de Janeiro",
+    "geonameid": 3451190,
+    "country": "BR",
+    "geographic_at": [
+      1821.262732,
+      1777.2402469123574
+    ],
+    "at": [
+      1821,
+      1761
+    ],
+    "adjustment_pixels": 16.242371990511675
+  },
+  {
+    "region": "south-america",
+    "name": "Asunci\u00f3n",
+    "geonameid": 3439389,
+    "country": "PY",
+    "geographic_at": [
+      1638.2453263157895,
+      1808.844284002959
+    ],
+    "at": [
+      1638,
+      1809
+    ],
+    "adjustment_pixels": 0.29057266380942215
+  },
+  {
+    "region": "south-america",
+    "name": "S\u00e3o Paulo",
+    "geonameid": 3448439,
+    "country": "BR",
+    "geographic_at": [
+      1777.5620608421052,
+      1785.7171893937136
+    ],
+    "at": [
+      1777,
+      1777
+    ],
+    "adjustment_pixels": 8.735290682976803
+  },
+  {
+    "region": "south-america",
+    "name": "Santiago",
+    "geonameid": 3871336,
+    "country": "CL",
+    "geographic_at": [
+      1473.7450469473686,
+      1920.5924434067656
+    ],
+    "at": [
+      1474,
+      1921
+    ],
+    "adjustment_pixels": 0.48073218712181165
+  },
+  {
+    "region": "south-america",
+    "name": "Montevideo",
+    "geonameid": 3441575,
+    "country": "UY",
+    "geographic_at": [
+      1656.703491368421,
+      1941.0010847166488
+    ],
+    "at": [
+      1660,
+      1931
+    ],
+    "adjustment_pixels": 10.5303686862171
+  },
+  {
+    "region": "south-america",
+    "name": "Stanley",
+    "geonameid": 3426691,
+    "country": "FK",
+    "geographic_at": [
+      1635.5881471578948,
+      2197.938035782782
+    ],
+    "at": [
+      1609,
+      2193
+    ],
+    "adjustment_pixels": 27.04281358664271
+  },
+  {
+    "region": "south-america",
+    "name": "Buenos Aires",
+    "geonameid": 3435910,
+    "country": "AR",
+    "geographic_at": [
+      1629.0059951578949,
+      1936.8900018918398
+    ],
+    "at": [
+      1625,
+      1937
+    ],
+    "adjustment_pixels": 4.007505057872775
+  },
+  {
+    "region": "south-america",
+    "name": "Foz do Igua\u00e7u",
+    "geonameid": 3463030,
+    "country": "BR",
+    "geographic_at": [
+      1676.948967157895,
+      1812.337219473562
+    ],
+    "at": [
+      1677,
+      1812
+    ],
+    "adjustment_pixels": 0.3410591214478862
+  },
+  {
+    "region": "middle-east",
+    "name": "Krasnodar",
+    "geonameid": 542420,
+    "country": "RU",
+    "geographic_at": [
+      2860.8536795789473,
+      879.1514389655493
+    ],
+    "at": [
+      2861,
+      879
+    ],
+    "adjustment_pixels": 0.21057878787686346
+  },
+  {
+    "region": "middle-east",
+    "name": "Grozny",
+    "geonameid": 558418,
+    "country": "RU",
+    "geographic_at": [
+      2945.717030526316,
+      905.786833121676
+    ],
+    "at": [
+      2946,
+      906
+    ],
+    "adjustment_pixels": 0.3542765036681221
+  },
+  {
+    "region": "middle-east",
+    "name": "Aktau",
+    "geonameid": 610612,
+    "country": "KZ",
+    "geographic_at": [
+      3015.116335157895,
+      900.4590543476584
+    ],
+    "at": [
+      3015,
+      900
+    ],
+    "adjustment_pixels": 0.47356600708502966
+  },
+  {
+    "region": "middle-east",
+    "name": "Tbilisi",
+    "geonameid": 611717,
+    "country": "GE",
+    "geographic_at": [
+      2934.901181473684,
+      930.2875754791908
+    ],
+    "at": [
+      2935,
+      930
+    ],
+    "adjustment_pixels": 0.30408018247666185
+  },
+  {
+    "region": "middle-east",
+    "name": "Tashkent",
+    "geonameid": 1512569,
+    "country": "UZ",
+    "geographic_at": [
+      3243.399542526316,
+      936.678879018865
+    ],
+    "at": [
+      3243,
+      937
+    ],
+    "adjustment_pixels": 0.5125942985052684
+  },
+  {
+    "region": "middle-east",
+    "name": "Baku",
+    "geonameid": 587084,
+    "country": "AZ",
+    "geographic_at": [
+      2998.8968002105266,
+      949.8834479485137
+    ],
+    "at": [
+      3020,
+      943
+    ],
+    "adjustment_pixels": 22.197452489290875
+  },
+  {
+    "region": "middle-east",
+    "name": "Yerevan",
+    "geonameid": 616052,
+    "country": "AM",
+    "geographic_at": [
+      2930.833107368421,
+      952.8468070609846
+    ],
+    "at": [
+      2931,
+      953
+    ],
+    "adjustment_pixels": 0.2265418880460492
+  },
+  {
+    "region": "middle-east",
+    "name": "Ashgabat",
+    "geonameid": 162183,
+    "country": "TM",
+    "geographic_at": [
+      3106.3343437894737,
+      985.5082480610776
+    ],
+    "at": [
+      3106,
+      986
+    ],
+    "adjustment_pixels": 0.5946475754542402
+  },
+  {
+    "region": "middle-east",
+    "name": "Tehran",
+    "geonameid": 112931,
+    "country": "IR",
+    "geographic_at": [
+      3018.249000210526,
+      1017.9788309089898
+    ],
+    "at": [
+      3018,
+      1018
+    ],
+    "adjustment_pixels": 0.24989844988751914
+  },
+  {
+    "region": "middle-east",
+    "name": "Kabul",
+    "geonameid": 1138958,
+    "country": "AF",
+    "geographic_at": [
+      3242.8435858947373,
+      1034.548042318861
+    ],
+    "at": [
+      3243,
+      1035
+    ],
+    "adjustment_pixels": 0.47825842163589877
+  },
+  {
+    "region": "middle-east",
+    "name": "Damascus",
+    "geonameid": 170654,
+    "country": "SY",
+    "geographic_at": [
+      2826.8117743157895,
+      1048.8947609727643
+    ],
+    "at": [
+      2827,
+      1049
+    ],
+    "adjustment_pixels": 0.21564823451634524
+  },
+  {
+    "region": "middle-east",
+    "name": "Baghdad",
+    "geonameid": 98182,
+    "country": "IQ",
+    "geographic_at": [
+      2929.4195553684212,
+      1051.2752897766502
+    ],
+    "at": [
+      2929,
+      1051
+    ],
+    "adjustment_pixels": 0.5018078997975224
+  },
+  {
+    "region": "middle-east",
+    "name": "Amman",
+    "geonameid": 250441,
+    "country": "JO",
+    "geographic_at": [
+      2822.430800631579,
+      1070.6139109570204
+    ],
+    "at": [
+      2822,
+      1071
+    ],
+    "adjustment_pixels": 0.5784928117772058
+  },
+  {
+    "region": "middle-east",
+    "name": "Kuwait City",
+    "geonameid": 285787,
+    "country": "KW",
+    "geographic_at": [
+      2974.6325955789475,
+      1106.274299220286
+    ],
+    "at": [
+      2990,
+      1101
+    ],
+    "adjustment_pixels": 16.247318268110945
+  },
+  {
+    "region": "middle-east",
+    "name": "Manama",
+    "geonameid": 290340,
+    "country": "BH",
+    "geographic_at": [
+      3007.6731715789474,
+      1148.784911071612
+    ],
+    "at": [
+      2993,
+      1145
+    ],
+    "adjustment_pixels": 15.153465478405948
+  },
+  {
+    "region": "middle-east",
+    "name": "Doha",
+    "geonameid": 290030,
+    "country": "QA",
+    "geographic_at": [
+      3019.6338307368424,
+      1161.4041939706913
+    ],
+    "at": [
+      3020,
+      1166
+    ],
+    "adjustment_pixels": 4.610370157407311
+  },
+  {
+    "region": "middle-east",
+    "name": "Karachi",
+    "geonameid": 1174872,
+    "country": "PK",
+    "geographic_at": [
+      3215.4894821052635,
+      1167.0702676770322
+    ],
+    "at": [
+      3215,
+      1167
+    ],
+    "adjustment_pixels": 0.49450002811799676
+  },
+  {
+    "region": "middle-east",
+    "name": "Abu Dhabi",
+    "geonameid": 292968,
+    "country": "AE",
+    "geographic_at": [
+      3055.8962728421056,
+      1172.5242904158047
+    ],
+    "at": [
+      3056,
+      1173
+    ],
+    "adjustment_pixels": 0.4868869804997181
+  },
+  {
+    "region": "middle-east",
+    "name": "Riyadh",
+    "geonameid": 108410,
+    "country": "SA",
+    "geographic_at": [
+      2958.7859336842107,
+      1169.3760313350554
+    ],
+    "at": [
+      2959,
+      1169
+    ],
+    "adjustment_pixels": 0.43269383228689323
+  },
+  {
+    "region": "middle-east",
+    "name": "Muscat",
+    "geonameid": 287286,
+    "country": "OM",
+    "geographic_at": [
+      3106.643700631579,
+      1184.032667312841
+    ],
+    "at": [
+      3097,
+      1184
+    ],
+    "adjustment_pixels": 9.643755960456891
+  },
+  {
+    "region": "middle-east",
+    "name": "Aden",
+    "geonameid": 415189,
+    "country": "YE",
+    "geographic_at": [
+      2937.487379368421,
+      1324.0871780728096
+    ],
+    "at": [
+      2946,
+      1334
+    ],
+    "adjustment_pixels": 13.066321156981088
+  }
+]

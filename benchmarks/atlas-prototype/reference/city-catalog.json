@@ -1,0 +1,5817 @@
+{
+  "source": "https://download.geonames.org/export/dump/cities500.zip",
+  "license": "GeoNames CC BY 4.0",
+  "cities": [
+    {
+      "region": "europe",
+      "rect": [
+        1498,
+        84,
+        152,
+        23
+      ],
+      "source_text": "PAurmanst",
+      "name": "Murmansk",
+      "lon": 33.09922,
+      "lat": 68.96778,
+      "country": "RU",
+      "population": 295374,
+      "geonameid": 524305,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        49,
+        291,
+        142,
+        29
+      ],
+      "source_text": "Reykjavik",
+      "name": "Reykjav\u00edk",
+      "lon": -21.89541,
+      "lat": 64.13548,
+      "country": "IS",
+      "population": 118918,
+      "geonameid": 3413829,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1295,
+        368,
+        120,
+        23
+      ],
+      "source_text": "Helsinki",
+      "name": "Helsinki",
+      "lon": 24.93545,
+      "lat": 60.16952,
+      "country": "FI",
+      "population": 658864,
+      "geonameid": 658225,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        825,
+        382,
+        79,
+        23
+      ],
+      "source_text": "Cislo",
+      "name": "Oslo",
+      "lon": 10.74609,
+      "lat": 59.91273,
+      "country": "NO",
+      "population": 1082575,
+      "geonameid": 3143244,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1484,
+        399,
+        204,
+        28
+      ],
+      "source_text": "St. Petersburg",
+      "name": "Saint Petersburg",
+      "lon": 30.31413,
+      "lat": 59.93863,
+      "country": "RU",
+      "population": 5351935,
+      "geonameid": 498817,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        955,
+        414,
+        159,
+        24
+      ],
+      "source_text": "Stockholm",
+      "name": "Stockholm",
+      "lon": 18.06871,
+      "lat": 59.32938,
+      "country": "SE",
+      "population": 1515017,
+      "geonameid": 2673730,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1273,
+        438,
+        100,
+        23
+      ],
+      "source_text": "Tallinn",
+      "name": "Tallinn",
+      "lon": 24.75353,
+      "lat": 59.43696,
+      "country": "EE",
+      "population": 394024,
+      "geonameid": 588409,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1609,
+        500,
+        134,
+        23
+      ],
+      "source_text": "Posccw",
+      "name": "Moscow",
+      "lon": 37.61781,
+      "lat": 55.75204,
+      "country": "RU",
+      "population": 10381222,
+      "geonameid": 524901,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1295,
+        515,
+        76,
+        29
+      ],
+      "source_text": "Fiiga",
+      "name": "Riga",
+      "lon": 24.10589,
+      "lat": 56.946,
+      "country": "LV",
+      "population": 742572,
+      "geonameid": 456172,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        830,
+        535,
+        180,
+        30
+      ],
+      "source_text": "Copenhagen",
+      "name": "Copenhagen",
+      "lon": 12.56553,
+      "lat": 55.67594,
+      "country": "DK",
+      "population": 1153615,
+      "geonameid": 2618425,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        463,
+        556,
+        142,
+        29
+      ],
+      "source_text": "Edinburgh",
+      "name": "Edinburgh",
+      "lon": -3.19648,
+      "lat": 55.95206,
+      "country": "GB",
+      "population": 514990,
+      "geonameid": 2650225,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1228,
+        565,
+        102,
+        23
+      ],
+      "source_text": "Vilnius",
+      "name": "Vilnius",
+      "lon": 25.2798,
+      "lat": 54.68916,
+      "country": "LT",
+      "population": 542366,
+      "geonameid": 593116,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1341,
+        638,
+        98,
+        24
+      ],
+      "source_text": "Minsk",
+      "name": "Minsk",
+      "lon": 27.56653,
+      "lat": 53.90019,
+      "country": "BY",
+      "population": 1742124,
+      "geonameid": 625144,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        270,
+        650,
+        97,
+        24
+      ],
+      "source_text": "Cublin",
+      "name": "Dublin",
+      "lon": -6.24889,
+      "lat": 53.33306,
+      "country": "IE",
+      "population": 1024027,
+      "geonameid": 2964574,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1149,
+        656,
+        117,
+        23
+      ],
+      "source_text": "warsav",
+      "name": "Warsaw",
+      "lon": 21.01178,
+      "lat": 52.22977,
+      "country": "PL",
+      "population": 1702139,
+      "geonameid": 756135,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        705,
+        659,
+        168,
+        23
+      ],
+      "source_text": "Amsterdam",
+      "name": "Amsterdam",
+      "lon": 4.88969,
+      "lat": 52.37403,
+      "country": "NL",
+      "population": 741636,
+      "geonameid": 2759794,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        906,
+        693,
+        91,
+        22
+      ],
+      "source_text": "Berlin",
+      "name": "Berlin",
+      "lon": 13.41053,
+      "lat": 52.52437,
+      "country": "DE",
+      "population": 3426354,
+      "geonameid": 2950159,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        453,
+        719,
+        114,
+        23
+      ],
+      "source_text": "London",
+      "name": "London",
+      "lon": -0.12574,
+      "lat": 51.50853,
+      "country": "GB",
+      "population": 8961989,
+      "geonameid": 2643743,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        962,
+        734,
+        110,
+        27
+      ],
+      "source_text": "Praque",
+      "name": "Prague",
+      "lon": 14.42076,
+      "lat": 50.08804,
+      "country": "CZ",
+      "population": 1165581,
+      "geonameid": 3067696,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        596,
+        749,
+        132,
+        22
+      ],
+      "source_text": "Brussels",
+      "name": "Brussels",
+      "lon": 4.34878,
+      "lat": 50.85045,
+      "country": "BE",
+      "population": 1019022,
+      "geonameid": 2800866,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1447,
+        757,
+        64,
+        23
+      ],
+      "source_text": "Kies",
+      "name": "Kyiv",
+      "lon": 30.5238,
+      "lat": 50.45466,
+      "country": "UA",
+      "population": 2952301,
+      "geonameid": 703448,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        655,
+        786,
+        174,
+        29
+      ],
+      "source_text": "Luxembeourg",
+      "name": "Luxembourg",
+      "lon": 6.13268,
+      "lat": 49.60982,
+      "country": "LU",
+      "population": 76684,
+      "geonameid": 2960316,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1071,
+        804,
+        147,
+        23
+      ],
+      "source_text": "Gratislava",
+      "name": "Bratislava",
+      "lon": 17.10674,
+      "lat": 48.14816,
+      "country": "SK",
+      "population": 423737,
+      "geonameid": 3060972,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        568,
+        819,
+        85,
+        23
+      ],
+      "source_text": "Pssis",
+      "name": "Paris",
+      "lon": 2.3488,
+      "lat": 48.85341,
+      "country": "FR",
+      "population": 2138551,
+      "geonameid": 2988507,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        711,
+        837,
+        96,
+        23
+      ],
+      "source_text": "Zurich",
+      "name": "Z\u00fcrich",
+      "lon": 8.55,
+      "lat": 47.36667,
+      "country": "CH",
+      "population": 415367,
+      "geonameid": 2657896,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        952,
+        837,
+        103,
+        23
+      ],
+      "source_text": "Vienna",
+      "name": "Vienna",
+      "lon": 16.37208,
+      "lat": 48.20849,
+      "country": "AT",
+      "population": 1691468,
+      "geonameid": 2761369,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1357,
+        837,
+        128,
+        23
+      ],
+      "source_text": "Chisinau",
+      "name": "Chisinau",
+      "lon": 28.85938,
+      "lat": 47.00902,
+      "country": "MD",
+      "population": 635994,
+      "geonameid": 618426,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1133,
+        849,
+        143,
+        28
+      ],
+      "source_text": "Budapest",
+      "name": "Budapest",
+      "lon": 19.04045,
+      "lat": 47.49835,
+      "country": "HU",
+      "population": 1741041,
+      "geonameid": 3054643,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        689,
+        867,
+        78,
+        23
+      ],
+      "source_text": "Bern",
+      "name": "Bern",
+      "lon": 7.44744,
+      "lat": 46.94809,
+      "country": "CH",
+      "population": 121631,
+      "geonameid": 2661552,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        986,
+        882,
+        128,
+        27
+      ],
+      "source_text": "_jubliana",
+      "name": "Ljubljana",
+      "lon": 14.50513,
+      "lat": 46.05108,
+      "country": "SI",
+      "population": 272220,
+      "geonameid": 3196359,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1034,
+        915,
+        106,
+        29
+      ],
+      "source_text": "eagreb",
+      "name": "Zagreb",
+      "lon": 15.97798,
+      "lat": 45.81444,
+      "country": "HR",
+      "population": 663592,
+      "geonameid": 3186886,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1170,
+        932,
+        125,
+        29
+      ],
+      "source_text": "Belgrade",
+      "name": "Belgrade",
+      "lon": 20.46513,
+      "lat": 44.80401,
+      "country": "RS",
+      "population": 1273651,
+      "geonameid": 792680,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1295,
+        932,
+        167,
+        29
+      ],
+      "source_text": "Bucharest",
+      "name": "Bucharest",
+      "lon": 26.10626,
+      "lat": 44.43225,
+      "country": "RO",
+      "population": 1877155,
+      "geonameid": 683506,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1026,
+        957,
+        133,
+        27
+      ],
+      "source_text": "Sarajeo",
+      "name": "Sarajevo",
+      "lon": 18.35644,
+      "lat": 43.84864,
+      "country": "BA",
+      "population": 696731,
+      "geonameid": 3191281,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1139,
+        997,
+        117,
+        23
+      ],
+      "source_text": "Pristina",
+      "name": "Pristina",
+      "lon": 21.16688,
+      "lat": 42.67272,
+      "country": "XK",
+      "population": 550000,
+      "geonameid": 786714,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1260,
+        1024,
+        87,
+        23
+      ],
+      "source_text": "Soria",
+      "name": "Sofia",
+      "lon": 23.32415,
+      "lat": 42.69751,
+      "country": "BG",
+      "population": 1152556,
+      "geonameid": 727011,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        885,
+        1027,
+        98,
+        23
+      ],
+      "source_text": "Forme",
+      "name": "Rome",
+      "lon": 12.51133,
+      "lat": 41.89193,
+      "country": "IT",
+      "population": 2318895,
+      "geonameid": 3169070,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1400,
+        1049,
+        118,
+        24
+      ],
+      "source_text": "istanbul",
+      "name": "Istanbul",
+      "lon": 28.94966,
+      "lat": 41.01384,
+      "country": "TR",
+      "population": 15701602,
+      "geonameid": 745044,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1188,
+        1069,
+        108,
+        27
+      ],
+      "source_text": "Skopje",
+      "name": "Skopje",
+      "lon": 21.43141,
+      "lat": 41.99646,
+      "country": "MK",
+      "population": 474889,
+      "geonameid": 785842,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1083,
+        1083,
+        97,
+        23
+      ],
+      "source_text": "Tirana",
+      "name": "Tirana",
+      "lon": 19.81866,
+      "lat": 41.32744,
+      "country": "AL",
+      "population": 418495,
+      "geonameid": 3183875,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        617,
+        1088,
+        149,
+        23
+      ],
+      "source_text": "Barcelona",
+      "name": "Barcelona",
+      "lon": 2.15899,
+      "lat": 41.38879,
+      "country": "ES",
+      "population": 1686208,
+      "geonameid": 3128760,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        378,
+        1121,
+        107,
+        23
+      ],
+      "source_text": "Madrid",
+      "name": "Madrid",
+      "lon": -3.70256,
+      "lat": 40.4165,
+      "country": "ES",
+      "population": 3255944,
+      "geonameid": 3117735,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1552,
+        1123,
+        110,
+        24
+      ],
+      "source_text": "Ankara",
+      "name": "Ankara",
+      "lon": 32.85427,
+      "lat": 39.91987,
+      "country": "TR",
+      "population": 3517182,
+      "geonameid": 323786,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        280,
+        1167,
+        103,
+        24
+      ],
+      "source_text": "Lisbon",
+      "name": "Lisbon",
+      "lon": -9.1498,
+      "lat": 38.72509,
+      "country": "PT",
+      "population": 517802,
+      "geonameid": 2267057,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1248,
+        1212,
+        109,
+        24
+      ],
+      "source_text": "Athens",
+      "name": "Athens",
+      "lon": 23.72784,
+      "lat": 37.98376,
+      "country": "GR",
+      "population": 664046,
+      "geonameid": 264371,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        981,
+        1270,
+        114,
+        24
+      ],
+      "source_text": "Valletta",
+      "name": "Valletta",
+      "lon": 14.5148,
+      "lat": 35.89968,
+      "country": "MT",
+      "population": 6794,
+      "geonameid": 2562305,
+      "match": 1
+    },
+    {
+      "region": "europe",
+      "rect": [
+        1446,
+        1276,
+        119,
+        24
+      ],
+      "source_text": "Nicosia",
+      "name": "Nicosia",
+      "lon": 33.35397,
+      "lat": 35.17284,
+      "country": "CY",
+      "population": 200452,
+      "geonameid": 146268,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        647,
+        34,
+        95,
+        33
+      ],
+      "source_text": "Tunif\u2019",
+      "name": "Tunis",
+      "lon": 10.16579,
+      "lat": 36.81897,
+      "country": "TN",
+      "population": 693210,
+      "geonameid": 2464470,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        534,
+        52,
+        106,
+        29
+      ],
+      "source_text": "Algiers",
+      "name": "Algiers",
+      "lon": 3.08746,
+      "lat": 36.73225,
+      "country": "DZ",
+      "population": 2364230,
+      "geonameid": 2507480,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        776,
+        102,
+        97,
+        29
+      ],
+      "source_text": "Tripoli",
+      "name": "Tripoli",
+      "lon": 13.18733,
+      "lat": 32.88743,
+      "country": "LY",
+      "population": 1302947,
+      "geonameid": 2210247,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        363,
+        118,
+        94,
+        23
+      ],
+      "source_text": "Frabat",
+      "name": "Rabat",
+      "lon": -6.83255,
+      "lat": 34.01325,
+      "country": "MA",
+      "population": 1655753,
+      "geonameid": 2538475,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1042,
+        133,
+        151,
+        23
+      ],
+      "source_text": "Alexandria",
+      "name": "Alexandria",
+      "lon": 29.91582,
+      "lat": 31.20176,
+      "country": "EG",
+      "population": 5263542,
+      "geonameid": 361058,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1091,
+        195,
+        89,
+        23
+      ],
+      "source_text": "Cairo",
+      "name": "Cairo",
+      "lon": 31.24967,
+      "lat": 30.06263,
+      "country": "EG",
+      "population": 9606916,
+      "geonameid": 360630,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        71,
+        205,
+        168,
+        23
+      ],
+      "source_text": "Las Palmas",
+      "name": "Las Palmas de Gran Canaria",
+      "lon": -15.41573,
+      "lat": 28.10178,
+      "country": "ES",
+      "population": 383516,
+      "geonameid": 2515270,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        254,
+        249,
+        122,
+        29
+      ],
+      "source_text": "El Saiun",
+      "name": "Laayoune",
+      "lon": -13.18797,
+      "lat": 27.1418,
+      "country": "EH",
+      "population": 196331,
+      "geonameid": 2462881,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        192,
+        453,
+        172,
+        23
+      ],
+      "source_text": "Nouakchott",
+      "name": "Nouakchott",
+      "lon": -15.9785,
+      "lat": 18.08581,
+      "country": "MR",
+      "population": 1184530,
+      "geonameid": 2377450,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1124,
+        468,
+        144,
+        23
+      ],
+      "source_text": "Khartoum",
+      "name": "Khartoum",
+      "lon": 32.53241,
+      "lat": 15.55177,
+      "country": "SD",
+      "population": 1974647,
+      "geonameid": 379252,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1270,
+        477,
+        120,
+        24
+      ],
+      "source_text": "Ssmata",
+      "name": "Asmara",
+      "lon": 38.93184,
+      "lat": 15.33805,
+      "country": "ER",
+      "population": 563930,
+      "geonameid": 343300,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        93,
+        486,
+        93,
+        24
+      ],
+      "source_text": "Dakar",
+      "name": "Dakar",
+      "lon": -17.44406,
+      "lat": 14.6937,
+      "country": "SN",
+      "population": 2646503,
+      "geonameid": 2253354,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        167,
+        518,
+        96,
+        29
+      ],
+      "source_text": "Banjul",
+      "name": "Banjul",
+      "lon": -16.57803,
+      "lat": 13.45274,
+      "country": "GM",
+      "population": 37274,
+      "geonameid": 2413876,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        563,
+        518,
+        112,
+        30
+      ],
+      "source_text": "Niamey",
+      "name": "Niamey",
+      "lon": 2.1098,
+      "lat": 13.51366,
+      "country": "NE",
+      "population": 1323691,
+      "geonameid": 2440485,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        301,
+        528,
+        128,
+        22
+      ],
+      "source_text": "Bamako",
+      "name": "Bamako",
+      "lon": -7.97522,
+      "lat": 12.60915,
+      "country": "ML",
+      "population": 4227569,
+      "geonameid": 2460596,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        18,
+        542,
+        85,
+        24
+      ],
+      "source_text": "Praia",
+      "name": "Praia",
+      "lon": -23.51254,
+      "lat": 14.93152,
+      "country": "CV",
+      "population": 137868,
+      "geonameid": 3374333,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        817,
+        543,
+        157,
+        28
+      ],
+      "source_text": "N'Djamena",
+      "name": "N'Djamena",
+      "lon": 15.0444,
+      "lat": 12.10672,
+      "country": "TD",
+      "population": 1359526,
+      "geonameid": 2427123,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1399,
+        577,
+        117,
+        30
+      ],
+      "source_text": "Dijibouti",
+      "name": "Djibouti",
+      "lon": 43.14503,
+      "lat": 11.58901,
+      "country": "DJ",
+      "population": 626512,
+      "geonameid": 223817,
+      "match": 0.9411764705882353
+    },
+    {
+      "region": "africa",
+      "rect": [
+        376,
+        578,
+        200,
+        29
+      ],
+      "source_text": "Ouagadougou",
+      "name": "Ouagadougou",
+      "lon": -1.53388,
+      "lat": 12.36566,
+      "country": "BF",
+      "population": 2415266,
+      "geonameid": 2357048,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        93,
+        583,
+        106,
+        23
+      ],
+      "source_text": "Bissau",
+      "name": "Bissau",
+      "lon": -15.59767,
+      "lat": 11.86357,
+      "country": "GW",
+      "population": 439704,
+      "geonameid": 2374775,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        105,
+        627,
+        125,
+        30
+      ],
+      "source_text": "Conakry",
+      "name": "Conakry",
+      "lon": -13.67729,
+      "lat": 9.53795,
+      "country": "GN",
+      "population": 1928389,
+      "geonameid": 2422465,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        310,
+        658,
+        219,
+        24
+      ],
+      "source_text": "\u2018famoussoukro",
+      "name": "Yamoussoukro",
+      "lon": -5.27674,
+      "lat": 6.82055,
+      "country": "CI",
+      "population": 275686,
+      "geonameid": 2279755,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        615,
+        658,
+        91,
+        29
+      ],
+      "source_text": "Abuja",
+      "name": "Abuja",
+      "lon": 7.49508,
+      "lat": 9.05785,
+      "country": "NG",
+      "population": 2690000,
+      "geonameid": 2352778,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        120,
+        671,
+        138,
+        23
+      ],
+      "source_text": "Freetown",
+      "name": "Freetown",
+      "lon": -13.2356,
+      "lat": 8.48714,
+      "country": "SL",
+      "population": 802639,
+      "geonameid": 2409306,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        448,
+        684,
+        90,
+        23
+      ],
+      "source_text": "Lame",
+      "name": "Lom\u00e9",
+      "lon": 1.22154,
+      "lat": 6.12874,
+      "country": "TG",
+      "population": 2188376,
+      "geonameid": 2365267,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        829,
+        697,
+        106,
+        29
+      ],
+      "source_text": "Bangui",
+      "name": "Bangui",
+      "lon": 18.55496,
+      "lat": 4.36122,
+      "country": "CF",
+      "population": 812407,
+      "geonameid": 2389853,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        166,
+        711,
+        145,
+        24
+      ],
+      "source_text": "Monrovia",
+      "name": "Monrovia",
+      "lon": -10.7969,
+      "lat": 6.30054,
+      "country": "LR",
+      "population": 1542549,
+      "geonameid": 2274895,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        689,
+        717,
+        132,
+        24
+      ],
+      "source_text": "\u2018Yaounde",
+      "name": "Yaound\u00e9",
+      "lon": 11.51667,
+      "lat": 3.86667,
+      "country": "CM",
+      "population": 1299369,
+      "geonameid": 2220957,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1142,
+        719,
+        88,
+        25
+      ],
+      "source_text": "Juba",
+      "name": "Juba",
+      "lon": 31.58247,
+      "lat": 4.85165,
+      "country": "SS",
+      "population": 450000,
+      "geonameid": 373303,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        422,
+        730,
+        95,
+        24
+      ],
+      "source_text": "Sccra",
+      "name": "Accra",
+      "lon": -0.1969,
+      "lat": 5.55602,
+      "country": "GH",
+      "population": 1963264,
+      "geonameid": 2306104,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        578,
+        752,
+        116,
+        24
+      ],
+      "source_text": "Malabo",
+      "name": "Malabo",
+      "lon": 8.78166,
+      "lat": 3.75578,
+      "country": "GQ",
+      "population": 155963,
+      "geonameid": 2309527,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1121,
+        787,
+        128,
+        29
+      ],
+      "source_text": "Kampala",
+      "name": "Kampala",
+      "lon": 32.58219,
+      "lat": 0.31628,
+      "country": "UG",
+      "population": 1680600,
+      "geonameid": 232422,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1415,
+        793,
+        164,
+        30
+      ],
+      "source_text": "Mogadishu",
+      "name": "Mogadishu",
+      "lon": 45.34375,
+      "lat": 2.03711,
+      "country": "SO",
+      "population": 2587183,
+      "geonameid": 53654,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        497,
+        805,
+        154,
+        24
+      ],
+      "source_text": "Sao Tome",
+      "name": "S\u00e3o Tom\u00e9",
+      "lon": 6.7299,
+      "lat": 0.33756,
+      "country": "ST",
+      "population": 53300,
+      "geonameid": 2410763,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1240,
+        818,
+        109,
+        23
+      ],
+      "source_text": "Nairobi",
+      "name": "Nairobi",
+      "lon": 36.81667,
+      "lat": -1.28333,
+      "country": "KE",
+      "population": 4397073,
+      "geonameid": 184745,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        674,
+        830,
+        128,
+        24
+      ],
+      "source_text": "Libreville",
+      "name": "Libreville",
+      "lon": 9.45356,
+      "lat": 0.39241,
+      "country": "GA",
+      "population": 846090,
+      "geonameid": 2399697,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1040,
+        840,
+        78,
+        29
+      ],
+      "source_text": "Kigal",
+      "name": "Kigali",
+      "lon": 30.05885,
+      "lat": -1.94995,
+      "country": "RW",
+      "population": 1132686,
+      "geonameid": 202061,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        683,
+        890,
+        153,
+        23
+      ],
+      "source_text": "Brazzaville",
+      "name": "Brazzaville",
+      "lon": 15.28318,
+      "lat": -4.26613,
+      "country": "CG",
+      "population": 1982000,
+      "geonameid": 2260535,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1124,
+        892,
+        156,
+        29
+      ],
+      "source_text": "Bujumbura",
+      "name": "Bujumbura",
+      "lon": 29.36142,
+      "lat": -3.38193,
+      "country": "BI",
+      "population": 769317,
+      "geonameid": 425378,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1317,
+        898,
+        171,
+        25
+      ],
+      "source_text": "+hAombasa",
+      "name": "Mombasa",
+      "lon": 39.66359,
+      "lat": -4.05466,
+      "country": "KE",
+      "population": 1208333,
+      "geonameid": 186301,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        842,
+        921,
+        134,
+        23
+      ],
+      "source_text": "Kinshasa",
+      "name": "Kinshasa",
+      "lon": 15.31357,
+      "lat": -4.32758,
+      "country": "CD",
+      "population": 16000000,
+      "geonameid": 2314302,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        675,
+        1004,
+        109,
+        25
+      ],
+      "source_text": "Luanda",
+      "name": "Luanda",
+      "lon": 13.23432,
+      "lat": -8.83682,
+      "country": "AO",
+      "population": 2776168,
+      "geonameid": 2240449,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1352,
+        1077,
+        114,
+        24
+      ],
+      "source_text": "Moroni",
+      "name": "Moroni",
+      "lon": 43.25506,
+      "lat": -11.70216,
+      "country": "KM",
+      "population": 74749,
+      "geonameid": 921772,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1074,
+        1108,
+        129,
+        30
+      ],
+      "source_text": "Lilongwe",
+      "name": "Lilongwe",
+      "lon": 33.78725,
+      "lat": -13.96692,
+      "country": "MW",
+      "population": 1115815,
+      "geonameid": 927967,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        978,
+        1149,
+        109,
+        24
+      ],
+      "source_text": "Lusaka",
+      "name": "Lusaka",
+      "lon": 28.28713,
+      "lat": -15.40669,
+      "country": "ZM",
+      "population": 2212301,
+      "geonameid": 909137,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1383,
+        1227,
+        194,
+        24
+      ],
+      "source_text": "Antananarive",
+      "name": "Antananarivo",
+      "lon": 47.53613,
+      "lat": -18.91368,
+      "country": "MG",
+      "population": 1349501,
+      "geonameid": 1070940,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        726,
+        1291,
+        145,
+        25
+      ],
+      "source_text": "Windhoek",
+      "name": "Windhoek",
+      "lon": 17.08323,
+      "lat": -22.55941,
+      "country": "NA",
+      "population": 386219,
+      "geonameid": 3352136,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        920,
+        1307,
+        146,
+        23
+      ],
+      "source_text": "Gaborone",
+      "name": "Gaborone",
+      "lon": 25.90859,
+      "lat": -24.65451,
+      "country": "BW",
+      "population": 246325,
+      "geonameid": 933773,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1059,
+        1332,
+        122,
+        23
+      ],
+      "source_text": "Pretoria",
+      "name": "Pretoria",
+      "lon": 28.18783,
+      "lat": -25.74486,
+      "country": "ZA",
+      "population": 2112693,
+      "geonameid": 964137,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1193,
+        1360,
+        119,
+        29
+      ],
+      "source_text": "Maputo",
+      "name": "Maputo",
+      "lon": 32.58322,
+      "lat": -25.96553,
+      "country": "MZ",
+      "population": 1254837,
+      "geonameid": 1040652,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1137,
+        1398,
+        138,
+        23
+      ],
+      "source_text": "Mbabane",
+      "name": "Mbabane",
+      "lon": 31.13333,
+      "lat": -26.31667,
+      "country": "SZ",
+      "population": 76218,
+      "geonameid": 934985,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1050,
+        1420,
+        116,
+        23
+      ],
+      "source_text": "[Aaseru",
+      "name": "Maseru",
+      "lon": 27.48333,
+      "lat": -29.31667,
+      "country": "LS",
+      "population": 359753,
+      "geonameid": 932505,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        721,
+        1537,
+        162,
+        30
+      ],
+      "source_text": "Cape Town",
+      "name": "Cape Town",
+      "lon": 18.42322,
+      "lat": -33.92584,
+      "country": "ZA",
+      "population": 4772846,
+      "geonameid": 3369157,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        575,
+        687,
+        103,
+        48
+      ],
+      "source_text": "Porto-Novo",
+      "name": "Porto-Novo",
+      "lon": 2.60359,
+      "lat": 6.49646,
+      "country": "BJ",
+      "population": 264320,
+      "geonameid": 2392087,
+      "match": 1
+    },
+    {
+      "region": "africa",
+      "rect": [
+        1320,
+        955,
+        114,
+        57
+      ],
+      "source_text": "Dar es Salaam",
+      "name": "Dar es Salaam",
+      "lon": 39.26951,
+      "lat": -6.82349,
+      "country": "TZ",
+      "population": 5383728,
+      "geonameid": 160263,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        22,
+        127,
+        97,
+        20
+      ],
+      "source_text": "Astana",
+      "name": "Astana",
+      "lon": 71.44598,
+      "lat": 51.1801,
+      "country": "KZ",
+      "population": 1544142,
+      "geonameid": 1526273,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1320,
+        153,
+        150,
+        22
+      ],
+      "source_text": "Khabarovsk,",
+      "name": "Khabarovsk",
+      "lon": 135.0971,
+      "lat": 48.46204,
+      "country": "RU",
+      "population": 618150,
+      "geonameid": 2022890,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        417,
+        172,
+        77,
+        22
+      ],
+      "source_text": "Hovd",
+      "name": "Khovd",
+      "lon": 91.64194,
+      "lat": 48.00556,
+      "country": "MN",
+      "population": 29800,
+      "geonameid": 1516048,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        976,
+        173,
+        131,
+        21
+      ],
+      "source_text": "MManzhouli",
+      "name": "Manzhouli",
+      "lon": 117.43333,
+      "lat": 49.6,
+      "country": "CN",
+      "population": 54808,
+      "geonameid": 2035836,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        646,
+        190,
+        147,
+        21
+      ],
+      "source_text": "Ilaanbaatar",
+      "name": "Ulan Bator",
+      "lon": 106.88324,
+      "lat": 47.90771,
+      "country": "MN",
+      "population": 844818,
+      "geonameid": 2028462,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1481,
+        192,
+        164,
+        22
+      ],
+      "source_text": "\u00a5. Sakhalinsk",
+      "name": "Yuzhno-Sakhalinsk",
+      "lon": 142.73559,
+      "lat": 46.9543,
+      "country": "RU",
+      "population": 198973,
+      "geonameid": 2119441,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1161,
+        218,
+        88,
+        20
+      ],
+      "source_text": "Harbin",
+      "name": "Harbin",
+      "lon": 126.65,
+      "lat": 45.75,
+      "country": "CN",
+      "population": 10009854,
+      "geonameid": 2037013,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        103,
+        260,
+        93,
+        27
+      ],
+      "source_text": "Almaty",
+      "name": "Almaty",
+      "lon": 76.9115,
+      "lat": 43.25249,
+      "country": "KZ",
+      "population": 1977011,
+      "geonameid": 1526384,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        322,
+        305,
+        94,
+        27
+      ],
+      "source_text": "Wrurngi",
+      "name": "\u00dcr\u00fcmqi",
+      "lon": 87.60046,
+      "lat": 43.80096,
+      "country": "CN",
+      "population": 4054000,
+      "geonameid": 1529102,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1513,
+        313,
+        115,
+        27
+      ],
+      "source_text": "Sapporo",
+      "name": "Sapporo",
+      "lon": 141.35,
+      "lat": 43.06667,
+      "country": "JP",
+      "population": 1973832,
+      "geonameid": 2128295,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1305,
+        314,
+        150,
+        22
+      ],
+      "source_text": "Vladivostok,",
+      "name": "Vladivostok",
+      "lon": 131.87353,
+      "lat": 43.10562,
+      "country": "RU",
+      "population": 604901,
+      "geonameid": 2013348,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        872,
+        355,
+        92,
+        26
+      ],
+      "source_text": "Beijing",
+      "name": "Beijing",
+      "lon": 116.39723,
+      "lat": 39.9075,
+      "country": "CN",
+      "population": 18960744,
+      "geonameid": 1816670,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1113,
+        393,
+        144,
+        28
+      ],
+      "source_text": "P*yonguang",
+      "name": "Pyongyang",
+      "lon": 125.75432,
+      "lat": 39.03385,
+      "country": "KP",
+      "population": 3222000,
+      "geonameid": 1871859,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1197,
+        431,
+        82,
+        21
+      ],
+      "source_text": "Seoul",
+      "name": "Seoul",
+      "lon": 126.9784,
+      "lat": 37.566,
+      "country": "KR",
+      "population": 10349312,
+      "geonameid": 1835848,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1468,
+        469,
+        91,
+        26
+      ],
+      "source_text": "Tokyo",
+      "name": "Tokyo",
+      "lon": 139.69171,
+      "lat": 35.6895,
+      "country": "JP",
+      "population": 9733276,
+      "geonameid": 1850147,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        16,
+        476,
+        129,
+        22
+      ],
+      "source_text": "Islamabad",
+      "name": "Islamabad",
+      "lon": 73.04329,
+      "lat": 33.72148,
+      "country": "PK",
+      "population": 601600,
+      "geonameid": 1176615,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        740,
+        498,
+        71,
+        21
+      ],
+      "source_text": "xian",
+      "name": "Xi\u2019an",
+      "lon": 108.92861,
+      "lat": 34.25833,
+      "country": "CN",
+      "population": 12952907,
+      "geonameid": 1790630,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1360,
+        501,
+        89,
+        21
+      ],
+      "source_text": "Cisaka",
+      "name": "Osaka",
+      "lon": 135.50107,
+      "lat": 34.69379,
+      "country": "JP",
+      "population": 2753862,
+      "geonameid": 1853909,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        906,
+        522,
+        100,
+        26
+      ],
+      "source_text": "Nanjing",
+      "name": "Nanjing",
+      "lon": 118.77778,
+      "lat": 32.06167,
+      "country": "CN",
+      "population": 9314685,
+      "geonameid": 1799962,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1259,
+        528,
+        121,
+        27
+      ],
+      "source_text": "Nagasaki",
+      "name": "Nagasaki",
+      "lon": 129.88333,
+      "lat": 32.75,
+      "country": "JP",
+      "population": 409118,
+      "geonameid": 1856177,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1088,
+        546,
+        119,
+        27
+      ],
+      "source_text": "Shanghai",
+      "name": "Shanghai",
+      "lon": 121.45806,
+      "lat": 31.22222,
+      "country": "CN",
+      "population": 24874500,
+      "geonameid": 1796236,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        419,
+        564,
+        84,
+        21
+      ],
+      "source_text": "Lhasa",
+      "name": "Lhasa",
+      "lon": 91.1,
+      "lat": 29.65,
+      "country": "CN",
+      "population": 867900,
+      "geonameid": 1280737,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        250,
+        637,
+        142,
+        22
+      ],
+      "source_text": "Kathmandu",
+      "name": "Kathmandu",
+      "lon": 85.3206,
+      "lat": 27.70169,
+      "country": "NP",
+      "population": 1442271,
+      "geonameid": 1283240,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        418,
+        638,
+        113,
+        26
+      ],
+      "source_text": "Thimphu",
+      "name": "Thimphu",
+      "lon": 89.64191,
+      "lat": 27.46609,
+      "country": "BT",
+      "population": 98676,
+      "geonameid": 1252416,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        107,
+        639,
+        127,
+        21
+      ],
+      "source_text": "Blew Delhi",
+      "name": "New Delhi",
+      "lon": 77.2148,
+      "lat": 28.62137,
+      "country": "IN",
+      "population": 317797,
+      "geonameid": 1261481,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1061,
+        664,
+        90,
+        28
+      ],
+      "source_text": "Taipei",
+      "name": "Taipei",
+      "lon": 121.52639,
+      "lat": 25.05306,
+      "country": "TW",
+      "population": 7871900,
+      "geonameid": 1668341,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1209,
+        672,
+        75,
+        21
+      ],
+      "source_text": "Naha",
+      "name": "Naha",
+      "lon": 127.67851,
+      "lat": 26.213,
+      "country": "JP",
+      "population": 317625,
+      "geonameid": 1856035,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        834,
+        689,
+        141,
+        26
+      ],
+      "source_text": "Guangzhou",
+      "name": "Guangzhou",
+      "lon": 113.25,
+      "lat": 23.11667,
+      "country": "CN",
+      "population": 18676605,
+      "geonameid": 1809858,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        411,
+        702,
+        88,
+        20
+      ],
+      "source_text": "Dhaka",
+      "name": "Dhaka",
+      "lon": 90.40744,
+      "lat": 23.7104,
+      "country": "BD",
+      "population": 10356500,
+      "geonameid": 1185241,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        925,
+        743,
+        143,
+        26
+      ],
+      "source_text": "Hong Kong",
+      "name": "Hong Kong",
+      "lon": 114.17469,
+      "lat": 22.27832,
+      "country": "HK",
+      "population": 7396076,
+      "geonameid": 1819729,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        870,
+        765,
+        93,
+        20
+      ],
+      "source_text": "Macau",
+      "name": "Macau",
+      "lon": 113.54611,
+      "lat": 22.20056,
+      "country": "MO",
+      "population": 649335,
+      "geonameid": 1821274,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        358,
+        769,
+        110,
+        21
+      ],
+      "source_text": "Calcutha",
+      "name": "Kolkata",
+      "lon": 88.36304,
+      "lat": 22.56263,
+      "country": "IN",
+      "population": 4631392,
+      "geonameid": 1275004,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        752,
+        778,
+        83,
+        20
+      ],
+      "source_text": "Hanoi",
+      "name": "Hanoi",
+      "lon": 105.84117,
+      "lat": 21.0245,
+      "country": "VN",
+      "population": 8053663,
+      "geonameid": 1581130,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        29,
+        827,
+        108,
+        22
+      ],
+      "source_text": "Mumbai",
+      "name": "Mumbai",
+      "lon": 72.88261,
+      "lat": 19.07283,
+      "country": "IN",
+      "population": 12691836,
+      "geonameid": 1275339,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        653,
+        838,
+        118,
+        21
+      ],
+      "source_text": "Vientiane",
+      "name": "Vientiane",
+      "lon": 102.6,
+      "lat": 17.96667,
+      "country": "LA",
+      "population": 840940,
+      "geonameid": 1651944,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        485,
+        875,
+        103,
+        26
+      ],
+      "source_text": "Yangon",
+      "name": "Yangon",
+      "lon": 96.15611,
+      "lat": 16.80528,
+      "country": "MM",
+      "population": 4477638,
+      "geonameid": 1298824,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        986,
+        897,
+        92,
+        21
+      ],
+      "source_text": "Manila",
+      "name": "Manila",
+      "lon": 120.9822,
+      "lat": 14.6042,
+      "country": "PH",
+      "population": 1600000,
+      "geonameid": 1701668,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        223,
+        944,
+        106,
+        21
+      ],
+      "source_text": "Chennai",
+      "name": "Chennai",
+      "lon": 80.27847,
+      "lat": 13.08784,
+      "country": "IN",
+      "population": 4681087,
+      "geonameid": 1264527,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        752,
+        1001,
+        154,
+        21
+      ],
+      "source_text": "Ho Chi Minh",
+      "name": "Ho Chi Minh City",
+      "lon": 106.62965,
+      "lat": 10.82302,
+      "country": "VN",
+      "population": 14002598,
+      "geonameid": 1566083,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        773,
+        1029,
+        110,
+        27
+      ],
+      "source_text": "(Saigon)",
+      "name": "Ho Chi Minh City",
+      "lon": 106.62965,
+      "lat": 10.82302,
+      "country": "VN",
+      "population": 14002598,
+      "geonameid": 1566083,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        92,
+        1080,
+        124,
+        21
+      ],
+      "source_text": "Colombo",
+      "name": "Colombo",
+      "lon": 79.84868,
+      "lat": 6.93548,
+      "country": "LK",
+      "population": 648034,
+      "geonameid": 1248991,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1171,
+        1082,
+        92,
+        20
+      ],
+      "source_text": "Davao",
+      "name": "Davao",
+      "lon": 125.61278,
+      "lat": 7.07306,
+      "country": "PH",
+      "population": 1848947,
+      "geonameid": 1715348,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1056,
+        1159,
+        111,
+        21
+      ],
+      "source_text": "Manado",
+      "name": "Manado",
+      "lon": 124.84892,
+      "lat": 1.48218,
+      "country": "ID",
+      "population": 458582,
+      "geonameid": 1636544,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1191,
+        1176,
+        104,
+        21
+      ],
+      "source_text": "Termate",
+      "name": "Ternate",
+      "lon": 127.38424,
+      "lat": 0.79065,
+      "country": "ID",
+      "population": 210836,
+      "geonameid": 1624041,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        658,
+        1198,
+        167,
+        21
+      ],
+      "source_text": "SINGAPORE",
+      "name": "Singapore",
+      "lon": 103.85007,
+      "lat": 1.28967,
+      "country": "SG",
+      "population": 5638700,
+      "geonameid": 1880252,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        972,
+        1199,
+        133,
+        22
+      ],
+      "source_text": "Samarinda",
+      "name": "Samarinda",
+      "lon": 117.14583,
+      "lat": -0.49167,
+      "country": "ID",
+      "population": 865306,
+      "geonameid": 1629001,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1341,
+        1206,
+        141,
+        21
+      ],
+      "source_text": "Manokwari",
+      "name": "Manokwari",
+      "lon": 134.06402,
+      "lat": -0.86291,
+      "country": "ID",
+      "population": 132300,
+      "geonameid": 1636308,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1385,
+        1272,
+        115,
+        25
+      ],
+      "source_text": "Jayapura",
+      "name": "Jayapura",
+      "lon": 140.71813,
+      "lat": -2.53371,
+      "country": "ID",
+      "population": 410852,
+      "geonameid": 2082600,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1211,
+        1299,
+        99,
+        21
+      ],
+      "source_text": "Ambon",
+      "name": "Ambon",
+      "lon": 128.18333,
+      "lat": -3.69583,
+      "country": "ID",
+      "population": 347288,
+      "geonameid": 1651531,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        764,
+        1317,
+        100,
+        22
+      ],
+      "source_text": "Jakarta",
+      "name": "Jakarta",
+      "lon": 106.84513,
+      "lat": -6.21462,
+      "country": "ID",
+      "population": 8540121,
+      "geonameid": 1642911,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1171,
+        1370,
+        51,
+        21
+      ],
+      "source_text": "Dili",
+      "name": "Dili",
+      "lon": 125.57361,
+      "lat": -8.55861,
+      "country": "TL",
+      "population": 150000,
+      "geonameid": 1645457,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        940,
+        1410,
+        123,
+        25
+      ],
+      "source_text": "Denpasar",
+      "name": "Denpasar",
+      "lon": 115.21667,
+      "lat": -8.65,
+      "country": "ID",
+      "population": 670210,
+      "geonameid": 1645528,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        1472,
+        1421,
+        173,
+        27
+      ],
+      "source_text": "Port Moresby",
+      "name": "Port Moresby",
+      "lon": 147.15089,
+      "lat": -9.47723,
+      "country": "PG",
+      "population": 283733,
+      "geonameid": 2088122,
+      "match": 1
+    },
+    {
+      "region": "asia",
+      "rect": [
+        636,
+        971,
+        100,
+        51
+      ],
+      "source_text": "Phnom Penh",
+      "name": "Phnom Penh",
+      "lon": 104.91601,
+      "lat": 11.56245,
+      "country": "KH",
+      "population": 1573544,
+      "geonameid": 1821306,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        733,
+        189,
+        113,
+        26
+      ],
+      "source_text": "Darwin",
+      "name": "Darwin",
+      "lon": 130.84185,
+      "lat": -12.46113,
+      "country": "AU",
+      "population": 139902,
+      "geonameid": 2073124,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1286,
+        309,
+        110,
+        26
+      ],
+      "source_text": "Cairns",
+      "name": "Cairns",
+      "lon": 145.76613,
+      "lat": -16.92366,
+      "country": "AU",
+      "population": 153075,
+      "geonameid": 2172797,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1331,
+        397,
+        169,
+        27
+      ],
+      "source_text": "Townsville",
+      "name": "Townsville",
+      "lon": 146.80569,
+      "lat": -19.26639,
+      "country": "AU",
+      "population": 201313,
+      "geonameid": 2146142,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1423,
+        714,
+        145,
+        27
+      ],
+      "source_text": "Brisbane",
+      "name": "Brisbane",
+      "lon": 153.02809,
+      "lat": -27.46794,
+      "country": "AU",
+      "population": 2780063,
+      "geonameid": 2174003,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1104,
+        833,
+        152,
+        23
+      ],
+      "source_text": "Broken Hill",
+      "name": "Broken Hill",
+      "lon": 141.4512,
+      "lat": -31.9652,
+      "country": "AU",
+      "population": 17456,
+      "geonameid": 2173911,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        186,
+        878,
+        95,
+        25
+      ],
+      "source_text": "Perth",
+      "name": "Perth",
+      "lon": 115.8614,
+      "lat": -31.95224,
+      "country": "AU",
+      "population": 2384371,
+      "geonameid": 2063523,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1517,
+        922,
+        118,
+        33
+      ],
+      "source_text": "Sydney",
+      "name": "Sydney",
+      "lon": 151.20732,
+      "lat": -33.86785,
+      "country": "AU",
+      "population": 5638830,
+      "geonameid": 2147714,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1331,
+        964,
+        149,
+        26
+      ],
+      "source_text": "Canberra",
+      "name": "Canberra",
+      "lon": 149.12807,
+      "lat": -35.28346,
+      "country": "AU",
+      "population": 367752,
+      "geonameid": 2172517,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        867,
+        985,
+        142,
+        27
+      ],
+      "source_text": "Adelaide",
+      "name": "Adelaide",
+      "lon": 138.59863,
+      "lat": -34.92866,
+      "country": "AU",
+      "population": 1469163,
+      "geonameid": 2078025,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1212,
+        1144,
+        174,
+        26
+      ],
+      "source_text": "Melbourne",
+      "name": "Melbourne",
+      "lon": 144.96332,
+      "lat": -37.814,
+      "country": "AU",
+      "population": 5435590,
+      "geonameid": 2158177,
+      "match": 1
+    },
+    {
+      "region": "australia",
+      "rect": [
+        1342,
+        1312,
+        117,
+        27
+      ],
+      "source_text": "Hobart",
+      "name": "Hobart",
+      "lon": 147.32941,
+      "lat": -42.87936,
+      "country": "AU",
+      "population": 254930,
+      "geonameid": 2163355,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        954,
+        548,
+        160,
+        29
+      ],
+      "source_text": "Repulse Bay",
+      "name": "Naujaat",
+      "lon": -86.24371,
+      "lat": 66.52913,
+      "country": "CA",
+      "population": 1225,
+      "geonameid": 6119528,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        40,
+        564,
+        110,
+        23
+      ],
+      "source_text": "Dawson",
+      "name": "Dawson City",
+      "lon": -139.43328,
+      "lat": 64.06013,
+      "country": "CA",
+      "population": 1375,
+      "geonameid": 6943713,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1380,
+        638,
+        83,
+        29
+      ],
+      "source_text": "Iqaluit",
+      "name": "Iqaluit",
+      "lon": -68.51727,
+      "lat": 63.74697,
+      "country": "CA",
+      "population": 7429,
+      "geonameid": 5983720,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        478,
+        680,
+        148,
+        23
+      ],
+      "source_text": "Yellowknite",
+      "name": "Yellowknife",
+      "lon": -114.37248,
+      "lat": 62.45411,
+      "country": "CA",
+      "population": 20340,
+      "geonameid": 6185377,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        85,
+        738,
+        146,
+        23
+      ],
+      "source_text": "Whitehorse",
+      "name": "Whitehorse",
+      "lon": -135.05375,
+      "lat": 60.71611,
+      "country": "CA",
+      "population": 28201,
+      "geonameid": 6180550,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        937,
+        802,
+        115,
+        22
+      ],
+      "source_text": "Churchill",
+      "name": "Churchill",
+      "lon": -94.16674,
+      "lat": 58.76811,
+      "country": "CA",
+      "population": 899,
+      "geonameid": 5922111,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        503,
+        937,
+        136,
+        23
+      ],
+      "source_text": "Edmonton",
+      "name": "Edmonton",
+      "lon": -113.46871,
+      "lat": 53.55014,
+      "country": "CA",
+      "population": 1010899,
+      "geonameid": 5946768,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        536,
+        1019,
+        101,
+        30
+      ],
+      "source_text": "Calgary",
+      "name": "Calgary",
+      "lon": -114.08529,
+      "lat": 51.05011,
+      "country": "CA",
+      "population": 1306784,
+      "geonameid": 5913490,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        681,
+        1041,
+        96,
+        27
+      ],
+      "source_text": "Fiegina",
+      "name": "Regina",
+      "lon": -104.6178,
+      "lat": 50.45008,
+      "country": "CA",
+      "population": 226404,
+      "geonameid": 6119109,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        363,
+        1071,
+        139,
+        23
+      ],
+      "source_text": "Vancouver",
+      "name": "Vancouver",
+      "lon": -123.11934,
+      "lat": 49.24966,
+      "country": "CA",
+      "population": 662248,
+      "geonameid": 6173331,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        797,
+        1089,
+        114,
+        28
+      ],
+      "source_text": "Winniped",
+      "name": "Winnipeg",
+      "lon": -97.14704,
+      "lat": 49.8844,
+      "country": "CA",
+      "population": 749607,
+      "geonameid": 6183235,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1054,
+        1090,
+        162,
+        29
+      ],
+      "source_text": "Thunder Bay",
+      "name": "Thunder Bay",
+      "lon": -89.25018,
+      "lat": 48.38202,
+      "country": "CA",
+      "population": 108843,
+      "geonameid": 6166142,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1309,
+        1135,
+        105,
+        26
+      ],
+      "source_text": "Quebec",
+      "name": "Qu\u00e9bec",
+      "lon": -71.21454,
+      "lat": 46.81228,
+      "country": "CA",
+      "population": 531902,
+      "geonameid": 6325494,
+      "match": 1
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1548,
+        1227,
+        94,
+        23
+      ],
+      "source_text": "Halifax",
+      "name": "Halifax",
+      "lon": -63.57688,
+      "lat": 44.64269,
+      "country": "CA",
+      "population": 471559,
+      "geonameid": 6324729,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        477,
+        250,
+        112,
+        22
+      ],
+      "source_text": "Havana",
+      "name": "Havana",
+      "lon": -82.38304,
+      "lat": 23.13302,
+      "country": "CU",
+      "population": 2163824,
+      "geonameid": 3553478,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        304,
+        337,
+        112,
+        23
+      ],
+      "source_text": "Cancun",
+      "name": "Canc\u00fan",
+      "lon": -86.84656,
+      "lat": 21.17429,
+      "country": "MX",
+      "population": 888797,
+      "geonameid": 3531673,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1169,
+        370,
+        155,
+        23
+      ],
+      "source_text": "Grand Turk",
+      "name": "Cockburn Town",
+      "lon": -71.14188,
+      "lat": 21.46122,
+      "country": "TC",
+      "population": 3720,
+      "geonameid": 3576994,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1556,
+        448,
+        163,
+        23
+      ],
+      "source_text": "Ficad Town",
+      "name": "Road Town",
+      "lon": -64.62079,
+      "lat": 18.42693,
+      "country": "VG",
+      "population": 8449,
+      "geonameid": 3577430,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        923,
+        509,
+        207,
+        23
+      ],
+      "source_text": "Port-au-Prince",
+      "name": "Port-au-Prince",
+      "lon": -72.33881,
+      "lat": 18.54349,
+      "country": "HT",
+      "population": 1234742,
+      "geonameid": 3718426,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1323,
+        511,
+        131,
+        24
+      ],
+      "source_text": "San Juan",
+      "name": "San Juan",
+      "lon": -66.10572,
+      "lat": 18.46633,
+      "country": "PR",
+      "population": 418140,
+      "geonameid": 4568127,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1569,
+        512,
+        148,
+        28
+      ],
+      "source_text": "The Valley",
+      "name": "The Valley",
+      "lon": -63.05783,
+      "lat": 18.21704,
+      "country": "AI",
+      "population": 2035,
+      "geonameid": 3573374,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        546,
+        514,
+        188,
+        28
+      ],
+      "source_text": "George Town",
+      "name": "George Town",
+      "lon": -81.37436,
+      "lat": 19.2866,
+      "country": "KY",
+      "population": 29370,
+      "geonameid": 3580661,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        863,
+        594,
+        129,
+        29
+      ],
+      "source_text": "Kingston",
+      "name": "Kingston",
+      "lon": -76.79358,
+      "lat": 17.99702,
+      "country": "JM",
+      "population": 937700,
+      "geonameid": 3489854,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1672,
+        597,
+        145,
+        23
+      ],
+      "source_text": "St. John's",
+      "name": "Saint John\u2019s",
+      "lon": -61.84329,
+      "lat": 17.12096,
+      "country": "AG",
+      "population": 51737,
+      "geonameid": 3576022,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        225,
+        629,
+        146,
+        29
+      ],
+      "source_text": "Gelmopan",
+      "name": "Belmopan",
+      "lon": -88.76401,
+      "lat": 17.25376,
+      "country": "BZ",
+      "population": 13381,
+      "geonameid": 3582672,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1510,
+        638,
+        138,
+        29
+      ],
+      "source_text": "Plymouth",
+      "name": "Plymouth",
+      "lon": -62.21292,
+      "lat": 16.70555,
+      "country": "MS",
+      "population": 0,
+      "geonameid": 3578069,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1495,
+        669,
+        179,
+        23
+      ],
+      "source_text": "Basse-Terre",
+      "name": "Basse-Terre",
+      "lon": -61.73214,
+      "lat": 15.99714,
+      "country": "GP",
+      "population": 11472,
+      "geonameid": 3579732,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1568,
+        707,
+        116,
+        22
+      ],
+      "source_text": "Fiose au",
+      "name": "Roseau",
+      "lon": -61.38808,
+      "lat": 15.30174,
+      "country": "DM",
+      "population": 16571,
+      "geonameid": 3575635,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1495,
+        745,
+        212,
+        22
+      ],
+      "source_text": "Fort-de-France",
+      "name": "Fort-de-France",
+      "lon": -61.07418,
+      "lat": 14.60365,
+      "country": "MQ",
+      "population": 89995,
+      "geonameid": 3570675,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1587,
+        784,
+        126,
+        23
+      ],
+      "source_text": "Castries",
+      "name": "Castries",
+      "lon": -61.00614,
+      "lat": 13.9957,
+      "country": "LC",
+      "population": 20000,
+      "geonameid": 3576812,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        36,
+        808,
+        186,
+        23
+      ],
+      "source_text": "San Salvador",
+      "name": "San Salvador",
+      "lon": -89.18718,
+      "lat": 13.68935,
+      "country": "SV",
+      "population": 525990,
+      "geonameid": 3583361,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1550,
+        819,
+        150,
+        29
+      ],
+      "source_text": "Kingstown",
+      "name": "Kingstown",
+      "lon": -61.22742,
+      "lat": 13.15527,
+      "country": "VC",
+      "population": 24518,
+      "geonameid": 3577887,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1712,
+        840,
+        160,
+        27
+      ],
+      "source_text": "Bridgetown",
+      "name": "Bridgetown",
+      "lon": -59.62021,
+      "lat": 13.10732,
+      "country": "BB",
+      "population": 98511,
+      "geonameid": 3374036,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        221,
+        891,
+        132,
+        28
+      ],
+      "source_text": "Managua",
+      "name": "Managua",
+      "lon": -86.2504,
+      "lat": 12.13282,
+      "country": "NI",
+      "population": 973087,
+      "geonameid": 3617763,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1513,
+        906,
+        177,
+        28
+      ],
+      "source_text": "St. George's",
+      "name": "Saint George's",
+      "lon": -61.75226,
+      "lat": 12.05288,
+      "country": "GD",
+      "population": 7500,
+      "geonameid": 3579925,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1241,
+        917,
+        152,
+        23
+      ],
+      "source_text": "Willemstad",
+      "name": "Willemstad",
+      "lon": -68.88641,
+      "lat": 12.12246,
+      "country": "CW",
+      "population": 125000,
+      "geonameid": 3513090,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1564,
+        943,
+        193,
+        29
+      ],
+      "source_text": "Port-of-Spain",
+      "name": "Port of Spain",
+      "lon": -61.51889,
+      "lat": 10.66668,
+      "country": "TT",
+      "population": 49031,
+      "geonameid": 3573890,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        822,
+        946,
+        168,
+        28
+      ],
+      "source_text": "Barranquilla",
+      "name": "Barranquilla",
+      "lon": -74.78132,
+      "lat": 10.96854,
+      "country": "CO",
+      "population": 1206319,
+      "geonameid": 3689147,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        456,
+        1001,
+        137,
+        22
+      ],
+      "source_text": "San Jose",
+      "name": "San Jos\u00e9",
+      "lon": -84.08489,
+      "lat": 9.93388,
+      "country": "CR",
+      "population": 335007,
+      "geonameid": 3621849,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1435,
+        423,
+        139,
+        53
+      ],
+      "source_text": "Charlotte Amalie",
+      "name": "Charlotte Amalie",
+      "lon": -64.9307,
+      "lat": 18.3419,
+      "country": "VI",
+      "population": 20000,
+      "geonameid": 4795467,
+      "match": 1
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1212,
+        564,
+        133,
+        58
+      ],
+      "source_text": "Santo Domingo",
+      "name": "Santo Domingo",
+      "lon": -69.89232,
+      "lat": 18.47186,
+      "country": "DO",
+      "population": 2201941,
+      "geonameid": 3492908,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1735,
+        43,
+        71,
+        19
+      ],
+      "source_text": "Uelen",
+      "name": "Uelen",
+      "lon": -169.80979,
+      "lat": 66.15966,
+      "country": "RU",
+      "population": 697,
+      "geonameid": 4031533,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1705,
+        81,
+        132,
+        23
+      ],
+      "source_text": "Provideniya",
+      "name": "Provideniya",
+      "lon": -173.22641,
+      "lat": 64.42289,
+      "country": "RU",
+      "population": 2536,
+      "geonameid": 4031574,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1756,
+        188,
+        91,
+        24
+      ],
+      "source_text": "Artadys'",
+      "name": "Anadyr",
+      "lon": 177.5103,
+      "lat": 64.73424,
+      "country": "RU",
+      "population": 15604,
+      "geonameid": 2127202,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1570,
+        201,
+        79,
+        19
+      ],
+      "source_text": "Pevek",
+      "name": "Pevek",
+      "lon": 170.30708,
+      "lat": 69.70279,
+      "country": "RU",
+      "population": 4837,
+      "geonameid": 2122090,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1566,
+        297,
+        99,
+        24
+      ],
+      "source_text": "Cherskiy",
+      "name": "Cherskiy",
+      "lon": 161.33099,
+      "lat": 68.75322,
+      "country": "RU",
+      "population": 3707,
+      "geonameid": 2126199,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        500,
+        358,
+        121,
+        20
+      ],
+      "source_text": "Murmansk.",
+      "name": "Murmansk",
+      "lon": 33.09922,
+      "lat": 68.96778,
+      "country": "RU",
+      "population": 295374,
+      "geonameid": 524305,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1685,
+        426,
+        88,
+        19
+      ],
+      "source_text": "Evensk",
+      "name": "Evensk",
+      "lon": 159.23302,
+      "lat": 61.91732,
+      "country": "RU",
+      "population": 2024,
+      "geonameid": 2125693,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1314,
+        466,
+        63,
+        18
+      ],
+      "source_text": "Tiksi",
+      "name": "Tiksi",
+      "lon": 128.86524,
+      "lat": 71.69075,
+      "country": "RU",
+      "population": 5700,
+      "geonameid": 2015306,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1796,
+        476,
+        85,
+        19
+      ],
+      "source_text": "Parana",
+      "name": "Palana",
+      "lon": 159.95623,
+      "lat": 59.08418,
+      "country": "RU",
+      "population": 3671,
+      "geonameid": 2122262,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        210,
+        480,
+        149,
+        23
+      ],
+      "source_text": "St Petersburg",
+      "name": "Saint Petersburg",
+      "lon": 30.31413,
+      "lat": 59.93863,
+      "country": "RU",
+      "population": 5351935,
+      "geonameid": 498817,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        306,
+        518,
+        154,
+        19
+      ],
+      "source_text": "Petrozavodsk",
+      "name": "Petrozavodsk",
+      "lon": 34.34691,
+      "lat": 61.78491,
+      "country": "RU",
+      "population": 279190,
+      "geonameid": 509820,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        644,
+        520,
+        133,
+        23
+      ],
+      "source_text": "Nar'yan Mar",
+      "name": "Nar'yan-Mar",
+      "lon": 53.00371,
+      "lat": 67.63869,
+      "country": "RU",
+      "population": 18041,
+      "geonameid": 523392,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        461,
+        527,
+        141,
+        24
+      ],
+      "source_text": "Askhangel'st.",
+      "name": "Arkhangel\u2019sk",
+      "lon": 40.55183,
+      "lat": 64.5461,
+      "country": "RU",
+      "population": 349742,
+      "geonameid": 581049,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1054,
+        532,
+        106,
+        23
+      ],
+      "source_text": "Khatanga",
+      "name": "Khatanga",
+      "lon": 102.47111,
+      "lat": 71.98002,
+      "country": "RU",
+      "population": 3205,
+      "geonameid": 2022572,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1374,
+        551,
+        140,
+        23
+      ],
+      "source_text": "Verkhogansk",
+      "name": "Verkhoyansk",
+      "lon": 133.38976,
+      "lat": 67.55387,
+      "country": "RU",
+      "population": 1388,
+      "geonameid": 2013465,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1712,
+        563,
+        108,
+        23
+      ],
+      "source_text": "Magadan",
+      "name": "Magadan",
+      "lon": 150.80211,
+      "lat": 59.56274,
+      "country": "RU",
+      "population": 92782,
+      "geonameid": 2123628,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        647,
+        582,
+        93,
+        19
+      ],
+      "source_text": "Vorkuta",
+      "name": "Vorkuta",
+      "lon": 64.0667,
+      "lat": 67.50867,
+      "country": "RU",
+      "population": 80039,
+      "geonameid": 1486910,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        951,
+        583,
+        94,
+        19
+      ],
+      "source_text": "Dudinka",
+      "name": "Dudinka",
+      "lon": 86.17778,
+      "lat": 69.40583,
+      "country": "RU",
+      "population": 23619,
+      "geonameid": 1507116,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        346,
+        598,
+        98,
+        23
+      ],
+      "source_text": "Yologda",
+      "name": "Vologda",
+      "lon": 39.88398,
+      "lat": 59.2239,
+      "country": "RU",
+      "population": 312420,
+      "geonameid": 472459,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        546,
+        600,
+        73,
+        18
+      ],
+      "source_text": "Ukhta",
+      "name": "Ukhta",
+      "lon": 53.69141,
+      "lat": 63.56904,
+      "country": "RU",
+      "population": 102187,
+      "geonameid": 479411,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        246,
+        603,
+        65,
+        19
+      ],
+      "source_text": "Tver",
+      "name": "Tver",
+      "lon": 35.90057,
+      "lat": 56.85836,
+      "country": "RU",
+      "population": 420065,
+      "geonameid": 480060,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        297,
+        624,
+        113,
+        21
+      ],
+      "source_text": "\u2018Tarostavl'",
+      "name": "Yaroslavl",
+      "lon": 39.87368,
+      "lat": 57.62987,
+      "country": "RU",
+      "population": 608722,
+      "geonameid": 468902,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        946,
+        624,
+        90,
+        19
+      ],
+      "source_text": "Noril\u2019sk",
+      "name": "Norilsk",
+      "lon": 88.2027,
+      "lat": 69.3535,
+      "country": "RU",
+      "population": 140800,
+      "geonameid": 1497337,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1180,
+        626,
+        101,
+        24
+      ],
+      "source_text": "Udachnyi",
+      "name": "Udachny",
+      "lon": 112.4021,
+      "lat": 66.42989,
+      "country": "RU",
+      "population": 15266,
+      "geonameid": 2014624,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        694,
+        636,
+        111,
+        18
+      ],
+      "source_text": "Salekhard",
+      "name": "Salekhard",
+      "lon": 66.60955,
+      "lat": 66.53373,
+      "country": "RU",
+      "population": 49214,
+      "geonameid": 1493197,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        351,
+        650,
+        113,
+        18
+      ],
+      "source_text": "Kostroma",
+      "name": "Kostroma",
+      "lon": 40.92828,
+      "lat": 57.76638,
+      "country": "RU",
+      "population": 277280,
+      "geonameid": 543878,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1653,
+        650,
+        100,
+        19
+      ],
+      "source_text": "Okhotsk.",
+      "name": "Okhotsk",
+      "lon": 143.21468,
+      "lat": 59.362,
+      "country": "RU",
+      "population": 5570,
+      "geonameid": 2122605,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        511,
+        659,
+        109,
+        23
+      ],
+      "source_text": "Syktuvkar",
+      "name": "Syktyvkar",
+      "lon": 50.8163,
+      "lat": 61.66393,
+      "country": "RU",
+      "population": 245083,
+      "geonameid": 485239,
+      "match": 0.8888888888888888
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1381,
+        675,
+        94,
+        19
+      ],
+      "source_text": "Yakutsk",
+      "name": "Yakutsk",
+      "lon": 129.72288,
+      "lat": 62.03114,
+      "country": "RU",
+      "population": 235600,
+      "geonameid": 2013159,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1895,
+        687,
+        86,
+        20
+      ],
+      "source_text": "Kuril'sk",
+      "name": "Kuril\u2019sk",
+      "lon": 147.87767,
+      "lat": 45.22686,
+      "country": "RU",
+      "population": 1607,
+      "geonameid": 2123979,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        941,
+        706,
+        129,
+        19
+      ],
+      "source_text": "Turckhansk",
+      "name": "Turukhansk",
+      "lon": 87.96766,
+      "lat": 65.7968,
+      "country": "RU",
+      "population": 4774,
+      "geonameid": 1488903,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1224,
+        730,
+        74,
+        23
+      ],
+      "source_text": "Mirnyi",
+      "name": "Mirny",
+      "lon": 113.96111,
+      "lat": 62.53528,
+      "country": "RU",
+      "population": 40308,
+      "geonameid": 2019951,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        405,
+        733,
+        130,
+        18
+      ],
+      "source_text": "toshkar Dla",
+      "name": "Yoshkar-Ola",
+      "lon": 47.89078,
+      "lat": 56.63877,
+      "country": "RU",
+      "population": 268272,
+      "geonameid": 466806,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1759,
+        736,
+        68,
+        19
+      ],
+      "source_text": "Okha",
+      "name": "Okha",
+      "lon": 142.9528,
+      "lat": 53.59485,
+      "country": "RU",
+      "population": 26560,
+      "geonameid": 2122614,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1093,
+        737,
+        61,
+        18
+      ],
+      "source_text": "Tura",
+      "name": "Tura",
+      "lon": 100.21849,
+      "lat": 64.27769,
+      "country": "RU",
+      "population": 5444,
+      "geonameid": 2014833,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        385,
+        755,
+        127,
+        22
+      ],
+      "source_text": "Lnepoksan",
+      "name": "Cheboksary",
+      "lon": 47.246,
+      "lat": 56.13218,
+      "country": "RU",
+      "population": 492331,
+      "geonameid": 569696,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        594,
+        756,
+        75,
+        18
+      ],
+      "source_text": "Seroy",
+      "name": "Serov",
+      "lon": 60.58608,
+      "lat": 59.59737,
+      "country": "RU",
+      "population": 98438,
+      "geonameid": 1492663,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1608,
+        783,
+        126,
+        20
+      ],
+      "source_text": "Nikolaevsh,",
+      "name": "Nikolayevsk-on-Amure",
+      "lon": 140.72287,
+      "lat": 53.14657,
+      "country": "RU",
+      "population": 27152,
+      "geonameid": 2122850,
+      "match": 0.9
+    },
+    {
+      "region": "russia",
+      "rect": [
+        535,
+        789,
+        74,
+        18
+      ],
+      "source_text": "Perm\u2019",
+      "name": "Perm",
+      "lon": 56.25017,
+      "lat": 58.01046,
+      "country": "RU",
+      "population": 982419,
+      "geonameid": 511196,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1058,
+        816,
+        105,
+        19
+      ],
+      "source_text": "Vanavata",
+      "name": "Vanavara",
+      "lon": 102.28434,
+      "lat": 60.34679,
+      "country": "RU",
+      "population": 3090,
+      "geonameid": 2013727,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        561,
+        819,
+        146,
+        23
+      ],
+      "source_text": "Yekaterincurg",
+      "name": "Yekaterinburg",
+      "lon": 60.61529,
+      "lat": 56.85733,
+      "country": "RU",
+      "population": 1495066,
+      "geonameid": 1486209,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1831,
+        833,
+        169,
+        33
+      ],
+      "source_text": "Yuzhno- Kurit'sk",
+      "name": "Yuzhno-Kurilsk",
+      "lon": 145.86146,
+      "lat": 44.02734,
+      "country": "RU",
+      "population": 7777,
+      "geonameid": 2119447,
+      "match": 0.9230769230769231
+    },
+    {
+      "region": "russia",
+      "rect": [
+        385,
+        847,
+        91,
+        18
+      ],
+      "source_text": "Samara",
+      "name": "Samara",
+      "lon": 50.13553,
+      "lat": 53.20767,
+      "country": "RU",
+      "population": 1163399,
+      "geonameid": 499099,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1455,
+        856,
+        76,
+        23
+      ],
+      "source_text": "Tynda",
+      "name": "Tynda",
+      "lon": 124.73676,
+      "lat": 55.14941,
+      "country": "RU",
+      "population": 37335,
+      "geonameid": 2014718,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        642,
+        868,
+        93,
+        23
+      ],
+      "source_text": "Tyurreh",
+      "name": "Tyumen",
+      "lon": 65.52722,
+      "lat": 57.15222,
+      "country": "RU",
+      "population": 768358,
+      "geonameid": 1488754,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1256,
+        870,
+        100,
+        19
+      ],
+      "source_text": "Bodaibo",
+      "name": "Bodaybo",
+      "lon": 114.20407,
+      "lat": 57.85345,
+      "country": "RU",
+      "population": 15933,
+      "geonameid": 2026583,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        620,
+        910,
+        83,
+        23
+      ],
+      "source_text": "Kurgan",
+      "name": "Kurgan",
+      "lon": 65.34344,
+      "lat": 55.44905,
+      "country": "RU",
+      "population": 309285,
+      "geonameid": 1501321,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        865,
+        928,
+        86,
+        19
+      ],
+      "source_text": "Tomsk",
+      "name": "Tomsk",
+      "lon": 84.98216,
+      "lat": 56.50049,
+      "country": "RU",
+      "population": 574002,
+      "geonameid": 1489425,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1115,
+        932,
+        80,
+        19
+      ],
+      "source_text": "Bratsk",
+      "name": "Bratsk",
+      "lon": 101.61417,
+      "lat": 56.1325,
+      "country": "RU",
+      "population": 256600,
+      "geonameid": 2051523,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        700,
+        938,
+        73,
+        19
+      ],
+      "source_text": "Omsk",
+      "name": "Omsk",
+      "lon": 73.36859,
+      "lat": 54.99244,
+      "country": "RU",
+      "population": 1172070,
+      "geonameid": 1496153,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        974,
+        942,
+        135,
+        23
+      ],
+      "source_text": "Krasnoyarsk",
+      "name": "Krasnoyarsk",
+      "lon": 92.93136,
+      "lat": 56.03742,
+      "country": "RU",
+      "population": 1090811,
+      "geonameid": 1502026,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1902,
+        958,
+        87,
+        20
+      ],
+      "source_text": "Kuril'sk",
+      "name": "Kuril\u2019sk",
+      "lon": 147.87767,
+      "lat": 45.22686,
+      "country": "RU",
+      "population": 1607,
+      "geonameid": 2123979,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        768,
+        967,
+        133,
+        19
+      ],
+      "source_text": "Novosibitsk.",
+      "name": "Novosibirsk",
+      "lon": 82.93175,
+      "lat": 55.02259,
+      "country": "RU",
+      "population": 1612833,
+      "geonameid": 1496747,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        911,
+        997,
+        118,
+        18
+      ],
+      "source_text": "Kemerovo",
+      "name": "Kemerovo",
+      "lon": 86.10435,
+      "lat": 55.35417,
+      "country": "RU",
+      "population": 558973,
+      "geonameid": 1503901,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1103,
+        1017,
+        151,
+        24
+      ],
+      "source_text": "Ust'-Ordynskiy",
+      "name": "Ust\u2019-Ordynskiy",
+      "lon": 104.74705,
+      "lat": 52.80878,
+      "country": "RU",
+      "population": 14538,
+      "geonameid": 2013894,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1003,
+        1026,
+        89,
+        18
+      ],
+      "source_text": "Abakan",
+      "name": "Abakan",
+      "lon": 91.42593,
+      "lat": 53.7154,
+      "country": "RU",
+      "population": 184168,
+      "geonameid": 1512236,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        804,
+        1034,
+        90,
+        18
+      ],
+      "source_text": "Bamaul",
+      "name": "Barnaul",
+      "lon": 83.72786,
+      "lat": 53.36199,
+      "country": "RU",
+      "population": 632372,
+      "geonameid": 1510853,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1141,
+        1055,
+        80,
+        19
+      ],
+      "source_text": "Irhatsk",
+      "name": "Irkutsk",
+      "lon": 104.29076,
+      "lat": 52.29566,
+      "country": "RU",
+      "population": 623869,
+      "geonameid": 2023469,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1247,
+        1062,
+        103,
+        19
+      ],
+      "source_text": "Ulan-Ude",
+      "name": "Ulan-Ude",
+      "lon": 107.59979,
+      "lat": 51.82648,
+      "country": "RU",
+      "population": 360278,
+      "geonameid": 2014407,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1035,
+        1101,
+        63,
+        23
+      ],
+      "source_text": "Kyzyl",
+      "name": "Kyzyl",
+      "lon": 94.43776,
+      "lat": 51.71108,
+      "country": "RU",
+      "population": 116983,
+      "geonameid": 1500973,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1812,
+        584,
+        167,
+        49
+      ],
+      "source_text": "Petropavlovsk-Kamchatsky",
+      "name": "Petropavlovsk-Kamchatsky",
+      "lon": 158.62751,
+      "lat": 53.06393,
+      "country": "RU",
+      "population": 181216,
+      "geonameid": 2122104,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1628,
+        851,
+        159,
+        44
+      ],
+      "source_text": "Komsomolsk-on-Amur",
+      "name": "Komsomolsk-on-Amur",
+      "lon": 137.00995,
+      "lat": 50.55034,
+      "country": "RU",
+      "population": 275908,
+      "geonameid": 2021851,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        845,
+        1062,
+        86,
+        44
+      ],
+      "source_text": "Gorno-Altaysk",
+      "name": "Gorno-Altaysk",
+      "lon": 85.91892,
+      "lat": 51.96056,
+      "country": "RU",
+      "population": 63214,
+      "geonameid": 1506271,
+      "match": 1
+    },
+    {
+      "region": "russia",
+      "rect": [
+        674,
+        739,
+        109,
+        49
+      ],
+      "source_text": "Khanty-Mansiysk",
+      "name": "Khanty-Mansiysk",
+      "lon": 69.02728,
+      "lat": 61.00187,
+      "country": "RU",
+      "population": 101466,
+      "geonameid": 1503772,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        788,
+        145,
+        192,
+        32
+      ],
+      "source_text": "Georgetown",
+      "name": "Georgetown",
+      "lon": -58.15527,
+      "lat": 6.80448,
+      "country": "GY",
+      "population": 235017,
+      "geonameid": 3378644,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        864,
+        178,
+        185,
+        25
+      ],
+      "source_text": "Paramaribo",
+      "name": "Paramaribo",
+      "lon": -55.16682,
+      "lat": 5.86638,
+      "country": "SR",
+      "population": 223757,
+      "geonameid": 3383330,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        936,
+        215,
+        141,
+        32
+      ],
+      "source_text": "Cayenne",
+      "name": "Cayenne",
+      "lon": -52.33455,
+      "lat": 4.9381,
+      "country": "GF",
+      "population": 61550,
+      "geonameid": 3382160,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        391,
+        232,
+        126,
+        32
+      ],
+      "source_text": "Bogota",
+      "name": "Bogot\u00e1",
+      "lon": -74.08175,
+      "lat": 4.60971,
+      "country": "CO",
+      "population": 7674366,
+      "geonameid": 3688689,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        311,
+        343,
+        95,
+        29
+      ],
+      "source_text": "Quito",
+      "name": "Quito",
+      "lon": -78.52495,
+      "lat": -0.22985,
+      "country": "EC",
+      "population": 2781641,
+      "geonameid": 3652462,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1084,
+        409,
+        151,
+        26
+      ],
+      "source_text": "Fortaleza",
+      "name": "Fortaleza",
+      "lon": -38.54306,
+      "lat": -3.71722,
+      "country": "BR",
+      "population": 2400000,
+      "geonameid": 3399415,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        692,
+        412,
+        133,
+        25
+      ],
+      "source_text": "Manaus",
+      "name": "Manaus",
+      "lon": -60.025,
+      "lat": -3.10194,
+      "country": "BR",
+      "population": 2219580,
+      "geonameid": 3663517,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1187,
+        503,
+        111,
+        26
+      ],
+      "source_text": "Recife",
+      "name": "Recife",
+      "lon": -34.88111,
+      "lat": -8.05389,
+      "country": "BR",
+      "population": 1653461,
+      "geonameid": 3390760,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        572,
+        513,
+        181,
+        25
+      ],
+      "source_text": "Fico Branco",
+      "name": "Rio Branco",
+      "lon": -67.81,
+      "lat": -9.97472,
+      "country": "BR",
+      "population": 419452,
+      "geonameid": 3662574,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        300,
+        590,
+        86,
+        28
+      ],
+      "source_text": "Lima",
+      "name": "Lima",
+      "lon": -77.02824,
+      "lat": -12.04318,
+      "country": "PE",
+      "population": 7737002,
+      "geonameid": 3936456,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1211,
+        620,
+        145,
+        26
+      ],
+      "source_text": "Salvador",
+      "name": "Salvador",
+      "lon": -38.49096,
+      "lat": -12.97563,
+      "country": "BR",
+      "population": 2711840,
+      "geonameid": 3450554,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        795,
+        674,
+        115,
+        26
+      ],
+      "source_text": "Cuiaba",
+      "name": "Cuiab\u00e1",
+      "lon": -56.09667,
+      "lat": -15.59611,
+      "country": "BR",
+      "population": 618124,
+      "geonameid": 3465038,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        959,
+        687,
+        123,
+        26
+      ],
+      "source_text": "Brasilia",
+      "name": "Bras\u00edlia",
+      "lon": -47.92972,
+      "lat": -15.77972,
+      "country": "BR",
+      "population": 2207718,
+      "geonameid": 3469058,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        579,
+        711,
+        112,
+        25
+      ],
+      "source_text": "La Paz",
+      "name": "La Paz",
+      "lon": -68.15,
+      "lat": -16.5,
+      "country": "BO",
+      "population": 2004652,
+      "geonameid": 3911925,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1128,
+        824,
+        225,
+        26
+      ],
+      "source_text": "Rio de Janeiro",
+      "name": "Rio de Janeiro",
+      "lon": -43.18223,
+      "lat": -22.90642,
+      "country": "BR",
+      "population": 6747815,
+      "geonameid": 3451190,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        719,
+        848,
+        154,
+        25
+      ],
+      "source_text": "Asuncion",
+      "name": "Asunci\u00f3n",
+      "lon": -57.647,
+      "lat": -25.28646,
+      "country": "PY",
+      "population": 1482200,
+      "geonameid": 3439389,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1031,
+        868,
+        169,
+        26
+      ],
+      "source_text": "Sao Paulo",
+      "name": "S\u00e3o Paulo",
+      "lon": -46.63611,
+      "lat": -23.5475,
+      "country": "BR",
+      "population": 12400232,
+      "geonameid": 3448439,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        367,
+        1068,
+        146,
+        32
+      ],
+      "source_text": "Santiago",
+      "name": "Santiago",
+      "lon": -70.64827,
+      "lat": -33.45694,
+      "country": "CL",
+      "population": 4837295,
+      "geonameid": 3871336,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        836,
+        1115,
+        191,
+        26
+      ],
+      "source_text": "Montevideo",
+      "name": "Montevideo",
+      "lon": -56.18816,
+      "lat": -34.90328,
+      "country": "UY",
+      "population": 1270737,
+      "geonameid": 3441575,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        805,
+        1541,
+        118,
+        33
+      ],
+      "source_text": "Stanley",
+      "name": "Stanley",
+      "lon": -57.85701,
+      "lat": -51.69382,
+      "country": "FK",
+      "population": 2213,
+      "geonameid": 3426691,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        675,
+        1102,
+        129,
+        52
+      ],
+      "source_text": "Buenos Aires",
+      "name": "Buenos Aires",
+      "lon": -58.37723,
+      "lat": -34.61315,
+      "country": "AR",
+      "population": 2891082,
+      "geonameid": 3435910,
+      "match": 1
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        894,
+        845,
+        116,
+        68
+      ],
+      "source_text": "Foz do Iguacu",
+      "name": "Foz do Igua\u00e7u",
+      "lon": -54.58806,
+      "lat": -25.54778,
+      "country": "BR",
+      "population": 297352,
+      "geonameid": 3463030,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        607,
+        123,
+        147,
+        24
+      ],
+      "source_text": "Krasnodar",
+      "name": "Krasnodar",
+      "lon": 38.98178,
+      "lat": 45.04534,
+      "country": "RU",
+      "population": 899541,
+      "geonameid": 542420,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        711,
+        180,
+        122,
+        27
+      ],
+      "source_text": "Groznyy",
+      "name": "Grozny",
+      "lon": 45.68895,
+      "lat": 43.31195,
+      "country": "RU",
+      "population": 297137,
+      "geonameid": 558418,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        951,
+        184,
+        87,
+        23
+      ],
+      "source_text": "Aktau",
+      "name": "Aktau",
+      "lon": 51.17392,
+      "lat": 43.66105,
+      "country": "KZ",
+      "population": 147443,
+      "geonameid": 610612,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        699,
+        222,
+        93,
+        24
+      ],
+      "source_text": "Tbilisi",
+      "name": "Tbilisi",
+      "lon": 44.83412,
+      "lat": 41.69143,
+      "country": "GE",
+      "population": 1049498,
+      "geonameid": 611717,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        1262,
+        256,
+        135,
+        24
+      ],
+      "source_text": "Tashkent",
+      "name": "Tashkent",
+      "lon": 69.21627,
+      "lat": 41.26465,
+      "country": "UZ",
+      "population": 1978028,
+      "geonameid": 1512569,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        821,
+        283,
+        83,
+        23
+      ],
+      "source_text": "Baku",
+      "name": "Baku",
+      "lon": 49.89201,
+      "lat": 40.37767,
+      "country": "AZ",
+      "population": 2351300,
+      "geonameid": 587084,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        682,
+        288,
+        120,
+        23
+      ],
+      "source_text": "Yerevan",
+      "name": "Yerevan",
+      "lon": 44.5126,
+      "lat": 40.17765,
+      "country": "AM",
+      "population": 1144700,
+      "geonameid": 616052,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        1060,
+        331,
+        139,
+        28
+      ],
+      "source_text": "Ashgabat",
+      "name": "Ashgabat",
+      "lon": 58.38333,
+      "lat": 37.95,
+      "country": "TM",
+      "population": 1030063,
+      "geonameid": 162183,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        894,
+        437,
+        107,
+        24
+      ],
+      "source_text": "Tehran",
+      "name": "Tehran",
+      "lon": 51.42151,
+      "lat": 35.69439,
+      "country": "IR",
+      "population": 7153309,
+      "geonameid": 112931,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        1288,
+        449,
+        89,
+        25
+      ],
+      "source_text": "Kabul",
+      "name": "Kabul",
+      "lon": 69.17233,
+      "lat": 34.52813,
+      "country": "AF",
+      "population": 4434550,
+      "geonameid": 1138958,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        569,
+        464,
+        151,
+        24
+      ],
+      "source_text": "Darnascus",
+      "name": "Damascus",
+      "lon": 36.29128,
+      "lat": 33.5102,
+      "country": "SY",
+      "population": 1569394,
+      "geonameid": 170654,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        721,
+        465,
+        132,
+        30
+      ],
+      "source_text": "Baghdad",
+      "name": "Baghdad",
+      "lon": 44.40088,
+      "lat": 33.34058,
+      "country": "IQ",
+      "population": 7216000,
+      "geonameid": 98182,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        540,
+        550,
+        130,
+        22
+      ],
+      "source_text": ". Araman",
+      "name": "Amman",
+      "lon": 35.94503,
+      "lat": 31.95522,
+      "country": "JO",
+      "population": 1275857,
+      "geonameid": 250441,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        863,
+        597,
+        101,
+        24
+      ],
+      "source_text": "Kuwait",
+      "name": "Kuwait City",
+      "lon": 47.97429,
+      "lat": 29.367,
+      "country": "KW",
+      "population": 60064,
+      "geonameid": 285787,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        818,
+        660,
+        124,
+        24
+      ],
+      "source_text": "Manama",
+      "name": "Manama",
+      "lon": 50.58565,
+      "lat": 26.22787,
+      "country": "BH",
+      "population": 147074,
+      "geonameid": 290340,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        868,
+        704,
+        80,
+        21
+      ],
+      "source_text": "Lioha",
+      "name": "Doha",
+      "lon": 51.53096,
+      "lat": 25.28545,
+      "country": "QA",
+      "population": 344939,
+      "geonameid": 290030,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        1235,
+        729,
+        111,
+        24
+      ],
+      "source_text": "Karachi",
+      "name": "Karachi",
+      "lon": 67.0104,
+      "lat": 24.8608,
+      "country": "PK",
+      "population": 11624219,
+      "geonameid": 1174872,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        906,
+        747,
+        148,
+        24
+      ],
+      "source_text": "&bu Dhabi",
+      "name": "Abu Dhabi",
+      "lon": 54.39696,
+      "lat": 24.45118,
+      "country": "AE",
+      "population": 1807000,
+      "geonameid": 292968,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        768,
+        749,
+        104,
+        28
+      ],
+      "source_text": "Rivadh",
+      "name": "Riyadh",
+      "lon": 46.72185,
+      "lat": 24.68773,
+      "country": "SA",
+      "population": 4205961,
+      "geonameid": 108410,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        1075,
+        768,
+        109,
+        24
+      ],
+      "source_text": "Muscat",
+      "name": "Muscat",
+      "lon": 58.40778,
+      "lat": 23.58413,
+      "country": "OM",
+      "population": 797000,
+      "geonameid": 287286,
+      "match": 1
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        753,
+        998,
+        85,
+        23
+      ],
+      "source_text": "Aden",
+      "name": "Aden",
+      "lon": 45.03852,
+      "lat": 12.77957,
+      "country": "YE",
+      "population": 1079670,
+      "geonameid": 415189,
+      "match": 1
+    }
+  ],
+  "unresolved_labels": [
+    {
+      "region": "africa",
+      "rect": [
+        985,
+        1206,
+        206,
+        32
+      ],
+      "text": "Victoria Harare"
+    },
+    {
+      "region": "africa",
+      "rect": [
+        985,
+        1242,
+        79,
+        24
+      ],
+      "text": "Falls"
+    },
+    {
+      "region": "asia",
+      "rect": [
+        774,
+        133,
+        174,
+        27
+      ],
+      "text": "Khapoherange"
+    },
+    {
+      "region": "asia",
+      "rect": [
+        475,
+        906,
+        247,
+        28
+      ],
+      "text": "(Rangoon) Bangkok."
+    },
+    {
+      "region": "asia",
+      "rect": [
+        807,
+        1093,
+        144,
+        47
+      ],
+      "text": "Bandar Seri Meaan=\""
+    },
+    {
+      "region": "asia",
+      "rect": [
+        521,
+        1131,
+        94,
+        21
+      ],
+      "text": ""
+    },
+    {
+      "region": "asia",
+      "rect": [
+        613,
+        1155,
+        245,
+        44
+      ],
+      "text": "Kuala Lum Pkuching"
+    },
+    {
+      "region": "australia",
+      "rect": [
+        572,
+        840,
+        96,
+        26
+      ],
+      "text": "Eucla"
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1741,
+        1159,
+        49,
+        21
+      ],
+      "text": "St."
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1195,
+        1163,
+        196,
+        31
+      ],
+      "text": "Ott ays ontreal"
+    },
+    {
+      "region": "canada",
+      "rect": [
+        1715,
+        1181,
+        74,
+        22
+      ],
+      "text": "John"
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        312,
+        440,
+        171,
+        23
+      ],
+      "text": "Cozumel Isl."
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1149,
+        858,
+        39,
+        13
+      ],
+      "text": "Pa |"
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1087,
+        867,
+        283,
+        28
+      ],
+      "text": "Oranjestad_ Curacag"
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1329,
+        892,
+        117,
+        22
+      ],
+      "text": "Bonaire"
+    },
+    {
+      "region": "caribbean",
+      "rect": [
+        1372,
+        946,
+        173,
+        28
+      ],
+      "text": "Margarita Isl"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1104,
+        340,
+        120,
+        24
+      ],
+      "text": "Chelyuskin"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1470,
+        397,
+        99,
+        19
+      ],
+      "text": "Druzhina"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        163,
+        546,
+        184,
+        35
+      ],
+      "text": "Pskov Movgotod"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1895,
+        663,
+        87,
+        18
+      ],
+      "text": "Severo"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        311,
+        672,
+        326,
+        64
+      ],
+      "text": "ANCHO wamgrnes Wee 9"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        804,
+        674,
+        116,
+        23
+      ],
+      "text": "vost"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        252,
+        792,
+        272,
+        42
+      ],
+      "text": "sarge tgaoche lahewsk"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        772,
+        797,
+        80,
+        22
+      ],
+      "text": ""
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1830,
+        872,
+        122,
+        20
+      ],
+      "text": "Sakhalinsk"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        456,
+        877,
+        160,
+        42
+      ],
+      "text": "Uta elyabinsk"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1465,
+        908,
+        120,
+        23
+      ],
+      "text": "Yostochny"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1902,
+        935,
+        96,
+        19
+      ],
+      "text": "Yuzhno-"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1616,
+        936,
+        258,
+        28
+      ],
+      "text": "Birobidzhan Khabarovsk"
+    },
+    {
+      "region": "russia",
+      "rect": [
+        1356,
+        1001,
+        136,
+        37
+      ],
+      "text": "Chita Baley"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        72,
+        329,
+        99,
+        39
+      ],
+      "text": "ir \u00bb"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        9,
+        391,
+        219,
+        33
+      ],
+      "text": "Galapagos Isl."
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1302,
+        475,
+        138,
+        26
+      ],
+      "text": "Fernande"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1350,
+        503,
+        52,
+        26
+      ],
+      "text": "de"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1305,
+        526,
+        135,
+        26
+      ],
+      "text": "Noronha"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        52,
+        917,
+        156,
+        26
+      ],
+      "text": "Easter Isl."
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        185,
+        1091,
+        196,
+        33
+      ],
+      "text": "Archipielago"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        185,
+        1128,
+        242,
+        26
+      ],
+      "text": "Juan Fernandez"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        363,
+        1586,
+        102,
+        26
+      ],
+      "text": "Punta"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        726,
+        1587,
+        180,
+        26
+      ],
+      "text": "Falkland Isl."
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        579,
+        1601,
+        350,
+        55
+      ],
+      "text": "ree a islas Malvinas)"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        1277,
+        1613,
+        163,
+        60
+      ],
+      "text": "Seorgia Isl"
+    },
+    {
+      "region": "south-america",
+      "rect": [
+        363,
+        1622,
+        120,
+        25
+      ],
+      "text": ""
+    },
+    {
+      "region": "middle-east",
+      "rect": [
+        917,
+        687,
+        25,
+        11
+      ],
+      "text": ""
+    }
+  ],
+  "download_sha256": "f626fec9dcaccf6781fc7e7046c7c58700efcb2535b93a470396bdfdae46404f",
+  "thin_label_reference_commit": "99840fb6dbad9d71b850fc401f8921d1e09d2127",
+  "thin_label_sha256": {
+    "australia-labels.png": "09aeeefa7bc47438801322e690df94373ad59b248eef56b67cffbbd1ff0fe648",
+    "africa-labels.png": "34479bf15921b794d407de14dd4cdcd20186bf9d33ad6988ec90893a0f64dfc5",
+    "europe-labels.png": "e9e05621b4c4d9c84ed35a23715be5560a964a55186b18634e726f41de9839a5",
+    "caribbean-labels.png": "cc8183312fd7a082fb66431f87a1a6af12bb6833983425e4e5c56ae95775a4ab",
+    "russia-labels.png": "48360f60f22ec4330106f235fe70c61ab9cc005a28d3e1872a35b68c3c667121",
+    "asia-labels.png": "dfb92f53502d3115f1937ce770b240e04aeef3742125ef70efa5b69e62e1fdc3",
+    "middle-east-labels.png": "fb2e3df4b038b747f580901b79440eaeb4067ccb6d82d8564ca271212e74f518",
+    "canada-labels.png": "c4d303f8dfa2d1132850323fa02c694c3b0d01df0a9fbc3e385709160c553cff",
+    "usa-labels.png": "0fe057299837c720aceb37a3e195ff46e17e148cca403bee33b618022d1138a7",
+    "south-america-labels.png": "a246dba8b7b54d5bd0b05b20782729907903047378a29431d109a93e8eec9532"
+  }
+}

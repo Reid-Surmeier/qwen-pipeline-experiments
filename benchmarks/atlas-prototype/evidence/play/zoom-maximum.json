@@ -34,6 +34,7 @@
   "detail_alpha": 1,
   "fps": 60,
   "mode": "atlas",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       188,
@@ -47,7 +48,7 @@
   },
   "position": [
     2299.16870117188,
-    2525.54248046875
+    2473.96240234375
   ],
   "region": "south-america",
   "regions": [
@@ -93,7 +94,9 @@
     }
   ],
   "shown_cities": [],
+  "south_edge": 2511.46240234375,
   "touches": 0,
+  "vertical_pan_locked": false,
   "viewport": [
     1440,
     900

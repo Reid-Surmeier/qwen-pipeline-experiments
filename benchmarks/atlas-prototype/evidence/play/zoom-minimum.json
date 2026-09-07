@@ -34,6 +34,7 @@
   "detail_alpha": 0,
   "fps": 60,
   "mode": "atlas",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       188,
@@ -47,9 +48,9 @@
   },
   "position": [
     2299.16870117188,
-    2525.54248046875
+    1572
   ],
-  "region": "south-america",
+  "region": "africa",
   "regions": [
     {
       "id": "europe",
@@ -92,15 +93,83 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
+  "shown_cities": [
+    {
+      "at": [
+        3840,
+        957
+      ],
+      "id": "asia1816670.0",
+      "labels": 1,
+      "name": "Beijing",
+      "screen": [
+        911.133666992188,
+        373.711822509766
+      ]
+    },
+    {
+      "at": [
+        2844,
+        703
+      ],
+      "id": "europe524901.0",
+      "labels": 1,
+      "name": "Moscow",
+      "screen": [
+        787.584045410156,
+        342.204193115234
+      ]
+    },
+    {
+      "at": [
+        1407,
+        932
+      ],
+      "id": "usa29.0",
+      "labels": 1,
+      "name": "New York City",
+      "screen": [
+        609.330200195312,
+        370.610687255859
+      ]
+    },
+    {
+      "at": [
+        1821,
+        1761
+      ],
+      "id": "south-america3451190.0",
+      "labels": 1,
+      "name": "Rio de Janeiro",
+      "screen": [
+        660.685180664062,
+        473.444641113281
+      ]
+    },
+    {
+      "at": [
+        4281,
+        1925
+      ],
+      "id": "australia2147714.0",
+      "labels": 1,
+      "name": "Sydney",
+      "screen": [
+        965.837890625,
+        493.788177490234
+      ]
+    }
+  ],
+  "south_edge": 5199.69223118111,
   "touches": 0,
+  "vertical_pan_locked": true,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 10,
+  "visible_cities": 5,
+  "visible_labels": 5,
   "world_size": [
     4480,
     3144

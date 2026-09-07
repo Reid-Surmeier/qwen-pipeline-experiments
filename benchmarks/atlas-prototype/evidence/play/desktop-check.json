@@ -20,11 +20,14 @@
     "sheet toggle",
     "reset",
     "Pacific wrap",
-    "zero overview cities and labels",
+    "sparse named overview",
     "Antarctica close view",
     "zoom limits 0.5 world fit and 12 native",
-    "adaptive city reveal and spacing",
-    "US northeast and Florida close views"
+    "paired city/name reveal with no orphan dots",
+    "US northeast and Florida close views",
+    "London on Great Britain",
+    "Russian town zoom tiers",
+    "southern viewport clamp under drag and resize"
   ],
   "errors": []
 }

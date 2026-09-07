@@ -47,10 +47,10 @@
     "visible": false
   },
   "position": [
-    4075.73681640625,
-    1805.02075195312
+    2442.22778320312,
+    767.934875488281
   ],
-  "region": "australia",
+  "region": "europe",
   "regions": [
     {
       "id": "europe",
@@ -96,60 +96,151 @@
   "shown_cities": [
     {
       "at": [
-        4281,
-        1925
+        2333,
+        751
       ],
-      "id": "australia2147714.0",
+      "id": "europe2643743.0",
       "labels": 1,
-      "name": "Sydney",
+      "name": "London",
       "screen": [
-        1048.42114257812,
-        641.966796875
+        381.170562744141,
+        397.467254638672
       ]
     },
     {
       "at": [
-        4199,
-        1977
+        2537,
+        758
       ],
-      "id": "australia2158177.0",
+      "id": "europe2950159.0",
       "labels": 1,
-      "name": "Melbourne",
+      "name": "Berlin",
       "screen": [
-        917.221069335938,
-        725.166809082031
+        1013.98760986328,
+        419.181579589844
       ]
     },
     {
       "at": [
-        3834,
-        1900
+        2397,
+        819
       ],
-      "id": "australia2063523.0",
+      "id": "europe2988507.0",
       "labels": 1,
-      "name": "Perth",
+      "name": "Paris",
       "screen": [
-        333.221099853516,
-        601.966796875
+        579.701416015625,
+        608.40625
+      ]
+    },
+    {
+      "at": [
+        2609,
+        841
+      ],
+      "id": "europe3054643.0",
+      "labels": 1,
+      "name": "Budapest",
+      "screen": [
+        1237.33483886719,
+        676.651245117188
+      ]
+    },
+    {
+      "at": [
+        2633,
+        763
+      ],
+      "id": "europe756135.0",
+      "labels": 1,
+      "name": "Warsaw",
+      "screen": [
+        1311.78393554688,
+        434.691802978516
+      ]
+    },
+    {
+      "at": [
+        2627,
+        883
+      ],
+      "id": "europe792680.0",
+      "labels": 1,
+      "name": "Belgrade",
+      "screen": [
+        1293.17163085938,
+        806.937133789062
+      ]
+    },
+    {
+      "at": [
+        2550,
+        799
+      ],
+      "id": "europe3067696.0",
+      "labels": 1,
+      "name": "Prague",
+      "screen": [
+        1054.31420898438,
+        546.365417480469
+      ]
+    },
+    {
+      "at": [
+        2523,
+        689
+      ],
+      "id": "europe2618425.0",
+      "labels": 1,
+      "name": "Copenhagen",
+      "screen": [
+        970.559020996094,
+        205.140518188477
+      ]
+    },
+    {
+      "at": [
+        2244,
+        727
+      ],
+      "id": "europe2964574.0",
+      "labels": 1,
+      "name": "Dublin",
+      "screen": [
+        105.088623046875,
+        323.018188476562
+      ]
+    },
+    {
+      "at": [
+        2423,
+        786
+      ],
+      "id": "europe2800866.0",
+      "labels": 1,
+      "name": "Brussels",
+      "screen": [
+        660.354553222656,
+        506.038818359375
       ]
     }
   ],
-  "south_edge": 2086.27074776217,
+  "south_edge": 913.000499994225,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 16,
-  "visible_cities": 3,
-  "visible_labels": 3,
+  "visible_annotations": 22,
+  "visible_cities": 10,
+  "visible_labels": 10,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 3.10204434394836,
   "zoom_max": 12,
   "zoom_min": 0.124045801526718,
-  "zoom_ratio": 6.4492308653318
+  "zoom_ratio": 12.5036248940688
 }

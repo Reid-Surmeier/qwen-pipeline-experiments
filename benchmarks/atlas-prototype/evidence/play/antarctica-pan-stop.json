@@ -47,10 +47,10 @@
     "visible": false
   },
   "position": [
-    4075.73681640625,
-    1805.02075195312
+    2291.4765625,
+    3106.5
   ],
-  "region": "australia",
+  "region": "south-america",
   "regions": [
     {
       "id": "europe",
@@ -93,63 +93,23 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [
-    {
-      "at": [
-        4281,
-        1925
-      ],
-      "id": "australia2147714.0",
-      "labels": 1,
-      "name": "Sydney",
-      "screen": [
-        1048.42114257812,
-        641.966796875
-      ]
-    },
-    {
-      "at": [
-        4199,
-        1977
-      ],
-      "id": "australia2158177.0",
-      "labels": 1,
-      "name": "Melbourne",
-      "screen": [
-        917.221069335938,
-        725.166809082031
-      ]
-    },
-    {
-      "at": [
-        3834,
-        1900
-      ],
-      "id": "australia2063523.0",
-      "labels": 1,
-      "name": "Perth",
-      "screen": [
-        333.221099853516,
-        601.966796875
-      ]
-    }
-  ],
-  "south_edge": 2086.27074776217,
+  "shown_cities": [],
+  "south_edge": 3144,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 16,
-  "visible_cities": 3,
-  "visible_labels": 3,
+  "visible_annotations": 0,
+  "visible_cities": 0,
+  "visible_labels": 0,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 12,
   "zoom_max": 12,
   "zoom_min": 0.124045801526718,
-  "zoom_ratio": 6.4492308653318
+  "zoom_ratio": 48.3692307692308
 }

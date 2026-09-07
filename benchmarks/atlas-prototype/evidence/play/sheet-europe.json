@@ -34,6 +34,7 @@
   "detail_alpha": 0,
   "fps": 60,
   "mode": "sheet",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       188,
@@ -92,15 +93,44 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
+  "shown_cities": [
+    {
+      "at": [
+        1407,
+        932
+      ],
+      "id": "usa29.0",
+      "labels": 1,
+      "name": "New York City",
+      "screen": [
+        999.910705566406,
+        597.023803710938
+      ]
+    },
+    {
+      "at": [
+        882,
+        1030
+      ],
+      "id": "usa92.0",
+      "labels": 1,
+      "name": "Los Angeles",
+      "screen": [
+        703.035705566406,
+        652.440490722656
+      ]
+    }
+  ],
+  "south_edge": 1467.78948966156,
   "touches": 0,
+  "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 0,
-  "visible_cities": 0,
-  "visible_labels": 0,
+  "visible_annotations": 4,
+  "visible_cities": 2,
+  "visible_labels": 2,
   "world_size": [
     4480,
     3144

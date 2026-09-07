@@ -34,6 +34,7 @@
   "detail_alpha": 1,
   "fps": 60,
   "mode": "atlas",
+  "orphan_dots": 0,
   "popup": {
     "position": [
       188,
@@ -47,7 +48,7 @@
   },
   "position": [
     2299.16870117188,
-    2525.54248046875
+    2473.96240234375
   ],
   "region": "south-america",
   "regions": [
@@ -92,38 +93,17 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [
-    {
-      "at": [
-        1617.58801269531,
-        2248.12963867188
-      ],
-      "id": "south-america32.0",
-      "screen": [
-        84.3977661132812,
-        191.301025390625
-      ]
-    },
-    {
-      "at": [
-        1708.38195800781,
-        2204.78442382812
-      ],
-      "id": "south-america33.0",
-      "screen": [
-        169.06689453125,
-        150.879821777344
-      ]
-    }
-  ],
+  "shown_cities": [],
+  "south_edge": 2956.51468959354,
   "touches": 0,
+  "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 6,
-  "visible_cities": 2,
-  "visible_labels": 2,
+  "visible_annotations": 0,
+  "visible_cities": 0,
+  "visible_labels": 0,
   "world_size": [
     4480,
     3144
