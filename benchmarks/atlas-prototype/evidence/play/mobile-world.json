@@ -24,7 +24,7 @@
       100,
       36
     ],
-    "\u2212": [
+    "−": [
       251,
       23,
       44,
@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 59,
+  "fps": 25,
   "mode": "atlas",
   "popup": {
     "position": [
@@ -47,7 +47,7 @@
   },
   "position": [
     2240,
-    569.180297851562
+    1143.58471679688
   ],
   "region": "europe",
   "regions": [
@@ -92,12 +92,21 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
+  "shown_cities": [],
   "touches": 0,
   "viewport": [
     390,
     844
   ],
-  "visible_annotations": 456,
+  "visible_annotations": 0,
+  "visible_cities": 0,
+  "visible_labels": 0,
+  "world_size": [
+    4480,
+    3144
+  ],
   "zoom": 0.0816964283585548,
+  "zoom_max": 12,
+  "zoom_min": 0.0408482142857143,
   "zoom_ratio": 0.999999997394332
 }

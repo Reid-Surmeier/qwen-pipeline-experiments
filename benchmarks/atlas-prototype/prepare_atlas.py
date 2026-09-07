@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,hashlib,shutil,sys
 import numpy as np
-from PIL import Image
+from PIL import Image,ImageDraw
 from scipy import ndimage as nd
 from scipy.interpolate import RBFInterpolator
 
@@ -38,8 +38,60 @@ for s in nd.find_objects(cc):
 pacific=Image.open(R/'generation/pacific-01/image-01.png').convert('RGB').resize((1100,800),Image.Resampling.NEAREST)
 p=np.array(pacific);v=p.reshape(-1,3).astype(int);p=PALETTE[((v[:,None]-PALETTE)**2).sum(2).argmin(1)].reshape(p.shape).astype('uint8')
 # Copy only the sea/New Zealand side, leaving Australia's approved pixels untouched.
-for x in range(488,1100):b[1390:2190,(3980+x)%4480]=p[:,x]
+# Retain the Muse New Zealand silhouette, scaled to its mainland geographic extent.
+# Rebuild its white stroke after resizing so it stays eight native pixels thick.
+nz=np.all(p==PINK,2);nz[:260]=False;nz[:,:488]=False
+ys,xs=np.where(nz);crop=Image.fromarray(nz[ys.min():ys.max()+1,xs.min():xs.max()+1])
+west,north=world(166.4,-34.4);east,south=world(178.6,-47.3)
+nw,nh=round(east-west),round(south-north)
+nz_small=np.array(crop.resize((nw,nh),Image.Resampling.NEAREST),bool)
+for x in range(488,1100):b[1390:2190,(3980+x)%4480]=CYAN
+nz_mask=np.zeros(b.shape[:2],bool)
+for x in range(nw):nz_mask[round(north):round(north)+nh,(round(west)+x)%4480]=nz_small[:,x]
+# Wrap the stroke as well as the islands across the Pacific seam.
+wrapped=np.pad(nz_mask,((0,0),(8,8)),mode='wrap')
+stroke=nd.binary_dilation(wrapped,iterations=8)[:,8:-8]&~nz_mask
+b[stroke]=WHITE;b[nz_mask]=PINK
+(R/'evidence/new-zealand-scale.json').write_text(json.dumps({'donor_bounds':[int(xs.min()),int(ys.min()),int(xs.max()-xs.min()+1),int(ys.max()-ys.min()+1)],'target_land_size':[nw,nh],'native_white_stroke':8,'geographic_extent':[166.4,-47.3,178.6,-34.4],'land_pixels':int(nz_mask.sum()),'source':'Existing Muse Pacific output; resized, no new generation'},indent=2)+'\n')
+# Extend the cropped canvas to the South Pole using Natural Earth's land silhouette.
+height=3144
+extended=np.full((height,4480,3),CYAN,dtype='uint8');extended[:len(b)]=b;b=extended
+polar=Image.new('1',(1120,height//4));draw=ImageDraw.Draw(polar)
+for feature in json.loads((R/'reference/antarctica.geojson').read_text())['features']:
+ geometry=feature['geometry'];polys=[geometry['coordinates']] if geometry['type']=='Polygon' else geometry['coordinates']
+ for polygon in polys:
+  for shift in [-4480,0,4480]:
+   draw.polygon([tuple((world(lon,lat)+[shift,0])/4) for lon,lat in polygon[0]],fill=1)
+land=np.array(polar.resize((4480,height),Image.Resampling.NEAREST),bool)
+coast=nd.binary_dilation(land,iterations=8)&~land
+b[coast]=WHITE;b[land]=PINK
+# Finish the southern tip that the old canvas clipped, within its existing silhouette.
+last=np.where(np.all(b[2239]==PINK,1))[0]
+for run in np.split(last,np.where(np.diff(last)>1)[0]+1):
+ if len(run) and 1300<run.mean()<1700:
+  tip=Image.new('1',(4480,height));d=ImageDraw.Draw(tip);left,right=int(run[0]),int(run[-1])
+  d.polygon([(left,2230),(right,2230),(right-2,2250),((left+right)//2+3,2264),(left+2,2247)],fill=1)
+  m=np.array(tip,bool);stroke=nd.binary_dilation(m,iterations=8)&~m;stroke[:2240]=False
+  b[stroke]=WHITE;b[m]=PINK
+# The source world omits the Florida Keys. Add their tiny stylized land marks,
+# using the same local offset as the existing southern Florida coast.
+keys=Image.new('1',(4480,height));d=ImageDraw.Draw(keys)
+for x,y in [(1317,1153),(1327,1148)]:d.rectangle((x-5,y-4,x+5,y+4),fill=1)
+m=np.array(keys,bool);stroke=nd.binary_dilation(m,iterations=8)&~m
+b[stroke & np.all(b==CYAN,2)]=WHITE;b[m]=PINK
 Image.fromarray(b).save(A/'terrain.png')
+# Keep only original number badges at overview; no baked city dots or lettering.
+overlay=np.zeros((height,4480,4),dtype='uint8')
+for badge in json.loads((source.parent/'review-v003.json').read_text())['badges']:
+ x,y,w,h=badge['rectangle'];overlay[y:y+h,x:x+w,:3]=a[y:y+h,x:x+w];overlay[y:y+h,x:x+w,3]=255
+Image.fromarray(overlay).save(A/'world-badges.png')
+# The illustrative coast differs slightly from geographic coordinates. Require city
+# centers to sit four pixels inside its land, and retain each measured correction.
+safe=nd.binary_erosion(np.all(b==PINK,2),iterations=4)
+_,land_idx=nd.distance_transform_edt(~safe,return_indices=True)
+usa_reference=json.loads((R/'reference/usa-cities.json').read_text())
+usa_cities={c['marker']:c for c in usa_reference['cities']}
+usa_report=[]
 for x in range(488,1100):a[1390:2190,(3980+x)%4480]=p[:,x]
 Image.fromarray(a).save(A/'world.png')
 # Native pixel control points read from each existing sheet, with known city lon/lat.
@@ -69,6 +121,7 @@ for name,pts in controls.items():
  if name=='usa':alpha[:,:750]=0
  if name=='middle-east':
   valid=np.zeros_like(alpha);valid[33:699,308:1568]=255;valid[699:1054,755:1568]=255;alpha &= valid
+ if name=='usa':pts=[[*c['source_center'],c['lon'],c['lat']] for c in usa_cities.values()]
  points=np.array(pts,dtype=float);src=points[:,:2];dst=np.array([world(lon,lat) for lon,lat in points[:,2:]])
  # Fit an affine fallback for the sheet edge, interpolate landmark corrections inside.
  matrix=np.linalg.lstsq(np.column_stack([src,np.ones(len(src))]),dst,rcond=None)[0]
@@ -87,7 +140,13 @@ for name,pts in controls.items():
  glyph=np.all(s<65,2)&(alpha>0)&~badge_mask
  annotations=[]
  annotation_alpha=np.zeros((H,W),dtype='uint8')
- groups,count=nd.label(nd.binary_dilation(glyph,structure=np.ones((3,21))))
+ joined=nd.binary_dilation(glyph,structure=np.ones((3,21)))
+ if name=='usa':
+  # These adjacent source names touch after word grouping; split only their blank gaps.
+  for x in [1835,1941]:
+   assert not glyph[366:399,x].any()
+   joined[366:399,x]=False
+ groups,count=nd.label(joined)
  def owned(pos):
   lon=(pos[0]*1.9/2+45-2294.25)/12.02
   my=(1439-(pos[1]*1.915/2+17))/687.6
@@ -117,13 +176,54 @@ for name,pts in controls.items():
  allowed=None
  if name=='europe':allowed=set(map(int,json.loads((R/'evidence/europe-reduction.json').read_text())['retained']))
  for index,(x,y,w,h) in enumerate(all_marks[name]):
+  if name=='usa' and index not in usa_cities:continue
   if allowed is not None and index not in allowed:continue
   x=max(0,x-1);y=max(0,y-1);w+=2;h+=2
   mask=np.all(s[y:y+h,x:x+w]==[204,51,51],2)&(alpha[y:y+h,x:x+w]>0)
-  if mask.any():add_group((x,y,w,h),mask,'city')
+  if mask.any():
+   add_group((x,y,w,h),mask,'city')
+   if annotations[-1]['kind']=='city':annotations[-1]['city_id']=index
+ cities=[g for g in annotations if g['kind']=='city']
+ # Resolve source glyphs to their adjacent red marker BEFORE moving either one.
+ for g in annotations:
+  if g['kind']!='label' or not cities:continue
+  x,y,w,h=g['rect']
+  def edge_distance(c):
+   cx,cy,cw,ch=c['rect'];cx+=cw/2;cy+=ch/2
+   return max(x-cx,0,cx-x-w)**2+max(y-cy,0,cy-y-h)**2
+  city=min(cities,key=edge_distance);g['city_id']=city['city_id']
+  cx,cy,cw,ch=city['rect'];delta=np.array([x+w/2-cx-cw/2,y+h/2-cy-ch/2])
+  # Preserve which side of the dot its original label used, at a readable screen gap.
+  if abs(delta[0])/max(w,1)>abs(delta[1])/max(h,1):offset=[float(np.sign(delta[0])*(w/2+9)),float(np.clip(delta[1],-h/2,h/2))]
+  else:offset=[float(np.clip(delta[0],-w/2,w/2)),float(np.sign(delta[1])*(h/2+9))]
+  g['offset']=offset
+ if name=='usa':
+  used=[]
+  for city in sorted(cities,key=lambda g:-usa_cities[g['city_id']]['population']):
+   c=usa_cities[city['city_id']];raw=world(c['lon'],c['lat'])
+   # Reviewed coast-side anchors preserve the order of the northeast corridor and Keys.
+   anchors={29:[1407,932],35:[1390,943],39:[1395,952],88:[1317,1153]}
+   preferred=np.array(anchors.get(c['marker'],raw));x,y=np.rint(preferred).astype(int)
+   # Coast-side placement, with distinct nearby cities kept distinct on the pixel grid.
+   yy,xx=np.where(safe[max(0,y-48):y+49,max(0,x-48):x+49]);xx+=max(0,x-48);yy+=max(0,y-48)
+   candidates=np.column_stack([xx,yy]);score=((candidates-preferred)**2).sum(1).astype(float)
+   for previous in used:score[((candidates-previous)**2).sum(1)<64]=np.inf
+   assert len(score) and np.isfinite(score.min()),c['name']
+   at=candidates[score.argmin()];used.append(at);city['at']=at.tolist();city['name']=c['name']
+   usa_report.append({'name':c['name'],'marker':c['marker'],'geographic_at':raw.tolist(),'at':at.tolist(),'adjustment_pixels':float(np.linalg.norm(at-raw))})
+ # Spatial reveal order gives every area a sparse first layer, then fills the gaps.
+ remaining=cities.copy();chosen=[]
+ while remaining:
+  city=max(remaining,key=lambda g:min((np.linalg.norm(np.array(g['at'])-c['at']) for c in chosen),default=1))
+  city['rank']=len(chosen);chosen.append(city);remaining.remove(city)
+ by_id={c['city_id']:c for c in cities}
+ for g in annotations:
+  if g['kind']=='label':g['at']=by_id[g['city_id']]['at']
+ # Close broken one-pixel strokes and embolden the original glyphs by one pixel.
+ bold=nd.binary_dilation(glyph,structure=np.array([[0,1,0],[1,1,1],[0,1,0]]))&~badge_mask
  annotation_image=np.dstack([s,annotation_alpha])
  Image.fromarray(annotation_image).save(A/f'{name}-annotations.png')
- Image.fromarray(np.dstack([s,glyph.astype('uint8')*255])).save(A/f'{name}-labels.png')
+ Image.fromarray(np.dstack([np.zeros_like(s),bold.astype('uint8')*255])).save(A/f'{name}-labels.png')
  text_heights=[v['rect'][3] for v in annotations if v['kind']=='label']
  text_scale=16/max(18,float(np.median(text_heights)))
  # Keep a flat registered preview for provenance; the engine lays these groups out live.
@@ -139,5 +239,7 @@ for name,pts in controls.items():
 # Geographic focus points drive navigation, rather than artifact rectangle centers.
 focuses={'africa':(18,0),'asia':(108,26),'australia':(135,-25),'canada':(-98,60),'caribbean':(-77,17),'europe':(14,51),'middle-east':(53,30),'russia':(101,62),'south-america':(-60,-20),'usa':(-98,38)}
 for row in regions:row['focus']=world(*focuses[row['id']]).tolist()
-(R/'godot/atlas.json').write_text(json.dumps({'world_size':[4480,2240],'regions':regions,'generation':'../generation/ledger.json'},indent=2)+'\n')
+(R/'godot/atlas.json').write_text(json.dumps({'world_size':[4480,height],'regions':regions,'generation':'../generation/ledger.json'},indent=2)+'\n')
 print('Atlas assets ready',flush=True)
+
+(R/'evidence/usa-registration.json').write_text(json.dumps(usa_report,indent=2)+'\n')

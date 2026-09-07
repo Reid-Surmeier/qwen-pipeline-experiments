@@ -24,15 +24,15 @@
       155,
       36
     ],
-    "\u2212": [
+    "−": [
       462,
       23,
       44,
       36
     ]
   },
-  "detail_alpha": 0.306216025814539,
-  "fps": 51,
+  "detail_alpha": 0,
+  "fps": 60,
   "mode": "sheet",
   "popup": {
     "position": [
@@ -92,12 +92,21 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
+  "shown_cities": [],
   "touches": 0,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 234,
+  "visible_annotations": 0,
+  "visible_cities": 0,
+  "visible_labels": 0,
+  "world_size": [
+    4480,
+    3144
+  ],
   "zoom": 0.565476179122925,
-  "zoom_ratio": 1.78907717688609
+  "zoom_max": 12,
+  "zoom_min": 0.124045801526718,
+  "zoom_ratio": 2.27930398354164
 }

@@ -2,10 +2,22 @@
   "status": "pass",
   "regions": 10,
   "europe_city_count": 47,
+  "us_cities_on_land": 89,
+  "overview_city_count": 0,
+  "antarctica_present": true,
+  "new_zealand_land_size": [
+    154,
+    193
+  ],
+  "zoom_range": [
+    "0.5 world fit",
+    "12 native"
+  ],
+  "labels_solid_black": true,
   "unchanged_badges": 120,
   "other_full_sheets_byte_identical": 9,
   "europe_pixels_changed_outside_mask": 0,
-  "complete_terrain_pixels": 10035200,
+  "complete_terrain_pixels": 14085120,
   "served_files_hash_verified": [
     "index.html",
     "index.js",

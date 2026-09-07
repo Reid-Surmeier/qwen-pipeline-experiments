@@ -24,7 +24,7 @@
       155,
       36
     ],
-    "\u2212": [
+    "−": [
       438,
       23,
       44,
@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 59,
+  "fps": 44,
   "mode": "atlas",
   "popup": {
     "position": [
@@ -47,9 +47,9 @@
   },
   "position": [
     2240,
-    977.627136230469
+    1430.92309570312
   ],
-  "region": "europe",
+  "region": "africa",
   "regions": [
     {
       "id": "europe",
@@ -92,12 +92,21 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
+  "shown_cities": [],
   "touches": 0,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 538,
-  "zoom": 0.316071420907974,
-  "zoom_ratio": 0.999999975754043
+  "visible_annotations": 0,
+  "visible_cities": 0,
+  "visible_labels": 0,
+  "world_size": [
+    4480,
+    3144
+  ],
+  "zoom": 0.248091608285904,
+  "zoom_max": 12,
+  "zoom_min": 0.124045801526718,
+  "zoom_ratio": 1.00000002109087
 }

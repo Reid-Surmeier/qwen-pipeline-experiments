@@ -1,0 +1,1167 @@
+{
+  "source": "https://download.geonames.org/export/dump/cities5000.zip",
+  "license": "GeoNames CC BY 4.0",
+  "excluded_duplicate_markers": [
+    99
+  ],
+  "cities": [
+    {
+      "marker": 3,
+      "name": "International Falls",
+      "state": "MN",
+      "source_center": [
+        1778.5,
+        201.0
+      ],
+      "lon": -93.41098,
+      "lat": 48.60105,
+      "population": 6158,
+      "geonameid": 5031404
+    },
+    {
+      "marker": 4,
+      "name": "Lewiston",
+      "state": "ID",
+      "source_center": [
+        1116.0,
+        206.5
+      ],
+      "lon": -117.01766,
+      "lat": 46.41655,
+      "population": 32544,
+      "geonameid": 5598538
+    },
+    {
+      "marker": 5,
+      "name": "Portland",
+      "state": "OR",
+      "source_center": [
+        936.0,
+        216.0
+      ],
+      "lon": -122.67621,
+      "lat": 45.52345,
+      "population": 652503,
+      "geonameid": 5746545
+    },
+    {
+      "marker": 7,
+      "name": "Helena",
+      "state": "MT",
+      "source_center": [
+        1253.5,
+        238.5
+      ],
+      "lon": -112.03611,
+      "lat": 46.59271,
+      "population": 32091,
+      "geonameid": 5656882
+    },
+    {
+      "marker": 8,
+      "name": "Bismarck",
+      "state": "ND",
+      "source_center": [
+        1558.5,
+        254.5
+      ],
+      "lon": -100.78374,
+      "lat": 46.80833,
+      "population": 75092,
+      "geonameid": 5688025
+    },
+    {
+      "marker": 12,
+      "name": "Billings",
+      "state": "MT",
+      "source_center": [
+        1340.5,
+        280.5
+      ],
+      "lon": -108.50069,
+      "lat": 45.78329,
+      "population": 117116,
+      "geonameid": 5640350
+    },
+    {
+      "marker": 13,
+      "name": "Portland",
+      "state": "ME",
+      "source_center": [
+        2499.5,
+        283.5
+      ],
+      "lon": -70.2589,
+      "lat": 43.65737,
+      "population": 66881,
+      "geonameid": 4975802
+    },
+    {
+      "marker": 14,
+      "name": "Montpelier",
+      "state": "VT",
+      "source_center": [
+        2414.5,
+        285.5
+      ],
+      "lon": -72.57539,
+      "lat": 44.26006,
+      "population": 8074,
+      "geonameid": 5238685
+    },
+    {
+      "marker": 15,
+      "name": "Manchester",
+      "state": "NH",
+      "source_center": [
+        2470.5,
+        319.5
+      ],
+      "lon": -71.45479,
+      "lat": 42.99564,
+      "population": 110229,
+      "geonameid": 5089178
+    },
+    {
+      "marker": 16,
+      "name": "Boise",
+      "state": "ID",
+      "source_center": [
+        1102.0,
+        341.0
+      ],
+      "lon": -116.20345,
+      "lat": 43.6135,
+      "population": 235684,
+      "geonameid": 5586437
+    },
+    {
+      "marker": 17,
+      "name": "Boston",
+      "state": "MA",
+      "source_center": [
+        2490.0,
+        345.5
+      ],
+      "lon": -71.05977,
+      "lat": 42.35843,
+      "population": 653833,
+      "geonameid": 4930956
+    },
+    {
+      "marker": 18,
+      "name": "Green Bay",
+      "state": "WI",
+      "source_center": [
+        1938.0,
+        346.5
+      ],
+      "lon": -88.01983,
+      "lat": 44.51916,
+      "population": 105207,
+      "geonameid": 5254962
+    },
+    {
+      "marker": 19,
+      "name": "Idaho Falls",
+      "state": "ID",
+      "source_center": [
+        1219.5,
+        350.5
+      ],
+      "lon": -112.03414,
+      "lat": 43.46658,
+      "population": 59184,
+      "geonameid": 5596475
+    },
+    {
+      "marker": 20,
+      "name": "Minneapolis",
+      "state": "MN",
+      "source_center": [
+        1761.5,
+        351.5
+      ],
+      "lon": -93.26384,
+      "lat": 44.97997,
+      "population": 410939,
+      "geonameid": 5037649
+    },
+    {
+      "marker": 21,
+      "name": "Saint Paul",
+      "state": "MN",
+      "source_center": [
+        1779.5,
+        352.5
+      ],
+      "lon": -93.09327,
+      "lat": 44.94441,
+      "population": 303176,
+      "geonameid": 5045360
+    },
+    {
+      "marker": 22,
+      "name": "Rapid City",
+      "state": "SD",
+      "source_center": [
+        1490.0,
+        364.5
+      ],
+      "lon": -103.23101,
+      "lat": 44.08054,
+      "population": 73569,
+      "geonameid": 5768233
+    },
+    {
+      "marker": 23,
+      "name": "Pierre",
+      "state": "SD",
+      "source_center": [
+        1564.5,
+        373.5
+      ],
+      "lon": -100.35097,
+      "lat": 44.36832,
+      "population": 14091,
+      "geonameid": 5767918
+    },
+    {
+      "marker": 24,
+      "name": "Providence",
+      "state": "RI",
+      "source_center": [
+        2483.0,
+        375.5
+      ],
+      "lon": -71.41283,
+      "lat": 41.82399,
+      "population": 190934,
+      "geonameid": 5224151
+    },
+    {
+      "marker": 25,
+      "name": "Buffalo",
+      "state": "NY",
+      "source_center": [
+        2229.5,
+        383.0
+      ],
+      "lon": -78.87837,
+      "lat": 42.88645,
+      "population": 258071,
+      "geonameid": 5110629
+    },
+    {
+      "marker": 26,
+      "name": "Madison",
+      "state": "WI",
+      "source_center": [
+        1890.0,
+        402.5
+      ],
+      "lon": -89.40123,
+      "lat": 43.07305,
+      "population": 280305,
+      "geonameid": 5261457
+    },
+    {
+      "marker": 27,
+      "name": "Casper",
+      "state": "WY",
+      "source_center": [
+        1378.5,
+        404.0
+      ],
+      "lon": -106.31308,
+      "lat": 42.86663,
+      "population": 60285,
+      "geonameid": 5820705
+    },
+    {
+      "marker": 28,
+      "name": "Detroit",
+      "state": "MI",
+      "source_center": [
+        2095.5,
+        412.0
+      ],
+      "lon": -83.04575,
+      "lat": 42.33143,
+      "population": 645705,
+      "geonameid": 4990729
+    },
+    {
+      "marker": 29,
+      "name": "New York City",
+      "state": "NY",
+      "source_center": [
+        2407.5,
+        426.0
+      ],
+      "lon": -74.00597,
+      "lat": 40.71427,
+      "population": 8804190,
+      "geonameid": 5128581
+    },
+    {
+      "marker": 30,
+      "name": "Cleveland",
+      "state": "OH",
+      "source_center": [
+        2144.5,
+        451.5
+      ],
+      "lon": -81.69541,
+      "lat": 41.4995,
+      "population": 365379,
+      "geonameid": 5150529
+    },
+    {
+      "marker": 31,
+      "name": "Scottsbluff",
+      "state": "NE",
+      "source_center": [
+        1459.5,
+        453.5
+      ],
+      "lon": -103.66717,
+      "lat": 41.86663,
+      "population": 14802,
+      "geonameid": 5699404
+    },
+    {
+      "marker": 32,
+      "name": "Chicago",
+      "state": "IL",
+      "source_center": [
+        1954.0,
+        464.5
+      ],
+      "lon": -87.65005,
+      "lat": 41.85003,
+      "population": 2664452,
+      "geonameid": 4887398
+    },
+    {
+      "marker": 33,
+      "name": "Des Moines",
+      "state": "IA",
+      "source_center": [
+        1766.5,
+        466.5
+      ],
+      "lon": -93.60911,
+      "lat": 41.60054,
+      "population": 214133,
+      "geonameid": 4853828
+    },
+    {
+      "marker": 34,
+      "name": "Reno",
+      "state": "NV",
+      "source_center": [
+        949.5,
+        469.5
+      ],
+      "lon": -119.8138,
+      "lat": 39.52963,
+      "population": 264165,
+      "geonameid": 5511077
+    },
+    {
+      "marker": 35,
+      "name": "Philadelphia",
+      "state": "PA",
+      "source_center": [
+        2364.5,
+        470.5
+      ],
+      "lon": -75.16362,
+      "lat": 39.95238,
+      "population": 1573916,
+      "geonameid": 4560349
+    },
+    {
+      "marker": 36,
+      "name": "Pittsburgh",
+      "state": "PA",
+      "source_center": [
+        2212.5,
+        472.5
+      ],
+      "lon": -79.99589,
+      "lat": 40.44062,
+      "population": 304391,
+      "geonameid": 5206379
+    },
+    {
+      "marker": 37,
+      "name": "Cheyenne",
+      "state": "WY",
+      "source_center": [
+        1410.0,
+        477.5
+      ],
+      "lon": -104.82025,
+      "lat": 41.13998,
+      "population": 65132,
+      "geonameid": 5821086
+    },
+    {
+      "marker": 38,
+      "name": "Omaha",
+      "state": "NE",
+      "source_center": [
+        1677.5,
+        482.5
+      ],
+      "lon": -95.94043,
+      "lat": 41.25626,
+      "population": 486051,
+      "geonameid": 5074472
+    },
+    {
+      "marker": 39,
+      "name": "Atlantic City",
+      "state": "NJ",
+      "source_center": [
+        2406.0,
+        483.5
+      ],
+      "lon": -74.42306,
+      "lat": 39.36415,
+      "population": 39260,
+      "geonameid": 4500546
+    },
+    {
+      "marker": 40,
+      "name": "Columbus",
+      "state": "OH",
+      "source_center": [
+        2124.0,
+        514.5
+      ],
+      "lon": -82.99879,
+      "lat": 39.96118,
+      "population": 913175,
+      "geonameid": 4509177
+    },
+    {
+      "marker": 41,
+      "name": "San Francisco",
+      "state": "CA",
+      "source_center": [
+        832.5,
+        533.5
+      ],
+      "lon": -122.41942,
+      "lat": 37.77493,
+      "population": 827526,
+      "geonameid": 5391959
+    },
+    {
+      "marker": 42,
+      "name": "Indianapolis",
+      "state": "IN",
+      "source_center": [
+        2010.5,
+        545.5
+      ],
+      "lon": -86.15804,
+      "lat": 39.76838,
+      "population": 887642,
+      "geonameid": 4259418
+    },
+    {
+      "marker": 44,
+      "name": "Denver",
+      "state": "CO",
+      "source_center": [
+        1393.5,
+        549.5
+      ],
+      "lon": -104.9847,
+      "lat": 39.73915,
+      "population": 729019,
+      "geonameid": 5419384
+    },
+    {
+      "marker": 45,
+      "name": "Cincinnati",
+      "state": "OH",
+      "source_center": [
+        2070.5,
+        551.0
+      ],
+      "lon": -84.51439,
+      "lat": 39.12711,
+      "population": 311097,
+      "geonameid": 4508722
+    },
+    {
+      "marker": 46,
+      "name": "Charleston",
+      "state": "WV",
+      "source_center": [
+        2175.5,
+        571.5
+      ],
+      "lon": -81.63262,
+      "lat": 38.34982,
+      "population": 46838,
+      "geonameid": 4801859
+    },
+    {
+      "marker": 47,
+      "name": "Saint George",
+      "state": "UT",
+      "source_center": [
+        1129.5,
+        594.5
+      ],
+      "lon": -113.58412,
+      "lat": 37.10415,
+      "population": 72897,
+      "geonameid": 5546220
+    },
+    {
+      "marker": 48,
+      "name": "Richmond",
+      "state": "VA",
+      "source_center": [
+        2300.5,
+        595.5
+      ],
+      "lon": -77.46026,
+      "lat": 37.55376,
+      "population": 226610,
+      "geonameid": 4781708
+    },
+    {
+      "marker": 49,
+      "name": "Kansas City",
+      "state": "MO",
+      "source_center": [
+        1744.5,
+        597.5
+      ],
+      "lon": -94.57857,
+      "lat": 39.09973,
+      "population": 475378,
+      "geonameid": 4393217
+    },
+    {
+      "marker": 50,
+      "name": "St. Louis",
+      "state": "MO",
+      "source_center": [
+        1862.0,
+        598.5
+      ],
+      "lon": -90.19789,
+      "lat": 38.62727,
+      "population": 279695,
+      "geonameid": 4407066
+    },
+    {
+      "marker": 51,
+      "name": "Topeka",
+      "state": "KS",
+      "source_center": [
+        1681.5,
+        606.0
+      ],
+      "lon": -95.67804,
+      "lat": 39.04833,
+      "population": 125963,
+      "geonameid": 4280539
+    },
+    {
+      "marker": 52,
+      "name": "Louisville",
+      "state": "KY",
+      "source_center": [
+        2038.5,
+        606.5
+      ],
+      "lon": -85.75941,
+      "lat": 38.25424,
+      "population": 624444,
+      "geonameid": 4299276
+    },
+    {
+      "marker": 53,
+      "name": "Norfolk",
+      "state": "VA",
+      "source_center": [
+        2363.5,
+        606.5
+      ],
+      "lon": -76.28522,
+      "lat": 36.84681,
+      "population": 238005,
+      "geonameid": 4776222
+    },
+    {
+      "marker": 54,
+      "name": "Dodge City",
+      "state": "KS",
+      "source_center": [
+        1565.5,
+        627.0
+      ],
+      "lon": -100.01708,
+      "lat": 37.7528,
+      "population": 27912,
+      "geonameid": 5445298
+    },
+    {
+      "marker": 55,
+      "name": "Las Vegas",
+      "state": "NV",
+      "source_center": [
+        1051.5,
+        638.5
+      ],
+      "lon": -115.13722,
+      "lat": 36.17497,
+      "population": 641903,
+      "geonameid": 5506956
+    },
+    {
+      "marker": 56,
+      "name": "Johnson City",
+      "state": "TN",
+      "source_center": [
+        2138.0,
+        664.5
+      ],
+      "lon": -82.35347,
+      "lat": 36.31344,
+      "population": 66027,
+      "geonameid": 4633419
+    },
+    {
+      "marker": 57,
+      "name": "Nashville",
+      "state": "TN",
+      "source_center": [
+        2014.5,
+        681.5
+      ],
+      "lon": -86.78444,
+      "lat": 36.16589,
+      "population": 689447,
+      "geonameid": 4644585
+    },
+    {
+      "marker": 58,
+      "name": "Santa Fe",
+      "state": "NM",
+      "source_center": [
+        1344.0,
+        696.0
+      ],
+      "lon": -105.9378,
+      "lat": 35.68698,
+      "population": 87505,
+      "geonameid": 5490263
+    },
+    {
+      "marker": 60,
+      "name": "Charlotte",
+      "state": "NC",
+      "source_center": [
+        2216.5,
+        704.5
+      ],
+      "lon": -80.84313,
+      "lat": 35.22709,
+      "population": 911311,
+      "geonameid": 4460243
+    },
+    {
+      "marker": 61,
+      "name": "Oklahoma City",
+      "state": "OK",
+      "source_center": [
+        1620.0,
+        724.0
+      ],
+      "lon": -97.51643,
+      "lat": 35.46756,
+      "population": 681054,
+      "geonameid": 4544349
+    },
+    {
+      "marker": 62,
+      "name": "Memphis",
+      "state": "TN",
+      "source_center": [
+        1900.5,
+        733.5
+      ],
+      "lon": -90.04898,
+      "lat": 35.14953,
+      "population": 633104,
+      "geonameid": 4641239
+    },
+    {
+      "marker": 63,
+      "name": "Albuquerque",
+      "state": "NM",
+      "source_center": [
+        1319.0,
+        735.5
+      ],
+      "lon": -106.65114,
+      "lat": 35.08449,
+      "population": 564559,
+      "geonameid": 5454711
+    },
+    {
+      "marker": 64,
+      "name": "Amarillo",
+      "state": "TX",
+      "source_center": [
+        1493.5,
+        740.5
+      ],
+      "lon": -101.8313,
+      "lat": 35.222,
+      "population": 198645,
+      "geonameid": 5516233
+    },
+    {
+      "marker": 65,
+      "name": "San Diego",
+      "state": "CA",
+      "source_center": [
+        949.5,
+        759.5
+      ],
+      "lon": -117.16472,
+      "lat": 32.71571,
+      "population": 1404452,
+      "geonameid": 5391811
+    },
+    {
+      "marker": 66,
+      "name": "Little Rock",
+      "state": "AR",
+      "source_center": [
+        1817.5,
+        759.5
+      ],
+      "lon": -92.28959,
+      "lat": 34.74648,
+      "population": 202591,
+      "geonameid": 4119403
+    },
+    {
+      "marker": 67,
+      "name": "Phoenix",
+      "state": "AZ",
+      "source_center": [
+        1124.0,
+        763.5
+      ],
+      "lon": -112.07404,
+      "lat": 33.44838,
+      "population": 1650070,
+      "geonameid": 5308655
+    },
+    {
+      "marker": 68,
+      "name": "Yuma",
+      "state": "AZ",
+      "source_center": [
+        1044.5,
+        788.5
+      ],
+      "lon": -114.6244,
+      "lat": 32.72532,
+      "population": 95548,
+      "geonameid": 5322053
+    },
+    {
+      "marker": 69,
+      "name": "Atlanta",
+      "state": "GA",
+      "source_center": [
+        2097.5,
+        796.0
+      ],
+      "lon": -84.38798,
+      "lat": 33.749,
+      "population": 510823,
+      "geonameid": 4180439
+    },
+    {
+      "marker": 70,
+      "name": "Charleston",
+      "state": "SC",
+      "source_center": [
+        2254.0,
+        798.5
+      ],
+      "lon": -79.93275,
+      "lat": 32.77632,
+      "population": 132609,
+      "geonameid": 4574324
+    },
+    {
+      "marker": 71,
+      "name": "Birmingham",
+      "state": "AL",
+      "source_center": [
+        2014.5,
+        805.0
+      ],
+      "lon": -86.80249,
+      "lat": 33.52066,
+      "population": 196357,
+      "geonameid": 4049979
+    },
+    {
+      "marker": 72,
+      "name": "Tucson",
+      "state": "AZ",
+      "source_center": [
+        1159.5,
+        824.5
+      ],
+      "lon": -110.92648,
+      "lat": 32.22174,
+      "population": 542629,
+      "geonameid": 5318313
+    },
+    {
+      "marker": 73,
+      "name": "Las Cruces",
+      "state": "NM",
+      "source_center": [
+        1291.5,
+        833.0
+      ],
+      "lon": -106.77834,
+      "lat": 32.31232,
+      "population": 101643,
+      "geonameid": 5475352
+    },
+    {
+      "marker": 74,
+      "name": "Dallas",
+      "state": "TX",
+      "source_center": [
+        1649.0,
+        853.0
+      ],
+      "lon": -96.80667,
+      "lat": 32.78306,
+      "population": 1326087,
+      "geonameid": 4684888
+    },
+    {
+      "marker": 75,
+      "name": "Jackson",
+      "state": "MS",
+      "source_center": [
+        1895.0,
+        862.5
+      ],
+      "lon": -90.18481,
+      "lat": 32.29876,
+      "population": 153701,
+      "geonameid": 4431410
+    },
+    {
+      "marker": 76,
+      "name": "El Paso",
+      "state": "TX",
+      "source_center": [
+        1316.5,
+        866.5
+      ],
+      "lon": -106.48693,
+      "lat": 31.75872,
+      "population": 678815,
+      "geonameid": 5520993
+    },
+    {
+      "marker": 77,
+      "name": "Jacksonville",
+      "state": "FL",
+      "source_center": [
+        2211.0,
+        908.0
+      ],
+      "lon": -81.65565,
+      "lat": 30.33218,
+      "population": 1009833,
+      "geonameid": 4160021
+    },
+    {
+      "marker": 78,
+      "name": "Mobile",
+      "state": "AL",
+      "source_center": [
+        1971.5,
+        909.5
+      ],
+      "lon": -88.04305,
+      "lat": 30.69436,
+      "population": 183289,
+      "geonameid": 4076598
+    },
+    {
+      "marker": 79,
+      "name": "Tallahassee",
+      "state": "FL",
+      "source_center": [
+        2104.5,
+        915.5
+      ],
+      "lon": -84.28073,
+      "lat": 30.43826,
+      "population": 201731,
+      "geonameid": 4174715
+    },
+    {
+      "marker": 80,
+      "name": "Pensacola",
+      "state": "FL",
+      "source_center": [
+        2014.5,
+        922.5
+      ],
+      "lon": -87.21691,
+      "lat": 30.42131,
+      "population": 53724,
+      "geonameid": 4168228
+    },
+    {
+      "marker": 81,
+      "name": "Baton Rouge",
+      "state": "LA",
+      "source_center": [
+        1858.5,
+        931.0
+      ],
+      "lon": -91.18747,
+      "lat": 30.44332,
+      "population": 227470,
+      "geonameid": 4315588
+    },
+    {
+      "marker": 82,
+      "name": "Houston",
+      "state": "TX",
+      "source_center": [
+        1692.0,
+        954.5
+      ],
+      "lon": -95.36327,
+      "lat": 29.76328,
+      "population": 2314157,
+      "geonameid": 4699066
+    },
+    {
+      "marker": 83,
+      "name": "New Orleans",
+      "state": "LA",
+      "source_center": [
+        1896.5,
+        956.5
+      ],
+      "lon": -90.07507,
+      "lat": 29.95465,
+      "population": 362701,
+      "geonameid": 4335045
+    },
+    {
+      "marker": 84,
+      "name": "San Antonio",
+      "state": "TX",
+      "source_center": [
+        1602.5,
+        972.0
+      ],
+      "lon": -98.49363,
+      "lat": 29.42412,
+      "population": 1526656,
+      "geonameid": 4726206
+    },
+    {
+      "marker": 85,
+      "name": "Tampa",
+      "state": "FL",
+      "source_center": [
+        2183.5,
+        996.0
+      ],
+      "lon": -82.45843,
+      "lat": 27.94752,
+      "population": 414547,
+      "geonameid": 4174757
+    },
+    {
+      "marker": 86,
+      "name": "Miami",
+      "state": "FL",
+      "source_center": [
+        2273.5,
+        1073.5
+      ],
+      "lon": -80.19366,
+      "lat": 25.77427,
+      "population": 487014,
+      "geonameid": 4164138
+    },
+    {
+      "marker": 87,
+      "name": "Brownsville",
+      "state": "TX",
+      "source_center": [
+        1615.5,
+        1107.5
+      ],
+      "lon": -97.49748,
+      "lat": 25.90175,
+      "population": 186738,
+      "geonameid": 4676740
+    },
+    {
+      "marker": 88,
+      "name": "Key West",
+      "state": "FL",
+      "source_center": [
+        2196.5,
+        1125.5
+      ],
+      "lon": -81.78163,
+      "lat": 24.55524,
+      "population": 25755,
+      "geonameid": 4160812
+    },
+    {
+      "marker": 89,
+      "name": "Seattle",
+      "state": "WA",
+      "source_center": [
+        977.0,
+        137.0
+      ],
+      "lon": -122.33207,
+      "lat": 47.60621,
+      "population": 780995,
+      "geonameid": 5809844
+    },
+    {
+      "marker": 90,
+      "name": "Ashland",
+      "state": "WI",
+      "source_center": [
+        1847.0,
+        271.0
+      ],
+      "lon": -90.8838,
+      "lat": 46.59244,
+      "population": 8040,
+      "geonameid": 5244247
+    },
+    {
+      "marker": 91,
+      "name": "Salt Lake City",
+      "state": "UT",
+      "source_center": [
+        1199.0,
+        476.0
+      ],
+      "lon": -111.89105,
+      "lat": 40.76078,
+      "population": 215548,
+      "geonameid": 5780993
+    },
+    {
+      "marker": 92,
+      "name": "Los Angeles",
+      "state": "CA",
+      "source_center": [
+        919.0,
+        692.0
+      ],
+      "lon": -118.24368,
+      "lat": 34.05223,
+      "population": 3820914,
+      "geonameid": 5368361
+    },
+    {
+      "marker": 93,
+      "name": "Milwaukee",
+      "state": "WI",
+      "source_center": [
+        1947.0,
+        401.0
+      ],
+      "lon": -87.90647,
+      "lat": 43.0389,
+      "population": 563531,
+      "geonameid": 5263045
+    },
+    {
+      "marker": 94,
+      "name": "Hartford",
+      "state": "CT",
+      "source_center": [
+        2438.0,
+        386.0
+      ],
+      "lon": -72.68509,
+      "lat": 41.76371,
+      "population": 121054,
+      "geonameid": 4835797
+    },
+    {
+      "marker": 95,
+      "name": "Raleigh",
+      "state": "NC",
+      "source_center": [
+        2285.0,
+        674.0
+      ],
+      "lon": -78.63861,
+      "lat": 35.7721,
+      "population": 482295,
+      "geonameid": 4487042
+    },
+    {
+      "marker": 98,
+      "name": "Baltimore",
+      "state": "MD",
+      "source_center": [
+        2336.0,
+        503.5
+      ],
+      "lon": -76.61219,
+      "lat": 39.29038,
+      "population": 585708,
+      "geonameid": 4347778
+    },
+    {
+      "marker": 100,
+      "name": "Washington",
+      "state": "DC",
+      "source_center": [
+        2333.0,
+        539.5
+      ],
+      "lon": -77.03637,
+      "lat": 38.89511,
+      "population": 689545,
+      "geonameid": 4140963
+    }
+  ],
+  "download_sha256": "6d94198649dd64ed84f36579bfe939e4f7c18c3256cafe3d670da43dcecd5c3f"
+}

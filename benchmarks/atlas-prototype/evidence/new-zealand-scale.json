@@ -1,0 +1,21 @@
+{
+  "donor_bounds": [
+    498,
+    285,
+    413,
+    464
+  ],
+  "target_land_size": [
+    154,
+    193
+  ],
+  "native_white_stroke": 8,
+  "geographic_extent": [
+    166.4,
+    -47.3,
+    178.6,
+    -34.4
+  ],
+  "land_pixels": 3483,
+  "source": "Existing Muse Pacific output; resized, no new generation"
+}

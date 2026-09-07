@@ -19,7 +19,12 @@
     "drag",
     "sheet toggle",
     "reset",
-    "Pacific wrap"
+    "Pacific wrap",
+    "zero overview cities and labels",
+    "Antarctica close view",
+    "zoom limits 0.5 world fit and 12 native",
+    "adaptive city reveal and spacing",
+    "US northeast and Florida close views"
   ],
   "errors": []
 }

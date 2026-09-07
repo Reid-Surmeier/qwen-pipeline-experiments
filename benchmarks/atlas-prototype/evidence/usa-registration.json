@@ -1,0 +1,1159 @@
+[
+  {
+    "name": "New York City",
+    "marker": 29,
+    "geographic_at": [
+      1431.2613058947368,
+      944.8847699223882
+    ],
+    "at": [
+      1407,
+      932
+    ],
+    "adjustment_pixels": 27.47049798731119
+  },
+  {
+    "name": "Los Angeles",
+    "marker": 92,
+    "geographic_at": [
+      871.5378593684213,
+      1041.2684419923355
+    ],
+    "at": [
+      882,
+      1030
+    ],
+    "adjustment_pixels": 15.376416082090124
+  },
+  {
+    "name": "Chicago",
+    "marker": 32,
+    "geographic_at": [
+      1258.6277884210529,
+      927.9060601846992
+    ],
+    "at": [
+      1259,
+      928
+    ],
+    "adjustment_pixels": 0.3838829879026648
+  },
+  {
+    "name": "Houston",
+    "marker": 82,
+    "geographic_at": [
+      1161.0352574736844,
+      1100.852009200489
+    ],
+    "at": [
+      1158,
+      1091
+    ],
+    "adjustment_pixels": 10.308970521738637
+  },
+  {
+    "name": "Phoenix",
+    "marker": 67,
+    "geographic_at": [
+      949.600041263158,
+      1049.7627017201278
+    ],
+    "at": [
+      950,
+      1050
+    ],
+    "adjustment_pixels": 0.4650564103488512
+  },
+  {
+    "name": "Philadelphia",
+    "marker": 35,
+    "geographic_at": [
+      1416.6139869473686,
+      956.1780342145869
+    ],
+    "at": [
+      1390,
+      943
+    ],
+    "adjustment_pixels": 29.697893645771085
+  },
+  {
+    "name": "San Antonio",
+    "marker": 84,
+    "geographic_at": [
+      1121.4279656842107,
+      1105.493536421224
+    ],
+    "at": [
+      1121,
+      1105
+    ],
+    "adjustment_pixels": 0.6532479054206856
+  },
+  {
+    "name": "San Diego",
+    "marker": 65,
+    "geographic_at": [
+      885.1895427368422,
+      1060.020750050522
+    ],
+    "at": [
+      898,
+      1054
+    ],
+    "adjustment_pixels": 14.154760558273464
+  },
+  {
+    "name": "Dallas",
+    "marker": 74,
+    "geographic_at": [
+      1142.7724490526316,
+      1059.079959983096
+    ],
+    "at": [
+      1143,
+      1059
+    ],
+    "adjustment_pixels": 0.2411908633115234
+  },
+  {
+    "name": "Jacksonville",
+    "marker": 77,
+    "geographic_at": [
+      1334.472723157895,
+      1093.0445306771699
+    ],
+    "at": [
+      1329,
+      1095
+    ],
+    "adjustment_pixels": 5.811588340160508
+  },
+  {
+    "name": "Columbus",
+    "marker": 40,
+    "geographic_at": [
+      1317.4784675789474,
+      956.0480253440618
+    ],
+    "at": [
+      1317,
+      956
+    ],
+    "adjustment_pixels": 0.4808717685371448
+  },
+  {
+    "name": "Charlotte",
+    "marker": 60,
+    "geographic_at": [
+      1344.7532393684212,
+      1024.6351420196795
+    ],
+    "at": [
+      1345,
+      1025
+    ],
+    "adjustment_pixels": 0.4404681090620779
+  },
+  {
+    "name": "Indianapolis",
+    "marker": 42,
+    "geographic_at": [
+      1277.505641263158,
+      958.8941239289322
+    ],
+    "at": [
+      1278,
+      959
+    ],
+    "adjustment_pixels": 0.5055692861683982
+  },
+  {
+    "name": "San Francisco",
+    "marker": 41,
+    "geographic_at": [
+      818.7037595789475,
+      988.0494088892762
+    ],
+    "at": [
+      830,
+      985
+    ],
+    "adjustment_pixels": 11.700595806377432
+  },
+  {
+    "name": "Seattle",
+    "marker": 89,
+    "geographic_at": [
+      819.8089669473685,
+      838.9251900699568
+    ],
+    "at": [
+      820,
+      839
+    ],
+    "adjustment_pixels": 0.20515884780037874
+  },
+  {
+    "name": "Denver",
+    "marker": 44,
+    "geographic_at": [
+      1039.2988484210528,
+      959.3251994230275
+    ],
+    "at": [
+      1039,
+      959
+    ],
+    "adjustment_pixels": 0.4416616844408435
+  },
+  {
+    "name": "Washington",
+    "marker": 100,
+    "geographic_at": [
+      1392.918771157895,
+      971.7263288910976
+    ],
+    "at": [
+      1389,
+      972
+    ],
+    "adjustment_pixels": 3.9283155758922184
+  },
+  {
+    "name": "Nashville",
+    "marker": 57,
+    "geographic_at": [
+      1269.5800328421053,
+      1011.2386948455546
+    ],
+    "at": [
+      1270,
+      1011
+    ],
+    "adjustment_pixels": 0.48306070322940375
+  },
+  {
+    "name": "Oklahoma City",
+    "marker": 61,
+    "geographic_at": [
+      1133.7921172631582,
+      1021.2127703725079
+    ],
+    "at": [
+      1134,
+      1021
+    ],
+    "adjustment_pixels": 0.29746674384540445
+  },
+  {
+    "name": "El Paso",
+    "marker": 76,
+    "geographic_at": [
+      1020.2916856842106,
+      1073.3422404984333
+    ],
+    "at": [
+      1020,
+      1073
+    ],
+    "adjustment_pixels": 0.44967665843501414
+  },
+  {
+    "name": "Boston",
+    "marker": 17,
+    "geographic_at": [
+      1468.5384890526318,
+      920.2483598196993
+    ],
+    "at": [
+      1463,
+      913
+    ],
+    "adjustment_pixels": 9.122147831621335
+  },
+  {
+    "name": "Portland",
+    "marker": 5,
+    "geographic_at": [
+      815.4546903157894,
+      871.7228812484191
+    ],
+    "at": [
+      815,
+      872
+    ],
+    "adjustment_pixels": 0.5324829440934878
+  },
+  {
+    "name": "Detroit",
+    "marker": 28,
+    "geographic_at": [
+      1316.8843000000002,
+      920.6559570543103
+    ],
+    "at": [
+      1317,
+      921
+    ],
+    "adjustment_pixels": 0.362976636271266
+  },
+  {
+    "name": "Las Vegas",
+    "marker": 55,
+    "geographic_at": [
+      910.8427532631581,
+      1011.1086557509533
+    ],
+    "at": [
+      911,
+      1011
+    ],
+    "adjustment_pixels": 0.1911350529407113
+  },
+  {
+    "name": "Memphis",
+    "marker": 62,
+    "geographic_at": [
+      1228.2750109473684,
+      1025.7376619323302
+    ],
+    "at": [
+      1228,
+      1026
+    ],
+    "adjustment_pixels": 0.3800687870914925
+  },
+  {
+    "name": "Louisville",
+    "marker": 52,
+    "geographic_at": [
+      1282.5493597894736,
+      981.0834930041942
+    ],
+    "at": [
+      1283,
+      981
+    ],
+    "adjustment_pixels": 0.45830959088011103
+  },
+  {
+    "name": "Baltimore",
+    "marker": 98,
+    "geographic_at": [
+      1398.2857644210526,
+      965.9299166955866
+    ],
+    "at": [
+      1393,
+      965
+    ],
+    "adjustment_pixels": 5.366940522830128
+  },
+  {
+    "name": "Albuquerque",
+    "marker": 63,
+    "geographic_at": [
+      1018.2139970526317,
+      1026.6617175107237
+    ],
+    "at": [
+      1018,
+      1027
+    ],
+    "adjustment_pixels": 0.4002871233077623
+  },
+  {
+    "name": "Milwaukee",
+    "marker": 93,
+    "geographic_at": [
+      1255.3834006315792,
+      909.9414763993074
+    ],
+    "at": [
+      1255,
+      910
+    ],
+    "adjustment_pixels": 0.3878415348223626
+  },
+  {
+    "name": "Tucson",
+    "marker": 72,
+    "geographic_at": [
+      964.119695157895,
+      1066.9076482441967
+    ],
+    "at": [
+      964,
+      1067
+    ],
+    "adjustment_pixels": 0.15118127405023407
+  },
+  {
+    "name": "Atlanta",
+    "marker": 69,
+    "geographic_at": [
+      1299.9015583157895,
+      1045.5384903797521
+    ],
+    "at": [
+      1300,
+      1046
+    ],
+    "adjustment_pixels": 0.47189182528574103
+  },
+  {
+    "name": "Miami",
+    "marker": 86,
+    "geographic_at": [
+      1352.970744,
+      1154.8665448797246
+    ],
+    "at": [
+      1337,
+      1137
+    ],
+    "adjustment_pixels": 23.9641000217565
+  },
+  {
+    "name": "Omaha",
+    "marker": 38,
+    "geographic_at": [
+      1153.732664631579,
+      936.8042757425877
+    ],
+    "at": [
+      1154,
+      937
+    ],
+    "adjustment_pixels": 0.3313248921352258
+  },
+  {
+    "name": "Raleigh",
+    "marker": 95,
+    "geographic_at": [
+      1372.6462187368425,
+      1016.8696307527117
+    ],
+    "at": [
+      1372,
+      1017
+    ],
+    "adjustment_pixels": 0.6592380423525135
+  },
+  {
+    "name": "Kansas City",
+    "marker": 49,
+    "geographic_at": [
+      1170.9637774736843,
+      968.7281177421315
+    ],
+    "at": [
+      1171,
+      969
+    ],
+    "adjustment_pixels": 0.27428458497762176
+  },
+  {
+    "name": "Tampa",
+    "marker": 85,
+    "geographic_at": [
+      1324.3154435789472,
+      1125.5917146370343
+    ],
+    "at": [
+      1328,
+      1124
+    ],
+    "adjustment_pixels": 4.013665594649181
+  },
+  {
+    "name": "Minneapolis",
+    "marker": 20,
+    "geographic_at": [
+      1187.598571789474,
+      880.1643028563567
+    ],
+    "at": [
+      1188,
+      880
+    ],
+    "adjustment_pixels": 0.4337511231260966
+  },
+  {
+    "name": "Cleveland",
+    "marker": 30,
+    "geographic_at": [
+      1333.969654526316,
+      933.1649326462875
+    ],
+    "at": [
+      1334,
+      933
+    ],
+    "adjustment_pixels": 0.16770100054715284
+  },
+  {
+    "name": "New Orleans",
+    "marker": 83,
+    "geographic_at": [
+      1227.9449037894738,
+      1098.228765935829
+    ],
+    "at": [
+      1219,
+      1087
+    ],
+    "adjustment_pixels": 14.35606102817116
+  },
+  {
+    "name": "Cincinnati",
+    "marker": 45,
+    "geographic_at": [
+      1298.3021391578948,
+      968.3265358954055
+    ],
+    "at": [
+      1298,
+      968
+    ],
+    "adjustment_pixels": 0.4448749956129823
+  },
+  {
+    "name": "Pittsburgh",
+    "marker": 36,
+    "geographic_at": [
+      1355.4730549473684,
+      948.9497424529799
+    ],
+    "at": [
+      1355,
+      949
+    ],
+    "adjustment_pixels": 0.4757171473283077
+  },
+  {
+    "name": "Saint Paul",
+    "marker": 21,
+    "geographic_at": [
+      1189.7567311578948,
+      880.7149990613129
+    ],
+    "at": [
+      1195,
+      884
+    ],
+    "adjustment_pixels": 6.187333781021183
+  },
+  {
+    "name": "Madison",
+    "marker": 26,
+    "geographic_at": [
+      1236.4707530526316,
+      909.4224564127147
+    ],
+    "at": [
+      1236,
+      909
+    ],
+    "adjustment_pixels": 0.632517080564446
+  },
+  {
+    "name": "St. Louis",
+    "marker": 50,
+    "geographic_at": [
+      1226.3909075789475,
+      975.643075793691
+    ],
+    "at": [
+      1226,
+      976
+    ],
+    "adjustment_pixels": 0.5293426341490914
+  },
+  {
+    "name": "Reno",
+    "marker": 34,
+    "geographic_at": [
+      851.6717094736844,
+      962.4119549285257
+    ],
+    "at": [
+      852,
+      962
+    ],
+    "adjustment_pixels": 0.5267651590654086
+  },
+  {
+    "name": "Buffalo",
+    "marker": 25,
+    "geographic_at": [
+      1369.612623789474,
+      912.2563829309752
+    ],
+    "at": [
+      1370,
+      912
+    ],
+    "adjustment_pixels": 0.4645347519583264
+  },
+  {
+    "name": "Norfolk",
+    "marker": 53,
+    "geographic_at": [
+      1402.4227953684212,
+      1001.4613879725333
+    ],
+    "at": [
+      1397,
+      1008
+    ],
+    "adjustment_pixels": 8.494713465061839
+  },
+  {
+    "name": "Boise",
+    "marker": 16,
+    "geographic_at": [
+      897.352137894737,
+      901.1858003357793
+    ],
+    "at": [
+      897,
+      901
+    ],
+    "adjustment_pixels": 0.39814929572396235
+  },
+  {
+    "name": "Baton Rouge",
+    "marker": 81,
+    "geographic_at": [
+      1213.8701164210527,
+      1091.5160173195445
+    ],
+    "at": [
+      1211,
+      1085
+    ],
+    "adjustment_pixels": 7.120115868369019
+  },
+  {
+    "name": "Richmond",
+    "marker": 48,
+    "geographic_at": [
+      1387.5554471578948,
+      991.2545505142663
+    ],
+    "at": [
+      1388,
+      991
+    ],
+    "adjustment_pixels": 0.5122725775766305
+  },
+  {
+    "name": "Salt Lake City",
+    "marker": 91,
+    "geographic_at": [
+      951.9153463157895,
+      944.1928958324316
+    ],
+    "at": [
+      952,
+      944
+    ],
+    "adjustment_pixels": 0.21065385925708804
+  },
+  {
+    "name": "Des Moines",
+    "marker": 33,
+    "geographic_at": [
+      1183.2299976842105,
+      931.6508020227484
+    ],
+    "at": [
+      1183,
+      932
+    ],
+    "adjustment_pixels": 0.4181365351877389
+  },
+  {
+    "name": "Little Rock",
+    "marker": 66,
+    "geographic_at": [
+      1199.9253981052632,
+      1031.4568167159784
+    ],
+    "at": [
+      1200,
+      1031
+    ],
+    "adjustment_pixels": 0.46286818285085973
+  },
+  {
+    "name": "Tallahassee",
+    "marker": 79,
+    "geographic_at": [
+      1301.2585530526317,
+      1091.5856310223687
+    ],
+    "at": [
+      1307,
+      1085
+    ],
+    "adjustment_pixels": 8.73697596495666
+  },
+  {
+    "name": "Amarillo",
+    "marker": 64,
+    "geographic_at": [
+      1079.1976568421053,
+      1024.7075162626886
+    ],
+    "at": [
+      1079,
+      1025
+    ],
+    "adjustment_pixels": 0.35300844723982305
+  },
+  {
+    "name": "Birmingham",
+    "marker": 71,
+    "geographic_at": [
+      1269.3516528421053,
+      1048.7478671842318
+    ],
+    "at": [
+      1269,
+      1049
+    ],
+    "adjustment_pixels": 0.4327016040505449
+  },
+  {
+    "name": "Providence",
+    "marker": 24,
+    "geographic_at": [
+      1464.0713509473685,
+      928.2973120836663
+    ],
+    "at": [
+      1454,
+      917
+    ],
+    "adjustment_pixels": 15.134773543757182
+  },
+  {
+    "name": "Brownsville",
+    "marker": 87,
+    "geographic_at": [
+      1134.0318846315793,
+      1153.1588350340032
+    ],
+    "at": [
+      1121,
+      1142
+    ],
+    "adjustment_pixels": 17.156620190669535
+  },
+  {
+    "name": "Mobile",
+    "marker": 78,
+    "geographic_at": [
+      1253.6553042105265,
+      1088.0594919457842
+    ],
+    "at": [
+      1254,
+      1069
+    ],
+    "adjustment_pixels": 19.062608646738084
+  },
+  {
+    "name": "Jackson",
+    "marker": 75,
+    "geographic_at": [
+      1226.5564040000002,
+      1065.8353595051117
+    ],
+    "at": [
+      1227,
+      1066
+    ],
+    "adjustment_pixels": 0.4731637177266774
+  },
+  {
+    "name": "Charleston",
+    "marker": 70,
+    "geographic_at": [
+      1356.2719421052632,
+      1059.1741284428767
+    ],
+    "at": [
+      1344,
+      1043
+    ],
+    "adjustment_pixels": 20.30278291076387
+  },
+  {
+    "name": "Topeka",
+    "marker": 51,
+    "geographic_at": [
+      1157.0525886315793,
+      969.4817486040581
+    ],
+    "at": [
+      1157,
+      969
+    ],
+    "adjustment_pixels": 0.48461044322560853
+  },
+  {
+    "name": "Hartford",
+    "marker": 94,
+    "geographic_at": [
+      1447.973913894737,
+      929.2026606691742
+    ],
+    "at": [
+      1440,
+      921
+    ],
+    "adjustment_pixels": 11.439709124549347
+  },
+  {
+    "name": "Billings",
+    "marker": 12,
+    "geographic_at": [
+      994.8123223157894,
+      867.6703199973497
+    ],
+    "at": [
+      995,
+      868
+    ],
+    "adjustment_pixels": 0.3793571105148399
+  },
+  {
+    "name": "Manchester",
+    "marker": 15,
+    "geographic_at": [
+      1463.540446526316,
+      910.5987088721924
+    ],
+    "at": [
+      1458,
+      906
+    ],
+    "adjustment_pixels": 7.20032436784258
+  },
+  {
+    "name": "Green Bay",
+    "marker": 18,
+    "geographic_at": [
+      1253.9490983157898,
+      887.2853022015372
+    ],
+    "at": [
+      1254,
+      887
+    ],
+    "adjustment_pixels": 0.28980739752016654
+  },
+  {
+    "name": "Las Cruces",
+    "marker": 73,
+    "geographic_at": [
+      1016.6045823157895,
+      1065.6465165406132
+    ],
+    "at": [
+      1016,
+      1066
+    ],
+    "adjustment_pixels": 0.7003358712970431
+  },
+  {
+    "name": "Yuma",
+    "marker": 68,
+    "geographic_at": [
+      917.3312757894739,
+      1059.8865377282068
+    ],
+    "at": [
+      920,
+      1055
+    ],
+    "adjustment_pixels": 5.567794884964473
+  },
+  {
+    "name": "Santa Fe",
+    "marker": 58,
+    "geographic_at": [
+      1027.2396252631581,
+      1018.0845639335786
+    ],
+    "at": [
+      1027,
+      1018
+    ],
+    "adjustment_pixels": 0.2541088853343903
+  },
+  {
+    "name": "Bismarck",
+    "marker": 8,
+    "geographic_at": [
+      1092.4520475789475,
+      851.5755770715022
+    ],
+    "at": [
+      1092,
+      852
+    ],
+    "adjustment_pixels": 0.6200659931547385
+  },
+  {
+    "name": "Rapid City",
+    "marker": 22,
+    "geographic_at": [
+      1061.487641894737,
+      894.0329674377577
+    ],
+    "at": [
+      1061,
+      894
+    ],
+    "adjustment_pixels": 0.48875501987698955
+  },
+  {
+    "name": "Saint George",
+    "marker": 47,
+    "geographic_at": [
+      930.4935553684211,
+      997.7526115970483
+    ],
+    "at": [
+      930,
+      998
+    ],
+    "adjustment_pixels": 0.5520850691807251
+  },
+  {
+    "name": "Portland",
+    "marker": 13,
+    "geographic_at": [
+      1478.6716021052632,
+      900.5153108567316
+    ],
+    "at": [
+      1457,
+      898
+    ],
+    "adjustment_pixels": 21.8170833640714
+  },
+  {
+    "name": "Johnson City",
+    "marker": 56,
+    "geographic_at": [
+      1325.6434637894736,
+      1009.1244280017233
+    ],
+    "at": [
+      1326,
+      1009
+    ],
+    "adjustment_pixels": 0.3776246774634974
+  },
+  {
+    "name": "Cheyenne",
+    "marker": 37,
+    "geographic_at": [
+      1041.3795736842105,
+      938.5412125693603
+    ],
+    "at": [
+      1041,
+      939
+    ],
+    "adjustment_pixels": 0.5954511636214779
+  },
+  {
+    "name": "Casper",
+    "marker": 27,
+    "geographic_at": [
+      1022.4913456842107,
+      912.5570963099343
+    ],
+    "at": [
+      1022,
+      913
+    ],
+    "adjustment_pixels": 0.6615015193227557
+  },
+  {
+    "name": "Idaho Falls",
+    "marker": 19,
+    "geographic_at": [
+      950.1048812631582,
+      903.4291774934483
+    ],
+    "at": [
+      950,
+      903
+    ],
+    "adjustment_pixels": 0.4418069717016584
+  },
+  {
+    "name": "Pensacola",
+    "marker": 80,
+    "geographic_at": [
+      1264.108149263158,
+      1091.8188069553387
+    ],
+    "at": [
+      1277,
+      1073
+    ],
+    "adjustment_pixels": 22.811122520457307
+  },
+  {
+    "name": "Charleston",
+    "marker": 46,
+    "geographic_at": [
+      1334.764113263158,
+      979.6911210434345
+    ],
+    "at": [
+      1335,
+      980
+    ],
+    "adjustment_pixels": 0.38864992271582555
+  },
+  {
+    "name": "Atlantic City",
+    "marker": 39,
+    "geographic_at": [
+      1425.9840197894737,
+      964.8459617412361
+    ],
+    "at": [
+      1389,
+      957
+    ],
+    "adjustment_pixels": 37.80710033093151
+  },
+  {
+    "name": "Lewiston",
+    "marker": 4,
+    "geographic_at": [
+      887.0502387368422,
+      857.7476943372905
+    ],
+    "at": [
+      887,
+      858
+    ],
+    "adjustment_pixels": 0.25725877655543716
+  },
+  {
+    "name": "Helena",
+    "marker": 7,
+    "geographic_at": [
+      950.0799555789476,
+      854.9756433786065
+    ],
+    "at": [
+      950,
+      855
+    ],
+    "adjustment_pixels": 0.08358312993995942
+  },
+  {
+    "name": "Dodge City",
+    "marker": 54,
+    "geographic_at": [
+      1102.1523141052633,
+      988.3703704053562
+    ],
+    "at": [
+      1102,
+      988
+    ],
+    "adjustment_pixels": 0.40046700716271394
+  },
+  {
+    "name": "Key West",
+    "marker": 88,
+    "geographic_at": [
+      1332.878744631579,
+      1171.1398066603228
+    ],
+    "at": [
+      1317,
+      1153
+    ],
+    "adjustment_pixels": 24.107822729329772
+  },
+  {
+    "name": "Scottsbluff",
+    "marker": 31,
+    "geographic_at": [
+      1055.9690701052634,
+      927.6565955061252
+    ],
+    "at": [
+      1056,
+      928
+    ],
+    "adjustment_pixels": 0.3447945834867816
+  },
+  {
+    "name": "Pierre",
+    "marker": 23,
+    "geographic_at": [
+      1097.9277269473685,
+      889.6091235182317
+    ],
+    "at": [
+      1098,
+      890
+    ],
+    "adjustment_pixels": 0.397501972493489
+  },
+  {
+    "name": "Montpelier",
+    "marker": 14,
+    "geographic_at": [
+      1449.3619075789475,
+      891.2748118302218
+    ],
+    "at": [
+      1449,
+      891
+    ],
+    "adjustment_pixels": 0.4544212117952468
+  },
+  {
+    "name": "Ashland",
+    "marker": 90,
+    "geographic_at": [
+      1217.7123410526317,
+      854.9798960594993
+    ],
+    "at": [
+      1218,
+      855
+    ],
+    "adjustment_pixels": 0.288360604841739
+  },
+  {
+    "name": "International Falls",
+    "marker": 3,
+    "geographic_at": [
+      1185.7368635789476,
+      822.996202221451
+    ],
+    "at": [
+      1186,
+      823
+    ],
+    "adjustment_pixels": 0.2631638257933359
+  }
+]
