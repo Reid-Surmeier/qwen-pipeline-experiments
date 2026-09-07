@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 54,
+  "fps": 59,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -122,15 +122,15 @@
     },
     {
       "at": [
-        2596.75,
-        640
+        2596.25,
+        638.25
       ],
       "id": "europe2673730.0",
       "labels": 1,
       "name": "Stockholm",
       "screen": [
-        293.567138671875,
-        145.100555419922
+        292.667144775391,
+        141.950561523438
       ]
     }
   ],
@@ -147,6 +147,9 @@
   "visible_annotations": 8,
   "visible_cities": 3,
   "visible_labels": 3,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

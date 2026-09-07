@@ -15,12 +15,26 @@ def project(points):
  m=1.25*np.log(np.tan(np.pi/4+.4*np.radians(lat)))
  return np.column_stack([((2294.25+lon*12.02)-45)/1.9*2,((1439-687.6*m)-17)/1.915*2])
 
-def polygons(name):
+def area(ring):
+ return abs(np.sum(ring[:,0]*np.roll(ring[:,1],1)-ring[:,1]*np.roll(ring[:,0],1)))/2
+
+def polygons(name,clean=True):
  result=[]
+ cities=[]
+ for file in ['city-catalog.json','usa-cities.json']:
+  cities.extend(json.loads((R/'reference'/file).read_text())['cities'])
+ anchors=project([[c['lon'],c['lat']] for c in cities])
+ def inhabited(ring):
+  # Keep city-bearing islands even when the source coordinate sits just off their shore.
+  return np.any(np.all((anchors>=ring.min(0)-2)&(anchors<=ring.max(0)+2),1))
  for f in json.loads(gzip.decompress((R/f'reference/ne-10m-{name}.json.gz').read_bytes()))['features']:
   g=f['geometry'];polys=[g['coordinates']] if g['type']=='Polygon' else g['coordinates']
   for rings in polys:
    pts=[project(ring) for ring in rings]
+   if clean:
+    if name=='land' and area(pts[0])<60 and not inhabited(pts[0]):continue
+    if name=='lakes' and (area(pts[0])<100 or (f['properties']['scalerank'] or 0)>2):continue
+    pts=[pts[0]]+[p for p in pts[1:] if area(p)>=(100 if name=='land' else 60) or (name=='lakes' and inhabited(p))]
    for shift in [-WIDTH,0,WIDTH]:
     moved=[p+[shift,0] for p in pts];lo=moved[0].min(0);hi=moved[0].max(0)
     if hi[0]>=0 and lo[0]<=WIDTH:result.append((moved,lo,hi,f['properties']))
@@ -34,8 +48,8 @@ def mask(polys,box,scale=1):
  return np.asarray(im,dtype=bool)
 
 def add_overview_lakes(terrain):
- # Keep recognizable large lakes at overview; detailed tiles carry all 1,355 lakes.
- lakes=[p for p in polygons('lakes') if (p[3]['scalerank'] or 0)<=3]
+ # Use the same major lakes at both levels; omit small lake/island clutter.
+ lakes=polygons('lakes')
  water=mask(lakes,(0,0,WIDTH,HEIGHT))
  outline=nd.binary_dilation(water,iterations=8)&~water
  terrain[outline & np.all(terrain==PINK,2)]=WHITE;terrain[water]=CYAN
@@ -76,6 +90,6 @@ def build():
    Image.fromarray(a).save(out/f'{col}-{row}.png')
    records.append({'id':f'{col}-{row}','size':[a.shape[1],a.shape[0]]})
   print('detail row',row,flush=True)
- (R/'evidence/geography-detail.json').write_text(json.dumps({'source':'Natural Earth 5.1.2, 1:10m','scale':SCALE,'tile_world_size':[TW,TH],'tiles':records,'white_stroke_screen_pixels':8,'lake_features':1355},indent=2)+'\n')
+ (R/'evidence/geography-detail.json').write_text(json.dumps({'source':'Natural Earth 5.1.2, 1:10m','scale':SCALE,'tile_world_size':[TW,TH],'tiles':records,'white_stroke_screen_pixels':8,'source_lake_features':1355,'retained_land_polygons':len(land),'retained_lake_polygons':len(lakes),'removed_land_polygons':len(polygons('land',False))-len(land),'removed_lake_polygons':len(polygons('lakes',False))-len(lakes),'minimum_land_area':60,'minimum_lake_area':100,'small_city_islands_preserved':True},indent=2)+'\n')
 
 if __name__=='__main__':build()

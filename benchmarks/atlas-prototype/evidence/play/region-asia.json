@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 61,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -199,6 +199,9 @@
   "visible_annotations": 23,
   "visible_cities": 7,
   "visible_labels": 7,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

@@ -29,7 +29,8 @@
     "Russian town zoom tiers",
     "Great Lakes and Canadian lakes close views",
     "4x sourced coast detail with bounded visible tiles",
-    "southern viewport clamp under drag and resize"
+    "southern viewport clamp under drag and resize",
+    "opaque readable overview badges at desktop and 4K minimum zoom"
   ],
   "errors": []
 }

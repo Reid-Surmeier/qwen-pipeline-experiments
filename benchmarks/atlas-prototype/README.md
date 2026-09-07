@@ -48,8 +48,14 @@ Current acceptance includes sparse named overview on desktop and phone, zero orp
 
 ## Lakes and finer coastlines
 
-The overview retains its original terrain artwork with the Great Lakes and major lakes in Canada and elsewhere added from Natural Earth 5.1.2. At native zoom 1.65–1.8 it transitions to 1:10m geographic coastlines and 1,355 lakes, rasterized at four times the original pixel resolution. This adds actual bays, islands and shore geometry rather than enlarging the original pixels. The original palette, thin city-label textures, red dots, badge art and full sheets remain intact.
+The overview retains its original terrain artwork with the Great Lakes and major lakes in Canada and elsewhere added from Natural Earth 5.1.2. At native zoom 1.65–1.8 it transitions to 1:10m geographic coastlines and a curated set of major lakes, rasterized at four times the original pixel resolution. This adds actual bays, islands and shore geometry rather than enlarging the original pixels. The original palette, thin city-label textures, red dots, badge art and full sheets remain intact.
 
 Only visible detail tiles are loaded. A small signed-distance shader keeps the white close-up outline eight screen pixels wide as zoom increases, avoiding oversized white rings around small lakes. Detail city anchors use the same projection and land checks as the geographic layer. The source artwork and geographic coastlines differ slightly; the brief level transition moves city anchors with the terrain. This is one finite detail level, not unlimited street-level cartography.
 
 `prepare_geography.py` builds the 48 detail tiles and geographic fields from the pinned, public-domain source extracts in `reference/`; run it before `prepare_atlas.py` to reproduce terrain assembly. Source URLs, versions and hashes are in `reference/detail-sources.json`. No additional paid generation was used.
+
+## Small-feature cleanup and overview numbers
+
+Small uninhabited island polygons and minor lakes are omitted from the geographic layer; small holes inside retained land and lake shapes are removed too. Major coastlines retain their finer shape, and islands needed by identified city labels remain. The overview uses the same major-lake selection. Counts and area thresholds are recorded in `evidence/geography-detail.json`.
+
+The original 29 world badge crops now render at 22 screen pixels high, with space reserved before city labels are placed. Their fade uses the viewport minimum zoom as well as the native scale, so the colored numbers remain opaque at 1.0× even on a 4K viewport. Regional badges take over after the world badges fade. No original badge pixels, regional full sheets or label textures were edited.

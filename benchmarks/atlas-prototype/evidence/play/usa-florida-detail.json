@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 55,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -188,14 +188,14 @@
     {
       "at": [
         1228,
-        1098
+        1098.25
       ],
       "id": "usa83.0",
       "labels": 1,
       "name": "New Orleans",
       "screen": [
         531.987976074219,
-        502.532318115234
+        503.806518554688
       ]
     },
     {
@@ -290,6 +290,9 @@
   "visible_annotations": 29,
   "visible_cities": 14,
   "visible_labels": 14,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

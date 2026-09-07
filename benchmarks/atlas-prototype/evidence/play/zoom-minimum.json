@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 55,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -96,32 +96,6 @@
   "shown_cities": [
     {
       "at": [
-        3840,
-        957
-      ],
-      "id": "asia1816670.0",
-      "labels": 1,
-      "name": "Beijing",
-      "screen": [
-        1236.07775878906,
-        319
-      ]
-    },
-    {
-      "at": [
-        2844,
-        703
-      ],
-      "id": "europe524901.0",
-      "labels": 1,
-      "name": "Moscow",
-      "screen": [
-        904.077758789062,
-        234.33332824707
-      ]
-    },
-    {
-      "at": [
         4135,
         1017
       ],
@@ -131,32 +105,6 @@
       "screen": [
         1334.4111328125,
         339
-      ]
-    },
-    {
-      "at": [
-        2763,
-        1097
-      ],
-      "id": "africa360630.0",
-      "labels": 1,
-      "name": "Cairo",
-      "screen": [
-        877.077758789062,
-        365.666656494141
-      ]
-    },
-    {
-      "at": [
-        2333,
-        751
-      ],
-      "id": "europe2643743.0",
-      "labels": 1,
-      "name": "London",
-      "screen": [
-        733.744384765625,
-        250.33332824707
       ]
     },
     {
@@ -174,45 +122,6 @@
     },
     {
       "at": [
-        1821,
-        1761
-      ],
-      "id": "south-america3451190.0",
-      "labels": 1,
-      "name": "Rio de Janeiro",
-      "screen": [
-        563.077697753906,
-        587
-      ]
-    },
-    {
-      "at": [
-        4281,
-        1925
-      ],
-      "id": "australia2147714.0",
-      "labels": 1,
-      "name": "Sydney",
-      "screen": [
-        1383.07775878906,
-        641.666687011719
-      ]
-    },
-    {
-      "at": [
-        3659,
-        1476
-      ],
-      "id": "asia1880252.0",
-      "labels": 1,
-      "name": "Singapore",
-      "screen": [
-        1175.74438476562,
-        492
-      ]
-    },
-    {
-      "at": [
         2601,
         1923
       ],
@@ -222,32 +131,6 @@
       "screen": [
         823.077697753906,
         641
-      ]
-    },
-    {
-      "at": [
-        882,
-        1030
-      ],
-      "id": "usa92.0",
-      "labels": 1,
-      "name": "Los Angeles",
-      "screen": [
-        250.077697753906,
-        343.333312988281
-      ]
-    },
-    {
-      "at": [
-        3345,
-        1116
-      ],
-      "id": "asia1261481.0",
-      "labels": 1,
-      "name": "New Delhi",
-      "screen": [
-        1071.07775878906,
-        372
       ]
     }
   ],
@@ -261,9 +144,12 @@
     1440,
     900
   ],
-  "visible_annotations": 24,
-  "visible_cities": 12,
-  "visible_labels": 12,
+  "visible_annotations": 6,
+  "visible_cities": 3,
+  "visible_labels": 3,
+  "visible_world_badges": 29,
+  "world_badge_alpha": 1,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

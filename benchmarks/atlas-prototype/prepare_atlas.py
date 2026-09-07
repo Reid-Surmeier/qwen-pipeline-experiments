@@ -281,7 +281,7 @@ for name,pts in controls.items():
 # Geographic focus points drive navigation, rather than artifact rectangle centers.
 focuses={'africa':(18,0),'asia':(108,26),'australia':(135,-25),'canada':(-98,60),'caribbean':(-77,17),'europe':(14,51),'middle-east':(53,30),'russia':(101,62),'south-america':(-60,-20),'usa':(-98,38)}
 for row in regions:row['focus']=world(*focuses[row['id']]).tolist()
-(R/'godot/atlas.json').write_text(json.dumps({'world_size':[4480,height],'regions':regions,'generation':'../generation/ledger.json'},indent=2)+'\n')
+(R/'godot/atlas.json').write_text(json.dumps({'world_size':[4480,height],'world_badges':json.loads((source.parent/'review-v003.json').read_text())['badges'],'regions':regions,'generation':'../generation/ledger.json'},indent=2)+'\n')
 print('Atlas assets ready',flush=True)
 
 (R/'evidence/usa-registration.json').write_text(json.dumps(usa_report,indent=2)+'\n')

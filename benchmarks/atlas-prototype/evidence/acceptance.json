@@ -3,7 +3,7 @@
   "regions": 10,
   "europe_city_count": 47,
   "us_cities_on_land": 89,
-  "overview_city_count": 11,
+  "overview_city_count": 3,
   "original_thin_labels_restored": 10,
   "named_regional_placements": 307,
   "london_on_great_britain": true,
@@ -25,6 +25,10 @@
   ],
   "terrain_detail_resolution": 4,
   "geography_tiles": 48,
+  "removed_small_land_polygons": 6493,
+  "removed_small_lake_polygons": 1336,
+  "retained_lake_polygons": 30,
+  "overview_badges_visible_at_minimum": true,
   "new_zealand_land_size": [
     154,
     193

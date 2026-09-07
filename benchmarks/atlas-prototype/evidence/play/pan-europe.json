@@ -161,15 +161,15 @@
     },
     {
       "at": [
-        2596.75,
-        640
+        2596.25,
+        638.25
       ],
       "id": "europe2673730.0",
       "labels": 1,
       "name": "Stockholm",
       "screen": [
-        1024.74011230469,
-        229.443481445312
+        1023.79608154297,
+        226.13948059082
       ]
     }
   ],
@@ -186,6 +186,9 @@
   "visible_annotations": 19,
   "visible_cities": 6,
   "visible_labels": 6,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

@@ -344,5 +344,12 @@
     }
   ],
   "white_stroke_screen_pixels": 8,
-  "lake_features": 1355
+  "source_lake_features": 1355,
+  "retained_land_polygons": 356,
+  "retained_lake_polygons": 30,
+  "removed_land_polygons": 6493,
+  "removed_lake_polygons": 1336,
+  "minimum_land_area": 60,
+  "minimum_lake_area": 100,
+  "small_city_islands_preserved": true
 }

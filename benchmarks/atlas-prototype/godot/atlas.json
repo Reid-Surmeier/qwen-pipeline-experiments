@@ -3,6 +3,617 @@
     4480,
     3144
   ],
+  "world_badges": [
+    {
+      "number": 23,
+      "reference_palette_number": 23,
+      "fill": [
+        229,
+        183,
+        193
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": false,
+      "rectangle": [
+        3438,
+        402,
+        84,
+        48
+      ]
+    },
+    {
+      "number": 13,
+      "reference_palette_number": 13,
+      "fill": [
+        135,
+        199,
+        139
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        2070,
+        428,
+        66,
+        52
+      ]
+    },
+    {
+      "number": 16,
+      "reference_palette_number": 16,
+      "fill": [
+        179,
+        212,
+        106
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        1560,
+        540,
+        78,
+        52
+      ]
+    },
+    {
+      "number": 24,
+      "reference_palette_number": 24,
+      "fill": [
+        223,
+        215,
+        126
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": false,
+      "rectangle": [
+        4266,
+        546,
+        72,
+        50
+      ]
+    },
+    {
+      "number": 12,
+      "reference_palette_number": 12,
+      "fill": [
+        167,
+        79,
+        73
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        2472,
+        732,
+        74,
+        50
+      ]
+    },
+    {
+      "number": 1,
+      "reference_palette_number": 24,
+      "fill": [
+        223,
+        215,
+        126
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": true,
+      "rectangle": [
+        474,
+        640,
+        72,
+        52
+      ]
+    },
+    {
+      "number": 15,
+      "reference_palette_number": 15,
+      "fill": [
+        60,
+        62,
+        66
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        2580,
+        798,
+        76,
+        52
+      ]
+    },
+    {
+      "number": 14,
+      "reference_palette_number": 14,
+      "fill": [
+        174,
+        94,
+        141
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        2354,
+        662,
+        76,
+        50
+      ]
+    },
+    {
+      "number": 13,
+      "reference_palette_number": 13,
+      "fill": [
+        135,
+        199,
+        139
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        2194,
+        810,
+        74,
+        50
+      ]
+    },
+    {
+      "number": 2,
+      "reference_palette_number": 2,
+      "fill": [
+        130,
+        67,
+        61
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        810,
+        730,
+        72,
+        50
+      ]
+    },
+    {
+      "number": 23,
+      "reference_palette_number": 23,
+      "fill": [
+        229,
+        183,
+        193
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        4222,
+        788,
+        72,
+        52
+      ]
+    },
+    {
+      "number": 15,
+      "reference_palette_number": 15,
+      "fill": [
+        60,
+        62,
+        66
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        2634,
+        680,
+        76,
+        52
+      ]
+    },
+    {
+      "number": 3,
+      "reference_palette_number": 3,
+      "fill": [
+        75,
+        116,
+        78
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        1058,
+        862,
+        72,
+        52
+      ]
+    },
+    {
+      "number": 21,
+      "reference_palette_number": 21,
+      "fill": [
+        237,
+        160,
+        180
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        3792,
+        874,
+        86,
+        50
+      ]
+    },
+    {
+      "number": 17,
+      "reference_palette_number": 17,
+      "fill": [
+        245,
+        216,
+        206
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": false,
+      "rectangle": [
+        2808,
+        1002,
+        76,
+        50
+      ]
+    },
+    {
+      "number": 16,
+      "reference_palette_number": 16,
+      "fill": [
+        179,
+        212,
+        106
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        2480,
+        1090,
+        78,
+        48
+      ]
+    },
+    {
+      "number": 19,
+      "reference_palette_number": 19,
+      "fill": [
+        121,
+        213,
+        226
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": false,
+      "rectangle": [
+        3244,
+        1074,
+        74,
+        52
+      ]
+    },
+    {
+      "number": 18,
+      "reference_palette_number": 18,
+      "fill": [
+        90,
+        81,
+        77
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        2860,
+        1084,
+        72,
+        50
+      ]
+    },
+    {
+      "number": 8,
+      "reference_palette_number": 8,
+      "fill": [
+        96,
+        138,
+        181
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        1364,
+        1064,
+        70,
+        50
+      ]
+    },
+    {
+      "number": 20,
+      "reference_palette_number": 20,
+      "fill": [
+        224,
+        189,
+        199
+      ],
+      "text": [
+        0,
+        0,
+        0
+      ],
+      "over_water": false,
+      "rectangle": [
+        3594,
+        1090,
+        76,
+        48
+      ]
+    },
+    {
+      "number": 10,
+      "reference_palette_number": 10,
+      "fill": [
+        84,
+        99,
+        139
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        1028,
+        1122,
+        76,
+        50
+      ]
+    },
+    {
+      "number": 22,
+      "reference_palette_number": 22,
+      "fill": [
+        213,
+        225,
+        196
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        3920,
+        1220,
+        78,
+        54
+      ]
+    },
+    {
+      "number": 6,
+      "reference_palette_number": 6,
+      "fill": [
+        136,
+        112,
+        154
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        1358,
+        1264,
+        72,
+        50
+      ]
+    },
+    {
+      "number": 7,
+      "reference_palette_number": 7,
+      "fill": [
+        92,
+        116,
+        100
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        1530,
+        1392,
+        74,
+        52
+      ]
+    },
+    {
+      "number": 21,
+      "reference_palette_number": 21,
+      "fill": [
+        237,
+        160,
+        180
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        3392,
+        1354,
+        78,
+        50
+      ]
+    },
+    {
+      "number": 22,
+      "reference_palette_number": 22,
+      "fill": [
+        213,
+        225,
+        196
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": true,
+      "rectangle": [
+        3718,
+        1358,
+        70,
+        54
+      ]
+    },
+    {
+      "number": 8,
+      "reference_palette_number": 8,
+      "fill": [
+        96,
+        138,
+        181
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        1762,
+        1604,
+        76,
+        50
+      ]
+    },
+    {
+      "number": 25,
+      "reference_palette_number": 25,
+      "fill": [
+        186,
+        170,
+        133
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        4210,
+        1804,
+        82,
+        52
+      ]
+    },
+    {
+      "number": 9,
+      "reference_palette_number": 9,
+      "fill": [
+        245,
+        169,
+        92
+      ],
+      "text": [
+        255,
+        255,
+        255
+      ],
+      "over_water": false,
+      "rectangle": [
+        1458,
+        1844,
+        80,
+        50
+      ]
+    }
+  ],
   "regions": [
     {
       "id": "europe",
@@ -24,7 +635,7 @@
         1344
       ],
       "source_sha256": "9705d50cfde60604b53d354e7d6471b92d201e8b25201ce7e891ce9cb1067aef",
-      "detail_sha256": "2ae7b5560f82178dcc7dcfb9eff2e4b3047e14485474e02989b45e3183860e77",
+      "detail_sha256": "b265fc80026fc3a2b68e2780828eb053b14700c5fb9d3fe636ea758128e0c7ab",
       "control_points": [
         [
           69,
@@ -462,8 +1073,8 @@
           "min_zoom": 0.8,
           "rank": -1515017,
           "detail_at": [
-            2596.75,
-            640.0
+            2596.25,
+            638.25
           ]
         },
         {
@@ -853,8 +1464,8 @@
           ],
           "kind": "city",
           "at": [
-            2426,
-            765
+            2429,
+            761
           ],
           "city_id": 2759794,
           "name": "Amsterdam",
@@ -862,7 +1473,7 @@
           "min_zoom": 3.5,
           "rank": -741636,
           "detail_at": [
-            2428.25,
+            2429.5,
             761.0
           ]
         },
@@ -875,8 +1486,8 @@
           ],
           "kind": "label",
           "at": [
-            2426,
-            765
+            2429,
+            761
           ],
           "city_id": 2759794,
           "offset": [
@@ -4441,8 +5052,8 @@
           "min_zoom": 3.5,
           "rank": -264320,
           "detail_at": [
-            2401.5,
-            1403.25
+            2400.5,
+            1403.5
           ]
         },
         {
@@ -6121,8 +6732,8 @@
           "min_zoom": 2.0,
           "rank": -1600000,
           "detail_at": [
-            3898.0,
-            1300.5
+            3898.25,
+            1300.75
           ]
         },
         {
@@ -8989,7 +9600,7 @@
           "rank": -973087,
           "detail_at": [
             1276.25,
-            1334.0
+            1332.25
           ]
         },
         {
@@ -10340,7 +10951,7 @@
           "min_zoom": 3.5,
           "rank": -608722,
           "detail_at": [
-            2871.75,
+            2872.25,
             669.25
           ]
         },
@@ -10500,8 +11111,8 @@
           "min_zoom": 3.5,
           "rank": -277280,
           "detail_at": [
-            2887.0,
-            665.25
+            2885.5,
+            666.75
           ]
         },
         {
@@ -10901,7 +11512,7 @@
           "rank": -492331,
           "detail_at": [
             2965.5,
-            698.0
+            696.0
           ]
         },
         {
@@ -11020,8 +11631,8 @@
           "min_zoom": 3.5,
           "rank": -982419,
           "detail_at": [
-            3079.0,
-            663.0
+            3079.25,
+            662.25
           ]
         },
         {
@@ -11420,8 +12031,8 @@
           "min_zoom": 3.5,
           "rank": -256600,
           "detail_at": [
-            3651.5,
-            695.25
+            3653.25,
+            696.0
           ]
         },
         {
@@ -11660,8 +12271,8 @@
           "min_zoom": 3.5,
           "rank": -184168,
           "detail_at": [
-            3523.5,
-            739.0
+            3524.5,
+            738.0
           ]
         },
         {
@@ -11901,7 +12512,7 @@
           "rank": -275908,
           "detail_at": [
             4101.25,
-            790.75
+            791.25
           ]
         },
         {
@@ -13073,8 +13684,8 @@
           "min_zoom": 3.5,
           "rank": -297352,
           "detail_at": [
-            1676.75,
-            1812.75
+            1677.0,
+            1812.25
           ]
         },
         {
@@ -13118,7 +13729,7 @@
         1152
       ],
       "source_sha256": "4ec2967f1a0f46609c56fb49fa7c125ead3a21c4c028b74144488732a26d4727",
-      "detail_sha256": "dd7b2b724b844458b50743c9311012ff025c2cb3e416465fcc666e248ce378ae",
+      "detail_sha256": "ef9608db2353099dfd1a763f714db36065229941d0bc9c782e4c54e26e7df7ca",
       "control_points": [
         [
           1778.5,
@@ -13808,7 +14419,7 @@
             26
           ],
           "at": [
-            1453,
+            1449,
             891
           ],
           "kind": "label",
@@ -13934,8 +14545,8 @@
             26
           ],
           "at": [
-            1245,
-            878
+            1246,
+            892
           ],
           "kind": "label",
           "city_id": 18,
@@ -14132,8 +14743,8 @@
             26
           ],
           "at": [
-            1306,
-            916
+            1310,
+            913
           ],
           "kind": "label",
           "city_id": 28,
@@ -14276,8 +14887,8 @@
             19
           ],
           "at": [
-            856,
-            959
+            852,
+            962
           ],
           "kind": "label",
           "city_id": 34,
@@ -14348,8 +14959,8 @@
             25
           ],
           "at": [
-            956,
-            949
+            952,
+            944
           ],
           "kind": "label",
           "city_id": 91,
@@ -14816,8 +15427,8 @@
             25
           ],
           "at": [
-            892,
-            1042
+            898,
+            1054
           ],
           "kind": "label",
           "city_id": 65,
@@ -15230,8 +15841,8 @@
             21
           ],
           "at": [
-            1328,
-            1148
+            1337,
+            1137
           ],
           "kind": "label",
           "city_id": 86,
@@ -15437,8 +16048,8 @@
           "min_zoom": 5.5,
           "rank": -6158,
           "detail_at": [
-            1184.25,
-            823.75
+            1185.75,
+            823.0
           ]
         },
         {
@@ -15525,8 +16136,8 @@
           "min_zoom": 5.5,
           "rank": -75092,
           "detail_at": [
-            1093.0,
-            851.0
+            1092.5,
+            851.5
           ]
         },
         {
@@ -15581,7 +16192,7 @@
             15
           ],
           "at": [
-            1453,
+            1449,
             891
           ],
           "kind": "city",
@@ -15669,8 +16280,8 @@
             15
           ],
           "at": [
-            1245,
-            878
+            1246,
+            892
           ],
           "kind": "city",
           "city_id": 18,
@@ -15789,8 +16400,8 @@
           "min_zoom": 5.5,
           "rank": -14091,
           "detail_at": [
-            1098.25,
-            890.25
+            1098.0,
+            889.5
           ]
         },
         {
@@ -15889,8 +16500,8 @@
             14
           ],
           "at": [
-            1306,
-            916
+            1310,
+            913
           ],
           "kind": "city",
           "city_id": 28,
@@ -15899,8 +16510,8 @@
           "min_zoom": 3.5,
           "rank": -645705,
           "detail_at": [
-            1318.5,
-            922.5
+            1318.25,
+            920.5
           ]
         },
         {
@@ -16021,8 +16632,8 @@
             15
           ],
           "at": [
-            856,
-            959
+            852,
+            962
           ],
           "kind": "city",
           "city_id": 34,
@@ -16659,8 +17270,8 @@
             15
           ],
           "at": [
-            892,
-            1042
+            898,
+            1054
           ],
           "kind": "city",
           "city_id": 65,
@@ -17066,7 +17677,7 @@
           "rank": -362701,
           "detail_at": [
             1228.0,
-            1098.0
+            1098.25
           ]
         },
         {
@@ -17121,8 +17732,8 @@
             15
           ],
           "at": [
-            1328,
-            1148
+            1337,
+            1137
           ],
           "kind": "city",
           "city_id": 86,
@@ -17231,8 +17842,8 @@
             16
           ],
           "at": [
-            956,
-            949
+            952,
+            944
           ],
           "kind": "city",
           "city_id": 91,
@@ -17400,7 +18011,7 @@
         1504
       ],
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3",
-      "detail_sha256": "e9dabf119de41c6ec039b1455dc1e8e0b32e0f0fced23c723328579db20e411e",
+      "detail_sha256": "e4af70b52c752c2b1c94083c09edf9cd05b8fb8e67fd45a86ac7ac74acd1aca0",
       "control_points": [
         [
           433,
@@ -18001,8 +18612,8 @@
           ],
           "kind": "city",
           "at": [
-            2823,
-            1070
+            2822,
+            1071
           ],
           "city_id": 250441,
           "name": "Amman",
@@ -18023,8 +18634,8 @@
           ],
           "kind": "label",
           "at": [
-            2823,
-            1070
+            2822,
+            1071
           ],
           "city_id": 250441,
           "offset": [

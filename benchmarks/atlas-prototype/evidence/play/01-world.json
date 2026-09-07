@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 55,
+  "fps": 59,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -96,32 +96,6 @@
   "shown_cities": [
     {
       "at": [
-        3840,
-        957
-      ],
-      "id": "asia1816670.0",
-      "labels": 1,
-      "name": "Beijing",
-      "screen": [
-        1253.33337402344,
-        319
-      ]
-    },
-    {
-      "at": [
-        2844,
-        703
-      ],
-      "id": "europe524901.0",
-      "labels": 1,
-      "name": "Moscow",
-      "screen": [
-        921.333374023438,
-        234.33332824707
-      ]
-    },
-    {
-      "at": [
         4135,
         1017
       ],
@@ -131,32 +105,6 @@
       "screen": [
         1351.66674804688,
         339
-      ]
-    },
-    {
-      "at": [
-        2763,
-        1097
-      ],
-      "id": "africa360630.0",
-      "labels": 1,
-      "name": "Cairo",
-      "screen": [
-        894.333374023438,
-        365.666656494141
-      ]
-    },
-    {
-      "at": [
-        2333,
-        751
-      ],
-      "id": "europe2643743.0",
-      "labels": 1,
-      "name": "London",
-      "screen": [
-        751,
-        250.33332824707
       ]
     },
     {
@@ -174,32 +122,6 @@
     },
     {
       "at": [
-        1821,
-        1761
-      ],
-      "id": "south-america3451190.0",
-      "labels": 1,
-      "name": "Rio de Janeiro",
-      "screen": [
-        580.333312988281,
-        587
-      ]
-    },
-    {
-      "at": [
-        3659,
-        1476
-      ],
-      "id": "asia1880252.0",
-      "labels": 1,
-      "name": "Singapore",
-      "screen": [
-        1193,
-        492
-      ]
-    },
-    {
-      "at": [
         2601,
         1923
       ],
@@ -209,32 +131,6 @@
       "screen": [
         840.333312988281,
         641
-      ]
-    },
-    {
-      "at": [
-        882,
-        1030
-      ],
-      "id": "usa92.0",
-      "labels": 1,
-      "name": "Los Angeles",
-      "screen": [
-        267.333312988281,
-        343.333312988281
-      ]
-    },
-    {
-      "at": [
-        3345,
-        1116
-      ],
-      "id": "asia1261481.0",
-      "labels": 1,
-      "name": "New Delhi",
-      "screen": [
-        1088.33337402344,
-        372
       ]
     }
   ],
@@ -248,9 +144,12 @@
     1440,
     900
   ],
-  "visible_annotations": 22,
-  "visible_cities": 11,
-  "visible_labels": 11,
+  "visible_annotations": 6,
+  "visible_cities": 3,
+  "visible_labels": 3,
+  "visible_world_badges": 29,
+  "world_badge_alpha": 1,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

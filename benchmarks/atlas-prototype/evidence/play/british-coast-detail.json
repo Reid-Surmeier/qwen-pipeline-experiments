@@ -187,14 +187,14 @@
     },
     {
       "at": [
-        2428.25,
+        2429.5,
         761
       ],
       "id": "europe2759794.0",
       "labels": 1,
       "name": "Amsterdam",
       "screen": [
-        773.548156738281,
+        778.947265625,
         552.150695800781
       ]
     },
@@ -225,6 +225,9 @@
   "visible_annotations": 19,
   "visible_cities": 9,
   "visible_labels": 9,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

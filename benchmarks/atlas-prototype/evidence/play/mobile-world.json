@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 21,
+  "fps": 39,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -96,19 +96,6 @@
   "shown_cities": [
     {
       "at": [
-        2333,
-        751
-      ],
-      "id": "europe2643743.0",
-      "labels": 1,
-      "name": "London",
-      "screen": [
-        224.071105957031,
-        234.757034301758
-      ]
-    },
-    {
-      "at": [
         2601,
         1923
       ],
@@ -131,9 +118,12 @@
     390,
     844
   ],
-  "visible_annotations": 4,
-  "visible_cities": 2,
-  "visible_labels": 2,
+  "visible_annotations": 2,
+  "visible_cities": 1,
+  "visible_labels": 1,
+  "visible_world_badges": 8,
+  "world_badge_alpha": 1,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

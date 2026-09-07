@@ -173,6 +173,9 @@
   "visible_annotations": 22,
   "visible_cities": 5,
   "visible_labels": 5,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

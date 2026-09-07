@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 61,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -135,15 +135,15 @@
     },
     {
       "at": [
-        1318.5,
-        922.5
+        1318.25,
+        920.5
       ],
       "id": "usa28.0",
       "labels": 1,
       "name": "Detroit",
       "screen": [
-        1075.62878417969,
-        482.234619140625
+        1074.54895019531,
+        473.596038818359
       ]
     },
     {
@@ -329,6 +329,9 @@
   "visible_annotations": 36,
   "visible_cities": 17,
   "visible_labels": 17,
+  "visible_world_badges": 0,
+  "world_badge_alpha": 0,
+  "world_badge_screen_height": 22,
   "world_size": [
     4480,
     3144

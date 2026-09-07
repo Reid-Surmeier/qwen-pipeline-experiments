@@ -34,6 +34,8 @@ var visible_cities := 0
 var visible_labels := 0
 var shown_cities: Array = []
 var overview_badges := Node2D.new()
+var overview_icons: Array = []
+var visible_world_badges := 0
 var city_groups: Array = []
 var badges: Array = []
 var orphan_dots := 0
@@ -53,7 +55,16 @@ func _ready() -> void:
 	for copy in [-2, -1, 0, 1, 2]:
 		var shift := Vector2(copy * WIDTH, 0)
 		_sprite(world_root, "terrain", shift, Vector2.ONE)
-		_sprite(overview_badges, "world-badges", shift, Vector2.ONE)
+	var world_symbols: Texture2D = load("res://assets/world-badges.png")
+	for badge in atlas.world_badges:
+		var rect := Rect2(badge.rectangle[0], badge.rectangle[1], badge.rectangle[2], badge.rectangle[3])
+		var texture := AtlasTexture.new()
+		texture.atlas = world_symbols
+		texture.region = rect
+		var sprite := Sprite2D.new()
+		sprite.texture = texture
+		overview_badges.add_child(sprite)
+		overview_icons.append({"sprite": sprite, "at": rect.get_center(), "size": rect.size})
 	for region in atlas.regions:
 		var labels_texture: Texture2D = load("res://assets/" + region.id + "-labels.png")
 		var symbols_texture: Texture2D = load("res://assets/" + region.id + "-annotations.png")
@@ -296,6 +307,22 @@ func _layout_annotations() -> void:
 	visible_labels = 0
 	shown_cities.clear()
 	for item in annotations: item.sprite.visible = false
+	visible_world_badges = 0
+	# Overview numbers keep their original pixels and a readable 22px screen height.
+	for badge in overview_icons:
+		badge.sprite.visible = false
+		if overview_badges.modulate.a <= 0: continue
+		var point: Vector2 = badge.at
+		point.x = camera.position.x + fposmod(point.x - camera.position.x + WIDTH / 2, WIDTH) - WIDTH / 2
+		var screen: Vector2 = (point - camera.position) * camera.zoom.x + _viewport_size() / 2
+		var badge_scale: float = 22.0 / badge.size.y
+		var box := Rect2(screen - badge.size * badge_scale / 2, badge.size * badge_scale)
+		if not view.encloses(box): continue
+		badge.sprite.position = point
+		badge.sprite.scale = Vector2.ONE * badge_scale / camera.zoom.x
+		badge.sprite.visible = true
+		occupied.append(box.grow(3))
+		visible_world_badges += 1
 	# Accept a complete dot/name pair as one unit, including screen-edge clipping.
 	for group in city_groups:
 		var dot: Dictionary = group.dot
@@ -324,7 +351,7 @@ func _layout_annotations() -> void:
 		visible_cities += 1
 		shown_cities.append({"id": dot.city_id, "name": dot.name, "at": [point.x, point.y], "screen": [screen.x, screen.y], "labels": group.labels.size()})
 	# Regional badges remain intact, outside accepted dot/name pairs.
-	if camera.zoom.x >= 0.65:
+	if camera.zoom.x >= 0.65 and overview_badges.modulate.a <= 0:
 		for badge in badges:
 			var point: Vector2 = badge.at
 			point.x = camera.position.x + fposmod(point.x - camera.position.x + WIDTH / 2, WIDTH) - WIDTH / 2
@@ -376,7 +403,7 @@ func _layout_geography() -> void:
 
 func _process(delta: float) -> void:
 	detail_alpha = 1.0 if camera.zoom.x >= 0.65 else 0.0
-	overview_badges.modulate.a = 1.0 - smoothstep(0.5, 0.65, camera.zoom.x)
+	overview_badges.modulate.a = 1.0 - smoothstep(maxf(0.5, _fit_zoom() * 1.3), maxf(0.65, _fit_zoom() * 1.8), camera.zoom.x)
 	if mode == "atlas":
 		var distance := INF
 		for region in atlas.regions:
@@ -403,6 +430,6 @@ func _publish_state() -> void:
 		controls[name] = [rect.position.x, rect.position.y, rect.size.x, rect.size.y]
 	var pick := picker.get_global_rect()
 	controls["regions"] = [pick.position.x, pick.position.y, pick.size.x, pick.size.y]
-	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_cities": visible_cities, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "terrain_detail": terrain_detail, "terrain_tiles": geography_tiles.size(), "south_limit": SOUTH_LIMIT, "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= SOUTH_LIMIT - 0.01, "zoom_min": _fit_zoom(), "zoom_max": 12.0, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
+	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_world_badges": visible_world_badges, "world_badge_alpha": overview_badges.modulate.a, "world_badge_screen_height": 22, "visible_cities": visible_cities, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "terrain_detail": terrain_detail, "terrain_tiles": geography_tiles.size(), "south_limit": SOUTH_LIMIT, "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= SOUTH_LIMIT - 0.01, "zoom_min": _fit_zoom(), "zoom_max": 12.0, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
 	if OS.has_feature("web"):
 		JavaScriptBridge.eval("window.atlasState=" + JSON.stringify(state), true)

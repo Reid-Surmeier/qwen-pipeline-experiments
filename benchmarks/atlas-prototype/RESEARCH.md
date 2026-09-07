@@ -49,3 +49,9 @@ Implementation: keep the approved overview, add major lakes there, and rasterize
 The first visual trial applied the original eight-world-pixel stroke to every small island and lake. This produced excessive white rings. Signed-distance tiles now retain the detailed silhouettes while the shader keeps close-up strokes at eight screen pixels. Padding exceeds the maximum stroke radius, preventing tile-edge seams. Nearest filtering preserves hard pixel steps; no blur or invented fractal detail is added.
 
 The prior unlimited pink polar fill caused the excessive Antarctic area. The shared camera constraint now requires a viewport-filling minimum scale and stops at y=2700 within the Antarctic land, keeping the full high-latitude source terrain available as an asset while preventing travel to its stretched pole. The displayed minimum is 1.0× on desktop and phone. Narrow screens pan across the world horizontally instead of exposing unused canvas.
+
+## Small-feature cleanup and badge visibility
+
+The owner found the new small lakes and islands too numerous. Geographic assembly now drops lake polygons below 100 square native-map pixels or scale rank above 2, and land polygons below 60 square native-map pixels except those near identified city coordinates. Small interior rings receive the same treatment. Filtering full polygons before tiled rasterization avoids fragments or seams at tile edges; the original source geometry remains preserved in `reference/`.
+
+Overview badges previously faded at a fixed native camera scale of 0.5–0.65. On a sufficiently large viewport the 1.0× minimum itself exceeded that threshold, making the world numbers disappear. Their reveal now follows the viewport minimum, and individual original badge crops maintain a 22-pixel screen height. Desktop, phone and 3840×2160 screenshots test the actual minimum zoom and visible badge count.
