@@ -104,11 +104,5 @@
     }
   ],
   "preserved_native_corner_pixels": true,
-  "resizing_preserves_header_title_and_corners": true,
-  "visual_inspection": [
-    "Muse output exact title spelling",
-    "assembled header gradient and lettering",
-    "native and resized Godot window",
-    "phone overview (existing narrow-title clipping)"
-  ]
+  "resizing_preserves_header_title_and_corners": true
 }

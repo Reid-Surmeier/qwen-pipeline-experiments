@@ -24,6 +24,32 @@
     56,
     62
   ],
-  "frame_sha256": "154405395f97a11957b2496dfe92b88e851c5986f8b6d9b9288697c621c82d8b",
-  "generation_count": 0
+  "frame_sha256": "e95f4a55d9adf642147573b5022922e90c30b2129a5cb342c3df60881c099b2b",
+  "generation_count": 1,
+  "title": {
+    "text": "World map : RISD Collection",
+    "edit_rectangle": [
+      90,
+      40,
+      750,
+      48
+    ],
+    "donor": "generation/title-01/image-01.png",
+    "donor_sha256": "f9af31c0ef65ce788b68d0ce6c3f351259a8c82c8ee4181de6639d96161409f9",
+    "normalized_donor_size": [
+      1728,
+      384
+    ],
+    "donor_crop": [
+      96,
+      45,
+      622,
+      46
+    ],
+    "destination": [
+      96,
+      42
+    ],
+    "assembly": "Generated glyph coverage over the source row gradient, using original dark text color; unchanged outside title rectangle"
+  }
 }

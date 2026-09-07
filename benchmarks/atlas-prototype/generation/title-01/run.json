@@ -1,0 +1,55 @@
+{
+  "label": "atlas-title",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-09-07T20:44:56.480727+00:00",
+  "seconds": 10.1,
+  "timeout_seconds": 120.0,
+  "timeout_reason": "referenced edit",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1728x384",
+    "seed": 50907
+  },
+  "prompt_file": "benchmarks/atlas-prototype/generation/title-prompt.txt",
+  "prompt_sha256": "4178e5bd2096a6b72de01a22b96b3a6ed1c362a10e8773a3424872d489179f49",
+  "references": [
+    {
+      "file": "benchmarks/atlas-prototype/generation/title-reference.png",
+      "bytes": 104068,
+      "sha256": "efbdc2e99439943359bba04c1a0deea90a51ea263b993a3f71dfcfc0247a86da",
+      "dimensions": "1728x384"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 199,
+    "completion_tokens": 686,
+    "total_tokens": 885,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 686
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "3312x736",
+      "aspect": 4.5,
+      "bytes": 197306,
+      "sha256": "d9b7125e52c77db60070c845920fead0ab5f270dbaae80da58d6999b20d84a0b"
+    }
+  ],
+  "failure": null
+}

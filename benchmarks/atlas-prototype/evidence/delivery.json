@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-07T20:24:35.862531+00:00",
+  "built_at": "2026-09-07T20:48:26.960610+00:00",
   "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/5",
   "branch": "prototype/atlas-5",
   "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/",
@@ -69,14 +69,22 @@
       "index.pck",
       "index.wasm"
     ],
-    "additional_generations": 1,
-    "actual_cost_usd": 0.01,
+    "additional_generations": 2,
+    "actual_cost_usd": 0.02,
     "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/"
   },
   "frame_fidelity": {
     "status": "pass",
     "source": "reference/window-screenshot.png",
     "working_color_space": "sRGB",
+    "title": "World map : RISD Collection",
+    "title_edit_rectangle": [
+      90,
+      40,
+      750,
+      48
+    ],
+    "changed_pixels_outside_title": 0,
     "rendered_reference_checks": [
       {
         "view": "frame-reference-size",
@@ -173,20 +181,27 @@
     "preserved_native_corner_pixels": true,
     "resizing_preserves_header_title_and_corners": true,
     "visual_inspection": [
-      "native reference-size frame",
-      "resized frame",
-      "collapsed header",
-      "phone overview"
+      "Muse output exact title spelling",
+      "assembled header gradient and lettering",
+      "native and resized Godot window",
+      "phone overview (existing narrow-title clipping)"
     ]
   },
   "web_files": {
-    "godot-prototype.zip": "0830783da914394d56256e9bc79cd5c948ea77f10c6bd207077f4698016e4c39",
+    "godot-prototype.zip": "04b34bd6e9bc4e156f07f3f7b6ee80233db63e74db2c103030806fe5b830d531",
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "3c7768a608ffd53ca22056d7d42331b0cb755ac9519b0fa4bec8c2d86a7deb3d",
+    "index.html": "527b2c677f6f6215c6a11b9f95b95bdae8803523f577d1c8b48aa74fc23b1ac4",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "c984392727db0861f1cf9c3a688fb5063f6581e20f59425c3159ca5b9e6e7abe",
+    "index.pck": "d5d517a78e7b8b16eabd563c3e28ab0693f189421c2a0ed594b692fcb30ee971",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+  },
+  "current_change_verification": {
+    "Godot import/export": "pass; no engine errors",
+    "frame input and 13 rendered comparisons": "pass",
+    "phone touch playtest": "pass",
+    "asset and hosted-file verification": "pass",
+    "scope": "Title-only edit; existing full desktop map playtest records retained from the previous verified build."
   }
 }

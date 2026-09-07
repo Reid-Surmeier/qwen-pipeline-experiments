@@ -18,6 +18,33 @@
       "completed_n": 1,
       "actual_cost_usd": 0.01,
       "run_record": "pacific-01/run.json"
+    },
+    {
+      "id": "title-01",
+      "question": "Can Muse replace the approved header title with World map : RISD Collection in the same raster style?",
+      "status": "completed",
+      "submitted_at": "2026-09-07T20:44:46.703824+00:00",
+      "requested_n": 1,
+      "estimate_usd": 0.01,
+      "conservative_estimate_usd": 0.1,
+      "reference": "title-reference.png",
+      "reference_sha256": "efbdc2e99439943359bba04c1a0deea90a51ea263b993a3f71dfcfc0247a86da",
+      "prompt_sha256": "4bb1ad301e1cfc984fc4ec30ec49a4045cc734a79d9b04082323533813fb4c7d",
+      "size": "1728x384",
+      "seed": 50907,
+      "assembly_edit_rectangle": [
+        90,
+        40,
+        750,
+        48
+      ],
+      "stop_rule": "Inspect completed output before any additional pass; ambiguous failure is spent and never blindly retried.",
+      "completed_n": 1,
+      "actual_cost_usd": 0.01,
+      "run_record": "title-01/run.json",
+      "saved_png_sha256": "f9af31c0ef65ce788b68d0ce6c3f351259a8c82c8ee4181de6639d96161409f9",
+      "visual_text_check": "World map : RISD Collection \u2014 exact spelling and capitalization confirmed",
+      "assembly_note": "Three extra rows preserve generated descenders; all changes remain confined to the text inside the gradient bar."
     }
   ]
 }

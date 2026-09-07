@@ -83,3 +83,10 @@ The atlas now runs in its own Godot viewport inside the pale cyan reference fram
 The geographic cleanup now preserves the main eight Hawaiian islands. Previously, the small-island threshold removed all except the Big Island, which also excluded many of their city anchors. Honolulu appears from native zoom 1.8; Hilo, Kahului and Lihue from 6. Other Hawaiian additions use the existing slow population pacing, adding 40 source records overall. Elsewhere the cleanup and city thresholds remain unchanged. No generation.
 
 Frame extraction: `python3 benchmarks/atlas-prototype/prepare_window.py /path/to/reference.png`. The source is preserved in `reference/window-screenshot.png`. `playtest-frame.mjs` and `verify_frame.py` compare actual rendered source-size, resized and moved headers/corners to the color-managed screenshot.
+
+
+## Muse window title
+
+The header now reads `World map : RISD Collection`. One Muse (`meta/muse-image`) reference edit through OpenRouter generated the lettering for $0.01. The original source gradient is restored under the text and only the generated glyph coverage is transferred, using the original dark text color. Everything outside the 750×48 title rectangle at (90,40) remains pixel-identical to the approved frame. The reference, prompt, unmodified provider output, request/response, hashes and spend record are in `generation/title-*` and `generation/ledger.json`. These are source reference, selected donor and provenance artifacts respectively. Total prototype generation spend is now $0.02 for two outputs.
+
+`prepare_window.py` reproduces this assembly. `verify_frame.py` checks source preservation outside the title rectangle, then compares actual Godot headers and corners against the assembled asset at native, resized and moved sizes. The title changes no map code, assets or interactions.
