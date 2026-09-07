@@ -1,0 +1,34 @@
+{
+  "source": "Natural Earth 5.1.2 and existing GeoNames cities5000 extract",
+  "original_city_records": 40806,
+  "current_city_records": 40846,
+  "additional_hawaiian_records": 40,
+  "existing_records_changed": [
+    5855927
+  ],
+  "unchanged_geographic_tiles": 47,
+  "changed_tile": "0-2",
+  "main_islands": [
+    "Niihau",
+    "Kauai",
+    "Oahu",
+    "Molokai",
+    "Lanai",
+    "Maui",
+    "Kahoolawe",
+    "Hawaii"
+  ],
+  "regional_labels": {
+    "Honolulu": 1.8,
+    "Hilo": 6,
+    "Kahului": 6,
+    "Lihue": 6
+  },
+  "paid_generations": 0,
+  "visual_inspection": [
+    "Hawaiian chain at regional detail",
+    "Honolulu and Kahului at closer zoom",
+    "window after resizing and dragging",
+    "phone frame after touch resize"
+  ]
+}

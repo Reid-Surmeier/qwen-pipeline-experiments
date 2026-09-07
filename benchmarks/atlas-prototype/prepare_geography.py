@@ -32,7 +32,8 @@ def polygons(name,clean=True):
   for rings in polys:
    pts=[project(ring) for ring in rings]
    if clean:
-    if name=='land' and area(pts[0])<60 and not inhabited(pts[0]):continue
+    hawaii=all(-161<=p[0]<=-154 and 18<=p[1]<=23 for p in rings[0]) and area(pts[0])>=1
+    if name=='land' and area(pts[0])<60 and not inhabited(pts[0]) and not hawaii:continue
     if name=='lakes' and (area(pts[0])<100 or (f['properties']['scalerank'] or 0)>2):continue
     pts=[pts[0]]+[p for p in pts[1:] if area(p)>=(100 if name=='land' else 60) or (name=='lakes' and inhabited(p))]
    for shift in [-WIDTH,0,WIDTH]:

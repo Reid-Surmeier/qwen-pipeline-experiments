@@ -1,6 +1,6 @@
 {
   "city_symbol_scale": 0.65,
-  "close_city_count": 40806,
+  "close_city_count": 40846,
   "controls": {
     "+": [
       512,
@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 59,
+  "fps": 39,
   "mode": "sheet",
   "orphan_dots": 0,
   "popup": {
@@ -147,5 +147,24 @@
   "zoom": 0.565476179122925,
   "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 1.69642853736877
+  "zoom_ratio": 1.69642853736877,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      1440,
+      900
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      1464,
+      964
+    ]
+  }
 }

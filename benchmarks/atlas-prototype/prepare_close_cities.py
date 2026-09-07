@@ -5,6 +5,7 @@ import numpy as np
 from prepare_geography import project,tile_land,TW,TH,SCALE
 
 R=Path(__file__).resolve().parent
+HAWAII_TOWNS={5856195:1.8,5855927:6,5847411:6,5850248:6}
 
 def build(source):
  known=set()
@@ -15,7 +16,7 @@ def build(source):
  grouped=collections.defaultdict(list);skipped=collections.Counter();seen=set()
  for row in sorted(rows,key=lambda r:-int(r[14])):
   ident=int(row[0]);population=int(row[14]);code=row[7]
-  if ident in known or population<10000 or not (code=='PPL' or code=='PPLC' or code.startswith('PPLA')):continue
+  if ident in known or (population<10000 and ident not in HAWAII_TOWNS) or not (code=='PPL' or code=='PPLC' or code.startswith('PPLA')):continue
   name=row[2];lon=float(row[5]);lat=float(row[4]);key=(name.casefold(),round(lon,1),round(lat,1))
   if key in seen:continue
   seen.add(key);at=project([[lon,lat]])[0];at[0]%=4480
@@ -35,7 +36,7 @@ def build(source):
    population=int(source_row[14])
    # Spread reveal thresholds by population instead of admitting whole bands at once.
    reveal=18-3*min(2,math.log10(population/250000)) if population>=250000 else 26-8*math.log(population/50000,5)
-   cities.append({'id':int(source_row[0]),'name':source_row[2],'country':source_row[8],'lon':float(source_row[5]),'lat':float(source_row[4]),'population':population,'at':point,'min_zoom':round(24+4*(reveal-12),2)})
+   cities.append({'id':int(source_row[0]),'name':source_row[2],'country':source_row[8],'lon':float(source_row[5]),'lat':float(source_row[4]),'population':population,'at':point,'min_zoom':HAWAII_TOWNS.get(int(source_row[0]),round(24+4*(reveal-12),2))})
  cities.sort(key=lambda c:-c['population'])
  provenance={'source':'https://download.geonames.org/export/dump/cities5000.zip','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'license':'GeoNames CC BY 4.0; https://www.geonames.org/','cities':cities}
  (R/'reference/close-cities.json.gz').write_bytes(gzip.compress(json.dumps(provenance,separators=(',',':')).encode(),mtime=0))

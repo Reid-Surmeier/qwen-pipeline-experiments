@@ -1,0 +1,7 @@
+{
+  "source": "/home/reidsurmeier/qwen-image-pipeline/godot/plates/trade-minimized.png",
+  "sha256": "c01d0c13a848a8fb6c794c31ed617ee10b47247a863eb02a6b53de20cff01366",
+  "classification": "source reference; reused existing Godot trade title plate",
+  "user_reference": "Screenshot 2026-09-07 at 3.42.55 PM.png",
+  "assembly": "Original title text/icons via AtlasTexture regions; native resizable frame and SubViewportContainer"
+}

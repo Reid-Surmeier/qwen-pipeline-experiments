@@ -1,15 +1,15 @@
 {
   "city_symbol_scale": 1,
-  "close_city_count": 40806,
+  "close_city_count": 40846,
   "controls": {
     "+": [
-      301,
+      223,
       23,
       44,
       36
     ],
     "Full sheet": [
-      193,
+      26,
       23,
       52,
       36
@@ -23,18 +23,18 @@
     "regions": [
       87,
       23,
-      100,
+      80,
       36
     ],
     "−": [
-      251,
+      173,
       23,
       44,
       36
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 54,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2541.99047851562,
-    793.8330078125
+    2557.5458984375,
+    820.499572753906
   ],
   "region": "europe",
   "regions": [
@@ -105,8 +105,8 @@
       "labels": 1,
       "name": "Berlin",
       "screen": [
-        186.467132568359,
-        357.950561523438
+        130.467376708984,
+        261.950744628906
       ]
     },
     {
@@ -118,38 +118,25 @@
       "labels": 1,
       "name": "Rome",
       "screen": [
-        166.217132568359,
-        662.150634765625
-      ]
-    },
-    {
-      "at": [
-        2596.25,
-        638.25
-      ],
-      "id": "europe2673730.0",
-      "labels": 1,
-      "name": "Stockholm",
-      "screen": [
-        292.667144775391,
-        141.950561523438
+        110.217376708984,
+        566.150756835938
       ]
     }
   ],
-  "south_edge": 1028.27742741432,
+  "south_edge": 1028.27732851476,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    390,
-    844
+    334,
+    748
   ],
-  "visible_annotations": 8,
-  "visible_cities": 3,
+  "visible_annotations": 6,
+  "visible_cities": 2,
   "visible_close_cities": 0,
-  "visible_labels": 3,
+  "visible_labels": 2,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -159,6 +146,25 @@
   ],
   "zoom": 1.80000019073486,
   "zoom_max": 120,
-  "zoom_min": 0.312592592592593,
-  "zoom_ratio": 5.75829444903333
+  "zoom_min": 0.277037037037037,
+  "zoom_ratio": 6.49732689169001,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      334,
+      748
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      358,
+      812
+    ]
+  }
 }

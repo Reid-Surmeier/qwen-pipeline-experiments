@@ -1,23 +1,23 @@
 {
-  "city_count": 40806,
+  "city_count": 40846,
   "reveal_range": [
-    24.67,
+    1.8,
     112.0
   ],
-  "distinct_reveal_thresholds": 6967,
+  "distinct_reveal_thresholds": 6969,
   "eligible_by_zoom": {
-    "12": 0,
-    "24": 0,
-    "36": 104,
-    "48": 2072,
-    "64": 4885,
-    "80": 11078,
-    "96": 22750,
-    "112": 40806,
-    "120": 40806
+    "12": 4,
+    "24": 4,
+    "36": 108,
+    "48": 2076,
+    "64": 4889,
+    "80": 11082,
+    "96": 22763,
+    "112": 40846,
+    "120": 40846
   },
   "skipped": {
-    "no_nearby_retained_land": 430,
+    "no_nearby_retained_land": 391,
     "coast_adjustment_over_2_pixels": 67
   },
   "maximum_land_adjustment": 2,

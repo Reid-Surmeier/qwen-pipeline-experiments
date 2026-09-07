@@ -3,15 +3,16 @@ import { chromium } from '/home/reidsurmeier/orca/workspaces/Qwen Image pipeline
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {mapPage} from './window-playtest.mjs';
 const out=path.join(import.meta.dirname,'evidence/play');await fs.mkdir(out,{recursive:true});
 await fs.rm(path.join(out,'desktop-check.json'),{force:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-const context=await browser.newContext({viewport:{width:1440,height:900}});const page=await context.newPage();
+const context=await browser.newContext({viewport:{width:1496,height:996}});const rawPage=await context.newPage();const page=await mapPage(rawPage);
 const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 await page.goto('https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/',{waitUntil:'networkidle'});
 await page.waitForFunction(()=>window.atlasState?.regions?.length===10,{timeout:90000});
 await page.waitForTimeout(1500);
-const state=()=>page.evaluate(()=>window.atlasState);
+const state=()=>page.evaluate(()=>({...window.atlasState,window:window.atlasWindow}));
 const shot=async name=>{const check=await state();assert.equal(check.orphan_dots,0);assert(check.shown_cities.every(c=>c.labels>0));if(check.mode==='atlas')assert(check.vertical_pan_locked ? Math.abs(check.position[1]-1350)<.01 : check.south_edge<=2700.01);await page.screenshot({path:path.join(out,name+'.png')});await fs.writeFile(path.join(out,name+'.json'),JSON.stringify({...await state(),regions:(await state()).regions.map(r=>({id:r.id,source_sha256:r.source_sha256}))},null,2));};
 const control=async name=>{const s=await state();const [x,y,w,h]=s.controls[name];await page.mouse.click(x+w/2,y+h/2);await page.waitForTimeout(500);};
 await shot('01-world');assert.equal((await state()).city_symbol_scale,.65);assert((await state()).visible_world_badges>=20);assert.equal((await state()).world_badge_alpha,1);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);assert.equal((await state()).world_size[1],3144);
@@ -113,7 +114,41 @@ for(const [name,index,point] of [['london',0,[2366,775.5]],['new-york',8,[1431,9
  for(let a=0;a<added.length;a++)for(let b=0;b<a;b++)assert(Math.hypot(...added[a].screen.map((v,i)=>v-added[b].screen[i]))>=120);
  assert(close.visible_close_cities<30);
 }
+// Hawaii's smaller islands and named places survive entry into sourced detail.
+await control('World');
+// Leave the vertically locked world fit before centering Hawaii.
+await page.mouse.move(720,450);for(let i=0;i<4;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(150);}
+for(let i=0;i<3;i++){
+ const start=await state();const dx=Math.max(-580,Math.min(580,(385-start.position[0])*start.zoom)),dy=Math.max(-280,Math.min(280,(1221-start.position[1])*start.zoom));
+ await page.mouse.move(720,450);await page.mouse.down();await page.mouse.move(720-dx,450-dy,{steps:12});await page.mouse.up();await page.waitForTimeout(300);
+}
+await page.mouse.move(720,450);
+for(let i=0;i<24;i++){
+ await page.mouse.wheel(0,-100);await page.waitForTimeout(100);
+ if([3,7,15,23].includes(i)){
+  await page.waitForTimeout(400);await shot('hawaii-zoom-'+(i+5));
+  if(i>=7)assert((await state()).shown_cities.some(c=>c.name==='Honolulu'));
+ }
+}
+// Window edges resize its real viewport; title dragging never pans the map.
+let w=await rawPage.evaluate(()=>window.atlasWindow);
+const mapBefore=await state();
+await rawPage.mouse.move(w.position[0]+w.size[0]-4,w.position[1]+w.size[1]-4);await rawPage.mouse.down();
+await rawPage.mouse.move(w.position[0]+w.size[0]-324,w.position[1]+w.size[1]-204,{steps:12});await rawPage.mouse.up();await page.waitForTimeout(600);
+let smaller=await state();assert.equal(smaller.viewport[0],1120);assert.equal(smaller.viewport[1],700);assert.equal(smaller.zoom,mapBefore.zoom);assert.deepEqual(smaller.position,mapBefore.position);
+await shot('window-resized');
+w=await rawPage.evaluate(()=>window.atlasWindow);
+await rawPage.mouse.move(w.position[0]+180,w.position[1]+30);await rawPage.mouse.down();await rawPage.mouse.move(w.position[0]+300,w.position[1]+110,{steps:10});await rawPage.mouse.up();await page.waitForTimeout(400);
+let moved=await rawPage.evaluate(()=>window.atlasWindow);assert.equal(moved.position[0],w.position[0]+120);assert.equal(moved.position[1],w.position[1]+80);assert.deepEqual((await state()).position,smaller.position);await shot('window-moved');
+await page.mouse.move(560,350);await page.mouse.wheel(0,-100);await page.waitForTimeout(400);assert((await state()).zoom>smaller.zoom);
+// Native minimize and lock icons keep their reference artwork and respond to clicks.
+await rawPage.mouse.click(moved.position[0]+30,moved.position[1]+32);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).collapsed);await shot('window-collapsed');
+await rawPage.mouse.click(moved.position[0]+30,moved.position[1]+32);await page.waitForTimeout(400);assert(!(await rawPage.evaluate(()=>window.atlasWindow)).collapsed);
+await rawPage.mouse.click(moved.position[0]+moved.size[0]-30,moved.position[1]+32);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).locked);
+await rawPage.mouse.move(moved.position[0]+180,moved.position[1]+30);await rawPage.mouse.down();await rawPage.mouse.move(moved.position[0]+220,moved.position[1]+70);await rawPage.mouse.up();await page.waitForTimeout(300);assert.deepEqual((await rawPage.evaluate(()=>window.atlasWindow)).position,moved.position);
+await rawPage.mouse.click(moved.position[0]+moved.size[0]-30,moved.position[1]+32);await page.waitForTimeout(300);
+await page.setViewportSize({width:1438,height:898});await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(400);
 // Empty sea remains the cyan map surface; no white paper panels or missing textures.
 await page.keyboard.press('Home');await page.waitForTimeout(600);
-await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 120 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum','Tokyo old-scale density reduced by more than half','at least 120 pixels between added city dots in deep views','slower staged city reveal through seven London zoom checkpoints'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
+await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:["Hawaii overview-to-detail persistence and named cities","frame edge resize updates the actual map viewport","title drag preserves geographic camera center","wheel zoom after moving/resizing the frame","minimize restore and lock controls",'region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 120 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum','Tokyo old-scale density reduced by more than half','at least 120 pixels between added city dots in deep views','slower staged city reveal through seven London zoom checkpoints'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
 await browser.close();

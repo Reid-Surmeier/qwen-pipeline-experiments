@@ -1,15 +1,15 @@
 {
   "city_symbol_scale": 1.00185238553982,
-  "close_city_count": 40806,
+  "close_city_count": 40846,
   "controls": {
     "+": [
-      301,
+      223,
       23,
       44,
       36
     ],
     "Full sheet": [
-      193,
+      26,
       23,
       52,
       36
@@ -23,18 +23,18 @@
     "regions": [
       87,
       23,
-      100,
+      80,
       36
     ],
     "−": [
-      251,
+      173,
       23,
       44,
       36
     ]
   },
   "detail_alpha": 1,
-  "fps": 61,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2497.54614257812,
-    760.499694824219
+    2513.1015625,
+    787.166259765625
   ],
   "region": "europe",
   "regions": [
@@ -95,21 +95,35 @@
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
     }
   ],
-  "shown_cities": [],
-  "south_edge": 867.210857606953,
+  "shown_cities": [
+    {
+      "at": [
+        2537.25,
+        758.25
+      ],
+      "id": "europe2950159.0",
+      "labels": 1,
+      "name": "Berlin",
+      "screen": [
+        262.497436523438,
+        259.647766113281
+      ]
+    }
+  ],
+  "south_edge": 881.739659956958,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    390,
-    844
+    334,
+    748
   ],
-  "visible_annotations": 1,
-  "visible_cities": 0,
+  "visible_annotations": 3,
+  "visible_cities": 1,
   "visible_close_cities": 0,
-  "visible_labels": 0,
+  "visible_labels": 1,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -119,6 +133,25 @@
   ],
   "zoom": 3.95460033416748,
   "zoom_max": 120,
-  "zoom_min": 0.312592592592593,
-  "zoom_ratio": 12.6509726330002
+  "zoom_min": 0.277037037037037,
+  "zoom_ratio": 14.2746268746687,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      334,
+      748
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      358,
+      812
+    ]
+  }
 }

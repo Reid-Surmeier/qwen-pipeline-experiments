@@ -1,15 +1,15 @@
 {
   "city_symbol_scale": 2,
-  "close_city_count": 40806,
+  "close_city_count": 40846,
   "controls": {
     "+": [
-      301,
+      223,
       23,
       44,
       36
     ],
     "Full sheet": [
-      193,
+      26,
       23,
       52,
       36
@@ -23,18 +23,18 @@
     "regions": [
       87,
       23,
-      100,
+      80,
       36
     ],
     "−": [
-      251,
+      173,
       23,
       44,
       36
     ]
   },
   "detail_alpha": 1,
-  "fps": 59,
+  "fps": 58,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2497.54614257812,
-    760.499694824219
+    2514.80004882812,
+    785.5
   ],
   "region": "europe",
   "regions": [
@@ -98,27 +98,27 @@
   "shown_cities": [
     {
       "at": [
-        2497.25,
-        761.75
+        2514.25,
+        785
       ],
-      "id": "geonames2855047.0",
+      "id": "geonames2895044.0",
       "labels": 1,
-      "name": "Peine",
+      "name": "Jena",
       "screen": [
-        159.462890625,
-        572.03662109375
+        100.994140625,
+        314
       ]
     }
   ],
-  "south_edge": 764.016361490885,
+  "south_edge": 788.616666666667,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    390,
-    844
+    334,
+    748
   ],
   "visible_annotations": 2,
   "visible_cities": 1,
@@ -133,6 +133,25 @@
   ],
   "zoom": 120,
   "zoom_max": 120,
-  "zoom_min": 0.312592592592593,
-  "zoom_ratio": 383.886255924171
+  "zoom_min": 0.277037037037037,
+  "zoom_ratio": 433.155080213904,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      334,
+      748
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      358,
+      812
+    ]
+  }
 }

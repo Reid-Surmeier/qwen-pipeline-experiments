@@ -236,12 +236,13 @@ func _toggle_sheet() -> void:
 	_publish_state()
 
 func _resize() -> void:
+	sheet_button.visible = _viewport_size().x >= 360
 	layout_position = Vector2.INF
 	if camera.is_inside_tree(): _constrain()
 	notice.position = Vector2(18, _viewport_size().y - 28)
 	if _viewport_size().x < 750:
 		hud.get_child(0).visible = false
-		picker.custom_minimum_size.x = 100
+		picker.custom_minimum_size.x = 80 if _viewport_size().x < 360 else 100
 		sheet_button.text = "Sheet" if mode == "atlas" else "Atlas"
 		picker.clip_text = true
 		notice.text = "Drag / pinch to explore · + / − to zoom"
@@ -402,7 +403,7 @@ func _layout_close_cities(view: Rect2, occupied: Array[Rect2]) -> void:
 	visible_close_cities = 0
 	close_layer.visible = mode == "atlas"
 	close_layer.queue_redraw()
-	if mode != "atlas" or camera.zoom.x < 24: return
+	if mode != "atlas" or camera.zoom.x < 1.8: return
 	var label_scale := _city_scale()
 	var half := _viewport_size() / (2 * camera.zoom.x)
 	var candidates: Array = []

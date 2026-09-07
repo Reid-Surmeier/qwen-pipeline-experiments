@@ -2,7 +2,7 @@
 config_version=5
 [application]
 config/name="Pixel Atlas · Prototype"
-run/main_scene="res://atlas.tscn"
+run/main_scene="res://atlas_window.tscn"
 [display]
 window/size/viewport_width=1440
 window/size/viewport_height=900

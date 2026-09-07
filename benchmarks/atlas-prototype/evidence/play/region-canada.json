@@ -1,6 +1,6 @@
 {
   "city_symbol_scale": 1,
-  "close_city_count": 40806,
+  "close_city_count": 40846,
   "controls": {
     "+": [
       488,
@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 43,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -147,5 +147,24 @@
   "zoom": 1.26495730876923,
   "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 3.79487192630768
+  "zoom_ratio": 3.79487192630768,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      1440,
+      900
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      1464,
+      964
+    ]
+  }
 }

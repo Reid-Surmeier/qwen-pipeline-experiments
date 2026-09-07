@@ -1,6 +1,6 @@
 {
-  "city_symbol_scale": 1.2577868366067,
-  "close_city_count": 40806,
+  "city_symbol_scale": 1.01170134296853,
+  "close_city_count": 40846,
   "controls": {
     "+": [
       488,
@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 38,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2277.78881835938,
-    2683.87890625
+    2279.93823242188,
+    2635.51586914062
   ],
   "region": "south-america",
   "regions": [
@@ -96,10 +96,10 @@
     }
   ],
   "shown_cities": [],
-  "south_edge": 2699.99996946985,
+  "south_edge": 2700.00012202002,
   "south_limit": 2700,
   "terrain_detail": 1,
-  "terrain_tiles": 1,
+  "terrain_tiles": 4,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -117,8 +117,27 @@
     4480,
     3144
   ],
-  "zoom": 27.9137916564941,
+  "zoom": 6.97844791412354,
   "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 83.7413749694824
+  "zoom_ratio": 20.9353437423706,
+  "window": {
+    "action": "",
+    "collapsed": false,
+    "locked": false,
+    "map_rect": [
+      28,
+      68,
+      1440,
+      900
+    ],
+    "position": [
+      16,
+      16
+    ],
+    "size": [
+      1464,
+      964
+    ]
+  }
 }

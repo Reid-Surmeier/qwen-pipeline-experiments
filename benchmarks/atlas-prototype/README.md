@@ -62,7 +62,7 @@ The original 29 world badge crops now render at 22 screen pixels high, with spac
 
 ## Deeper zoom and additional cities
 
-Maximum zoom is now 120× native scale, over three times the previous 36× maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal gradually by population across native zoom 24–112. Large additions arrive first, medium cities generally require zoom 48–80, and smaller towns wait until zoom 80–112. Smaller places do not crowd the overview.
+Maximum zoom is now 120× native scale, over three times the previous 36× maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,846 additional GeoNames cities and towns reveal gradually by population across native zoom 24–112. Large additions arrive first, medium cities generally require zoom 48–80, and smaller towns wait until zoom 80–112. Smaller places do not crowd the overview.
 
 The additional catalog excludes the existing named identities, subdivisions, duplicate nearby names and points without retained land within two native-map pixels. Each additional dot and name is accepted and drawn together using the same collision space as the original labels. A geographic grid restricts layout work to nearby places. Their names use the existing regular PixelMplus font; all original label textures remain untouched. The retained coastlines, lakes, islands and badges are unchanged. At maximum zoom the white outline has a one-detail-pixel minimum so it cannot vanish.
 
@@ -75,3 +75,9 @@ World names and the sparse major regional names keep their early visibility. Ori
 Added names reserve 60 screen pixels around each complete dot/name pair. Population priority and this spacing keep dense neighborhoods selective even at deep zoom. Tokyo is checked at the previous close scale and at the new maximum. The finite coastline detail retains its pixelated appearance at deeper scales.
 
 City names and red dots grow smoothly together from their existing regional size at native zoom 2 to twice that size at 80, then remain capped. Original bitmap lettering and additional pixel text use the same scale. Layout checks use the enlarged dimensions so complete pairs keep their spacing and hide together at screen edges. Overview sizing and reveal thresholds are unchanged.
+
+## Resizable reference window and Hawaii
+
+The atlas now runs in its own Godot viewport inside the pale cyan reference frame. Drag the title bar to move it; drag any edge or corner to resize it. The left title icon collapses/restores the map, and the right icon locks/unlocks moving and resizing. Browser resizing fits the window to the available screen. Map zoom and drag stay inside the content area, and the phone toolbar hides Full sheet when space is limited. The title text/icons reuse the existing Godot trade-window plate shown in the reference.
+
+The geographic cleanup now preserves the main eight Hawaiian islands. Previously, the small-island threshold removed all except the Big Island, which also excluded many of their city anchors. Honolulu appears from native zoom 1.8; Hilo, Kahului and Lihue from 6. Other Hawaiian additions use the existing slow population pacing, adding 40 source records overall. Elsewhere the cleanup and city thresholds remain unchanged. No generation.
