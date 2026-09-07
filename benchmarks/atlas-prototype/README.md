@@ -12,7 +12,7 @@ benchmarks/atlas-prototype/run.sh
 
 This imports and exports the Godot project and publishes its Web build through the existing Tailscale share tool. Open `godot/project.godot` in Godot 4.7.2 for the native project. No persistent state or production integration.
 
-Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from 1.0× viewport fit to 36× native scale. The minimum fills the viewport vertically, so narrow phones show a horizontal slice of the world that can be panned. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
+Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from 1.0× viewport fit to 120× native scale. The minimum fills the viewport vertically, so narrow phones show a horizontal slice of the world that can be panned. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
 
 ## What the prototype established
 
@@ -62,7 +62,7 @@ The original 29 world badge crops now render at 22 screen pixels high, with spac
 
 ## Deeper zoom and additional cities
 
-Maximum zoom is now 36× native scale, three times the previous maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal gradually by population across native zoom 12–34. Large additions arrive first, medium cities generally require zoom 18–26, and smaller towns wait until zoom 26–34. Smaller places do not crowd the overview.
+Maximum zoom is now 120× native scale, over three times the previous 36× maximum. The minimum remains 1.0×. Beyond the original regional labels, 40,806 additional GeoNames cities and towns reveal gradually by population across native zoom 24–112. Large additions arrive first, medium cities generally require zoom 48–80, and smaller towns wait until zoom 80–112. Smaller places do not crowd the overview.
 
 The additional catalog excludes the existing named identities, subdivisions, duplicate nearby names and points without retained land within two native-map pixels. Each additional dot and name is accepted and drawn together using the same collision space as the original labels. A geographic grid restricts layout work to nearby places. Their names use the existing regular PixelMplus font; all original label textures remain untouched. The retained coastlines, lakes, islands and badges are unchanged. At maximum zoom the white outline has a one-detail-pixel minimum so it cannot vanish.
 
@@ -70,4 +70,6 @@ Reproduce the added catalog with `python3 benchmarks/atlas-prototype/prepare_clo
 
 ## Slower city pacing
 
-World names and the sparse major regional names keep their early visibility. Original secondary cities now wait for native zoom 3.5 or 6.5, and original small towns wait until 11. Additional places use 1,963 distinct population-based reveal thresholds instead of three large batches. Every additional city requires more zoom than before; the catalog and 36× maximum are preserved. Five London zoom checkpoints record the pacing in `evidence/play/london-paced-*.json`.
+World names and the sparse major regional names keep their early visibility. Original secondary cities now wait for native zoom 3.5 or 6.5, and original small towns wait until 11. Additional places use 6,967 distinct population-based reveal thresholds instead of three large batches. Every additional city requires more zoom than before; the catalog is preserved and the maximum is 120×. Seven London zoom checkpoints record the pacing in `evidence/play/london-paced-*.json`.
+
+Added names reserve 60 screen pixels around each complete dot/name pair. Population priority and this spacing keep dense neighborhoods selective even at deep zoom. Tokyo is checked at the previous close scale and at the new maximum. The finite coastline detail retains its pixelated appearance at deeper scales.

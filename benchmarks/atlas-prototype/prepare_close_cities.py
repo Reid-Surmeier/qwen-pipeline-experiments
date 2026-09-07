@@ -35,12 +35,12 @@ def build(source):
    population=int(source_row[14])
    # Spread reveal thresholds by population instead of admitting whole bands at once.
    reveal=18-3*min(2,math.log10(population/250000)) if population>=250000 else 26-8*math.log(population/50000,5)
-   cities.append({'id':int(source_row[0]),'name':source_row[2],'country':source_row[8],'lon':float(source_row[5]),'lat':float(source_row[4]),'population':population,'at':point,'min_zoom':round(reveal,2)})
+   cities.append({'id':int(source_row[0]),'name':source_row[2],'country':source_row[8],'lon':float(source_row[5]),'lat':float(source_row[4]),'population':population,'at':point,'min_zoom':round(24+4*(reveal-12),2)})
  cities.sort(key=lambda c:-c['population'])
  provenance={'source':'https://download.geonames.org/export/dump/cities5000.zip','source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'license':'GeoNames CC BY 4.0; https://www.geonames.org/','cities':cities}
  (R/'reference/close-cities.json.gz').write_bytes(gzip.compress(json.dumps(provenance,separators=(',',':')).encode(),mtime=0))
  (R/'godot/close-cities.json').write_text(json.dumps([{k:c[k] for k in ['id','name','at','min_zoom','population']} for c in cities],separators=(',',':'))+'\n')
- result={'city_count':len(cities),'reveal_range':[min(c['min_zoom'] for c in cities),max(c['min_zoom'] for c in cities)],'distinct_reveal_thresholds':len({c['min_zoom'] for c in cities}),'eligible_by_zoom':{z:sum(c['min_zoom']<=z for c in cities) for z in [7,12,14,18,24,26,30,34,36]},'skipped':dict(skipped),'maximum_land_adjustment':2,'font':'PixelMplus12-Regular, reused from existing Godot project; M+ FONT LICENSE','font_sha256':hashlib.sha256((R/'godot/fonts/PixelMplus12-Regular.ttf').read_bytes()).hexdigest()}
+ result={'city_count':len(cities),'reveal_range':[min(c['min_zoom'] for c in cities),max(c['min_zoom'] for c in cities)],'distinct_reveal_thresholds':len({c['min_zoom'] for c in cities}),'eligible_by_zoom':{z:sum(c['min_zoom']<=z for c in cities) for z in [12,24,36,48,64,80,96,112,120]},'skipped':dict(skipped),'maximum_land_adjustment':2,'font':'PixelMplus12-Regular, reused from existing Godot project; M+ FONT LICENSE','font_sha256':hashlib.sha256((R/'godot/fonts/PixelMplus12-Regular.ttf').read_bytes()).hexdigest()}
  (R/'evidence/close-cities.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 
 if __name__=='__main__':build(Path(sys.argv[1]))

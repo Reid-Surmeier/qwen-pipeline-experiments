@@ -22,7 +22,7 @@
     "Pacific wrap",
     "sparse named overview",
     "Antarctica close view",
-    "zoom limits 1.0 world fit and 36 native",
+    "zoom limits 1.0 world fit and 120 native",
     "paired city/name reveal with no orphan dots",
     "US northeast and Florida close views",
     "London on Great Britain",
@@ -32,7 +32,9 @@
     "southern viewport clamp under drag and resize",
     "opaque readable overview badges at desktop and 4K minimum zoom",
     "new close cities in London New York and Tokyo beyond previous maximum",
-    "slower staged city reveal through five London zoom checkpoints"
+    "slower staged city reveal through seven London zoom checkpoints",
+    "Tokyo old-scale density reduced by more than half",
+    "at least 120 pixels between added city dots in deep views"
   ],
   "errors": []
 }

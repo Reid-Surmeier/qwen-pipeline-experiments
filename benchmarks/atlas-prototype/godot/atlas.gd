@@ -4,7 +4,7 @@ extends Node2D
 const WIDTH := 4480.0
 const HEIGHT := 3144.0
 const SOUTH_LIMIT := 2700.0
-const MAX_ZOOM := 36.0
+const MAX_ZOOM := 120.0
 const CLOSE_FONT_SIZE := 20
 var close_font: FontFile
 var close_layer := Node2D.new()
@@ -399,7 +399,7 @@ func _layout_close_cities(view: Rect2, occupied: Array[Rect2]) -> void:
 	visible_close_cities = 0
 	close_layer.visible = mode == "atlas"
 	close_layer.queue_redraw()
-	if mode != "atlas" or camera.zoom.x < 12: return
+	if mode != "atlas" or camera.zoom.x < 24: return
 	var half := _viewport_size() / (2 * camera.zoom.x)
 	var candidates: Array = []
 	# Bucket the catalog so each movement only considers nearby places.
@@ -416,7 +416,7 @@ func _layout_close_cities(view: Rect2, occupied: Array[Rect2]) -> void:
 		var size := close_font.get_string_size(city.name, HORIZONTAL_ALIGNMENT_LEFT, -1, CLOSE_FONT_SIZE)
 		var box := Rect2(screen - Vector2(5, 5), Vector2(10, 10)).merge(Rect2(screen + Vector2(9, 5 - close_font.get_ascent(CLOSE_FONT_SIZE)), size))
 		if not view.encloses(box): continue
-		var padded := box.grow(8)
+		var padded := box.grow(60)
 		var collides := false
 		for previous in occupied:
 			if padded.intersects(previous): collides = true; break

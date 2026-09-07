@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 58,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -48,8 +48,8 @@
     "visible": false
   },
   "position": [
-    2544.76831054688,
-    783.8330078125
+    2366.01831054688,
+    775.7080078125
   ],
   "region": "europe",
   "regions": [
@@ -97,110 +97,97 @@
   "shown_cities": [
     {
       "at": [
-        2844,
-        703
-      ],
-      "id": "europe524901.0",
-      "labels": 1,
-      "name": "Moscow",
-      "screen": [
-        1198.77075195312,
-        320.667175292969
-      ]
-    },
-    {
-      "at": [
-        2333,
-        751
+        2366,
+        775.5
       ],
       "id": "europe2643743.0",
       "labels": 1,
       "name": "London",
       "screen": [
-        381.170684814453,
-        397.467193603516
+        718.882568359375,
+        437.305847167969
       ]
     },
     {
       "at": [
-        2537,
-        758
+        2355.25,
+        776.25
       ],
-      "id": "europe2950159.0",
+      "id": "geonames2639577.0",
       "labels": 1,
-      "name": "Berlin",
+      "name": "Reading",
       "screen": [
-        707.570678710938,
-        408.667175292969
+        62.839111328125,
+        483.076324462891
       ]
     },
     {
       "at": [
-        2321,
-        949
+        2368.75,
+        775
       ],
-      "id": "europe3117735.0",
+      "id": "geonames2656333.0",
       "labels": 1,
-      "name": "Madrid",
+      "name": "Barking",
       "screen": [
-        361.970703125,
-        714.267211914062
+        886.707641601562,
+        406.792205810547
       ]
     },
     {
       "at": [
-        2526,
-        925
+        2365,
+        778
       ],
-      "id": "europe3169070.0",
+      "id": "geonames2636503.0",
       "labels": 1,
-      "name": "Rome",
+      "name": "Sutton",
       "screen": [
-        689.970703125,
-        675.8671875
+        657.855285644531,
+        589.874084472656
       ]
     },
     {
       "at": [
-        2397,
-        819
+        2360,
+        775.25
       ],
-      "id": "europe2988507.0",
+      "id": "geonames2637627.0",
       "labels": 1,
-      "name": "Paris",
+      "name": "Slough",
       "screen": [
-        483.570678710938,
-        506.267181396484
+        352.718780517578,
+        422.049011230469
       ]
     },
     {
       "at": [
-        2583,
-        656
+        2373.5,
+        774.5
       ],
-      "id": "europe2673730.0",
+      "id": "geonames2656194.0",
       "labels": 1,
-      "name": "Stockholm",
+      "name": "Basildon",
       "screen": [
-        781.170715332031,
-        245.467178344727
+        1176.58728027344,
+        376.278564453125
       ]
     }
   ],
-  "south_edge": 1065.08300362155,
+  "south_edge": 783.081757182731,
   "south_limit": 2700,
-  "terrain_detail": 0,
-  "terrain_tiles": 0,
+  "terrain_detail": 1,
+  "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 23,
-  "visible_cities": 7,
-  "visible_close_cities": 0,
-  "visible_labels": 7,
+  "visible_annotations": 12,
+  "visible_cities": 6,
+  "visible_close_cities": 5,
+  "visible_labels": 6,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -208,8 +195,8 @@
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 61.0272979736328,
   "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 4.80000007152557
+  "zoom_ratio": 183.081893920898
 }

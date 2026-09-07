@@ -48,10 +48,10 @@
     "visible": false
   },
   "position": [
-    2544.76831054688,
-    783.8330078125
+    4135.51904296875,
+    1018.91473388672
   ],
-  "region": "europe",
+  "region": "asia",
   "regions": [
     {
       "id": "europe",
@@ -97,110 +97,32 @@
   "shown_cities": [
     {
       "at": [
-        2844,
-        703
+        4135,
+        1018
       ],
-      "id": "europe524901.0",
+      "id": "asia1850147.0",
       "labels": 1,
-      "name": "Moscow",
+      "name": "Tokyo",
       "screen": [
-        1198.77075195312,
-        320.667175292969
-      ]
-    },
-    {
-      "at": [
-        2333,
-        751
-      ],
-      "id": "europe2643743.0",
-      "labels": 1,
-      "name": "London",
-      "screen": [
-        381.170684814453,
-        397.467193603516
-      ]
-    },
-    {
-      "at": [
-        2537,
-        758
-      ],
-      "id": "europe2950159.0",
-      "labels": 1,
-      "name": "Berlin",
-      "screen": [
-        707.570678710938,
-        408.667175292969
-      ]
-    },
-    {
-      "at": [
-        2321,
-        949
-      ],
-      "id": "europe3117735.0",
-      "labels": 1,
-      "name": "Madrid",
-      "screen": [
-        361.970703125,
-        714.267211914062
-      ]
-    },
-    {
-      "at": [
-        2526,
-        925
-      ],
-      "id": "europe3169070.0",
-      "labels": 1,
-      "name": "Rome",
-      "screen": [
-        689.970703125,
-        675.8671875
-      ]
-    },
-    {
-      "at": [
-        2397,
-        819
-      ],
-      "id": "europe2988507.0",
-      "labels": 1,
-      "name": "Paris",
-      "screen": [
-        483.570678710938,
-        506.267181396484
-      ]
-    },
-    {
-      "at": [
-        2583,
-        656
-      ],
-      "id": "europe2673730.0",
-      "labels": 1,
-      "name": "Stockholm",
-      "screen": [
-        781.170715332031,
-        245.467178344727
+        703.74169921875,
+        421.347229003906
       ]
     }
   ],
-  "south_edge": 1065.08300362155,
+  "south_edge": 1033.28089659309,
   "south_limit": 2700,
-  "terrain_detail": 0,
-  "terrain_tiles": 0,
+  "terrain_detail": 1,
+  "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 23,
-  "visible_cities": 7,
+  "visible_annotations": 2,
+  "visible_cities": 1,
   "visible_close_cities": 0,
-  "visible_labels": 7,
+  "visible_labels": 1,
   "visible_world_badges": 0,
   "world_badge_alpha": 0,
   "world_badge_screen_height": 22,
@@ -208,8 +130,8 @@
     4480,
     3144
   ],
-  "zoom": 1.60000002384186,
+  "zoom": 31.3236045837402,
   "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 4.80000007152557
+  "zoom_ratio": 93.9708137512207
 }

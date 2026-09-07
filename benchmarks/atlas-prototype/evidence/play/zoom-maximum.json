@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 56,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -95,7 +95,7 @@
     }
   ],
   "shown_cities": [],
-  "south_edge": 2475.48681640625,
+  "south_edge": 2466.73681640625,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
@@ -116,8 +116,8 @@
     4480,
     3144
   ],
-  "zoom": 36,
-  "zoom_max": 36,
+  "zoom": 120,
+  "zoom_max": 120,
   "zoom_min": 0.333333333333333,
-  "zoom_ratio": 108
+  "zoom_ratio": 360
 }

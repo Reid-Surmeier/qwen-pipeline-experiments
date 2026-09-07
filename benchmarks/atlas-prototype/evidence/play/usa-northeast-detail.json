@@ -33,7 +33,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 48,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -157,7 +157,7 @@
     3144
   ],
   "zoom": 3.66041231155396,
-  "zoom_max": 36,
+  "zoom_max": 120,
   "zoom_min": 0.333333333333333,
   "zoom_ratio": 10.9812369346619
 }

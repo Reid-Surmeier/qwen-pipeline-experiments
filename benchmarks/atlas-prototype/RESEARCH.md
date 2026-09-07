@@ -69,3 +69,7 @@ The existing regular PixelMplus font is reused under the [upstream M+ permission
 The owner wanted less density earlier in zoom. The previous three thresholds admitted large population bands simultaneously. Original secondary-city thresholds move from 2/3.5/5.5 to 3.5/6.5/11, while original world and major regional labels remain unchanged. Additional cities now reveal across population-based thresholds spanning 12.17–34: large cities spread over approximately 12–18, medium places over 18–26, and smaller towns over 26–34. All 40,806 additional identities remain and each has a later threshold than before.
 
 Verification compares old and new reveal eligibility for every added city and captures five real wheel-zoom checkpoints around London. This changes pacing only: city positions, glyphs, palette, map textures, badge artwork and camera limits are preserved.
+
+## Further zoom and simultaneous label density
+
+The Tokyo screenshot demonstrated that later eligibility alone still fills the screen once many places qualify. Increase the shared maximum to 120, stretch additional thresholds to 24.67–112, and increase existing pair-rectangle padding from 8 to 60 screen pixels. Reusing the population-sorted collision pass preserves larger places and leaves room around each accepted name; closer zoom separates competing towns spatially. Original labels retain priority and their exact typography. No new terrain or generated artwork. Real-input checks compare the same Tokyo scale to the previous build, check close-pair spacing, and reach 120 on desktop and phone.

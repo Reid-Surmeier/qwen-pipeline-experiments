@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-07T18:37:26.162650+00:00",
+  "built_at": "2026-09-07T19:03:21.675917+00:00",
   "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/5",
   "branch": "prototype/atlas-5",
   "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/",
@@ -35,16 +35,16 @@
     "retained_lake_polygons": 30,
     "overview_badges_visible_at_minimum": true,
     "additional_close_cities": 40806,
-    "new_maximum_native_zoom": 36,
+    "new_maximum_native_zoom": 120,
     "slower_population_based_reveal": true,
-    "distinct_close_reveal_thresholds": 1963,
+    "distinct_close_reveal_thresholds": 6967,
     "new_zealand_land_size": [
       154,
       193
     ],
     "zoom_range": [
       "1.0 viewport fit",
-      "36 native"
+      "120 native"
     ],
     "unchanged_badges": 120,
     "other_full_sheets_byte_identical": 9,
@@ -61,12 +61,12 @@
     "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/"
   },
   "web_files": {
-    "godot-prototype.zip": "b70488bb8525601b339f0de74c7e6b4dd5776bf778749c494d548bf0e861321f",
+    "godot-prototype.zip": "b0abb7a8fb560af825e372920f1321b75f4a4b2f38977c81924fe557d3c5b31e",
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "738845ec50390c061d885fceb3611aae45cc63fe2416353f363de873756dada4",
+    "index.html": "58e87cbb7c5df1d8128f9a7d0989cbaf90575f4caa94e4e961247e1aca9ecb50",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "9b8b2c1669b09b05a9fda87390c4acdc7088f8e544f36f232d37875d442fd6e2",
+    "index.pck": "03be5cd579eadb640774ceb445f7b7d845ca0a1f064701685eb3e95310f59554",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   }

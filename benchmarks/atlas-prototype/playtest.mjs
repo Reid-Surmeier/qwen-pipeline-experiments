@@ -44,7 +44,7 @@ await page.waitForTimeout(500);assert((await state()).position[1]>2400);await sh
 // Both zoom stops are reachable through the real controls.
 await page.mouse.move(720,450);
 for(let i=0;i<35;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(50);}
-await page.waitForTimeout(400);assert.equal((await state()).zoom,36);await shot('zoom-maximum');
+await page.waitForTimeout(400);assert.equal((await state()).zoom,120);await shot('zoom-maximum');
 for(let i=0;i<65;i++){await page.mouse.wheel(0,100);await page.waitForTimeout(50);}
 await page.waitForTimeout(400);assert(Math.abs((await state()).zoom_ratio-1)<.001);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);assert((await state()).visible_world_badges>=20);assert.equal((await state()).world_badge_alpha,1);await shot('zoom-minimum');
 // A fixed city neighborhood gains visible markers as screen space grows.
@@ -95,16 +95,25 @@ for(const [name,index,point] of [['london',0,[2366,775.5]],['new-york',8,[1431,9
  const dx=(point[0]-initial.position[0])*initial.zoom,dy=(point[1]-initial.position[1])*initial.zoom;
  await page.mouse.move(720,450);await page.mouse.down();await page.mouse.move(720-dx,450-dy,{steps:12});await page.mouse.up();
  await page.mouse.move(720,450);
- for(let i=0;i<20;i++){
+ for(let i=0;i<30;i++){
   await page.mouse.wheel(0,-100);await page.waitForTimeout(85);
-  if(name==='london' && [9,11,13,15,17].includes(i)){
+  if(name==='tokyo' && i===19){
+   await page.waitForTimeout(400);await shot('tokyo-old-zoom-sparser');
+   const old=JSON.parse(await fs.readFile(path.join(out,'tokyo-density-before.json'),'utf8'));
+   assert(Math.abs((await state()).zoom-old.zoom)<.01);
+   assert((await state()).visible_close_cities<old.visible_close_cities/2);
+  }
+  if(name==='london' && [9,11,13,15,17,21,25].includes(i)){
    await page.waitForTimeout(300);await shot('london-paced-'+(i+1));
    if(i<=11)assert.equal((await state()).visible_close_cities,0);
   }
  }
- await page.waitForTimeout(600);const close=await state();assert(close.zoom>12);assert(close.visible_close_cities>=3);assert.equal(close.orphan_dots,0);await shot(name+'-deep-cities');
+ await page.waitForTimeout(600);const close=await state();assert.equal(close.zoom,120);assert(close.visible_close_cities>0);assert.equal(close.orphan_dots,0);await shot(name+'-deep-cities');
+ const added=close.shown_cities.filter(c=>c.id.startsWith('geonames'));
+ for(let a=0;a<added.length;a++)for(let b=0;b<a;b++)assert(Math.hypot(...added[a].screen.map((v,i)=>v-added[b].screen[i]))>=120);
+ assert(close.visible_close_cities<30);
 }
 // Empty sea remains the cyan map surface; no white paper panels or missing textures.
 await page.keyboard.press('Home');await page.waitForTimeout(600);
-await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 36 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum','slower staged city reveal through five London zoom checkpoints'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
+await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 120 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize','opaque readable overview badges at desktop and 4K minimum zoom','new close cities in London New York and Tokyo beyond previous maximum','Tokyo old-scale density reduced by more than half','at least 120 pixels between added city dots in deep views','slower staged city reveal through seven London zoom checkpoints'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
 await browser.close();
