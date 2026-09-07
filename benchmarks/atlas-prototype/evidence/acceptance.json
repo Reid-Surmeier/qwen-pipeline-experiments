@@ -3,19 +3,34 @@
   "regions": 10,
   "europe_city_count": 47,
   "us_cities_on_land": 89,
-  "overview_city_count": 10,
+  "overview_city_count": 11,
   "original_thin_labels_restored": 10,
   "named_regional_placements": 307,
   "london_on_great_britain": true,
   "orphan_dots": 0,
   "southern_pan_stop": true,
   "antarctica_present": true,
+  "unbounded_polar_fill_removed": true,
+  "detail_city_anchors_on_land": 396,
+  "sourced_lakes_checked": [
+    "Michigan",
+    "Superior",
+    "Huron",
+    "Erie",
+    "Ontario",
+    "Great Bear",
+    "Great Slave",
+    "Winnipeg",
+    "Athabasca"
+  ],
+  "terrain_detail_resolution": 4,
+  "geography_tiles": 48,
   "new_zealand_land_size": [
     154,
     193
   ],
   "zoom_range": [
-    "0.5 world fit",
+    "1.0 viewport fit",
     "12 native"
   ],
   "unchanged_badges": 120,

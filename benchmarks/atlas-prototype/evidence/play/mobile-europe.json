@@ -148,6 +148,9 @@
     }
   ],
   "south_edge": 1252.7219091227,
+  "south_limit": 2700,
+  "terrain_detail": 0,
+  "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -163,6 +166,6 @@
   ],
   "zoom": 0.899999976158142,
   "zoom_max": 12,
-  "zoom_min": 0.0408482142857143,
-  "zoom_ratio": 11.0163931507882
+  "zoom_min": 0.312592592592593,
+  "zoom_ratio": 2.87914684315993
 }

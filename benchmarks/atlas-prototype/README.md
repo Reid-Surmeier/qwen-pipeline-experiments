@@ -12,7 +12,7 @@ benchmarks/atlas-prototype/run.sh
 
 This imports and exports the Godot project and publishes its Web build through the existing Tailscale share tool. Open `godot/project.godot` in Godot 4.7.2 for the native project. No persistent state or production integration.
 
-Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from half the world-fit scale to 12× native scale. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
+Drag to pan; scroll, pinch, double-click, or use +/− to zoom. A sparse set of named cities remains visible at world zoom. Major regional cities appear next, and smaller towns wait for close zoom. The original thin pixel lettering is restored. Each dot and its complete name appear and disappear together, with space between pairs. Zoom ranges from 1.0× viewport fit to 12× native scale. The minimum fills the viewport vertically, so narrow phones show a horizontal slice of the world that can be panned. Jump to a region with the selector. Full sheet displays the original regional artwork, including source insets. Europe contains 47 cities instead of 94. Home/Escape or World restores the overview.
 
 ## What the prototype established
 
@@ -34,7 +34,7 @@ Artifact classification: `godot/assets/` are derived prototype outputs; `generat
 
 Antarctica extends the world from 2240 to 3144 pixels tall. Its land silhouette comes from [Natural Earth](https://www.naturalearthdata.com/downloads/110m-physical-vectors/), public domain, rasterized in the existing palette with an eight-pixel white coast. The clipped South American tip and missing Florida Keys were completed locally in the same style.
 
-USA registration identifies 89 original mainland markers with [GeoNames](https://www.geonames.org/), CC BY 4.0, and excludes one duplicate Washington mark. Labels follow their markers; reviewed coast-side adjustments keep marker centers inside the illustrative land while preserving northeast-city order and Key West south of Miami. Source coordinates, GeoNames IDs, and every placement correction are recorded in `reference/usa-cities.json` and `evidence/usa-registration.json`. The world artwork is still approximate geography, including simplified or missing lakes.
+USA registration identifies 89 original mainland markers with [GeoNames](https://www.geonames.org/), CC BY 4.0, and excludes one duplicate Washington mark. Labels follow their markers; reviewed coast-side adjustments keep marker centers inside the illustrative land while preserving northeast-city order and Key West south of Miami. Source coordinates, GeoNames IDs, and every placement correction are recorded in `reference/usa-cities.json` and `evidence/usa-registration.json`. The world artwork remains illustrative. Large lakes now use sourced geometry, and close views switch to finer geographic coastlines.
 
 No new paid generation was used for these corrections. All ten original full-sheet views, including the previously approved Europe reduction, are unchanged.
 
@@ -42,6 +42,14 @@ No new paid generation was used for these corrections. All ten original full-she
 
 The city/name association is based on identified names instead of the nearest generated red dot. `reference/city-catalog.json` records GeoNames matches and original label rectangles across the other nine sheets; `evidence/city-registration.json` records their placement adjustments. London uses a reviewed southeast-England anchor. Shared or adjacent source labels, including New York/Philadelphia, Detroit/Cleveland, and Belgrade/Bucharest, are separated from their neighboring city identities. All 47 European city names remain represented. Ambiguous and non-city source annotations remain listed in the catalog and visible in Full sheet rather than receiving invented geographic identities.
 
-At close zoom the visible viewport stops at the southern map limit. When the entire map is shorter than the viewport, vertical panning locks and the world stays centered; continuous pink polar fill covers the lower canvas without a false coastline or sea beyond Antarctica. Resizing and all pan/zoom gestures use the same constraint.
+All camera inputs stop at a 1.0× minimum. The visible southern edge stops within Antarctica at world y=2700, before the polar projection stretches excessively. The unlimited pink fill is removed. Resizing, reset, buttons, wheel, pinch and panning use the same constraint.
 
 Current acceptance includes sparse named overview on desktop and phone, zero orphan dots during zoom, sparse Russian regional view with towns delayed to close zoom, London on Great Britain, southern drag stop, viewport resize, all ten original thin label texture hashes, and the retained full-sheet/palette/hosting checks. No additional paid generation.
+
+## Lakes and finer coastlines
+
+The overview retains its original terrain artwork with the Great Lakes and major lakes in Canada and elsewhere added from Natural Earth 5.1.2. At native zoom 1.65–1.8 it transitions to 1:10m geographic coastlines and 1,355 lakes, rasterized at four times the original pixel resolution. This adds actual bays, islands and shore geometry rather than enlarging the original pixels. The original palette, thin city-label textures, red dots, badge art and full sheets remain intact.
+
+Only visible detail tiles are loaded. A small signed-distance shader keeps the white close-up outline eight screen pixels wide as zoom increases, avoiding oversized white rings around small lakes. Detail city anchors use the same projection and land checks as the geographic layer. The source artwork and geographic coastlines differ slightly; the brief level transition moves city anchors with the terrain. This is one finite detail level, not unlimited street-level cartography.
+
+`prepare_geography.py` builds the 48 detail tiles and geographic fields from the pinned, public-domain source extracts in `reference/`; run it before `prepare_atlas.py` to reproduce terrain assembly. Source URLs, versions and hashes are in `reference/detail-sources.json`. No additional paid generation was used.

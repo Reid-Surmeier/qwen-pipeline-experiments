@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image,ImageDraw
 from scipy import ndimage as nd
 from scipy.interpolate import RBFInterpolator
+from prepare_geography import add_overview_lakes,city_anchor
 
 R=Path(__file__).resolve().parent;repo=R.parents[1];A=R/'godot/assets';A.mkdir(exist_ok=True)
 sys.path.insert(0,str(repo/'scripts'))
@@ -79,6 +80,7 @@ keys=Image.new('1',(4480,height));d=ImageDraw.Draw(keys)
 for x,y in [(1317,1153),(1327,1148)]:d.rectangle((x-5,y-4,x+5,y+4),fill=1)
 m=np.array(keys,bool);stroke=nd.binary_dilation(m,iterations=8)&~m
 b[stroke & np.all(b==CYAN,2)]=WHITE;b[m]=PINK
+b=add_overview_lakes(b)
 Image.fromarray(b).save(A/'terrain.png')
 # Keep only original number badges at overview; no baked city dots or lettering.
 overlay=np.zeros((height,4480,4),dtype='uint8')
@@ -253,6 +255,10 @@ for name,pts in controls.items():
   population=c.get('population',0)
   c['min_zoom']=0.0 if c['name'] in world_names else (0.8 if c['name'] in regional_names else (2.0 if population>=1000000 else (3.5 if population>=100000 else 5.5)))
   c['rank']=-population
+ for c in cities:
+  source_city=usa_cities[c['city_id']] if name=='usa' else next(v for v in city_catalog['cities'] if v['region']==name and v['geonameid']==c['city_id'])
+  c['detail_at']=world(source_city['lon'],source_city['lat']).tolist();c['detail_at'][0]%=4480
+  c['detail_at']=city_anchor(c['detail_at'])
  by_id={c['city_id']:c for c in cities}
  for g in annotations:
   if g['kind']=='label':g['at']=by_id[g['city_id']]['at']

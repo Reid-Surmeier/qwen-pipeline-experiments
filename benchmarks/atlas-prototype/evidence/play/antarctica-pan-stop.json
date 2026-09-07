@@ -47,8 +47,8 @@
     "visible": false
   },
   "position": [
-    2291.4765625,
-    3106.5
+    2278.73901367188,
+    2662.5
   ],
   "region": "south-america",
   "regions": [
@@ -94,7 +94,10 @@
     }
   ],
   "shown_cities": [],
-  "south_edge": 3144,
+  "south_edge": 2700,
+  "south_limit": 2700,
+  "terrain_detail": 1,
+  "terrain_tiles": 2,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -110,6 +113,6 @@
   ],
   "zoom": 12,
   "zoom_max": 12,
-  "zoom_min": 0.124045801526718,
-  "zoom_ratio": 48.3692307692308
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 36
 }

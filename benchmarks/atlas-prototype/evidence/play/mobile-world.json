@@ -48,7 +48,7 @@
   },
   "position": [
     2240,
-    1572
+    1350
   ],
   "region": "africa",
   "regions": [
@@ -96,19 +96,6 @@
   "shown_cities": [
     {
       "at": [
-        3840,
-        957
-      ],
-      "id": "asia1816670.0",
-      "labels": 1,
-      "name": "Beijing",
-      "screen": [
-        325.714294433594,
-        371.756683349609
-      ]
-    },
-    {
-      "at": [
         2333,
         751
       ],
@@ -116,40 +103,43 @@
       "labels": 1,
       "name": "London",
       "screen": [
-        202.597763061523,
-        354.92724609375
+        224.071105957031,
+        234.757034301758
       ]
     },
     {
       "at": [
-        1821,
-        1761
+        2601,
+        1923
       ],
-      "id": "south-america3451190.0",
+      "id": "africa3369157.0",
       "labels": 1,
-      "name": "Rio de Janeiro",
+      "name": "Cape Town",
       "screen": [
-        160.769195556641,
-        437.440612792969
+        307.845916748047,
+        601.115539550781
       ]
     }
   ],
-  "south_edge": 6737.4644943338,
+  "south_edge": 2699.99998608048,
+  "south_limit": 2700,
+  "terrain_detail": 0,
+  "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": true,
   "viewport": [
     390,
     844
   ],
-  "visible_annotations": 6,
-  "visible_cities": 3,
-  "visible_labels": 3,
+  "visible_annotations": 4,
+  "visible_cities": 2,
+  "visible_labels": 2,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 0.0816964283585548,
+  "zoom": 0.312592595815659,
   "zoom_max": 12,
-  "zoom_min": 0.0408482142857143,
-  "zoom_ratio": 0.999999997394332
+  "zoom_min": 0.312592592592593,
+  "zoom_ratio": 1.00000001031076
 }

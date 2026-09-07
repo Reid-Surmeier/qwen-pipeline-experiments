@@ -24,7 +24,7 @@
         1344
       ],
       "source_sha256": "9705d50cfde60604b53d354e7d6471b92d201e8b25201ce7e891ce9cb1067aef",
-      "detail_sha256": "b265fc80026fc3a2b68e2780828eb053b14700c5fb9d3fe636ea758128e0c7ab",
+      "detail_sha256": "2ae7b5560f82178dcc7dcfb9eff2e4b3047e14485474e02989b45e3183860e77",
       "control_points": [
         [
           69,
@@ -260,7 +260,11 @@
           "name": "Murmansk",
           "population": 295374,
           "min_zoom": 3.5,
-          "rank": -295374
+          "rank": -295374,
+          "detail_at": [
+            2786.5,
+            444.25
+          ]
         },
         {
           "rect": [
@@ -296,7 +300,11 @@
           "name": "Reykjav\u00edk",
           "population": 118918,
           "min_zoom": 3.5,
-          "rank": -118918
+          "rank": -118918,
+          "detail_at": [
+            2090.5,
+            545.5
+          ]
         },
         {
           "rect": [
@@ -332,7 +340,11 @@
           "name": "Helsinki",
           "population": 658864,
           "min_zoom": 3.5,
-          "rank": -658864
+          "rank": -658864,
+          "detail_at": [
+            2683.25,
+            622.5
+          ]
         },
         {
           "rect": [
@@ -368,7 +380,11 @@
           "name": "Oslo",
           "population": 1082575,
           "min_zoom": 2.0,
-          "rank": -1082575
+          "rank": -1082575,
+          "detail_at": [
+            2503.5,
+            627.25
+          ]
         },
         {
           "rect": [
@@ -404,7 +420,11 @@
           "name": "Saint Petersburg",
           "population": 5351935,
           "min_zoom": 2.0,
-          "rank": -5351935
+          "rank": -5351935,
+          "detail_at": [
+            2751.25,
+            626.75
+          ]
         },
         {
           "rect": [
@@ -440,7 +460,11 @@
           "name": "Stockholm",
           "population": 1515017,
           "min_zoom": 0.8,
-          "rank": -1515017
+          "rank": -1515017,
+          "detail_at": [
+            2596.75,
+            640.0
+          ]
         },
         {
           "rect": [
@@ -476,7 +500,11 @@
           "name": "Tallinn",
           "population": 394024,
           "min_zoom": 3.5,
-          "rank": -394024
+          "rank": -394024,
+          "detail_at": [
+            2680.75,
+            636.25
+          ]
         },
         {
           "rect": [
@@ -512,7 +540,11 @@
           "name": "Moscow",
           "population": 10381222,
           "min_zoom": 0.0,
-          "rank": -10381222
+          "rank": -10381222,
+          "detail_at": [
+            2843.5,
+            702.75
+          ]
         },
         {
           "rect": [
@@ -548,7 +580,11 @@
           "name": "Riga",
           "population": 742572,
           "min_zoom": 3.5,
-          "rank": -742572
+          "rank": -742572,
+          "detail_at": [
+            2672.75,
+            681.5
+          ]
         },
         {
           "rect": [
@@ -584,7 +620,11 @@
           "name": "Copenhagen",
           "population": 1153615,
           "min_zoom": 2.0,
-          "rank": -1153615
+          "rank": -1153615,
+          "detail_at": [
+            2526.5,
+            704.0
+          ]
         },
         {
           "rect": [
@@ -620,7 +660,11 @@
           "name": "Edinburgh",
           "population": 514990,
           "min_zoom": 3.5,
-          "rank": -514990
+          "rank": -514990,
+          "detail_at": [
+            2327.25,
+            699.25
+          ]
         },
         {
           "rect": [
@@ -656,7 +700,11 @@
           "name": "Vilnius",
           "population": 542366,
           "min_zoom": 3.5,
-          "rank": -542366
+          "rank": -542366,
+          "detail_at": [
+            2687.5,
+            721.25
+          ]
         },
         {
           "rect": [
@@ -692,7 +740,11 @@
           "name": "Minsk",
           "population": 1742124,
           "min_zoom": 2.0,
-          "rank": -1742124
+          "rank": -1742124,
+          "detail_at": [
+            2716.5,
+            735.0
+          ]
         },
         {
           "rect": [
@@ -728,7 +780,11 @@
           "name": "Dublin",
           "population": 1024027,
           "min_zoom": 2.0,
-          "rank": -1024027
+          "rank": -1024027,
+          "detail_at": [
+            2288.5,
+            744.75
+          ]
         },
         {
           "rect": [
@@ -764,7 +820,11 @@
           "name": "Warsaw",
           "population": 1702139,
           "min_zoom": 2.0,
-          "rank": -1702139
+          "rank": -1702139,
+          "detail_at": [
+            2633.5,
+            763.25
+          ]
         },
         {
           "rect": [
@@ -793,14 +853,18 @@
           ],
           "kind": "city",
           "at": [
-            2429,
-            761
+            2426,
+            765
           ],
           "city_id": 2759794,
           "name": "Amsterdam",
           "population": 741636,
           "min_zoom": 3.5,
-          "rank": -741636
+          "rank": -741636,
+          "detail_at": [
+            2428.25,
+            761.0
+          ]
         },
         {
           "rect": [
@@ -811,8 +875,8 @@
           ],
           "kind": "label",
           "at": [
-            2429,
-            761
+            2426,
+            765
           ],
           "city_id": 2759794,
           "offset": [
@@ -836,7 +900,11 @@
           "name": "Berlin",
           "population": 3426354,
           "min_zoom": 0.8,
-          "rank": -3426354
+          "rank": -3426354,
+          "detail_at": [
+            2537.25,
+            758.25
+          ]
         },
         {
           "rect": [
@@ -872,7 +940,11 @@
           "name": "London",
           "population": 8961989,
           "min_zoom": 0.0,
-          "rank": -8961989
+          "rank": -8961989,
+          "detail_at": [
+            2366.0,
+            775.5
+          ]
         },
         {
           "rect": [
@@ -908,7 +980,11 @@
           "name": "Prague",
           "population": 1165581,
           "min_zoom": 2.0,
-          "rank": -1165581
+          "rank": -1165581,
+          "detail_at": [
+            2550.0,
+            798.75
+          ]
         },
         {
           "rect": [
@@ -944,7 +1020,11 @@
           "name": "Brussels",
           "population": 1019022,
           "min_zoom": 2.0,
-          "rank": -1019022
+          "rank": -1019022,
+          "detail_at": [
+            2422.75,
+            786.25
+          ]
         },
         {
           "rect": [
@@ -980,7 +1060,11 @@
           "name": "Kyiv",
           "population": 2952301,
           "min_zoom": 2.0,
-          "rank": -2952301
+          "rank": -2952301,
+          "detail_at": [
+            2753.75,
+            792.75
+          ]
         },
         {
           "rect": [
@@ -1016,7 +1100,11 @@
           "name": "Luxembourg",
           "population": 76684,
           "min_zoom": 5.5,
-          "rank": -76684
+          "rank": -76684,
+          "detail_at": [
+            2445.25,
+            806.75
+          ]
         },
         {
           "rect": [
@@ -1052,7 +1140,11 @@
           "name": "Bratislava",
           "population": 423737,
           "min_zoom": 3.5,
-          "rank": -423737
+          "rank": -423737,
+          "detail_at": [
+            2584.0,
+            830.25
+          ]
         },
         {
           "rect": [
@@ -1088,7 +1180,11 @@
           "name": "Paris",
           "population": 2138551,
           "min_zoom": 0.8,
-          "rank": -2138551
+          "rank": -2138551,
+          "detail_at": [
+            2397.25,
+            819.0
+          ]
         },
         {
           "rect": [
@@ -1124,7 +1220,11 @@
           "name": "Z\u00fcrich",
           "population": 415367,
           "min_zoom": 3.5,
-          "rank": -415367
+          "rank": -415367,
+          "detail_at": [
+            2475.75,
+            842.75
+          ]
         },
         {
           "rect": [
@@ -1160,7 +1260,11 @@
           "name": "Vienna",
           "population": 1691468,
           "min_zoom": 2.0,
-          "rank": -1691468
+          "rank": -1691468,
+          "detail_at": [
+            2574.75,
+            829.25
+          ]
         },
         {
           "rect": [
@@ -1196,7 +1300,11 @@
           "name": "Chisinau",
           "population": 635994,
           "min_zoom": 3.5,
-          "rank": -635994
+          "rank": -635994,
+          "detail_at": [
+            2732.75,
+            848.5
+          ]
         },
         {
           "rect": [
@@ -1232,7 +1340,11 @@
           "name": "Budapest",
           "population": 1741041,
           "min_zoom": 2.0,
-          "rank": -1741041
+          "rank": -1741041,
+          "detail_at": [
+            2608.5,
+            840.75
+          ]
         },
         {
           "rect": [
@@ -1268,7 +1380,11 @@
           "name": "Bern",
           "population": 121631,
           "min_zoom": 3.5,
-          "rank": -121631
+          "rank": -121631,
+          "detail_at": [
+            2461.75,
+            849.25
+          ]
         },
         {
           "rect": [
@@ -1304,7 +1420,11 @@
           "name": "Ljubljana",
           "population": 272220,
           "min_zoom": 3.5,
-          "rank": -272220
+          "rank": -272220,
+          "detail_at": [
+            2551.25,
+            863.5
+          ]
         },
         {
           "rect": [
@@ -1340,7 +1460,11 @@
           "name": "Zagreb",
           "population": 663592,
           "min_zoom": 3.5,
-          "rank": -663592
+          "rank": -663592,
+          "detail_at": [
+            2569.75,
+            867.25
+          ]
         },
         {
           "rect": [
@@ -1376,7 +1500,11 @@
           "name": "Belgrade",
           "population": 1273651,
           "min_zoom": 2.0,
-          "rank": -1273651
+          "rank": -1273651,
+          "detail_at": [
+            2626.5,
+            883.0
+          ]
         },
         {
           "rect": [
@@ -1412,7 +1540,11 @@
           "name": "Bucharest",
           "population": 1877155,
           "min_zoom": 2.0,
-          "rank": -1877155
+          "rank": -1877155,
+          "detail_at": [
+            2698.0,
+            888.5
+          ]
         },
         {
           "rect": [
@@ -1448,7 +1580,11 @@
           "name": "Sarajevo",
           "population": 696731,
           "min_zoom": 3.5,
-          "rank": -696731
+          "rank": -696731,
+          "detail_at": [
+            2600.0,
+            897.5
+          ]
         },
         {
           "rect": [
@@ -1484,7 +1620,11 @@
           "name": "Pristina",
           "population": 550000,
           "min_zoom": 3.5,
-          "rank": -550000
+          "rank": -550000,
+          "detail_at": [
+            2635.5,
+            915.5
+          ]
         },
         {
           "rect": [
@@ -1520,7 +1660,11 @@
           "name": "Sofia",
           "population": 1152556,
           "min_zoom": 2.0,
-          "rank": -1152556
+          "rank": -1152556,
+          "detail_at": [
+            2662.75,
+            915.0
+          ]
         },
         {
           "rect": [
@@ -1556,7 +1700,11 @@
           "name": "Rome",
           "population": 2318895,
           "min_zoom": 0.8,
-          "rank": -2318895
+          "rank": -2318895,
+          "detail_at": [
+            2526.0,
+            927.25
+          ]
         },
         {
           "rect": [
@@ -1592,7 +1740,11 @@
           "name": "Istanbul",
           "population": 15701602,
           "min_zoom": 2.0,
-          "rank": -15701602
+          "rank": -15701602,
+          "detail_at": [
+            2734.0,
+            940.5
+          ]
         },
         {
           "rect": [
@@ -1628,7 +1780,11 @@
           "name": "Skopje",
           "population": 474889,
           "min_zoom": 3.5,
-          "rank": -474889
+          "rank": -474889,
+          "detail_at": [
+            2638.75,
+            925.75
+          ]
         },
         {
           "rect": [
@@ -1664,7 +1820,11 @@
           "name": "Tirana",
           "population": 418495,
           "min_zoom": 3.5,
-          "rank": -418495
+          "rank": -418495,
+          "detail_at": [
+            2618.5,
+            935.75
+          ]
         },
         {
           "rect": [
@@ -1700,7 +1860,11 @@
           "name": "Barcelona",
           "population": 1686208,
           "min_zoom": 2.0,
-          "rank": -1686208
+          "rank": -1686208,
+          "detail_at": [
+            2395.0,
+            934.75
+          ]
         },
         {
           "rect": [
@@ -1736,7 +1900,11 @@
           "name": "Madrid",
           "population": 3255944,
           "min_zoom": 0.8,
-          "rank": -3255944
+          "rank": -3255944,
+          "detail_at": [
+            2320.75,
+            949.25
+          ]
         },
         {
           "rect": [
@@ -1772,7 +1940,11 @@
           "name": "Ankara",
           "population": 3517182,
           "min_zoom": 2.0,
-          "rank": -3517182
+          "rank": -3517182,
+          "detail_at": [
+            2783.25,
+            956.75
+          ]
         },
         {
           "rect": [
@@ -1808,7 +1980,11 @@
           "name": "Lisbon",
           "population": 517802,
           "min_zoom": 3.5,
-          "rank": -517802
+          "rank": -517802,
+          "detail_at": [
+            2251.75,
+            974.25
+          ]
         },
         {
           "rect": [
@@ -1844,7 +2020,11 @@
           "name": "Athens",
           "population": 664046,
           "min_zoom": 3.5,
-          "rank": -664046
+          "rank": -664046,
+          "detail_at": [
+            2667.75,
+            985.0
+          ]
         },
         {
           "rect": [
@@ -1880,7 +2060,11 @@
           "name": "Valletta",
           "population": 6794,
           "min_zoom": 5.5,
-          "rank": -6794
+          "rank": -6794,
+          "detail_at": [
+            2551.25,
+            1015.0
+          ]
         },
         {
           "rect": [
@@ -1916,7 +2100,11 @@
           "name": "Nicosia",
           "population": 200452,
           "min_zoom": 3.5,
-          "rank": -200452
+          "rank": -200452,
+          "detail_at": [
+            2789.75,
+            1025.5
+          ]
         },
         {
           "rect": [
@@ -1959,7 +2147,7 @@
         1600
       ],
       "source_sha256": "acb399d272aaf0c8a9d1b1d2f95d2867a26e7837d99ec57f0dcdd3802294e67e",
-      "detail_sha256": "afa28212e46047169c57feef087d58649bb737d733c56055cd094cc62726a280",
+      "detail_sha256": "ab39eef0c114bd3b482c7da9beed47a35458d66e4f37596437445067ccf86abf",
       "control_points": [
         [
           582,
@@ -2171,7 +2359,11 @@
           "name": "Tunis",
           "population": 693210,
           "min_zoom": 3.5,
-          "rank": -693210
+          "rank": -693210,
+          "detail_at": [
+            2496.25,
+            1001.75
+          ]
         },
         {
           "rect": [
@@ -2207,7 +2399,11 @@
           "name": "Algiers",
           "population": 2364230,
           "min_zoom": 2.0,
-          "rank": -2364230
+          "rank": -2364230,
+          "detail_at": [
+            2406.75,
+            1003.0
+          ]
         },
         {
           "rect": [
@@ -2243,7 +2439,11 @@
           "name": "Tripoli",
           "population": 1302947,
           "min_zoom": 2.0,
-          "rank": -1302947
+          "rank": -1302947,
+          "detail_at": [
+            2534.5,
+            1057.5
+          ]
         },
         {
           "rect": [
@@ -2279,7 +2479,11 @@
           "name": "Rabat",
           "population": 1655753,
           "min_zoom": 2.0,
-          "rank": -1655753
+          "rank": -1655753,
+          "detail_at": [
+            2281.25,
+            1041.75
+          ]
         },
         {
           "rect": [
@@ -2315,7 +2519,11 @@
           "name": "Alexandria",
           "population": 5263542,
           "min_zoom": 2.0,
-          "rank": -5263542
+          "rank": -5263542,
+          "detail_at": [
+            2746.25,
+            1081.0
+          ]
         },
         {
           "rect": [
@@ -2351,7 +2559,11 @@
           "name": "Cairo",
           "population": 9606916,
           "min_zoom": 0.0,
-          "rank": -9606916
+          "rank": -9606916,
+          "detail_at": [
+            2763.0,
+            1096.75
+          ]
         },
         {
           "rect": [
@@ -2387,7 +2599,11 @@
           "name": "Las Palmas de Gran Canaria",
           "population": 383516,
           "min_zoom": 3.5,
-          "rank": -383516
+          "rank": -383516,
+          "detail_at": [
+            2172.5,
+            1123.5
+          ]
         },
         {
           "rect": [
@@ -2423,7 +2639,11 @@
           "name": "Laayoune",
           "population": 196331,
           "min_zoom": 3.5,
-          "rank": -196331
+          "rank": -196331,
+          "detail_at": [
+            2200.75,
+            1136.5
+          ]
         },
         {
           "rect": [
@@ -2459,7 +2679,11 @@
           "name": "Nouakchott",
           "population": 1184530,
           "min_zoom": 2.0,
-          "rank": -1184530
+          "rank": -1184530,
+          "detail_at": [
+            2165.5,
+            1256.0
+          ]
         },
         {
           "rect": [
@@ -2495,7 +2719,11 @@
           "name": "Khartoum",
           "population": 1974647,
           "min_zoom": 2.0,
-          "rank": -1974647
+          "rank": -1974647,
+          "detail_at": [
+            2779.25,
+            1288.75
+          ]
         },
         {
           "rect": [
@@ -2531,7 +2759,11 @@
           "name": "Asmara",
           "population": 563930,
           "min_zoom": 3.5,
-          "rank": -563930
+          "rank": -563930,
+          "detail_at": [
+            2860.25,
+            1291.5
+          ]
         },
         {
           "rect": [
@@ -2567,7 +2799,11 @@
           "name": "Dakar",
           "population": 2646503,
           "min_zoom": 2.0,
-          "rank": -2646503
+          "rank": -2646503,
+          "detail_at": [
+            2147.0,
+            1299.75
+          ]
         },
         {
           "rect": [
@@ -2603,7 +2839,11 @@
           "name": "Banjul",
           "population": 37274,
           "min_zoom": 5.5,
-          "rank": -37274
+          "rank": -37274,
+          "detail_at": [
+            2157.75,
+            1315.5
+          ]
         },
         {
           "rect": [
@@ -2639,7 +2879,11 @@
           "name": "Niamey",
           "population": 1323691,
           "min_zoom": 2.0,
-          "rank": -1323691
+          "rank": -1323691,
+          "detail_at": [
+            2394.25,
+            1314.75
+          ]
         },
         {
           "rect": [
@@ -2675,7 +2919,11 @@
           "name": "Bamako",
           "population": 4227569,
           "min_zoom": 2.0,
-          "rank": -4227569
+          "rank": -4227569,
+          "detail_at": [
+            2266.75,
+            1326.25
+          ]
         },
         {
           "rect": [
@@ -2711,7 +2959,11 @@
           "name": "N'Djamena",
           "population": 1359526,
           "min_zoom": 2.0,
-          "rank": -1359526
+          "rank": -1359526,
+          "detail_at": [
+            2558.0,
+            1332.75
+          ]
         },
         {
           "rect": [
@@ -2747,7 +2999,11 @@
           "name": "Djibouti",
           "population": 626512,
           "min_zoom": 3.5,
-          "rank": -626512
+          "rank": -626512,
+          "detail_at": [
+            2913.5,
+            1339.25
+          ]
         },
         {
           "rect": [
@@ -2783,7 +3039,11 @@
           "name": "Ouagadougou",
           "population": 2415266,
           "min_zoom": 2.0,
-          "rank": -2415266
+          "rank": -2415266,
+          "detail_at": [
+            2348.25,
+            1329.25
+          ]
         },
         {
           "rect": [
@@ -2819,7 +3079,11 @@
           "name": "Bissau",
           "population": 439704,
           "min_zoom": 3.5,
-          "rank": -439704
+          "rank": -439704,
+          "detail_at": [
+            2170.25,
+            1335.75
+          ]
         },
         {
           "rect": [
@@ -2855,7 +3119,11 @@
           "name": "Conakry",
           "population": 1928389,
           "min_zoom": 2.0,
-          "rank": -1928389
+          "rank": -1928389,
+          "detail_at": [
+            2194.5,
+            1365.25
+          ]
         },
         {
           "rect": [
@@ -2891,7 +3159,11 @@
           "name": "Yamoussoukro",
           "population": 275686,
           "min_zoom": 3.5,
-          "rank": -275686
+          "rank": -275686,
+          "detail_at": [
+            2300.75,
+            1399.5
+          ]
         },
         {
           "rect": [
@@ -2927,7 +3199,11 @@
           "name": "Abuja",
           "population": 2690000,
           "min_zoom": 2.0,
-          "rank": -2690000
+          "rank": -2690000,
+          "detail_at": [
+            2462.5,
+            1371.25
+          ]
         },
         {
           "rect": [
@@ -2963,7 +3239,11 @@
           "name": "Freetown",
           "population": 802639,
           "min_zoom": 3.5,
-          "rank": -802639
+          "rank": -802639,
+          "detail_at": [
+            2200.25,
+            1378.5
+          ]
         },
         {
           "rect": [
@@ -2999,7 +3279,11 @@
           "name": "Lom\u00e9",
           "population": 2188376,
           "min_zoom": 2.0,
-          "rank": -2188376
+          "rank": -2188376,
+          "detail_at": [
+            2383.0,
+            1408.25
+          ]
         },
         {
           "rect": [
@@ -3035,7 +3319,11 @@
           "name": "Bangui",
           "population": 812407,
           "min_zoom": 3.5,
-          "rank": -812407
+          "rank": -812407,
+          "detail_at": [
+            2602.5,
+            1430.5
+          ]
         },
         {
           "rect": [
@@ -3071,7 +3359,11 @@
           "name": "Monrovia",
           "population": 1542549,
           "min_zoom": 2.0,
-          "rank": -1542549
+          "rank": -1542549,
+          "detail_at": [
+            2231.0,
+            1406.0
+          ]
         },
         {
           "rect": [
@@ -3107,7 +3399,11 @@
           "name": "Yaound\u00e9",
           "population": 1299369,
           "min_zoom": 2.0,
-          "rank": -1299369
+          "rank": -1299369,
+          "detail_at": [
+            2513.25,
+            1436.75
+          ]
         },
         {
           "rect": [
@@ -3143,7 +3439,11 @@
           "name": "Juba",
           "population": 450000,
           "min_zoom": 3.5,
-          "rank": -450000
+          "rank": -450000,
+          "detail_at": [
+            2767.25,
+            1424.25
+          ]
         },
         {
           "rect": [
@@ -3179,7 +3479,11 @@
           "name": "Accra",
           "population": 1963264,
           "min_zoom": 2.0,
-          "rank": -1963264
+          "rank": -1963264,
+          "detail_at": [
+            2365.25,
+            1415.25
+          ]
         },
         {
           "rect": [
@@ -3215,7 +3519,11 @@
           "name": "Malabo",
           "population": 155963,
           "min_zoom": 3.5,
-          "rank": -155963
+          "rank": -155963,
+          "detail_at": [
+            2478.75,
+            1438.0
+          ]
         },
         {
           "rect": [
@@ -3244,14 +3552,18 @@
           ],
           "kind": "city",
           "at": [
-            2780,
-            1481
+            2776,
+            1475
           ],
           "city_id": 232422,
           "name": "Kampala",
           "population": 1680600,
           "min_zoom": 2.0,
-          "rank": -1680600
+          "rank": -1680600,
+          "detail_at": [
+            2778.5,
+            1480.75
+          ]
         },
         {
           "rect": [
@@ -3262,8 +3574,8 @@
           ],
           "kind": "label",
           "at": [
-            2780,
-            1481
+            2776,
+            1475
           ],
           "city_id": 232422,
           "offset": [
@@ -3287,7 +3599,11 @@
           "name": "Mogadishu",
           "population": 2587183,
           "min_zoom": 2.0,
-          "rank": -2587183
+          "rank": -2587183,
+          "detail_at": [
+            2941.25,
+            1459.5
+          ]
         },
         {
           "rect": [
@@ -3323,7 +3639,11 @@
           "name": "S\u00e3o Tom\u00e9",
           "population": 53300,
           "min_zoom": 5.5,
-          "rank": -53300
+          "rank": -53300,
+          "detail_at": [
+            2452.75,
+            1481.0
+          ]
         },
         {
           "rect": [
@@ -3359,7 +3679,11 @@
           "name": "Nairobi",
           "population": 4397073,
           "min_zoom": 0.8,
-          "rank": -4397073
+          "rank": -4397073,
+          "detail_at": [
+            2833.5,
+            1501.25
+          ]
         },
         {
           "rect": [
@@ -3395,7 +3719,11 @@
           "name": "Libreville",
           "population": 846090,
           "min_zoom": 3.5,
-          "rank": -846090
+          "rank": -846090,
+          "detail_at": [
+            2487.25,
+            1480.25
+          ]
         },
         {
           "rect": [
@@ -3431,7 +3759,11 @@
           "name": "Kigali",
           "population": 1132686,
           "min_zoom": 2.0,
-          "rank": -1132686
+          "rank": -1132686,
+          "detail_at": [
+            2748.0,
+            1509.5
+          ]
         },
         {
           "rect": [
@@ -3467,7 +3799,11 @@
           "name": "Brazzaville",
           "population": 1982000,
           "min_zoom": 2.0,
-          "rank": -1982000
+          "rank": -1982000,
+          "detail_at": [
+            2561.0,
+            1538.5
+          ]
         },
         {
           "rect": [
@@ -3496,14 +3832,18 @@
           ],
           "kind": "city",
           "at": [
-            2739,
-            1528
+            2743,
+            1523
           ],
           "city_id": 425378,
           "name": "Bujumbura",
           "population": 769317,
           "min_zoom": 3.5,
-          "rank": -769317
+          "rank": -769317,
+          "detail_at": [
+            2740.5,
+            1526.75
+          ]
         },
         {
           "rect": [
@@ -3514,8 +3854,8 @@
           ],
           "kind": "label",
           "at": [
-            2739,
-            1528
+            2743,
+            1523
           ],
           "city_id": 425378,
           "offset": [
@@ -3539,7 +3879,11 @@
           "name": "Mombasa",
           "population": 1208333,
           "min_zoom": 2.0,
-          "rank": -1208333
+          "rank": -1208333,
+          "detail_at": [
+            2869.5,
+            1535.75
+          ]
         },
         {
           "rect": [
@@ -3575,7 +3919,11 @@
           "name": "Kinshasa",
           "population": 16000000,
           "min_zoom": 0.8,
-          "rank": -16000000
+          "rank": -16000000,
+          "detail_at": [
+            2561.5,
+            1539.5
+          ]
         },
         {
           "rect": [
@@ -3611,7 +3959,11 @@
           "name": "Luanda",
           "population": 2776168,
           "min_zoom": 2.0,
-          "rank": -2776168
+          "rank": -2776168,
+          "detail_at": [
+            2535.0,
+            1596.25
+          ]
         },
         {
           "rect": [
@@ -3647,7 +3999,11 @@
           "name": "Moroni",
           "population": 74749,
           "min_zoom": 5.5,
-          "rank": -74749
+          "rank": -74749,
+          "detail_at": [
+            2915.0,
+            1632.5
+          ]
         },
         {
           "rect": [
@@ -3683,7 +4039,11 @@
           "name": "Lilongwe",
           "population": 1115815,
           "min_zoom": 2.0,
-          "rank": -1115815
+          "rank": -1115815,
+          "detail_at": [
+            2795.25,
+            1661.25
+          ]
         },
         {
           "rect": [
@@ -3719,7 +4079,11 @@
           "name": "Lusaka",
           "population": 2212301,
           "min_zoom": 2.0,
-          "rank": -2212301
+          "rank": -2212301,
+          "detail_at": [
+            2725.5,
+            1679.75
+          ]
         },
         {
           "rect": [
@@ -3755,7 +4119,11 @@
           "name": "Antananarivo",
           "population": 1349501,
           "min_zoom": 2.0,
-          "rank": -1349501
+          "rank": -1349501,
+          "detail_at": [
+            2969.0,
+            1725.0
+          ]
         },
         {
           "rect": [
@@ -3791,7 +4159,11 @@
           "name": "Windhoek",
           "population": 386219,
           "min_zoom": 3.5,
-          "rank": -386219
+          "rank": -386219,
+          "detail_at": [
+            2583.75,
+            1772.75
+          ]
         },
         {
           "rect": [
@@ -3827,7 +4199,11 @@
           "name": "Gaborone",
           "population": 246325,
           "min_zoom": 3.5,
-          "rank": -246325
+          "rank": -246325,
+          "detail_at": [
+            2695.5,
+            1800.5
+          ]
         },
         {
           "rect": [
@@ -3863,7 +4239,11 @@
           "name": "Pretoria",
           "population": 2112693,
           "min_zoom": 2.0,
-          "rank": -2112693
+          "rank": -2112693,
+          "detail_at": [
+            2724.25,
+            1815.0
+          ]
         },
         {
           "rect": [
@@ -3899,7 +4279,11 @@
           "name": "Maputo",
           "population": 1254837,
           "min_zoom": 2.0,
-          "rank": -1254837
+          "rank": -1254837,
+          "detail_at": [
+            2780.0,
+            1817.75
+          ]
         },
         {
           "rect": [
@@ -3935,7 +4319,11 @@
           "name": "Mbabane",
           "population": 76218,
           "min_zoom": 5.5,
-          "rank": -76218
+          "rank": -76218,
+          "detail_at": [
+            2761.5,
+            1822.75
+          ]
         },
         {
           "rect": [
@@ -3971,7 +4359,11 @@
           "name": "Maseru",
           "population": 359753,
           "min_zoom": 3.5,
-          "rank": -359753
+          "rank": -359753,
+          "detail_at": [
+            2715.25,
+            1863.25
+          ]
         },
         {
           "rect": [
@@ -4007,7 +4399,11 @@
           "name": "Cape Town",
           "population": 4772846,
           "min_zoom": 0.0,
-          "rank": -4772846
+          "rank": -4772846,
+          "detail_at": [
+            2600.75,
+            1927.25
+          ]
         },
         {
           "rect": [
@@ -4043,7 +4439,11 @@
           "name": "Porto-Novo",
           "population": 264320,
           "min_zoom": 3.5,
-          "rank": -264320
+          "rank": -264320,
+          "detail_at": [
+            2401.5,
+            1403.25
+          ]
         },
         {
           "rect": [
@@ -4079,7 +4479,11 @@
           "name": "Dar es Salaam",
           "population": 5383728,
           "min_zoom": 2.0,
-          "rank": -5383728
+          "rank": -5383728,
+          "detail_at": [
+            2864.5,
+            1570.75
+          ]
         },
         {
           "rect": [
@@ -4315,7 +4719,11 @@
           "name": "Astana",
           "population": 1544142,
           "min_zoom": 2.0,
-          "rank": -1544142
+          "rank": -1544142,
+          "detail_at": [
+            3271.5,
+            780.75
+          ]
         },
         {
           "rect": [
@@ -4351,7 +4759,11 @@
           "name": "Khabarovsk",
           "population": 618150,
           "min_zoom": 3.5,
-          "rank": -618150
+          "rank": -618150,
+          "detail_at": [
+            4077.0,
+            825.25
+          ]
         },
         {
           "rect": [
@@ -4387,7 +4799,11 @@
           "name": "Khovd",
           "population": 29800,
           "min_zoom": 5.5,
-          "rank": -29800
+          "rank": -29800,
+          "detail_at": [
+            3527.25,
+            832.5
+          ]
         },
         {
           "rect": [
@@ -4423,7 +4839,11 @@
           "name": "Manzhouli",
           "population": 54808,
           "min_zoom": 5.5,
-          "rank": -54808
+          "rank": -54808,
+          "detail_at": [
+            3853.5,
+            806.75
+          ]
         },
         {
           "rect": [
@@ -4459,7 +4879,11 @@
           "name": "Ulan Bator",
           "population": 844818,
           "min_zoom": 3.5,
-          "rank": -844818
+          "rank": -844818,
+          "detail_at": [
+            3720.0,
+            834.0
+          ]
         },
         {
           "rect": [
@@ -4495,7 +4919,11 @@
           "name": "Yuzhno-Sakhalinsk",
           "population": 198973,
           "min_zoom": 3.5,
-          "rank": -198973
+          "rank": -198973,
+          "detail_at": [
+            4173.5,
+            849.25
+          ]
         },
         {
           "rect": [
@@ -4531,7 +4959,11 @@
           "name": "Harbin",
           "population": 10009854,
           "min_zoom": 2.0,
-          "rank": -10009854
+          "rank": -10009854,
+          "detail_at": [
+            3970.0,
+            868.25
+          ]
         },
         {
           "rect": [
@@ -4567,7 +4999,11 @@
           "name": "Almaty",
           "population": 1977011,
           "min_zoom": 2.0,
-          "rank": -1977011
+          "rank": -1977011,
+          "detail_at": [
+            3340.75,
+            906.75
+          ]
         },
         {
           "rect": [
@@ -4603,7 +5039,11 @@
           "name": "\u00dcr\u00fcmqi",
           "population": 4054000,
           "min_zoom": 2.0,
-          "rank": -4054000
+          "rank": -4054000,
+          "detail_at": [
+            3476.0,
+            898.25
+          ]
         },
         {
           "rect": [
@@ -4639,7 +5079,11 @@
           "name": "Sapporo",
           "population": 1973832,
           "min_zoom": 2.0,
-          "rank": -1973832
+          "rank": -1973832,
+          "detail_at": [
+            4156.0,
+            909.5
+          ]
         },
         {
           "rect": [
@@ -4675,7 +5119,11 @@
           "name": "Vladivostok",
           "population": 604901,
           "min_zoom": 0.8,
-          "rank": -604901
+          "rank": -604901,
+          "detail_at": [
+            4036.25,
+            909.0
+          ]
         },
         {
           "rect": [
@@ -4711,7 +5159,11 @@
           "name": "Beijing",
           "population": 18960744,
           "min_zoom": 0.0,
-          "rank": -18960744
+          "rank": -18960744,
+          "detail_at": [
+            3840.25,
+            956.75
+          ]
         },
         {
           "rect": [
@@ -4747,7 +5199,11 @@
           "name": "Pyongyang",
           "population": 3222000,
           "min_zoom": 2.0,
-          "rank": -3222000
+          "rank": -3222000,
+          "detail_at": [
+            3958.75,
+            969.75
+          ]
         },
         {
           "rect": [
@@ -4783,7 +5239,11 @@
           "name": "Seoul",
           "population": 10349312,
           "min_zoom": 0.8,
-          "rank": -10349312
+          "rank": -10349312,
+          "detail_at": [
+            3974.25,
+            991.0
+          ]
         },
         {
           "rect": [
@@ -4819,7 +5279,11 @@
           "name": "Tokyo",
           "population": 9733276,
           "min_zoom": 0.0,
-          "rank": -9733276
+          "rank": -9733276,
+          "detail_at": [
+            4135.0,
+            1018.0
+          ]
         },
         {
           "rect": [
@@ -4855,7 +5319,11 @@
           "name": "Islamabad",
           "population": 601600,
           "min_zoom": 3.5,
-          "rank": -601600
+          "rank": -601600,
+          "detail_at": [
+            3291.75,
+            1046.0
+          ]
         },
         {
           "rect": [
@@ -4891,7 +5359,11 @@
           "name": "Xi\u2019an",
           "population": 12952907,
           "min_zoom": 2.0,
-          "rank": -12952907
+          "rank": -12952907,
+          "detail_at": [
+            3745.75,
+            1038.25
+          ]
         },
         {
           "rect": [
@@ -4927,7 +5399,11 @@
           "name": "Osaka",
           "population": 2753862,
           "min_zoom": 2.0,
-          "rank": -2753862
+          "rank": -2753862,
+          "detail_at": [
+            4082.0,
+            1032.25
+          ]
         },
         {
           "rect": [
@@ -4963,7 +5439,11 @@
           "name": "Nanjing",
           "population": 9314685,
           "min_zoom": 2.0,
-          "rank": -9314685
+          "rank": -9314685,
+          "detail_at": [
+            3870.5,
+            1069.25
+          ]
         },
         {
           "rect": [
@@ -4999,7 +5479,11 @@
           "name": "Nagasaki",
           "population": 409118,
           "min_zoom": 3.5,
-          "rank": -409118
+          "rank": -409118,
+          "detail_at": [
+            4011.0,
+            1059.5
+          ]
         },
         {
           "rect": [
@@ -5035,7 +5519,11 @@
           "name": "Shanghai",
           "population": 24874500,
           "min_zoom": 2.0,
-          "rank": -24874500
+          "rank": -24874500,
+          "detail_at": [
+            3904.5,
+            1080.75
+          ]
         },
         {
           "rect": [
@@ -5071,7 +5559,11 @@
           "name": "Lhasa",
           "population": 867900,
           "min_zoom": 3.5,
-          "rank": -867900
+          "rank": -867900,
+          "detail_at": [
+            3520.25,
+            1102.5
+          ]
         },
         {
           "rect": [
@@ -5107,7 +5599,11 @@
           "name": "Kathmandu",
           "population": 1442271,
           "min_zoom": 2.0,
-          "rank": -1442271
+          "rank": -1442271,
+          "detail_at": [
+            3447.25,
+            1129.0
+          ]
         },
         {
           "rect": [
@@ -5143,7 +5639,11 @@
           "name": "Thimphu",
           "population": 98676,
           "min_zoom": 5.5,
-          "rank": -98676
+          "rank": -98676,
+          "detail_at": [
+            3501.75,
+            1132.0
+          ]
         },
         {
           "rect": [
@@ -5179,7 +5679,11 @@
           "name": "New Delhi",
           "population": 317797,
           "min_zoom": 0.0,
-          "rank": -317797
+          "rank": -317797,
+          "detail_at": [
+            3344.5,
+            1116.5
+          ]
         },
         {
           "rect": [
@@ -5215,7 +5719,11 @@
           "name": "Taipei",
           "population": 7871900,
           "min_zoom": 2.0,
-          "rank": -7871900
+          "rank": -7871900,
+          "detail_at": [
+            3905.25,
+            1164.5
+          ]
         },
         {
           "rect": [
@@ -5251,7 +5759,11 @@
           "name": "Guangzhou",
           "population": 18676605,
           "min_zoom": 2.0,
-          "rank": -18676605
+          "rank": -18676605,
+          "detail_at": [
+            3800.5,
+            1190.25
+          ]
         },
         {
           "rect": [
@@ -5287,7 +5799,11 @@
           "name": "Dhaka",
           "population": 10356500,
           "min_zoom": 2.0,
-          "rank": -10356500
+          "rank": -10356500,
+          "detail_at": [
+            3511.5,
+            1182.25
+          ]
         },
         {
           "rect": [
@@ -5323,7 +5839,11 @@
           "name": "Hong Kong",
           "population": 7396076,
           "min_zoom": 2.0,
-          "rank": -7396076
+          "rank": -7396076,
+          "detail_at": [
+            3812.25,
+            1201.25
+          ]
         },
         {
           "rect": [
@@ -5359,7 +5879,11 @@
           "name": "Macau",
           "population": 649335,
           "min_zoom": 3.5,
-          "rank": -649335
+          "rank": -649335,
+          "detail_at": [
+            3804.25,
+            1202.25
+          ]
         },
         {
           "rect": [
@@ -5395,7 +5919,11 @@
           "name": "Kolkata",
           "population": 4631392,
           "min_zoom": 2.0,
-          "rank": -4631392
+          "rank": -4631392,
+          "detail_at": [
+            3485.75,
+            1197.5
+          ]
         },
         {
           "rect": [
@@ -5431,7 +5959,11 @@
           "name": "Hanoi",
           "population": 8053663,
           "min_zoom": 2.0,
-          "rank": -8053663
+          "rank": -8053663,
+          "detail_at": [
+            3706.75,
+            1217.75
+          ]
         },
         {
           "rect": [
@@ -5467,7 +5999,11 @@
           "name": "Mumbai",
           "population": 12691836,
           "min_zoom": 0.8,
-          "rank": -12691836
+          "rank": -12691836,
+          "detail_at": [
+            3289.75,
+            1243.25
+          ]
         },
         {
           "rect": [
@@ -5503,7 +6039,11 @@
           "name": "Vientiane",
           "population": 840940,
           "min_zoom": 3.5,
-          "rank": -840940
+          "rank": -840940,
+          "detail_at": [
+            3665.75,
+            1257.5
+          ]
         },
         {
           "rect": [
@@ -5539,7 +6079,11 @@
           "name": "Yangon",
           "population": 4477638,
           "min_zoom": 2.0,
-          "rank": -4477638
+          "rank": -4477638,
+          "detail_at": [
+            3584.25,
+            1272.5
+          ]
         },
         {
           "rect": [
@@ -5575,7 +6119,11 @@
           "name": "Manila",
           "population": 1600000,
           "min_zoom": 2.0,
-          "rank": -1600000
+          "rank": -1600000,
+          "detail_at": [
+            3898.0,
+            1300.5
+          ]
         },
         {
           "rect": [
@@ -5611,7 +6159,11 @@
           "name": "Chennai",
           "population": 4681087,
           "min_zoom": 2.0,
-          "rank": -4681087
+          "rank": -4681087,
+          "detail_at": [
+            3383.25,
+            1320.25
+          ]
         },
         {
           "rect": [
@@ -5647,7 +6199,11 @@
           "name": "Ho Chi Minh City",
           "population": 14002598,
           "min_zoom": 2.0,
-          "rank": -14002598
+          "rank": -14002598,
+          "detail_at": [
+            3716.75,
+            1349.0
+          ]
         },
         {
           "rect": [
@@ -5683,7 +6239,11 @@
           "name": "Colombo",
           "population": 648034,
           "min_zoom": 3.5,
-          "rank": -648034
+          "rank": -648034,
+          "detail_at": [
+            3378.0,
+            1398.0
+          ]
         },
         {
           "rect": [
@@ -5719,7 +6279,11 @@
           "name": "Davao",
           "population": 1848947,
           "min_zoom": 2.0,
-          "rank": -1848947
+          "rank": -1848947,
+          "detail_at": [
+            3957.0,
+            1396.25
+          ]
         },
         {
           "rect": [
@@ -5755,7 +6319,11 @@
           "name": "Manado",
           "population": 458582,
           "min_zoom": 3.5,
-          "rank": -458582
+          "rank": -458582,
+          "detail_at": [
+            3947.25,
+            1466.5
+          ]
         },
         {
           "rect": [
@@ -5791,7 +6359,11 @@
           "name": "Ternate",
           "population": 210836,
           "min_zoom": 3.5,
-          "rank": -210836
+          "rank": -210836,
+          "detail_at": [
+            3979.5,
+            1475.5
+          ]
         },
         {
           "rect": [
@@ -5827,7 +6399,11 @@
           "name": "Singapore",
           "population": 5638700,
           "min_zoom": 0.0,
-          "rank": -5638700
+          "rank": -5638700,
+          "detail_at": [
+            3681.5,
+            1469.0
+          ]
         },
         {
           "rect": [
@@ -5863,7 +6439,11 @@
           "name": "Samarinda",
           "population": 865306,
           "min_zoom": 3.5,
-          "rank": -865306
+          "rank": -865306,
+          "detail_at": [
+            3849.75,
+            1491.25
+          ]
         },
         {
           "rect": [
@@ -5899,7 +6479,11 @@
           "name": "Manokwari",
           "population": 132300,
           "min_zoom": 3.5,
-          "rank": -132300
+          "rank": -132300,
+          "detail_at": [
+            4064.0,
+            1496.0
+          ]
         },
         {
           "rect": [
@@ -5935,7 +6519,11 @@
           "name": "Jayapura",
           "population": 410852,
           "min_zoom": 3.5,
-          "rank": -410852
+          "rank": -410852,
+          "detail_at": [
+            4148.0,
+            1517.0
+          ]
         },
         {
           "rect": [
@@ -5971,7 +6559,11 @@
           "name": "Ambon",
           "population": 347288,
           "min_zoom": 3.5,
-          "rank": -347288
+          "rank": -347288,
+          "detail_at": [
+            3989.5,
+            1531.5
+          ]
         },
         {
           "rect": [
@@ -6007,7 +6599,11 @@
           "name": "Jakarta",
           "population": 8540121,
           "min_zoom": 0.8,
-          "rank": -8540121
+          "rank": -8540121,
+          "detail_at": [
+            3719.5,
+            1563.0
+          ]
         },
         {
           "rect": [
@@ -6043,7 +6639,11 @@
           "name": "Dili",
           "population": 150000,
           "min_zoom": 3.5,
-          "rank": -150000
+          "rank": -150000,
+          "detail_at": [
+            3956.5,
+            1592.75
+          ]
         },
         {
           "rect": [
@@ -6079,7 +6679,11 @@
           "name": "Denpasar",
           "population": 670210,
           "min_zoom": 3.5,
-          "rank": -670210
+          "rank": -670210,
+          "detail_at": [
+            3825.5,
+            1593.75
+          ]
         },
         {
           "rect": [
@@ -6115,7 +6719,11 @@
           "name": "Port Moresby",
           "population": 283733,
           "min_zoom": 3.5,
-          "rank": -283733
+          "rank": -283733,
+          "detail_at": [
+            4229.5,
+            1604.25
+          ]
         },
         {
           "rect": [
@@ -6151,7 +6759,11 @@
           "name": "Phnom Penh",
           "population": 1573544,
           "min_zoom": 2.0,
-          "rank": -1573544
+          "rank": -1573544,
+          "detail_at": [
+            3695.0,
+            1339.5
+          ]
         },
         {
           "rect": [
@@ -6400,7 +7012,11 @@
           "name": "Darwin",
           "population": 139902,
           "min_zoom": 3.5,
-          "rank": -139902
+          "rank": -139902,
+          "detail_at": [
+            4023.25,
+            1641.75
+          ]
         },
         {
           "rect": [
@@ -6436,7 +7052,11 @@
           "name": "Cairns",
           "population": 153075,
           "min_zoom": 3.5,
-          "rank": -153075
+          "rank": -153075,
+          "detail_at": [
+            4212.0,
+            1699.25
+          ]
         },
         {
           "rect": [
@@ -6472,7 +7092,11 @@
           "name": "Townsville",
           "population": 201313,
           "min_zoom": 3.5,
-          "rank": -201313
+          "rank": -201313,
+          "detail_at": [
+            4225.0,
+            1729.5
+          ]
         },
         {
           "rect": [
@@ -6508,7 +7132,11 @@
           "name": "Brisbane",
           "population": 2780063,
           "min_zoom": 2.0,
-          "rank": -2780063
+          "rank": -2780063,
+          "detail_at": [
+            4303.75,
+            1838.25
+          ]
         },
         {
           "rect": [
@@ -6544,7 +7172,11 @@
           "name": "Broken Hill",
           "population": 17456,
           "min_zoom": 5.5,
-          "rank": -17456
+          "rank": -17456,
+          "detail_at": [
+            4157.25,
+            1899.75
+          ]
         },
         {
           "rect": [
@@ -6580,7 +7212,11 @@
           "name": "Perth",
           "population": 2384371,
           "min_zoom": 0.8,
-          "rank": -2384371
+          "rank": -2384371,
+          "detail_at": [
+            3833.5,
+            1899.5
+          ]
         },
         {
           "rect": [
@@ -6616,7 +7252,11 @@
           "name": "Sydney",
           "population": 5638830,
           "min_zoom": 0.0,
-          "rank": -5638830
+          "rank": -5638830,
+          "detail_at": [
+            4280.75,
+            1926.25
+          ]
         },
         {
           "rect": [
@@ -6652,7 +7292,11 @@
           "name": "Canberra",
           "population": 367752,
           "min_zoom": 3.5,
-          "rank": -367752
+          "rank": -367752,
+          "detail_at": [
+            4254.5,
+            1946.5
+          ]
         },
         {
           "rect": [
@@ -6688,7 +7332,11 @@
           "name": "Adelaide",
           "population": 1469163,
           "min_zoom": 2.0,
-          "rank": -1469163
+          "rank": -1469163,
+          "detail_at": [
+            4121.25,
+            1941.25
+          ]
         },
         {
           "rect": [
@@ -6724,7 +7372,11 @@
           "name": "Melbourne",
           "population": 5435590,
           "min_zoom": 0.8,
-          "rank": -5435590
+          "rank": -5435590,
+          "detail_at": [
+            4201.75,
+            1982.75
+          ]
         },
         {
           "rect": [
@@ -6760,7 +7412,11 @@
           "name": "Hobart",
           "population": 254930,
           "min_zoom": 3.5,
-          "rank": -254930
+          "rank": -254930,
+          "detail_at": [
+            4231.75,
+            2057.75
+          ]
         },
         {
           "rect": [
@@ -6803,7 +7459,7 @@
         1344
       ],
       "source_sha256": "fd654ac03882997b7b61cc5b92271313a8d58d2871e1c6106420857ce043726c",
-      "detail_sha256": "69f2c3105a95fad5852c83748492b43fed3af44e8908b1eeddb1884b6dde35fe",
+      "detail_sha256": "86ca233dd673f12f21509b4380e47cef0b661a6a44ea059cdff01f4d64c95ecd",
       "control_points": [
         [
           549,
@@ -6996,7 +7652,11 @@
           "name": "Naujaat",
           "population": 1225,
           "min_zoom": 5.5,
-          "rank": -1225
+          "rank": -1225,
+          "detail_at": [
+            1276.5,
+            496.5
+          ]
         },
         {
           "rect": [
@@ -7032,7 +7692,11 @@
           "name": "Dawson City",
           "population": 1375,
           "min_zoom": 5.5,
-          "rank": -1375
+          "rank": -1375,
+          "detail_at": [
+            603.5,
+            547.0
+          ]
         },
         {
           "rect": [
@@ -7068,7 +7732,11 @@
           "name": "Iqaluit",
           "population": 7429,
           "min_zoom": 5.5,
-          "rank": -7429
+          "rank": -7429,
+          "detail_at": [
+            1500.75,
+            553.25
+          ]
         },
         {
           "rect": [
@@ -7097,14 +7765,18 @@
           ],
           "kind": "city",
           "at": [
-            921,
-            579
+            926,
+            574
           ],
           "city_id": 6185377,
           "name": "Yellowknife",
           "population": 20340,
           "min_zoom": 5.5,
-          "rank": -20340
+          "rank": -20340,
+          "detail_at": [
+            919.75,
+            577.5
+          ]
         },
         {
           "rect": [
@@ -7115,8 +7787,8 @@
           ],
           "kind": "label",
           "at": [
-            921,
-            579
+            926,
+            574
           ],
           "city_id": 6185377,
           "offset": [
@@ -7140,7 +7812,11 @@
           "name": "Whitehorse",
           "population": 28201,
           "min_zoom": 5.5,
-          "rank": -28201
+          "rank": -28201,
+          "detail_at": [
+            658.75,
+            612.25
+          ]
         },
         {
           "rect": [
@@ -7176,7 +7852,11 @@
           "name": "Churchill",
           "population": 899,
           "min_zoom": 5.5,
-          "rank": -899
+          "rank": -899,
+          "detail_at": [
+            1176.25,
+            648.5
+          ]
         },
         {
           "rect": [
@@ -7212,7 +7892,11 @@
           "name": "Edmonton",
           "population": 1010899,
           "min_zoom": 2.0,
-          "rank": -1010899
+          "rank": -1010899,
+          "detail_at": [
+            932.0,
+            741.0
+          ]
         },
         {
           "rect": [
@@ -7248,7 +7932,11 @@
           "name": "Calgary",
           "population": 1306784,
           "min_zoom": 2.0,
-          "rank": -1306784
+          "rank": -1306784,
+          "detail_at": [
+            924.25,
+            783.0
+          ]
         },
         {
           "rect": [
@@ -7284,7 +7972,11 @@
           "name": "Regina",
           "population": 226404,
           "min_zoom": 3.5,
-          "rank": -226404
+          "rank": -226404,
+          "detail_at": [
+            1044.0,
+            793.0
+          ]
         },
         {
           "rect": [
@@ -7320,7 +8012,11 @@
           "name": "Vancouver",
           "population": 662248,
           "min_zoom": 0.8,
-          "rank": -662248
+          "rank": -662248,
+          "detail_at": [
+            809.75,
+            812.5
+          ]
         },
         {
           "rect": [
@@ -7356,7 +8052,11 @@
           "name": "Winnipeg",
           "population": 749607,
           "min_zoom": 3.5,
-          "rank": -749607
+          "rank": -749607,
+          "detail_at": [
+            1138.5,
+            802.25
+          ]
         },
         {
           "rect": [
@@ -7385,14 +8085,18 @@
           ],
           "kind": "city",
           "at": [
-            1238,
-            827
+            1233,
+            821
           ],
           "city_id": 6166142,
           "name": "Thunder Bay",
           "population": 108843,
           "min_zoom": 3.5,
-          "rank": -108843
+          "rank": -108843,
+          "detail_at": [
+            1236.5,
+            825.5
+          ]
         },
         {
           "rect": [
@@ -7403,8 +8107,8 @@
           ],
           "kind": "label",
           "at": [
-            1238,
-            827
+            1233,
+            821
           ],
           "city_id": 6166142,
           "offset": [
@@ -7428,7 +8132,11 @@
           "name": "Qu\u00e9bec",
           "population": 531902,
           "min_zoom": 3.5,
-          "rank": -531902
+          "rank": -531902,
+          "detail_at": [
+            1466.25,
+            851.5
+          ]
         },
         {
           "rect": [
@@ -7464,7 +8172,11 @@
           "name": "Halifax",
           "population": 471559,
           "min_zoom": 3.5,
-          "rank": -471559
+          "rank": -471559,
+          "detail_at": [
+            1563.25,
+            885.5
+          ]
         },
         {
           "rect": [
@@ -7507,7 +8219,7 @@
         1248
       ],
       "source_sha256": "88f26e039542c9a9f91cfe6f94290b171e351bc124a6765b085ca4a3c7dd0f23",
-      "detail_sha256": "2fff7909ef5b9c443d508ea29c427575c57d59258847093788463de27b586f14",
+      "detail_sha256": "6eeeb7784f9c9f6ca2dbaa3578ca3c322f6b26ece8f7d18b179b74d65f1ba3d8",
       "control_points": [
         [
           580,
@@ -7674,7 +8386,11 @@
           "name": "Havana",
           "population": 2163824,
           "min_zoom": 0.8,
-          "rank": -2163824
+          "rank": -2163824,
+          "detail_at": [
+            1325.25,
+            1190.0
+          ]
         },
         {
           "rect": [
@@ -7710,7 +8426,11 @@
           "name": "Canc\u00fan",
           "population": 888797,
           "min_zoom": 3.5,
-          "rank": -888797
+          "rank": -888797,
+          "detail_at": [
+            1268.75,
+            1215.75
+          ]
         },
         {
           "rect": [
@@ -7746,7 +8466,11 @@
           "name": "Cockburn Town",
           "population": 3720,
           "min_zoom": 5.5,
-          "rank": -3720
+          "rank": -3720,
+          "detail_at": [
+            1467.5,
+            1212.0
+          ]
         },
         {
           "rect": [
@@ -7782,7 +8506,11 @@
           "name": "Road Town",
           "population": 8449,
           "min_zoom": 5.5,
-          "rank": -8449
+          "rank": -8449,
+          "detail_at": [
+            1550.0,
+            1251.5
+          ]
         },
         {
           "rect": [
@@ -7818,7 +8546,11 @@
           "name": "Port-au-Prince",
           "population": 1234742,
           "min_zoom": 2.0,
-          "rank": -1234742
+          "rank": -1234742,
+          "detail_at": [
+            1452.25,
+            1250.0
+          ]
         },
         {
           "rect": [
@@ -7854,7 +8586,11 @@
           "name": "San Juan",
           "population": 418140,
           "min_zoom": 0.8,
-          "rank": -418140
+          "rank": -418140,
+          "detail_at": [
+            1531.25,
+            1251.0
+          ]
         },
         {
           "rect": [
@@ -7890,7 +8626,11 @@
           "name": "George Town",
           "population": 29370,
           "min_zoom": 5.5,
-          "rank": -29370
+          "rank": -29370,
+          "detail_at": [
+            1338.0,
+            1240.5
+          ]
         },
         {
           "rect": [
@@ -7926,7 +8666,11 @@
           "name": "Kingston",
           "population": 937700,
           "min_zoom": 3.5,
-          "rank": -937700
+          "rank": -937700,
+          "detail_at": [
+            1396.0,
+            1257.25
+          ]
         },
         {
           "rect": [
@@ -7962,7 +8706,11 @@
           "name": "Belmopan",
           "population": 13381,
           "min_zoom": 5.5,
-          "rank": -13381
+          "rank": -13381,
+          "detail_at": [
+            1244.5,
+            1266.75
+          ]
         },
         {
           "rect": [
@@ -7998,7 +8746,11 @@
           "name": "Roseau",
           "population": 16571,
           "min_zoom": 5.5,
-          "rank": -16571
+          "rank": -16571,
+          "detail_at": [
+            1591.0,
+            1291.75
+          ]
         },
         {
           "rect": [
@@ -8034,7 +8786,11 @@
           "name": "Fort-de-France",
           "population": 89995,
           "min_zoom": 5.5,
-          "rank": -89995
+          "rank": -89995,
+          "detail_at": [
+            1595.0,
+            1300.75
+          ]
         },
         {
           "rect": [
@@ -8070,7 +8826,11 @@
           "name": "Castries",
           "population": 20000,
           "min_zoom": 5.5,
-          "rank": -20000
+          "rank": -20000,
+          "detail_at": [
+            1595.75,
+            1308.5
+          ]
         },
         {
           "rect": [
@@ -8106,7 +8866,11 @@
           "name": "San Salvador",
           "population": 525990,
           "min_zoom": 3.5,
-          "rank": -525990
+          "rank": -525990,
+          "detail_at": [
+            1239.25,
+            1312.5
+          ]
         },
         {
           "rect": [
@@ -8142,7 +8906,11 @@
           "name": "Kingstown",
           "population": 24518,
           "min_zoom": 5.5,
-          "rank": -24518
+          "rank": -24518,
+          "detail_at": [
+            1593.0,
+            1319.25
+          ]
         },
         {
           "rect": [
@@ -8178,7 +8946,11 @@
           "name": "Bridgetown",
           "population": 98511,
           "min_zoom": 5.5,
-          "rank": -98511
+          "rank": -98511,
+          "detail_at": [
+            1613.25,
+            1320.0
+          ]
         },
         {
           "rect": [
@@ -8207,14 +8979,18 @@
           ],
           "kind": "city",
           "at": [
-            1276,
+            1275,
             1329
           ],
           "city_id": 3617763,
           "name": "Managua",
           "population": 973087,
           "min_zoom": 3.5,
-          "rank": -973087
+          "rank": -973087,
+          "detail_at": [
+            1276.25,
+            1334.0
+          ]
         },
         {
           "rect": [
@@ -8225,7 +9001,7 @@
           ],
           "kind": "label",
           "at": [
-            1276,
+            1275,
             1329
           ],
           "city_id": 3617763,
@@ -8250,7 +9026,11 @@
           "name": "Saint George's",
           "population": 7500,
           "min_zoom": 5.5,
-          "rank": -7500
+          "rank": -7500,
+          "detail_at": [
+            1586.25,
+            1333.25
+          ]
         },
         {
           "rect": [
@@ -8286,7 +9066,11 @@
           "name": "Willemstad",
           "population": 125000,
           "min_zoom": 3.5,
-          "rank": -125000
+          "rank": -125000,
+          "detail_at": [
+            1496.0,
+            1332.5
+          ]
         },
         {
           "rect": [
@@ -8322,7 +9106,11 @@
           "name": "Port of Spain",
           "population": 49031,
           "min_zoom": 5.5,
-          "rank": -49031
+          "rank": -49031,
+          "detail_at": [
+            1589.25,
+            1351.0
+          ]
         },
         {
           "rect": [
@@ -8358,7 +9146,11 @@
           "name": "Barranquilla",
           "population": 1206319,
           "min_zoom": 2.0,
-          "rank": -1206319
+          "rank": -1206319,
+          "detail_at": [
+            1421.5,
+            1347.0
+          ]
         },
         {
           "rect": [
@@ -8394,7 +9186,11 @@
           "name": "San Jos\u00e9",
           "population": 335007,
           "min_zoom": 3.5,
-          "rank": -335007
+          "rank": -335007,
+          "detail_at": [
+            1303.75,
+            1360.25
+          ]
         },
         {
           "rect": [
@@ -8430,7 +9226,11 @@
           "name": "Charlotte Amalie",
           "population": 20000,
           "min_zoom": 5.5,
-          "rank": -20000
+          "rank": -20000,
+          "detail_at": [
+            1546.0,
+            1252.75
+          ]
         },
         {
           "rect": [
@@ -8466,7 +9266,11 @@
           "name": "Santo Domingo",
           "population": 2201941,
           "min_zoom": 2.0,
-          "rank": -2201941
+          "rank": -2201941,
+          "detail_at": [
+            1483.25,
+            1250.75
+          ]
         },
         {
           "rect": [
@@ -8509,7 +9313,7 @@
         1184
       ],
       "source_sha256": "307361e4b526c36cc4a5255d7190a1b6bdcd1f8bd3932c220128cd2486e50843",
-      "detail_sha256": "bb39f06cc8dd1e8048e79f8478acbb36abe510048853e56478866506c0c0a5f8",
+      "detail_sha256": "b1379cc82c63ab8e1ddc34f60b57f88391c00470bdb6f90199711099f033d824",
       "control_points": [
         [
           1798,
@@ -8694,7 +9498,11 @@
           "name": "Uelen",
           "population": 697,
           "min_zoom": 5.5,
-          "rank": -697
+          "rank": -697,
+          "detail_at": [
+            219.0,
+            504.25
+          ]
         },
         {
           "rect": [
@@ -8730,7 +9538,11 @@
           "name": "Provideniya",
           "population": 2536,
           "min_zoom": 5.5,
-          "rank": -2536
+          "rank": -2536,
+          "detail_at": [
+            175.75,
+            539.75
+          ]
         },
         {
           "rect": [
@@ -8766,7 +9578,11 @@
           "name": "Anadyr",
           "population": 15604,
           "min_zoom": 5.5,
-          "rank": -15604
+          "rank": -15604,
+          "detail_at": [
+            133.0,
+            533.5
+          ]
         },
         {
           "rect": [
@@ -8802,7 +9618,11 @@
           "name": "Pevek",
           "population": 4837,
           "min_zoom": 5.5,
-          "rank": -4837
+          "rank": -4837,
+          "detail_at": [
+            42.5,
+            428.0
+          ]
         },
         {
           "rect": [
@@ -8838,7 +9658,11 @@
           "name": "Cherskiy",
           "population": 3707,
           "min_zoom": 5.5,
-          "rank": -3707
+          "rank": -3707,
+          "detail_at": [
+            4409.0,
+            449.0
+          ]
         },
         {
           "rect": [
@@ -8874,7 +9698,11 @@
           "name": "Murmansk",
           "population": 295374,
           "min_zoom": 3.5,
-          "rank": -295374
+          "rank": -295374,
+          "detail_at": [
+            2786.5,
+            444.25
+          ]
         },
         {
           "rect": [
@@ -8910,7 +9738,11 @@
           "name": "Evensk",
           "population": 2024,
           "min_zoom": 5.5,
-          "rank": -2024
+          "rank": -2024,
+          "detail_at": [
+            4382.25,
+            589.25
+          ]
         },
         {
           "rect": [
@@ -8946,7 +9778,11 @@
           "name": "Tiksi",
           "population": 5700,
           "min_zoom": 5.5,
-          "rank": -5700
+          "rank": -5700,
+          "detail_at": [
+            3998.0,
+            382.5
+          ]
         },
         {
           "rect": [
@@ -8982,7 +9818,11 @@
           "name": "Palana",
           "population": 3671,
           "min_zoom": 5.5,
-          "rank": -3671
+          "rank": -3671,
+          "detail_at": [
+            4391.5,
+            642.75
+          ]
         },
         {
           "rect": [
@@ -9018,7 +9858,11 @@
           "name": "Saint Petersburg",
           "population": 5351935,
           "min_zoom": 2.0,
-          "rank": -5351935
+          "rank": -5351935,
+          "detail_at": [
+            2751.25,
+            626.75
+          ]
         },
         {
           "rect": [
@@ -9047,14 +9891,18 @@
           ],
           "kind": "city",
           "at": [
-            2802,
-            592
+            2798,
+            596
           ],
           "city_id": 509820,
           "name": "Petrozavodsk",
           "population": 279190,
           "min_zoom": 3.5,
-          "rank": -279190
+          "rank": -279190,
+          "detail_at": [
+            2801.5,
+            593.0
+          ]
         },
         {
           "rect": [
@@ -9065,8 +9913,8 @@
           ],
           "kind": "label",
           "at": [
-            2802,
-            592
+            2798,
+            596
           ],
           "city_id": 509820,
           "offset": [
@@ -9090,7 +9938,11 @@
           "name": "Nar'yan-Mar",
           "population": 18041,
           "min_zoom": 5.5,
-          "rank": -18041
+          "rank": -18041,
+          "detail_at": [
+            3038.25,
+            473.0
+          ]
         },
         {
           "rect": [
@@ -9126,7 +9978,11 @@
           "name": "Arkhangel\u2019sk",
           "population": 349742,
           "min_zoom": 3.5,
-          "rank": -349742
+          "rank": -349742,
+          "detail_at": [
+            2880.75,
+            537.25
+          ]
         },
         {
           "rect": [
@@ -9162,7 +10018,11 @@
           "name": "Khatanga",
           "population": 3205,
           "min_zoom": 5.5,
-          "rank": -3205
+          "rank": -3205,
+          "detail_at": [
+            3664.25,
+            376.0
+          ]
         },
         {
           "rect": [
@@ -9198,7 +10058,11 @@
           "name": "Verkhoyansk",
           "population": 1388,
           "min_zoom": 5.5,
-          "rank": -1388
+          "rank": -1388,
+          "detail_at": [
+            4055.25,
+            474.75
+          ]
         },
         {
           "rect": [
@@ -9234,7 +10098,11 @@
           "name": "Magadan",
           "population": 92782,
           "min_zoom": 5.5,
-          "rank": -92782
+          "rank": -92782,
+          "detail_at": [
+            4275.75,
+            633.75
+          ]
         },
         {
           "rect": [
@@ -9270,7 +10138,11 @@
           "name": "Vorkuta",
           "population": 80039,
           "min_zoom": 5.5,
-          "rank": -80039
+          "rank": -80039,
+          "detail_at": [
+            3178.25,
+            475.75
+          ]
         },
         {
           "rect": [
@@ -9306,7 +10178,11 @@
           "name": "Dudinka",
           "population": 23619,
           "min_zoom": 5.5,
-          "rank": -23619
+          "rank": -23619,
+          "detail_at": [
+            3458.0,
+            434.5
+          ]
         },
         {
           "rect": [
@@ -9342,7 +10218,11 @@
           "name": "Vologda",
           "population": 312420,
           "min_zoom": 3.5,
-          "rank": -312420
+          "rank": -312420,
+          "detail_at": [
+            2872.25,
+            640.0
+          ]
         },
         {
           "rect": [
@@ -9378,7 +10258,11 @@
           "name": "Ukhta",
           "population": 102187,
           "min_zoom": 3.5,
-          "rank": -102187
+          "rank": -102187,
+          "detail_at": [
+            3047.0,
+            556.75
+          ]
         },
         {
           "rect": [
@@ -9414,7 +10298,11 @@
           "name": "Tver",
           "population": 420065,
           "min_zoom": 3.5,
-          "rank": -420065
+          "rank": -420065,
+          "detail_at": [
+            2821.75,
+            683.0
+          ]
         },
         {
           "rect": [
@@ -9450,7 +10338,11 @@
           "name": "Yaroslavl",
           "population": 608722,
           "min_zoom": 3.5,
-          "rank": -608722
+          "rank": -608722,
+          "detail_at": [
+            2871.75,
+            669.25
+          ]
         },
         {
           "rect": [
@@ -9486,7 +10378,11 @@
           "name": "Norilsk",
           "population": 140800,
           "min_zoom": 3.5,
-          "rank": -140800
+          "rank": -140800,
+          "detail_at": [
+            3483.75,
+            435.75
+          ]
         },
         {
           "rect": [
@@ -9522,7 +10418,11 @@
           "name": "Udachny",
           "population": 15266,
           "min_zoom": 5.5,
-          "rank": -15266
+          "rank": -15266,
+          "detail_at": [
+            3789.75,
+            498.5
+          ]
         },
         {
           "rect": [
@@ -9558,7 +10458,11 @@
           "name": "Salekhard",
           "population": 49214,
           "min_zoom": 5.5,
-          "rank": -49214
+          "rank": -49214,
+          "detail_at": [
+            3210.5,
+            496.5
+          ]
         },
         {
           "rect": [
@@ -9594,7 +10498,11 @@
           "name": "Kostroma",
           "population": 277280,
           "min_zoom": 3.5,
-          "rank": -277280
+          "rank": -277280,
+          "detail_at": [
+            2887.0,
+            665.25
+          ]
         },
         {
           "rect": [
@@ -9630,7 +10538,11 @@
           "name": "Okhotsk",
           "population": 5570,
           "min_zoom": 5.5,
-          "rank": -5570
+          "rank": -5570,
+          "detail_at": [
+            4179.75,
+            637.5
+          ]
         },
         {
           "rect": [
@@ -9666,7 +10578,11 @@
           "name": "Syktyvkar",
           "population": 245083,
           "min_zoom": 3.5,
-          "rank": -245083
+          "rank": -245083,
+          "detail_at": [
+            3010.5,
+            594.0
+          ]
         },
         {
           "rect": [
@@ -9702,7 +10618,11 @@
           "name": "Yakutsk",
           "population": 235600,
           "min_zoom": 3.5,
-          "rank": -235600
+          "rank": -235600,
+          "detail_at": [
+            4009.0,
+            587.0
+          ]
         },
         {
           "rect": [
@@ -9738,7 +10658,11 @@
           "name": "Kuril\u2019sk",
           "population": 1607,
           "min_zoom": 5.5,
-          "rank": -1607
+          "rank": -1607,
+          "detail_at": [
+            4238.75,
+            876.25
+          ]
         },
         {
           "rect": [
@@ -9774,7 +10698,11 @@
           "name": "Turukhansk",
           "population": 4774,
           "min_zoom": 5.5,
-          "rank": -4774
+          "rank": -4774,
+          "detail_at": [
+            3480.75,
+            511.75
+          ]
         },
         {
           "rect": [
@@ -9810,7 +10738,11 @@
           "name": "Mirny",
           "population": 40308,
           "min_zoom": 5.5,
-          "rank": -40308
+          "rank": -40308,
+          "detail_at": [
+            3809.5,
+            577.25
+          ]
         },
         {
           "rect": [
@@ -9846,7 +10778,11 @@
           "name": "Yoshkar-Ola",
           "population": 268272,
           "min_zoom": 3.5,
-          "rank": -268272
+          "rank": -268272,
+          "detail_at": [
+            2973.5,
+            687.0
+          ]
         },
         {
           "rect": [
@@ -9882,7 +10818,11 @@
           "name": "Okha",
           "population": 26560,
           "min_zoom": 5.5,
-          "rank": -26560
+          "rank": -26560,
+          "detail_at": [
+            4176.25,
+            740.25
+          ]
         },
         {
           "rect": [
@@ -9918,7 +10858,11 @@
           "name": "Tura",
           "population": 5444,
           "min_zoom": 5.5,
-          "rank": -5444
+          "rank": -5444,
+          "detail_at": [
+            3635.75,
+            542.75
+          ]
         },
         {
           "rect": [
@@ -9954,7 +10898,11 @@
           "name": "Cheboksary",
           "population": 492331,
           "min_zoom": 3.5,
-          "rank": -492331
+          "rank": -492331,
+          "detail_at": [
+            2965.5,
+            698.0
+          ]
         },
         {
           "rect": [
@@ -9990,7 +10938,11 @@
           "name": "Serov",
           "population": 98438,
           "min_zoom": 5.5,
-          "rank": -98438
+          "rank": -98438,
+          "detail_at": [
+            3134.25,
+            633.25
+          ]
         },
         {
           "rect": [
@@ -10026,7 +10978,11 @@
           "name": "Nikolayevsk-on-Amure",
           "population": 27152,
           "min_zoom": 5.5,
-          "rank": -27152
+          "rank": -27152,
+          "detail_at": [
+            4148.25,
+            747.75
+          ]
         },
         {
           "rect": [
@@ -10062,7 +11018,11 @@
           "name": "Perm",
           "population": 982419,
           "min_zoom": 3.5,
-          "rank": -982419
+          "rank": -982419,
+          "detail_at": [
+            3079.0,
+            663.0
+          ]
         },
         {
           "rect": [
@@ -10098,7 +11058,11 @@
           "name": "Vanavara",
           "population": 3090,
           "min_zoom": 5.5,
-          "rank": -3090
+          "rank": -3090,
+          "detail_at": [
+            3661.75,
+            619.25
+          ]
         },
         {
           "rect": [
@@ -10134,7 +11098,11 @@
           "name": "Yekaterinburg",
           "population": 1495066,
           "min_zoom": 0.8,
-          "rank": -1495066
+          "rank": -1495066,
+          "detail_at": [
+            3134.5,
+            683.25
+          ]
         },
         {
           "rect": [
@@ -10170,7 +11138,11 @@
           "name": "Yuzhno-Kurilsk",
           "population": 7777,
           "min_zoom": 5.5,
-          "rank": -7777
+          "rank": -7777,
+          "detail_at": [
+            4213.25,
+            894.75
+          ]
         },
         {
           "rect": [
@@ -10206,7 +11178,11 @@
           "name": "Samara",
           "population": 1163399,
           "min_zoom": 2.0,
-          "rank": -1163399
+          "rank": -1163399,
+          "detail_at": [
+            3002.0,
+            746.75
+          ]
         },
         {
           "rect": [
@@ -10242,7 +11218,11 @@
           "name": "Tynda",
           "population": 37335,
           "min_zoom": 5.5,
-          "rank": -37335
+          "rank": -37335,
+          "detail_at": [
+            3946.0,
+            713.25
+          ]
         },
         {
           "rect": [
@@ -10278,7 +11258,11 @@
           "name": "Tyumen",
           "population": 768358,
           "min_zoom": 3.5,
-          "rank": -768358
+          "rank": -768358,
+          "detail_at": [
+            3196.75,
+            677.75
+          ]
         },
         {
           "rect": [
@@ -10314,7 +11298,11 @@
           "name": "Bodaybo",
           "population": 15933,
           "min_zoom": 5.5,
-          "rank": -15933
+          "rank": -15933,
+          "detail_at": [
+            3812.5,
+            665.25
+          ]
         },
         {
           "rect": [
@@ -10350,7 +11338,11 @@
           "name": "Kurgan",
           "population": 309285,
           "min_zoom": 3.5,
-          "rank": -309285
+          "rank": -309285,
+          "detail_at": [
+            3194.5,
+            708.0
+          ]
         },
         {
           "rect": [
@@ -10386,7 +11378,11 @@
           "name": "Tomsk",
           "population": 574002,
           "min_zoom": 3.5,
-          "rank": -574002
+          "rank": -574002,
+          "detail_at": [
+            3443.0,
+            689.5
+          ]
         },
         {
           "rect": [
@@ -10422,7 +11418,11 @@
           "name": "Bratsk",
           "population": 256600,
           "min_zoom": 3.5,
-          "rank": -256600
+          "rank": -256600,
+          "detail_at": [
+            3651.5,
+            695.25
+          ]
         },
         {
           "rect": [
@@ -10458,7 +11458,11 @@
           "name": "Omsk",
           "population": 1172070,
           "min_zoom": 2.0,
-          "rank": -1172070
+          "rank": -1172070,
+          "detail_at": [
+            3296.0,
+            716.0
+          ]
         },
         {
           "rect": [
@@ -10494,7 +11498,11 @@
           "name": "Krasnoyarsk",
           "population": 1090811,
           "min_zoom": 2.0,
-          "rank": -1090811
+          "rank": -1090811,
+          "detail_at": [
+            3543.5,
+            697.75
+          ]
         },
         {
           "rect": [
@@ -10530,7 +11538,11 @@
           "name": "Novosibirsk",
           "population": 1612833,
           "min_zoom": 0.8,
-          "rank": -1612833
+          "rank": -1612833,
+          "detail_at": [
+            3417.0,
+            715.5
+          ]
         },
         {
           "rect": [
@@ -10566,7 +11578,11 @@
           "name": "Kemerovo",
           "population": 558973,
           "min_zoom": 3.5,
-          "rank": -558973
+          "rank": -558973,
+          "detail_at": [
+            3457.0,
+            709.75
+          ]
         },
         {
           "rect": [
@@ -10602,7 +11618,11 @@
           "name": "Ust\u2019-Ordynskiy",
           "population": 14538,
           "min_zoom": 5.5,
-          "rank": -14538
+          "rank": -14538,
+          "detail_at": [
+            3693.0,
+            753.5
+          ]
         },
         {
           "rect": [
@@ -10638,7 +11658,11 @@
           "name": "Abakan",
           "population": 184168,
           "min_zoom": 3.5,
-          "rank": -184168
+          "rank": -184168,
+          "detail_at": [
+            3523.5,
+            739.0
+          ]
         },
         {
           "rect": [
@@ -10674,7 +11698,11 @@
           "name": "Barnaul",
           "population": 632372,
           "min_zoom": 3.5,
-          "rank": -632372
+          "rank": -632372,
+          "detail_at": [
+            3427.0,
+            744.25
+          ]
         },
         {
           "rect": [
@@ -10704,13 +11732,17 @@
           "kind": "city",
           "at": [
             3687,
-            762
+            761
           ],
           "city_id": 2023469,
           "name": "Irkutsk",
           "population": 623869,
           "min_zoom": 3.5,
-          "rank": -623869
+          "rank": -623869,
+          "detail_at": [
+            3687.25,
+            762.25
+          ]
         },
         {
           "rect": [
@@ -10722,7 +11754,7 @@
           "kind": "label",
           "at": [
             3687,
-            762
+            761
           ],
           "city_id": 2023469,
           "offset": [
@@ -10746,7 +11778,11 @@
           "name": "Ulan-Ude",
           "population": 360278,
           "min_zoom": 3.5,
-          "rank": -360278
+          "rank": -360278,
+          "detail_at": [
+            3729.0,
+            770.0
+          ]
         },
         {
           "rect": [
@@ -10782,7 +11818,11 @@
           "name": "Kyzyl",
           "population": 116983,
           "min_zoom": 3.5,
-          "rank": -116983
+          "rank": -116983,
+          "detail_at": [
+            3562.5,
+            772.0
+          ]
         },
         {
           "rect": [
@@ -10818,7 +11858,11 @@
           "name": "Petropavlovsk-Kamchatsky",
           "population": 181216,
           "min_zoom": 3.5,
-          "rank": -181216
+          "rank": -181216,
+          "detail_at": [
+            4374.75,
+            749.25
+          ]
         },
         {
           "rect": [
@@ -10854,7 +11898,11 @@
           "name": "Komsomolsk-on-Amur",
           "population": 275908,
           "min_zoom": 3.5,
-          "rank": -275908
+          "rank": -275908,
+          "detail_at": [
+            4101.25,
+            790.75
+          ]
         },
         {
           "rect": [
@@ -10890,7 +11938,11 @@
           "name": "Gorno-Altaysk",
           "population": 63214,
           "min_zoom": 5.5,
-          "rank": -63214
+          "rank": -63214,
+          "detail_at": [
+            3454.75,
+            767.75
+          ]
         },
         {
           "rect": [
@@ -10926,7 +11978,11 @@
           "name": "Khanty-Mansiysk",
           "population": 101466,
           "min_zoom": 3.5,
-          "rank": -101466
+          "rank": -101466,
+          "detail_at": [
+            3241.0,
+            606.75
+          ]
         },
         {
           "rect": [
@@ -11175,7 +12231,11 @@
           "name": "Georgetown",
           "population": 235017,
           "min_zoom": 3.5,
-          "rank": -235017
+          "rank": -235017,
+          "detail_at": [
+            1631.75,
+            1399.75
+          ]
         },
         {
           "rect": [
@@ -11211,7 +12271,11 @@
           "name": "Paramaribo",
           "population": 223757,
           "min_zoom": 3.5,
-          "rank": -223757
+          "rank": -223757,
+          "detail_at": [
+            1669.75,
+            1411.5
+          ]
         },
         {
           "rect": [
@@ -11247,7 +12311,11 @@
           "name": "Cayenne",
           "population": 61550,
           "min_zoom": 5.5,
-          "rank": -61550
+          "rank": -61550,
+          "detail_at": [
+            1705.5,
+            1423.25
+          ]
         },
         {
           "rect": [
@@ -11283,7 +12351,11 @@
           "name": "Bogot\u00e1",
           "population": 7674366,
           "min_zoom": 2.0,
-          "rank": -7674366
+          "rank": -7674366,
+          "detail_at": [
+            1430.25,
+            1427.25
+          ]
         },
         {
           "rect": [
@@ -11319,7 +12391,11 @@
           "name": "Quito",
           "population": 2781641,
           "min_zoom": 2.0,
-          "rank": -2781641
+          "rank": -2781641,
+          "detail_at": [
+            1374.0,
+            1488.0
+          ]
         },
         {
           "rect": [
@@ -11355,7 +12431,11 @@
           "name": "Fortaleza",
           "population": 2400000,
           "min_zoom": 2.0,
-          "rank": -2400000
+          "rank": -2400000,
+          "detail_at": [
+            1880.0,
+            1531.75
+          ]
         },
         {
           "rect": [
@@ -11391,7 +12471,11 @@
           "name": "Manaus",
           "population": 2219580,
           "min_zoom": 2.0,
-          "rank": -2219580
+          "rank": -2219580,
+          "detail_at": [
+            1608.25,
+            1524.0
+          ]
         },
         {
           "rect": [
@@ -11427,7 +12511,11 @@
           "name": "Recife",
           "population": 1653461,
           "min_zoom": 2.0,
-          "rank": -1653461
+          "rank": -1653461,
+          "detail_at": [
+            1926.25,
+            1586.25
+          ]
         },
         {
           "rect": [
@@ -11463,7 +12551,11 @@
           "name": "Rio Branco",
           "population": 419452,
           "min_zoom": 3.5,
-          "rank": -419452
+          "rank": -419452,
+          "detail_at": [
+            1509.75,
+            1610.5
+          ]
         },
         {
           "rect": [
@@ -11499,7 +12591,11 @@
           "name": "Lima",
           "population": 7737002,
           "min_zoom": 0.8,
-          "rank": -7737002
+          "rank": -7737002,
+          "detail_at": [
+            1393.0,
+            1636.75
+          ]
         },
         {
           "rect": [
@@ -11535,7 +12631,11 @@
           "name": "Salvador",
           "population": 2711840,
           "min_zoom": 2.0,
-          "rank": -2711840
+          "rank": -2711840,
+          "detail_at": [
+            1880.5,
+            1648.75
+          ]
         },
         {
           "rect": [
@@ -11571,7 +12671,11 @@
           "name": "Cuiab\u00e1",
           "population": 618124,
           "min_zoom": 3.5,
-          "rank": -618124
+          "rank": -618124,
+          "detail_at": [
+            1657.75,
+            1682.25
+          ]
         },
         {
           "rect": [
@@ -11607,7 +12711,11 @@
           "name": "Bras\u00edlia",
           "population": 2207718,
           "min_zoom": 2.0,
-          "rank": -2207718
+          "rank": -2207718,
+          "detail_at": [
+            1761.25,
+            1684.5
+          ]
         },
         {
           "rect": [
@@ -11643,7 +12751,11 @@
           "name": "La Paz",
           "population": 2004652,
           "min_zoom": 2.0,
-          "rank": -2004652
+          "rank": -2004652,
+          "detail_at": [
+            1505.25,
+            1693.75
+          ]
         },
         {
           "rect": [
@@ -11679,7 +12791,11 @@
           "name": "Rio de Janeiro",
           "population": 6747815,
           "min_zoom": 0.0,
-          "rank": -6747815
+          "rank": -6747815,
+          "detail_at": [
+            1821.25,
+            1777.25
+          ]
         },
         {
           "rect": [
@@ -11715,7 +12831,11 @@
           "name": "Asunci\u00f3n",
           "population": 1482200,
           "min_zoom": 2.0,
-          "rank": -1482200
+          "rank": -1482200,
+          "detail_at": [
+            1638.25,
+            1808.75
+          ]
         },
         {
           "rect": [
@@ -11751,7 +12871,11 @@
           "name": "S\u00e3o Paulo",
           "population": 12400232,
           "min_zoom": 2.0,
-          "rank": -12400232
+          "rank": -12400232,
+          "detail_at": [
+            1777.5,
+            1785.75
+          ]
         },
         {
           "rect": [
@@ -11787,7 +12911,11 @@
           "name": "Santiago",
           "population": 4837295,
           "min_zoom": 0.8,
-          "rank": -4837295
+          "rank": -4837295,
+          "detail_at": [
+            1473.75,
+            1920.5
+          ]
         },
         {
           "rect": [
@@ -11823,7 +12951,11 @@
           "name": "Montevideo",
           "population": 1270737,
           "min_zoom": 2.0,
-          "rank": -1270737
+          "rank": -1270737,
+          "detail_at": [
+            1656.75,
+            1941.0
+          ]
         },
         {
           "rect": [
@@ -11859,7 +12991,11 @@
           "name": "Stanley",
           "population": 2213,
           "min_zoom": 5.5,
-          "rank": -2213
+          "rank": -2213,
+          "detail_at": [
+            1635.5,
+            2198.0
+          ]
         },
         {
           "rect": [
@@ -11895,7 +13031,11 @@
           "name": "Buenos Aires",
           "population": 2891082,
           "min_zoom": 0.0,
-          "rank": -2891082
+          "rank": -2891082,
+          "detail_at": [
+            1629.0,
+            1937.0
+          ]
         },
         {
           "rect": [
@@ -11931,7 +13071,11 @@
           "name": "Foz do Igua\u00e7u",
           "population": 297352,
           "min_zoom": 3.5,
-          "rank": -297352
+          "rank": -297352,
+          "detail_at": [
+            1676.75,
+            1812.75
+          ]
         },
         {
           "rect": [
@@ -11974,7 +13118,7 @@
         1152
       ],
       "source_sha256": "4ec2967f1a0f46609c56fb49fa7c125ead3a21c4c028b74144488732a26d4727",
-      "detail_sha256": "de94d7989459a6286adcf859cf6c61a31a70d2fbb991ff4fa78c92b926808eae",
+      "detail_sha256": "dd7b2b724b844458b50743c9311012ff025c2cb3e416465fcc666e248ce378ae",
       "control_points": [
         [
           1778.5,
@@ -12664,7 +13808,7 @@
             26
           ],
           "at": [
-            1449,
+            1453,
             891
           ],
           "kind": "label",
@@ -12682,8 +13826,8 @@
             21
           ],
           "at": [
-            1218,
-            855
+            1212,
+            863
           ],
           "kind": "label",
           "city_id": 90,
@@ -12790,8 +13934,8 @@
             26
           ],
           "at": [
-            1254,
-            887
+            1245,
+            878
           ],
           "kind": "label",
           "city_id": 18,
@@ -12862,8 +14006,8 @@
             21
           ],
           "at": [
-            1370,
-            912
+            1377,
+            919
           ],
           "kind": "label",
           "city_id": 25,
@@ -12934,8 +14078,8 @@
             22
           ],
           "at": [
-            1255,
-            910
+            1244,
+            914
           ],
           "kind": "label",
           "city_id": 93,
@@ -12988,8 +14132,8 @@
             26
           ],
           "at": [
-            1317,
-            921
+            1306,
+            916
           ],
           "kind": "label",
           "city_id": 28,
@@ -13006,8 +14150,8 @@
             26
           ],
           "at": [
-            1334,
-            933
+            1339,
+            941
           ],
           "kind": "label",
           "city_id": 30,
@@ -13132,8 +14276,8 @@
             19
           ],
           "at": [
-            852,
-            962
+            856,
+            959
           ],
           "kind": "label",
           "city_id": 34,
@@ -13150,8 +14294,8 @@
             26
           ],
           "at": [
-            1259,
-            928
+            1252,
+            935
           ],
           "kind": "label",
           "city_id": 32,
@@ -13204,8 +14348,8 @@
             25
           ],
           "at": [
-            952,
-            944
+            956,
+            949
           ],
           "kind": "label",
           "city_id": 91,
@@ -13672,8 +14816,8 @@
             25
           ],
           "at": [
-            898,
-            1054
+            892,
+            1042
           ],
           "kind": "label",
           "city_id": 65,
@@ -14086,8 +15230,8 @@
             21
           ],
           "at": [
-            1337,
-            1137
+            1328,
+            1148
           ],
           "kind": "label",
           "city_id": 86,
@@ -14291,7 +15435,11 @@
           "name": "International Falls",
           "population": 6158,
           "min_zoom": 5.5,
-          "rank": -6158
+          "rank": -6158,
+          "detail_at": [
+            1184.25,
+            823.75
+          ]
         },
         {
           "rect": [
@@ -14309,7 +15457,11 @@
           "name": "Lewiston",
           "population": 32544,
           "min_zoom": 5.5,
-          "rank": -32544
+          "rank": -32544,
+          "detail_at": [
+            887.0,
+            857.75
+          ]
         },
         {
           "rect": [
@@ -14327,7 +15479,11 @@
           "name": "Portland",
           "population": 652503,
           "min_zoom": 3.5,
-          "rank": -652503
+          "rank": -652503,
+          "detail_at": [
+            815.5,
+            871.75
+          ]
         },
         {
           "rect": [
@@ -14345,7 +15501,11 @@
           "name": "Helena",
           "population": 32091,
           "min_zoom": 5.5,
-          "rank": -32091
+          "rank": -32091,
+          "detail_at": [
+            950.0,
+            855.0
+          ]
         },
         {
           "rect": [
@@ -14363,7 +15523,11 @@
           "name": "Bismarck",
           "population": 75092,
           "min_zoom": 5.5,
-          "rank": -75092
+          "rank": -75092,
+          "detail_at": [
+            1093.0,
+            851.0
+          ]
         },
         {
           "rect": [
@@ -14381,7 +15545,11 @@
           "name": "Billings",
           "population": 117116,
           "min_zoom": 3.5,
-          "rank": -117116
+          "rank": -117116,
+          "detail_at": [
+            994.75,
+            867.75
+          ]
         },
         {
           "rect": [
@@ -14399,7 +15567,11 @@
           "name": "Portland",
           "population": 66881,
           "min_zoom": 5.5,
-          "rank": -66881
+          "rank": -66881,
+          "detail_at": [
+            1478.75,
+            900.5
+          ]
         },
         {
           "rect": [
@@ -14409,7 +15581,7 @@
             15
           ],
           "at": [
-            1449,
+            1453,
             891
           ],
           "kind": "city",
@@ -14417,7 +15589,11 @@
           "name": "Montpelier",
           "population": 8074,
           "min_zoom": 5.5,
-          "rank": -8074
+          "rank": -8074,
+          "detail_at": [
+            1449.25,
+            891.25
+          ]
         },
         {
           "rect": [
@@ -14435,7 +15611,11 @@
           "name": "Manchester",
           "population": 110229,
           "min_zoom": 3.5,
-          "rank": -110229
+          "rank": -110229,
+          "detail_at": [
+            1463.5,
+            910.5
+          ]
         },
         {
           "rect": [
@@ -14453,7 +15633,11 @@
           "name": "Boise",
           "population": 235684,
           "min_zoom": 3.5,
-          "rank": -235684
+          "rank": -235684,
+          "detail_at": [
+            897.25,
+            901.25
+          ]
         },
         {
           "rect": [
@@ -14471,7 +15655,11 @@
           "name": "Boston",
           "population": 653833,
           "min_zoom": 3.5,
-          "rank": -653833
+          "rank": -653833,
+          "detail_at": [
+            1468.5,
+            920.25
+          ]
         },
         {
           "rect": [
@@ -14481,15 +15669,19 @@
             15
           ],
           "at": [
-            1254,
-            887
+            1245,
+            878
           ],
           "kind": "city",
           "city_id": 18,
           "name": "Green Bay",
           "population": 105207,
           "min_zoom": 3.5,
-          "rank": -105207
+          "rank": -105207,
+          "detail_at": [
+            1253.25,
+            888.5
+          ]
         },
         {
           "rect": [
@@ -14507,7 +15699,11 @@
           "name": "Idaho Falls",
           "population": 59184,
           "min_zoom": 5.5,
-          "rank": -59184
+          "rank": -59184,
+          "detail_at": [
+            950.0,
+            903.5
+          ]
         },
         {
           "rect": [
@@ -14525,7 +15721,11 @@
           "name": "Minneapolis",
           "population": 410939,
           "min_zoom": 3.5,
-          "rank": -410939
+          "rank": -410939,
+          "detail_at": [
+            1187.5,
+            880.25
+          ]
         },
         {
           "rect": [
@@ -14543,7 +15743,11 @@
           "name": "Saint Paul",
           "population": 303176,
           "min_zoom": 3.5,
-          "rank": -303176
+          "rank": -303176,
+          "detail_at": [
+            1189.75,
+            880.75
+          ]
         },
         {
           "rect": [
@@ -14561,7 +15765,11 @@
           "name": "Rapid City",
           "population": 73569,
           "min_zoom": 5.5,
-          "rank": -73569
+          "rank": -73569,
+          "detail_at": [
+            1061.5,
+            894.0
+          ]
         },
         {
           "rect": [
@@ -14579,7 +15787,11 @@
           "name": "Pierre",
           "population": 14091,
           "min_zoom": 5.5,
-          "rank": -14091
+          "rank": -14091,
+          "detail_at": [
+            1098.25,
+            890.25
+          ]
         },
         {
           "rect": [
@@ -14597,7 +15809,11 @@
           "name": "Providence",
           "population": 190934,
           "min_zoom": 3.5,
-          "rank": -190934
+          "rank": -190934,
+          "detail_at": [
+            1464.0,
+            928.25
+          ]
         },
         {
           "rect": [
@@ -14607,15 +15823,19 @@
             14
           ],
           "at": [
-            1370,
-            912
+            1377,
+            919
           ],
           "kind": "city",
           "city_id": 25,
           "name": "Buffalo",
           "population": 258071,
           "min_zoom": 3.5,
-          "rank": -258071
+          "rank": -258071,
+          "detail_at": [
+            1371.25,
+            911.25
+          ]
         },
         {
           "rect": [
@@ -14633,7 +15853,11 @@
           "name": "Madison",
           "population": 280305,
           "min_zoom": 3.5,
-          "rank": -280305
+          "rank": -280305,
+          "detail_at": [
+            1236.5,
+            909.5
+          ]
         },
         {
           "rect": [
@@ -14651,7 +15875,11 @@
           "name": "Casper",
           "population": 60285,
           "min_zoom": 5.5,
-          "rank": -60285
+          "rank": -60285,
+          "detail_at": [
+            1022.5,
+            912.5
+          ]
         },
         {
           "rect": [
@@ -14661,15 +15889,19 @@
             14
           ],
           "at": [
-            1317,
-            921
+            1306,
+            916
           ],
           "kind": "city",
           "city_id": 28,
           "name": "Detroit",
           "population": 645705,
           "min_zoom": 3.5,
-          "rank": -645705
+          "rank": -645705,
+          "detail_at": [
+            1318.5,
+            922.5
+          ]
         },
         {
           "rect": [
@@ -14687,7 +15919,11 @@
           "name": "New York City",
           "population": 8804190,
           "min_zoom": 0.0,
-          "rank": -8804190
+          "rank": -8804190,
+          "detail_at": [
+            1431.25,
+            945.0
+          ]
         },
         {
           "rect": [
@@ -14697,15 +15933,19 @@
             15
           ],
           "at": [
-            1334,
-            933
+            1339,
+            941
           ],
           "kind": "city",
           "city_id": 30,
           "name": "Cleveland",
           "population": 365379,
           "min_zoom": 3.5,
-          "rank": -365379
+          "rank": -365379,
+          "detail_at": [
+            1334.5,
+            934.75
+          ]
         },
         {
           "rect": [
@@ -14723,7 +15963,11 @@
           "name": "Scottsbluff",
           "population": 14802,
           "min_zoom": 5.5,
-          "rank": -14802
+          "rank": -14802,
+          "detail_at": [
+            1056.0,
+            927.75
+          ]
         },
         {
           "rect": [
@@ -14733,15 +15977,19 @@
             15
           ],
           "at": [
-            1259,
-            928
+            1252,
+            935
           ],
           "kind": "city",
           "city_id": 32,
           "name": "Chicago",
           "population": 2664452,
           "min_zoom": 2.0,
-          "rank": -2664452
+          "rank": -2664452,
+          "detail_at": [
+            1257.25,
+            928.5
+          ]
         },
         {
           "rect": [
@@ -14759,7 +16007,11 @@
           "name": "Des Moines",
           "population": 214133,
           "min_zoom": 3.5,
-          "rank": -214133
+          "rank": -214133,
+          "detail_at": [
+            1183.25,
+            931.75
+          ]
         },
         {
           "rect": [
@@ -14769,15 +16021,19 @@
             15
           ],
           "at": [
-            852,
-            962
+            856,
+            959
           ],
           "kind": "city",
           "city_id": 34,
           "name": "Reno",
           "population": 264165,
           "min_zoom": 3.5,
-          "rank": -264165
+          "rank": -264165,
+          "detail_at": [
+            851.75,
+            962.5
+          ]
         },
         {
           "rect": [
@@ -14795,7 +16051,11 @@
           "name": "Philadelphia",
           "population": 1573916,
           "min_zoom": 2.0,
-          "rank": -1573916
+          "rank": -1573916,
+          "detail_at": [
+            1416.5,
+            956.25
+          ]
         },
         {
           "rect": [
@@ -14813,7 +16073,11 @@
           "name": "Pittsburgh",
           "population": 304391,
           "min_zoom": 3.5,
-          "rank": -304391
+          "rank": -304391,
+          "detail_at": [
+            1355.5,
+            949.0
+          ]
         },
         {
           "rect": [
@@ -14831,7 +16095,11 @@
           "name": "Cheyenne",
           "population": 65132,
           "min_zoom": 5.5,
-          "rank": -65132
+          "rank": -65132,
+          "detail_at": [
+            1041.5,
+            938.5
+          ]
         },
         {
           "rect": [
@@ -14849,7 +16117,11 @@
           "name": "Omaha",
           "population": 486051,
           "min_zoom": 3.5,
-          "rank": -486051
+          "rank": -486051,
+          "detail_at": [
+            1153.75,
+            936.75
+          ]
         },
         {
           "rect": [
@@ -14867,7 +16139,11 @@
           "name": "Atlantic City",
           "population": 39260,
           "min_zoom": 5.5,
-          "rank": -39260
+          "rank": -39260,
+          "detail_at": [
+            1426.0,
+            964.75
+          ]
         },
         {
           "rect": [
@@ -14885,7 +16161,11 @@
           "name": "Columbus",
           "population": 913175,
           "min_zoom": 3.5,
-          "rank": -913175
+          "rank": -913175,
+          "detail_at": [
+            1317.5,
+            956.0
+          ]
         },
         {
           "rect": [
@@ -14903,7 +16183,11 @@
           "name": "San Francisco",
           "population": 827526,
           "min_zoom": 3.5,
-          "rank": -827526
+          "rank": -827526,
+          "detail_at": [
+            818.75,
+            988.0
+          ]
         },
         {
           "rect": [
@@ -14921,7 +16205,11 @@
           "name": "Indianapolis",
           "population": 887642,
           "min_zoom": 3.5,
-          "rank": -887642
+          "rank": -887642,
+          "detail_at": [
+            1277.5,
+            959.0
+          ]
         },
         {
           "rect": [
@@ -14939,7 +16227,11 @@
           "name": "Denver",
           "population": 729019,
           "min_zoom": 3.5,
-          "rank": -729019
+          "rank": -729019,
+          "detail_at": [
+            1039.25,
+            959.25
+          ]
         },
         {
           "rect": [
@@ -14957,7 +16249,11 @@
           "name": "Cincinnati",
           "population": 311097,
           "min_zoom": 3.5,
-          "rank": -311097
+          "rank": -311097,
+          "detail_at": [
+            1298.25,
+            968.25
+          ]
         },
         {
           "rect": [
@@ -14975,7 +16271,11 @@
           "name": "Charleston",
           "population": 46838,
           "min_zoom": 5.5,
-          "rank": -46838
+          "rank": -46838,
+          "detail_at": [
+            1334.75,
+            979.75
+          ]
         },
         {
           "rect": [
@@ -14993,7 +16293,11 @@
           "name": "Saint George",
           "population": 72897,
           "min_zoom": 5.5,
-          "rank": -72897
+          "rank": -72897,
+          "detail_at": [
+            930.5,
+            997.75
+          ]
         },
         {
           "rect": [
@@ -15011,7 +16315,11 @@
           "name": "Richmond",
           "population": 226610,
           "min_zoom": 3.5,
-          "rank": -226610
+          "rank": -226610,
+          "detail_at": [
+            1387.5,
+            991.25
+          ]
         },
         {
           "rect": [
@@ -15029,7 +16337,11 @@
           "name": "Kansas City",
           "population": 475378,
           "min_zoom": 3.5,
-          "rank": -475378
+          "rank": -475378,
+          "detail_at": [
+            1171.0,
+            968.75
+          ]
         },
         {
           "rect": [
@@ -15047,7 +16359,11 @@
           "name": "St. Louis",
           "population": 279695,
           "min_zoom": 3.5,
-          "rank": -279695
+          "rank": -279695,
+          "detail_at": [
+            1226.5,
+            975.75
+          ]
         },
         {
           "rect": [
@@ -15065,7 +16381,11 @@
           "name": "Topeka",
           "population": 125963,
           "min_zoom": 3.5,
-          "rank": -125963
+          "rank": -125963,
+          "detail_at": [
+            1157.0,
+            969.5
+          ]
         },
         {
           "rect": [
@@ -15083,7 +16403,11 @@
           "name": "Louisville",
           "population": 624444,
           "min_zoom": 3.5,
-          "rank": -624444
+          "rank": -624444,
+          "detail_at": [
+            1282.5,
+            981.0
+          ]
         },
         {
           "rect": [
@@ -15101,7 +16425,11 @@
           "name": "Norfolk",
           "population": 238005,
           "min_zoom": 3.5,
-          "rank": -238005
+          "rank": -238005,
+          "detail_at": [
+            1402.5,
+            1001.5
+          ]
         },
         {
           "rect": [
@@ -15119,7 +16447,11 @@
           "name": "Dodge City",
           "population": 27912,
           "min_zoom": 5.5,
-          "rank": -27912
+          "rank": -27912,
+          "detail_at": [
+            1102.25,
+            988.25
+          ]
         },
         {
           "rect": [
@@ -15137,7 +16469,11 @@
           "name": "Las Vegas",
           "population": 641903,
           "min_zoom": 3.5,
-          "rank": -641903
+          "rank": -641903,
+          "detail_at": [
+            910.75,
+            1011.0
+          ]
         },
         {
           "rect": [
@@ -15155,7 +16491,11 @@
           "name": "Johnson City",
           "population": 66027,
           "min_zoom": 5.5,
-          "rank": -66027
+          "rank": -66027,
+          "detail_at": [
+            1325.75,
+            1009.0
+          ]
         },
         {
           "rect": [
@@ -15173,7 +16513,11 @@
           "name": "Nashville",
           "population": 689447,
           "min_zoom": 3.5,
-          "rank": -689447
+          "rank": -689447,
+          "detail_at": [
+            1269.5,
+            1011.25
+          ]
         },
         {
           "rect": [
@@ -15191,7 +16535,11 @@
           "name": "Santa Fe",
           "population": 87505,
           "min_zoom": 5.5,
-          "rank": -87505
+          "rank": -87505,
+          "detail_at": [
+            1027.25,
+            1018.0
+          ]
         },
         {
           "rect": [
@@ -15209,7 +16557,11 @@
           "name": "Charlotte",
           "population": 911311,
           "min_zoom": 3.5,
-          "rank": -911311
+          "rank": -911311,
+          "detail_at": [
+            1344.75,
+            1024.75
+          ]
         },
         {
           "rect": [
@@ -15227,7 +16579,11 @@
           "name": "Oklahoma City",
           "population": 681054,
           "min_zoom": 3.5,
-          "rank": -681054
+          "rank": -681054,
+          "detail_at": [
+            1133.75,
+            1021.25
+          ]
         },
         {
           "rect": [
@@ -15245,7 +16601,11 @@
           "name": "Memphis",
           "population": 633104,
           "min_zoom": 3.5,
-          "rank": -633104
+          "rank": -633104,
+          "detail_at": [
+            1228.25,
+            1025.75
+          ]
         },
         {
           "rect": [
@@ -15263,7 +16623,11 @@
           "name": "Albuquerque",
           "population": 564559,
           "min_zoom": 3.5,
-          "rank": -564559
+          "rank": -564559,
+          "detail_at": [
+            1018.25,
+            1026.75
+          ]
         },
         {
           "rect": [
@@ -15281,7 +16645,11 @@
           "name": "Amarillo",
           "population": 198645,
           "min_zoom": 3.5,
-          "rank": -198645
+          "rank": -198645,
+          "detail_at": [
+            1079.25,
+            1024.75
+          ]
         },
         {
           "rect": [
@@ -15291,15 +16659,19 @@
             15
           ],
           "at": [
-            898,
-            1054
+            892,
+            1042
           ],
           "kind": "city",
           "city_id": 65,
           "name": "San Diego",
           "population": 1404452,
           "min_zoom": 2.0,
-          "rank": -1404452
+          "rank": -1404452,
+          "detail_at": [
+            885.25,
+            1060.0
+          ]
         },
         {
           "rect": [
@@ -15317,7 +16689,11 @@
           "name": "Little Rock",
           "population": 202591,
           "min_zoom": 3.5,
-          "rank": -202591
+          "rank": -202591,
+          "detail_at": [
+            1200.0,
+            1031.5
+          ]
         },
         {
           "rect": [
@@ -15335,7 +16711,11 @@
           "name": "Phoenix",
           "population": 1650070,
           "min_zoom": 2.0,
-          "rank": -1650070
+          "rank": -1650070,
+          "detail_at": [
+            949.5,
+            1049.75
+          ]
         },
         {
           "rect": [
@@ -15353,7 +16733,11 @@
           "name": "Yuma",
           "population": 95548,
           "min_zoom": 5.5,
-          "rank": -95548
+          "rank": -95548,
+          "detail_at": [
+            917.25,
+            1060.0
+          ]
         },
         {
           "rect": [
@@ -15371,7 +16755,11 @@
           "name": "Atlanta",
           "population": 510823,
           "min_zoom": 3.5,
-          "rank": -510823
+          "rank": -510823,
+          "detail_at": [
+            1300.0,
+            1045.5
+          ]
         },
         {
           "rect": [
@@ -15389,7 +16777,11 @@
           "name": "Charleston",
           "population": 132609,
           "min_zoom": 3.5,
-          "rank": -132609
+          "rank": -132609,
+          "detail_at": [
+            1356.25,
+            1059.25
+          ]
         },
         {
           "rect": [
@@ -15407,7 +16799,11 @@
           "name": "Birmingham",
           "population": 196357,
           "min_zoom": 3.5,
-          "rank": -196357
+          "rank": -196357,
+          "detail_at": [
+            1269.25,
+            1048.75
+          ]
         },
         {
           "rect": [
@@ -15425,7 +16821,11 @@
           "name": "Tucson",
           "population": 542629,
           "min_zoom": 3.5,
-          "rank": -542629
+          "rank": -542629,
+          "detail_at": [
+            964.0,
+            1067.0
+          ]
         },
         {
           "rect": [
@@ -15443,7 +16843,11 @@
           "name": "Las Cruces",
           "population": 101643,
           "min_zoom": 3.5,
-          "rank": -101643
+          "rank": -101643,
+          "detail_at": [
+            1016.5,
+            1065.75
+          ]
         },
         {
           "rect": [
@@ -15461,7 +16865,11 @@
           "name": "Dallas",
           "population": 1326087,
           "min_zoom": 2.0,
-          "rank": -1326087
+          "rank": -1326087,
+          "detail_at": [
+            1142.75,
+            1059.0
+          ]
         },
         {
           "rect": [
@@ -15479,7 +16887,11 @@
           "name": "Jackson",
           "population": 153701,
           "min_zoom": 3.5,
-          "rank": -153701
+          "rank": -153701,
+          "detail_at": [
+            1226.5,
+            1065.75
+          ]
         },
         {
           "rect": [
@@ -15497,7 +16909,11 @@
           "name": "El Paso",
           "population": 678815,
           "min_zoom": 3.5,
-          "rank": -678815
+          "rank": -678815,
+          "detail_at": [
+            1020.25,
+            1073.25
+          ]
         },
         {
           "rect": [
@@ -15515,7 +16931,11 @@
           "name": "Jacksonville",
           "population": 1009833,
           "min_zoom": 2.0,
-          "rank": -1009833
+          "rank": -1009833,
+          "detail_at": [
+            1334.5,
+            1093.0
+          ]
         },
         {
           "rect": [
@@ -15533,7 +16953,11 @@
           "name": "Mobile",
           "population": 183289,
           "min_zoom": 3.5,
-          "rank": -183289
+          "rank": -183289,
+          "detail_at": [
+            1253.75,
+            1088.0
+          ]
         },
         {
           "rect": [
@@ -15551,7 +16975,11 @@
           "name": "Tallahassee",
           "population": 201731,
           "min_zoom": 3.5,
-          "rank": -201731
+          "rank": -201731,
+          "detail_at": [
+            1301.25,
+            1091.5
+          ]
         },
         {
           "rect": [
@@ -15569,7 +16997,11 @@
           "name": "Pensacola",
           "population": 53724,
           "min_zoom": 5.5,
-          "rank": -53724
+          "rank": -53724,
+          "detail_at": [
+            1264.0,
+            1091.75
+          ]
         },
         {
           "rect": [
@@ -15587,7 +17019,11 @@
           "name": "Baton Rouge",
           "population": 227470,
           "min_zoom": 3.5,
-          "rank": -227470
+          "rank": -227470,
+          "detail_at": [
+            1213.75,
+            1091.5
+          ]
         },
         {
           "rect": [
@@ -15605,7 +17041,11 @@
           "name": "Houston",
           "population": 2314157,
           "min_zoom": 2.0,
-          "rank": -2314157
+          "rank": -2314157,
+          "detail_at": [
+            1161.0,
+            1100.75
+          ]
         },
         {
           "rect": [
@@ -15623,7 +17063,11 @@
           "name": "New Orleans",
           "population": 362701,
           "min_zoom": 3.5,
-          "rank": -362701
+          "rank": -362701,
+          "detail_at": [
+            1228.0,
+            1098.0
+          ]
         },
         {
           "rect": [
@@ -15641,7 +17085,11 @@
           "name": "San Antonio",
           "population": 1526656,
           "min_zoom": 2.0,
-          "rank": -1526656
+          "rank": -1526656,
+          "detail_at": [
+            1121.5,
+            1105.5
+          ]
         },
         {
           "rect": [
@@ -15659,7 +17107,11 @@
           "name": "Tampa",
           "population": 414547,
           "min_zoom": 3.5,
-          "rank": -414547
+          "rank": -414547,
+          "detail_at": [
+            1324.25,
+            1125.5
+          ]
         },
         {
           "rect": [
@@ -15669,15 +17121,19 @@
             15
           ],
           "at": [
-            1337,
-            1137
+            1328,
+            1148
           ],
           "kind": "city",
           "city_id": 86,
           "name": "Miami",
           "population": 487014,
           "min_zoom": 3.5,
-          "rank": -487014
+          "rank": -487014,
+          "detail_at": [
+            1352.75,
+            1154.75
+          ]
         },
         {
           "rect": [
@@ -15695,7 +17151,11 @@
           "name": "Brownsville",
           "population": 186738,
           "min_zoom": 3.5,
-          "rank": -186738
+          "rank": -186738,
+          "detail_at": [
+            1134.0,
+            1153.25
+          ]
         },
         {
           "rect": [
@@ -15713,7 +17173,11 @@
           "name": "Key West",
           "population": 25755,
           "min_zoom": 5.5,
-          "rank": -25755
+          "rank": -25755,
+          "detail_at": [
+            1333.0,
+            1171.0
+          ]
         },
         {
           "rect": [
@@ -15731,7 +17195,11 @@
           "name": "Seattle",
           "population": 780995,
           "min_zoom": 3.5,
-          "rank": -780995
+          "rank": -780995,
+          "detail_at": [
+            819.75,
+            839.0
+          ]
         },
         {
           "rect": [
@@ -15741,15 +17209,19 @@
             16
           ],
           "at": [
-            1218,
-            855
+            1212,
+            863
           ],
           "kind": "city",
           "city_id": 90,
           "name": "Ashland",
           "population": 8040,
           "min_zoom": 5.5,
-          "rank": -8040
+          "rank": -8040,
+          "detail_at": [
+            1218.25,
+            856.5
+          ]
         },
         {
           "rect": [
@@ -15759,15 +17231,19 @@
             16
           ],
           "at": [
-            952,
-            944
+            956,
+            949
           ],
           "kind": "city",
           "city_id": 91,
           "name": "Salt Lake City",
           "population": 215548,
           "min_zoom": 3.5,
-          "rank": -215548
+          "rank": -215548,
+          "detail_at": [
+            952.0,
+            944.25
+          ]
         },
         {
           "rect": [
@@ -15785,7 +17261,11 @@
           "name": "Los Angeles",
           "population": 3820914,
           "min_zoom": 0.0,
-          "rank": -3820914
+          "rank": -3820914,
+          "detail_at": [
+            871.5,
+            1041.25
+          ]
         },
         {
           "rect": [
@@ -15795,15 +17275,19 @@
             16
           ],
           "at": [
-            1255,
-            910
+            1244,
+            914
           ],
           "kind": "city",
           "city_id": 93,
           "name": "Milwaukee",
           "population": 563531,
           "min_zoom": 3.5,
-          "rank": -563531
+          "rank": -563531,
+          "detail_at": [
+            1253.5,
+            911.0
+          ]
         },
         {
           "rect": [
@@ -15821,7 +17305,11 @@
           "name": "Hartford",
           "population": 121054,
           "min_zoom": 3.5,
-          "rank": -121054
+          "rank": -121054,
+          "detail_at": [
+            1448.0,
+            929.25
+          ]
         },
         {
           "rect": [
@@ -15839,7 +17327,11 @@
           "name": "Raleigh",
           "population": 482295,
           "min_zoom": 3.5,
-          "rank": -482295
+          "rank": -482295,
+          "detail_at": [
+            1372.75,
+            1016.75
+          ]
         },
         {
           "rect": [
@@ -15857,7 +17349,11 @@
           "name": "Baltimore",
           "population": 585708,
           "min_zoom": 3.5,
-          "rank": -585708
+          "rank": -585708,
+          "detail_at": [
+            1398.25,
+            966.0
+          ]
         },
         {
           "rect": [
@@ -15875,7 +17371,11 @@
           "name": "Washington",
           "population": 689545,
           "min_zoom": 3.5,
-          "rank": -689545
+          "rank": -689545,
+          "detail_at": [
+            1393.0,
+            971.75
+          ]
         }
       ],
       "text_scale": 0.7441860465116279
@@ -15900,7 +17400,7 @@
         1504
       ],
       "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3",
-      "detail_sha256": "e4af70b52c752c2b1c94083c09edf9cd05b8fb8e67fd45a86ac7ac74acd1aca0",
+      "detail_sha256": "e9dabf119de41c6ec039b1455dc1e8e0b32e0f0fced23c723328579db20e411e",
       "control_points": [
         [
           433,
@@ -16028,7 +17528,11 @@
           "name": "Krasnodar",
           "population": 899541,
           "min_zoom": 3.5,
-          "rank": -899541
+          "rank": -899541,
+          "detail_at": [
+            2860.75,
+            879.25
+          ]
         },
         {
           "rect": [
@@ -16064,7 +17568,11 @@
           "name": "Grozny",
           "population": 297137,
           "min_zoom": 3.5,
-          "rank": -297137
+          "rank": -297137,
+          "detail_at": [
+            2945.75,
+            905.75
+          ]
         },
         {
           "rect": [
@@ -16100,7 +17608,11 @@
           "name": "Aktau",
           "population": 147443,
           "min_zoom": 3.5,
-          "rank": -147443
+          "rank": -147443,
+          "detail_at": [
+            3015.0,
+            900.5
+          ]
         },
         {
           "rect": [
@@ -16136,7 +17648,11 @@
           "name": "Tbilisi",
           "population": 1049498,
           "min_zoom": 2.0,
-          "rank": -1049498
+          "rank": -1049498,
+          "detail_at": [
+            2935.0,
+            930.25
+          ]
         },
         {
           "rect": [
@@ -16172,7 +17688,11 @@
           "name": "Tashkent",
           "population": 1978028,
           "min_zoom": 2.0,
-          "rank": -1978028
+          "rank": -1978028,
+          "detail_at": [
+            3243.5,
+            936.75
+          ]
         },
         {
           "rect": [
@@ -16208,7 +17728,11 @@
           "name": "Baku",
           "population": 2351300,
           "min_zoom": 2.0,
-          "rank": -2351300
+          "rank": -2351300,
+          "detail_at": [
+            2999.0,
+            949.75
+          ]
         },
         {
           "rect": [
@@ -16244,7 +17768,11 @@
           "name": "Yerevan",
           "population": 1144700,
           "min_zoom": 2.0,
-          "rank": -1144700
+          "rank": -1144700,
+          "detail_at": [
+            2930.75,
+            952.75
+          ]
         },
         {
           "rect": [
@@ -16280,7 +17808,11 @@
           "name": "Ashgabat",
           "population": 1030063,
           "min_zoom": 2.0,
-          "rank": -1030063
+          "rank": -1030063,
+          "detail_at": [
+            3106.25,
+            985.5
+          ]
         },
         {
           "rect": [
@@ -16316,7 +17848,11 @@
           "name": "Tehran",
           "population": 7153309,
           "min_zoom": 0.8,
-          "rank": -7153309
+          "rank": -7153309,
+          "detail_at": [
+            3018.25,
+            1018.0
+          ]
         },
         {
           "rect": [
@@ -16352,7 +17888,11 @@
           "name": "Kabul",
           "population": 4434550,
           "min_zoom": 2.0,
-          "rank": -4434550
+          "rank": -4434550,
+          "detail_at": [
+            3242.75,
+            1034.5
+          ]
         },
         {
           "rect": [
@@ -16388,7 +17928,11 @@
           "name": "Damascus",
           "population": 1569394,
           "min_zoom": 2.0,
-          "rank": -1569394
+          "rank": -1569394,
+          "detail_at": [
+            2826.75,
+            1049.0
+          ]
         },
         {
           "rect": [
@@ -16424,7 +17968,11 @@
           "name": "Baghdad",
           "population": 7216000,
           "min_zoom": 0.8,
-          "rank": -7216000
+          "rank": -7216000,
+          "detail_at": [
+            2929.5,
+            1051.25
+          ]
         },
         {
           "rect": [
@@ -16453,14 +18001,18 @@
           ],
           "kind": "city",
           "at": [
-            2822,
-            1071
+            2823,
+            1070
           ],
           "city_id": 250441,
           "name": "Amman",
           "population": 1275857,
           "min_zoom": 2.0,
-          "rank": -1275857
+          "rank": -1275857,
+          "detail_at": [
+            2822.5,
+            1070.5
+          ]
         },
         {
           "rect": [
@@ -16471,8 +18023,8 @@
           ],
           "kind": "label",
           "at": [
-            2822,
-            1071
+            2823,
+            1070
           ],
           "city_id": 250441,
           "offset": [
@@ -16496,7 +18048,11 @@
           "name": "Kuwait City",
           "population": 60064,
           "min_zoom": 5.5,
-          "rank": -60064
+          "rank": -60064,
+          "detail_at": [
+            2974.75,
+            1106.25
+          ]
         },
         {
           "rect": [
@@ -16532,7 +18088,11 @@
           "name": "Manama",
           "population": 147074,
           "min_zoom": 3.5,
-          "rank": -147074
+          "rank": -147074,
+          "detail_at": [
+            3007.75,
+            1148.75
+          ]
         },
         {
           "rect": [
@@ -16568,7 +18128,11 @@
           "name": "Doha",
           "population": 344939,
           "min_zoom": 3.5,
-          "rank": -344939
+          "rank": -344939,
+          "detail_at": [
+            3019.75,
+            1161.5
+          ]
         },
         {
           "rect": [
@@ -16604,7 +18168,11 @@
           "name": "Karachi",
           "population": 11624219,
           "min_zoom": 2.0,
-          "rank": -11624219
+          "rank": -11624219,
+          "detail_at": [
+            3215.5,
+            1167.0
+          ]
         },
         {
           "rect": [
@@ -16640,7 +18208,11 @@
           "name": "Abu Dhabi",
           "population": 1807000,
           "min_zoom": 2.0,
-          "rank": -1807000
+          "rank": -1807000,
+          "detail_at": [
+            3056.0,
+            1172.5
+          ]
         },
         {
           "rect": [
@@ -16676,7 +18248,11 @@
           "name": "Riyadh",
           "population": 4205961,
           "min_zoom": 0.8,
-          "rank": -4205961
+          "rank": -4205961,
+          "detail_at": [
+            2958.75,
+            1169.5
+          ]
         },
         {
           "rect": [
@@ -16712,7 +18288,11 @@
           "name": "Muscat",
           "population": 797000,
           "min_zoom": 3.5,
-          "rank": -797000
+          "rank": -797000,
+          "detail_at": [
+            3106.75,
+            1184.0
+          ]
         },
         {
           "rect": [
@@ -16748,7 +18328,11 @@
           "name": "Aden",
           "population": 1079670,
           "min_zoom": 2.0,
-          "rank": -1079670
+          "rank": -1079670,
+          "detail_at": [
+            2937.5,
+            1324.0
+          ]
         },
         {
           "rect": [

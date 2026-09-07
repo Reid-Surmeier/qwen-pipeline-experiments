@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_land.geojson",
+    "download_sha256": "1ac90796408bc6ad6911d69448485d3c4dbf2190370080368a09976e1c9f7416",
+    "retained_file": "reference/ne-10m-land.json.gz",
+    "retained_sha256": "86c7300cb6adeecb628fd50a371471c66ade4145d37f60b798b637a2de2b0ab5",
+    "license": "Natural Earth public domain",
+    "version": "5.1.2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_lakes.geojson",
+    "download_sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+    "retained_file": "reference/ne-10m-lakes.json.gz",
+    "retained_sha256": "8c8540bd2bf49a575db94c9438779017df4cdf72b172287e785a03951f38e6f2",
+    "license": "Natural Earth public domain",
+    "version": "5.1.2"
+  }
+]

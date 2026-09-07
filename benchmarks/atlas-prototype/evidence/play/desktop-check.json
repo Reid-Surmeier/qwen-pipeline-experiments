@@ -22,11 +22,13 @@
     "Pacific wrap",
     "sparse named overview",
     "Antarctica close view",
-    "zoom limits 0.5 world fit and 12 native",
+    "zoom limits 1.0 world fit and 12 native",
     "paired city/name reveal with no orphan dots",
     "US northeast and Florida close views",
     "London on Great Britain",
     "Russian town zoom tiers",
+    "Great Lakes and Canadian lakes close views",
+    "4x sourced coast detail with bounded visible tiles",
     "southern viewport clamp under drag and resize"
   ],
   "errors": []

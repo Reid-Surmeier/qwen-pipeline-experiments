@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 60,
+  "fps": 55,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -47,8 +47,8 @@
     "visible": false
   },
   "position": [
-    2299.16870117188,
-    1572
+    2291.76684570312,
+    1350
   ],
   "region": "africa",
   "regions": [
@@ -103,8 +103,8 @@
       "labels": 1,
       "name": "Beijing",
       "screen": [
-        911.133666992188,
-        373.711822509766
+        1236.07775878906,
+        319
       ]
     },
     {
@@ -116,8 +116,47 @@
       "labels": 1,
       "name": "Moscow",
       "screen": [
-        787.584045410156,
-        342.204193115234
+        904.077758789062,
+        234.33332824707
+      ]
+    },
+    {
+      "at": [
+        4135,
+        1017
+      ],
+      "id": "asia1850147.0",
+      "labels": 1,
+      "name": "Tokyo",
+      "screen": [
+        1334.4111328125,
+        339
+      ]
+    },
+    {
+      "at": [
+        2763,
+        1097
+      ],
+      "id": "africa360630.0",
+      "labels": 1,
+      "name": "Cairo",
+      "screen": [
+        877.077758789062,
+        365.666656494141
+      ]
+    },
+    {
+      "at": [
+        2333,
+        751
+      ],
+      "id": "europe2643743.0",
+      "labels": 1,
+      "name": "London",
+      "screen": [
+        733.744384765625,
+        250.33332824707
       ]
     },
     {
@@ -129,8 +168,8 @@
       "labels": 1,
       "name": "New York City",
       "screen": [
-        609.330200195312,
-        370.610687255859
+        425.077697753906,
+        310.666656494141
       ]
     },
     {
@@ -142,8 +181,8 @@
       "labels": 1,
       "name": "Rio de Janeiro",
       "screen": [
-        660.685180664062,
-        473.444641113281
+        563.077697753906,
+        587
       ]
     },
     {
@@ -155,27 +194,82 @@
       "labels": 1,
       "name": "Sydney",
       "screen": [
-        965.837890625,
-        493.788177490234
+        1383.07775878906,
+        641.666687011719
+      ]
+    },
+    {
+      "at": [
+        3659,
+        1476
+      ],
+      "id": "asia1880252.0",
+      "labels": 1,
+      "name": "Singapore",
+      "screen": [
+        1175.74438476562,
+        492
+      ]
+    },
+    {
+      "at": [
+        2601,
+        1923
+      ],
+      "id": "africa3369157.0",
+      "labels": 1,
+      "name": "Cape Town",
+      "screen": [
+        823.077697753906,
+        641
+      ]
+    },
+    {
+      "at": [
+        882,
+        1030
+      ],
+      "id": "usa92.0",
+      "labels": 1,
+      "name": "Los Angeles",
+      "screen": [
+        250.077697753906,
+        343.333312988281
+      ]
+    },
+    {
+      "at": [
+        3345,
+        1116
+      ],
+      "id": "asia1261481.0",
+      "labels": 1,
+      "name": "New Delhi",
+      "screen": [
+        1071.07775878906,
+        372
       ]
     }
   ],
-  "south_edge": 5199.69223118111,
+  "south_edge": 2699.99995976687,
+  "south_limit": 2700,
+  "terrain_detail": 0,
+  "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": true,
   "viewport": [
     1440,
     900
   ],
-  "visible_annotations": 10,
-  "visible_cities": 5,
-  "visible_labels": 5,
+  "visible_annotations": 24,
+  "visible_cities": 12,
+  "visible_labels": 12,
   "world_size": [
     4480,
     3144
   ],
-  "zoom": 0.124045804142952,
+  "zoom": 0.333333343267441,
   "zoom_max": 12,
-  "zoom_min": 0.124045801526718,
-  "zoom_ratio": 0.500000010545437
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 1.00000002980232
 }

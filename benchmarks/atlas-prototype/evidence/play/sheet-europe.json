@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 60,
+  "fps": 58,
   "mode": "sheet",
   "orphan_dots": 0,
   "popup": {
@@ -122,6 +122,9 @@
     }
   ],
   "south_edge": 1467.78948966156,
+  "south_limit": 2700,
+  "terrain_detail": 0,
+  "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -137,6 +140,6 @@
   ],
   "zoom": 0.565476179122925,
   "zoom_max": 12,
-  "zoom_min": 0.124045801526718,
-  "zoom_ratio": 2.27930398354164
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 1.69642853736877
 }

@@ -32,7 +32,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 60,
+  "fps": 50,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -47,8 +47,8 @@
     "visible": false
   },
   "position": [
-    2299.16870117188,
-    2473.96240234375
+    2291.76684570312,
+    2462.98681640625
   ],
   "region": "south-america",
   "regions": [
@@ -94,7 +94,10 @@
     }
   ],
   "shown_cities": [],
-  "south_edge": 2956.51468959354,
+  "south_edge": 2648.23315665025,
+  "south_limit": 2700,
+  "terrain_detail": 1,
+  "terrain_tiles": 4,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
@@ -108,8 +111,8 @@
     4480,
     3144
   ],
-  "zoom": 0.93254142999649,
+  "zoom": 2.42919778823853,
   "zoom_max": 12,
-  "zoom_min": 0.124045801526718,
-  "zoom_ratio": 3.75885930244739
+  "zoom_min": 0.333333333333333,
+  "zoom_ratio": 7.28759336471558
 }

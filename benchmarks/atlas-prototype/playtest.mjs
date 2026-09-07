@@ -12,7 +12,7 @@ await page.goto('https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a
 await page.waitForFunction(()=>window.atlasState?.regions?.length===10,{timeout:90000});
 await page.waitForTimeout(1500);
 const state=()=>page.evaluate(()=>window.atlasState);
-const shot=async name=>{const check=await state();assert.equal(check.orphan_dots,0);assert(check.shown_cities.every(c=>c.labels>0));if(check.mode==='atlas')assert(check.vertical_pan_locked ? Math.abs(check.position[1]-1572)<.01 : check.south_edge<=3144.01);await page.screenshot({path:path.join(out,name+'.png')});await fs.writeFile(path.join(out,name+'.json'),JSON.stringify({...await state(),regions:(await state()).regions.map(r=>({id:r.id,source_sha256:r.source_sha256}))},null,2));};
+const shot=async name=>{const check=await state();assert.equal(check.orphan_dots,0);assert(check.shown_cities.every(c=>c.labels>0));if(check.mode==='atlas')assert(check.vertical_pan_locked ? Math.abs(check.position[1]-1350)<.01 : check.south_edge<=2700.01);await page.screenshot({path:path.join(out,name+'.png')});await fs.writeFile(path.join(out,name+'.json'),JSON.stringify({...await state(),regions:(await state()).regions.map(r=>({id:r.id,source_sha256:r.source_sha256}))},null,2));};
 const control=async name=>{const s=await state();const [x,y,w,h]=s.controls[name];await page.mouse.click(x+w/2,y+h/2);await page.waitForTimeout(500);};
 await shot('01-world');assert((await state()).visible_cities>0 && (await state()).visible_cities<20);assert.equal((await state()).world_size[1],3144);
 const regions=(await state()).regions;
@@ -38,15 +38,15 @@ assert.equal((await state()).region,'australia');const pacificStart=await state(
 await page.mouse.move(1050,650);await page.mouse.down();await page.mouse.move(220,410,{steps:18});await page.mouse.up();await page.waitForTimeout(700);
 assert((await state()).position[0]<pacificStart.position[0]);await shot('pacific-wrap');
 // Inspect Antarctica with actual cursor-anchored wheel input from the world view.
-await control('World');await page.mouse.move(740,820);
-for(let i=0;i<8;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(100);}
+await control('World');await page.mouse.move(740,880);
+for(let i=0;i<12;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(100);}
 await page.waitForTimeout(500);assert((await state()).position[1]>2400);await shot('antarctica-detail');
 // Both zoom stops are reachable through the real controls.
 await page.mouse.move(720,450);
 for(let i=0;i<35;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(50);}
 await page.waitForTimeout(400);assert.equal((await state()).zoom,12);await shot('zoom-maximum');
 for(let i=0;i<65;i++){await page.mouse.wheel(0,100);await page.waitForTimeout(50);}
-await page.waitForTimeout(400);assert(Math.abs((await state()).zoom_ratio-.5)<.001);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);await shot('zoom-minimum');
+await page.waitForTimeout(400);assert(Math.abs((await state()).zoom_ratio-1)<.001);assert((await state()).visible_cities>0 && (await state()).visible_cities<20);await shot('zoom-minimum');
 // A fixed city neighborhood gains visible markers as screen space grows.
 await control('World');await control('regions');await page.mouse.click(270,320);await page.waitForTimeout(700);
 assert.equal((await state()).region,'usa');
@@ -60,11 +60,19 @@ await shot('usa-northeast-detail');
 await control('World');await control('regions');await page.mouse.click(270,320);await page.waitForTimeout(700);
 await page.mouse.move(1040,690);for(let i=0;i<7;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(120);}
 await page.waitForTimeout(500);await shot('usa-florida-detail');
+// Sourced lakes and genuine close coast geometry, through real region/zoom inputs.
+for(const [name,index,point] of [['great-lakes',8,[1300,874]],['canadian-lakes',4,[872,552]],['british-coast',0,[2340,710]]]){
+ await control('World');await control('regions');await page.mouse.click(270,104+index*27);await page.waitForTimeout(600);
+ const start=await state();const sx=720+(point[0]-start.position[0])*start.zoom,sy=450+(point[1]-start.position[1])*start.zoom;
+ await page.mouse.move(sx,sy);
+ for(let i=0;i<6;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(150);}
+ await page.waitForTimeout(700);const close=await state();assert.equal(close.terrain_detail,1);assert(close.terrain_tiles>0&&close.terrain_tiles<=12);assert.equal(close.orphan_dots,0);await shot(name+'-detail');
+}
 // Attempt to drag past Antarctica at regional zoom; the viewport bottom must stop.
-await control('World');await page.mouse.move(740,820);
+await control('World');await page.mouse.move(740,880);
 for(let i=0;i<10;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(70);}
 for(let i=0;i<8;i++){await page.mouse.move(700,780);await page.mouse.down();await page.mouse.move(700,160,{steps:5});await page.mouse.up();}
-await page.waitForTimeout(350);assert(Math.abs((await state()).south_edge-3144)<.01);const blocked=await state();
+await page.waitForTimeout(350);assert(Math.abs((await state()).south_edge-2700)<.01);const blocked=await state();
 await page.mouse.move(700,780);await page.mouse.down();await page.mouse.move(700,160,{steps:5});await page.mouse.up();await page.waitForTimeout(300);assert.equal((await state()).position[1],blocked.position[1]);await shot('antarctica-pan-stop');
 // Read London on the UK landmass and compare the sparse and close Russian tiers.
 await control('World');await control('regions');await page.mouse.click(270,104);await page.waitForTimeout(500);
@@ -74,8 +82,8 @@ await page.mouse.move(lx,ly);for(let i=0;i<4;i++){await page.mouse.wheel(0,-100)
 await control('World');await control('regions');await page.mouse.click(270,266);await page.waitForTimeout(500);const russian=await state();assert.equal(russian.region,'russia');assert(russian.shown_cities.filter(c=>c.id.startsWith('russia')).length<=5);await shot('russia-sparse');
 await page.mouse.move(720,450);for(let i=0;i<12;i++){await page.mouse.wheel(0,-100);await page.waitForTimeout(80);assert.equal((await state()).orphan_dots,0);}await page.waitForTimeout(400);await shot('russia-close');
 for(let i=0;i<12;i++){await page.mouse.wheel(0,100);await page.waitForTimeout(80);assert.equal((await state()).orphan_dots,0);}
-await page.setViewportSize({width:1000,height:1000});await page.waitForTimeout(500);assert((await state()).vertical_pan_locked || (await state()).south_edge<=3144.01);await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(300);
+await page.setViewportSize({width:1000,height:1000});await page.waitForTimeout(500);assert((await state()).vertical_pan_locked || (await state()).south_edge<=2700.01);await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(300);
 // Empty sea remains the cyan map surface; no white paper panels or missing textures.
 await page.keyboard.press('Home');await page.waitForTimeout(600);
-await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 0.5 world fit and 12 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','southern viewport clamp under drag and resize'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
+await fs.writeFile(path.join(out,'errors.json'),JSON.stringify(errors,null,2));assert.equal(errors.length,0);await fs.writeFile(path.join(out,'desktop-check.json'),JSON.stringify({status:'pass',regions:regions.map(r=>r.id),checks:['region selection','automatic detail','pointer-anchored wheel zoom','drag','sheet toggle','reset','Pacific wrap','sparse named overview','Antarctica close view','zoom limits 1.0 world fit and 12 native','paired city/name reveal with no orphan dots','US northeast and Florida close views','London on Great Britain','Russian town zoom tiers','Great Lakes and Canadian lakes close views','4x sourced coast detail with bounded visible tiles','southern viewport clamp under drag and resize'],errors},null,2));console.log('PASS: ten regions, pointer zoom anchor, drag, sheet toggle, reset, Pacific wrap; no browser errors.');
 await browser.close();

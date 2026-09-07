@@ -3,6 +3,10 @@ extends Node2D
 
 const WIDTH := 4480.0
 const HEIGHT := 3144.0
+const SOUTH_LIMIT := 2700.0
+var geography := Node2D.new()
+var geography_tiles: Dictionary = {}
+var terrain_detail := 0.0
 var atlas: Dictionary
 var camera := Camera2D.new()
 var world_root := Node2D.new()
@@ -38,6 +42,10 @@ func _ready() -> void:
 	texture_filter = CanvasItem.TEXTURE_FILTER_NEAREST
 	atlas = JSON.parse_string(FileAccess.get_file_as_string("res://atlas.json"))
 	add_child(world_root)
+	add_child(geography)
+	var terrain_material := ShaderMaterial.new()
+	terrain_material.shader = load("res://geography.gdshader")
+	geography.material = terrain_material
 	add_child(overview_badges)
 	add_child(detail_root)
 	add_child(sheet)
@@ -45,11 +53,6 @@ func _ready() -> void:
 	for copy in [-2, -1, 0, 1, 2]:
 		var shift := Vector2(copy * WIDTH, 0)
 		_sprite(world_root, "terrain", shift, Vector2.ONE)
-		# At whole-world scales, the immovable polar fill covers the unused lower canvas.
-		var cap := Polygon2D.new()
-		cap.color = Color("ffdce9")
-		cap.polygon = PackedVector2Array([Vector2(shift.x, HEIGHT - 12), Vector2(shift.x + WIDTH, HEIGHT - 12), Vector2(shift.x + WIDTH, HEIGHT * 40), Vector2(shift.x, HEIGHT * 40)])
-		world_root.add_child(cap)
 		_sprite(overview_badges, "world-badges", shift, Vector2.ONE)
 	for region in atlas.regions:
 		var labels_texture: Texture2D = load("res://assets/" + region.id + "-labels.png")
@@ -61,7 +64,7 @@ func _ready() -> void:
 			texture.region = Rect2(group.rect[0], group.rect[1], group.rect[2], group.rect[3])
 			sprite.texture = texture
 			detail_root.add_child(sprite)
-			annotations.append({"sprite": sprite, "at": Vector2(group.at[0], group.at[1]), "kind": group.kind, "region": region.id, "city_id": str(region.id) + str(group.get("city_id", -1)), "rank": group.get("rank", 0), "min_zoom": group.get("min_zoom", 4.0), "name": group.get("name", ""), "offset": Vector2(group.get("offset", [0, 0])[0], group.get("offset", [0, 0])[1]), "size": Vector2(group.rect[2], group.rect[3]), "scale": 10.0 / group.rect[3] if group.kind == "city" else 1.0})
+			annotations.append({"sprite": sprite, "at": Vector2(group.at[0], group.at[1]), "detail_at": Vector2(group.get("detail_at", group.at)[0], group.get("detail_at", group.at)[1]), "kind": group.kind, "region": region.id, "city_id": str(region.id) + str(group.get("city_id", -1)), "rank": group.get("rank", 0), "min_zoom": group.get("min_zoom", 4.0), "name": group.get("name", ""), "offset": Vector2(group.get("offset", [0, 0])[0], group.get("offset", [0, 0])[1]), "size": Vector2(group.rect[2], group.rect[3]), "scale": 10.0 / group.rect[3] if group.kind == "city" else 1.0})
 	# ponytail: one-time scan for ten sheets; index by city_id if the catalog grows.
 	for item in annotations:
 		if item.kind == "badge": badges.append(item)
@@ -146,7 +149,7 @@ func _viewport_size() -> Vector2:
 
 func _fit_zoom() -> float:
 	var size := _viewport_size() - Vector2(24, 120)
-	return minf(size.x / WIDTH, size.y / HEIGHT)
+	return maxf(size.x / WIDTH, _viewport_size().y / SOUTH_LIMIT)
 
 func _reset() -> void:
 	mode = "atlas"
@@ -156,7 +159,7 @@ func _reset() -> void:
 	sheet.visible = false
 	sheet_button.text = "Full sheet"
 	_resize()
-	camera.position = Vector2(WIDTH / 2, HEIGHT / 2 - 35 / _fit_zoom())
+	camera.position = Vector2(WIDTH / 2, SOUTH_LIMIT / 2)
 	camera.zoom = Vector2.ONE * _fit_zoom()
 	_constrain()
 	picker.selected = 0
@@ -221,7 +224,7 @@ func _resize() -> void:
 
 func _zoom_at(factor: float, anchor: Vector2) -> void:
 	var before := camera.position + (anchor - _viewport_size() / 2) / camera.zoom.x
-	var next := clampf(camera.zoom.x * factor, _fit_zoom() * 0.5, 12.0)
+	var next := clampf(camera.zoom.x * factor, _fit_zoom(), 12.0)
 	camera.zoom = Vector2.ONE * next
 	camera.position = before - (anchor - _viewport_size() / 2) / next
 	_constrain()
@@ -230,11 +233,11 @@ func _zoom_at(factor: float, anchor: Vector2) -> void:
 func _constrain() -> void:
 	if mode == "atlas":
 		camera.position.x = fposmod(camera.position.x, WIDTH)
-		# Clamp the visible southern edge, not just the camera center. At world
-		# scales shorter than the viewport, center the world and lock vertical pan; the polar cap fills below.
+		camera.zoom = Vector2.ONE * clampf(camera.zoom.x, _fit_zoom(), 12.0)
+		# Stop within the Antarctic ice, before the projection stretches toward the pole.
 		var half_height := _viewport_size().y / (2.0 * camera.zoom.x)
-		var south_limit := HEIGHT - half_height
-		camera.position.y = HEIGHT / 2 if half_height >= HEIGHT / 2 else clampf(camera.position.y, half_height, south_limit)
+		var south_limit := SOUTH_LIMIT - half_height
+		camera.position.y = SOUTH_LIMIT / 2 if half_height >= SOUTH_LIMIT / 2 else clampf(camera.position.y, half_height, south_limit)
 	else:
 		camera.position = camera.position.clamp(Vector2.ZERO, sheet.texture.get_size())
 
@@ -297,7 +300,7 @@ func _layout_annotations() -> void:
 	for group in city_groups:
 		var dot: Dictionary = group.dot
 		if camera.zoom.x < dot.min_zoom: continue
-		var point: Vector2 = dot.at
+		var point: Vector2 = dot.at.lerp(dot.detail_at, terrain_detail)
 		point.x = camera.position.x + fposmod(point.x - camera.position.x + WIDTH / 2, WIDTH) - WIDTH / 2
 		var screen: Vector2 = (point - camera.position) * camera.zoom.x + _viewport_size() / 2
 		var box := Rect2(screen - Vector2(6, 6), Vector2(12, 12))
@@ -345,6 +348,32 @@ func _layout_annotations() -> void:
 			if label.sprite.visible != group.dot.sprite.visible: paired = false
 		if not paired: orphan_dots += 1
 
+func _layout_geography() -> void:
+	geography.visible = mode == "atlas"
+	terrain_detail = smoothstep(1.65, 1.8, camera.zoom.x) if mode == "atlas" else 0.0
+	geography.modulate.a = terrain_detail
+	geography.material.set_shader_parameter("map_zoom", camera.zoom.x)
+	var wanted: Dictionary = {}
+	if terrain_detail > 0:
+		var half := _viewport_size() / (2 * camera.zoom.x)
+		for row in range(maxi(0, floori((camera.position.y - half.y) / 524)), mini(6, ceili((camera.position.y + half.y) / 524))):
+			for col in range(floori((camera.position.x - half.x) / 560), ceili((camera.position.x + half.x) / 560)):
+				var key := Vector2i(col, row)
+				wanted[key] = true
+				if geography_tiles.has(key): continue
+				var tile := Sprite2D.new()
+				tile.texture = load("res://assets/geography/%d-%d-field.png" % [posmod(col, 8), row])
+				tile.material = geography.material
+				tile.centered = false
+				tile.position = Vector2(col * 560, row * 524)
+				tile.scale = Vector2.ONE / 4
+				geography.add_child(tile)
+				geography_tiles[key] = tile
+	for key in geography_tiles.keys():
+		if not wanted.has(key):
+			geography_tiles[key].queue_free()
+			geography_tiles.erase(key)
+
 func _process(delta: float) -> void:
 	detail_alpha = 1.0 if camera.zoom.x >= 0.65 else 0.0
 	overview_badges.modulate.a = 1.0 - smoothstep(0.5, 0.65, camera.zoom.x)
@@ -358,6 +387,7 @@ func _process(delta: float) -> void:
 				distance = d
 				selected = region.id
 	if camera.position != layout_position or camera.zoom.x != layout_zoom:
+		_layout_geography()
 		_layout_annotations()
 	status.text = "%s · %s · %.1f×" % [("Antarctica" if camera.position.y > 2300 and mode == "atlas" else _region(selected).name) if camera.zoom.x > 0.4 else "World", "Full sheet" if mode == "sheet" else ("Regional detail" if detail_alpha > 0.8 else "Overview"), camera.zoom.x / _fit_zoom()]
 	state_timer += delta
@@ -373,6 +403,6 @@ func _publish_state() -> void:
 		controls[name] = [rect.position.x, rect.position.y, rect.size.x, rect.size.y]
 	var pick := picker.get_global_rect()
 	controls["regions"] = [pick.position.x, pick.position.y, pick.size.x, pick.size.y]
-	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_cities": visible_cities, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= HEIGHT, "zoom_min": _fit_zoom() * 0.5, "zoom_max": 12.0, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
+	var state := {"mode": mode, "region": selected, "zoom": camera.zoom.x, "zoom_ratio": camera.zoom.x / _fit_zoom(), "position": [camera.position.x, camera.position.y], "detail_alpha": detail_alpha, "visible_annotations": visible_annotations, "visible_cities": visible_cities, "visible_labels": visible_labels, "shown_cities": shown_cities, "orphan_dots": orphan_dots, "south_edge": camera.position.y + _viewport_size().y / (2.0 * camera.zoom.x), "terrain_detail": terrain_detail, "terrain_tiles": geography_tiles.size(), "south_limit": SOUTH_LIMIT, "vertical_pan_locked": _viewport_size().y / camera.zoom.x >= SOUTH_LIMIT - 0.01, "zoom_min": _fit_zoom(), "zoom_max": 12.0, "world_size": [WIDTH, HEIGHT], "regions": atlas.regions, "controls": controls, "viewport": [_viewport_size().x, _viewport_size().y], "popup": {"visible": picker.get_popup().visible, "position": [picker.get_popup().position.x, picker.get_popup().position.y], "size": [picker.get_popup().size.x, picker.get_popup().size.y]}, "touches": touches.size(), "fps": Engine.get_frames_per_second()}
 	if OS.has_feature("web"):
 		JavaScriptBridge.eval("window.atlasState=" + JSON.stringify(state), true)
