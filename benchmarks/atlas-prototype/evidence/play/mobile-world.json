@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 0,
-  "fps": 21,
+  "fps": 13,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -105,20 +105,20 @@
       "labels": 1,
       "name": "Cape Town",
       "screen": [
-        267.010375976562,
-        532.7421875
+        260.475555419922,
+        529.893310546875
       ]
     }
   ],
-  "south_edge": 2700.00006110273,
+  "south_edge": 2700.00002206333,
   "south_limit": 2700,
   "terrain_detail": 0,
   "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": true,
   "viewport": [
-    334,
-    748
+    322,
+    744
   ],
   "visible_annotations": 2,
   "visible_cities": 1,
@@ -131,19 +131,20 @@
     4480,
     3144
   ],
-  "zoom": 0.277037024497986,
+  "zoom": 0.275555551052094,
   "zoom_max": 120,
-  "zoom_min": 0.277037037037037,
-  "zoom_ratio": 0.999999954738719,
+  "zoom_min": 0.275555555555556,
+  "zoom_ratio": 0.999999983656791,
   "window": {
     "action": "",
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
-      334,
-      748
+      34,
+      63,
+      322,
+      744
     ],
     "position": [
       16,

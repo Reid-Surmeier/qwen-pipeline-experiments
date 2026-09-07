@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checks": [
+    "reference-size frame",
+    "resize",
+    "drag"
+  ],
+  "errors": []
+}

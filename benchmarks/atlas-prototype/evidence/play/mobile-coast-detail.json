@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2513.1015625,
-    787.166259765625
+    2516.43530273438,
+    788.277465820312
   ],
   "region": "europe",
   "regions": [
@@ -105,20 +105,20 @@
       "labels": 1,
       "name": "Berlin",
       "screen": [
-        262.497436523438,
-        259.647766113281
+        243.313812255859,
+        253.253372192383
       ]
     }
   ],
-  "south_edge": 881.739659956958,
+  "south_edge": 882.34512590367,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    334,
-    748
+    322,
+    744
   ],
   "visible_annotations": 3,
   "visible_cities": 1,
@@ -133,17 +133,18 @@
   ],
   "zoom": 3.95460033416748,
   "zoom_max": 120,
-  "zoom_min": 0.277037037037037,
-  "zoom_ratio": 14.2746268746687,
+  "zoom_min": 0.275555555555556,
+  "zoom_ratio": 14.3513721804465,
   "window": {
     "action": "",
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
-      334,
-      748
+      34,
+      63,
+      322,
+      744
     ],
     "position": [
       16,

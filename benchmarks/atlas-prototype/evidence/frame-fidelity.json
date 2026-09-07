@@ -1,0 +1,106 @@
+{
+  "status": "pass",
+  "source": "reference/window-screenshot.png",
+  "working_color_space": "sRGB",
+  "rendered_reference_checks": [
+    {
+      "view": "frame-reference-size",
+      "region": "header-title",
+      "opaque_pixels": 79900,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-size",
+      "region": "header-right",
+      "opaque_pixels": 9400,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-size",
+      "region": "bottom-left",
+      "opaque_pixels": 3076,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-size",
+      "region": "bottom-right",
+      "opaque_pixels": 3072,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-size",
+      "region": "entire-header-gradient",
+      "opaque_pixels": 162056,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-resized",
+      "region": "header-title",
+      "opaque_pixels": 79900,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-resized",
+      "region": "header-right",
+      "opaque_pixels": 9400,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-resized",
+      "region": "bottom-left",
+      "opaque_pixels": 3076,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-resized",
+      "region": "bottom-right",
+      "opaque_pixels": 3072,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-moved",
+      "region": "header-title",
+      "opaque_pixels": 79900,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-moved",
+      "region": "header-right",
+      "opaque_pixels": 9400,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-moved",
+      "region": "bottom-left",
+      "opaque_pixels": 3076,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    },
+    {
+      "view": "frame-reference-moved",
+      "region": "bottom-right",
+      "opaque_pixels": 3072,
+      "maximum_channel_difference": 0,
+      "mean_channel_difference": 0.0
+    }
+  ],
+  "preserved_native_corner_pixels": true,
+  "resizing_preserves_header_title_and_corners": true,
+  "visual_inspection": [
+    "native reference-size frame",
+    "resized frame",
+    "collapsed header",
+    "phone overview"
+  ]
+}

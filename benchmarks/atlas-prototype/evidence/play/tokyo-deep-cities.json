@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 36,
+  "fps": 39,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -280,11 +280,12 @@
   "zoom_ratio": 360,
   "window": {
     "action": "",
+    "chrome_scale": 1,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
+      52,
+      110,
       1440,
       900
     ],
@@ -293,8 +294,8 @@
       16
     ],
     "size": [
-      1464,
-      964
+      1512,
+      1036
     ]
   }
 }

@@ -5,15 +5,15 @@
     844
   ],
   "checks": [
+    "touch resize of reference window",
+    "map input coordinates within the smaller phone viewport",
     "toolbar fits",
     "region tap",
     "two-finger pinch zoom",
     "one-finger pan",
     "touch release",
     "world reset",
-    "120 native zoom stop with newly revealed paired cities",
-    "touch resize of reference window",
-    "map input coordinates within the smaller phone viewport"
+    "120 native zoom stop with newly revealed paired cities"
   ],
   "errors": []
 }

@@ -7,7 +7,7 @@ import {mapPage} from './window-playtest.mjs';
 const out=path.join(import.meta.dirname,'evidence/play');await fs.mkdir(out,{recursive:true});
 await fs.rm(path.join(out,'desktop-check.json'),{force:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-const context=await browser.newContext({viewport:{width:1496,height:996}});const rawPage=await context.newPage();const page=await mapPage(rawPage);
+const context=await browser.newContext({viewport:{width:1544,height:1068}});const rawPage=await context.newPage();const page=await mapPage(rawPage);
 const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
 await page.goto('https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/',{waitUntil:'networkidle'});
 await page.waitForFunction(()=>window.atlasState?.regions?.length===10,{timeout:90000});
@@ -138,15 +138,15 @@ await rawPage.mouse.move(w.position[0]+w.size[0]-324,w.position[1]+w.size[1]-204
 let smaller=await state();assert.equal(smaller.viewport[0],1120);assert.equal(smaller.viewport[1],700);assert.equal(smaller.zoom,mapBefore.zoom);assert.deepEqual(smaller.position,mapBefore.position);
 await shot('window-resized');
 w=await rawPage.evaluate(()=>window.atlasWindow);
-await rawPage.mouse.move(w.position[0]+180,w.position[1]+30);await rawPage.mouse.down();await rawPage.mouse.move(w.position[0]+300,w.position[1]+110,{steps:10});await rawPage.mouse.up();await page.waitForTimeout(400);
+await rawPage.mouse.move(w.position[0]+180,w.position[1]+60);await rawPage.mouse.down();await rawPage.mouse.move(w.position[0]+300,w.position[1]+140,{steps:10});await rawPage.mouse.up();await page.waitForTimeout(400);
 let moved=await rawPage.evaluate(()=>window.atlasWindow);assert.equal(moved.position[0],w.position[0]+120);assert.equal(moved.position[1],w.position[1]+80);assert.deepEqual((await state()).position,smaller.position);await shot('window-moved');
 await page.mouse.move(560,350);await page.mouse.wheel(0,-100);await page.waitForTimeout(400);assert((await state()).zoom>smaller.zoom);
 // Native minimize and lock icons keep their reference artwork and respond to clicks.
-await rawPage.mouse.click(moved.position[0]+30,moved.position[1]+32);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).collapsed);await shot('window-collapsed');
-await rawPage.mouse.click(moved.position[0]+30,moved.position[1]+32);await page.waitForTimeout(400);assert(!(await rawPage.evaluate(()=>window.atlasWindow)).collapsed);
-await rawPage.mouse.click(moved.position[0]+moved.size[0]-30,moved.position[1]+32);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).locked);
-await rawPage.mouse.move(moved.position[0]+180,moved.position[1]+30);await rawPage.mouse.down();await rawPage.mouse.move(moved.position[0]+220,moved.position[1]+70);await rawPage.mouse.up();await page.waitForTimeout(300);assert.deepEqual((await rawPage.evaluate(()=>window.atlasWindow)).position,moved.position);
-await rawPage.mouse.click(moved.position[0]+moved.size[0]-30,moved.position[1]+32);await page.waitForTimeout(300);
+await rawPage.mouse.click(moved.position[0]+66,moved.position[1]+64);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).collapsed);await shot('window-collapsed');
+await rawPage.mouse.click(moved.position[0]+66,moved.position[1]+64);await page.waitForTimeout(400);assert(!(await rawPage.evaluate(()=>window.atlasWindow)).collapsed);
+await rawPage.mouse.click(moved.position[0]+moved.size[0]-64,moved.position[1]+64);await page.waitForTimeout(400);assert((await rawPage.evaluate(()=>window.atlasWindow)).locked);
+await rawPage.mouse.move(moved.position[0]+180,moved.position[1]+60);await rawPage.mouse.down();await rawPage.mouse.move(moved.position[0]+220,moved.position[1]+100);await rawPage.mouse.up();await page.waitForTimeout(300);assert.deepEqual((await rawPage.evaluate(()=>window.atlasWindow)).position,moved.position);
+await rawPage.mouse.click(moved.position[0]+moved.size[0]-64,moved.position[1]+64);await page.waitForTimeout(300);
 await page.setViewportSize({width:1438,height:898});await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(400);
 // Empty sea remains the cyan map surface; no white paper panels or missing textures.
 await page.keyboard.press('Home');await page.waitForTimeout(600);

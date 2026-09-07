@@ -13,6 +13,11 @@
     "middle-east"
   ],
   "checks": [
+    "Hawaii overview-to-detail persistence and named cities",
+    "frame edge resize updates the actual map viewport",
+    "title drag preserves geographic camera center",
+    "wheel zoom after moving/resizing the frame",
+    "minimize restore and lock controls",
     "region selection",
     "automatic detail",
     "pointer-anchored wheel zoom",
@@ -34,12 +39,7 @@
     "new close cities in London New York and Tokyo beyond previous maximum",
     "Tokyo old-scale density reduced by more than half",
     "at least 120 pixels between added city dots in deep views",
-    "slower staged city reveal through seven London zoom checkpoints",
-    "Hawaii overview-to-detail persistence and named cities",
-    "frame edge resize updates the actual map viewport",
-    "title drag preserves geographic camera center",
-    "wheel zoom after moving/resizing the frame",
-    "minimize restore and lock controls"
+    "slower staged city reveal through seven London zoom checkpoints"
   ],
   "errors": []
 }

@@ -163,11 +163,12 @@
   "zoom_ratio": 10.9812369346619,
   "window": {
     "action": "",
+    "chrome_scale": 1,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
+      52,
+      110,
       1440,
       900
     ],
@@ -176,8 +177,8 @@
       16
     ],
     "size": [
-      1464,
-      964
+      1512,
+      1036
     ]
   }
 }

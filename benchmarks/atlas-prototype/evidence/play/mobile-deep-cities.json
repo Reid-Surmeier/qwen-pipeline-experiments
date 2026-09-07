@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 58,
+  "fps": 60,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -105,20 +105,20 @@
       "labels": 1,
       "name": "Jena",
       "screen": [
-        100.994140625,
-        314
+        94.994140625,
+        312
       ]
     }
   ],
-  "south_edge": 788.616666666667,
+  "south_edge": 788.6,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    334,
-    748
+    322,
+    744
   ],
   "visible_annotations": 2,
   "visible_cities": 1,
@@ -133,17 +133,18 @@
   ],
   "zoom": 120,
   "zoom_max": 120,
-  "zoom_min": 0.277037037037037,
-  "zoom_ratio": 433.155080213904,
+  "zoom_min": 0.275555555555556,
+  "zoom_ratio": 435.483870967742,
   "window": {
     "action": "",
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
-      334,
-      748
+      34,
+      63,
+      322,
+      744
     ],
     "position": [
       16,

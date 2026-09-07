@@ -105,8 +105,8 @@
       "labels": 1,
       "name": "Berlin",
       "screen": [
-        160.008514404297,
-        350.750305175781
+        154.008514404297,
+        348.750305175781
       ]
     },
     {
@@ -118,8 +118,8 @@
       "labels": 1,
       "name": "Rome",
       "screen": [
-        150.108520507812,
-        501.05029296875
+        144.108520507812,
+        499.05029296875
       ]
     },
     {
@@ -131,20 +131,20 @@
       "labels": 1,
       "name": "Stockholm",
       "screen": [
-        201.40852355957,
-        258.950286865234
+        195.40852355957,
+        256.950286865234
       ]
     }
   ],
-  "south_edge": 1199.38857437652,
+  "south_edge": 1197.16635209543,
   "south_limit": 2700,
   "terrain_detail": 0,
   "terrain_tiles": 0,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    334,
-    748
+    322,
+    744
   ],
   "visible_annotations": 10,
   "visible_cities": 3,
@@ -159,17 +159,18 @@
   ],
   "zoom": 0.899999976158142,
   "zoom_max": 120,
-  "zoom_min": 0.277037037037037,
-  "zoom_ratio": 3.2486630155441,
+  "zoom_min": 0.275555555555556,
+  "zoom_ratio": 3.26612894573519,
   "window": {
     "action": "",
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
-      334,
-      748
+      34,
+      63,
+      322,
+      744
     ],
     "position": [
       16,

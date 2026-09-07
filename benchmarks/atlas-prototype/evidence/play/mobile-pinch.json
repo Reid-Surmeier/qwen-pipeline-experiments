@@ -34,7 +34,7 @@
     ]
   },
   "detail_alpha": 1,
-  "fps": 54,
+  "fps": 56,
   "mode": "atlas",
   "orphan_dots": 0,
   "popup": {
@@ -49,8 +49,8 @@
     "visible": false
   },
   "position": [
-    2557.5458984375,
-    820.499572753906
+    2560.87963867188,
+    821.610778808594
   ],
   "region": "europe",
   "regions": [
@@ -105,8 +105,8 @@
       "labels": 1,
       "name": "Berlin",
       "screen": [
-        130.467376708984,
-        261.950744628906
+        118.466644287109,
+        257.950592041016
       ]
     },
     {
@@ -118,20 +118,20 @@
       "labels": 1,
       "name": "Rome",
       "screen": [
-        110.217376708984,
-        566.150756835938
+        98.2166442871094,
+        562.150634765625
       ]
     }
   ],
-  "south_edge": 1028.27732851476,
+  "south_edge": 1028.27742357607,
   "south_limit": 2700,
   "terrain_detail": 1,
   "terrain_tiles": 1,
   "touches": 0,
   "vertical_pan_locked": false,
   "viewport": [
-    334,
-    748
+    322,
+    744
   ],
   "visible_annotations": 6,
   "visible_cities": 2,
@@ -146,17 +146,18 @@
   ],
   "zoom": 1.80000019073486,
   "zoom_max": 120,
-  "zoom_min": 0.277037037037037,
-  "zoom_ratio": 6.49732689169001,
+  "zoom_min": 0.275555555555556,
+  "zoom_ratio": 6.5322587566991,
   "window": {
     "action": "",
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      28,
-      68,
-      334,
-      748
+      34,
+      63,
+      322,
+      744
     ],
     "position": [
       16,

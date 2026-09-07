@@ -10,7 +10,7 @@ export async function mapPage(page) {
  return new Proxy(page,{get(target,key){
   if(key==='mouse')return mappedMouse;
   if(key==='touchscreen')return {tap:async(x,y)=>touch.tap(...await at(x,y))};
-  if(key==='setViewportSize')return async({width,height})=>target.setViewportSize({width:width+56,height:height+96});
+  if(key==='setViewportSize')return async({width,height})=>target.setViewportSize({width:width+104,height:height+168});
   return typeof target[key]==='function'?target[key].bind(target):target[key];
  }});
 }

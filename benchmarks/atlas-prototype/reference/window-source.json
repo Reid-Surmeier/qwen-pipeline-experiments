@@ -1,7 +1,29 @@
 {
-  "source": "/home/reidsurmeier/qwen-image-pipeline/godot/plates/trade-minimized.png",
-  "sha256": "c01d0c13a848a8fb6c794c31ed617ee10b47247a863eb02a6b53de20cff01366",
-  "classification": "source reference; reused existing Godot trade title plate",
-  "user_reference": "Screenshot 2026-09-07 at 3.42.55 PM.png",
-  "assembly": "Original title text/icons via AtlasTexture regions; native resizable frame and SubViewportContainer"
+  "source": "reference/window-screenshot.png",
+  "source_sha256": "40a9cc5c6b0f29702217ee4c7706e9fa2082eca42a429e4ab5b9b96fa760267a",
+  "classification": "source reference and deterministic frame extraction",
+  "source_color_profile_sha256": "cb9663af14340330681db582ba65cb69e6862554a4468a8ed6f40ad1ad11e05a",
+  "working_color_space": "sRGB; converted with Pillow ImageCms",
+  "source_rectangle": [
+    20,
+    16,
+    1724,
+    1424
+  ],
+  "content_inset": [
+    36,
+    94
+  ],
+  "frame_extra": [
+    72,
+    136
+  ],
+  "header_fixed_left": 850,
+  "header_fixed_right": 100,
+  "bottom_corner_size": [
+    56,
+    62
+  ],
+  "frame_sha256": "154405395f97a11957b2496dfe92b88e851c5986f8b6d9b9288697c621c82d8b",
+  "generation_count": 0
 }
