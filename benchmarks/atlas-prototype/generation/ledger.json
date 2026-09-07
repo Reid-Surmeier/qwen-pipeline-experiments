@@ -1,0 +1,23 @@
+{
+  "issue": 5,
+  "provider": "openrouter",
+  "model": "meta/muse-image",
+  "hard_output_cap": 10,
+  "requests": [
+    {
+      "id": "pacific-01",
+      "question": "Can Muse add a matching detail background across the Pacific wrap gap without changing existing regional assets?",
+      "status": "completed",
+      "requested_n": 1,
+      "estimate_usd": 0.01,
+      "conservative_estimate_usd": 0.1,
+      "reference": "pacific-reference.png",
+      "reference_sha256": "3d92c5279e0027965c65ac58471d334adff88cc39700c06b5ef9b0bddc4d0da9",
+      "prompt_sha256": "855957bbb17167cfb79a6af3493c84056751e54679aba19c861fa2235101fe63",
+      "stop_rule": "Inspect completed output before any additional pass; ambiguous failure is spent and never blindly retried.",
+      "completed_n": 1,
+      "actual_cost_usd": 0.01,
+      "run_record": "pacific-01/run.json"
+    }
+  ]
+}

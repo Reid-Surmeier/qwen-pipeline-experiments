@@ -1,0 +1,55 @@
+{
+  "label": "Issue 5 Pacific map-wrap gap",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-09-07T14:57:21.278675+00:00",
+  "seconds": 18.7,
+  "timeout_seconds": 120.0,
+  "timeout_reason": "referenced edit",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1760x1280",
+    "seed": 50501
+  },
+  "prompt_file": "benchmarks/atlas-prototype/generation/pacific-prompt.txt",
+  "prompt_sha256": "855957bbb17167cfb79a6af3493c84056751e54679aba19c861fa2235101fe63",
+  "references": [
+    {
+      "file": "benchmarks/atlas-prototype/generation/pacific-reference.png",
+      "bytes": 19559,
+      "sha256": "3d92c5279e0027965c65ac58471d334adff88cc39700c06b5ef9b0bddc4d0da9",
+      "dimensions": "1760x1280"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 311,
+    "completion_tokens": 1914,
+    "total_tokens": 2225,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 1914
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1760x1280",
+      "aspect": 1.375,
+      "bytes": 75046,
+      "sha256": "6a54be374f72591ff1e39e9a9661ce0019b0b5b5bf92400d7116393a2f8d8d02"
+    }
+  ],
+  "failure": null
+}

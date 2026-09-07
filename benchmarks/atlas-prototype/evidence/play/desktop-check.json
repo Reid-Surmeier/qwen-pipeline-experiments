@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "regions": [
+    "europe",
+    "africa",
+    "asia",
+    "australia",
+    "canada",
+    "caribbean",
+    "russia",
+    "south-america",
+    "usa",
+    "middle-east"
+  ],
+  "checks": [
+    "region selection",
+    "automatic detail",
+    "pointer-anchored wheel zoom",
+    "drag",
+    "sheet toggle",
+    "reset",
+    "Pacific wrap"
+  ],
+  "errors": []
+}

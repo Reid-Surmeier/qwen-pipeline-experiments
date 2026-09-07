@@ -1,0 +1,18 @@
+; THROWAWAY PROTOTYPE — Issue 5. Run: ./run.sh
+config_version=5
+[application]
+config/name="Pixel Atlas · Prototype"
+run/main_scene="res://atlas.tscn"
+[display]
+window/size/viewport_width=1440
+window/size/viewport_height=900
+window/stretch/mode="disabled"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+textures/canvas_textures/default_texture_filter=0
+environment/defaults/default_clear_color=Color(0.5137255,0.8980392,0.9686275,1)
+[input_devices]
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true

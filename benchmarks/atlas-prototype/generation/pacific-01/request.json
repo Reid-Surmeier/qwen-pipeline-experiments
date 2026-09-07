@@ -1,0 +1,13 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Create a geography-preserving detail extension of this exact pixel map crop for a zoomable atlas. The reference is the unwrapped southwest Pacific: eastern Australia on the left and New Zealand towards the middle/right. Keep the Australian and Papua New Guinea coastlines at the same position and size. Repair the vertical map-wrap seam near the center: complete the visibly cut-off New Zealand coast with recognizable full North and South Islands in the same pixel art, correctly southeast of Australia. Remove the vertical black seam. This seam and incomplete New Zealand are the explicit editable gap. Retain the flat pastel pink land (#FFDCE9), cyan blue water (#83E5F7), and bold white pixel-stepped shoreline (about eight pixels at this resolution). Improve the small coastline steps gently so this can join the already generated regional detail maps. Erase all words, city dots and colored numbered rectangles from this background tile: only land, water and white shorelines. Preserve all existing islands. No new decorative elements, no internal country borders, no black outline, no grids, no shading, no gradients, no texture, no inset frames, no large blocks or padding. Exact same framing and orientation as the supplied reference.",
+  "n": 1,
+  "size": "1760x1280",
+  "seed": 50501,
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

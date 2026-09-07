@@ -1,0 +1,12 @@
+.godot/
+__pycache__/
+web/
+godot/assets/*-detail.png
+godot/assets/*-detail.png.import
+evidence/*-ocr.*
+evidence/europe-marker-ids.png
+evidence/sources-contact.png
+evidence/build.log
+evidence/assembly.log
+evidence/play/popup.*
+evidence/play/0[2-5]-*

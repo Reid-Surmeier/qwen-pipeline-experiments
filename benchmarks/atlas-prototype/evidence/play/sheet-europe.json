@@ -1,0 +1,103 @@
+{
+  "controls": {
+    "+": [
+      512,
+      23,
+      44,
+      36
+    ],
+    "Full sheet": [
+      349,
+      23,
+      107,
+      36
+    ],
+    "World": [
+      127,
+      23,
+      55,
+      36
+    ],
+    "regions": [
+      188,
+      23,
+      155,
+      36
+    ],
+    "\u2212": [
+      462,
+      23,
+      44,
+      36
+    ]
+  },
+  "detail_alpha": 0.306216025814539,
+  "fps": 51,
+  "mode": "sheet",
+  "popup": {
+    "position": [
+      188,
+      59
+    ],
+    "size": [
+      155,
+      305
+    ],
+    "visible": false
+  },
+  "position": [
+    912,
+    672
+  ],
+  "region": "europe",
+  "regions": [
+    {
+      "id": "europe",
+      "source_sha256": "9705d50cfde60604b53d354e7d6471b92d201e8b25201ce7e891ce9cb1067aef"
+    },
+    {
+      "id": "africa",
+      "source_sha256": "acb399d272aaf0c8a9d1b1d2f95d2867a26e7837d99ec57f0dcdd3802294e67e"
+    },
+    {
+      "id": "asia",
+      "source_sha256": "b23f5eaa84829db0107babd0614fe7f603edb36d8e50a225064c5693de942e7b"
+    },
+    {
+      "id": "australia",
+      "source_sha256": "dc1a9d8710bb67f9bc0ad7f653bbdc4a9e2505b3a5bfcde78f70770abd018df5"
+    },
+    {
+      "id": "canada",
+      "source_sha256": "fd654ac03882997b7b61cc5b92271313a8d58d2871e1c6106420857ce043726c"
+    },
+    {
+      "id": "caribbean",
+      "source_sha256": "88f26e039542c9a9f91cfe6f94290b171e351bc124a6765b085ca4a3c7dd0f23"
+    },
+    {
+      "id": "russia",
+      "source_sha256": "307361e4b526c36cc4a5255d7190a1b6bdcd1f8bd3932c220128cd2486e50843"
+    },
+    {
+      "id": "south-america",
+      "source_sha256": "1620ffc1243489e8d45d670c413355d0344d997608cda47307915494f24449a3"
+    },
+    {
+      "id": "usa",
+      "source_sha256": "4ec2967f1a0f46609c56fb49fa7c125ead3a21c4c028b74144488732a26d4727"
+    },
+    {
+      "id": "middle-east",
+      "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
+    }
+  ],
+  "touches": 0,
+  "viewport": [
+    1440,
+    900
+  ],
+  "visible_annotations": 234,
+  "zoom": 0.565476179122925,
+  "zoom_ratio": 1.78907717688609
+}

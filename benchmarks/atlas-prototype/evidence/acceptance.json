@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "regions": 10,
+  "europe_city_count": 47,
+  "unchanged_badges": 120,
+  "other_full_sheets_byte_identical": 9,
+  "europe_pixels_changed_outside_mask": 0,
+  "complete_terrain_pixels": 10035200,
+  "served_files_hash_verified": [
+    "index.html",
+    "index.js",
+    "index.pck",
+    "index.wasm"
+  ],
+  "additional_generations": 1,
+  "actual_cost_usd": 0.01,
+  "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/"
+}

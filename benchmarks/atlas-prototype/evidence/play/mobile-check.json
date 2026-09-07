@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "viewport": [
+    390,
+    844
+  ],
+  "checks": [
+    "toolbar fits",
+    "region tap",
+    "two-finger pinch zoom",
+    "one-finger pan",
+    "touch release",
+    "world reset"
+  ],
+  "errors": []
+}

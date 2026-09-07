@@ -1,0 +1,16 @@
+// Real CDP touch gestures against the exported Godot canvas.
+import { chromium } from '/home/reidsurmeier/orca/workspaces/Qwen Image pipeline/stargazer/node_modules/playwright/index.mjs';
+import fs from 'node:fs/promises';import path from 'node:path';import assert from 'node:assert/strict';
+const out=path.join(import.meta.dirname,'evidence/play');
+const browser=await chromium.launch({headless:true,args:['--no-sandbox','--enable-webgl','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,deviceScaleFactor:1});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/',{waitUntil:'networkidle'});await page.waitForFunction(()=>window.atlasState?.regions?.length===10,{timeout:90000});await page.waitForTimeout(1000);
+const state=()=>page.evaluate(()=>window.atlasState);const shot=async n=>{await page.screenshot({path:path.join(out,n+'.png')});await fs.writeFile(path.join(out,n+'.json'),JSON.stringify(await state(),null,2));};
+let st=await state();assert.equal(st.viewport[0],390);for(const rect of Object.values(st.controls))assert(rect[0]+rect[2]<=390,JSON.stringify(rect));await shot('mobile-world');
+const tap=async key=>{const [x,y,w,h]=(await state()).controls[key];await page.touchscreen.tap(x+w/2,y+h/2);await page.waitForTimeout(400);};
+await tap('regions');await page.touchscreen.tap(130,104);await page.waitForTimeout(900);assert.equal((await state()).region,'europe');assert((await state()).detail_alpha>.98);await shot('mobile-europe');
+const cdp=await context.newCDPSession(page);const points=(a,b)=>[{x:a,y:440,id:0},{x:b,y:440,id:1}];const start=await state();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:points(140,240)});
+for(let i=1;i<=5;i++){await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:points(140-i*10,240+i*10)});await page.waitForTimeout(80);}
+await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(500);assert((await state()).zoom>start.zoom*1.5);await shot('mobile-pinch');
+const pan=await state();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:200,y:500,id:0}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:280,y:560,id:0}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(500);assert.notDeepEqual((await state()).position,pan.position);assert.equal((await state()).touches,0);
+await tap('World');assert((await state()).zoom_ratio<1.01);assert.equal(errors.length,0);await fs.writeFile(path.join(out,'mobile-check.json'),JSON.stringify({status:'pass',viewport:[390,844],checks:['toolbar fits','region tap','two-finger pinch zoom','one-finger pan','touch release','world reset'],errors},null,2));console.log('PASS mobile: toolbar, region tap, pinch, pan, release, reset.');await browser.close();
