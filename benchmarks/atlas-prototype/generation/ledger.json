@@ -141,6 +141,105 @@
       "run_record": "notification-text-01/run.json",
       "failure": "HTTP 402 insufficient OpenRouter credits; no image generated; no retry",
       "cost_note": "Pre-generation credit rejection; provider exposed no usage charge."
+    },
+    {
+      "id": "itinerary-text-02",
+      "question": "Replace the ENTIRE top title including Japanese text, Sebas and Lv.58 Knight with exactly: Collection Hightlights\nReplace BOTH bottom Zeny labels with exactly: Collection number\nKeep BOTH existing 0 numerals exactly as they are, in their current positions. Keep the new Collection number text in the available space to the left of each 0, matching the current Zeny pixel font, font size and dark color.",
+      "status": "completed",
+      "requested_n": 1,
+      "estimate_usd": 0.01,
+      "conservative_estimate_usd": 0.1,
+      "reference": "itinerary-text-reference.png",
+      "reference_sha256": "f139d52980358242faaab784bf58ef2902c6569990dbc8cefe4917df2a3e8a71",
+      "prompt_sha256": "68c640bef37e6a8e2dc7802bb0f24d2ba32879163e3e3e4bdbf67a7d0a1fa8b8",
+      "size": "2048x1472",
+      "seed": 50908,
+      "upright_edit_rectangles": [
+        [
+          180,
+          60,
+          2090,
+          120
+        ],
+        [
+          80,
+          1370,
+          970,
+          125
+        ],
+        [
+          1270,
+          1370,
+          930,
+          125
+        ]
+      ],
+      "stop_rule": "Inspect completed output before another pass; ambiguous possibly billed failures count as spent and are never blindly retried.",
+      "submitted_at": "2026-09-08T13:59:07.804338+00:00",
+      "resume_reason": "Owner replenished credits; read-only credit check now confirms sufficient balance",
+      "completed_n": 1,
+      "actual_cost_usd": 0.01,
+      "run_record": "itinerary-text-02/run.json",
+      "saved_png_sha256": "c75c26e9ddaddbf76e1fbb35297d93e2ec5f5f5aecc45395fa5815763003ed63",
+      "visual_text_check": "Exact requested copy and matching pixel font visually confirmed"
+    },
+    {
+      "id": "minimap-text-02",
+      "question": "Replace ONLY the blue title Goldshire in the upper-left title bar with exactly: MiniMap\nMatch the existing blue pixel font, its size and left alignment exactly.",
+      "status": "completed",
+      "requested_n": 1,
+      "estimate_usd": 0.01,
+      "conservative_estimate_usd": 0.1,
+      "reference": "minimap-text-reference.png",
+      "reference_sha256": "2e776bdec7f0902660927d4d6705f870d2e527dd8c7da9ec6ea3dc7ceb4c0bcf",
+      "prompt_sha256": "2977bf56700f1583e464a8efa626c484739d81086d43cec581ab138957cd7c32",
+      "size": "1472x1632",
+      "seed": 50908,
+      "upright_edit_rectangles": [
+        [
+          85,
+          75,
+          470,
+          100
+        ]
+      ],
+      "stop_rule": "Inspect completed output before another pass; ambiguous possibly billed failures count as spent and are never blindly retried.",
+      "submitted_at": "2026-09-08T13:59:07.804346+00:00",
+      "resume_reason": "Owner replenished credits; read-only credit check now confirms sufficient balance",
+      "completed_n": 1,
+      "actual_cost_usd": 0.01,
+      "run_record": "minimap-text-02/run.json",
+      "saved_png_sha256": "27fcc55aef08a5c0f793731edb2c1cf1fc3afe0712b9ca5ba56886fa01dc1d4e",
+      "visual_text_check": "Exact requested copy and matching pixel font visually confirmed"
+    },
+    {
+      "id": "notification-text-02",
+      "question": "Can Muse replace the Japanese notification text with Recently Added! in the original black pixel font?",
+      "status": "completed",
+      "requested_n": 1,
+      "estimate_usd": 0.01,
+      "conservative_estimate_usd": 0.1,
+      "reference": "notification-text-reference.png",
+      "reference_sha256": "34907e1f3d67dcea201d9ec35c7bfab061c7256fb4b8bfd9178aa1f44b914fe5",
+      "prompt_sha256": "8652aa44e87c1b2db8c773c51aa8196b2c1f662d07f841c34b5d806bf2b349d0",
+      "size": "1760x512",
+      "seed": 50908,
+      "upright_edit_rectangles": [
+        [
+          245,
+          60,
+          850,
+          125
+        ]
+      ],
+      "stop_rule": "Inspect completed output before another pass; ambiguous possibly billed failures count as spent and are never blindly retried.",
+      "submitted_at": "2026-09-08T13:59:07.804349+00:00",
+      "resume_reason": "Owner replenished credits; read-only credit check now confirms sufficient balance",
+      "completed_n": 1,
+      "actual_cost_usd": 0.01,
+      "run_record": "notification-text-02/run.json",
+      "saved_png_sha256": "77ff80c25e0fb010e661858e2ca46bbc832c5eb751075e9d179e0ee68c0d452a",
+      "visual_text_check": "Exact requested copy and matching pixel font visually confirmed"
     }
   ]
 }

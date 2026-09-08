@@ -64,7 +64,7 @@
     "index.pck",
     "index.wasm"
   ],
-  "additional_generations": 2,
-  "actual_cost_usd": 0.02,
+  "additional_generations": 5,
+  "actual_cost_usd": 0.05,
   "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/"
 }

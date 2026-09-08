@@ -1,0 +1,55 @@
+{
+  "label": "itinerary-text",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-09-08T13:59:08.430628+00:00",
+  "seconds": 16.2,
+  "timeout_seconds": 600.0,
+  "timeout_reason": "large output (>=2K)",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "2048x1472",
+    "seed": 50908
+  },
+  "prompt_file": "benchmarks/atlas-prototype/generation/itinerary-text-prompt.txt",
+  "prompt_sha256": "c23ac241eed767513e6b3b980e744ecd27c2e574991f3f517afd29a475ac53b4",
+  "references": [
+    {
+      "file": "benchmarks/atlas-prototype/generation/itinerary-text-reference.png",
+      "bytes": 207058,
+      "sha256": "f139d52980358242faaab784bf58ef2902c6569990dbc8cefe4917df2a3e8a71",
+      "dimensions": "2469x1773"
+    }
+  ],
+  "cost_usd": 0.01,
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 777,
+    "total_tokens": 993,
+    "cost": 0.01,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01,
+      "upstream_inference_prompt_cost": 0,
+      "upstream_inference_completions_cost": 0.01
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 777
+    }
+  },
+  "outputs": [
+    {
+      "file": "image-01.png",
+      "source_media_type": "image/webp",
+      "dimensions": "1824x1312",
+      "aspect": 1.3902,
+      "bytes": 251954,
+      "sha256": "9d71f1689cfcbeae6516404872048a7dfedceff6246f99d77de8df40b427f8c4"
+    }
+  ],
+  "failure": null
+}

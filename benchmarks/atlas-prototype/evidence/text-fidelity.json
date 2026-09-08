@@ -1,0 +1,146 @@
+{
+  "status": "pass",
+  "panels": [
+    {
+      "asset": "minimap",
+      "donor": "generation/minimap-text-02/image-01.png",
+      "donor_sha256": "27fcc55aef08a5c0f793731edb2c1cf1fc3afe0712b9ca5ba56886fa01dc1d4e",
+      "edits": [
+        {
+          "text": "MiniMap",
+          "edit": [
+            85,
+            75,
+            470,
+            97
+          ],
+          "donor": [
+            95,
+            75,
+            330,
+            95
+          ],
+          "offset": [
+            0,
+            2
+          ]
+        }
+      ],
+      "changed_pixels": 19479,
+      "changed_pixels_outside_edits": 0,
+      "alpha_preserved": true,
+      "original_zero_rectangles_preserved": []
+    },
+    {
+      "asset": "itinerary",
+      "donor": "generation/itinerary-text-02/image-01.png",
+      "donor_sha256": "c75c26e9ddaddbf76e1fbb35297d93e2ec5f5f5aecc45395fa5815763003ed63",
+      "edits": [
+        {
+          "text": "Collection Hightlights",
+          "edit": [
+            180,
+            60,
+            2090,
+            120
+          ],
+          "donor": [
+            180,
+            60,
+            2090,
+            110
+          ],
+          "offset": [
+            0,
+            5
+          ]
+        },
+        {
+          "text": "Collection number",
+          "edit": [
+            80,
+            1370,
+            970,
+            125
+          ],
+          "donor": [
+            90,
+            1380,
+            780,
+            90
+          ],
+          "offset": [
+            4,
+            6
+          ]
+        },
+        {
+          "text": "Collection number",
+          "edit": [
+            1270,
+            1370,
+            930,
+            125
+          ],
+          "donor": [
+            1260,
+            1380,
+            790,
+            90
+          ],
+          "offset": [
+            13,
+            6
+          ]
+        }
+      ],
+      "changed_pixels": 102661,
+      "changed_pixels_outside_edits": 0,
+      "alpha_preserved": true,
+      "original_zero_rectangles_preserved": [
+        [
+          1080,
+          1370,
+          95,
+          125
+        ],
+        [
+          2235,
+          1370,
+          95,
+          125
+        ]
+      ]
+    },
+    {
+      "asset": "notification",
+      "donor": "generation/notification-text-02/image-01.png",
+      "donor_sha256": "77ff80c25e0fb010e661858e2ca46bbc832c5eb751075e9d179e0ee68c0d452a",
+      "edits": [
+        {
+          "text": "Recently Added!",
+          "edit": [
+            245,
+            60,
+            850,
+            125
+          ],
+          "donor": [
+            245,
+            80,
+            850,
+            125
+          ],
+          "offset": [
+            0,
+            -23
+          ]
+        }
+      ],
+      "changed_pixels": 52892,
+      "changed_pixels_outside_edits": 0,
+      "alpha_preserved": true,
+      "original_zero_rectangles_preserved": []
+    }
+  ]
+}

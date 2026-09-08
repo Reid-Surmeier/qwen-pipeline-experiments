@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-08T13:52:56.926364+00:00",
+  "built_at": "2026-09-08T14:05:37.881225+00:00",
   "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/5",
   "branch": "prototype/atlas-5",
   "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/",
@@ -69,8 +69,8 @@
       "index.pck",
       "index.wasm"
     ],
-    "additional_generations": 2,
-    "actual_cost_usd": 0.02,
+    "additional_generations": 5,
+    "actual_cost_usd": 0.05,
     "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/"
   },
   "frame_fidelity": {
@@ -188,40 +188,28 @@
     ]
   },
   "web_files": {
-    "godot-prototype.zip": "e7f5c3ab0cca3b729f244e48180c7bf04b0ff9df9b5c99344a52decdf0c69330",
+    "godot-prototype.zip": "d4500522102ea01fbfa34b79c2d5f20532a3438c83e17319f2ad1649bf0802dd",
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "9855032615ed204e1e243c3cfeaf6ba89b75499882607e9168ef0a0166f9f58b",
+    "index.html": "d1f14c5b5b85cfea0de68ded92a103bbeb0522d5204bbd7b732304a6b1853ef2",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "1b2aa6aa4d7a97b9cc3149c308140ef57b7e8fe0145452896f07f009c5e5084d",
+    "index.pck": "9ed4dc29e34f96ac1b789f92a44fc4eac38297a143b80cb658583c577f8d03a0",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   },
   "current_change_verification": {
+    "Muse text edits": "completed; three outputs, $0.03",
     "Godot import/export": "pass; no engine errors",
-    "mouse movement of all five windows": "pass",
-    "overlap targeting, raising and wheel blocking": "pass",
-    "panel screen clamping and phone dragging": "pass",
-    "map resize/collapse/lock and phone pinch": "pass",
-    "source asset hashes": "unchanged",
-    "hosted asset verification": "pass",
-    "pending_text_edits": {
-      "status": "blocked by OpenRouter insufficient credits",
-      "requests": 3,
-      "http_status": 402,
-      "outputs": 0,
-      "retry": false,
-      "text": [
-        "Collection Hightlights",
-        "Collection number (both existing zeros retained)",
-        "MiniMap",
-        "Recently Added!"
-      ]
-    },
+    "all five movable windows and overlap handling": "pass",
+    "map zoom/resize/collapse/lock and phone pinch": "pass",
+    "strict edit regions": "zero changed pixels outside text rectangles",
+    "source zeros and alpha": "exactly preserved",
+    "source/output and hosted-file hashes": "pass",
     "visual_inspection": [
-      "chat moved above map",
-      "notification moved to screen edge",
-      "phone chat moved above map"
+      "all three Muse donors and exact requested copy",
+      "assembled upright text and matching pixel fonts",
+      "desktop composition",
+      "phone layout and movement"
     ]
   },
   "composition": {
@@ -244,5 +232,151 @@
       "zero orphan city dots"
     ],
     "errors": []
+  },
+  "text_fidelity": {
+    "status": "pass",
+    "panels": [
+      {
+        "asset": "minimap",
+        "donor": "generation/minimap-text-02/image-01.png",
+        "donor_sha256": "27fcc55aef08a5c0f793731edb2c1cf1fc3afe0712b9ca5ba56886fa01dc1d4e",
+        "edits": [
+          {
+            "text": "MiniMap",
+            "edit": [
+              85,
+              75,
+              470,
+              97
+            ],
+            "donor": [
+              95,
+              75,
+              330,
+              95
+            ],
+            "offset": [
+              0,
+              2
+            ]
+          }
+        ],
+        "changed_pixels": 19479,
+        "changed_pixels_outside_edits": 0,
+        "alpha_preserved": true,
+        "original_zero_rectangles_preserved": []
+      },
+      {
+        "asset": "itinerary",
+        "donor": "generation/itinerary-text-02/image-01.png",
+        "donor_sha256": "c75c26e9ddaddbf76e1fbb35297d93e2ec5f5f5aecc45395fa5815763003ed63",
+        "edits": [
+          {
+            "text": "Collection Hightlights",
+            "edit": [
+              180,
+              60,
+              2090,
+              120
+            ],
+            "donor": [
+              180,
+              60,
+              2090,
+              110
+            ],
+            "offset": [
+              0,
+              5
+            ]
+          },
+          {
+            "text": "Collection number",
+            "edit": [
+              80,
+              1370,
+              970,
+              125
+            ],
+            "donor": [
+              90,
+              1380,
+              780,
+              90
+            ],
+            "offset": [
+              4,
+              6
+            ]
+          },
+          {
+            "text": "Collection number",
+            "edit": [
+              1270,
+              1370,
+              930,
+              125
+            ],
+            "donor": [
+              1260,
+              1380,
+              790,
+              90
+            ],
+            "offset": [
+              13,
+              6
+            ]
+          }
+        ],
+        "changed_pixels": 102661,
+        "changed_pixels_outside_edits": 0,
+        "alpha_preserved": true,
+        "original_zero_rectangles_preserved": [
+          [
+            1080,
+            1370,
+            95,
+            125
+          ],
+          [
+            2235,
+            1370,
+            95,
+            125
+          ]
+        ]
+      },
+      {
+        "asset": "notification",
+        "donor": "generation/notification-text-02/image-01.png",
+        "donor_sha256": "77ff80c25e0fb010e661858e2ca46bbc832c5eb751075e9d179e0ee68c0d452a",
+        "edits": [
+          {
+            "text": "Recently Added!",
+            "edit": [
+              245,
+              60,
+              850,
+              125
+            ],
+            "donor": [
+              245,
+              80,
+              850,
+              125
+            ],
+            "offset": [
+              0,
+              -23
+            ]
+          }
+        ],
+        "changed_pixels": 52892,
+        "changed_pixels_outside_edits": 0,
+        "alpha_preserved": true,
+        "original_zero_rectangles_preserved": []
+      }
+    ]
   }
 }
