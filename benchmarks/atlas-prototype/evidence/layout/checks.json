@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "checks": [
+    "four assets, reference desktop positions and orientations",
+    "no album placeholder",
+    "nonoverlapping desktop/laptop/phone initial composition",
+    "world badges",
+    "Australia region selection",
+    "wheel zoom and map drag",
+    "map frame resize, drag, collapse and restore",
+    "phone pinch and touch release",
+    "zero orphan city dots"
+  ],
+  "errors": []
+}

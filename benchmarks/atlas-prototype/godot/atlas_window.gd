@@ -18,11 +18,26 @@ var edges := Vector2i.ZERO
 var start_pointer := Vector2.ZERO
 var start_rect := Rect2()
 var state_timer := 0.0
+var panels: Dictionary = {}
+const PANEL_RECTS := {
+	"minimap": Rect2(10, 72, 413, 371),
+	"itinerary": Rect2(18, 445, 397, 553),
+	"chat": Rect2(10, 1028, 540, 251),
+	"notification": Rect2(1674, 1200, 272, 79),
+}
 
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color.WHITE)
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	for id in PANEL_RECTS:
+		var panel := TextureRect.new()
+		panel.texture = load("res://assets/desktop/" + id + ".png")
+		panel.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		panel.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		add_child(panel)
+		panels[id] = panel
 	frame_texture = load("res://assets/window-frame.png")
 	frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(frame)
@@ -50,9 +65,33 @@ func _ready() -> void:
 	viewport.add_child(load("res://atlas.tscn").instantiate())
 
 func _fit_window() -> void:
-	chrome_scale = 0.5 if get_viewport_rect().size.x < 750 else 1.0
-	frame.position = Vector2(16, 16)
-	frame.size = get_viewport_rect().size - Vector2(32, 32)
+	var available := get_viewport_rect().size
+	if available.x >= 750:
+		var scale := minf(available.x / 1950.0, available.y / 1280.0)
+		var origin := ((available - Vector2(1950, 1280) * scale) / 2).round()
+		for id in panels:
+			panels[id].position = (origin + PANEL_RECTS[id].position * scale).round()
+			panels[id].size = (PANEL_RECTS[id].size * scale).round()
+		frame.position = (origin + Vector2(450, 58) * scale).round()
+		frame.size = (Vector2(1158, 954) * scale).round()
+		chrome_scale = minf(1.0, 1158.0 / 1724.0 * scale)
+	else:
+		# Keep the map usable on a phone; place the supplied panels underneath.
+		chrome_scale = 0.5
+		frame.position = Vector2(16, 16)
+		frame.size = Vector2(available.x - 32, available.y * 0.59).round()
+		var top := frame.position.y + frame.size.y + 12
+		var room := available.y - top - 12
+		var left_width := minf(available.x * 0.24, room / 2.42)
+		panels.minimap.position = Vector2(8, top)
+		panels.minimap.size = Vector2(left_width, left_width * 0.899).round()
+		panels.itinerary.position = Vector2(8, top + panels.minimap.size.y + 6)
+		panels.itinerary.size = Vector2(left_width, left_width * 1.393).round()
+		var right_width := available.x - left_width - 28
+		panels.chat.position = Vector2(left_width + 20, top)
+		panels.chat.size = Vector2(right_width, right_width * 0.464).round()
+		panels.notification.size = Vector2(right_width, right_width * 0.29).round()
+		panels.notification.position = available - panels.notification.size - Vector2(8, 12)
 	collapsed = false
 	container.visible = true
 	_layout()
@@ -164,4 +203,8 @@ func _process(delta: float) -> void:
 func _publish() -> void:
 	if not OS.has_feature("web"): return
 	var rect := container.get_global_rect()
-	JavaScriptBridge.eval("window.atlasWindow=" + JSON.stringify({"position": [frame.position.x, frame.position.y], "size": [frame.size.x, frame.size.y], "map_rect": [rect.position.x, rect.position.y, rect.size.x, rect.size.y], "chrome_scale": chrome_scale, "locked": locked, "collapsed": collapsed, "action": action}), true)
+	var panel_rects := {}
+	for id in panels:
+		var panel: TextureRect = panels[id]
+		panel_rects[id] = [panel.position.x, panel.position.y, panel.size.x, panel.size.y]
+	JavaScriptBridge.eval("window.atlasWindow=" + JSON.stringify({"panels": panel_rects, "position": [frame.position.x, frame.position.y], "size": [frame.size.x, frame.size.y], "map_rect": [rect.position.x, rect.position.y, rect.size.x, rect.size.y], "chrome_scale": chrome_scale, "locked": locked, "collapsed": collapsed, "action": action}), true)

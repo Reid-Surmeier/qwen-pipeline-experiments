@@ -1,0 +1,58 @@
+{
+  "classification": "User source references and deterministic prototype assets",
+  "generation_count": 0,
+  "panels": [
+    {
+      "id": "minimap",
+      "source": "reference/desktop/minimap.png",
+      "source_sha256": "8106ea15cbdcc04c49c62cb534fd1bbb543fcaaede38965ac84d52abf77b3c75",
+      "output": "godot/assets/desktop/minimap.png",
+      "output_sha256": "8106ea15cbdcc04c49c62cb534fd1bbb543fcaaede38965ac84d52abf77b3c75",
+      "size": [
+        1801,
+        1619
+      ],
+      "processing": "Byte-identical copy",
+      "transparent_pixels": 15720
+    },
+    {
+      "id": "itinerary",
+      "source": "reference/desktop/itinerary.png",
+      "source_sha256": "a395de84b141da1253d43775227dcb9a150ea3214470aa264a07bacd8fac843d",
+      "output": "godot/assets/desktop/itinerary.png",
+      "output_sha256": "a395de84b141da1253d43775227dcb9a150ea3214470aa264a07bacd8fac843d",
+      "size": [
+        1773,
+        2469
+      ],
+      "processing": "Byte-identical copy",
+      "transparent_pixels": 0
+    },
+    {
+      "id": "chat",
+      "source": "reference/desktop/chat.png",
+      "source_sha256": "191e1e0a9a98ae0f13c4e6985ac4b4c2fb856dc1c2e331d43bd2e914bd733096",
+      "output": "godot/assets/desktop/chat.png",
+      "output_sha256": "191e1e0a9a98ae0f13c4e6985ac4b4c2fb856dc1c2e331d43bd2e914bd733096",
+      "size": [
+        2310,
+        1072
+      ],
+      "processing": "Byte-identical copy",
+      "transparent_pixels": 0
+    },
+    {
+      "id": "notification",
+      "source": "reference/desktop/notification.png",
+      "source_sha256": "484713b9146ae73c9ec549151c4d487d7f51ab75b702dc3467cc1d758f6da7c8",
+      "output": "godot/assets/desktop/notification.png",
+      "output_sha256": "a99036f4213cee493eed5a3cbcd5543c045c2a19cf64344d0b3364ee305af4a5",
+      "size": [
+        1163,
+        337
+      ],
+      "processing": "Magenta alpha matte with spill removal; opaque pixels unchanged",
+      "transparent_pixels": 102770
+    }
+  ]
+}
