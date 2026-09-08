@@ -1,0 +1,2 @@
+Tight raster game UI reference edit. Replace ONLY the Japanese lettering inside this notification speech bubble with the exact text: Recently Added!
+Use exactly the same black pixelated game font style, size, weight and baseline as the original text. Keep the money-bag icon on the left, white bubble, grey pixel border and tail exactly unchanged. No extra punctuation, quotes, new icons or decorations. Preserve the framing, original dimensions and background. Change nothing outside the lettering.

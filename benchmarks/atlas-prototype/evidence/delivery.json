@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-08T13:39:38.284204+00:00",
+  "built_at": "2026-09-08T13:52:56.926364+00:00",
   "issue": "https://github.com/Reid-Surmeier/qwen-pipeline-experiments/issues/5",
   "branch": "prototype/atlas-5",
   "url": "https://windows-wsl.taile06c45.ts.net/pixel-atlas-prototype-01a07820/",
@@ -188,32 +188,51 @@
     ]
   },
   "web_files": {
-    "godot-prototype.zip": "58a6f14564bcf6e2ccbaef34163393e6d5667402f9a8fd0ae3c09dc1d0920287",
+    "godot-prototype.zip": "e7f5c3ab0cca3b729f244e48180c7bf04b0ff9df9b5c99344a52decdf0c69330",
     "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
     "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-    "index.html": "37ef9d4883dcfdde23855c8bee51b3206628d1582144217fb039e032bfbda310",
+    "index.html": "9855032615ed204e1e243c3cfeaf6ba89b75499882607e9168ef0a0166f9f58b",
     "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
-    "index.pck": "059d0e23c4ffff4583635de274be65219f7d34a7a1fba592002d83402fae7beb",
+    "index.pck": "1b2aa6aa4d7a97b9cc3149c308140ef57b7e8fe0145452896f07f009c5e5084d",
     "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
     "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
   },
   "current_change_verification": {
     "Godot import/export": "pass; no engine errors",
-    "desktop/laptop/phone composition and inputs": "pass",
-    "four source/output hashes": "pass; three panels byte-identical",
-    "notification matte": "transparent exterior; no saturated magenta remains; opaque source pixels preserved",
-    "prior map frame asset": "unchanged hash; prior native frame comparison is historical evidence",
-    "asset and hosted-file verification": "pass; prior full map regression records retained",
+    "mouse movement of all five windows": "pass",
+    "overlap targeting, raising and wheel blocking": "pass",
+    "panel screen clamping and phone dragging": "pass",
+    "map resize/collapse/lock and phone pinch": "pass",
+    "source asset hashes": "unchanged",
+    "hosted asset verification": "pass",
+    "pending_text_edits": {
+      "status": "blocked by OpenRouter insufficient credits",
+      "requests": 3,
+      "http_status": 402,
+      "outputs": 0,
+      "retry": false,
+      "text": [
+        "Collection Hightlights",
+        "Collection number (both existing zeros retained)",
+        "MiniMap",
+        "Recently Added!"
+      ]
+    },
     "visual_inspection": [
-      "desktop reference composition with Australia",
-      "laptop composition",
-      "phone layout",
-      "notification transparency and fringe"
+      "chat moved above map",
+      "notification moved to screen edge",
+      "phone chat moved above map"
     ]
   },
   "composition": {
     "status": "pass",
     "checks": [
+      "mouse movement of all four panels and the map",
+      "topmost overlap targeting and raising",
+      "covered map ignores wheel",
+      "panel screen clamping",
+      "map lock leaves other windows movable",
+      "phone panel drag and clean release",
       "four assets, reference desktop positions and orientations",
       "no album placeholder",
       "nonoverlapping desktop/laptop/phone initial composition",

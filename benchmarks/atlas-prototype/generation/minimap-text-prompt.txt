@@ -1,0 +1,4 @@
+Tight reference-preserving raster game UI edit.
+Replace ONLY the blue title Goldshire in the upper-left title bar with exactly: MiniMap
+Match the existing blue pixel font, its size and left alignment exactly.
+Keep the same pixelated font, letter weight, color, baseline, background gradient and placement as the original text. Do not substitute a modern font. Do not change, translate, rotate or redraw any other content. Preserve all original pixels outside these text changes, including icons, frame edges, numerical values, buttons and map/artwork. Return the entire screenshot in identical framing and orientation.

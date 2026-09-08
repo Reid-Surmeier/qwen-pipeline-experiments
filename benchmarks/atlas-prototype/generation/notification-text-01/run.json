@@ -1,0 +1,32 @@
+{
+  "label": "notification-text",
+  "model": "meta/muse-image",
+  "submitted_utc": "2026-09-08T13:46:48.312307+00:00",
+  "seconds": 0.2,
+  "timeout_seconds": 120.0,
+  "timeout_reason": "referenced edit",
+  "requested": {
+    "model": "meta/muse-image",
+    "n": 1,
+    "size": "1760x512",
+    "seed": 50908
+  },
+  "prompt_file": "benchmarks/atlas-prototype/generation/notification-text-prompt.txt",
+  "prompt_sha256": "1dbc634eac5ec5bc90a6eb10d2630d7e07926fc1d3418b3d64529000b23ebbf4",
+  "references": [
+    {
+      "file": "benchmarks/atlas-prototype/generation/notification-text-reference.png",
+      "bytes": 27957,
+      "sha256": "34907e1f3d67dcea201d9ec35c7bfab061c7256fb4b8bfd9178aa1f44b914fe5",
+      "dimensions": "1163x337"
+    }
+  ],
+  "cost_usd": null,
+  "usage": {},
+  "outputs": [],
+  "failure": {
+    "kind": "http",
+    "status": 402,
+    "body": "{\"error\":{\"message\":\"Insufficient credits. Add more using https://openrouter.ai/settings/credits\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\"}}}"
+  }
+}

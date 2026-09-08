@@ -60,7 +60,12 @@ for path in (R/'evidence/play').glob('*.json'):
   assert view['orphan_dots']==0
   if view['mode']=='atlas':assert (abs(view['position'][1]-1350)<.01 if view['vertical_pan_locked'] else view['south_edge']<=2700.01)
 nz=json.loads((R/'evidence/new-zealand-scale.json').read_text());assert nz['target_land_size']==[154,193] and nz['native_white_stroke']==8
-ledger=json.loads((R/'generation/ledger.json').read_text());assert all(r['status']=='completed' for r in ledger['requests']);assert sum(r['requested_n'] for r in ledger['requests'])<=10
+ledger=json.loads((R/'generation/ledger.json').read_text());
+for request in ledger['requests']:
+ if request['status']=='rejected_credits':
+  rejected=json.loads((R/'generation'/request['run_record']).read_text())
+  assert rejected['failure']['status']==402 and rejected['outputs']==[] and request['completed_n']==0
+assert all(r['status'] in ['completed','rejected_credits'] for r in ledger['requests']);assert sum(r['requested_n'] for r in ledger['requests'])<=10
 # Real geographic detail, not an interpolation of the overview texture.
 from prepare_geography import project,polygons,tile_land
 geo=json.loads((R/'evidence/geography-detail.json').read_text());assert geo['scale']==4 and len(geo['tiles'])==48

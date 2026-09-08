@@ -4,38 +4,38 @@
     "close_city_count": 40846,
     "controls": {
       "+": [
-        488,
+        223,
         23,
         44,
         36
       ],
       "Full sheet": [
-        349,
+        26,
         23,
-        83,
+        52,
         36
       ],
       "World": [
-        127,
+        26,
         23,
         55,
         36
       ],
       "regions": [
-        188,
+        87,
         23,
-        155,
+        80,
         36
       ],
       "−": [
-        438,
+        173,
         23,
         44,
         36
       ]
     },
     "detail_alpha": 0,
-    "fps": 22,
+    "fps": 48,
     "mode": "atlas",
     "orphan_dots": 0,
     "popup": {
@@ -51,7 +51,7 @@
     },
     "position": [
       2240,
-      1350
+      1500
     ],
     "region": "africa",
     "regions": [
@@ -96,112 +96,85 @@
         "source_sha256": "657869e51085187c620b16da32a029554dc15e3f71fbec9ac198daeab0819ed3"
       }
     ],
-    "shown_cities": [
-      {
-        "at": [
-          1407,
-          932
-        ],
-        "id": "usa29.0",
-        "labels": 1,
-        "name": "New York City",
-        "screen": [
-          288.748504638672,
-          297.894805908203
-        ]
-      },
-      {
-        "at": [
-          2601,
-          1923
-        ],
-        "id": "africa3369157.0",
-        "labels": 1,
-        "name": "Cape Town",
-        "screen": [
-          670.386291503906,
-          614.647766113281
-        ]
-      }
-    ],
-    "south_edge": 2699.99995878784,
+    "shown_cities": [],
+    "south_edge": 2099.99987358273,
     "south_limit": 2700,
     "terrain_detail": 0,
     "terrain_tiles": 0,
     "touches": 0,
-    "vertical_pan_locked": true,
+    "vertical_pan_locked": false,
     "viewport": [
-      1110,
-      863
+      322,
+      430
     ],
-    "visible_annotations": 4,
-    "visible_cities": 2,
+    "visible_annotations": 0,
+    "visible_cities": 0,
     "visible_close_cities": 0,
-    "visible_labels": 2,
-    "visible_world_badges": 24,
+    "visible_labels": 0,
+    "visible_world_badges": 0,
     "world_badge_alpha": 1,
     "world_badge_screen_height": 22,
     "world_size": [
       4480,
       3144
     ],
-    "zoom": 0.319629639387131,
+    "zoom": 0.35833340883255,
     "zoom_max": 120,
-    "zoom_min": 0.31962962962963,
-    "zoom_ratio": 1.00000003052752
+    "zoom_min": 0.159259259259259,
+    "zoom_ratio": 2.25000047406485
   },
   "frame": {
     "action": "",
-    "chrome_scale": 0.67169373549884,
+    "chrome_scale": 0.5,
     "collapsed": false,
     "locked": false,
     "map_rect": [
-      474,
-      121,
-      1110,
-      863
+      34,
+      63,
+      322,
+      430
     ],
     "moving_window": "",
     "panels": {
       "chat": [
-        10,
-        1028,
-        540,
-        251
+        93.5999984741211,
+        386,
+        268,
+        125
       ],
       "itinerary": [
-        18,
-        445,
-        397,
-        553
+        8,
+        616,
+        94,
+        130
       ],
       "minimap": [
-        10,
-        72,
-        413,
-        371
+        8,
+        526,
+        94,
+        84
       ],
       "notification": [
-        1674,
-        1200,
-        272,
-        79
+        114,
+        754,
+        268,
+        78
       ]
     },
     "position": [
-      450,
-      58
+      16,
+      16
     ],
     "size": [
-      1158,
-      954
+      358,
+      498
     ],
     "stack": [
       "minimap",
       "itinerary",
-      "chat",
       "notification",
-      "map"
+      "map",
+      "chat"
     ]
   }
 }

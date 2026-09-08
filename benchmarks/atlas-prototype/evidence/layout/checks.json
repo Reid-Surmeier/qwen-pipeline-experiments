@@ -1,6 +1,12 @@
 {
   "status": "pass",
   "checks": [
+    "mouse movement of all four panels and the map",
+    "topmost overlap targeting and raising",
+    "covered map ignores wheel",
+    "panel screen clamping",
+    "map lock leaves other windows movable",
+    "phone panel drag and clean release",
     "four assets, reference desktop positions and orientations",
     "no album placeholder",
     "nonoverlapping desktop/laptop/phone initial composition",

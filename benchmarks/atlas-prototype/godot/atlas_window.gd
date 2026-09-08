@@ -19,6 +19,8 @@ var start_pointer := Vector2.ZERO
 var start_rect := Rect2()
 var state_timer := 0.0
 var panels: Dictionary = {}
+var moving_window: Control
+var active_pointer := -2
 const PANEL_RECTS := {
 	"minimap": Rect2(10, 72, 413, 371),
 	"itinerary": Rect2(18, 445, 397, 553),
@@ -32,6 +34,8 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	for id in PANEL_RECTS:
 		var panel := TextureRect.new()
+		panel.name = id
+		panel.tooltip_text = "Drag to move"
 		panel.texture = load("res://assets/desktop/" + id + ".png")
 		panel.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
 		panel.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
@@ -39,6 +43,7 @@ func _ready() -> void:
 		add_child(panel)
 		panels[id] = panel
 	frame_texture = load("res://assets/window-frame.png")
+	frame.name = "map"
 	frame.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(frame)
 	minimize.ignore_texture_size = true
@@ -65,6 +70,8 @@ func _ready() -> void:
 	viewport.add_child(load("res://atlas.tscn").instantiate())
 
 func _fit_window() -> void:
+	action = ""
+	moving_window = null
 	var available := get_viewport_rect().size
 	if available.x >= 750:
 		var scale := minf(available.x / 1950.0, available.y / 1280.0)
@@ -117,8 +124,22 @@ func _collapse() -> void:
 	container.visible = not collapsed
 	_layout()
 
+func _top_window_at(pointer: Vector2) -> Control:
+	var windows := get_children()
+	windows.reverse()
+	for window in windows:
+		if window is Control and window.get_global_rect().has_point(pointer): return window
+	return null
+
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouse and event.device == -1: return
+	if event is InputEventMouseButton and event.button_index in [MOUSE_BUTTON_WHEEL_UP, MOUSE_BUTTON_WHEEL_DOWN]:
+		var over := _top_window_at(event.position)
+		if over != null and over != frame: get_viewport().set_input_as_handled()
+		return
+	var pointer_id := -2
+	if event is InputEventScreenTouch or event is InputEventScreenDrag: pointer_id = event.index
+	if not action.is_empty() and pointer_id != active_pointer: return
 	var pointer := Vector2.ZERO
 	var pressed := false
 	var released := false
@@ -138,24 +159,32 @@ func _input(event: InputEvent) -> void:
 		pointer = event.position
 		motion = true
 	else: return
-	if pressed and not locked:
-		var rect := frame.get_global_rect()
-		if not rect.has_point(pointer): return
-		var local := pointer - rect.position
-		edges = Vector2i(-1 if local.x < 10 else (1 if local.x > rect.size.x - 10 else 0), -1 if local.y < 10 else (1 if local.y > rect.size.y - 10 else 0))
-		if edges != Vector2i.ZERO and not collapsed: action = "resize"
-		elif local.y >= 30 * chrome_scale and local.y < 94 * chrome_scale and local.x > 90 * chrome_scale and local.x < rect.size.x - 100 * chrome_scale: action = "drag"
-		else: return
+	if pressed:
+		var target := _top_window_at(pointer)
+		if target == null: return
+		move_child(target, get_child_count() - 1)
+		var rect := target.get_global_rect()
+		if target == frame:
+			if locked: return
+			var local := pointer - rect.position
+			edges = Vector2i(-1 if local.x < 10 else (1 if local.x > rect.size.x - 10 else 0), -1 if local.y < 10 else (1 if local.y > rect.size.y - 10 else 0))
+			if edges != Vector2i.ZERO and not collapsed: action = "resize"
+			elif local.y >= 30 * chrome_scale and local.y < 94 * chrome_scale and local.x > 90 * chrome_scale and local.x < rect.size.x - 100 * chrome_scale: action = "drag"
+			else: return
+		else: action = "drag"
+		moving_window = target
+		active_pointer = pointer_id
 		start_pointer = pointer
 		start_rect = rect
 	elif released:
 		if action.is_empty(): return
 		action = ""
+		moving_window = null
 	elif motion and not action.is_empty():
 		var delta := pointer - start_pointer
 		var available := get_viewport_rect().size
 		if action == "drag":
-			frame.position = (start_rect.position + delta).clamp(Vector2.ZERO, (available - frame.size).max(Vector2.ZERO))
+			moving_window.position = (start_rect.position + delta).clamp(Vector2.ZERO, (available - moving_window.size).max(Vector2.ZERO))
 		else:
 			var low := start_rect.position
 			var high := start_rect.end
@@ -207,4 +236,4 @@ func _publish() -> void:
 	for id in panels:
 		var panel: TextureRect = panels[id]
 		panel_rects[id] = [panel.position.x, panel.position.y, panel.size.x, panel.size.y]
-	JavaScriptBridge.eval("window.atlasWindow=" + JSON.stringify({"panels": panel_rects, "position": [frame.position.x, frame.position.y], "size": [frame.size.x, frame.size.y], "map_rect": [rect.position.x, rect.position.y, rect.size.x, rect.size.y], "chrome_scale": chrome_scale, "locked": locked, "collapsed": collapsed, "action": action}), true)
+	JavaScriptBridge.eval("window.atlasWindow=" + JSON.stringify({"stack": get_children().map(func(window): return str(window.name)), "moving_window": str(moving_window.name) if moving_window != null else "", "panels": panel_rects, "position": [frame.position.x, frame.position.y], "size": [frame.size.x, frame.size.y], "map_rect": [rect.position.x, rect.position.y, rect.size.x, rect.size.y], "chrome_scale": chrome_scale, "locked": locked, "collapsed": collapsed, "action": action}), true)

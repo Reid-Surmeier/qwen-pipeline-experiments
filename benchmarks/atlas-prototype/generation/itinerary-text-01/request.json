@@ -1,0 +1,13 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Tight reference-preserving raster game UI edit.\nReplace the ENTIRE top title including Japanese text, Sebas and Lv.58 Knight with exactly: Collection Hightlights\nReplace BOTH bottom Zeny labels with exactly: Collection number\nKeep BOTH existing 0 numerals exactly as they are, in their current positions. Keep the new Collection number text in the available space to the left of each 0, matching the current Zeny pixel font, font size and dark color.\nKeep the same pixelated font, letter weight, color, baseline, background gradient and placement as the original text. Do not substitute a modern font. Do not change, translate, rotate or redraw any other content. Preserve all original pixels outside these text changes, including icons, frame edges, numerical values, buttons and map/artwork. Return the entire screenshot in identical framing and orientation.",
+  "n": 1,
+  "size": "2048x1472",
+  "seed": 50908,
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

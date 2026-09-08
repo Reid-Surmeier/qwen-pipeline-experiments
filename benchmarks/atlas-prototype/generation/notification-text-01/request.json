@@ -1,0 +1,13 @@
+{
+  "model": "meta/muse-image",
+  "prompt": "Tight raster game UI reference edit. Replace ONLY the Japanese lettering inside this notification speech bubble with the exact text: Recently Added!\nUse exactly the same black pixelated game font style, size, weight and baseline as the original text. Keep the money-bag icon on the left, white bubble, grey pixel border and tail exactly unchanged. No extra punctuation, quotes, new icons or decorations. Preserve the framing, original dimensions and background. Change nothing outside the lettering.",
+  "n": 1,
+  "size": "1760x512",
+  "seed": 50908,
+  "input_references": [
+    {
+      "type": "image_url",
+      "image_url": "[reference recorded separately]"
+    }
+  ]
+}

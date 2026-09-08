@@ -27,7 +27,7 @@
         155,
         36
       ],
-      "\u2212": [
+      "−": [
         438,
         23,
         44,
@@ -35,7 +35,7 @@
       ]
     },
     "detail_alpha": 1,
-    "fps": 42,
+    "fps": 41,
     "mode": "atlas",
     "orphan_dots": 0,
     "popup": {
@@ -161,6 +161,7 @@
       1010,
       783
     ],
+    "moving_window": "",
     "panels": {
       "chat": [
         10,
@@ -194,6 +195,13 @@
     "size": [
       1058,
       874
+    ],
+    "stack": [
+      "minimap",
+      "itinerary",
+      "chat",
+      "notification",
+      "map"
     ]
   }
 }
